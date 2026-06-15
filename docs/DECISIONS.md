@@ -72,3 +72,41 @@ Onboarding → Daily Check-in → Mechanism Selection → Inner Task → Feedbac
 > Does this help the user turn tension into a clear internal task and a next action?
 
 If not, it is not MVP.
+
+## D-011. Deep method layer stays behind the interface
+
+**Decision:** The deeper attention/consciousness model is the method engine, not the first user-facing language.
+
+**Reason:** The average user enters through ordinary pain: low energy, food impulses, avoided tasks, body heaviness, poor sleep. Advanced language would create friction and misunderstanding.
+
+## D-012. User-facing translation rule
+
+**Decision:** Translate deep concepts into practical language.
+
+Examples:
+
+| Method concept | App language |
+|---|---|
+| automatic program | repeated pattern |
+| potential difference | gap between now and useful direction |
+| second knot | extra pressure from “I must / I failed” |
+| direct pointing | pause prompt |
+| natural impulse | small action that feels light or neutral |
+
+## D-013. Point B is flexible direction, not rigid goal
+
+**Decision:** The app must treat goals as orientation, not self-pressure.
+
+**Reason:** A rigid goal can create shame and resistance. A flexible direction creates movement and feedback.
+
+## D-014. Stop before advice
+
+**Decision:** Before suggesting an action, the app should first help the user pause and observe the current urge/mechanism.
+
+**Reason:** The product is designed to interrupt automatic behaviour, not replace one automatic instruction with another.
+
+## D-015. Advanced practices are not MVP core
+
+**Decision:** Direct pointing and advanced attention practices are optional future modules, not the default v1 path.
+
+**Reason:** MVP must stay grounded in body, energy, meals, movement, sleep and simple feedback.
