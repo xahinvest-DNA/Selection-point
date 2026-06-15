@@ -8,11 +8,13 @@ For every task Codex should:
 
 1. Read `README.md`.
 2. Read `docs/CURRENT_STATE.md`.
-3. Read `docs/DECISIONS.md`.
-4. Read the specific task file.
-5. Make the smallest coherent implementation.
-6. Run available checks.
-7. Report what changed, how to run, and what remains.
+3. Read `docs/PRODUCT_BRIEF.md`.
+4. Read `docs/METHOD_CORE.md`.
+5. Read `docs/DECISIONS.md`.
+6. Read the specific task file.
+7. Make the smallest coherent implementation.
+8. Run available checks.
+9. Report what changed, how to run, and what remains.
 
 ## Priority order
 

@@ -366,3 +366,47 @@ Record feedback
 ```
 
 The deeper layer remains inside the design.
+
+---
+
+# 12. MVP translation
+
+The first runnable app should already reflect the method through screen names, copy and data shape.
+
+Minimum method-aware loop:
+
+1. Welcome: choice point, not diet.
+2. Point A / Diagnosis: current state without judgment.
+3. Daily Check-in: facts, impulses, triggers, pause.
+4. Point B / Direction: useful direction, not rigid goal.
+5. Potential Difference: the gap between now and useful direction.
+6. Mechanism: repeated pattern or automatic reaction.
+7. Inner Task: one trainable transition.
+8. Practice: pause, feel body, distinguish, choose one small action.
+9. Feedback: what reality showed, without praise or blame.
+
+User-facing copy should prefer:
+
+- "notice the mechanism";
+- "pause before the automatic move";
+- "choose one small next action";
+- "use feedback".
+
+It should avoid:
+
+- "lose weight fast";
+- "fix yourself";
+- "be disciplined";
+- "control cravings".
+
+---
+
+# 13. Product rule
+
+Every feature must answer:
+
+```txt
+Does this help the user notice an automatic pattern and turn the gap between now and useful direction into a clear inner task and next action?
+```
+
+If not, it is not MVP.

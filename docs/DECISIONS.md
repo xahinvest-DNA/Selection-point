@@ -110,3 +110,15 @@ Examples:
 **Decision:** Direct pointing and advanced attention practices are optional future modules, not the default v1 path.
 
 **Reason:** MVP must stay grounded in body, energy, meals, movement, sleep and simple feedback.
+
+## D-016. Method spine
+
+**Decision:** The product method is:
+
+```txt
+Point A -> Point B -> Potential Difference -> Automatic Program or Inner Task -> Practice -> Action -> Feedback -> New Point A
+```
+
+**Reason:** The deeper project context is not only body tracking. The body protocol is the first practical field for training the choice point: seeing an automatic program before it becomes action, turning potential difference into an inner task, and acting without shame or force.
+
+Implementation details should follow `docs/METHOD_CORE.md`.

@@ -47,6 +47,7 @@
 
 - `docs/CURRENT_STATE.md` — текущее состояние проекта.
 - `docs/PRODUCT_BRIEF.md` — продуктовая рамка.
+- `docs/METHOD_CORE.md` — методическое ядро: точка А/Б, автоматизм, внутренняя задача, практика.
 - `docs/DECISIONS.md` — принятые решения.
 - `docs/ROADMAP.md` — этапы реализации.
 - `docs/CODEX_TASKS.md` — очередь задач для Codex.

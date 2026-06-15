@@ -9,6 +9,7 @@ Deliverables:
 - README.md
 - CURRENT_STATE.md
 - PRODUCT_BRIEF.md
+- METHOD_CORE.md
 - DECISIONS.md
 - ROADMAP.md
 - CODEX_TASKS.md
@@ -43,12 +44,14 @@ Goal: implement the first user path without complex persistence.
 Screens:
 
 1. Welcome
-2. Day 0 Diagnosis
+2. Point A / Day 0 Diagnosis
 3. Daily Check-in
-4. Potential Difference Map
-5. Mechanism Selection
-6. Inner Task
-7. Feedback Summary
+4. Point B / Direction
+5. Potential Difference Map
+6. Mechanism Selection
+7. Inner Task
+8. Practice
+9. Feedback Summary
 
 Acceptance criteria:
 
@@ -56,6 +59,7 @@ Acceptance criteria:
 - form state is preserved during one app session;
 - no final visual design needed;
 - UX copy follows project tone.
+- UX structure follows `docs/METHOD_CORE.md`.
 
 ## Phase 3 — Local data model
 
