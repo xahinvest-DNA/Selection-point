@@ -2,7 +2,7 @@
 
 ## Working agreement
 
-Codex is the implementation executor. It must not redesign product direction unless the task explicitly asks for architecture feedback.
+Codex is the implementation/content executor. It must not redesign product direction unless the task explicitly asks for architecture feedback.
 
 For every task Codex should:
 
@@ -19,28 +19,38 @@ For every task Codex should:
 
 ## Current strategic sequence
 
-Before building the mobile app, the project must first prepare the complete theoretical and practical content foundation.
+Before building the mobile app, the project must first become a clear educational course.
+
+The course is the source of truth. The app will later become a delivery format for the course and its practices.
 
 Reason:
 
 - the app should not be built as a generic tracker;
-- all screens must later follow the method;
-- copy, practices, explanations and protocol logic must be coherent before UI implementation;
+- the first product must be teachable without app UI;
+- the 5-level development structure must be clear before screen design;
+- theory must inspire practice, not overload the user;
+- practices must be grounded and concrete;
 - content can be manually piloted before code.
 
 ## Priority order
 
-### P0 — Theory and practice foundation
+### P0 — Course foundation
 
-- [ ] TASK-000: Prepare theory and practice content foundation.
+- [x] TASK-000: Prepare initial theory and practice content foundation under `docs/CONTENT/`.
+- [ ] TASK-000B: Rebuild content as a Williams 5-level training course under `docs/COURSE/`.
 
-### P1 — Mobile foundation, after content review
+### P1 — Course review and manual pilot packet
+
+- [ ] TASK-000C: Revise course after Андрей review.
+- [ ] TASK-000D: Prepare manual pilot packet from course materials.
+
+### P2 — Mobile foundation, after course review
 
 - [ ] TASK-001: Bootstrap mobile app.
 - [ ] TASK-002: Create base navigation and placeholder screens.
 - [ ] TASK-003: Define TypeScript domain models.
 
-### P2 — First user loop
+### P3 — First app user loop
 
 - [ ] TASK-004: Implement Day 0 diagnosis form.
 - [ ] TASK-005: Implement Daily Check-in form.
@@ -49,19 +59,19 @@ Reason:
 - [ ] TASK-008: Implement Inner Task Builder.
 - [ ] TASK-009: Implement Feedback Summary screen.
 
-### P3 — Persistence
+### P4 — Persistence
 
 - [ ] TASK-010: Add local persistence.
 - [ ] TASK-011: Add protocol day state.
 - [ ] TASK-012: Add previous entries screen.
 
-### P4 — Protocol logic
+### P5 — Protocol logic
 
-- [ ] TASK-013: Implement 14-day protocol phases.
+- [ ] TASK-013: Implement app protocol phases.
 - [ ] TASK-014: Generate simple phase summaries.
 - [ ] TASK-015: Add repeated trigger detection.
 
-### P5 — Pilot readiness
+### P6 — Pilot readiness
 
 - [ ] TASK-016: Polish UX copy.
 - [ ] TASK-017: Add visual design pass.
@@ -69,15 +79,16 @@ Reason:
 
 ## Current active task
 
-`codex/TASK-000-theory-content-foundation.md`
+`codex/TASK-000B-course-foundation.md`
 
 ## Definition of Done for current phase
 
-P0 is done when:
+P0 course foundation is done when:
 
-- `docs/CONTENT/` exists;
-- theoretical blocks are written step by step;
-- explanations, practices, 14-day protocol, daily prompts, audio scripts and screen copy drafts exist;
-- content is in Russian;
-- content can be reviewed before app development;
+- `docs/COURSE/` exists;
+- the course is built around the 5 Williams-style development levels;
+- Dan Millman and Bill Williams are synthesized clearly;
+- the practice conversation material is used mostly as a source of concrete practices;
+- each level has theory, practices, homework, reflection and transition criteria;
+- a 15-lesson course sequence exists;
 - no app code is created yet.
