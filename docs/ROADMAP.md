@@ -1,163 +1,198 @@
 # ROADMAP
 
-## Phase 0 — Project foundation
+**Статус:** актуальная сводная карта фаз.  
+**Главный регламент:** `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`.
 
-Goal: make the project executable for Codex.
+Фазы выполняются последовательно. Возврат к предыдущей фазе допускается, если обнаружено фундаментальное противоречие.
 
-Deliverables:
+## Фаза 0 — Очистка основания
 
-- README.md
-- CURRENT_STATE.md
-- PRODUCT_BRIEF.md
-- METHOD_CORE.md
-- DECISIONS.md
-- ROADMAP.md
-- CODEX_TASKS.md
-- first Codex bootstrap task
+Цель:
 
-Status: in progress.
+- отделить старые черновики от действующей архитектуры;
+- определить источники истины;
+- установить рабочий процесс;
+- устранить противоречия в навигации репозитория.
 
-## Phase 1 — Mobile app bootstrap
+Статус: **в основном завершена**.
 
-Goal: create a runnable Expo + React Native + TypeScript app.
+Текущая работа по согласованию корневых документов выполняется в рамках этой фазы и не меняет содержательную контрольную точку Фазы 3.
 
-Deliverables:
+## Фаза 1 — Архитектурная декларация
 
-- Expo app scaffold;
-- TypeScript configured;
-- basic navigation;
-- clean folder structure;
-- placeholder screens;
-- ability to run locally on phone / emulator.
+Определены и утверждены:
 
-Acceptance criteria:
+1. человеческая проблема;
+2. обещанное преобразование;
+3. способность выбора;
+4. тело как первое поле;
+5. связь тела и жизни;
+6. роль пяти ступеней;
+7. границы метода.
 
-- `npm install` works;
-- `npm run start` launches Expo;
-- app opens on phone/emulator;
-- home screen displays project name and primary action.
+Статус: **завершена и утверждена**.
 
-## Phase 2 — UX skeleton
+Основные документы:
 
-Goal: implement the first user path without complex persistence.
+- `docs/FOUNDATION/ARCHITECTURAL_DECLARATION.md`;
+- `docs/FOUNDATION/ARCHITECTURAL_DECLARATION_THEORY/`.
 
-Screens:
+## Фаза 2 — Модель человека и механизма изменения
 
-1. Welcome
-2. Point A / Day 0 Diagnosis
-3. Daily Check-in
-4. Point B / Direction
-5. Potential Difference Map
-6. Mechanism Selection
-7. Inner Task
-8. Practice
-9. Feedback Summary
+Утверждены восемь положений о:
 
-Acceptance criteria:
+- воспринятой модели реальности;
+- влиянии состояния;
+- автоматической цепочке;
+- образе себя и внутреннем сценарии;
+- изменении самого действующего человека;
+- обратной связи;
+- множественных точках восстановления выбора;
+- повторяющихся циклах изменения.
 
-- user can move through all screens;
-- form state is preserved during one app session;
-- no final visual design needed;
-- UX copy follows project tone.
-- UX structure follows `docs/METHOD_CORE.md`.
+Статус: **завершена и утверждена**.
 
-## Phase 3 — Local data model
+Основные документы:
 
-Goal: persist user journal locally.
+- `docs/FOUNDATION/HUMAN_CHANGE_MODEL.md`;
+- `docs/FOUNDATION/HUMAN_CHANGE_MODEL_THEORY/`.
 
-Entities:
+## Фаза 3 — Точная архитектура пяти ступеней
 
-- UserProfile
-- BaselineDiagnosis
-- DailyCheckIn
-- FoodImpulse
-- Mechanism
-- InnerTask
-- FeedbackCycle
+Для каждой ступени последовательно определяются:
 
-Acceptance criteria:
+1. состояние человека;
+2. способ восприятия реальности;
+3. способ восприятия себя;
+4. что управляет решениями;
+5. доступная точка выбора;
+6. главная иллюзия;
+7. главная боль;
+8. следующий навык;
+9. телесные проявления;
+10. жизненные проявления;
+11. соответствующие практики;
+12. критерии перехода;
+13. ловушка ступени.
 
-- data persists after app restart;
-- user can view previous daily entries;
-- derived summary can be calculated from stored data.
+Статус: **активная фаза**.
 
-## Phase 4 — 14-day protocol engine
+Текущая контрольная точка:
 
-Goal: make app guide user by protocol day.
+- Ступень 1 «Жизнь внутри автоматизма»;
+- параметры 1–4 утверждены;
+- следующий вопрос — параметр 5 «доступная точка выбора».
 
-Protocol:
+Основные документы:
 
-- Day 0: diagnosis;
-- Days 1–3: observation;
-- Days 4–7: mechanism focus;
-- Days 8–11: system building;
-- Days 12–14: feedback and next task.
+- `docs/FOUNDATION/FIVE_STAGES_THEORY/00_INDEX.md`;
+- `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`.
 
-Acceptance criteria:
+## Фаза 4 — Карта модулей курса
 
-- app knows current protocol day;
-- screen prompts adapt by phase;
-- user can see progress;
-- app generates a weekly/phase summary.
+Только после утверждения всех пяти ступеней определяются:
 
-## Phase 5 — Feedback and insight layer
+- количество модулей;
+- назначение каждого модуля;
+- порядок прохождения;
+- обязательные и дополнительные ветви;
+- вводный и интеграционный материал;
+- место телесного поля в первой версии.
 
-Goal: transform raw entries into useful insight.
+Статус: **не начата**.
 
-Outputs:
+Количество модулей и уроков заранее не фиксируется.
 
-- repeated triggers;
-- repeated food impulses;
-- weight trend;
-- sleep/energy relationship;
-- alcohol impact notes;
-- main mechanism hypothesis;
-- suggested inner task.
+## Фаза 5 — Практическая архитектура
 
-Acceptance criteria:
+Для каждой практики утверждаются:
 
-- app gives simple summaries without pretending to be a doctor;
-- insights are traceable to user entries;
-- user can accept/edit the suggested inner task.
+- тренируемая способность;
+- ступень применения;
+- момент запуска;
+- инструкция;
+- длительность;
+- обратная связь;
+- ошибки и ограничения;
+- способ фиксации;
+- критерий освоения;
+- облегчённая и усложнённая версии.
 
-## Phase 6 — Design and polish
+Обязательные результаты:
 
-Goal: make prototype pleasant enough for real user testing.
+1. система системной корректировки;
+2. карта точек восстановления выбора;
+3. единый повторяемый цикл Selection Point.
 
-Deliverables:
+Статус: **не начата**.
 
-- visual style;
-- typography;
-- empty states;
-- microcopy;
-- error states;
-- onboarding clarity.
+## Фаза 6 — Критерии освоения и перехода
 
-## Phase 7 — Pilot
+Определяются наблюдаемые признаки изменения.
 
-Goal: test on 5–10 real users.
+Критерием не может быть только:
 
-Metrics:
+- просмотр урока;
+- понимание теории;
+- результат теста;
+- количество дней;
+- субъективное ощущение осознанности.
 
-- onboarding completion;
-- check-ins completed;
-- 14-day completion;
-- mechanisms identified;
-- perceived clarity;
-- reported energy/body changes;
-- willingness to continue.
+Статус: **не начата**.
 
-## Deferred
+## Фаза 7 — Формат первой версии продукта
 
-Not MVP:
+Только здесь определяются:
 
-- paid subscriptions;
-- backend sync;
-- social features;
-- calorie database;
-- AI coach chat;
-- wearable integrations;
-- App Store / Google Play release;
-- medical recommendations;
-- advanced analytics;
-- trader version.
+- курс или другая форма;
+- длительность;
+- сопровождение;
+- носители;
+- рабочая тетрадь;
+- ручной пилот;
+- канал доставки;
+- роль AI;
+- необходимость приложения.
+
+Статус: **не начата**.
+
+14-дневный формат не является утверждённым решением.
+
+## Фаза 8 — Ручной пилот
+
+До цифрового продукта метод проверяется на ограниченном количестве людей.
+
+Проверяются:
+
+- понятность языка;
+- применимость практик;
+- изменение поведения;
+- безопасность;
+- нагрузка;
+- критерии перехода;
+- интеллектуализация;
+- потеря интереса;
+- телесные и жизненные результаты.
+
+Статус: **не начата**.
+
+## Фаза 9 — Цифровой продукт
+
+Только после проверки метода и формата проектируются:
+
+- приложение;
+- AI-сопровождение;
+- база данных;
+- синхронизация;
+- технический стек;
+- авторизация;
+- платежи;
+- аналитика.
+
+Статус: **не начата**.
+
+Технология должна обслуживать утверждённый процесс, а не определять его.
+
+## Текущее действие
+
+Продолжить Фазу 3 с параметра 5 первой ступени — «доступная точка выбора».
