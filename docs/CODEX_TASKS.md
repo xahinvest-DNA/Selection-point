@@ -1,94 +1,78 @@
 # CODEX_TASKS
 
-## Working agreement
+**Статус:** исполнительская очередь приостановлена.  
+**Активных задач Codex сейчас нет.**
 
-Codex is the implementation/content executor. It must not redesign product direction unless the task explicitly asks for architecture feedback.
+## Причина
 
-For every task Codex should:
+Проект находится в Фазе 3 — точной архитектуре пяти ступеней. На этой фазе ключевые положения должны последовательно обсуждаться и утверждаться Андреем и ChatGPT.
 
-1. Read `README.md`.
-2. Read `docs/CURRENT_STATE.md`.
-3. Read `docs/PRODUCT_BRIEF.md`.
-4. Read `docs/METHOD_CORE.md`.
-5. Read `docs/PRACTICE_SYSTEM.md` when the task touches practices or content.
-6. Read `docs/DECISIONS.md`.
-7. Read the specific task file.
-8. Make the smallest coherent implementation.
-9. Run available checks when relevant.
-10. Report what changed and what remains.
+Codex не должен самостоятельно:
 
-## Current strategic sequence
+- дописывать метод;
+- определять параметры ступеней;
+- проектировать модули курса;
+- определять количество уроков;
+- выбирать формат первой версии;
+- создавать приложение;
+- выбирать технический стек.
 
-Before building the mobile app, the project must first become a clear educational course.
+## Источники истины перед любой будущей задачей
 
-The course is the source of truth. The app will later become a delivery format for the course and its practices.
+Codex обязан прочитать:
 
-Reason:
+1. `README.md`;
+2. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
+3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
+4. соответствующие утверждённые документы активной фазы;
+5. конкретный новый task-файл, на который прямо ссылается актуальная контрольная точка.
 
-- the app should not be built as a generic tracker;
-- the first product must be teachable without app UI;
-- the 5-level development structure must be clear before screen design;
-- theory must inspire practice, not overload the user;
-- practices must be grounded and concrete;
-- content can be manually piloted before code.
+Наличие task-файла в `codex/` само по себе не делает его активным.
 
-## Priority order
+## Статус прежних задач
 
-### P0 — Course foundation
+| Задача | Статус |
+|---|---|
+| TASK-000 — theory/content foundation | завершённый исторический черновик; материалы являются legacy-источником |
+| TASK-000B — Williams 5-level course foundation | **отменена как преждевременная** |
+| TASK-001 — mobile bootstrap | **отложена до Фазы 9** |
+| TASK-002–TASK-018 | **неактивны и требуют полного перепроектирования после утверждения метода и формата** |
 
-- [x] TASK-000: Prepare initial theory and practice content foundation under `docs/CONTENT/`.
-- [ ] TASK-000B: Rebuild content as a Williams 5-level training course under `docs/COURSE/`.
+## Почему TASK-000B отменена
 
-### P1 — Course review and manual pilot packet
+TASK-000B требовала заранее создать:
 
-- [ ] TASK-000C: Revise course after Андрей review.
-- [ ] TASK-000D: Prepare manual pilot packet from course materials.
+- готовую структуру курса;
+- пять модулей;
+- пятнадцать уроков;
+- рабочую тетрадь;
+- аудиопрактики;
+- заметки преподавателя;
+- перевод в приложение.
 
-### P2 — Mobile foundation, after course review
+Действующая архитектура запрещает определять эти элементы до завершения:
 
-- [ ] TASK-001: Bootstrap mobile app.
-- [ ] TASK-002: Create base navigation and placeholder screens.
-- [ ] TASK-003: Define TypeScript domain models.
+1. точной архитектуры всех пяти ступеней;
+2. карты модулей курса;
+3. практической архитектуры;
+4. критериев освоения и перехода;
+5. решения о формате первой версии.
 
-### P3 — First app user loop
+## Когда Codex снова подключается
 
-- [ ] TASK-004: Implement Day 0 diagnosis form.
-- [ ] TASK-005: Implement Daily Check-in form.
-- [ ] TASK-006: Implement Potential Difference Map form.
-- [ ] TASK-007: Implement Mechanism Selection.
-- [ ] TASK-008: Implement Inner Task Builder.
-- [ ] TASK-009: Implement Feedback Summary screen.
+Codex получает новую задачу только тогда, когда:
 
-### P4 — Persistence
+- соответствующее решение утверждено Андреем;
+- определён точный результат;
+- указаны входные документы;
+- установлены измеримые критерии готовности;
+- задача не требует от Codex самостоятельно придумывать метод;
+- актуальная контрольная точка прямо разрешает переход к исполнению.
 
-- [ ] TASK-010: Add local persistence.
-- [ ] TASK-011: Add protocol day state.
-- [ ] TASK-012: Add previous entries screen.
+## Текущая работа
 
-### P5 — Protocol logic
+Текущая содержательная задача выполняется без Codex:
 
-- [ ] TASK-013: Implement app protocol phases.
-- [ ] TASK-014: Generate simple phase summaries.
-- [ ] TASK-015: Add repeated trigger detection.
+> Ступень 1 «Жизнь внутри автоматизма»: параметр 5 — доступная точка выбора.
 
-### P6 — Pilot readiness
-
-- [ ] TASK-016: Polish UX copy.
-- [ ] TASK-017: Add visual design pass.
-- [ ] TASK-018: Add export/share summary.
-
-## Current active task
-
-`codex/TASK-000B-course-foundation.md`
-
-## Definition of Done for current phase
-
-P0 course foundation is done when:
-
-- `docs/COURSE/` exists;
-- the course is built around the 5 Williams-style development levels;
-- Dan Millman and Bill Williams are synthesized clearly;
-- the practice conversation material is used mostly as a source of concrete practices;
-- each level has theory, practices, homework, reflection and transition criteria;
-- a 15-lesson course sequence exists;
-- no app code is created yet.
+После утверждения параметра ChatGPT должен сохранить полный материал, обновить индекс и контрольные точки и только затем открыть следующий параметр.
