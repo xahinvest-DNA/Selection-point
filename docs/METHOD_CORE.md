@@ -1,412 +1,59 @@
-# METHOD_CORE
+# METHOD_CORE — LEGACY
 
-## Purpose
+**Статус:** ранний методологический черновик.  
+**Не является действующей архитектурой Selection Point.**
 
-This document captures the deeper method layer behind Selection Point.
+Этот документ был создан до утверждения архитектурной декларации, модели человека и операционного протокола. Его прежняя версия строилась вокруг Point A, Point B, potential difference, second knot, natural impulse и набора операторов внимания.
 
-This layer should guide product design, practice design and future AI logic, but it should not be exposed to the average user in raw metaphysical language.
+После последующей работы проект получил более точную и широкую модель:
 
-The user-facing product must stay simple:
-
-- body;
-- energy;
-- food impulses;
-- sleep;
-- movement;
-- daily check-in;
-- one inner task;
-- one next action.
-
-The deeper system explains why that works.
-
----
-
-# 1. Core thesis
-
-A human being often does not act from direct contact with reality.
-
-They act from an internal model:
-
-- predictions;
-- past conditioning;
-- fear;
-- social programming;
-- body state;
-- automatic narratives;
-- desire to control;
-- avoidance of discomfort.
-
-The practical task of Selection Point is to create a small gap between stimulus and automatic reaction.
-
-In that gap the user can see:
-
-- what is actually happening;
-- what their mind is adding;
-- what impulse is automatic;
-- what movement is natural;
-- what one inner task is available now.
-
----
-
-# 2. Key distinction: fact vs story
-
-## Point A
-
-Point A is what is happening now before interpretation.
-
-Examples:
-
-- weight is 100 kg;
-- sleep was 5 hours;
-- there was evening overeating;
-- alcohol was consumed;
-- body feels heavy;
-- a task is unfinished;
-- there is tension in the chest.
-
-Point A is not:
-
-- “I am weak”;
-- “I failed again”;
-- “I will never change”;
-- “I must fix everything now”.
-
-## Story
-
-Story is the mind’s interpretation of Point A.
-
-The app must repeatedly help the user separate:
-
-```txt
-fact → story → impulse → action
+```text
+реальная ситуация
+→ воспринятая модель ситуации
+→ текущее состояние
+→ автоматическая цепочка
+→ образ себя и внутренний сценарий
+→ доступная точка выбора
+→ действие
+→ внешние и внутренние последствия
+→ обратная связь
+→ системная корректировка
+→ следующий цикл из изменённой позиции
 ```
 
----
+## Что сохраняет ценность как исходный материал
 
-# 3. Point B and potential difference
+Прежний METHOD_CORE содержит кандидаты для будущего рассмотрения:
 
-Point B is not a rigid goal.
+- различение факта и интерпретации;
+- внимание к текущему состоянию;
+- идея паузы между реакцией и действием;
+- разность между текущим и возможным состоянием;
+- переход от самокритики к внутренней задаче;
+- малое действие;
+- обратная связь без стыда;
+- различение импульса и автоматической реакции;
+- риск превращения метода в новую форму давления.
 
-Point B is an orienting image or direction.
+Ни один прежний термин, оператор или практический вывод не считается автоматически утверждённым. Каждый элемент должен быть проверен через действующую архитектуру и соответствующую фазу.
 
-Examples:
+## Что отменено или требует повторного рассмотрения
 
-- lighter body;
-- more energy;
-- calmer evening;
-- cleaner home;
-- reduced alcohol;
-- one controlled meal;
-- one completed small action.
+Не являются действующими решениями:
 
-Potential difference appears between:
+- прежний методический spine Point A → Point B → potential difference;
+- телесные ощущения сжатия и расширения как достаточный критерий точного действия;
+- «естественный импульс» как основной источник решения;
+- готовый набор трёх операторов;
+- перенос этих понятий непосредственно в интерфейс;
+- использование документа как основания для мобильного приложения.
 
-```txt
-Point A: what is now
-Point B: what could be
-```
+## Актуальные источники истины
 
-Important: Point B is not objective. It is created by inner vision, memory, culture, conditioning, desire and conscious orientation.
+- `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
+- `docs/FOUNDATION/ARCHITECTURAL_DECLARATION.md`;
+- `docs/FOUNDATION/HUMAN_CHANGE_MODEL.md`;
+- `docs/FOUNDATION/SOURCE_SYNTHESIS_PRINCIPLE.md`;
+- `docs/FOUNDATION/FIVE_STAGES_THEORY/00_INDEX.md`.
 
-Therefore Selection Point must not treat goals as absolute commands.
-
-Point B should be held as a flexible compass:
-
-```txt
-I go in this direction while it is alive, useful and reality-compatible.
-```
-
----
-
-# 4. Automatic Point B vs Free Point B
-
-## Automatic Point B
-
-Automatic Point B comes from:
-
-- fear;
-- shame;
-- comparison;
-- social pressure;
-- old identity;
-- “I must”;
-- “I should already be there”.
-
-Body marker:
-
-- compression;
-- heaviness;
-- urgency;
-- self-attack;
-- anxiety;
-- drama if reality deviates.
-
-## Free Point B
-
-Free Point B comes from:
-
-- quiet interest;
-- curiosity;
-- bodily lightness;
-- “why not?”;
-- organic movement;
-- experimentation;
-- direction without violence.
-
-Body marker:
-
-- expansion;
-- lightness;
-- play;
-- flexibility;
-- energy even before the result.
-
----
-
-# 5. The second knot
-
-The first potential difference is simple:
-
-```txt
-current state → possible state
-```
-
-Example:
-
-```txt
-dirty dishes → clean dishes
-```
-
-The second knot appears when the user adds identity and resistance:
-
-```txt
-I must do this
-I do not want to do this
-I am lazy
-I always fail
-```
-
-The second knot produces struggle, avoidance and self-judgment.
-
-Selection Point does not try to force action.
-
-It removes or softens the second knot so the original movement can appear naturally.
-
----
-
-# 6. Inner task
-
-The inner task is not invented by willpower.
-
-It is discovered when Point A, Point B and the current block are seen clearly.
-
-Formula:
-
-```txt
-Point A + flexible Point B + current block = inner task
-```
-
-Examples:
-
-```txt
-A: I overeat in the evening.
-B: Calm evening and lighter body.
-Block: I use food to discharge fatigue.
-Inner task: learn to pause before evening eating and feel whether this is hunger or fatigue.
-```
-
-```txt
-A: I avoid house tasks.
-B: one small visible order point.
-Block: I imagine the whole task as huge.
-Inner task: start from one object, not the whole house.
-```
-
----
-
-# 7. Three operators
-
-The method uses three basic operators.
-
-## Operator A — Distinction
-
-Question:
-
-```txt
-Am I in direct contact, or am I inside a story about what is happening?
-```
-
-User-facing form:
-
-```txt
-What is fact? What did my mind add?
-```
-
-## Operator B — Expansion
-
-Mechanism:
-
-Include more of the present field without analysis.
-
-Simple version:
-
-```txt
-breath + body contact + sounds + the current urge/tension
-```
-
-User-facing form:
-
-```txt
-Pause. Feel breath, body and surrounding sounds. Include the urge without obeying it immediately.
-```
-
-## Operator C — Stop after pointing
-
-Mechanism:
-
-Read or hear a short pointing phrase, then stop before analysis.
-
-User-facing form:
-
-```txt
-Read the prompt. Do not answer immediately. Notice what happens in the body.
-```
-
----
-
-# 8. Impulse vs automatic reaction
-
-After exiting automatic reaction, the user needs to learn what to follow.
-
-This is the distinction between old program and natural impulse.
-
-| Marker | Automatic reaction | Natural impulse |
-|---|---|---|
-| Body | compression, push, urgency | lightness, neutral movement, expansion |
-| Speed | instant, no gap | appears after pause |
-| Inner language | “must”, “quickly”, “I need this” | quiet, simple, almost wordless |
-| Delay test | pressure increases | impulse can stay, fade or return |
-| After action | relief or emptiness | quiet satisfaction |
-
-User-facing check:
-
-```txt
-Pause for 3 breaths.
-Is this compression or expansion?
-Does it push, or does it invite?
-```
-
----
-
-# 9. Natural action
-
-Natural action is not passivity.
-
-It is action without inner violence.
-
-The product should train:
-
-```txt
-see → pause → distinguish → soften the knot → follow the small living movement
-```
-
-Not:
-
-```txt
-motivate → force → punish → restart after failure
-```
-
----
-
-# 10. One structure across all areas
-
-The method assumes that human behaviour repeats one internal structure across many domains.
-
-A person may show the same pattern in:
-
-- food;
-- alcohol;
-- money;
-- home tasks;
-- relationships;
-- work;
-- health anxiety;
-- business projects.
-
-Therefore v1 can focus on body and energy, while the deeper system remains universal.
-
-Body is the first entry point because it gives fast feedback.
-
----
-
-# 11. Project implication
-
-Selection Point should not begin by teaching metaphysics.
-
-It should begin with ordinary pain:
-
-- evening overeating;
-- low energy;
-- alcohol;
-- body heaviness;
-- lack of movement;
-- tasks avoided;
-- poor sleep.
-
-Then it should guide the user through simple loops:
-
-```txt
-Notice the fact
-Notice the urge
-Pause
-Feel body
-Name the mechanism
-Choose one small action
-Record feedback
-```
-
-The deeper layer remains inside the design.
-
----
-
-# 12. MVP translation
-
-The first runnable app should already reflect the method through screen names, copy and data shape.
-
-Minimum method-aware loop:
-
-1. Welcome: choice point, not diet.
-2. Point A / Diagnosis: current state without judgment.
-3. Daily Check-in: facts, impulses, triggers, pause.
-4. Point B / Direction: useful direction, not rigid goal.
-5. Potential Difference: the gap between now and useful direction.
-6. Mechanism: repeated pattern or automatic reaction.
-7. Inner Task: one trainable transition.
-8. Practice: pause, feel body, distinguish, choose one small action.
-9. Feedback: what reality showed, without praise or blame.
-
-User-facing copy should prefer:
-
-- "notice the mechanism";
-- "pause before the automatic move";
-- "choose one small next action";
-- "use feedback".
-
-It should avoid:
-
-- "lose weight fast";
-- "fix yourself";
-- "be disciplined";
-- "control cravings".
-
----
-
-# 13. Product rule
-
-Every feature must answer:
-
-```txt
-Does this help the user notice an automatic pattern and turn the gap between now and useful direction into a clear inner task and next action?
-```
-
-If not, it is not MVP.
+Полная предыдущая версия METHOD_CORE сохраняется в истории Git и может использоваться как исторический источник при разработке будущих практик и учебных материалов.
