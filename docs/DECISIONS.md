@@ -1,124 +1,70 @@
 # DECISIONS
 
-## D-001. Product format
+**Статус:** индекс прежних продуктовых решений и их текущего положения.  
+**Действующие методологические решения находятся в `docs/FOUNDATION/`.**
 
-**Decision:** v1 is a mobile-first application.
+Этот файл больше не является самостоятельным журналом обязательных решений. Он нужен для того, чтобы ранние продуктовые предположения не воспринимались как актуальная архитектура.
 
-**Reason:** The core user behaviour is daily check-in, body observation, food impulse tracking and short practices. A phone is the natural environment for this.
+## Правило приоритета
 
-## D-002. First domain
+При расхождении с ранними решениями приоритет имеют:
 
-**Decision:** v1 focuses on healthy energetic body + life, not trading.
+1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
+2. `docs/FOUNDATION/ARCHITECTURAL_DECLARATION.md`;
+3. `docs/FOUNDATION/HUMAN_CHANGE_MODEL.md`;
+4. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
+5. утверждённые документы активной фазы.
 
-**Reason:** Body gives faster feedback loops than trading. Weight, sleep, waist, energy, hunger, movement and food impulses can be checked daily.
+## Статусы прежних решений
 
-## D-003. Product is not a diet app
+| ID | Прежнее решение | Текущий статус | Комментарий |
+|---|---|---|---|
+| D-001 | v1 — mobile-first приложение | **отменено как преждевременное** | Формат первой версии определяется только в Фазе 7; цифровой продукт — в Фазе 9. |
+| D-002 | первое поле — тело и жизнь | **подтверждено** | Тело утверждено как первое поле практики, но не как окончательная граница метода. |
+| D-003 | продукт не является диетой | **подтверждено** | Зафиксировано в архитектурной декларации и границах метода. |
+| D-004 | длительность MVP — 14 дней | **не утверждено** | 14-дневный формат считается ранней гипотезой. |
+| D-005 | Expo + React Native + TypeScript | **отложено** | Технический стек нельзя выбирать до решения о цифровом продукте. |
+| D-006 | local-first storage | **отложено** | Хранилище и данные рассматриваются только после проверки метода и формата. |
+| D-007 | отсутствие backend в первом срезе | **отложено** | Техническая архитектура пока не проектируется. |
+| D-008 | фиксированный первый пользовательский loop приложения | **отменено как преждевременное** | Пользовательский путь выводится из утверждённой практической архитектуры, а не наоборот. |
+| D-009 | данные до сильных рекомендаций | **сохранено как принцип-гипотеза** | Совместимо с текущей архитектурой, но конкретная продуктовая реализация ещё не утверждена. |
+| D-010 | каждая функция должна превращать напряжение во внутреннюю задачу и ход | **уточнено новой архитектурой** | Теперь критерий включает восстановление выбора, действие, последствия, обратную связь и системную корректировку. |
+| D-011 | глубокий слой остаётся за интерфейсом | **отложено до проектирования курса и продукта** | Сам принцип ясного языка сохраняется; конкретный интерфейс ещё не существует. |
+| D-012 | таблица пользовательских переводов терминов | **legacy-гипотеза** | Термины будут утверждаться после архитектуры ступеней и практик. |
+| D-013 | точка Б как гибкое направление | **требует повторного рассмотрения** | Не используется как окончательно утверждённая основа новой архитектуры. |
+| D-014 | остановка перед советом | **сохранено как кандидат практического принципа** | Точная форма определяется в Фазе 5. |
+| D-015 | продвинутые практики не входят в MVP | **отложено** | MVP и его состав ещё не утверждены. |
+| D-016 | прежний методический spine Point A → Point B → ... | **заменено** | Действующая модель зафиксирована в `HUMAN_CHANGE_MODEL.md`. |
 
-**Decision:** The product must not be positioned as a diet or calorie-counting app in v1.
+## Действующая общая модель
 
-**Reason:** The core mechanism is internal task formation and feedback, not nutritional micromanagement.
-
-## D-004. MVP protocol length
-
-**Decision:** First protocol length is 14 days.
-
-**Reason:** 14 days is long enough to reveal patterns and short enough to complete without heavy resistance.
-
-## D-005. Initial technical direction
-
-**Decision:** Recommended MVP stack: Expo + React Native + TypeScript.
-
-**Reason:** Fast bootstrap, Android/iOS support, active ecosystem, good fit for Codex execution.
-
-Reference: Expo official docs recommend creating a default project with `create-expo-app`; current docs show `npx create-expo-app@latest --template default@sdk-56` during SDK 56 transition.
-
-## D-006. Storage direction
-
-**Decision:** MVP should be local-first.
-
-**Reason:** User can start without account, backend, privacy concerns or sync complexity.
-
-Possible storage:
-
-- phase 1: in-memory / simple local storage for UI prototype;
-- phase 2: SQLite through `expo-sqlite` for persisted journal data.
-
-Reference: Expo SQLite provides a persisted database queried through SQLite API and is available for Android, iOS and web.
-
-## D-007. No backend in first technical slice
-
-**Decision:** No backend until the core loop works locally.
-
-**Reason:** Backend will slow feedback and add unnecessary infrastructure before product behaviour is validated.
-
-## D-008. First user loop
-
-**Decision:** The first implemented loop must be:
-
-```
-Onboarding → Daily Check-in → Mechanism Selection → Inner Task → Feedback
+```text
+реальная ситуация
+→ воспринятая модель ситуации
+→ текущее состояние
+→ автоматическая цепочка
+→ образ себя и внутренний сценарий
+→ доступная точка выбора
+→ действие
+→ внешние и внутренние последствия
+→ обратная связь
+→ системная корректировка
+→ следующий цикл из изменённой позиции
 ```
 
-## D-009. Data before advice
+## Текущее решение о процессе
 
-**Decision:** The app must collect observation data before giving strong recommendations.
+Проект развивается через последовательное утверждение архитектуры:
 
-**Reason:** The system is built on reality contact, not generic advice.
-
-## D-010. Main PM rule
-
-**Decision:** Every feature must answer one question:
-
-> Does this help the user turn tension into a clear internal task and a next action?
-
-If not, it is not MVP.
-
-## D-011. Deep method layer stays behind the interface
-
-**Decision:** The deeper attention/consciousness model is the method engine, not the first user-facing language.
-
-**Reason:** The average user enters through ordinary pain: low energy, food impulses, avoided tasks, body heaviness, poor sleep. Advanced language would create friction and misunderstanding.
-
-## D-012. User-facing translation rule
-
-**Decision:** Translate deep concepts into practical language.
-
-Examples:
-
-| Method concept | App language |
-|---|---|
-| automatic program | repeated pattern |
-| potential difference | gap between now and useful direction |
-| second knot | extra pressure from “I must / I failed” |
-| direct pointing | pause prompt |
-| natural impulse | small action that feels light or neutral |
-
-## D-013. Point B is flexible direction, not rigid goal
-
-**Decision:** The app must treat goals as orientation, not self-pressure.
-
-**Reason:** A rigid goal can create shame and resistance. A flexible direction creates movement and feedback.
-
-## D-014. Stop before advice
-
-**Decision:** Before suggesting an action, the app should first help the user pause and observe the current urge/mechanism.
-
-**Reason:** The product is designed to interrupt automatic behaviour, not replace one automatic instruction with another.
-
-## D-015. Advanced practices are not MVP core
-
-**Decision:** Direct pointing and advanced attention practices are optional future modules, not the default v1 path.
-
-**Reason:** MVP must stay grounded in body, energy, meals, movement, sleep and simple feedback.
-
-## D-016. Method spine
-
-**Decision:** The product method is:
-
-```txt
-Point A -> Point B -> Potential Difference -> Automatic Program or Inner Task -> Practice -> Action -> Feedback -> New Point A
+```text
+один вопрос
+→ полный разбор
+→ обсуждение
+→ явное утверждение Андреем
+→ фиксация в репозитории
+→ проверка
+→ обновление контрольной точки
+→ следующий вопрос
 ```
 
-**Reason:** The deeper project context is not only body tracking. The body protocol is the first practical field for training the choice point: seeing an automatic program before it becomes action, turning potential difference into an inner task, and acting without shame or force.
-
-Implementation details should follow `docs/METHOD_CORE.md`.
+Ни одно прежнее решение о курсе, длительности, приложении или техническом стеке не становится действующим без нового явного утверждения на соответствующей фазе.
