@@ -1,0 +1,48 @@
+name: Finalize SP-S1-P08 via PR
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.event.pull_request.head.ref == 'sp-s1-p08-finalize'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Extract and run approved update
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          source = Path('.github/workflows/finalize-sp-s1-p08.yml').read_text(encoding='utf-8').splitlines()
+          start = next(i for i, line in enumerate(source) if "python - <<'PY'" in line) + 1
+          end = next(i for i in range(start, len(source)) if source[i].strip() == 'PY')
+          code = '\n'.join(line[10:] if line.startswith('          ') else line for line in source[start:end]) + '\n'
+          Path('/tmp/finalize_sp_s1_p08.py').write_text(code, encoding='utf-8')
+          PY
+
+          python /tmp/finalize_sp_s1_p08.py
+          rm -f .github/workflows/finalize-sp-s1-p08-pr.yml
+          rm -f docs/.sp-s1-p08-open-pr
+
+          git diff --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "docs: approve SP-S1-P08 and pause before SP-S1-P09"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
