@@ -26,6 +26,11 @@ jobs:
       - name: Extract and run approved update
         shell: bash
         run: |
+          if [ -f docs/FOUNDATION/FIVE_STAGES_THEORY/08_STAGE_1_NEXT_SKILL.md ]; then
+            echo "SP-S1-P08 documentation is already finalized."
+            exit 0
+          fi
+
           if [ -f docs/.sp-s1-p08-error.log ]; then
             echo "Diagnostic log already committed; skipping repeated execution."
             exit 0
@@ -45,6 +50,7 @@ jobs:
           code = code.replace("replace_once(readme, '   7. главная боль", "replace_once(readme, '  7. главная боль")
           code = code.replace("\\n   8. следующий навык", "\\n  8. следующий навык")
           code = code.replace("claims: ['SP-S1-P08 | Следующий навык', 'SP-TERM-EPISODE-RECONSTRUCTION'],", "claims: ['SP-S1-P08 | Следующий навык', 'FIVE_STAGES_THEORY/08_STAGE_1_NEXT_SKILL.md'],")
+          code = code.replace("workflow = ROOT / '.github/workflows/finalize-sp-s1-p08.yml'\nworkflow.unlink()\n", "")
           Path('/tmp/finalize_sp_s1_p08.py').write_text(code, encoding='utf-8')
           PY
 
@@ -63,12 +69,11 @@ jobs:
             exit "$status"
           fi
 
-          rm -f .github/workflows/finalize-sp-s1-p08-pr.yml
           rm -f docs/.sp-s1-p08-open-pr
 
           git diff --check
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add README.md docs
           git commit -m "docs: approve SP-S1-P08 and pause before SP-S1-P09"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
