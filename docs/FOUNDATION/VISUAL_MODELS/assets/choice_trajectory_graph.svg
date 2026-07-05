@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Граф траекторий выбора Selection Point</title>
+  <desc id="desc">Слева показана текущая позиция и разные типы возможных ходов. Справа показаны повторяющийся автоматический контур и новая ветвь траектории.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrowAccent" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#111827}
+      .panelTitle{font:700 20px Arial,sans-serif;fill:#111827}
+      .label{font:600 15px Arial,sans-serif;fill:#111827;text-anchor:middle}
+      .small{font:14px Arial,sans-serif;fill:#374151;text-anchor:middle}
+      .legend{font:14px Arial,sans-serif;fill:#374151}
+      .node{fill:#ffffff;stroke:#111827;stroke-width:2.2}
+      .nodeAccent{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .habit{stroke:#111827;stroke-width:6;fill:none;marker-end:url(#arrow)}
+      .available{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrowAccent)}
+      .possible{stroke:#6b7280;stroke-width:2.2;stroke-dasharray:10 8;fill:none;marker-end:url(#arrow)}
+      .loop{stroke:#111827;stroke-width:5;fill:none;marker-end:url(#arrow)}
+      .branch{stroke:#2563eb;stroke-width:4;fill:none;marker-end:url(#arrowAccent)}
+      .divider{stroke:#d1d5db;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="#fafafa"/>
+  <text x="600" y="44" class="title" text-anchor="middle">Граф траекторий выбора</text>
+  <line x1="600" y1="72" x2="600" y2="650" class="divider"/>
+
+  <text x="300" y="88" class="panelTitle" text-anchor="middle">1. Текущая позиция и поле ходов</text>
+
+  <polygon class="nodeAccent" points="300,250 365,287 365,363 300,400 235,363 235,287"/>
+  <text x="300" y="318" class="label">Текущая</text>
+  <text x="300" y="338" class="label">позиция</text>
+
+  <polygon class="node" points="300,105 350,134 350,192 300,221 250,192 250,134"/>
+  <polygon class="node" points="462,198 512,227 512,285 462,314 412,285 412,227"/>
+  <polygon class="node" points="462,384 512,413 512,471 462,500 412,471 412,413"/>
+  <polygon class="node" points="300,477 350,506 350,564 300,593 250,564 250,506"/>
+  <polygon class="node" points="138,384 188,413 188,471 138,500 88,471 88,413"/>
+  <polygon class="node" points="138,198 188,227 188,285 138,314 88,285 88,227"/>
+
+  <path class="habit" d="M300 250 L300 222"/>
+  <path class="available" d="M365 287 L411 260"/>
+  <path class="possible" d="M365 363 L411 414"/>
+  <path class="possible" d="M300 400 L300 476"/>
+  <path class="available" d="M235 363 L189 414"/>
+  <path class="possible" d="M235 287 L189 260"/>
+
+  <text x="300" y="151" class="small">привычный</text>
+  <text x="462" y="246" class="small">доступный</text>
+  <text x="462" y="432" class="small">пока не</text>
+  <text x="462" y="450" class="small">доступный</text>
+  <text x="138" y="432" class="small">доступный</text>
+
+  <text x="300" y="630" class="small">Не все объективно возможные направления замечаются и выполнимы.</text>
+
+  <text x="900" y="88" class="panelTitle" text-anchor="middle">2. Автоматический контур и новая ветвь</text>
+
+  <polygon class="node" points="770,170 820,199 820,257 770,286 720,257 720,199"/>
+  <polygon class="node" points="930,170 980,199 980,257 930,286 880,257 880,199"/>
+  <polygon class="node" points="1010,330 1060,359 1060,417 1010,446 960,417 960,359"/>
+  <polygon class="node" points="930,490 980,519 980,577 930,606 880,577 880,519"/>
+  <polygon class="node" points="770,490 820,519 820,577 770,606 720,577 720,519"/>
+  <polygon class="node" points="690,330 740,359 740,417 690,446 640,417 640,359"/>
+  <polygon class="nodeAccent" points="1110,170 1160,199 1160,257 1110,286 1060,257 1060,199"/>
+
+  <path class="loop" d="M820 228 L879 228"/>
+  <path class="loop" d="M964 276 L995 329"/>
+  <path class="loop" d="M995 447 L964 490"/>
+  <path class="loop" d="M879 548 L821 548"/>
+  <path class="loop" d="M736 490 L705 447"/>
+  <path class="loop" d="M705 329 L736 276"/>
+  <path class="branch" d="M980 228 L1059 228"/>
+
+  <text x="770" y="222" class="small">позиция</text>
+  <text x="770" y="240" class="small">A</text>
+  <text x="930" y="222" class="small">привычный</text>
+  <text x="930" y="240" class="small">результат</text>
+  <text x="1010" y="382" class="small">отложенная</text>
+  <text x="1010" y="400" class="small">цена</text>
+  <text x="930" y="542" class="small">состояние</text>
+  <text x="930" y="560" class="small">повторения</text>
+  <text x="770" y="542" class="small">знакомая</text>
+  <text x="770" y="560" class="small">роль</text>
+  <text x="690" y="382" class="small">оперативная</text>
+  <text x="690" y="400" class="small">задача</text>
+  <text x="1110" y="222" class="small">новая</text>
+  <text x="1110" y="240" class="small">позиция</text>
+
+  <text x="900" y="650" class="small">Новый ход создаёт не только результат, но и другое поле следующего выбора.</text>
+
+  <g transform="translate(70,680)">
+    <line x1="0" y1="0" x2="55" y2="0" class="habit"/>
+    <text x="70" y="5" class="legend">привычный автоматический ход</text>
+    <line x1="315" y1="0" x2="370" y2="0" class="available"/>
+    <text x="385" y="5" class="legend">доступный дополнительный ход</text>
+    <line x1="690" y1="0" x2="745" y2="0" class="possible"/>
+    <text x="760" y="5" class="legend">пока недоступный вариант</text>
+  </g>
+</svg>
