@@ -1,27 +1,35 @@
 name: Finalize SP-S1-P06
 
 on:
-  push:
+  pull_request_target:
     branches:
       - main
-    paths:
-      - .github/workflows/finalize-sp-s1-p06.yml
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 permissions:
   contents: write
 
 jobs:
   finalize:
-    if: github.event.head_commit.message == 'chore: trigger SP-S1-P06 finalization'
+    if: github.event.pull_request.head.ref == 'sp-s1-p06-finalize'
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out finalization branch
         uses: actions/checkout@v4
         with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Apply approved architecture update
         run: python3 scripts/finalize_sp_s1_p06.py
+
+      - name: Remove one-time trigger markers
+        run: rm -f docs/.sp-s1-p06-*
 
       - name: Commit synchronized project state
         run: |
@@ -30,4 +38,4 @@ jobs:
           git add -A
           git diff --cached --check
           git commit -m "docs: approve SP-S1-P06 and advance to SP-S1-P07 [skip ci]"
-          git push
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
