@@ -8,14 +8,14 @@
 
 | Положение | Основное влияние на ступень 1 |
 |---|---|
-| SP-HCM-01 — воспринятая модель | SP-S1-P02; участвует в SP-S1-P01, SP-S1-P04, SP-S1-P06 и смене оценки в SP-S1-P07 |
-| SP-HCM-02 — состояние | SP-S1-P01, SP-S1-P02, SP-S1-P04, SP-S1-P05, SP-S1-P06 и расхождение локального и широкого горизонта SP-S1-P07 |
-| SP-HCM-03 — автоматическая цепочка | SP-S1-P01, SP-S1-P05, SP-S1-P06 и повторяемость траектории SP-S1-P07 |
-| SP-HCM-04 — образ себя и сценарий | SP-S1-P03, SP-S1-P04, SP-S1-P05, SP-S1-P06 и самообъяснение боли SP-S1-P07 |
-| SP-HCM-05 — действие меняет действующего | SP-S1-P05–SP-S1-P07 и SP-VM-01; будущие критерии перехода и ловушка ступени |
-| SP-HCM-06 — обратная связь | SP-S1-P05–SP-S1-P07, SP-VM-01; будущие практики и критерии перехода |
-| SP-HCM-07 — множественные точки восстановления | непосредственное основание SP-S1-P05; граница иллюзии SP-S1-P06 и неразличимость места изменения SP-S1-P07 |
-| SP-HCM-08 — повторяющиеся циклы | SP-S1-P06, SP-S1-P07, SP-VM-01; будущие практики, критерии перехода и следующая ступень |
+| SP-HCM-01 — воспринятая модель | SP-S1-P02; участвует в SP-S1-P01, SP-S1-P04, SP-S1-P06, смене оценки в SP-S1-P07 и реконструкции воспринятой ситуации в SP-S1-P08 |
+| SP-HCM-02 — состояние | SP-S1-P01, SP-S1-P02, SP-S1-P04, SP-S1-P05, SP-S1-P06, расхождение локального и широкого горизонта SP-S1-P07 и реконструкция состояния SP-S1-P08 |
+| SP-HCM-03 — автоматическая цепочка | SP-S1-P01, SP-S1-P05, SP-S1-P06, повторяемость траектории SP-S1-P07 и непосредственная структура реконструкции SP-S1-P08 |
+| SP-HCM-04 — образ себя и сценарий | SP-S1-P03, SP-S1-P04, SP-S1-P05, SP-S1-P06, самообъяснение боли SP-S1-P07 и реконструкция активированной роли SP-S1-P08 |
+| SP-HCM-05 — действие меняет действующего | SP-S1-P05–SP-S1-P08 и SP-VM-01; будущие критерии перехода и ловушка ступени |
+| SP-HCM-06 — обратная связь | SP-S1-P05–SP-S1-P08, SP-VM-01; будущие практики и критерии перехода |
+| SP-HCM-07 — множественные точки восстановления | непосредственное основание SP-S1-P05; граница иллюзии SP-S1-P06, неразличимость места изменения SP-S1-P07 и поиск доступного участка SP-S1-P08 |
+| SP-HCM-08 — повторяющиеся циклы | SP-S1-P06–SP-S1-P08, SP-VM-01; будущие практики, критерии перехода и следующая ступень |
 
 ## Внутренняя последовательность первой ступени
 
@@ -129,8 +129,8 @@ SP-HCM-05
 
 Связанные элементы:
 
-- термины SP-TERM-CURRENT-POSITION, SP-TERM-FIELD-OF-MOVES, SP-TERM-AVAILABLE-MOVE, SP-TERM-TRAJECTORY-GRAPH, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-NEXT-POSITION, SP-TERM-INEVITABLE-CONTINUATION и SP-TERM-INTENTION-TRAJECTORY-DIVERGENCE;
-- примеры SP-EX-TRAJECTORY-001, SP-EX-INEVITABLE-001 и SP-EX-DIVERGENCE-001;
+- термины SP-TERM-CURRENT-POSITION, SP-TERM-FIELD-OF-MOVES, SP-TERM-AVAILABLE-MOVE, SP-TERM-TRAJECTORY-GRAPH, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-NEXT-POSITION, SP-TERM-INEVITABLE-CONTINUATION, SP-TERM-INTENTION-TRAJECTORY-DIVERGENCE и SP-TERM-EPISODE-RECONSTRUCTION;
+- примеры SP-EX-TRAJECTORY-001, SP-EX-INEVITABLE-001, SP-EX-DIVERGENCE-001 и SP-EX-RECONSTRUCTION-001;
 - границы SP-RISK-019–SP-RISK-021;
 - доказательный статус SP-VM-01 в `EVIDENCE_MAP.md`.
 
