@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/tmp/finalize_sp_s1_p08.py", line 833, in <module>
-    replace_all(protocol, 'SP-S1-P05–SP-S1-P07', 'SP-S1-P05–SP-S1-P08')
-  File "/tmp/finalize_sp_s1_p08.py", line 22, in replace_all
-    raise RuntimeError(f'Pattern not found in {path}: {old[:160]!r}')
-RuntimeError: Pattern not found in docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md: 'SP-S1-P05–SP-S1-P07'
