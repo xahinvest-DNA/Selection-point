@@ -8,14 +8,14 @@
 
 | Положение | Основное влияние на ступень 1 |
 |---|---|
-| SP-HCM-01 — воспринятая модель | SP-S1-P02; участвует в SP-S1-P01 и SP-S1-P04 |
-| SP-HCM-02 — состояние | SP-S1-P01, SP-S1-P02, SP-S1-P04, SP-S1-P05 |
-| SP-HCM-03 — автоматическая цепочка | SP-S1-P01 и SP-S1-P05 |
-| SP-HCM-04 — образ себя и сценарий | SP-S1-P03, SP-S1-P04, психологическая доступность в SP-S1-P05 |
-| SP-HCM-05 — действие меняет действующего | SP-S1-P05 и SP-VM-01; будущие боль, критерии перехода и ловушка ступени |
-| SP-HCM-06 — обратная связь | SP-S1-P05, SP-VM-01; будущие практики и критерии перехода |
-| SP-HCM-07 — множественные точки восстановления | непосредственное основание SP-S1-P05 |
-| SP-HCM-08 — повторяющиеся циклы | SP-VM-01; будущие практики, критерии перехода и следующая ступень |
+| SP-HCM-01 — воспринятая модель | SP-S1-P02; участвует в SP-S1-P01, SP-S1-P04 и SP-S1-P06 |
+| SP-HCM-02 — состояние | SP-S1-P01, SP-S1-P02, SP-S1-P04, SP-S1-P05, SP-S1-P06 |
+| SP-HCM-03 — автоматическая цепочка | SP-S1-P01, SP-S1-P05 и SP-S1-P06 |
+| SP-HCM-04 — образ себя и сценарий | SP-S1-P03, SP-S1-P04, психологическая доступность в SP-S1-P05 и сборка SP-S1-P06 |
+| SP-HCM-05 — действие меняет действующего | SP-S1-P05, SP-S1-P06 и SP-VM-01; будущие боль, критерии перехода и ловушка ступени |
+| SP-HCM-06 — обратная связь | SP-S1-P05, SP-S1-P06, SP-VM-01; будущие практики и критерии перехода |
+| SP-HCM-07 — множественные точки восстановления | непосредственное основание SP-S1-P05; граница иллюзии SP-S1-P06 |
+| SP-HCM-08 — повторяющиеся циклы | SP-S1-P06, SP-VM-01; будущие практики, критерии перехода и следующая ступень |
 
 ## Внутренняя последовательность первой ступени
 
@@ -37,11 +37,13 @@ SP-S1-P01
 
 → SP-S1-P06
 какое центральное заблуждение удерживает целостную логику ступени
+
+→ SP-S1-P07
+какое центральное переживание составляет главную боль ступени
 ```
 
-Следующие параметры нельзя выводить автоматически из первых пяти:
+Следующие параметры нельзя выводить автоматически из первых шести:
 
-- SP-S1-P06 — главная иллюзия;
 - SP-S1-P07 — главная боль;
 - SP-S1-P08 — следующий навык;
 - SP-S1-P09 — телесные проявления;
@@ -61,7 +63,8 @@ SP-S1-P01
 | SP-S1-P03 | SP-TERM-SELF-IMAGE, SP-TERM-INTERNAL-SCRIPT, SP-TERM-PSYCHOLOGICAL-AVAILABILITY |
 | SP-S1-P04 | SP-TERM-OPERATIONAL-TASK, SP-TERM-BROAD-DIRECTION, SP-TERM-IMPULSE, SP-TERM-IMMEDIATE-RESULT, SP-TERM-DEFERRED-PRICE |
 | SP-S1-P05 | SP-TERM-CHOICE-RECOVERY, SP-TERM-CURRENT-POSITION, SP-TERM-FIELD-OF-MOVES, SP-TERM-AVAILABLE-MOVE, SP-TERM-CHOICE-WINDOW, SP-TERM-TRAJECTORY-GRAPH, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-NEXT-POSITION |
-| SP-S1-P06 | точные термины будут определены после утверждения |
+| SP-S1-P06 | SP-TERM-INEVITABLE-CONTINUATION, SP-TERM-PERCEIVED-MODEL, SP-TERM-SELF-IMAGE, SP-TERM-OPERATIONAL-TASK, SP-TERM-PSYCHOLOGICAL-AVAILABILITY, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-AVAILABLE-MOVE |
+| SP-S1-P07 | точные термины будут определены после утверждения |
 
 ## Примеры по параметрам
 
@@ -72,7 +75,8 @@ SP-S1-P01
 | SP-S1-P03 | SP-EX-SELF-001, SP-EX-PROJECT-001, SP-EX-HELP-001 |
 | SP-S1-P04 | SP-EX-ALCOHOL-001, SP-EX-PROJECT-001, SP-EX-TRADE-001 |
 | SP-S1-P05 | SP-EX-RETURN-001, SP-EX-TRADE-001, SP-EX-CONFLICT-001, SP-EX-TRAJECTORY-001 |
-| SP-S1-P06 | определяется после утверждения центральной иллюзии |
+| SP-S1-P06 | SP-EX-FOOD-001, SP-EX-ALCOHOL-001, SP-EX-PROJECT-001, SP-EX-TRADE-001, SP-EX-CONFLICT-001, SP-EX-RETURN-001, SP-EX-INEVITABLE-001 |
+| SP-S1-P07 | определяется после утверждения главной боли |
 
 ## Общие риски по параметрам
 
@@ -83,7 +87,8 @@ SP-S1-P01
 | SP-S1-P03 | SP-RISK-005, SP-RISK-007, SP-RISK-009, SP-RISK-010, SP-RISK-014 |
 | SP-S1-P04 | SP-RISK-006, SP-RISK-007, SP-RISK-014, SP-RISK-015 |
 | SP-S1-P05 | SP-RISK-002, SP-RISK-006, SP-RISK-007, SP-RISK-008, SP-RISK-016, SP-RISK-019 |
-| SP-S1-P06 | окончательный набор после утверждения |
+| SP-S1-P06 | SP-RISK-001, SP-RISK-002, SP-RISK-003, SP-RISK-004, SP-RISK-006, SP-RISK-007, SP-RISK-008, SP-RISK-014, SP-RISK-016, SP-RISK-019, SP-RISK-020 |
+| SP-S1-P07 | окончательный набор после утверждения |
 
 ## Сквозная визуальная модель SP-VM-01
 
@@ -104,13 +109,16 @@ SP-HCM-05
 
 + SP-S1-P05
 доступен не любой ход, а первый различимый и выполнимый ход
+
++ SP-S1-P06
+привычный маршрут переживается как единственно возможное продолжение
 ```
 
 Связанные элементы:
 
-- термины SP-TERM-CURRENT-POSITION, SP-TERM-FIELD-OF-MOVES, SP-TERM-AVAILABLE-MOVE, SP-TERM-TRAJECTORY-GRAPH, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-NEXT-POSITION;
-- пример SP-EX-TRAJECTORY-001;
-- граница SP-RISK-019;
+- термины SP-TERM-CURRENT-POSITION, SP-TERM-FIELD-OF-MOVES, SP-TERM-AVAILABLE-MOVE, SP-TERM-TRAJECTORY-GRAPH, SP-TERM-AUTOMATIC-CONTOUR, SP-TERM-NEXT-POSITION и SP-TERM-INEVITABLE-CONTINUATION;
+- примеры SP-EX-TRAJECTORY-001 и SP-EX-INEVITABLE-001;
+- границы SP-RISK-019 и SP-RISK-020;
 - доказательный статус SP-VM-01 в `EVIDENCE_MAP.md`.
 
 ## Навигация по слоям
@@ -132,9 +140,9 @@ SP-HCM-05
 3. связать новые термины;
 4. указать подходящие примеры;
 5. зафиксировать применимые риски;
-6. связать визуальную модель, если она добавлена;
+6. связать визуальную модель, если она добавлена или уточнена;
 7. не создавать связь с ещё не утверждённым выводом как с фактом.
 
 ## Текущая контрольная точка
 
-> SP-S1-P06 — главная иллюзия первой ступени.
+> SP-S1-P07 — главная боль первой ступени.
