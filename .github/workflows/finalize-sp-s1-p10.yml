@@ -38,6 +38,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md docs scripts 2>/dev/null || true
+          git add README.md docs
+          git add -u scripts 2>/dev/null || true
           git commit -m "docs: approve SP-S1-P10 and pause before SP-S1-P11"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
