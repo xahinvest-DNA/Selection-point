@@ -42,7 +42,20 @@ jobs:
           source = Path('.github/workflows/finalize-sp-s1-p09.yml').read_text(encoding='utf-8').splitlines()
           start = next(i for i, line in enumerate(source) if "python - <<'PY'" in line) + 1
           end = next(i for i in range(start, len(source)) if source[i].strip() == 'PY')
-          code = '\n'.join(line[10:] if line.startswith('          ') else line for line in source[start:end]) + '\n'
+          lines = [line[10:] if line.startswith('          ') else line for line in source[start:end]]
+
+          evidence_old = "| SP-VM-01 | граф траекторий выбора | утверждено как авторская визуальная модель | не является доказательством | проверить, не создаёт ли схема иллюзию равной доступности, полного контроля, обратимости и автоматического совпадения заявленной цели со значимым направлением; оценить понимание в пилоте |"
+          evidence_new = "| SP-S1-P09 | тело внутри автоматического контура | утверждено в проекте | требует обзора, экспертной проверки и пилота | сопоставить с исследованиями интероцепции, аллостаза, стрессовой физиологии, влияния сна и истощения на решения, регуляции голода и насыщения, привычек и подкрепления без объявления тождества; проверить риск диагностических выводов, гиперконтроля тела и смешения ощущения с командой |\\n" + evidence_old
+          replacement = "replace_once(evidence, " + repr(evidence_old) + ", " + repr(evidence_new) + ")"
+
+          corrected = []
+          for line in lines:
+              if line.startswith("regex_once(evidence, r'^\\| SP-S1-P09 \\|.*$'"):
+                  corrected.append(replacement)
+              else:
+                  corrected.append(line)
+
+          code = '\n'.join(corrected) + '\n'
           Path('/tmp/finalize_sp_s1_p09.py').write_text(code, encoding='utf-8')
           PY
 
