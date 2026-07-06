@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/tmp/finalize_sp_s1_p09.py", line 819, in <module>
+    regex_once(evidence, r'^\| SP-S1-P09 \|.*$', '| SP-S1-P09 | тело внутри автоматического контура | утверждено в проекте | требует обзора, экспертной проверки и пилота | сопоставить с исследованиями интероцепции, аллостаза, стрессовой физиологии, влияния сна и истощения на решения, регуляции голода и насыщения, привычек и подкрепления без объявления тождества; проверить риск диагностических выводов, гиперконтроля тела и смешения ощущения с командой |', flags=re.MULTILINE)
+  File "/tmp/finalize_sp_s1_p09.py", line 24, in regex_once
+    raise RuntimeError(f'Regex matched {count} times in {path}: {pattern[:140]!r}')
+RuntimeError: Regex matched 0 times in docs/FOUNDATION/LIBRARIES/EVIDENCE_MAP.md: '^\\| SP-S1-P09 \\|.*$'
