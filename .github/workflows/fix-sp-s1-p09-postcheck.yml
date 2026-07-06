@@ -1,0 +1,58 @@
+name: Fix SP-S1-P09 postcheck
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: startsWith(github.event.pull_request.head.ref, 'sp-s1-p09-finalize')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Apply consistency corrections
+        shell: bash
+        run: |
+          if [ ! -f docs/.sp-s1-p09-postcheck ]; then
+            echo "No postcheck marker."
+            exit 0
+          fi
+
+          python - <<'PY'
+          from pathlib import Path
+
+          protocol = Path('docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md')
+          text = protocol.read_text(encoding='utf-8')
+          text = text.replace('**Дата обновления:** 5 июля 2026 года', '**Дата обновления:** 6 июля 2026 года', 1)
+          protocol.write_text(text, encoding='utf-8')
+
+          state = Path('docs/FOUNDATION/CURRENT_PROJECT_STATE.md')
+          text = state.read_text(encoding='utf-8')
+          text = text.replace('- расхождение фактически формируемой траектории со значимым направлением SP-S1-P07.\n- реконструкцию', '- расхождение фактически формируемой траектории со значимым направлением SP-S1-P07;\n- реконструкцию', 1)
+          state.write_text(text, encoding='utf-8')
+
+          marker = Path('docs/.sp-s1-p09-postcheck')
+          marker.unlink()
+
+          assert '**Дата обновления:** 6 июля 2026 года' in protocol.read_text(encoding='utf-8')
+          assert 'направлением SP-S1-P07;\n- реконструкцию' in state.read_text(encoding='utf-8')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "docs: finalize SP-S1-P09 checkpoint consistency"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
