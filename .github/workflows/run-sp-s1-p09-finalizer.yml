@@ -31,6 +31,11 @@ jobs:
             exit 0
           fi
 
+          if [ -f docs/.sp-s1-p09-error.log ]; then
+            echo "Diagnostic log already committed."
+            exit 0
+          fi
+
           python - <<'PY'
           from pathlib import Path
 
@@ -41,7 +46,20 @@ jobs:
           Path('/tmp/finalize_sp_s1_p09.py').write_text(code, encoding='utf-8')
           PY
 
-          python /tmp/finalize_sp_s1_p09.py
+          set +e
+          python /tmp/finalize_sp_s1_p09.py > /tmp/finalize_sp_s1_p09.log 2>&1
+          status=$?
+          set -e
+
+          if [ "$status" -ne 0 ]; then
+            cp /tmp/finalize_sp_s1_p09.log docs/.sp-s1-p09-error.log
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/.sp-s1-p09-error.log
+            git commit -m "chore: record SP-S1-P09 finalization error"
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            exit "$status"
+          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
