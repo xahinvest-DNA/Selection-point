@@ -1,0 +1,50 @@
+name: Run SP-S1-P09 finalizer
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.event.pull_request.head.ref == 'sp-s1-p09-finalize'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Extract and run approved update
+        shell: bash
+        run: |
+          if [ -f docs/FOUNDATION/FIVE_STAGES_THEORY/09_STAGE_1_BODY_MANIFESTATIONS.md ]; then
+            echo "SP-S1-P09 documentation is already finalized."
+            exit 0
+          fi
+
+          python - <<'PY'
+          from pathlib import Path
+
+          source = Path('.github/workflows/finalize-sp-s1-p09.yml').read_text(encoding='utf-8').splitlines()
+          start = next(i for i, line in enumerate(source) if "python - <<'PY'" in line) + 1
+          end = next(i for i in range(start, len(source)) if source[i].strip() == 'PY')
+          code = '\n'.join(line[10:] if line.startswith('          ') else line for line in source[start:end]) + '\n'
+          Path('/tmp/finalize_sp_s1_p09.py').write_text(code, encoding='utf-8')
+          PY
+
+          python /tmp/finalize_sp_s1_p09.py
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md docs
+          git commit -m "docs: approve SP-S1-P09 and pause before SP-S1-P10"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
