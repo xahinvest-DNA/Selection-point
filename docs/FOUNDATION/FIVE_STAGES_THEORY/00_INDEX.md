@@ -2,7 +2,7 @@
 
 **Статус:** активная разработка  
 **Фаза:** 3 — точная архитектура пяти ступеней  
-**Дата обновления:** 5 июля 2026 года
+**Дата обновления:** 6 июля 2026 года
 
 Эта папка хранит полный утверждённый теоретический материал по тринадцати параметрам каждой из пяти ступеней Selection Point.
 
@@ -85,14 +85,14 @@
 | SP-S1-P07 | 7 | Главная боль | **утверждено** | [`07_STAGE_1_MAIN_PAIN.md`](07_STAGE_1_MAIN_PAIN.md) | [`../CANONICAL/02_STAGE_1_CANONICAL.md`](../CANONICAL/02_STAGE_1_CANONICAL.md) |
 | SP-S1-P08 | 8 | Следующий навык | **утверждено** | [`08_STAGE_1_NEXT_SKILL.md`](08_STAGE_1_NEXT_SKILL.md) | [`../CANONICAL/02_STAGE_1_CANONICAL.md`](../CANONICAL/02_STAGE_1_CANONICAL.md) |
 | SP-S1-P09 | 9 | Телесные проявления | **утверждено** | [`09_STAGE_1_BODY_MANIFESTATIONS.md`](09_STAGE_1_BODY_MANIFESTATIONS.md) | [`../CANONICAL/02_STAGE_1_CANONICAL.md`](../CANONICAL/02_STAGE_1_CANONICAL.md) |
-| SP-S1-P10 | 10 | Жизненные проявления | не открыто | — | — |
-| SP-S1-P11 | 11 | Соответствующие практики | не рассмотрено | — | — |
+| SP-S1-P10 | 10 | Жизненные проявления | **утверждено** | [`10_STAGE_1_LIFE_MANIFESTATIONS.md`](10_STAGE_1_LIFE_MANIFESTATIONS.md) | [`../CANONICAL/02_STAGE_1_CANONICAL.md`](../CANONICAL/02_STAGE_1_CANONICAL.md) |
+| SP-S1-P11 | 11 | Соответствующие практики | не открыто | — | — |
 | SP-S1-P12 | 12 | Критерии перехода | не рассмотрено | — | — |
 | SP-S1-P13 | 13 | Ловушка ступени | не рассмотрено | — | — |
 
 ## Сквозная визуальная модель
 
-Для SP-S1-P05–SP-S1-P09 используется утверждённая авторская модель Андрея:
+Для SP-S1-P05–SP-S1-P10 используется утверждённая авторская модель Андрея:
 
 - [`../VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`](../VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md);
 - [`../VISUAL_MODELS/assets/choice_trajectory_graph.svg`](../VISUAL_MODELS/assets/choice_trajectory_graph.svg).
@@ -123,6 +123,6 @@
 
 # Текущая контрольная точка
 
-> SP-S1-P09 «Тело внутри автоматического контура» утверждён и зафиксирован.
+> SP-S1-P10 «Текущая жизнь как позиция траектории» утверждён и зафиксирован.
 
-SP-S1-P10 не открыт. Работа остановлена до отдельного указания Андрея.
+SP-S1-P11 не открыт. Работа остановлена до отдельного указания Андрея.
