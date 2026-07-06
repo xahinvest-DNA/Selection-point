@@ -22,20 +22,20 @@
 
 Для каждой ступени последовательно определяются тринадцать параметров: состояние, восприятие реальности, восприятие себя, драйверы решений, точка выбора, главная иллюзия, главная боль, следующий навык, телесные и жизненные проявления, практики, критерии перехода и ловушка.
 
-Статус: **активная фаза; текущий цикл завершён на SP-S1-P08**.
+Статус: **активная фаза; текущий цикл завершён на SP-S1-P09**.
 
 Текущая контрольная точка:
 
 - Ступень 1 «Жизнь внутри автоматизма»;
-- SP-S1-P01–SP-S1-P08 утверждены;
-- SP-S1-P08 — «Реконструкция конкретного автоматического эпизода»;
-- SP-VM-01 связана с SP-S1-P05–SP-S1-P08;
-- SP-S1-P09 не открыт.
+- SP-S1-P01–SP-S1-P09 утверждены;
+- SP-S1-P09 — «Тело внутри автоматического контура»;
+- SP-VM-01 связана с SP-S1-P05–SP-S1-P09;
+- SP-S1-P10 не открыт.
 
 Основные документы:
 
 - `docs/FOUNDATION/FIVE_STAGES_THEORY/00_INDEX.md`;
-- `docs/FOUNDATION/FIVE_STAGES_THEORY/08_STAGE_1_NEXT_SKILL.md`;
+- `docs/FOUNDATION/FIVE_STAGES_THEORY/09_STAGE_1_BODY_MANIFESTATIONS.md`;
 - `docs/FOUNDATION/CANONICAL/02_STAGE_1_CANONICAL.md`;
 - `docs/FOUNDATION/VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
 - `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`.
