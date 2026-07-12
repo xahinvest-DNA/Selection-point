@@ -39,9 +39,10 @@
 8. `06_STAGE_2_P01_CANONICAL.md` — карточка SP-S2-P01.
 9. `07_STAGE_2_P02_CANONICAL.md` — карточка SP-S2-P02.
 10. `08_STAGE_2_P03_CANONICAL.md` — карточка SP-S2-P03.
-11. `09_STAGE_2_P04_CANONICAL.md` — карточка SP-S2-P04.
-12. `PARAMETER_CARD_TEMPLATE.md` — шаблон следующих параметров.
-13. `DELIVERY_LAYER_RULES.md` — правила будущей сборки материалов доставки.
+11. `09_STAGE_2_P04_CANONICAL.md` — карточка SP-S2-P04 и дополнение о борьбе и компенсаторном Пространстве 2.
+12. `10_STAGE_2_P05_CANONICAL.md` — карточка SP-S2-P05.
+13. `PARAMETER_CARD_TEMPLATE.md` — шаблон следующих параметров.
+14. `DELIVERY_LAYER_RULES.md` — правила будущей сборки материалов доставки.
 
 ## Центральное сквозное положение
 
@@ -73,10 +74,14 @@ SP-HCM-09:
 - `07_STAGE_2_P02_CANONICAL.md`;
 - `08_STAGE_2_P03_CANONICAL.md`;
 - `09_STAGE_2_P04_CANONICAL.md`;
+- `10_STAGE_2_P05_CANONICAL.md`;
 - `../FIVE_STAGES_THEORY/14_STAGE_2_STATE.md`;
 - `../FIVE_STAGES_THEORY/15_STAGE_2_REALITY_PERCEPTION.md`;
 - `../FIVE_STAGES_THEORY/16_STAGE_2_SELF_PERCEPTION.md`;
 - `../FIVE_STAGES_THEORY/17_STAGE_2_DECISION_DRIVERS.md`;
+- `../FIVE_STAGES_THEORY/17A_STAGE_2_DECISION_DRIVERS_FIGHTING_ADDENDUM.md`;
+- `../FIVE_STAGES_THEORY/18_STAGE_2_AVAILABLE_POINT_OF_CHOICE.md`;
+- `../VISUAL_MODELS/02_SPACE_1_SPACE_2_NEXT_POSITION.md`;
 - `../CURRENT_PROJECT_STATE.md`.
 
 Исторические строки внутри ранних карточек не являются действующей контрольной точкой, если они заменены более поздним явным решением Андрея и актуальными документами.
@@ -94,7 +99,9 @@ SP-HCM-09:
 
 - `docs/FOUNDATION/VISUAL_MODELS/00_INDEX.md`;
 - `docs/FOUNDATION/VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
-- `docs/FOUNDATION/VISUAL_MODELS/assets/choice_trajectory_graph.svg`.
+- `docs/FOUNDATION/VISUAL_MODELS/02_SPACE_1_SPACE_2_NEXT_POSITION.md`;
+- `docs/FOUNDATION/VISUAL_MODELS/assets/choice_trajectory_graph.svg`;
+- `docs/FOUNDATION/VISUAL_MODELS/assets/space_1_space_2_next_position.svg`.
 
 ## Правило приоритета
 
@@ -106,15 +113,12 @@ SP-HCM-09:
 
 - SP-HCM-01–SP-HCM-09 канонизированы;
 - SP-S1-P01–SP-S1-P13 канонизированы;
-- SP-S2-P01 канонизирован в `06_STAGE_2_P01_CANONICAL.md`;
-- SP-S2-P02 канонизирован в `07_STAGE_2_P02_CANONICAL.md`;
-- SP-S2-P03 канонизирован в `08_STAGE_2_P03_CANONICAL.md`;
-- SP-S2-P04 канонизирован в `09_STAGE_2_P04_CANONICAL.md`;
-- SP-VM-01 связан с SP-HCM-09 и SP-S2-P01–SP-S2-P04 без создания новой визуальной модели;
+- SP-S2-P01–SP-S2-P05 канонизированы;
+- SP-VM-01 и SP-VM-02 утверждены и связаны с каноническим слоем;
 - первая ступень содержательно завершена;
-- во второй ступени утверждены первые четыре параметра;
-- SP-S2-P05 не открыт.
+- во второй ступени утверждены первые пять параметров;
+- SP-S2-P06 не открыт.
 
 ## Текущая контрольная точка
 
-> Утверждены SP-HCM-01–SP-HCM-09. Ступень 1 утверждена полностью. В Ступени 2 утверждены SP-S2-P01–SP-S2-P04. SP-S2-P05 не открыт.
+> Утверждены SP-HCM-01–SP-HCM-09. Ступень 1 утверждена полностью. В Ступени 2 утверждены SP-S2-P01–SP-S2-P05. SP-S2-P06 не открыт. Утверждены SP-VM-01 и SP-VM-02.
