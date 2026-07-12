@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Пространство 1, Пространство 2 и фактическая следующая позиция</title>
+  <desc id="desc">Схема различает текущий факт, представленное будущее, причину его создания, выбранный ход и фактическую следующую позицию.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#333"/>
+    </marker>
+    <style>
+      .box { fill: #fff; stroke: #222; stroke-width: 3; rx: 20; }
+      .soft { fill: #f5f5f5; stroke: #555; stroke-width: 2.5; rx: 18; }
+      .line { stroke: #333; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #555; stroke-width: 2.5; fill: none; stroke-dasharray: 10 8; marker-end: url(#arrow); }
+      .title { font-family: Arial, sans-serif; font-size: 29px; font-weight: 700; fill: #111; text-anchor: middle; }
+      .text { font-family: Arial, sans-serif; font-size: 22px; fill: #222; text-anchor: middle; }
+      .small { font-family: Arial, sans-serif; font-size: 19px; fill: #333; text-anchor: middle; }
+      .caption { font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #111; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text x="700" y="48" class="title">SP-VM-02 — Два пространства и фактическая следующая позиция</text>
+
+  <rect x="70" y="105" width="360" height="190" class="box"/>
+  <text x="250" y="150" class="title">Пространство 1</text>
+  <text x="250" y="190" class="text">то, что уже существует</text>
+  <text x="250" y="224" class="small">факты · состояние · результат</text>
+  <text x="250" y="255" class="small">ресурсы · ограничения · последствия</text>
+
+  <rect x="970" y="105" width="360" height="190" class="box"/>
+  <text x="1150" y="150" class="title">Пространство 2</text>
+  <text x="1150" y="190" class="text">то, чего сейчас ещё нет</text>
+  <text x="1150" y="224" class="small">цель · прогноз · ожидание</text>
+  <text x="1150" y="255" class="small">возможное или желаемое будущее</text>
+
+  <rect x="505" y="120" width="390" height="160" class="soft"/>
+  <text x="700" y="163" class="caption">Причина создания</text>
+  <text x="700" y="202" class="small">будущее должно отменить настоящее</text>
+  <text x="700" y="233" class="small">или задаёт выбранное направление?</text>
+
+  <path d="M430 200 L505 200" class="line"/>
+  <path d="M970 200 L895 200" class="line"/>
+
+  <rect x="505" y="360" width="390" height="150" class="box"/>
+  <text x="700" y="405" class="title">Доступный ход</text>
+  <text x="700" y="445" class="small">действие или бездействие</text>
+  <text x="700" y="476" class="small">из фактической текущей позиции</text>
+
+  <path d="M700 280 L700 360" class="line"/>
+
+  <rect x="505" y="605" width="390" height="165" class="box"/>
+  <text x="700" y="650" class="title">Следующая позиция</text>
+  <text x="700" y="690" class="small">фактически возникшая новая реальность</text>
+  <text x="700" y="721" class="small">после хода, ответа среды и последствий</text>
+
+  <path d="M700 510 L700 605" class="line"/>
+
+  <path d="M1150 295 C1150 430 960 500 840 605" class="dash"/>
+  <text x="1080" y="470" class="small">направляет,</text>
+  <text x="1080" y="496" class="small">но не гарантирует</text>
+
+  <path d="M560 690 C350 690 245 530 245 295" class="dash"/>
+  <text x="305" y="590" class="small">обратная связь</text>
+  <text x="305" y="617" class="small">становится новым фактом</text>
+
+  <text x="700" y="825" class="caption">Пространство 1 — исходная позиция. Пространство 2 — возможное направление.</text>
+</svg>
