@@ -2,7 +2,7 @@
 
 **Статус:** действующий производный слой утверждённой архитектуры  
 **Дата создания:** 4 июля 2026 года  
-**Дата обновления:** 13 июля 2026 года
+**Дата обновления:** 19 июля 2026 года
 
 Канонический слой хранит компактную структурированную форму утверждённых положений. Он создаётся из полного теоретического слоя и используется для навигации, проверки целостности и проектирования следующих фаз.
 
@@ -31,7 +31,7 @@
 
 1. `00_CANONICAL_RULES.md` — правила канонизации и правило дельты.
 2. `01_HUMAN_CHANGE_MODEL_CANONICAL.md` — SP-HCM-01–SP-HCM-08.
-3. `01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md` — SP-HCM-09, центральное различение создания и контроля.
+3. `01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md` — SP-HCM-09, различение создания и контроля.
 4. `02_STAGE_1_CANONICAL.md` — карточки SP-S1-P01–SP-S1-P10.
 5. `03_STAGE_1_P11_CANONICAL.md` — карточка SP-S1-P11.
 6. `04_STAGE_1_P12_CANONICAL.md` — карточка SP-S1-P12.
@@ -41,10 +41,11 @@
 10. `08_STAGE_2_P03_CANONICAL.md` — карточка SP-S2-P03.
 11. `09_STAGE_2_P04_CANONICAL.md` — карточка SP-S2-P04 и дополнение о борьбе и компенсаторном Пространстве 2.
 12. `10_STAGE_2_P05_CANONICAL.md` — карточка повторно обсуждённого и явно утверждённого SP-S2-P05.
-13. `11_STAGE_2_P06_CANONICAL.md` — карточка SP-S2-P06 с актуальной связью с повторно утверждённым P05.
+13. `11_STAGE_2_P06_CANONICAL.md` — карточка SP-S2-P06.
 14. `12_STAGE_2_P07_CANONICAL.md` — карточка SP-S2-P07.
-15. `PARAMETER_CARD_TEMPLATE.md` — шаблон следующих параметров.
-16. `DELIVERY_LAYER_RULES.md` — правила будущей сборки материалов доставки.
+15. `13_STAGE_2_P08_CANONICAL.md` — карточка SP-S2-P08.
+16. `PARAMETER_CARD_TEMPLATE.md` — шаблон следующих параметров.
+17. `DELIVERY_LAYER_RULES.md` — правила будущей сборки материалов доставки.
 
 ## Центральное сквозное положение
 
@@ -70,7 +71,7 @@ SP-HCM-09:
 
 ## Навигация по второй ступени
 
-Актуальная последовательность находится в:
+Канонические карточки:
 
 - `06_STAGE_2_P01_CANONICAL.md`;
 - `07_STAGE_2_P02_CANONICAL.md`;
@@ -79,6 +80,10 @@ SP-HCM-09:
 - `10_STAGE_2_P05_CANONICAL.md`;
 - `11_STAGE_2_P06_CANONICAL.md`;
 - `12_STAGE_2_P07_CANONICAL.md`;
+- `13_STAGE_2_P08_CANONICAL.md`.
+
+Полные источники:
+
 - `../FIVE_STAGES_THEORY/14_STAGE_2_STATE.md`;
 - `../FIVE_STAGES_THEORY/15_STAGE_2_REALITY_PERCEPTION.md`;
 - `../FIVE_STAGES_THEORY/16_STAGE_2_SELF_PERCEPTION.md`;
@@ -88,13 +93,11 @@ SP-HCM-09:
 - `../FIVE_STAGES_THEORY/19_STAGE_2_MAIN_ILLUSION.md`;
 - `../FIVE_STAGES_THEORY/19A_STAGE_2_MAIN_ILLUSION_P05_RELATION_ADDENDUM.md`;
 - `../FIVE_STAGES_THEORY/20_STAGE_2_MAIN_PAIN.md`;
-- `../VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
-- `../VISUAL_MODELS/02_SPACE_1_SPACE_2_NEXT_POSITION.md`;
-- `../CURRENT_PROJECT_STATE.md`.
+- `../FIVE_STAGES_THEORY/21_STAGE_2_NEXT_SKILL.md`.
 
 Исторические строки внутри ранних карточек или полных источников не являются действующей контрольной точкой, если они заменены более поздним явным решением Андрея, актуальной канонической карточкой или отдельным утверждённым дополнением.
 
-## Актуальная связь SP-S2-P04–SP-S2-P07
+## Актуальная связь SP-S2-P04–SP-S2-P08
 
 ```text
 SP-S2-P04:
@@ -110,31 +113,45 @@ SP-S2-P04:
 ошибочно принимается за выбранное направление
 
 → SP-S2-P07:
-возврат после понимания и попытки выхода
-ошибочно принимается за доказательство
-бесполезности понимания и невозможности свободы
+возврат после попытки иного продолжения
+переживается как доказательство невозможности свободы
+
+→ SP-S2-P08:
+фактическая следующая позиция используется как обратная связь;
+различается изменившееся и сохранившееся,
+после чего корректируется следующий доступный ход
+```
+
+## Центральные формулы SP-S2-P08
+
+> **Возврат — не приговор, а данные о том, что ещё организует мой выбор.**
+
+> **Фактическая следующая позиция показывает не то, способен ли человек измениться вообще, а то, что уже изменилось и что пока продолжает управлять следующим циклом.**
+
+```text
+замкнутый сценарный цикл
+↓
+корректируемый цикл обучения
 ```
 
 ## Связанные библиотеки
 
-- `docs/FOUNDATION/LIBRARIES/TERMS_REGISTRY.md`;
-- `docs/FOUNDATION/LIBRARIES/CLAIMS_REGISTRY.md`;
-- `docs/FOUNDATION/LIBRARIES/EXAMPLE_LIBRARY.md`;
-- `docs/FOUNDATION/LIBRARIES/RISKS_AND_BOUNDARIES.md`;
-- `docs/FOUNDATION/LIBRARIES/EVIDENCE_MAP.md`;
-- `docs/FOUNDATION/LIBRARIES/CROSS_REFERENCE_MAP.md`.
+- `../LIBRARIES/TERMS_REGISTRY.md`;
+- `../LIBRARIES/CLAIMS_REGISTRY.md`;
+- `../LIBRARIES/EXAMPLE_LIBRARY.md`;
+- `../LIBRARIES/RISKS_AND_BOUNDARIES.md`;
+- `../LIBRARIES/EVIDENCE_MAP.md`;
+- `../LIBRARIES/CROSS_REFERENCE_MAP.md`.
 
 ## Связанные визуальные модели
 
-- `docs/FOUNDATION/VISUAL_MODELS/00_INDEX.md`;
-- `docs/FOUNDATION/VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
-- `docs/FOUNDATION/VISUAL_MODELS/02_SPACE_1_SPACE_2_NEXT_POSITION.md`;
-- `docs/FOUNDATION/VISUAL_MODELS/assets/choice_trajectory_graph.svg`;
-- `docs/FOUNDATION/VISUAL_MODELS/assets/space_1_space_2_next_position.svg`.
+- `../VISUAL_MODELS/00_INDEX.md`;
+- `../VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
+- `../VISUAL_MODELS/02_SPACE_1_SPACE_2_NEXT_POSITION.md`;
+- `../VISUAL_MODELS/assets/choice_trajectory_graph.svg`;
+- `../VISUAL_MODELS/assets/space_1_space_2_next_position.svg`.
 
-SP-S2-P05 допускает, что самостоятельное Пространство 2 ещё не сформировано.
-
-SP-S2-P06 и SP-S2-P07 используют SP-VM-01 и SP-VM-02 без создания новых визуальных моделей.
+SP-S2-P08 использует SP-VM-01 и SP-VM-02 без создания новой визуальной модели.
 
 ## Правило приоритета
 
@@ -146,14 +163,13 @@ SP-S2-P06 и SP-S2-P07 используют SP-VM-01 и SP-VM-02 без созд
 
 - SP-HCM-01–SP-HCM-09 канонизированы;
 - SP-S1-P01–SP-S1-P13 канонизированы;
-- SP-S2-P01–SP-S2-P07 канонизированы;
+- SP-S2-P01–SP-S2-P08 канонизированы;
 - SP-S2-P05 повторно обсуждён и утверждён явно;
-- связь SP-S2-P06 с актуальной редакцией P05 синхронизирована;
 - SP-VM-01 и SP-VM-02 утверждены и связаны с каноническим слоем;
 - первая ступень содержательно завершена;
-- во второй ступени утверждены первые семь параметров;
-- SP-S2-P08 не открыт.
+- во второй ступени утверждены первые восемь параметров;
+- SP-S2-P09 не открыт.
 
 ## Текущая контрольная точка
 
-> Утверждены SP-HCM-01–SP-HCM-09. Ступень 1 утверждена полностью. В Ступени 2 утверждены SP-S2-P01–SP-S2-P07. SP-S2-P05 повторно обсуждён и утверждён явно. SP-S2-P08 не открыт. Утверждены SP-VM-01 и SP-VM-02.
+> Утверждены SP-HCM-01–SP-HCM-09. Ступень 1 утверждена полностью. В Ступени 2 утверждены SP-S2-P01–SP-S2-P08. SP-S2-P05 повторно обсуждён и утверждён явно. Утверждены SP-VM-01 и SP-VM-02. SP-S2-P09 не открыт.
