@@ -1,0 +1,48 @@
+schema_version: 1
+project: Selection Point
+updated_at: 2026-08-28
+
+status:
+  active_phase: 3
+  active_phase_name: "Точная архитектура пяти ступеней"
+  active_stage: 4
+  active_stage_name: "Сохранение выбора под напряжением"
+  last_approved: SP-S4-P02
+  next_candidate: SP-S4-P03
+  next_status: unopened
+  explicit_pause: true
+
+completed:
+  human_change_model: "SP-HCM-01–SP-HCM-09"
+  stage_1: "SP-S1-P01–SP-S1-P13"
+  stage_2: "SP-S2-P01–SP-S2-P13"
+  stage_3: "SP-S3-P01–SP-S3-P13"
+  stage_4: "SP-S4-P01–SP-S4-P02"
+  visual_models: "SP-VM-01–SP-VM-02"
+
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_GOVERNANCE_REFACTOR.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P02.md"
+
+sources_of_truth:
+  explicit_owner_decision_priority: 1
+  project_status: "docs/FOUNDATION/PROJECT_STATE.yaml"
+  process_rules: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md"
+  full_meaning: "docs/FOUNDATION/FIVE_STAGES_THEORY/"
+  canonical_architecture: "docs/FOUNDATION/CANONICAL/"
+  reusable_libraries: "docs/FOUNDATION/LIBRARIES/"
+  current_human_readable_state: "docs/FOUNDATION/CURRENT_PROJECT_STATE.md"
+
+governance:
+  protocol_version: "4.0"
+  continuous_reality_check: true
+  falsification_pass_required_before_new_architecture_approval: true
+  parameter_delta_required: true
+  consolidation_policy: "P05, P10, P13, stage boundary, or explicit owner decision"
+  parameter_matrix_revisable: true
+  derived_status_documents_are_non_authoritative: true
+
+constraints:
+  do_not_open_next_parameter: true
+  do_not_change_approved_meaning_without_explicit_owner_approval: true
+  do_not_treat_internal_approval_as_external_evidence: true
+  do_not_treat_five_by_thirteen_matrix_as_law_of_reality: true
