@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 project: Selection Point
 updated_at: 2026-08-28
 
@@ -8,9 +8,12 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P02
-  next_candidate: SP-S4-P03
-  next_status: unopened
-  explicit_pause: true
+  active_parameter: SP-S4-P03
+  active_parameter_name: "Способ восприятия себя"
+  active_parameter_status: discussion
+  next_candidate: SP-S4-P04
+  next_status: locked_until_active_parameter_decision
+  explicit_pause: false
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -22,6 +25,17 @@ completed:
 
 active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_GOVERNANCE_REFACTOR.md"
 previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P02.md"
+
+active_sources:
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/08_2026-08-28_SELF_IMAGE_SELF_AS_SYSTEM.md"
+  prior_self_perception:
+    - "SP-S1-P03"
+    - "SP-S2-P03"
+    - "SP-S3-P03"
+  adjacent_stage_4:
+    - "SP-S4-P01"
+    - "SP-S4-P02"
+  reality_check: "RC-007"
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -42,7 +56,8 @@ governance:
   derived_status_documents_are_non_authoritative: true
 
 constraints:
-  do_not_open_next_parameter: true
+  do_not_open_following_parameter: true
+  do_not_create_canonical_for_active_parameter_before_explicit_approval: true
   do_not_change_approved_meaning_without_explicit_owner_approval: true
   do_not_treat_internal_approval_as_external_evidence: true
   do_not_treat_five_by_thirteen_matrix_as_law_of_reality: true

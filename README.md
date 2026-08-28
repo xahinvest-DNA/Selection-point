@@ -10,27 +10,22 @@
 
 - активная фаза: **Фаза 3 — точная архитектура пяти ступеней**;
 - SP-HCM-01–SP-HCM-09 утверждены;
-- Ступень 1: SP-S1-P01–SP-S1-P13 утверждены;
-- Ступень 2: SP-S2-P01–SP-S2-P13 утверждены;
-- Ступень 3: SP-S3-P01–SP-S3-P13 утверждены;
+- Ступени 1–3 завершены полностью;
 - Ступень 4: SP-S4-P01–SP-S4-P02 утверждены;
-- SP-S4-P03 не открыт;
-- действует явная пауза после P02.
+- **SP-S4-P03 «Способ восприятия себя» открыт и находится на обсуждении**;
+- SP-S4-P04 заблокирован до решения по P03.
 
 ## Обязательные точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
-3. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_GOVERNANCE_REFACTOR.md`;
-4. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
-6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
-7. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
+3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
+4. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
+5. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
+6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
+7. `docs/FOUNDATION/SOURCE_MATERIALS/08_2026-08-28_SELF_IMAGE_SELF_AS_SYSTEM.md`;
 8. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
-9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
-10. `docs/FOUNDATION/CANONICAL/32_STAGE_4_P01_CANONICAL.md`;
-11. `docs/FOUNDATION/CANONICAL/33_STAGE_4_P02_CANONICAL.md`;
-12. `docs/FOUNDATION/LIBRARIES/S4_P02_REALITY_PERCEPTION_DELTA.md`.
+9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`.
 
 ## Центральная идея
 
@@ -79,18 +74,23 @@
 
 > **Доверие опыту — не цель. Цель — сохранить доверие реальности даже тогда, когда опыт требует быстрого ответа.**
 
+### SP-S4-P03 — способ восприятия себя
+
+**Статус: на обсуждении; канон не создан.**
+
+Параметры P03 предыдущих ступеней уже установили переход от фиксированного образа себя к корректируемой модели. Поэтому новый вопрос четвёртой ступени:
+
+> **Сохраняется ли под нагрузкой практическая доступность уже сформированного различения между человеком и его образом себя?**
+
+Рабочий источник: `docs/FOUNDATION/SOURCE_MATERIALS/08_2026-08-28_SELF_IMAGE_SELF_AS_SYSTEM.md`.
+
+Reality Check: `RC-007`.
+
 ## Сквозной предохранитель
 
 > **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
 
-С 28 августа 2026 года этот принцип применяется и к разработке самого Selection Point через:
-
-- Continuous Reality Check;
-- обязательный Red Team / Falsification pass перед утверждением новой архитектуры;
-- явные условия опровержения;
-- внешний evidence review;
-- проверку наблюдаемости и различимости;
-- право пересмотреть саму матрицу 5 × 13.
+С 28 августа 2026 года этот принцип применяется и к разработке самого Selection Point через Continuous Reality Check, Red Team / Falsification, условия опровержения и право пересмотреть саму матрицу 5 × 13.
 
 ## Управление проектом
 
@@ -105,16 +105,12 @@ FIVE_STAGES_THEORY + CANONICAL
 → утверждённый смысл
 
 parameter delta
-→ локальное изменение библиотек
+→ локальное изменение библиотек после утверждения
 
 checkpoint + git history
 → история решений
 ```
 
-Большие библиотечные реестры консолидируются планово, а не переписываются после каждого параметра.
-
 ## Текущая остановка
 
-**SP-S4-P02 утверждён. SP-S4-P03 не открыт.**
-
-Явная пауза сохранена. Governance-refactor не открывает следующий параметр и не меняет утверждённый смысл SP-HCM, Ступеней 1–3 или SP-S4-P01–P02.
+**SP-S4-P03 открыт и находится на обсуждении. SP-S4-P04 не открыт.**
