@@ -11,24 +11,24 @@
 - активная фаза: **Фаза 3 — точная архитектура пяти ступеней**;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены полностью;
-- Ступень 4: **SP-S4-P01–SP-S4-P03 утверждены**;
-- **SP-S4-P04 «Что управляет решениями» открыт и находится на обсуждении**;
-- SP-S4-P05 заблокирован до решения по P04.
+- Ступень 4: **SP-S4-P01–SP-S4-P04 утверждены**;
+- SP-S4-P05 «Доступная точка выбора» не открыт.
 
 ## Обязательные точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P03.md`;
+4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P04.md`;
 5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
 6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
 7. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
-8. `docs/FOUNDATION/SOURCE_MATERIALS/09_2026-08-28_WILLIAMS_MILLMAN_FRITZ_P04_EXPERIMENT.md`;
-9. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
-10. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
-11. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
-12. `docs/FOUNDATION/CANONICAL/34_STAGE_4_P03_CANONICAL.md`.
+8. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
+9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
+10. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
+11. `docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md`;
+12. `docs/FOUNDATION/CANONICAL/35_STAGE_4_P04_CANONICAL.md`;
+13. `docs/FOUNDATION/LIBRARIES/S4_P04_DECISION_DRIVERS_DELTA.md`.
 
 ## Центральная идея
 
@@ -64,18 +64,9 @@
 
 > **Под нагрузкой проявляется не только то, что я знаю, — проявляется то, что во мне действительно натренировано.**
 
-> **Выбор сформирован, но его доступность зависит от нагрузки.**
-
 ### SP-S4-P02 — способ восприятия реальности
 
 > **Под нагрузкой особенно важно не только что я вижу, но и что сейчас определяет, чему я придаю значение.**
-
-```text
-функциональное сужение
-≠ искажённое сужение
-```
-
-> **Доверие опыту — не цель. Цель — сохранить доверие реальности даже тогда, когда опыт требует быстрого ответа.**
 
 ### SP-S4-P03 — способ восприятия себя
 
@@ -83,40 +74,27 @@
 
 > **Мне не нужно сначала решить, кто я в этой ситуации, чтобы решить, что делать дальше.**
 
-```text
-S3-P03:
-образ себя = корректируемая модель
-
-S4-P03:
-под нагрузкой сохраняется практическая доступность
-этого различения
-```
-
-Reality Check RC-007 сохранил самостоятельность P03 при явном falsifier и статусе `pilot-observability-pending`.
-
 ### SP-S4-P04 — что управляет решениями
 
-**Статус: на обсуждении; канон не создан.**
+> **Под нагрузкой важна не неизменность задачи, а сохранение её осознанного места в иерархии решений.**
 
-Рабочий эксперимент Вильямс / Миллмэн / Фриц сохранён как SP-SRC-009.
+> **Выбранная задача определяет не конкретный ход, а принцип организации ходов.**
 
-Предварительная дельта:
-
-> **Под нагрузкой выбранная внутренняя задача сохраняет организующий приоритет не как жёсткий приказ, а как направление, постоянно соотносимое с фактической текущей позицией.**
-
-Ключевая проверка RC-008:
+> **Оперативная задача может получить право на следующий ход, не получая автоматически права изменить направление.**
 
 ```text
+организующий приоритет
+≠ оперативный приоритет
+
 реальность изменила основание решения
-≠
-состояние вытеснило выбранную задачу
+≠ состояние вытеснило выбранную задачу
 ```
+
+Reality Check RC-008 сохраняет falsifier и статус `pilot-observability-pending`.
 
 ## Сквозной предохранитель
 
 > **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
-
-С 28 августа 2026 года этот принцип применяется и к разработке самого Selection Point через Continuous Reality Check, Red Team / Falsification, условия опровержения и право пересмотреть саму матрицу 5 × 13.
 
 ## Управление проектом
 
@@ -131,7 +109,7 @@ FIVE_STAGES_THEORY + CANONICAL
 → утверждённый смысл
 
 parameter delta
-→ локальное изменение библиотек после утверждения
+→ локальное изменение библиотек
 
 checkpoint + git history
 → история решений
@@ -139,4 +117,4 @@ checkpoint + git history
 
 ## Текущая остановка
 
-**SP-S4-P04 открыт и находится на обсуждении. SP-S4-P05 не открыт.**
+**SP-S4-P04 утверждён. SP-S4-P05 не открыт.**
