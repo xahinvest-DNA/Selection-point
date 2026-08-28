@@ -11,21 +11,23 @@
 - активная фаза: **Фаза 3 — точная архитектура пяти ступеней**;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены полностью;
-- Ступень 4: SP-S4-P01–SP-S4-P02 утверждены;
-- **SP-S4-P03 «Способ восприятия себя» открыт и находится на обсуждении**;
-- SP-S4-P04 заблокирован до решения по P03.
+- Ступень 4: **SP-S4-P01–SP-S4-P03 утверждены**;
+- SP-S4-P04 «Что управляет решениями» не открыт.
 
 ## Обязательные точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
-5. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
-6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
-7. `docs/FOUNDATION/SOURCE_MATERIALS/08_2026-08-28_SELF_IMAGE_SELF_AS_SYSTEM.md`;
+4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P03.md`;
+5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
+6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
+7. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
 8. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
-9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`.
+9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
+10. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
+11. `docs/FOUNDATION/CANONICAL/34_STAGE_4_P03_CANONICAL.md`;
+12. `docs/FOUNDATION/LIBRARIES/S4_P03_SELF_PERCEPTION_DELTA.md`.
 
 ## Центральная идея
 
@@ -76,15 +78,20 @@
 
 ### SP-S4-P03 — способ восприятия себя
 
-**Статус: на обсуждении; канон не создан.**
+> **То, что проявилось во мне под нагрузкой, — реальные данные обо мне, но не окончательный ответ на вопрос, кто я.**
 
-Параметры P03 предыдущих ступеней уже установили переход от фиксированного образа себя к корректируемой модели. Поэтому новый вопрос четвёртой ступени:
+> **Мне не нужно сначала решить, кто я в этой ситуации, чтобы решить, что делать дальше.**
 
-> **Сохраняется ли под нагрузкой практическая доступность уже сформированного различения между человеком и его образом себя?**
+```text
+S3-P03:
+образ себя = корректируемая модель
 
-Рабочий источник: `docs/FOUNDATION/SOURCE_MATERIALS/08_2026-08-28_SELF_IMAGE_SELF_AS_SYSTEM.md`.
+S4-P03:
+под нагрузкой сохраняется практическая доступность
+этого различения
+```
 
-Reality Check: `RC-007`.
+Reality Check RC-007 сохранил самостоятельность P03 при явном falsifier и статусе `pilot-observability-pending`.
 
 ## Сквозной предохранитель
 
@@ -105,7 +112,7 @@ FIVE_STAGES_THEORY + CANONICAL
 → утверждённый смысл
 
 parameter delta
-→ локальное изменение библиотек после утверждения
+→ локальное изменение библиотек
 
 checkpoint + git history
 → история решений
@@ -113,4 +120,4 @@ checkpoint + git history
 
 ## Текущая остановка
 
-**SP-S4-P03 открыт и находится на обсуждении. SP-S4-P04 не открыт.**
+**SP-S4-P03 утверждён. SP-S4-P04 не открыт.**
