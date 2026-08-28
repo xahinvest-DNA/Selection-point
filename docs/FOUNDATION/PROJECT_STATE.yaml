@@ -7,12 +7,12 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P03
-  active_parameter: SP-S4-P04
-  active_parameter_name: "Что управляет решениями"
-  active_parameter_status: discussion
+  last_approved: SP-S4-P04
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P05
-  next_status: locked_until_active_parameter_decision
+  next_status: unopened
   explicit_pause: false
 
 completed:
@@ -20,22 +20,17 @@ completed:
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P03"
+  stage_4: "SP-S4-P01–SP-S4-P04"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P03.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P02.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P04.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P03.md"
 
 active_sources:
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md"
+  canonical: "docs/FOUNDATION/CANONICAL/35_STAGE_4_P04_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P04_DECISION_DRIVERS_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/09_2026-08-28_WILLIAMS_MILLMAN_FRITZ_P04_EXPERIMENT.md"
-  prior_decision_drivers:
-    - "SP-S1-P04"
-    - "SP-S2-P04"
-    - "SP-S3-P04"
-  adjacent_stage_4:
-    - "SP-S4-P01"
-    - "SP-S4-P02"
-    - "SP-S4-P03"
   reality_check: "RC-008"
 
 sources_of_truth:
@@ -58,7 +53,6 @@ governance:
 
 constraints:
   do_not_open_following_parameter: true
-  do_not_create_canonical_for_active_parameter_before_explicit_approval: true
   do_not_change_approved_meaning_without_explicit_owner_approval: true
   do_not_treat_internal_approval_as_external_evidence: true
   do_not_treat_five_by_thirteen_matrix_as_law_of_reality: true
