@@ -12,7 +12,8 @@
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены полностью;
 - Ступень 4: **SP-S4-P01–SP-S4-P03 утверждены**;
-- SP-S4-P04 «Что управляет решениями» не открыт.
+- **SP-S4-P04 «Что управляет решениями» открыт и находится на обсуждении**;
+- SP-S4-P05 заблокирован до решения по P04.
 
 ## Обязательные точки входа
 
@@ -23,11 +24,11 @@
 5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
 6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
 7. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
-8. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
-9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
-10. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
-11. `docs/FOUNDATION/CANONICAL/34_STAGE_4_P03_CANONICAL.md`;
-12. `docs/FOUNDATION/LIBRARIES/S4_P03_SELF_PERCEPTION_DELTA.md`.
+8. `docs/FOUNDATION/SOURCE_MATERIALS/09_2026-08-28_WILLIAMS_MILLMAN_FRITZ_P04_EXPERIMENT.md`;
+9. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
+10. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
+11. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
+12. `docs/FOUNDATION/CANONICAL/34_STAGE_4_P03_CANONICAL.md`.
 
 ## Центральная идея
 
@@ -93,6 +94,24 @@ S4-P03:
 
 Reality Check RC-007 сохранил самостоятельность P03 при явном falsifier и статусе `pilot-observability-pending`.
 
+### SP-S4-P04 — что управляет решениями
+
+**Статус: на обсуждении; канон не создан.**
+
+Рабочий эксперимент Вильямс / Миллмэн / Фриц сохранён как SP-SRC-009.
+
+Предварительная дельта:
+
+> **Под нагрузкой выбранная внутренняя задача сохраняет организующий приоритет не как жёсткий приказ, а как направление, постоянно соотносимое с фактической текущей позицией.**
+
+Ключевая проверка RC-008:
+
+```text
+реальность изменила основание решения
+≠
+состояние вытеснило выбранную задачу
+```
+
 ## Сквозной предохранитель
 
 > **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
@@ -112,7 +131,7 @@ FIVE_STAGES_THEORY + CANONICAL
 → утверждённый смысл
 
 parameter delta
-→ локальное изменение библиотек
+→ локальное изменение библиотек после утверждения
 
 checkpoint + git history
 → история решений
@@ -120,4 +139,4 @@ checkpoint + git history
 
 ## Текущая остановка
 
-**SP-S4-P03 утверждён. SP-S4-P04 не открыт.**
+**SP-S4-P04 открыт и находится на обсуждении. SP-S4-P05 не открыт.**
