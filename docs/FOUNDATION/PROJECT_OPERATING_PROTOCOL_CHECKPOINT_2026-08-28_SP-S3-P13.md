@@ -142,6 +142,14 @@ P13 не требует постоянного сомнения и не пере
 
 ## 8. Источники истины P13
 
+Базовый operating protocol:
+
+`docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`
+
+Действующее P13-дополнение к protocol:
+
+`docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-08-28_SP-S3-P13.md`
+
 Полная теория:
 
 `docs/FOUNDATION/FIVE_STAGES_THEORY/39_STAGE_3_STAGE_TRAP.md`
@@ -202,13 +210,19 @@ P13 утверждён внутри Selection Point, но не является 
 
 ---
 
-## 11. Действующий operating protocol
+## 11. Дополнение к operating protocol
 
-`PROJECT_OPERATING_PROTOCOL.md` обновлён до версии 3.5.
+Основной `PROJECT_OPERATING_PROTOCOL.md` сохранён без сокращения.
 
-В него добавлена обязательная граница:
+Новые обязательные правила P13 вынесены в:
+
+`PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-08-28_SP-S3-P13.md`.
+
+Главная новая граница:
 
 > **Любая модель Selection Point, включая сам Selection Point, остаётся принципиально пересматриваемой реальностью и данными.**
+
+Для восстановления текущей позиции новый чат должен читать базовый protocol, этот addendum и настоящий checkpoint.
 
 ---
 
