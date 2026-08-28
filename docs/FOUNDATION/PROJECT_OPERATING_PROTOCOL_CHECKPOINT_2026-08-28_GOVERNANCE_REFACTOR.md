@@ -21,23 +21,17 @@
 
 ### GOV-001 — единый источник текущего статуса
 
-Создан:
-
-`PROJECT_STATE.yaml`.
-
-Он является единственным авторитетным репозиторным источником текущей фазы, ступени, последнего утверждённого параметра, следующего кандидата и явной паузы.
+Создан `PROJECT_STATE.yaml` — единственный авторитетный репозиторный источник текущей фазы, ступени, последнего утверждённого параметра, следующего кандидата и явной паузы.
 
 ### GOV-002 — operating protocol v4.0
 
-`PROJECT_OPERATING_PROTOCOL.md` перестал дублировать динамический прогресс и теперь хранит только правила процесса.
+`PROJECT_OPERATING_PROTOCOL.md` перестал дублировать динамический прогресс и хранит правила процесса.
 
 ### GOV-003 — Continuous Reality Check
 
-Создан:
+Создан `GOVERNANCE/REALITY_CHECK_PROTOCOL.md`.
 
-`GOVERNANCE/REALITY_CHECK_PROTOCOL.md`.
-
-Фаза 3 получает постоянный внешний контур проверки без преждевременного запуска пилота курса.
+Фаза 3 получила постоянный внешний контур проверки без преждевременного запуска пилота курса.
 
 ### GOV-004 — Red Team / Falsification
 
@@ -85,6 +79,7 @@
 - `docs/CODEX_TASKS.md`;
 - `codex/README.md`;
 - `docs/DECISIONS.md`;
+- `docs/CONTENT/00_INDEX.md`;
 - `PROJECT_OPERATING_PROTOCOL.md`;
 - `CURRENT_PROJECT_STATE.md`;
 - `CANONICAL/00_CANONICAL_RULES.md`;
@@ -146,7 +141,26 @@ CHECKPOINTS + GIT HISTORY
 
 ---
 
-## 6. Действующая остановка
+## 6. Финальная consistency-проверка
+
+Проверено, что новый управляющий контур фиксирует одинаковую семантику:
+
+```text
+active phase = 3
+active stage = 4
+last approved = SP-S4-P02
+next candidate = SP-S4-P03
+next status = unopened
+explicit pause = true
+```
+
+Содержательные файлы `40_STAGE_4_STATE.md`, `41_STAGE_4_REALITY_PERCEPTION.md`, `32_STAGE_4_P01_CANONICAL.md` и `33_STAGE_4_P02_CANONICAL.md` governance-refactor не менял.
+
+Изменения затрагивают управление, индексацию, статусный контур и библиотечную консолидацию.
+
+---
+
+## 7. Действующая остановка
 
 ```text
 Ступень 1 — завершена
