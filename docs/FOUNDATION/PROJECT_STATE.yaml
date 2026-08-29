@@ -1,6 +1,6 @@
 schema_version: 2
 project: Selection Point
-updated_at: 2026-08-28
+updated_at: 2026-08-29
 
 status:
   active_phase: 3
@@ -8,10 +8,10 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P04
-  active_parameter: null
-  active_parameter_name: null
-  active_parameter_status: null
-  next_candidate: SP-S4-P05
+  active_parameter: SP-S4-P05
+  active_parameter_name: "Доступная точка выбора"
+  active_parameter_status: "opened-reflection"
+  next_candidate: SP-S4-P06
   next_status: unopened
   explicit_pause: false
 
@@ -27,11 +27,12 @@ active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-0
 previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P03.md"
 
 active_sources:
-  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md"
-  canonical: "docs/FOUNDATION/CANONICAL/35_STAGE_4_P04_CANONICAL.md"
-  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P04_DECISION_DRIVERS_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/09_2026-08-28_WILLIAMS_MILLMAN_FRITZ_P04_EXPERIMENT.md"
-  reality_check: "RC-008"
+  full_theory: null
+  canonical: null
+  parameter_delta: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/11_2026-08-29_CORE_LOOP_AND_COMPLETION_STRATEGY.md"
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md"
+  reality_check: RC-009
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -50,9 +51,13 @@ governance:
   consolidation_policy: "P05, P10, P13, stage boundary, or explicit owner decision"
   parameter_matrix_revisable: true
   derived_status_documents_are_non_authoritative: true
+  finish_current_architecture_before_whole_system_refactor: true
+  whole_system_review_after_architecture_completion: true
+  simplicity_rule: "complexity must add a practically useful distinction"
 
 constraints:
   do_not_open_following_parameter: true
   do_not_change_approved_meaning_without_explicit_owner_approval: true
   do_not_treat_internal_approval_as_external_evidence: true
   do_not_treat_five_by_thirteen_matrix_as_law_of_reality: true
+  do_not_refactor_approved_architecture_mid_pass_from_new_insight_alone: true
