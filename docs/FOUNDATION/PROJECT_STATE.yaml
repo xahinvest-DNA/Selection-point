@@ -10,7 +10,7 @@ status:
   last_approved: SP-S4-P04
   active_parameter: SP-S4-P05
   active_parameter_name: "Доступная точка выбора"
-  active_parameter_status: "architect-pass-open"
+  active_parameter_status: "architect-pass-in-discussion"
   next_candidate: SP-S4-P06
   next_status: unopened
   explicit_pause: false
