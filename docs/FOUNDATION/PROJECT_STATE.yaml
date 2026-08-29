@@ -7,30 +7,30 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P05
-  active_parameter: SP-S4-P06
-  active_parameter_name: "Главная иллюзия"
-  active_parameter_status: "reality-check-red-team-complete-awaiting-owner-decision"
+  last_approved: SP-S4-P06
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P07
   next_status: unopened
   explicit_pause: false
-  owner_decision: "29 августа 2026 года Андрей разрешил провести Reality Check и Red Team для SP-S4-P06. Проверка завершена: рабочая дельта сохранена, тезис сужен; параметр ещё не утверждён и ожидает явного решения владельца."
+  owner_decision: "29 августа 2026 года после завершения Architect pass, Reality Check и Red Team Андрей явно утвердил SP-S4-P06 решением: 'Утверждаем'. P06 канонизируется; P07 остаётся unopened до отдельного трёхвопросного открытия."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P05"
+  stage_4: "SP-S4-P01–SP-S4-P06"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_RC_RED_TEAM.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_ARCHITECT_PASS.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_RC_RED_TEAM.md"
 
 active_sources:
-  full_theory: null
-  canonical: null
-  parameter_delta: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/45_STAGE_4_MAIN_ILLUSION.md"
+  canonical: "docs/FOUNDATION/CANONICAL/37_STAGE_4_P06_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P06_MAIN_ILLUSION_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/12_2026-08-29_WILLIAMS_MILLMAN_FRITZ_P06_REFLECTION.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/44_STAGE_4_AVAILABLE_POINT_OF_CHOICE.md"
   reality_check: RC-010
@@ -64,10 +64,9 @@ constraints:
   do_not_refactor_approved_architecture_mid_pass_from_new_insight_alone: true
   p05_more_options_is_not_maturity_criterion: true
   p05_objective_single_option_does_not_equal_lost_choice: true
-  p06_reflection_does_not_replace_full_architect_pass: true
-  p06_comparative_reconstruction_is_not_owner_answer: true
-  p06_candidate_is_not_approved: true
-  p06_must_not_duplicate_p01_p03_or_p05: true
   p06_mastery_may_raise_availability_but_does_not_guarantee_it: true
   p06_confidence_is_not_itself_an_illusion: true
+  p06_loss_of_guarantee_is_not_loss_of_capacity: true
   p06_disillusion_returns_to_facts_not_automatic_direction_revision: true
+  p06_relevant_facts_may_still_require_direction_revision: true
+  p06_single_failure_does_not_prove_p06: true
