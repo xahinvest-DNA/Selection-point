@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P05
   active_parameter: SP-S4-P06
   active_parameter_name: "Главная иллюзия"
-  active_parameter_status: "architect-pass-in-progress"
+  active_parameter_status: "reality-check-red-team-complete-awaiting-owner-decision"
   next_candidate: SP-S4-P07
   next_status: unopened
   explicit_pause: false
-  owner_decision: "29 августа 2026 года после трёхвопросной рефлексии и сравнительной реконструкции Williams / Millman / Fritz Андрей явно решил: 'Хорошо, открываем 06 с учётом этой информации'. Полный Architect pass SP-S4-P06 открыт; содержание P06 ещё не утверждено."
+  owner_decision: "29 августа 2026 года Андрей разрешил провести Reality Check и Red Team для SP-S4-P06. Проверка завершена: рабочая дельта сохранена, тезис сужен; параметр ещё не утверждён и ожидает явного решения владельца."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -24,8 +24,8 @@ completed:
   stage_4: "SP-S4-P01–SP-S4-P05"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_ARCHITECT_PASS.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_REFLECTION.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_RC_RED_TEAM.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P06_ARCHITECT_PASS.md"
 
 active_sources:
   full_theory: null
@@ -68,3 +68,6 @@ constraints:
   p06_comparative_reconstruction_is_not_owner_answer: true
   p06_candidate_is_not_approved: true
   p06_must_not_duplicate_p01_p03_or_p05: true
+  p06_mastery_may_raise_availability_but_does_not_guarantee_it: true
+  p06_confidence_is_not_itself_an_illusion: true
+  p06_disillusion_returns_to_facts_not_automatic_direction_revision: true
