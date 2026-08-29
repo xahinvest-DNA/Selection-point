@@ -6,13 +6,14 @@
 
 Авторитетный машинно-читаемый статус: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
-На 28 августа 2026 года:
+На 29 августа 2026 года:
 
 - активная фаза: **Фаза 3 — точная архитектура пяти ступеней**;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены полностью;
 - Ступень 4: **SP-S4-P01–SP-S4-P04 утверждены**;
-- SP-S4-P05 «Доступная точка выбора» не открыт.
+- SP-S4-P05 «Доступная точка выбора»: **три вопроса рефлексии завершены; открыт полный Architect pass; параметр не утверждён**;
+- SP-S4-P06 не открыт.
 
 ## Обязательные точки входа
 
@@ -22,13 +23,13 @@
 4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-28_SP-S4-P04.md`;
 5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
 6. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
-7. `docs/FOUNDATION/GOVERNANCE/REALITY_CHECK_REGISTER.md`;
-8. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
-9. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
-10. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
-11. `docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md`;
-12. `docs/FOUNDATION/CANONICAL/35_STAGE_4_P04_CANONICAL.md`;
-13. `docs/FOUNDATION/LIBRARIES/S4_P04_DECISION_DRIVERS_DELTA.md`.
+7. `docs/FOUNDATION/GOVERNANCE/RC-009_SP-S4-P05.md`;
+8. `docs/FOUNDATION/SOURCE_MATERIALS/11_2026-08-29_CORE_LOOP_AND_COMPLETION_STRATEGY.md`;
+9. `docs/FOUNDATION/FIVE_STAGES_THEORY/40_STAGE_4_STATE.md`;
+10. `docs/FOUNDATION/FIVE_STAGES_THEORY/41_STAGE_4_REALITY_PERCEPTION.md`;
+11. `docs/FOUNDATION/FIVE_STAGES_THEORY/42_STAGE_4_SELF_PERCEPTION.md`;
+12. `docs/FOUNDATION/FIVE_STAGES_THEORY/43_STAGE_4_DECISION_DRIVERS.md`;
+13. `docs/FOUNDATION/CANONICAL/35_STAGE_4_P04_CANONICAL.md`.
 
 ## Центральная идея
 
@@ -46,6 +47,18 @@
 → следующий цикл
 ```
 
+Рабочее простое ядро, используемое при разработке P05:
+
+```text
+увидеть фактическую текущую позицию
+→ различить / выбрать направление
+→ сделать следующий доступный ход
+→ получить ответ реальности
+→ оказаться в новой фактической позиции
+→ снова увидеть, где я теперь
+→ повторить цикл
+```
+
 ## Пять ступеней
 
 ```text
@@ -58,7 +71,7 @@
 
 Матрица пяти ступеней и тринадцати параметров является **исследовательским каркасом**, а не законом: новый параметр должен создавать реальную дельту; допустим `zero-delta` или пересмотр каркаса по явному решению владельца метода.
 
-## Активная Ступень 4
+## Утверждённая Ступень 4
 
 ### SP-S4-P01 — состояние человека
 
@@ -90,7 +103,18 @@
 ≠ состояние вытеснило выбранную задачу
 ```
 
-Reality Check RC-008 сохраняет falsifier и статус `pilot-observability-pending`.
+## Активный SP-S4-P05 — рабочая рамка, не канон
+
+Три вопроса предварительной рефлексии завершены. Они дали рабочие гипотезы, но **не заменяют полного Architect pass**.
+
+Пока проверяется:
+
+- существует ли у P05 самостоятельная дельта относительно P01–P04;
+- является ли «точка выбора» отдельным практически полезным различением или лучше описывается как вновь возникающая доступность участия в следующем ходе;
+- можно ли различать доступность выбора не только задним числом по результату;
+- не создаёт ли P05 лишнюю внутреннюю сущность или искусственное заполнение матрицы.
+
+`zero-delta` остаётся допустимым результатом.
 
 ## Сквозной предохранитель
 
@@ -115,6 +139,6 @@ checkpoint + git history
 → история решений
 ```
 
-## Текущая остановка
+## Текущая рабочая точка
 
-**SP-S4-P04 утверждён. SP-S4-P05 не открыт.**
+**SP-S4-P04 утверждён. SP-S4-P05 находится в полном Architect pass после завершённой трёхвопросной рефлексии. SP-S4-P06 не открыт.**
