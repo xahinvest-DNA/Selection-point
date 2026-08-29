@@ -10,10 +10,11 @@ status:
   last_approved: SP-S4-P04
   active_parameter: SP-S4-P05
   active_parameter_name: "Доступная точка выбора"
-  active_parameter_status: "reflection-complete-paused"
+  active_parameter_status: "architect-pass-open"
   next_candidate: SP-S4-P06
   next_status: unopened
-  explicit_pause: true
+  explicit_pause: false
+  owner_decision: "После завершения трёх вопросов рефлексии перейти к полному обсуждению SP-S4-P05; рефлексия не заменяет Architect pass."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -61,4 +62,4 @@ constraints:
   do_not_treat_internal_approval_as_external_evidence: true
   do_not_treat_five_by_thirteen_matrix_as_law_of_reality: true
   do_not_refactor_approved_architecture_mid_pass_from_new_insight_alone: true
-  do_not_start_p05_architect_pass_until_explicit_owner_resume: true
+  p05_reflection_does_not_replace_full_architect_pass: true
