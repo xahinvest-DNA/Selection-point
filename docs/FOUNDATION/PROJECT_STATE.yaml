@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P04
   active_parameter: SP-S4-P05
   active_parameter_name: "Доступная точка выбора"
-  active_parameter_status: "architect-pass-in-discussion"
+  active_parameter_status: "architect-pass-complete-rc-redteam-complete-owner-discussion-open"
   next_candidate: SP-S4-P06
   next_status: unopened
   explicit_pause: false
-  owner_decision: "После завершения трёх вопросов рефлексии перейти к полному обсуждению SP-S4-P05; рефлексия не заменяет Architect pass."
+  owner_decision: "После завершения трёх вопросов рефлексии перейти к полному обсуждению SP-S4-P05; рефлексия не заменяет Architect pass. Полный Architect pass завершён; Reality Check и Red Team пройдены; ожидается отдельное решение владельца по формулировке P05."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
