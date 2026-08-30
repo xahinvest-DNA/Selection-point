@@ -7,35 +7,36 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P09
-  active_parameter: SP-S4-P10
-  active_parameter_name: "Жизненные проявления"
-  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; stage-specific-delta-recommended; owner-decision-pending"
+  last_approved: SP-S4-P10
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P11
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года после трёх вопросов по SP-S4-P10 Андрей попросил смоделировать ответы через Williams, Millman и Fritz, затем принял рабочий синтез командой 'Принято. Продолжаем'. Architect pass, внешний Reality Check и Red Team завершены. Самостоятельная life-scale дельта сохранена: устойчивость траектории не равна неизменности её формы; новая фактическая позиция может требовать новой формы продолжения, а релевантная реальность сохраняет право изменить и конкретную цель, и при необходимости само направление. Финального решения владельца по P10 ещё нет."
+  owner_decision: "30 августа 2026 года после трёх вопросов по SP-S4-P10, сравнительной реконструкции Williams / Millman / Fritz, Architect pass, Reality Check и Red Team Андрей явно утвердил параметр решением: 'Утверждаем'. P10 утверждён как самостоятельная stage-specific life-scale delta. Центральное различение: устойчивость траектории не равна неизменности её формы; новая фактическая позиция может требовать новой формы продолжения. Сохранение направления не означает persistence любой ценой: релевантная реальность сохраняет право изменить конкретную цель и при необходимости само направление. SP-S4-P11 остаётся unopened до отдельного открытия."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P09 (P07 and P09 zero-delta)"
+  stage_4: "SP-S4-P01–SP-S4-P10 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P09.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P10.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: null
-  canonical: null
-  parameter_delta: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md"
+  canonical: "docs/FOUNDATION/CANONICAL/39_STAGE_4_P10_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P10_LIFE_MANIFESTATIONS_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/18_2026-08-30_TRAJECTORY_TECHNOLOGY_MAGIC_METAPHOR.md"
   reality_check: RC-014
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md"
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -98,8 +99,7 @@ constraints:
   p09_state_improvement_does_not_equal_choice_recovery: true
   p09_intentional_bodily_leverage_is_p11_candidate_not_p09_manifestation: true
   p09_hcm_bidirectionality_clarification_deferred_to_whole_system_review: true
-  p10_working_claim_not_approved: true
-  p10_stage_specific_delta_recommended: true
+  p10_approved: true
   p10_trajectory_stability_is_not_form_stability: true
   p10_form_change_is_not_trajectory_loss: true
   p10_persistence_is_not_maturity_criterion: true
