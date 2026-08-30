@@ -1,113 +1,74 @@
 # Reality Check Register
 
 **Статус:** действующий реестр проверок  
-**Дата введения:** 28 августа 2026 года  
 **Дата обновления:** 30 августа 2026 года
-
-Назначение реестра — показывать очередь, итог и дальнейший статус Reality Check. Полная аргументация хранится в отдельных `RC-*` файлах и связанных Architect pass notes.
-
-## Реестр
 
 | ID | Объект | Архитектурный статус | Reality Check status | Итог / следующий шаг |
 |---|---|---|---|---|
-| RC-001 | SP-HCM-09 | утверждено | external-review-pending; falsifier-defined | Проверить внешний язык «создание собственной реальности» до Фазы 4. |
-| RC-002 | SP-S3-P13 | утверждено | pilot-observability-pending; falsifier-defined | Проверять реальную пересматриваемость модели на эпизодах. |
-| RC-003 | SP-S4-P01 | утверждено | external-review-pending; pilot-observability-pending | Проверять различие «сформировано, но недоступно» vs «не сформировано». |
-| RC-004 | SP-S4-P02 | утверждено | external-review-pending; pilot-observability-pending | Проверять функциональное vs искажённое сужение восприятия. |
-| RC-005 | Матрица 5 × 13 | рабочая архитектура | falsifier-defined | Не создавать искусственную дельту ради заполнения ячейки. |
-| RC-006 | Публичный термин HCM-09 | внутренний канон | revisit-required-before-phase-4 | Провести terminology/public-language review. |
-| RC-007 | SP-S4-P03 | утверждено | initial-external-review; pilot-observability-pending; falsifier-defined | Самостоятельная дельта сохранена: важен практический вес self-model, не сам self-language. |
-| RC-008 | SP-S4-P04 | утверждено | initial-external-review; pilot-observability-pending; falsifier-defined | Самостоятельная дельта сохранена: организующий приоритет ≠ оперативный приоритет. |
-| RC-009 | SP-S4-P05 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Объективно один ход ≠ потеря выбора; не универсализировать телесные маркеры. |
+| RC-001 | SP-HCM-09 | утверждено | external-review-pending; falsifier-defined | Проверить внешний язык до Фазы 4. |
+| RC-002 | SP-S3-P13 | утверждено | pilot-observability-pending; falsifier-defined | Проверять реальную пересматриваемость модели. |
+| RC-003 | SP-S4-P01 | утверждено | external-review-pending; pilot-observability-pending | «Сформировано, но недоступно» vs «не сформировано». |
+| RC-004 | SP-S4-P02 | утверждено | external-review-pending; pilot-observability-pending | Функциональное vs искажённое сужение. |
+| RC-005 | Матрица 5×13 | рабочая архитектура | falsifier-defined | Не создавать искусственную дельту. |
+| RC-006 | Публичный термин HCM-09 | внутренний канон | revisit-required-before-phase-4 | Terminology review. |
+| RC-007 | SP-S4-P03 | утверждено | initial-external-review; pilot-observability-pending; falsifier-defined | Self-model: practically consequential, not essence. |
+| RC-008 | SP-S4-P04 | утверждено | initial-external-review; pilot-observability-pending; falsifier-defined | Организующий приоритет ≠ оперативный приоритет. |
+| RC-009 | SP-S4-P05 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Объективно один ход ≠ потеря выбора. |
 | RC-010 | SP-S4-P06 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Сформированная способность ≠ гарантированная доступность. |
-| RC-011 | SP-S4-P07 | утверждено: zero-delta | owner-approved; zero-delta; externally-compatible; falsifier-defined | Самостоятельная структурная «главная боль» S4 не подтверждена. |
-| RC-012 | SP-S4-P08 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Утверждён stage-specific навык восстановления участия из фактической доступности. |
-| RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality сохранена как сквозное свойство; отдельная S4-specific телесная дельта не подтверждена. |
+| RC-011 | SP-S4-P07 | утверждено: zero-delta | owner-approved; zero-delta; externally-compatible; falsifier-defined | Отдельная S4-боль не подтверждена. |
+| RC-012 | SP-S4-P08 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Восстанавливать участие из фактической доступности. |
+| RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality — сквозное свойство, не S4-specific delta. |
+| RC-014 | SP-S4-P10 | активен | reality-check-complete; red-team-complete; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Stage-specific life-scale delta сохранена: устойчивость траектории ≠ неизменность её формы. |
 
-## Закрытые / текущие полные записи
+## RC-014 — активный итог
 
-- `RC-009_SP-S4-P05.md` — P05, owner-approved.
-- `RC-010_SP-S4-P06.md` — P06, owner-approved.
-- `RC-011_SP-S4-P07_ZERO_DELTA.md` — P07, owner-approved zero-delta.
-- `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — P08, owner-approved.
-- `RC-013_SP-S4-P09.md` — первый Reality Check P09.
-- `RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md` — повторный Reality Check после контрпримера владельца.
-- `RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md` — P09, owner-approved amended zero-delta.
+Рабочий центральный тезис:
 
-## RC-013 — закрытый итог
+> **Жизненные проявления четвёртой ступени состоят в том, что устойчивость собственной линии всё меньше зависит от сохранения её прежней формы. Под значимой нагрузкой могут измениться план, темп, масштаб, распределение ресурсов, роли, обязательства и отдельные цели; могут сохраняться последствия срыва или кризиса. Однако человек способен снова организовывать последующие ходы из изменившейся фактической позиции относительно релевантного направления и обратной связи, не требуя сначала вернуть прежнее устройство жизни и не превращая сохранение направления в обязанность сохранять любой прежний план или цель.**
 
-Первый Reality Check установил:
+Коротко:
 
-```text
-напряжение ≠ потеря выбора
-спокойствие ≠ наличие выбора
-```
+> **Устойчивость траектории ≠ неизменность её формы.**
 
-Контрпример владельца затем показал необходимость исправить слишком пассивную трактовку тела:
+### Что поддерживает внешний слой
+
+Исследования regulatory/coping flexibility и dynamic resilience совместимы с тем, что адаптивность зависит от контекста, доступного ответа и коррекции по feedback, а не от применения одной стратегии во всех условиях. Исследования goal adjustment также ограничивают идею persistence: своевременное disengagement/reengagement может быть частью успешной саморегуляции.
+
+Внешний слой **не доказывает** пятиступенчатую архитектуру.
+
+### Red Team boundaries
 
 ```text
-внутреннее состояние
-→ мимика / поза / движения
+сохранение траектории
+≠ persistence конкретной цели любой ценой
+
+изменение формы
+≠ адаптивность само по себе
+
+благоприятный исход
+≠ критерий P10
+
+скорость восстановления
+≠ критерий P10
+
+объективно тяжёлая позиция
+≠ потеря выбора
 ```
 
-и:
+### Prospective observability
 
-```text
-намеренное изменение телесной организации
-или внутреннего образа
-→ может изменить внутреннее состояние
-```
+Чтобы избежать рассказа задним числом, до знания результата должно быть возможно увидеть:
 
-Повторный внешний обзор поддержал ограниченную причинную двусторонность для facial feedback, posture, respiration и mental imagery.
+1. признание изменившейся фактической позиции;
+2. отсутствие автоматического приоритета прежнего плана;
+3. различимый релевантный приоритет / осознанный его пересмотр;
+4. practically available следующий ход;
+5. открытость дальнейшей корректировке по feedback.
 
-Утверждённая системная граница:
+### Falsifier
 
-```text
-тело
-= часть текущей позиции
-+
-может быть причинным участником дальнейшей динамики
-```
+Дельту следует пересмотреть, если life-scale pattern нельзя наблюдать отдельно от P04/P08, если он существует только как ретроспективная история, или если в пилоте невозможно отличить reality-based reorganization от avoidance / обычной смены планов.
 
-Но:
+## Текущая граница
 
-```text
-body-state bidirectionality
-≠ unique S4 mechanism
-```
-
-Поэтому 30 августа 2026 года после второго Red Team Андрей явно утвердил:
-
-> **SP-S4-P09 — amended `zero-delta`.**
-
-Короткая формула:
-
-> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
-
-Дополнительные предохранители:
-
-```text
-body change can influence state
-≠ guarantees state change
-```
-
-```text
-state improvement
-≠ choice restored
-```
-
-```text
-body-state bidirectionality
-≠ S4-specific delta
-```
-
-Intentional bodily leverage передан как кандидат функционального класса P11. Возможное явное представление body-state bidirectionality в HCM отложено до Whole-System Review.
-
-## Правила
-
-- внутренняя утверждённость не равна внешней научной доказанности;
-- внешнее сходство не означает тождества;
-- контрпример проверяется против области применимости и центрального тезиса;
-- `zero-delta` является допустимым результатом;
-- реестр обновляется при каждом meaningful Reality Check;
-- следующий параметр не открывается до отдельного запуска по протоколу.
+**RC-014 завершён до owner decision. SP-S4-P10 остаётся активным; internal-approved отсутствует. SP-S4-P11 не открыт.**
