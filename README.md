@@ -11,11 +11,10 @@
 - Фаза 3 — точная архитектура пяти ступеней;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены;
-- Ступень 4: **SP-S4-P01–SP-S4-P09 утверждены**, P07 и P09 = `zero-delta`;
-- активен **SP-S4-P10 — «Жизненные проявления»**;
-- Architect pass / Reality Check / Red Team P10 завершены;
-- самостоятельная P10-delta рекомендована, решение владельца ожидается;
-- SP-S4-P11 не открыт.
+- Ступень 4: **SP-S4-P01–SP-S4-P10 утверждены**, P07 и P09 = `zero-delta`;
+- последний утверждённый параметр: **SP-S4-P10 «Жизненные проявления»**;
+- открытого параметра нет;
+- SP-S4-P11 «Соответствующие практики» — следующий кандидат, **не открыт**.
 
 ## Центральная идея
 
@@ -41,13 +40,11 @@
 создание траектории ≠ предопределение результата
 ```
 
-## Активный SP-S4-P10
-
-Рабочая формула:
+## Утверждённый SP-S4-P10
 
 > **Устойчивость траектории ≠ неизменность её формы.**
 
-Под значимой нагрузкой прежний план, темп, масштаб, роли, ресурсы или конкретная цель могут измениться. Stage-4 life-scale candidate состоит не в сохранении прежней формы, а в способности снова организовать несколько следующих жизненных ходов из новой фактической позиции относительно релевантного направления и feedback.
+Под значимой нагрузкой прежний план, темп, масштаб, роли, ресурсы или конкретная цель могут измениться. Жизненное проявление S4 состоит не в сохранении прежней формы, а в способности снова организовать несколько следующих ходов из новой фактической позиции относительно релевантного направления и feedback.
 
 Обязательные границы:
 
@@ -58,16 +55,18 @@
 скорость восстановления ≠ критерий P10
 ```
 
-Реальность сохраняет право потребовать пересмотра и конкретной цели, и самого направления.
+Реальность сохраняет право потребовать пересмотра конкретной цели и самого направления.
 
 ## Точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md`;
-5. `docs/FOUNDATION/GOVERNANCE/SP-S4-P10_ARCHITECT_PASS_NOTES.md`;
-6. `docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md`;
-7. последний approved record: `docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
+4. `docs/FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md`;
+5. `docs/FOUNDATION/CANONICAL/39_STAGE_4_P10_CANONICAL.md`;
+6. `docs/FOUNDATION/LIBRARIES/S4_P10_LIFE_MANIFESTATIONS_DELTA.md`;
+7. `docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md`;
+8. `docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md`;
+9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P10.md`.
 
-**P10 пока не канон. Full theory / canonical / parameter delta будут созданы только после явного решения владельца.**
+**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
