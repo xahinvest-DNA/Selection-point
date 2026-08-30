@@ -1,122 +1,63 @@
 # Общие библиотеки Selection Point
 
 **Статус:** действующая инфраструктура канонического слоя  
-**Дата введения:** 4 июля 2026 года  
 **Дата обновления:** 30 августа 2026 года
 
-## Состав
+## Approved local records
 
-1. `TERMS_REGISTRY.md` — единые определения терминов со стабильными ID.
-2. `CLAIMS_REGISTRY.md` — консолидированный индекс утверждённых claims.
-3. `EXAMPLE_LIBRARY.md` — переиспользуемые примеры.
-4. `RISKS_AND_BOUNDARIES.md` — централизованные риски и ограничения.
-5. `EVIDENCE_MAP.md` — консолидированная карта доказательного статуса.
-6. `CROSS_REFERENCE_MAP.md` — консолидированная карта связей.
-7. `P13_STAGE_TRAP_DELTA.md` — историческая дельта SP-S3-P13.
-8. `S4_P01_STATE_DELTA.md`.
-9. `S4_P02_REALITY_PERCEPTION_DELTA.md`.
-10. `S4_P03_SELF_PERCEPTION_DELTA.md`.
-11. `S4_P04_DECISION_DRIVERS_DELTA.md`.
-12. `S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md`.
-13. `S4_P06_MAIN_ILLUSION_DELTA.md`.
-14. `S4_P07_MAIN_PAIN_ZERO_DELTA.md` — утверждённый zero-delta P07.
-15. `S4_P08_NEXT_SKILL_DELTA.md` — утверждённая дельта P08.
-16. `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md` — утверждённый amended zero-delta P09.
+- `P13_STAGE_TRAP_DELTA.md`;
+- `S4_P01_STATE_DELTA.md`;
+- `S4_P02_REALITY_PERCEPTION_DELTA.md`;
+- `S4_P03_SELF_PERCEPTION_DELTA.md`;
+- `S4_P04_DECISION_DRIVERS_DELTA.md`;
+- `S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md`;
+- `S4_P06_MAIN_ILLUSION_DELTA.md`;
+- `S4_P07_MAIN_PAIN_ZERO_DELTA.md`;
+- `S4_P08_NEXT_SKILL_DELTA.md`;
+- `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
 
-## Reality Check links
-
-- `../GOVERNANCE/RC-009_SP-S4-P05.md`;
-- `../GOVERNANCE/RC-010_SP-S4-P06.md`;
-- `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
-- `../GOVERNANCE/RC-012_SP-S4-P08.md`;
-- `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md`.
-
----
+Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
 
 ## Delta-first
 
-После каждого утверждённого параметра создаётся local parameter delta record. Для `zero-delta` record фиксирует отсутствие новой сущности и обязательные границы.
+Local parameter delta создаётся **только после явного утверждения параметра**.
 
-Плановая консолидация больших реестров выполняется:
+Следующая плановая большая консолидация — после утверждения P10.
 
-- после P05;
-- после P10;
-- после P13;
-- на границе ступени;
-- либо по отдельному решению владельца.
+## Активный SP-S4-P10
 
-29 августа 2026 года после P05 выполнена плановая консолидация `CLAIMS_REGISTRY.md`, `EVIDENCE_MAP.md` и `CROSS_REFERENCE_MAP.md`.
+Architect pass / RC-014 / Red Team завершены.
 
-P06–P09 добавлены delta-first без внеплановой большой консолидации. P07 и P09 утверждены как `zero-delta` и не создают новый самостоятельный canonical claim.
+Рабочая рекомендация:
 
-Следующая плановая консолидация — после P10.
+> **Сохранить самостоятельную stage-specific life-scale delta.**
 
----
+Центральное различение:
 
-## Текущий охват утверждённого слоя
+> **Устойчивость траектории ≠ неизменность её формы.**
 
-Библиотеки и approved delta-records покрывают:
-
-- SP-HCM-01–SP-HCM-09;
-- SP-S1-P01–SP-S1-P13;
-- SP-S2-P01–SP-S2-P13;
-- SP-S3-P01–SP-S3-P13;
-- SP-S4-P01–SP-S4-P09, где P07 и P09 = `zero-delta`;
-- SP-VM-01–SP-VM-02.
-
----
-
-## Последний завершённый approved delta record — SP-S4-P09
-
-Тип:
-
-> **amended `zero-delta`.**
-
-Утверждённый смысл:
-
-> **На четвёртой ступени тело остаётся значимой частью фактической текущей позиции и может участвовать в изменении состояния и доступности действия, но отдельный новый класс телесных проявлений S4 не подтверждён.**
-
-Коротко:
-
-> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
-
-Ключевые границы:
+Но до решения владельца:
 
 ```text
-телесный сигнал = данные
-≠ только данные
-
-изменение тела может влиять на состояние
-≠ гарантирует изменение состояния
-
-улучшение состояния
-≠ восстановление выбора
-
-body-state bidirectionality
-≠ unique S4 mechanism
+recommended P10 delta
+≠ approved local delta
 ```
 
-Intentional bodily leverage сохранён как кандидат функционального класса для P11.
+Поэтому `S4_P10_*_DELTA.md` пока не создаётся и большие регистры не консолидируются.
 
-Full approved record: `../FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
+Связанные рабочие материалы:
 
-Reality Check: `../GOVERNANCE/RC-013_SP-S4-P09.md`.
+- `../SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md`;
+- `../GOVERNANCE/SP-S4-P10_ARCHITECT_PASS_NOTES.md`;
+- `../GOVERNANCE/RC-014_SP-S4-P10.md`.
 
-Owner approval: `../GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md`.
+## Текущий approved scope
 
----
+- SP-HCM-01–SP-HCM-09;
+- SP-S1-P01–P13;
+- SP-S2-P01–P13;
+- SP-S3-P01–P13;
+- SP-S4-P01–P09, где P07 и P09 = `zero-delta`;
+- SP-VM-01–SP-VM-02.
 
-## Матрица 5 × 13
-
-Библиотечная инфраструктура не требует искусственного claim для каждой ячейки. Если самостоятельной practically useful дельты нет, допустим `zero-delta`.
-
----
-
-## Авторитетный текущий статус
-
-Источник: `../PROJECT_STATE.yaml`.
-
-**SP-S4-P09 утверждён. SP-S4-P10 не открыт.**
+**SP-S4-P10 пока не входит в approved library. SP-S4-P11 не открыт.**
