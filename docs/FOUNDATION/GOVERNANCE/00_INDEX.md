@@ -1,7 +1,7 @@
 # Governance Selection Point
 
 **Статус:** действующий индекс управления проектом  
-**Дата:** 28 августа 2026 года
+**Дата обновления:** 30 августа 2026 года
 
 ## Действующие документы
 
@@ -10,6 +10,9 @@
 3. `PROJECT_GOVERNANCE_SYSTEM.md` — разделение источников истины, delta-first, матрица 5 × 13, consistency check.
 4. `REALITY_CHECK_PROTOCOL.md` — постоянная проверка наблюдаемости, внешней совместимости и falsifiability.
 5. `REALITY_CHECK_REGISTER.md` — активная очередь проверок, способных изменить архитектуру.
+6. `RC-011_SP-S4-P07_ZERO_DELTA.md` — Reality Check утверждённого zero-delta P07.
+7. `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — Reality Check и явное утверждение P08.
+8. `SP-S4-P09_ARCHITECT_PASS_NOTES.md` + `RC-013_SP-S4-P09.md` — активная проверка P09; `zero-delta` рекомендован, owner decision pending.
 
 ## Основной цикл
 
@@ -20,9 +23,9 @@
 → Reality Check
 → Red Team / Falsification
 → явное решение Андрея
-→ full theory
-→ canonical
-→ parameter delta
+→ full theory / zero-delta record
+→ canonical при самостоятельной дельте
+→ parameter delta / zero-delta record
 → PROJECT_STATE.yaml
 → derived status sync
 → checkpoint
@@ -33,4 +36,4 @@
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**SP-S4-P02 утверждён. SP-S4-P03 не открыт.**
+**Последний утверждённый параметр — SP-S4-P08. SP-S4-P09 активен; Architect pass, Reality Check и Red Team завершены; текущая рекомендация — `zero-delta`; решение владельца ожидается. SP-S4-P10 не открыт.**
