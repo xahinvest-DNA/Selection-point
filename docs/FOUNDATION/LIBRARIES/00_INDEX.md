@@ -20,6 +20,7 @@
 12. `S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md` — дельта SP-S4-P05.
 13. `S4_P06_MAIN_ILLUSION_DELTA.md` — дельта SP-S4-P06.
 14. `S4_P07_MAIN_PAIN_ZERO_DELTA.md` — утверждённый zero-delta record SP-S4-P07.
+15. `S4_P08_NEXT_SKILL_DELTA.md` — утверждённая дельта SP-S4-P08.
 
 Внешняя и falsification-проверка вынесена в:
 
@@ -28,17 +29,14 @@
 - `../GOVERNANCE/RC-009_SP-S4-P05.md`;
 - `../GOVERNANCE/RC-010_SP-S4-P06.md`;
 - `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
-- `../GOVERNANCE/RC-012_SP-S4-P08.md` — active, owner-decision-pending.
+- `../GOVERNANCE/RC-012_SP-S4-P08.md`;
+- `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
 
 ---
 
 ## Delta-first
 
-После каждого **утверждённого** параметра создаётся local parameter delta record.
-
-Для обычного параметра он фиксирует новую дельту. Для `zero-delta` он фиксирует проверенный результат отсутствия самостоятельной новой дельты.
-
-Активный, но ещё не утверждённый параметр не получает approved delta заранее.
+После каждого утверждённого параметра создаётся local parameter delta record.
 
 Плановая консолидация больших реестров выполняется:
 
@@ -48,17 +46,9 @@
 - на границе ступени;
 - либо по отдельному решению владельца.
 
-29 августа 2026 года после утверждения SP-S4-P05 выполнена плановая консолидация:
+29 августа 2026 года после утверждения SP-S4-P05 выполнена плановая консолидация `CLAIMS_REGISTRY.md`, `EVIDENCE_MAP.md` и `CROSS_REFERENCE_MAP.md`.
 
-- `CLAIMS_REGISTRY.md` — SP-S4-P03–P05;
-- `EVIDENCE_MAP.md` — SP-S4-P03–P05;
-- `CROSS_REFERENCE_MAP.md` — SP-S4-P03–P05.
-
-SP-S4-P06 добавлен delta-first без внеплановой большой консолидации.
-
-SP-S4-P07 завершён как `zero-delta`; новый claim в большие реестры не добавляется, потому что самостоятельной сущности не введено.
-
-SP-S4-P08 сейчас активен, но не утверждён. Его рабочая гипотеза хранится в Architect / Reality Check слоях, а не в approved libraries.
+SP-S4-P06, P07 и P08 добавлены delta-first без внеплановой большой консолидации. Для P07 новый claim не создавался, потому что параметр утверждён как `zero-delta`.
 
 Следующая плановая консолидация — после P10, если отдельное решение владельца не потребует её раньше.
 
@@ -72,61 +62,48 @@ SP-S4-P08 сейчас активен, но не утверждён. Его ра
 - SP-S1-P01–SP-S1-P13;
 - SP-S2-P01–SP-S2-P13;
 - SP-S3-P01–SP-S3-P13;
-- SP-S4-P01–SP-S4-P07, где P07 = `zero-delta`;
+- SP-S4-P01–SP-S4-P08, где P07 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
-
-SP-S4-P08 в этот список **не входит до утверждения**.
 
 ---
 
-## Последний завершённый approved delta record
+## Последний завершённый approved delta record — SP-S4-P08
 
-SP-S4-P07:
+> **Следующий навык четвёртой ступени — способность восстанавливать функциональное участие из фактической степени текущей доступности после того, как под нагрузкой уменьшился доступ к уже сформированной способности выбора.**
 
-> **Самостоятельная новая архитектурная дельта «главной боли» S4 не подтверждена.**
+Коротко:
+
+> **Восстанавливать участие из фактической доступности.**
 
 Ключевые границы:
 
 ```text
-zero-delta
-≠ отсутствие боли
-
-боль утраты важного будущего
-≠ самостоятельная структурная боль S4
-
-принятие реальности
-≠ отсутствие чувств
-```
-
-Approved full record: `../FIVE_STAGES_THEORY/46_STAGE_4_MAIN_PAIN_ZERO_DELTA.md`.
-
-Canonical-card: не создаётся, потому что нового самостоятельного claim нет.
-
-Reality Check: `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`.
-
----
-
-## Active working parameter — SP-S4-P08
-
-Рабочий кандидат находится вне approved library:
-
-- `../SOURCE_MATERIALS/15_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P08_REFLECTION.md`;
-- `../GOVERNANCE/SP-S4-P08_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-012_SP-S4-P08.md`.
-
-До решения владельца:
-
-```text
-working P08 delta candidate
+восстановить участие
 ≠
-approved parameter delta
+сначала полностью восстановить прежнее состояние
+
+полное прежнее состояние не всегда нужно
+≠
+состояние никогда не нужно восстанавливать
+
+больше вариантов
+≠
+больше зрелости
 ```
+
+Approved full record: `../FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md`.
+
+Canonical: `../CANONICAL/38_STAGE_4_P08_CANONICAL.md`.
+
+Reality Check: `../GOVERNANCE/RC-012_SP-S4-P08.md`.
+
+Owner approval: `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
 
 ---
 
 ## Матрица 5 × 13
 
-Библиотечная инфраструктура не требует искусственного claim для каждой ячейки. Если Reality Check показывает отсутствие самостоятельной дельты, допустим `zero-delta`.
+Библиотечная инфраструктура не требует искусственного claim для каждой ячейки. Если самостоятельной practically useful дельты нет, допустим `zero-delta`.
 
 ---
 
@@ -134,4 +111,4 @@ approved parameter delta
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**Последний утверждённый параметр — SP-S4-P07 (`zero-delta`). SP-S4-P08 активен и ожидает решения владельца. SP-S4-P09 не открыт.**
+**SP-S4-P08 утверждён. SP-S4-P09 не открыт.**
