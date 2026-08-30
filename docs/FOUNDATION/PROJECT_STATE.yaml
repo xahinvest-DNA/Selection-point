@@ -7,35 +7,36 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P08
-  active_parameter: SP-S4-P09
-  active_parameter_name: "Телесные проявления"
-  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; reanalysis-complete; amended-zero-delta-recommended; owner-decision-pending"
+  last_approved: SP-S4-P09
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P10
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года Андрей после первой zero-delta recommendation указал на двусторонность связи: внутреннее состояние проявляется в теле, а намеренное изменение мимики/телесной организации или внутреннего образа может менять состояние. Повторный Reality Check подтвердил причинную body-state bidirectionality для ряда каналов, но показал, что это сквозное свойство системы, а не уникальная телесная дельта S4. Текущая рекомендация — amended zero-delta: тело не только отображает позицию, но участвует в её изменении; намеренное использование телесного входа переносится как кандидат функционального класса в P11. Финального решения владельца по P09 ещё нет."
+  owner_decision: "30 августа 2026 года после первоначального Architect pass / Reality Check / Red Team, контрпримера о двусторонности body-state, повторного исследовательского анализа и второго Red Team Андрей явно утвердил SP-S4-P09 решением: 'Утверждаем'. P09 утверждён как amended zero-delta: тело не только отображает текущую позицию, но может причинно участвовать в изменении состояния; при этом body-state bidirectionality является сквозным свойством системы, а не отдельной S4-specific телесной дельтой. Намеренное использование телесного входа переносится как кандидат функционального класса в P11. SP-S4-P10 остаётся unopened до отдельного открытия."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P08 (P07 zero-delta)"
+  stage_4: "SP-S4-P01–SP-S4-P09 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P08.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P09.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md"
   canonical: null
-  parameter_delta: null
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/17_2026-08-30_BODY_STATE_BIDIRECTIONALITY_P09_REANALYSIS.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md"
   reality_check: RC-013
   reality_check_reanalysis_addendum: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md"
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md"
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -85,8 +86,8 @@ constraints:
   p08_state_regulation_may_be_the_next_available_move: true
   p08_may_include_automated_mature_response: true
   p08_not_claimed_as_new_universal_psychological_mechanism: true
-  p09_working_claim_not_approved: true
-  p09_amended_zero_delta_recommended: true
+  p09_approved: true
+  p09_amended_zero_delta_approved: true
   p09_arousal_is_not_loss_of_choice: true
   p09_calm_is_not_proof_of_choice: true
   p09_no_single_body_marker_is_universal: true
@@ -95,5 +96,6 @@ constraints:
   p09_body_is_not_only_readout: true
   p09_body_state_bidirectionality_is_cross_cutting: true
   p09_body_change_may_change_state_but_does_not_guarantee_choice_recovery: true
+  p09_state_improvement_does_not_equal_choice_recovery: true
   p09_intentional_bodily_leverage_is_p11_candidate_not_p09_manifestation: true
   p09_hcm_bidirectionality_clarification_deferred_to_whole_system_review: true
