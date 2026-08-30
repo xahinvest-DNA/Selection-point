@@ -27,15 +27,18 @@
 - `../GOVERNANCE/REALITY_CHECK_REGISTER.md`;
 - `../GOVERNANCE/RC-009_SP-S4-P05.md`;
 - `../GOVERNANCE/RC-010_SP-S4-P06.md`;
-- `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`.
+- `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
+- `../GOVERNANCE/RC-012_SP-S4-P08.md` — active, owner-decision-pending.
 
 ---
 
 ## Delta-first
 
-После каждого нового утверждённого параметра создаётся local parameter delta record.
+После каждого **утверждённого** параметра создаётся local parameter delta record.
 
 Для обычного параметра он фиксирует новую дельту. Для `zero-delta` он фиксирует проверенный результат отсутствия самостоятельной новой дельты.
+
+Активный, но ещё не утверждённый параметр не получает approved delta заранее.
 
 Плановая консолидация больших реестров выполняется:
 
@@ -55,13 +58,15 @@ SP-S4-P06 добавлен delta-first без внеплановой больш�
 
 SP-S4-P07 завершён как `zero-delta`; новый claim в большие реестры не добавляется, потому что самостоятельной сущности не введено.
 
+SP-S4-P08 сейчас активен, но не утверждён. Его рабочая гипотеза хранится в Architect / Reality Check слоях, а не в approved libraries.
+
 Следующая плановая консолидация — после P10, если отдельное решение владельца не потребует её раньше.
 
 ---
 
 ## Текущий охват утверждённого слоя
 
-Библиотеки и активные дельта-records покрывают:
+Библиотеки и approved delta-records покрывают:
 
 - SP-HCM-01–SP-HCM-09;
 - SP-S1-P01–SP-S1-P13;
@@ -70,9 +75,11 @@ SP-S4-P07 завершён как `zero-delta`; новый claim в больши
 - SP-S4-P01–SP-S4-P07, где P07 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
 
+SP-S4-P08 в этот список **не входит до утверждения**.
+
 ---
 
-## Последний завершённый delta record
+## Последний завершённый approved delta record
 
 SP-S4-P07:
 
@@ -99,11 +106,27 @@ Reality Check: `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`.
 
 ---
 
+## Active working parameter — SP-S4-P08
+
+Рабочий кандидат находится вне approved library:
+
+- `../SOURCE_MATERIALS/15_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P08_REFLECTION.md`;
+- `../GOVERNANCE/SP-S4-P08_ARCHITECT_PASS_NOTES.md`;
+- `../GOVERNANCE/RC-012_SP-S4-P08.md`.
+
+До решения владельца:
+
+```text
+working P08 delta candidate
+≠
+approved parameter delta
+```
+
+---
+
 ## Матрица 5 × 13
 
-Библиотечная инфраструктура не требует искусственного claim для каждой ячейки. Если Reality Check показывает отсутствие самостоятельной дельты, утверждается `zero-delta` и это явно фиксируется.
-
-SP-S4-P07 — первый утверждённый `zero-delta` текущего прохода.
+Библиотечная инфраструктура не требует искусственного claim для каждой ячейки. Если Reality Check показывает отсутствие самостоятельной дельты, допустим `zero-delta`.
 
 ---
 
@@ -111,4 +134,4 @@ SP-S4-P07 — первый утверждённый `zero-delta` текущег�
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**SP-S4-P07 завершён как `zero-delta`. SP-S4-P08 не открыт.**
+**Последний утверждённый параметр — SP-S4-P07 (`zero-delta`). SP-S4-P08 активен и ожидает решения владельца. SP-S4-P09 не открыт.**
