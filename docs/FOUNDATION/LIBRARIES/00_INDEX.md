@@ -13,31 +13,32 @@
 5. `EVIDENCE_MAP.md` — консолидированная карта доказательного статуса.
 6. `CROSS_REFERENCE_MAP.md` — консолидированная карта связей.
 7. `P13_STAGE_TRAP_DELTA.md` — историческая дельта SP-S3-P13.
-8. `S4_P01_STATE_DELTA.md` — дельта SP-S4-P01.
-9. `S4_P02_REALITY_PERCEPTION_DELTA.md` — дельта SP-S4-P02.
-10. `S4_P03_SELF_PERCEPTION_DELTA.md` — дельта SP-S4-P03.
-11. `S4_P04_DECISION_DRIVERS_DELTA.md` — дельта SP-S4-P04.
-12. `S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md` — дельта SP-S4-P05.
-13. `S4_P06_MAIN_ILLUSION_DELTA.md` — дельта SP-S4-P06.
-14. `S4_P07_MAIN_PAIN_ZERO_DELTA.md` — утверждённый zero-delta record SP-S4-P07.
-15. `S4_P08_NEXT_SKILL_DELTA.md` — утверждённая дельта SP-S4-P08.
+8. `S4_P01_STATE_DELTA.md`.
+9. `S4_P02_REALITY_PERCEPTION_DELTA.md`.
+10. `S4_P03_SELF_PERCEPTION_DELTA.md`.
+11. `S4_P04_DECISION_DRIVERS_DELTA.md`.
+12. `S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md`.
+13. `S4_P06_MAIN_ILLUSION_DELTA.md`.
+14. `S4_P07_MAIN_PAIN_ZERO_DELTA.md` — утверждённый zero-delta P07.
+15. `S4_P08_NEXT_SKILL_DELTA.md` — утверждённая дельта P08.
+16. `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md` — утверждённый amended zero-delta P09.
 
-Внешняя и falsification-проверка вынесена в:
+## Reality Check links
 
-- `../GOVERNANCE/REALITY_CHECK_PROTOCOL.md`;
-- `../GOVERNANCE/REALITY_CHECK_REGISTER.md`;
 - `../GOVERNANCE/RC-009_SP-S4-P05.md`;
 - `../GOVERNANCE/RC-010_SP-S4-P06.md`;
 - `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
 - `../GOVERNANCE/RC-012_SP-S4-P08.md`;
 - `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09.md` — active; zero-delta-recommended; owner-decision-pending.
+- `../GOVERNANCE/RC-013_SP-S4-P09.md`;
+- `../GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md`;
+- `../GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md`.
 
 ---
 
 ## Delta-first
 
-После каждого утверждённого параметра создаётся local parameter delta record. Для `zero-delta` создаётся record только после явного решения владельца.
+После каждого утверждённого параметра создаётся local parameter delta record. Для `zero-delta` record фиксирует отсутствие новой сущности и обязательные границы.
 
 Плановая консолидация больших реестров выполняется:
 
@@ -47,13 +48,11 @@
 - на границе ступени;
 - либо по отдельному решению владельца.
 
-29 августа 2026 года после утверждения SP-S4-P05 выполнена плановая консолидация `CLAIMS_REGISTRY.md`, `EVIDENCE_MAP.md` и `CROSS_REFERENCE_MAP.md`.
+29 августа 2026 года после P05 выполнена плановая консолидация `CLAIMS_REGISTRY.md`, `EVIDENCE_MAP.md` и `CROSS_REFERENCE_MAP.md`.
 
-SP-S4-P06, P07 и P08 добавлены delta-first без внеплановой большой консолидации. Для P07 новый claim не создавался, потому что параметр утверждён как `zero-delta`.
+P06–P09 добавлены delta-first без внеплановой большой консолидации. P07 и P09 утверждены как `zero-delta` и не создают новый самостоятельный canonical claim.
 
-SP-S4-P09 активен. Red Team рекомендует `zero-delta`, но approved record не создаётся до отдельного решения владельца.
-
-Следующая плановая консолидация — после P10, если отдельное решение владельца не потребует её раньше.
+Следующая плановая консолидация — после P10.
 
 ---
 
@@ -65,60 +64,48 @@ SP-S4-P09 активен. Red Team рекомендует `zero-delta`, но app
 - SP-S1-P01–SP-S1-P13;
 - SP-S2-P01–SP-S2-P13;
 - SP-S3-P01–SP-S3-P13;
-- SP-S4-P01–SP-S4-P08, где P07 = `zero-delta`;
+- SP-S4-P01–SP-S4-P09, где P07 и P09 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
-
-SP-S4-P09 в approved library пока не входит.
 
 ---
 
-## Последний завершённый approved delta record — SP-S4-P08
+## Последний завершённый approved delta record — SP-S4-P09
 
-> **Следующий навык четвёртой ступени — способность восстанавливать функциональное участие из фактической степени текущей доступности после того, как под нагрузкой уменьшился доступ к уже сформированной способности выбора.**
+Тип:
+
+> **amended `zero-delta`.**
+
+Утверждённый смысл:
+
+> **На четвёртой ступени тело остаётся значимой частью фактической текущей позиции и может участвовать в изменении состояния и доступности действия, но отдельный новый класс телесных проявлений S4 не подтверждён.**
 
 Коротко:
 
-> **Восстанавливать участие из фактической доступности.**
+> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
 
-Approved full record: `../FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md`.
-
-Canonical: `../CANONICAL/38_STAGE_4_P08_CANONICAL.md`.
-
-Reality Check: `../GOVERNANCE/RC-012_SP-S4-P08.md`.
-
----
-
-## Active working parameter — SP-S4-P09
-
-Рабочие материалы:
-
-- `../SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md`;
-- `../GOVERNANCE/SP-S4-P09_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09.md`.
-
-Red Team recommendation:
-
-> **Тело важно, но отдельной новой телесной дельты S4 пока не обнаружено.**
-
-Причина:
+Ключевые границы:
 
 ```text
-рабочий телесный смысл P09
-≈
-SP-S3-P09
-+
-SP-S4-P01
-+
-SP-S4-P08
+телесный сигнал = данные
+≠ только данные
+
+изменение тела может влиять на состояние
+≠ гарантирует изменение состояния
+
+улучшение состояния
+≠ восстановление выбора
+
+body-state bidirectionality
+≠ unique S4 mechanism
 ```
 
-До решения владельца:
+Intentional bodily leverage сохранён как кандидат функционального класса для P11.
 
-```text
-working zero-delta recommendation
-≠
-approved zero-delta record
-```
+Full approved record: `../FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
+
+Reality Check: `../GOVERNANCE/RC-013_SP-S4-P09.md`.
+
+Owner approval: `../GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md`.
 
 ---
 
@@ -132,4 +119,4 @@ approved zero-delta record
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**SP-S4-P09 активен; `zero-delta` рекомендован, решение владельца ожидается. SP-S4-P10 не открыт.**
+**SP-S4-P09 утверждён. SP-S4-P10 не открыт.**
