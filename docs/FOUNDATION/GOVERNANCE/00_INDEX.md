@@ -15,6 +15,7 @@
 8. `RC-013_SP-S4-P09.md` + reanalysis + approval addendum — P09.
 9. `SP-S4-P10_ARCHITECT_PASS_NOTES.md` — Architect pass P10.
 10. `RC-014_SP-S4-P10.md` — Reality Check / Red Team P10.
+11. `RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md` — явное утверждение P10.
 
 ## Основной цикл
 
@@ -25,24 +26,19 @@
 → Reality Check
 → Red Team / Falsification
 → явное решение владельца
+→ PROJECT_STATE.yaml first
 → full theory
 → canonical при самостоятельной дельте
 → parameter delta
-→ PROJECT_STATE.yaml
+→ плановая консолидация при P05/P10/P13
 → derived status sync
 → checkpoint
 → consistency check
 ```
 
-## Активный governance cycle
+## Последний закрытый governance cycle
 
-**SP-S4-P10 — «Жизненные проявления».**
-
-Architect pass / Reality Check / Red Team завершены.
-
-Текущая рекомендация:
-
-> **Сохранить самостоятельную stage-specific life-scale delta.**
+**SP-S4-P10 — «Жизненные проявления»** закрыт 30 августа 2026 года как самостоятельная stage-specific life-scale delta.
 
 Центральная граница:
 
@@ -57,8 +53,16 @@ Architect pass / Reality Check / Red Team завершены.
 быстрое восстановление ≠ критерий P10
 ```
 
-Для защиты от ретроспективной рационализации сохранена prospective observability: новую фактическую позицию, отказ от автоматического приоритета старого плана, practically available next move и открытость feedback должно быть возможно различать до знания итогового результата.
+Prospective observability сохранена как обязательный falsification guard.
+
+## Консолидация
+
+После P10 выполнена плановая синхронизация:
+
+- `../LIBRARIES/CLAIMS_REGISTRY.md`;
+- `../LIBRARIES/EVIDENCE_MAP.md`;
+- `../LIBRARIES/CROSS_REFERENCE_MAP.md`.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P09. SP-S4-P10 активен; stage-specific delta рекомендована, решение владельца ожидается. SP-S4-P11 не открыт.**
+**Последний утверждённый параметр — SP-S4-P10. Открытого параметра нет. SP-S4-P11 не открыт.**
