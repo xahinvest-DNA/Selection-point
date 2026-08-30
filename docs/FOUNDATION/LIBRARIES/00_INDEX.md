@@ -14,42 +14,41 @@
 - `S4_P06_MAIN_ILLUSION_DELTA.md`;
 - `S4_P07_MAIN_PAIN_ZERO_DELTA.md`;
 - `S4_P08_NEXT_SKILL_DELTA.md`;
-- `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
+- `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`;
+- `S4_P10_LIFE_MANIFESTATIONS_DELTA.md`.
 
 Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
 
 ## Delta-first
 
-Local parameter delta создаётся **только после явного утверждения параметра**.
+Local parameter delta создаётся только после явного утверждения параметра.
 
-Следующая плановая большая консолидация — после утверждения P10.
+## Плановая консолидация после P10
 
-## Активный SP-S4-P10
+30 августа 2026 года после утверждения SP-S4-P10 обновлены:
 
-Architect pass / RC-014 / Red Team завершены.
+- `CLAIMS_REGISTRY.md`;
+- `EVIDENCE_MAP.md`;
+- `CROSS_REFERENCE_MAP.md`.
 
-Рабочая рекомендация:
+Следующая плановая большая консолидация — после P13 / на границе ступени.
 
-> **Сохранить самостоятельную stage-specific life-scale delta.**
+## SP-S4-P10
 
-Центральное различение:
+Утверждённая stage-specific life-scale delta:
 
 > **Устойчивость траектории ≠ неизменность её формы.**
 
-Но до решения владельца:
-
 ```text
-recommended P10 delta
-≠ approved local delta
+сохранение направления ≠ persistence любой ценой
+изменение формы ≠ зрелость само по себе
+хороший результат ≠ критерий P10
+скорость восстановления ≠ критерий P10
 ```
 
-Поэтому `S4_P10_*_DELTA.md` пока не создаётся и большие регистры не консолидируются.
-
-Связанные рабочие материалы:
-
-- `../SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md`;
-- `../GOVERNANCE/SP-S4-P10_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-014_SP-S4-P10.md`.
+Full theory: `../FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md`.  
+Canonical: `../CANONICAL/39_STAGE_4_P10_CANONICAL.md`.  
+Reality Check: `../GOVERNANCE/RC-014_SP-S4-P10.md`.
 
 ## Текущий approved scope
 
@@ -57,7 +56,7 @@ recommended P10 delta
 - SP-S1-P01–P13;
 - SP-S2-P01–P13;
 - SP-S3-P01–P13;
-- SP-S4-P01–P09, где P07 и P09 = `zero-delta`;
+- SP-S4-P01–P10, где P07 и P09 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
 
-**SP-S4-P10 пока не входит в approved library. SP-S4-P11 не открыт.**
+**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
