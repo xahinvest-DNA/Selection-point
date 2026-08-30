@@ -6,26 +6,26 @@
 
 Авторитетный машинно-читаемый статус: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
-На 29 августа 2026 года:
+На 30 августа 2026 года:
 
 - активная фаза: **Фаза 3 — точная архитектура пяти ступеней**;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены полностью;
-- Ступень 4: **SP-S4-P01–SP-S4-P05 утверждены**;
-- последний утверждённый параметр: **SP-S4-P05 «Доступная точка выбора»**;
-- SP-S4-P06 «Главная иллюзия» — следующий кандидат, **не открыт**.
+- Ступень 4: **SP-S4-P01–SP-S4-P07 завершены**;
+- последний завершённый параметр: **SP-S4-P07 «Главная боль» — утверждён как `zero-delta`**;
+- SP-S4-P08 «Следующий навык» — следующий кандидат, **не открыт**.
 
 ## Обязательные точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-29_SP-S4-P05.md`;
-5. `docs/FOUNDATION/FIVE_STAGES_THEORY/44_STAGE_4_AVAILABLE_POINT_OF_CHOICE.md`;
-6. `docs/FOUNDATION/CANONICAL/36_STAGE_4_P05_CANONICAL.md`;
-7. `docs/FOUNDATION/LIBRARIES/S4_P05_AVAILABLE_POINT_OF_CHOICE_DELTA.md`;
-8. `docs/FOUNDATION/GOVERNANCE/RC-009_SP-S4-P05.md`;
-9. `docs/FOUNDATION/SOURCE_MATERIALS/11_2026-08-29_CORE_LOOP_AND_COMPLETION_STRATEGY.md`.
+4. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P07_ZERO_DELTA.md`;
+5. `docs/FOUNDATION/FIVE_STAGES_THEORY/46_STAGE_4_MAIN_PAIN_ZERO_DELTA.md`;
+6. `docs/FOUNDATION/CANONICAL/00_INDEX.md`;
+7. `docs/FOUNDATION/LIBRARIES/S4_P07_MAIN_PAIN_ZERO_DELTA.md`;
+8. `docs/FOUNDATION/GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
+9. `docs/FOUNDATION/SOURCE_MATERIALS/14_2026-08-30_BLOCKED_GOAL_TRAJECTORY_EXAMPLE.md`.
 
 ## Центральная идея
 
@@ -91,6 +91,30 @@
 
 Количество вариантов само по себе не является критерием зрелости.
 
+### SP-S4-P06 — главная иллюзия
+
+> **Главная иллюзия четвёртой ступени возникает, когда реально сформированная способность сохранять выбор начинает переживаться как гарантия собственной будущей доступности. Когда факты нарушают эту гарантию, они возвращают человека к текущей позиции; это само по себе не доказывает ни утрату способности, ни ошибочность выбранного направления.**
+
+Коротко:
+
+> **Сформированная способность ≠ гарантированная доступность.**
+
+### SP-S4-P07 — главная боль
+
+**Утверждено как `zero-delta`.**
+
+> **На четвёртой ступени может присутствовать сильная человеческая боль, но отдельная новая структурная «главная боль», специфичная именно для этой ступени, не подтверждена.**
+
+```text
+боль утраты важного будущего
+≠
+самостоятельная структурная боль S4
+```
+
+Ключевой предохранитель:
+
+> **Принять реальность ≠ ничего не чувствовать.**
+
 ## Сквозной предохранитель
 
 > **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
@@ -114,8 +138,8 @@ checkpoint + git history
 → история решений
 ```
 
-После P05 выполнена плановая консолидация claims/evidence/cross-reference indexes.
+После P05 выполнена плановая консолидация claims/evidence/cross-reference indexes. P06 проведён delta-first. P07 завершён как `zero-delta`, поэтому отдельный новый claim и отдельная canonical-card не создавались.
 
 ## Текущая рабочая точка
 
-**SP-S4-P05 утверждён. SP-S4-P06 не открыт.**
+**SP-S4-P07 завершён как `zero-delta`. SP-S4-P08 не открыт.**
