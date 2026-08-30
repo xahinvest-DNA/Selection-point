@@ -5,49 +5,60 @@
 
 ## Действующие документы
 
-1. `../PROJECT_STATE.yaml` — единственный источник текущего статуса проекта.
-2. `../PROJECT_OPERATING_PROTOCOL.md` — основной process protocol v4.0.
-3. `PROJECT_GOVERNANCE_SYSTEM.md` — разделение источников истины, delta-first, матрица 5 × 13, consistency check.
-4. `REALITY_CHECK_PROTOCOL.md` — постоянная проверка наблюдаемости, внешней совместимости и falsifiability.
-5. `REALITY_CHECK_REGISTER.md` — очередь и результаты Reality Check.
-6. `RC-011_SP-S4-P07_ZERO_DELTA.md` — Reality Check утверждённого zero-delta P07.
-7. `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — Reality Check и утверждение P08.
-8. `SP-S4-P09_ARCHITECT_PASS_NOTES.md` — Architect pass P09.
-9. `RC-013_SP-S4-P09.md` — первый Reality Check P09.
-10. `RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md` — повторный Reality Check после контрпримера о body-state bidirectionality.
-11. `RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md` — явное утверждение P09 как amended `zero-delta`.
+1. `../PROJECT_STATE.yaml` — единственный источник текущего статуса.
+2. `../PROJECT_OPERATING_PROTOCOL.md` — process protocol v4.0.
+3. `PROJECT_GOVERNANCE_SYSTEM.md` — источники истины, delta-first, consistency check.
+4. `REALITY_CHECK_PROTOCOL.md` — внешняя проверка и falsification.
+5. `REALITY_CHECK_REGISTER.md` — реестр Reality Check.
+6. `RC-011_SP-S4-P07_ZERO_DELTA.md` — P07.
+7. `RC-012_SP-S4-P08.md` + approval addendum — P08.
+8. `RC-013_SP-S4-P09.md` + reanalysis + approval addendum — P09.
+9. `SP-S4-P10_ARCHITECT_PASS_NOTES.md` — Architect pass P10.
+10. `RC-014_SP-S4-P10.md` — Reality Check / Red Team P10.
 
 ## Основной цикл
 
 ```text
 3 вопроса
-→ обсуждение
+→ обсуждение / comparative synthesis
 → Architect pass
 → Reality Check
 → Red Team / Falsification
-→ при meaningful counterexample повторный Reality Check
-→ явное решение Андрея
-→ full theory / zero-delta record
+→ явное решение владельца
+→ full theory
 → canonical при самостоятельной дельте
-→ parameter delta / zero-delta record
+→ parameter delta
 → PROJECT_STATE.yaml
 → derived status sync
 → checkpoint
 → consistency check
 ```
 
-## Последний закрытый governance cycle
+## Активный governance cycle
 
-**SP-S4-P09 — «Телесные проявления»** закрыт 30 августа 2026 года как amended `zero-delta`.
+**SP-S4-P10 — «Жизненные проявления».**
 
-Утверждённая граница:
+Architect pass / Reality Check / Red Team завершены.
 
-> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
+Текущая рекомендация:
 
-Сквозная body-state bidirectionality сохранена для Whole-System Review; intentional bodily leverage передан как кандидат функционального класса в P11.
+> **Сохранить самостоятельную stage-specific life-scale delta.**
+
+Центральная граница:
+
+> **Устойчивость траектории ≠ неизменность её формы.**
+
+Обязательные ограничения:
+
+```text
+сохранение направления ≠ persistence любой ценой
+изменение формы ≠ зрелость само по себе
+хороший результат ≠ критерий P10
+быстрое восстановление ≠ критерий P10
+```
+
+Для защиты от ретроспективной рационализации сохранена prospective observability: новую фактическую позицию, отказ от автоматического приоритета старого плана, practically available next move и открытость feedback должно быть возможно различать до знания итогового результата.
 
 ## Текущая остановка
 
-Источник: `../PROJECT_STATE.yaml`.
-
-**Последний утверждённый параметр — SP-S4-P09. Открытого параметра нет. SP-S4-P10 не открыт.**
+**Последний утверждённый параметр — SP-S4-P09. SP-S4-P10 активен; stage-specific delta рекомендована, решение владельца ожидается. SP-S4-P11 не открыт.**
