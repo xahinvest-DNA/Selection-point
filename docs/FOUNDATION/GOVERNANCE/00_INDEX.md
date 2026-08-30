@@ -9,10 +9,13 @@
 2. `../PROJECT_OPERATING_PROTOCOL.md` — основной process protocol v4.0.
 3. `PROJECT_GOVERNANCE_SYSTEM.md` — разделение источников истины, delta-first, матрица 5 × 13, consistency check.
 4. `REALITY_CHECK_PROTOCOL.md` — постоянная проверка наблюдаемости, внешней совместимости и falsifiability.
-5. `REALITY_CHECK_REGISTER.md` — активная очередь проверок, способных изменить архитектуру.
+5. `REALITY_CHECK_REGISTER.md` — очередь и результаты Reality Check.
 6. `RC-011_SP-S4-P07_ZERO_DELTA.md` — Reality Check утверждённого zero-delta P07.
-7. `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — Reality Check и явное утверждение P08.
-8. `SP-S4-P09_ARCHITECT_PASS_NOTES.md` + `RC-013_SP-S4-P09.md` — активная проверка P09; `zero-delta` рекомендован, owner decision pending.
+7. `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — Reality Check и утверждение P08.
+8. `SP-S4-P09_ARCHITECT_PASS_NOTES.md` — Architect pass P09.
+9. `RC-013_SP-S4-P09.md` — первый Reality Check P09.
+10. `RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md` — повторный Reality Check после контрпримера о body-state bidirectionality.
+11. `RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md` — явное утверждение P09 как amended `zero-delta`.
 
 ## Основной цикл
 
@@ -22,6 +25,7 @@
 → Architect pass
 → Reality Check
 → Red Team / Falsification
+→ при meaningful counterexample повторный Reality Check
 → явное решение Андрея
 → full theory / zero-delta record
 → canonical при самостоятельной дельте
@@ -32,8 +36,18 @@
 → consistency check
 ```
 
+## Последний закрытый governance cycle
+
+**SP-S4-P09 — «Телесные проявления»** закрыт 30 августа 2026 года как amended `zero-delta`.
+
+Утверждённая граница:
+
+> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
+
+Сквозная body-state bidirectionality сохранена для Whole-System Review; intentional bodily leverage передан как кандидат функционального класса в P11.
+
 ## Текущая остановка
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**Последний утверждённый параметр — SP-S4-P08. SP-S4-P09 активен; Architect pass, Reality Check и Red Team завершены; текущая рекомендация — `zero-delta`; решение владельца ожидается. SP-S4-P10 не открыт.**
+**Последний утверждённый параметр — SP-S4-P09. Открытого параметра нет. SP-S4-P10 не открыт.**
