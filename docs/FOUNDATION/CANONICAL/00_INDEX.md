@@ -4,15 +4,7 @@
 **Дата обновления:** 30 августа 2026 года  
 **Текущий статус проекта:** `../PROJECT_STATE.yaml`
 
-Канонический слой хранит только утверждённый смысл. Рабочий P09 отражается здесь только как статус и не становится каноном до явного решения владельца.
-
-Правила слоя:
-
-- `00_CANONICAL_RULES.md`;
-- `../GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
-- `../GOVERNANCE/REALITY_CHECK_PROTOCOL.md`.
-
----
+Канонический слой хранит только утверждённый смысл. Для `zero-delta` отдельная canonical-card не создаётся, если нет самостоятельного нового claim.
 
 ## Human Change Model
 
@@ -20,8 +12,6 @@
 - SP-HCM-09 — `01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md`.
 
 > **Контроль предполагает возможность заранее получить желаемый результат. Создание происходит независимо от контроля.**
-
----
 
 ## Ступени 1–3
 
@@ -43,82 +33,57 @@
 | SP-S4-P06 | `37_STAGE_4_P06_CANONICAL.md` | утверждено |
 | SP-S4-P07 | отдельная карточка не создаётся | **утверждено: zero-delta** |
 | SP-S4-P08 | `38_STAGE_4_P08_CANONICAL.md` | **утверждено** |
-| SP-S4-P09 | — | **активен; zero-delta-recommended; owner-decision-pending; canonical отсутствует** |
+| SP-S4-P09 | отдельная карточка не создаётся | **утверждено: amended zero-delta** |
 | SP-S4-P10 | — | не открыт |
 | SP-S4-P11 | — | не открыт |
 | SP-S4-P12 | — | не открыт |
 | SP-S4-P13 | — | не открыт |
 
-### Последний утверждённый параметр: SP-S4-P08
+## Последний утверждённый параметр — SP-S4-P09
 
-> **Восстанавливать участие из фактической доступности.**
+Утверждённый `zero-delta`:
 
-Approved full record: `../FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md`.
+> **На четвёртой ступени тело остаётся значимой частью фактической текущей позиции и может участвовать в изменении состояния и доступности действия, но отдельный новый класс телесных проявлений S4 не подтверждён.**
 
-Local delta: `../LIBRARIES/S4_P08_NEXT_SKILL_DELTA.md`.
+Короткая граница:
 
-Reality Check: `../GOVERNANCE/RC-012_SP-S4-P08.md`.
+> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
 
-Owner approval: `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
-
----
-
-## Активный SP-S4-P09
-
-Рабочая граница:
+Обязательные ограничения:
 
 ```text
-напряжение ≠ потеря выбора
-спокойствие ≠ наличие выбора
+телесный сигнал = данные
+≠ только данные
+
+изменение тела может влиять на состояние
+≠ гарантирует изменение состояния
+
+улучшение состояния
+≠ восстановление выбора
+
+body-state bidirectionality
+≠ unique S4 mechanism
 ```
 
-Однако Red Team установил сильное дублирование:
+Full approved record: `../FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
 
-```text
-SP-S3-P09
-+
-SP-S4-P01
-+
-SP-S4-P08
-```
+Local zero-delta: `../LIBRARIES/S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
 
-достаточно для описания текущей телесной гипотезы.
+Reality Check: `../GOVERNANCE/RC-013_SP-S4-P09.md`.
 
-Поэтому Reality Check `RC-013` рекомендует `zero-delta`:
+Reanalysis: `../GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md`.
 
-> **Тело важно, но отдельной новой телесной дельты S4 пока не обнаружено.**
-
-До явного решения владельца:
-
-```text
-zero-delta recommendation
-≠
-canonical zero-delta
-```
-
-Canonical-card P09 не создаётся заранее.
-
-Рабочие материалы:
-
-- `../SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md`;
-- `../GOVERNANCE/SP-S4-P09_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-013_SP-S4-P09.md`.
+Owner approval: `../GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md`.
 
 ---
 
 ## Библиотеки
 
-Последний завершённый approved parameter delta record: `../LIBRARIES/S4_P08_NEXT_SKILL_DELTA.md`.
+Последний завершённый approved parameter delta record:
 
-Для активного P09 approved delta / zero-delta record ещё не существует.
+`../LIBRARIES/S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`.
 
 Следующая плановая большая консолидация — после P10, если отдельное решение владельца не потребует её раньше.
-
----
-
-## Матрица 5 × 13
-
-Отдельная каноническая карточка создаётся только при наличии самостоятельной утверждённой дельты. `zero-delta` является допустимым архитектурным результатом.
 
 ---
 
@@ -126,4 +91,4 @@ Canonical-card P09 не создаётся заранее.
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**SP-S4-P09 активен; `zero-delta` рекомендован, решение владельца ожидается. SP-S4-P10 не открыт.**
+**SP-S4-P09 утверждён. SP-S4-P10 не открыт.**
