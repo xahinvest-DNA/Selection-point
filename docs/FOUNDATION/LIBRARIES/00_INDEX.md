@@ -30,13 +30,14 @@
 - `../GOVERNANCE/RC-010_SP-S4-P06.md`;
 - `../GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md`;
 - `../GOVERNANCE/RC-012_SP-S4-P08.md`;
-- `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
+- `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`;
+- `../GOVERNANCE/RC-013_SP-S4-P09.md` — active; zero-delta-recommended; owner-decision-pending.
 
 ---
 
 ## Delta-first
 
-После каждого утверждённого параметра создаётся local parameter delta record.
+После каждого утверждённого параметра создаётся local parameter delta record. Для `zero-delta` создаётся record только после явного решения владельца.
 
 Плановая консолидация больших реестров выполняется:
 
@@ -49,6 +50,8 @@
 29 августа 2026 года после утверждения SP-S4-P05 выполнена плановая консолидация `CLAIMS_REGISTRY.md`, `EVIDENCE_MAP.md` и `CROSS_REFERENCE_MAP.md`.
 
 SP-S4-P06, P07 и P08 добавлены delta-first без внеплановой большой консолидации. Для P07 новый claim не создавался, потому что параметр утверждён как `zero-delta`.
+
+SP-S4-P09 активен. Red Team рекомендует `zero-delta`, но approved record не создаётся до отдельного решения владельца.
 
 Следующая плановая консолидация — после P10, если отдельное решение владельца не потребует её раньше.
 
@@ -65,6 +68,8 @@ SP-S4-P06, P07 и P08 добавлены delta-first без внепланово
 - SP-S4-P01–SP-S4-P08, где P07 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
 
+SP-S4-P09 в approved library пока не входит.
+
 ---
 
 ## Последний завершённый approved delta record — SP-S4-P08
@@ -75,29 +80,45 @@ SP-S4-P06, P07 и P08 добавлены delta-first без внепланово
 
 > **Восстанавливать участие из фактической доступности.**
 
-Ключевые границы:
-
-```text
-восстановить участие
-≠
-сначала полностью восстановить прежнее состояние
-
-полное прежнее состояние не всегда нужно
-≠
-состояние никогда не нужно восстанавливать
-
-больше вариантов
-≠
-больше зрелости
-```
-
 Approved full record: `../FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md`.
 
 Canonical: `../CANONICAL/38_STAGE_4_P08_CANONICAL.md`.
 
 Reality Check: `../GOVERNANCE/RC-012_SP-S4-P08.md`.
 
-Owner approval: `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
+---
+
+## Active working parameter — SP-S4-P09
+
+Рабочие материалы:
+
+- `../SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md`;
+- `../GOVERNANCE/SP-S4-P09_ARCHITECT_PASS_NOTES.md`;
+- `../GOVERNANCE/RC-013_SP-S4-P09.md`.
+
+Red Team recommendation:
+
+> **Тело важно, но отдельной новой телесной дельты S4 пока не обнаружено.**
+
+Причина:
+
+```text
+рабочий телесный смысл P09
+≈
+SP-S3-P09
++
+SP-S4-P01
++
+SP-S4-P08
+```
+
+До решения владельца:
+
+```text
+working zero-delta recommendation
+≠
+approved zero-delta record
+```
 
 ---
 
@@ -111,4 +132,4 @@ Owner approval: `../GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md`.
 
 Источник: `../PROJECT_STATE.yaml`.
 
-**SP-S4-P08 утверждён. SP-S4-P09 не открыт.**
+**SP-S4-P09 активен; `zero-delta` рекомендован, решение владельца ожидается. SP-S4-P10 не открыт.**
