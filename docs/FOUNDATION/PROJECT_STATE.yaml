@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P08
   active_parameter: SP-S4-P09
   active_parameter_name: "Телесные проявления"
-  active_parameter_status: "source-synthesis-accepted; architect-pass-in-progress"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; zero-delta-recommended; owner-decision-pending"
   next_candidate: SP-S4-P10
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года Андрей принял рабочий синтез по телесным проявлениям S4 после сравнительной реконструкции Williams / Millman / Fritz и внешнего обзора и дал команду: 'Принято. Запускай P09'. Это открывает SP-S4-P09 для Architect pass, Reality Check и Red Team, но не является финальным утверждением параметра."
+  owner_decision: "30 августа 2026 года Андрей принял рабочий синтез по телесным проявлениям S4 и дал команду: 'Принято. Запускай P09'. После Architect pass, Reality Check и Red Team самостоятельная P09-дельта не подтверждена; текущая рабочая рекомендация — zero-delta. Финального решения владельца по P09 ещё нет."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -25,16 +25,16 @@ completed:
   visual_models: "SP-VM-01–SP-VM-02"
 
 active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P08.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09.md"
 
 active_sources:
   full_theory: null
   canonical: null
   parameter_delta: null
-  primary_working_source: null
-  comparative_working_source: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md"
+  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md"
-  reality_check: null
+  reality_check: RC-013
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -85,7 +85,9 @@ constraints:
   p08_may_include_automated_mature_response: true
   p08_not_claimed_as_new_universal_psychological_mechanism: true
   p09_working_claim_not_approved: true
+  p09_zero_delta_recommended: true
   p09_arousal_is_not_loss_of_choice: true
   p09_calm_is_not_proof_of_choice: true
   p09_no_single_body_marker_is_universal: true
   p09_body_state_may_remain_changed_during_functional_recovery: true
+  p09_body_signal_is_data_not_diagnosis: true
