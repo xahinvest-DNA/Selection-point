@@ -8,13 +8,13 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P07
-  active_parameter: null
-  active_parameter_name: null
-  active_parameter_status: null
-  next_candidate: SP-S4-P08
+  active_parameter: SP-S4-P08
+  active_parameter_name: "Следующий навык"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; owner-decision-pending"
+  next_candidate: SP-S4-P09
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года после завершения Architect pass, Reality Check и Red Team Андрей явно утвердил рекомендованный zero-delta для SP-S4-P07 решением: 'утверждаем'. Самостоятельная новая структурная главная боль S4 не подтверждена; это не означает отсутствие человеческой боли. SP-S4-P08 остаётся unopened до отдельного открытия."
+  owner_decision: "30 августа 2026 года Андрей принял сравнительный синтез Williams / Millman / Fritz для SP-S4-P08 как рабочее направление словами: 'Принимаем. Продолжай'. Это открыло P08 для Architect pass, Reality Check и Red Team, но не является финальным утверждением параметра. Последним утверждённым параметром остаётся SP-S4-P07 = zero-delta."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -28,13 +28,13 @@ active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-0
 previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-011_SP-S4-P07_ZERO_DELTA.md"
 
 active_sources:
-  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/46_STAGE_4_MAIN_PAIN_ZERO_DELTA.md"
+  full_theory: null
   canonical: null
-  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P07_MAIN_PAIN_ZERO_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/14_2026-08-30_BLOCKED_GOAL_TRAJECTORY_EXAMPLE.md"
-  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/13_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P07_REFLECTION.md"
-  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/45_STAGE_4_MAIN_ILLUSION.md"
-  reality_check: RC-011
+  parameter_delta: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/15_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P08_REFLECTION.md"
+  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/15_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P08_REFLECTION.md"
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/46_STAGE_4_MAIN_PAIN_ZERO_DELTA.md"
+  reality_check: RC-012
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -78,3 +78,8 @@ constraints:
   p07_goal_orientation_is_not_automatically_conditional_happiness: true
   p07_happiness_without_reason_remains_stage_boundary_candidate: true
   p07_social_misunderstanding_remains_contextual_hypothesis: true
+  p08_working_claim_not_approved: true
+  p08_more_options_is_not_skill_definition: true
+  p08_full_state_restoration_is_not_universal_prerequisite: true
+  p08_state_regulation_may_be_the_next_available_move: true
+  p08_may_include_automated_mature_response: true
