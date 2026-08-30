@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P09
   active_parameter: SP-S4-P10
   active_parameter_name: "Жизненные проявления"
-  active_parameter_status: "owner-reflection"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; stage-specific-delta-recommended; owner-decision-pending"
   next_candidate: SP-S4-P11
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года после утверждения SP-S4-P09 Андрей попросил сохранить мысль о Selection Point как технологии участия в создании собственной жизненной траектории и перейти к следующему пункту. Мысль сохранена как SP-SRC-018 без канонизации мистической причинности. SP-S4-P10 открыт для обязательной трёхвопросной owner reflection; содержательная архитектура P10 ещё не сформирована."
+  owner_decision: "30 августа 2026 года после трёх вопросов по SP-S4-P10 Андрей попросил смоделировать ответы через Williams, Millman и Fritz, затем принял рабочий синтез командой 'Принято. Продолжаем'. Architect pass, внешний Reality Check и Red Team завершены. Самостоятельная life-scale дельта сохранена: устойчивость траектории не равна неизменности её формы; новая фактическая позиция может требовать новой формы продолжения, а релевантная реальность сохраняет право изменить и конкретную цель, и при необходимости само направление. Финального решения владельца по P10 ещё нет."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -25,17 +25,17 @@ completed:
   visual_models: "SP-VM-01–SP-VM-02"
 
 active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P09.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md"
 
 active_sources:
   full_theory: null
   canonical: null
   parameter_delta: null
-  primary_working_source: null
-  comparative_working_source: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md"
+  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/18_2026-08-30_TRAJECTORY_TECHNOLOGY_MAGIC_METAPHOR.md"
-  reality_check: null
+  reality_check: RC-014
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -99,3 +99,11 @@ constraints:
   p09_intentional_bodily_leverage_is_p11_candidate_not_p09_manifestation: true
   p09_hcm_bidirectionality_clarification_deferred_to_whole_system_review: true
   p10_working_claim_not_approved: true
+  p10_stage_specific_delta_recommended: true
+  p10_trajectory_stability_is_not_form_stability: true
+  p10_form_change_is_not_trajectory_loss: true
+  p10_persistence_is_not_maturity_criterion: true
+  p10_good_outcome_is_not_maturity_criterion: true
+  p10_recovery_speed_is_not_maturity_criterion: true
+  p10_reality_may_require_goal_or_direction_revision: true
+  p10_prospective_observability_required: true
