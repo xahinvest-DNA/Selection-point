@@ -7,14 +7,12 @@
 
 - Фаза 3 — точная архитектура пяти ступеней.
 - Ступени 1–3 завершены.
-- Ступень 4: **SP-S4-P01–SP-S4-P09 утверждены**, P07 и P09 = `zero-delta`.
-- Активный параметр: **SP-S4-P10 — «Жизненные проявления»**.
-- Architect pass / Reality Check / Red Team завершены.
-- Рекомендация: **сохранить самостоятельную stage-specific life-scale delta**.
-- Owner decision pending.
-- SP-S4-P11 не открыт.
+- Ступень 4: **SP-S4-P01–SP-S4-P10 утверждены**, P07 и P09 = `zero-delta`.
+- Последний утверждённый параметр: **SP-S4-P10 — «Жизненные проявления»**.
+- Открытого параметра нет.
+- SP-S4-P11 — следующий кандидат, **не открыт**.
 
-## SP-S4-P10 candidate
+## SP-S4-P10
 
 > **Устойчивость траектории ≠ неизменность её формы.**
 
@@ -27,7 +25,7 @@
 → перестроенная жизненная конфигурация
 ```
 
-При этом:
+Границы:
 
 ```text
 сохранение направления ≠ persistence любой ценой
@@ -36,12 +34,15 @@
 скорость восстановления ≠ критерий P10
 ```
 
-Реальность сохраняет право потребовать пересмотра и конкретной цели, и самого направления.
+Реальность сохраняет право потребовать пересмотра конкретной цели и самого направления.
 
 ## Источники
 
-- `FOUNDATION/SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P10_ARCHITECT_PASS_NOTES.md`;
-- `FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md`.
+- `FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md`;
+- `FOUNDATION/CANONICAL/39_STAGE_4_P10_CANONICAL.md`;
+- `FOUNDATION/LIBRARIES/S4_P10_LIFE_MANIFESTATIONS_DELTA.md`;
+- `FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10.md`;
+- `FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md`;
+- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P10.md`.
 
-**Full theory / canonical / delta не создаются до явного решения владельца.**
+**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
