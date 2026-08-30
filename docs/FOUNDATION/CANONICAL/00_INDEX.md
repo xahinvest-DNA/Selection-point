@@ -3,7 +3,7 @@
 **Статус:** утверждённый производный слой  
 **Текущий статус проекта:** `../PROJECT_STATE.yaml`
 
-Канон содержит только утверждённый смысл. Рабочий SP-S4-P10 здесь отражается только как статус.
+Канон содержит только утверждённый смысл. Для `zero-delta` отдельная canonical-card не создаётся, если нет самостоятельного нового claim.
 
 ## Human Change Model
 
@@ -27,41 +27,35 @@
 | SP-S4-P07 | — | утверждено: zero-delta |
 | SP-S4-P08 | `38_STAGE_4_P08_CANONICAL.md` | утверждено |
 | SP-S4-P09 | — | утверждено: amended zero-delta |
-| SP-S4-P10 | — | **активен; stage-specific delta recommended; owner-decision-pending** |
+| SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | **утверждено** |
 | SP-S4-P11 | — | не открыт |
 | SP-S4-P12 | — | не открыт |
 | SP-S4-P13 | — | не открыт |
 
-## Рабочий P10 — не канон
-
-Кандидат:
+## Последний канонический параметр — SP-S4-P10
 
 > **Устойчивость траектории ≠ неизменность её формы.**
 
-После RC-014 самостоятельная life-scale delta сохранена, но:
+> **Новая фактическая позиция может требовать новой формы продолжения.**
+
+Главные границы:
 
 ```text
-working recommendation
-≠ canonical claim
-```
-
-До owner approval canonical-card P10 не создаётся.
-
-Обязательные рабочие границы:
-
-```text
+сохранение формы ≠ сохранение траектории
+изменение формы ≠ потеря траектории
 сохранение направления ≠ persistence любой ценой
-изменение формы ≠ зрелость само по себе
 благоприятный исход ≠ критерий P10
-реальность может потребовать пересмотра направления
 ```
 
-Рабочие материалы:
+Full theory: `../FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md`.  
+Local delta: `../LIBRARIES/S4_P10_LIFE_MANIFESTATIONS_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-014_SP-S4-P10.md`.  
+Owner approval: `../GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md`.
 
-- `../SOURCE_MATERIALS/19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md`;
-- `../GOVERNANCE/SP-S4-P10_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-014_SP-S4-P10.md`.
+## Консолидация
+
+После P10 выполнена плановая синхронизация claims/evidence/cross-reference registries.
 
 ## Текущая точка
 
-**Последний канонически утверждённый параметр — SP-S4-P09. P10 ожидает решения владельца. P11 не открыт.**
+**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
