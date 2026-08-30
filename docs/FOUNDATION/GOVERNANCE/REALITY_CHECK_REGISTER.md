@@ -22,7 +22,7 @@
 | RC-010 | SP-S4-P06 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Сформированная способность ≠ гарантированная доступность. |
 | RC-011 | SP-S4-P07 | утверждено: zero-delta | owner-approved; zero-delta; externally-compatible; falsifier-defined | Самостоятельная структурная «главная боль» S4 не подтверждена. |
 | RC-012 | SP-S4-P08 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Утверждён stage-specific навык восстановления участия из фактической доступности. |
-| RC-013 | SP-S4-P09 | активен | reanalysis-complete; amended-zero-delta-recommended; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Body-state bidirectionality подтверждена как сквозное свойство, но не как уникальная S4-дельта; вынести владельцу amended zero-delta recommendation. |
+| RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality сохранена как сквозное свойство; отдельная S4-specific телесная дельта не подтверждена. |
 
 ## Закрытые / текущие полные записи
 
@@ -31,31 +31,10 @@
 - `RC-011_SP-S4-P07_ZERO_DELTA.md` — P07, owner-approved zero-delta.
 - `RC-012_SP-S4-P08.md` + `RC-012_SP-S4-P08_APPROVAL_ADDENDUM.md` — P08, owner-approved.
 - `RC-013_SP-S4-P09.md` — первый Reality Check P09.
-- `RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md` — повторный Reality Check после контрпримера владельца о двусторонности body-state; active; owner-decision-pending.
+- `RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md` — повторный Reality Check после контрпримера владельца.
+- `RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md` — P09, owner-approved amended zero-delta.
 
-## RC-011 — краткий итог
-
-> **На четвёртой ступени может присутствовать сильная человеческая боль, но отдельная новая структурная «главная боль», специфичная именно для этой ступени, не подтверждена.**
-
-```text
-боль утраты значимого будущего
-≠
-самостоятельная структурная боль S4
-```
-
-## RC-012 — краткий итог
-
-> **Восстанавливать участие из фактической доступности.**
-
-```text
-восстановить участие
-≠
-сначала полностью восстановить прежнее состояние
-```
-
-P08 не заявляется как новый универсальный психологический механизм; pilot-observability и falsifier остаются действующими.
-
-## RC-013 — итог после повторного анализа
+## RC-013 — закрытый итог
 
 Первый Reality Check установил:
 
@@ -64,7 +43,7 @@ P08 не заявляется как новый универсальный пс�
 спокойствие ≠ наличие выбора
 ```
 
-После этого владелец привёл контрпример:
+Контрпример владельца затем показал необходимость исправить слишком пассивную трактовку тела:
 
 ```text
 внутреннее состояние
@@ -74,54 +53,36 @@ P08 не заявляется как новый универсальный пс�
 и:
 
 ```text
-намеренное изменение мимики / телесной организации
+намеренное изменение телесной организации
 или внутреннего образа
 → может изменить внутреннее состояние
 ```
 
-Повторный внешний обзор поддержал причинную двусторонность для ряда каналов:
+Повторный внешний обзор поддержал ограниченную причинную двусторонность для facial feedback, posture, respiration и mental imagery.
 
-- facial feedback: эффект существует, но в среднем мал / heterogeneous; preregistered Many Smiles поддержал voluntary facial action и mimicry;
-- posture: отдельные randomized studies показывают effects on affect/stress response, но effects контекстны и могут зависеть от individual embodiment;
-- respiration: breathing ↔ emotion/cognition имеет reciprocal neural/physiological links;
-- mental imagery: может причинно менять affect, но является не чисто телесным, а внутренне-перцептивным входом.
-
-Это исправляет слишком пассивную формулу:
-
-```text
-тело = только индикатор
-```
-
-Корректнее:
+Утверждённая системная граница:
 
 ```text
 тело
 = часть текущей позиции
 +
-один из причинных участников дальнейшей динамики
+может быть причинным участником дальнейшей динамики
 ```
 
-Однако stage-specificity attack сохраняется:
+Но:
 
 ```text
 body-state bidirectionality
-≠ уникальный механизм S4
+≠ unique S4 mechanism
 ```
 
-Она является сквозным свойством системы и частично уже содержится в HCM-02 / S1-P09 / S3-P09.
+Поэтому 30 августа 2026 года после второго Red Team Андрей явно утвердил:
 
-Intentional bodily leverage:
+> **SP-S4-P09 — amended `zero-delta`.**
 
-```text
-изменить телесный компонент
-→ попытаться изменить состояние / доступность
-```
+Короткая формула:
 
-является кандидатом функционального класса для P11, а не новым «телесным проявлением» P09.
-
-Текущая рекомендация:
-
-> **SP-S4-P09 — amended `zero-delta`: отдельная новая телесная структура S4 не подтверждена, но обязательной сквозной границей становится признание тела активным участником, а не только отражением внутренней позиции.**
+> **Тело не только показывает позицию — оно участвует в её изменении. Но это не отдельная S4-дельта.**
 
 Дополнительные предохранители:
 
@@ -140,7 +101,7 @@ body-state bidirectionality
 ≠ S4-specific delta
 ```
 
-До явного решения владельца `internal-approved` отсутствует.
+Intentional bodily leverage передан как кандидат функционального класса P11. Возможное явное представление body-state bidirectionality в HCM отложено до Whole-System Review.
 
 ## Правила
 
@@ -149,4 +110,4 @@ body-state bidirectionality
 - контрпример проверяется против области применимости и центрального тезиса;
 - `zero-delta` является допустимым результатом;
 - реестр обновляется при каждом meaningful Reality Check;
-- следующий параметр не открывается до завершения текущего governance cycle.
+- следующий параметр не открывается до отдельного запуска по протоколу.
