@@ -8,13 +8,13 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P09
-  active_parameter: null
-  active_parameter_name: null
-  active_parameter_status: null
-  next_candidate: SP-S4-P10
+  active_parameter: SP-S4-P10
+  active_parameter_name: "Жизненные проявления"
+  active_parameter_status: "owner-reflection"
+  next_candidate: SP-S4-P11
   next_status: unopened
   explicit_pause: false
-  owner_decision: "30 августа 2026 года после первоначального Architect pass / Reality Check / Red Team, контрпримера о двусторонности body-state, повторного исследовательского анализа и второго Red Team Андрей явно утвердил SP-S4-P09 решением: 'Утверждаем'. P09 утверждён как amended zero-delta: тело не только отображает текущую позицию, но может причинно участвовать в изменении состояния; при этом body-state bidirectionality является сквозным свойством системы, а не отдельной S4-specific телесной дельтой. Намеренное использование телесного входа переносится как кандидат функционального класса в P11. SP-S4-P10 остаётся unopened до отдельного открытия."
+  owner_decision: "30 августа 2026 года после утверждения SP-S4-P09 Андрей попросил сохранить мысль о Selection Point как технологии участия в создании собственной жизненной траектории и перейти к следующему пункту. Мысль сохранена как SP-SRC-018 без канонизации мистической причинности. SP-S4-P10 открыт для обязательной трёхвопросной owner reflection; содержательная архитектура P10 ещё не сформирована."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -28,15 +28,14 @@ active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-0
 previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md"
+  full_theory: null
   canonical: null
-  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/17_2026-08-30_BODY_STATE_BIDIRECTIONALITY_P09_REANALYSIS.md"
-  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/16_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P09_BODY_AND_RESEARCH.md"
-  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/47_STAGE_4_NEXT_SKILL.md"
-  reality_check: RC-013
-  reality_check_reanalysis_addendum: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_REANALYSIS_ADDENDUM.md"
-  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-013_SP-S4-P09_APPROVAL_ADDENDUM.md"
+  parameter_delta: null
+  primary_working_source: null
+  comparative_working_source: null
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md"
+  cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/18_2026-08-30_TRAJECTORY_TECHNOLOGY_MAGIC_METAPHOR.md"
+  reality_check: null
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -99,3 +98,4 @@ constraints:
   p09_state_improvement_does_not_equal_choice_recovery: true
   p09_intentional_bodily_leverage_is_p11_candidate_not_p09_manifestation: true
   p09_hcm_bidirectionality_clarification_deferred_to_whole_system_review: true
+  p10_working_claim_not_approved: true
