@@ -1,16 +1,16 @@
 schema_version: 1
 workstream: Selection Point Product Lab
-updated_at: 2026-08-30
+updated_at: 2026-09-01
 
 status:
   active_phase: LAB-0
   active_phase_name: "Bootstrap & Definition"
   current_task: SP-LAB-001
   current_task_name: "Define 'trainer of the capacity to choose' as a testable product thesis"
-  current_task_status: open
+  current_task_status: ready_for_owner_decision
   next_candidate: SP-LAB-002
   next_candidate_name: "Prepare problem-discovery research design"
-  explicit_pause: false
+  explicit_pause: true
 
 owner_direction:
   decision_date: 2026-08-30
@@ -21,6 +21,8 @@ sources_of_truth:
   lab_governance: "docs/PRODUCT_LAB/LAB_CHARTER.md"
   architecture_state: "docs/FOUNDATION/PROJECT_STATE.yaml"
   architecture_process: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md"
+  active_task_synthesis: "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
+  training_hypothesis: "docs/PRODUCT_LAB/TRAINING_ARCHITECTURE_V0.md"
 
 constraints:
   lab_does_not_open_phase_4_to_8: true
@@ -38,3 +40,8 @@ phase_exit_criteria:
     - initial hypothesis register exists
     - research sequence is defined
     - no conflict with current Phase 3 governance remains
+
+pending_owner_decision:
+  task: SP-LAB-001
+  question: "Approve Selection Capacity v0 as the working product model for external discovery, without treating it as canon or validated efficacy?"
+  if_approved: "Close SP-LAB-001 and open SP-LAB-002 — Problem Discovery Research Design."
