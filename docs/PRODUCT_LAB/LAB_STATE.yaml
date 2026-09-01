@@ -5,24 +5,37 @@ updated_at: 2026-09-01
 status:
   active_phase: LAB-0
   active_phase_name: "Bootstrap & Definition"
-  current_task: SP-LAB-001
-  current_task_name: "Define 'trainer of the capacity to choose' as a testable product thesis"
-  current_task_status: ready_for_owner_decision
+  last_approved: SP-LAB-001
+  last_approved_name: "Selection Capacity v0 as a working product model for external discovery"
+  current_task: null
+  current_task_name: null
+  current_task_status: null
   next_candidate: SP-LAB-002
   next_candidate_name: "Prepare problem-discovery research design"
+  next_status: unopened
   explicit_pause: true
 
 owner_direction:
-  decision_date: 2026-08-30
-  decision: "Start a parallel Product Lab inside the Selection Point repository. Treat 'тренажёр способности выбирать' as the central working product hypothesis and begin with the Lab contour before interviews, content publication, pilot, or product implementation."
+  decision_date: 2026-09-01
+  decision: "SP-LAB-001 approved as a working product model for external testing, not as canon and not as validated efficacy. Do not open SP-LAB-002 yet; preserve an explicit pause after synchronization."
+
+approved_working_model:
+  product_frame: "Selection Point may be presented and tested as a trainer of the capacity to choose."
+  selection_capacity: "The capacity to preserve or restore participation in one's own action so that relevant reality can still change the model, the next move and, when necessary, the direction itself."
+  short_formula: "Реальность всё ещё может тебя поправить."
+  key_research_object: "automatic closure"
+  minimal_principle: "A meaningful mismatch retains the possibility to affect subsequent action."
+  mastery_rule: "A single successful episode is insufficient; future validation must examine repeatability, autonomy, context transfer, feedback sensitivity and, where feasible, retention."
 
 sources_of_truth:
   lab_state: "docs/PRODUCT_LAB/LAB_STATE.yaml"
   lab_governance: "docs/PRODUCT_LAB/LAB_CHARTER.md"
   architecture_state: "docs/FOUNDATION/PROJECT_STATE.yaml"
   architecture_process: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md"
-  active_task_synthesis: "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
+  approved_task_synthesis: "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
+  selection_capacity_model: "docs/PRODUCT_LAB/SELECTION_CAPACITY_V0.md"
   training_hypothesis: "docs/PRODUCT_LAB/TRAINING_ARCHITECTURE_V0.md"
+  minimal_recovery_loop: "docs/PRODUCT_LAB/MINIMAL_RECOVERY_LOOP.md"
 
 constraints:
   lab_does_not_open_phase_4_to_8: true
@@ -32,6 +45,7 @@ constraints:
   no_public_content_experiment_in_lab_0: true
   no_user_pilot_in_lab_0: true
   no_efficacy_claim_without_evidence: true
+  do_not_open_next_task_during_explicit_pause: true
 
 phase_exit_criteria:
   LAB-0:
@@ -41,7 +55,8 @@ phase_exit_criteria:
     - research sequence is defined
     - no conflict with current Phase 3 governance remains
 
-pending_owner_decision:
-  task: SP-LAB-001
-  question: "Approve Selection Capacity v0 as the working product model for external discovery, without treating it as canon or validated efficacy?"
-  if_approved: "Close SP-LAB-001 and open SP-LAB-002 — Problem Discovery Research Design."
+pause:
+  after: SP-LAB-001
+  next_candidate: SP-LAB-002
+  next_status: unopened
+  resume_only_after_explicit_owner_direction: true
