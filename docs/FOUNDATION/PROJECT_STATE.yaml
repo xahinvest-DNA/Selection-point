@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P10
   active_parameter: SP-S4-P11
   active_parameter_name: "Соответствующие практики"
-  active_parameter_status: "owner-reflection"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; stage-specific-delta-recommended; owner-decision-pending"
   next_candidate: SP-S4-P12
   next_status: unopened
   explicit_pause: false
-  owner_decision: "3 сентября 2026 года Андрей явно попросил продолжить SP-S4-P11. Параметр открыт строго по протоколу в статусе owner-reflection. До ответов владельца содержательная архитектура P11 не формируется. SP-S4-P12 остаётся unopened."
+  owner_decision: "3 сентября 2026 года Андрей ответил на обязательные три вопроса SP-S4-P11, обозначив ответы как гипотезы: нагрузка может состоять в необходимости учитывать более целостную 'панель управления'; сам факт нахождения под нагрузкой и возможного снижения доступности выбора должен становиться частью позиции; визуализация ограничена слабой независимой обратной связью. Architect pass, внешний Reality Check и Red Team завершены. Самостоятельная P11-дельта рекомендована: тренировать доступность и восстановление reality-coupled цикла выбора под дозированной или естественно возникающей нагрузкой, а не отдельную технику снятия нагрузки. Финального решения владельца по P11 ещё нет."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -25,17 +25,17 @@ completed:
   visual_models: "SP-VM-01–SP-VM-02"
 
 active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P10.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md"
 
 active_sources:
   full_theory: null
   canonical: null
   parameter_delta: null
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
-  comparative_working_source: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md"
+  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md"
-  cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/18_2026-08-30_TRAJECTORY_TECHNOLOGY_MAGIC_METAPHOR.md"
-  reality_check: null
+  cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
+  reality_check: RC-015
   approval_addendum: null
 
 sources_of_truth:
@@ -108,3 +108,12 @@ constraints:
   p10_reality_may_require_goal_or_direction_revision: true
   p10_prospective_observability_required: true
   p11_working_claim_not_approved: true
+  p11_stage_specific_delta_recommended: true
+  p11_load_is_training_condition_not_goal: true
+  p11_dashboard_means_reorientation_not_total_monitoring: true
+  p11_load_awareness_does_not_prove_choice_loss: true
+  p11_state_regulation_does_not_equal_choice_recovery: true
+  p11_visualization_may_help_but_is_not_sufficient_reality_feedback: true
+  p11_reality_coupled_feedback_required: true
+  p11_reentry_after_partial_loss_is_required_function: true
+  p11_maximum_stress_is_not_training_criterion: true
