@@ -11,12 +11,10 @@
 - Фаза 3 — точная архитектура пяти ступеней;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены;
-- Ступень 4: **SP-S4-P01–SP-S4-P10 утверждены**, P07 и P09 = `zero-delta`;
-- последний утверждённый параметр: **SP-S4-P10**;
-- активен **SP-S4-P11 «Соответствующие практики»**;
-- Architect pass / Reality Check / Red Team P11 завершены;
-- самостоятельная practice-delta рекомендована, решение владельца ожидается;
-- SP-S4-P12 не открыт.
+- Ступень 4: **SP-S4-P01–SP-S4-P11 утверждены**, P07 и P09 = `zero-delta`;
+- последний утверждённый параметр: **SP-S4-P11 «Соответствующие практики»**;
+- открытого параметра нет;
+- SP-S4-P12 «Критерии перехода» — следующий кандидат, **не открыт**.
 
 ## Центральная идея
 
@@ -42,37 +40,36 @@
 создание траектории ≠ предопределение результата
 ```
 
-## Активный SP-S4-P11
-
-Рабочая формула:
+## Утверждённый SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
-Дополнительная:
-
 > **Нагрузка становится частью учебной позиции, а не целью практики.**
 
-P11 описывает функциональный профиль будущих практик: распознавание режима нагрузки, достаточную reorientation, дозированную/context-relevant нагрузку, доступный вход в систему, functional move, reality feedback и recovery/re-entry.
+P11 задаёт функциональный профиль будущих практик: load recognition, relevant reorientation, graded/context-relevant load, available entry, functional move, reality-coupled feedback и recovery/re-entry.
 
 Обязательные границы:
 
 ```text
 «панель» ≠ тотальный self-monitoring
 stress tolerance ≠ choice
-state regulation ≠ choice restored
+state regulation ≠ choice recovery
 maximum stress ≠ better training
 visualization may help ≠ sufficient reality feedback
 ```
+
+Конкретные упражнения и дозирование нагрузки не утверждаются в Фазе 3 и остаются за Фазой 5.
 
 ## Точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
-5. `docs/FOUNDATION/GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
-6. `docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md`;
-7. `docs/FOUNDATION/PRACTICE_PARAMETER_BOUNDARY.md`;
-8. последний approved P10: `docs/FOUNDATION/CANONICAL/39_STAGE_4_P10_CANONICAL.md`.
+4. `docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
+5. `docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`;
+6. `docs/FOUNDATION/LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
+7. `docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md`;
+8. `docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`;
+9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-03_SP-S4-P11.md`.
 
-**P11 пока не канон; owner decision pending. SP-S4-P12 не открыт.**
+**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
