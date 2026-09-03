@@ -15,7 +15,8 @@
 - `S4_P07_MAIN_PAIN_ZERO_DELTA.md`;
 - `S4_P08_NEXT_SKILL_DELTA.md`;
 - `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`;
-- `S4_P10_LIFE_MANIFESTATIONS_DELTA.md`.
+- `S4_P10_LIFE_MANIFESTATIONS_DELTA.md`;
+- `S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.
 
 Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
 
@@ -30,42 +31,23 @@ Local parameter delta создаётся только после явного у
 
 После P10 была выполнена плановая большая консолидация. Следующая плановая консолидация — после P13 / на границе ступени.
 
-## Активный SP-S4-P11
+## SP-S4-P11
 
-Architect pass / RC-015 / Red Team завершены.
-
-Рабочая рекомендация:
-
-> **Сохранить самостоятельную stage-specific practice delta: тренировать доступность и восстановление reality-coupled цикла выбора под нагрузкой.**
-
-Короткая формула:
+Утверждённая stage-specific functional-practice delta:
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
-Но до решения владельца:
-
 ```text
-recommended P11 delta
-≠ approved local delta
-```
-
-Поэтому `S4_P11_*_DELTA.md` пока не создаётся и большие регистры повторно не консолидируются.
-
-Обязательные рабочие границы:
-
-```text
+нагрузка ≠ цель / toughness test
 «панель» ≠ тотальный self-monitoring
-нагрузка ≠ toughness test
-state regulation ≠ choice restored
+state regulation ≠ choice recovery
 maximum stress ≠ best training
-visualization may help ≠ sufficient reality feedback
+visualization may help ≠ sufficient reality-coupled verification
 ```
 
-Связанные материалы:
-
-- `../SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
-- `../GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-015_SP-S4-P11.md`.
+Full theory: `../FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`.  
+Canonical: `../CANONICAL/40_STAGE_4_P11_CANONICAL.md`.  
+Reality Check: `../GOVERNANCE/RC-015_SP-S4-P11.md`.
 
 ## Текущий approved scope
 
@@ -73,7 +55,7 @@ visualization may help ≠ sufficient reality feedback
 - SP-S1-P01–P13;
 - SP-S2-P01–P13;
 - SP-S3-P01–P13;
-- SP-S4-P01–P10, где P07 и P09 = `zero-delta`;
+- SP-S4-P01–P11, где P07 и P09 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
 
-**SP-S4-P11 пока не входит в approved library. SP-S4-P12 не открыт.**
+**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
