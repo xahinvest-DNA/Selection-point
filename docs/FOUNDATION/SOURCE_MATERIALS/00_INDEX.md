@@ -28,6 +28,7 @@
 18. **SP-SRC-018** — `18_2026-08-30_TRAJECTORY_TECHNOLOGY_MAGIC_METAPHOR.md` — Selection Point как технология участия в собственной траектории без претензии на контроль всей реальности.
 19. **SP-SRC-019** — `19_2026-08-30_WILLIAMS_MILLMAN_FRITZ_P10_LIFE_MANIFESTATIONS.md` — Williams / Millman / Fritz + regulatory flexibility, resilience и goal adjustment для P10.
 20. **SP-SRC-020** — `20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md` — здоровье как управляемая траектория; метафора вождения для различения показателя, манёвра, направления и переносимого навыка.
+21. **SP-SRC-021** — `21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md` — owner reflection P11 + исследования нагрузки, situation awareness, stress inoculation, feedback и limits of imagery.
 
 ## SP-SRC-018 — сквозная формула
 
@@ -43,33 +44,49 @@
 
 Источник использован при утверждении SP-S4-P10.
 
-Утверждённая граница:
-
 > **Устойчивость траектории ≠ неизменность её формы.**
-
-Внешние области: regulatory flexibility, coping flexibility, dynamic resilience, persistence vs goal disengagement/reengagement.
-
-Эти материалы остаются research/source layer; канонический P10 хранится в `../CANONICAL/39_STAGE_4_P10_CANONICAL.md`.
 
 ## SP-SRC-020 — рабочая метафора
 
-Ключевая формула:
-
 > **Вес — показатель состояния системы. Похудение — возможный манёвр. Здоровье — направление. Способность управлять собой во времени — навык.**
-
-И более общий образ Selection Point:
 
 > **Хороший водитель не контролирует дорогу. Он ведёт машину через меняющуюся реальность.**
 
-Сохранённая граница:
+## SP-SRC-021 — активный рабочий источник P11
+
+Исходные owner-hypotheses:
 
 ```text
-управление траекторией
-≠
-контроль результата
+нагрузка может требовать
+учитывать более целостную «панель управления»
+
+осознание факта нагрузки
+может стать частью current position
+
+visualization может быть полезна,
+но слаба как единственный источник
+независимой обратной связи
 ```
 
-Материал может быть использован позднее при P11, проектировании практической архитектуры, публичном объяснении цикла `позиция → ход → новая позиция` и Whole-System Review. Он не является медицинской рекомендацией.
+После Architect pass / Reality Check / Red Team рабочая формула:
+
+> **Тренировать доступность и восстановление reality-coupled цикла выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
+
+Ключевые границы:
+
+```text
+«панель» = reorientation
+≠ тотальный self-monitoring
+
+нагрузка = условие тренировки
+≠ цель / мера зрелости
+
+state regulation
+≠ choice restored
+
+visualization may help
+≠ sufficient reality feedback
+```
 
 ## Использование источников
 
@@ -85,4 +102,4 @@ source material
 
 ## Текущая граница
 
-**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
+**SP-S4-P11 активен. Architect pass / Reality Check / Red Team завершены; самостоятельная stage-specific practice delta рекомендована; решение владельца ожидается. SP-S4-P12 не открыт.**
