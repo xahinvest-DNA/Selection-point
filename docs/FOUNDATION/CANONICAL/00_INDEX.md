@@ -3,7 +3,7 @@
 **Статус:** утверждённый производный слой  
 **Текущий статус проекта:** `../PROJECT_STATE.yaml`
 
-Канон содержит только утверждённый смысл. Рабочий SP-S4-P11 здесь отражается только как статус; canonical-card до owner approval не создаётся.
+Канон содержит только утверждённый смысл. Для `zero-delta` отдельная canonical-card не создаётся, если нет самостоятельного нового claim.
 
 ## Human Change Model
 
@@ -28,39 +28,36 @@
 | SP-S4-P08 | `38_STAGE_4_P08_CANONICAL.md` | утверждено |
 | SP-S4-P09 | — | утверждено: amended zero-delta |
 | SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | утверждено |
-| SP-S4-P11 | — | **активен; stage-specific delta recommended; owner-decision-pending** |
+| SP-S4-P11 | `40_STAGE_4_P11_CANONICAL.md` | **утверждено** |
 | SP-S4-P12 | — | не открыт |
 | SP-S4-P13 | — | не открыт |
 
-## Рабочий P11 — не канон
-
-Кандидат:
+## Последний канонический параметр — SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
-После RC-015 самостоятельная practice-delta сохраняется, но:
+> **Нагрузка становится частью учебной позиции, а не целью практики.**
+
+Главные границы:
 
 ```text
-working recommendation
-≠ canonical claim
-```
-
-Обязательные рабочие границы:
-
-```text
+нагрузка ≠ цель практики
 «панель» ≠ тотальный self-monitoring
-нагрузка ≠ мера зрелости
 load-awareness ≠ доказательство потери выбора
-state regulation ≠ choice restored
-visualization may help ≠ sufficient reality feedback
+state regulation ≠ choice recovery
+maximum stress ≠ best training
+visualization may help ≠ sufficient reality-coupled verification
 ```
 
-Рабочие материалы:
+Ключевой принцип:
 
-- `../SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
-- `../GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-015_SP-S4-P11.md`.
+> **Практика должна оставлять реальности возможность показать человеку, что он ошибся.**
+
+Full theory: `../FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`.  
+Local delta: `../LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-015_SP-S4-P11.md`.  
+Owner approval: `../GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**Последний канонически утверждённый параметр — SP-S4-P10. P11 ожидает решения владельца. P12 не открыт.**
+**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
