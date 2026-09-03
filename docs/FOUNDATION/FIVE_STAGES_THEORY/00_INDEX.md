@@ -23,53 +23,56 @@
 | SP-S4-P08 | Следующий навык | утверждено | `47_STAGE_4_NEXT_SKILL.md` | `../CANONICAL/38_STAGE_4_P08_CANONICAL.md` |
 | SP-S4-P09 | Телесные проявления | утверждено: amended zero-delta | `48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md` | — |
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
-| SP-S4-P11 | Соответствующие практики | **активен; delta recommended; owner-decision-pending** | не создан | — |
+| SP-S4-P11 | Соответствующие практики | **утверждено** | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
 | SP-S4-P12 | Критерии перехода | не открыт | — | — |
 | SP-S4-P13 | Ловушка ступени | не открыт | — | — |
 
-## Активный SP-S4-P11
-
-Рабочая граница после Architect pass / RC-015 / Red Team:
+## SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
+> **Нагрузка становится частью учебной позиции, а не целью практики.**
+
 ```text
 S3-P11:
-качество участия
-в обычном продолжающемся процессе
+качество участия в обычном процессе
 
-S4-P11 candidate:
-тот же цикл тренируется / восстанавливается
-при условиях, которые сами способны
-уменьшить доступ к уже сформированной способности
+S4-P11:
+тот же reality-coupled цикл
+тренируется и восстанавливается
+в условиях, способных снижать его доступность
 ```
 
-Кандидат функциональных классов:
+Утверждённые функциональные классы:
 
 - load recognition;
 - relevant reorientation;
 - graded / context-relevant load;
-- available-entry regulation;
+- available entry;
 - functional move;
-- reality feedback;
+- reality-coupled feedback;
 - recovery / re-entry.
 
 Обязательные ограничения:
 
 ```text
 «панель» ≠ тотальный self-monitoring
-нагрузка ≠ цель / toughness test
-state regulation ≠ choice restored
+нагрузка ≠ toughness test
+state regulation ≠ choice recovery
 maximum stress ≠ best training
-visualization may help ≠ sufficient reality feedback
+visualization may help ≠ sufficient reality-coupled verification
 ```
 
-Рабочие материалы:
+Конкретные упражнения остаются за Фазой 5.
+
+Связанные материалы:
 
 - `../SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
 - `../GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-015_SP-S4-P11.md`.
+- `../GOVERNANCE/RC-015_SP-S4-P11.md`;
+- `../GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`;
+- `../LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.
 
 ## Текущая точка
 
-**P11 не утверждён. Full theory / canonical / local delta не создаются до owner decision. SP-S4-P12 не открыт.**
+**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
