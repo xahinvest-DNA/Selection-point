@@ -7,47 +7,46 @@
 
 - Фаза 3 — точная архитектура пяти ступеней.
 - Ступени 1–3 завершены.
-- Ступень 4: **SP-S4-P01–SP-S4-P10 утверждены**, P07 и P09 = `zero-delta`.
-- Последний утверждённый параметр: **SP-S4-P10**.
-- Активен **SP-S4-P11 — «Соответствующие практики»**.
-- Architect pass / Reality Check / Red Team завершены.
-- Рекомендация: **самостоятельная stage-specific practice delta**.
-- Owner decision pending.
-- SP-S4-P12 не открыт.
+- Ступень 4: **SP-S4-P01–SP-S4-P11 утверждены**, P07 и P09 = `zero-delta`.
+- Последний утверждённый параметр: **SP-S4-P11 — «Соответствующие практики»**.
+- Открытого параметра нет.
+- SP-S4-P12 — следующий кандидат, **не открыт**.
 
-## SP-S4-P11 candidate
+## SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
 ```text
-нагрузка становится частью current position
-→ доступ к способности может снизиться
-→ режим нагрузки замечается
+режим нагрузки распознан
 → возвращается достаточная reorientation
-→ выбирается реально доступный способ участия
-→ совершается ход / пауза / выход / запрос помощи
-→ реальность даёт feedback
-→ следующий цикл корректируется
+→ учитывается фактическая доступность
+→ выбирается доступный способ участия
+→ functional move
+→ reality-coupled feedback
+→ при необходимости recovery / re-entry
 ```
 
 Обязательные границы:
 
 ```text
-«панель управления» ≠ тотальный self-monitoring
-выдержать больше стресса ≠ больше выбора
+«панель» ≠ тотальный self-monitoring
+нагрузка ≠ цель практики
+stress tolerance ≠ choice
 load-awareness ≠ доказательство потери выбора
-state regulation ≠ choice restored
-максимальный стресс ≠ лучший training load
+state regulation ≠ choice recovery
+maximum stress ≠ best training
 visualization may help ≠ sufficient reality feedback
 ```
 
-Функциональные классы-кандидаты: load recognition, relevant reorientation, graded/context-relevant load, available-entry regulation, functional move, reality feedback, recovery/re-entry.
+P11 остаётся функциональным профилем Фазы 3; конкретные упражнения проектируются в Фазе 5.
 
 ## Источники
 
-- `FOUNDATION/SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
+- `FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
+- `FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`;
+- `FOUNDATION/LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
 - `FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md`;
-- `FOUNDATION/PRACTICE_PARAMETER_BOUNDARY.md`.
+- `FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`;
+- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-03_SP-S4-P11.md`.
 
-**P11 пока не канон. Full theory / canonical / local delta создаются только после явного решения владельца.**
+**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
