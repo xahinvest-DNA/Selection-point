@@ -1,7 +1,7 @@
 # Governance Selection Point
 
 **Статус:** действующий индекс управления проектом  
-**Дата обновления:** 30 августа 2026 года
+**Дата обновления:** 3 сентября 2026 года
 
 ## Действующие документы
 
@@ -14,8 +14,9 @@
 7. `RC-012_SP-S4-P08.md` + approval addendum — P08.
 8. `RC-013_SP-S4-P09.md` + reanalysis + approval addendum — P09.
 9. `SP-S4-P10_ARCHITECT_PASS_NOTES.md` — Architect pass P10.
-10. `RC-014_SP-S4-P10.md` — Reality Check / Red Team P10.
-11. `RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md` — явное утверждение P10.
+10. `RC-014_SP-S4-P10.md` + approval addendum — P10.
+11. `SP-S4-P11_ARCHITECT_PASS_NOTES.md` — Architect pass P11.
+12. `RC-015_SP-S4-P11.md` — Reality Check / Red Team P11.
 
 ## Основной цикл
 
@@ -36,33 +37,43 @@
 → consistency check
 ```
 
-## Последний закрытый governance cycle
+## Активный governance cycle — SP-S4-P11
 
-**SP-S4-P10 — «Жизненные проявления»** закрыт 30 августа 2026 года как самостоятельная stage-specific life-scale delta.
+Owner reflection завершена. Андрей предложил как гипотезы:
 
-Центральная граница:
+- нагрузка может проявляться в необходимости учитывать более целостную «панель управления»;
+- сам факт нахождения под нагрузкой и возможного снижения доступности выбора должен быть частью current position;
+- визуализация ограничена слабой независимой обратной связью.
 
-> **Устойчивость траектории ≠ неизменность её формы.**
+Architect pass / RC-015 / Red Team завершены.
+
+Рекомендованная самостоятельная дельта:
+
+> **Тренировать доступность и восстановление reality-coupled цикла выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
+
+Дополнительная формула:
+
+> **Нагрузка становится частью учебной позиции, а не целью практики.**
 
 Обязательные ограничения:
 
 ```text
-сохранение направления ≠ persistence любой ценой
-изменение формы ≠ зрелость само по себе
-хороший результат ≠ критерий P10
-быстрое восстановление ≠ критерий P10
+«панель» = достаточная reorientation
+≠ тотальный self-monitoring
+
+нагрузка = training condition
+≠ toughness test
+
+load-awareness
+≠ доказательство потери выбора
+
+state regulation
+≠ choice restored
+
+visualization may help
+≠ sufficient reality feedback
 ```
-
-Prospective observability сохранена как обязательный falsification guard.
-
-## Консолидация
-
-После P10 выполнена плановая синхронизация:
-
-- `../LIBRARIES/CLAIMS_REGISTRY.md`;
-- `../LIBRARIES/EVIDENCE_MAP.md`;
-- `../LIBRARIES/CROSS_REFERENCE_MAP.md`.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P10. Открытого параметра нет. SP-S4-P11 не открыт.**
+**Последний утверждённый параметр — SP-S4-P10. SP-S4-P11 активен; stage-specific practice delta рекомендована, решение владельца ожидается. SP-S4-P12 не открыт.**
