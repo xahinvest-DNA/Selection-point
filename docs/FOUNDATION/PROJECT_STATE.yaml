@@ -7,36 +7,36 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P10
-  active_parameter: SP-S4-P11
-  active_parameter_name: "Соответствующие практики"
-  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; stage-specific-delta-recommended; owner-decision-pending"
+  last_approved: SP-S4-P11
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P12
   next_status: unopened
   explicit_pause: false
-  owner_decision: "3 сентября 2026 года Андрей ответил на обязательные три вопроса SP-S4-P11, обозначив ответы как гипотезы: нагрузка может состоять в необходимости учитывать более целостную 'панель управления'; сам факт нахождения под нагрузкой и возможного снижения доступности выбора должен становиться частью позиции; визуализация ограничена слабой независимой обратной связью. Architect pass, внешний Reality Check и Red Team завершены. Самостоятельная P11-дельта рекомендована: тренировать доступность и восстановление reality-coupled цикла выбора под дозированной или естественно возникающей нагрузкой, а не отдельную технику снятия нагрузки. Финального решения владельца по P11 ещё нет."
+  owner_decision: "3 сентября 2026 года после обязательных трёх вопросов, Architect pass, Reality Check и Red Team Андрей явно утвердил SP-S4-P11 решением: 'Утверждаем'. P11 утверждён как самостоятельная stage-specific functional-practice delta. Центральный смысл: практики S4 тренируют доступность reality-coupled цикла выбора под дозированной или естественно возникающей нагрузкой и повторный вход в него после частичного снижения доступности. Нагрузка является частью учебной позиции, а не целью и не мерой зрелости; 'панель управления' означает достаточную reorientation, а не тотальный мониторинг; state regulation не равно восстановлению выбора; визуализация может быть вспомогательной, но не достаточной reality-coupled проверкой; независимый ответ реальности должен иметь право корректировать следующий цикл. SP-S4-P12 остаётся unopened до отдельного открытия."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P10 (P07 and P09 zero-delta)"
+  stage_4: "SP-S4-P01–SP-S4-P11 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-08-30_SP-S4-P10.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-03_SP-S4-P11.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: null
-  canonical: null
-  parameter_delta: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
+  canonical: "docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
   reality_check: RC-015
-  approval_addendum: null
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md"
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -107,8 +107,7 @@ constraints:
   p10_recovery_speed_is_not_maturity_criterion: true
   p10_reality_may_require_goal_or_direction_revision: true
   p10_prospective_observability_required: true
-  p11_working_claim_not_approved: true
-  p11_stage_specific_delta_recommended: true
+  p11_approved: true
   p11_load_is_training_condition_not_goal: true
   p11_dashboard_means_reorientation_not_total_monitoring: true
   p11_load_awareness_does_not_prove_choice_loss: true
@@ -117,3 +116,4 @@ constraints:
   p11_reality_coupled_feedback_required: true
   p11_reentry_after_partial_loss_is_required_function: true
   p11_maximum_stress_is_not_training_criterion: true
+  p11_specific_exercises_deferred_to_phase_5: true
