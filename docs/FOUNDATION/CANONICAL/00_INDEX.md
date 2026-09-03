@@ -3,7 +3,7 @@
 **Статус:** утверждённый производный слой  
 **Текущий статус проекта:** `../PROJECT_STATE.yaml`
 
-Канон содержит только утверждённый смысл. Для `zero-delta` отдельная canonical-card не создаётся, если нет самостоятельного нового claim.
+Канон содержит только утверждённый смысл. Рабочий SP-S4-P11 здесь отражается только как статус; canonical-card до owner approval не создаётся.
 
 ## Human Change Model
 
@@ -27,35 +27,40 @@
 | SP-S4-P07 | — | утверждено: zero-delta |
 | SP-S4-P08 | `38_STAGE_4_P08_CANONICAL.md` | утверждено |
 | SP-S4-P09 | — | утверждено: amended zero-delta |
-| SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | **утверждено** |
-| SP-S4-P11 | — | не открыт |
+| SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | утверждено |
+| SP-S4-P11 | — | **активен; stage-specific delta recommended; owner-decision-pending** |
 | SP-S4-P12 | — | не открыт |
 | SP-S4-P13 | — | не открыт |
 
-## Последний канонический параметр — SP-S4-P10
+## Рабочий P11 — не канон
 
-> **Устойчивость траектории ≠ неизменность её формы.**
+Кандидат:
 
-> **Новая фактическая позиция может требовать новой формы продолжения.**
+> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
-Главные границы:
+После RC-015 самостоятельная practice-delta сохраняется, но:
 
 ```text
-сохранение формы ≠ сохранение траектории
-изменение формы ≠ потеря траектории
-сохранение направления ≠ persistence любой ценой
-благоприятный исход ≠ критерий P10
+working recommendation
+≠ canonical claim
 ```
 
-Full theory: `../FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md`.  
-Local delta: `../LIBRARIES/S4_P10_LIFE_MANIFESTATIONS_DELTA.md`.  
-Reality Check: `../GOVERNANCE/RC-014_SP-S4-P10.md`.  
-Owner approval: `../GOVERNANCE/RC-014_SP-S4-P10_APPROVAL_ADDENDUM.md`.
+Обязательные рабочие границы:
 
-## Консолидация
+```text
+«панель» ≠ тотальный self-monitoring
+нагрузка ≠ мера зрелости
+load-awareness ≠ доказательство потери выбора
+state regulation ≠ choice restored
+visualization may help ≠ sufficient reality feedback
+```
 
-После P10 выполнена плановая синхронизация claims/evidence/cross-reference registries.
+Рабочие материалы:
+
+- `../SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
+- `../GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
+- `../GOVERNANCE/RC-015_SP-S4-P11.md`.
 
 ## Текущая точка
 
-**SP-S4-P10 утверждён. SP-S4-P11 не открыт.**
+**Последний канонически утверждённый параметр — SP-S4-P10. P11 ожидает решения владельца. P12 не открыт.**
