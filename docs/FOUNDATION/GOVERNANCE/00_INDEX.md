@@ -13,10 +13,10 @@
 6. `RC-011_SP-S4-P07_ZERO_DELTA.md` — P07.
 7. `RC-012_SP-S4-P08.md` + approval addendum — P08.
 8. `RC-013_SP-S4-P09.md` + reanalysis + approval addendum — P09.
-9. `SP-S4-P10_ARCHITECT_PASS_NOTES.md` — Architect pass P10.
-10. `RC-014_SP-S4-P10.md` + approval addendum — P10.
-11. `SP-S4-P11_ARCHITECT_PASS_NOTES.md` — Architect pass P11.
-12. `RC-015_SP-S4-P11.md` — Reality Check / Red Team P11.
+9. `RC-014_SP-S4-P10.md` + approval addendum — P10.
+10. `SP-S4-P11_ARCHITECT_PASS_NOTES.md` — Architect pass P11.
+11. `RC-015_SP-S4-P11.md` — Reality Check / Red Team P11.
+12. `RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md` — явное утверждение P11.
 
 ## Основной цикл
 
@@ -37,43 +37,30 @@
 → consistency check
 ```
 
-## Активный governance cycle — SP-S4-P11
+## Последний закрытый governance cycle
 
-Owner reflection завершена. Андрей предложил как гипотезы:
+**SP-S4-P11 — «Соответствующие практики»** закрыт 3 сентября 2026 года как самостоятельная stage-specific functional-practice delta.
 
-- нагрузка может проявляться в необходимости учитывать более целостную «панель управления»;
-- сам факт нахождения под нагрузкой и возможного снижения доступности выбора должен быть частью current position;
-- визуализация ограничена слабой независимой обратной связью.
+Центральная формула:
 
-Architect pass / RC-015 / Red Team завершены.
+> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
-Рекомендованная самостоятельная дельта:
-
-> **Тренировать доступность и восстановление reality-coupled цикла выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
-
-Дополнительная формула:
+Дополнительная:
 
 > **Нагрузка становится частью учебной позиции, а не целью практики.**
 
 Обязательные ограничения:
 
 ```text
-«панель» = достаточная reorientation
-≠ тотальный self-monitoring
-
-нагрузка = training condition
-≠ toughness test
-
-load-awareness
-≠ доказательство потери выбора
-
-state regulation
-≠ choice restored
-
-visualization may help
-≠ sufficient reality feedback
+«панель» = достаточная reorientation ≠ тотальный self-monitoring
+нагрузка = training condition ≠ toughness test
+load-awareness ≠ доказательство потери выбора
+state regulation ≠ choice recovery
+visualization may help ≠ sufficient reality-coupled verification
 ```
+
+Конкретные упражнения и дозирование остаются за Фазой 5.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P10. SP-S4-P11 активен; stage-specific practice delta рекомендована, решение владельца ожидается. SP-S4-P12 не открыт.**
+**Последний утверждённый параметр — SP-S4-P11. Открытого параметра нет. SP-S4-P12 не открыт.**
