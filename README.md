@@ -6,15 +6,15 @@
 
 Авторитетный статус: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
-На 3 сентября 2026 года:
+На 4 сентября 2026 года:
 
 - Фаза 3 — точная архитектура пяти ступеней;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены;
 - Ступень 4: **SP-S4-P01–SP-S4-P11 утверждены**, P07 и P09 = `zero-delta`;
 - последний утверждённый параметр: **SP-S4-P11 «Соответствующие практики»**;
-- открытого параметра нет;
-- SP-S4-P12 «Критерии перехода» — следующий кандидат, **не открыт**.
+- активный параметр: **SP-S4-P12 «Критерии перехода»**, статус `на обсуждении`;
+- SP-S4-P13 остаётся `unopened`.
 
 ## Центральная идея
 
@@ -40,23 +40,30 @@
 создание траектории ≠ предопределение результата
 ```
 
-## Утверждённый SP-S4-P11
+## Активный SP-S4-P12
+
+После обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей принял рабочий синтез и разрешил открыть P12.
+
+Предварительная формула:
+
+> **Переход не требует отсутствия выпадений. Способность должна иногда сохраняться непосредственно внутри значимой нагрузки, а после выпадения — становиться повторяемо восстанавливаемой из изменившейся фактической позиции.**
+
+Рабочая граница следующей ступени:
+
+```text
+S4 = сохранять / восстанавливать участие внутри нагрузки
+S5 = изменять систему условий, формирующую вероятные будущие позиции
+```
+
+Эта конструкция пока является рабочей гипотезой и должна пройти Architect pass, Reality Check и Red Team / Falsification.
+
+## Последний утверждённый SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
 > **Нагрузка становится частью учебной позиции, а не целью практики.**
 
 P11 задаёт функциональный профиль будущих практик: load recognition, relevant reorientation, graded/context-relevant load, available entry, functional move, reality-coupled feedback и recovery/re-entry.
-
-Обязательные границы:
-
-```text
-«панель» ≠ тотальный self-monitoring
-stress tolerance ≠ choice
-state regulation ≠ choice recovery
-maximum stress ≠ better training
-visualization may help ≠ sufficient reality feedback
-```
 
 Конкретные упражнения и дозирование нагрузки не утверждаются в Фазе 3 и остаются за Фазой 5.
 
@@ -65,11 +72,9 @@ visualization may help ≠ sufficient reality feedback
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
-5. `docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`;
-6. `docs/FOUNDATION/LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
-7. `docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11.md`;
-8. `docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`;
-9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-03_SP-S4-P11.md`.
+4. `docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md`;
+5. `docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md`;
+6. `docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
+7. `docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`.
 
-**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
+**SP-S4-P12 открыт и находится на обсуждении. SP-S4-P13 не открыт.**
