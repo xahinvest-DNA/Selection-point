@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P11
   active_parameter: SP-S4-P12
   active_parameter_name: "Критерии перехода"
-  active_parameter_status: "на обсуждении"
+  active_parameter_status: "architect-pass-complete; reality-check-pending"
   next_candidate: SP-S4-P13
   next_status: unopened
   explicit_pause: false
-  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора для разработки SP-S4-P12. Это решение открывает P12 для архитектурного цикла, но не утверждает сам параметр. Предварительная граница: освоение S4 не требует отсутствия реакции или выпадений; способность должна иногда сохраняться внутри значимой нагрузки и после снижения доступности повторяемо восстанавливаться из изменившейся фактической позиции. Переход к S5 становится релевантным, когда новая задача смещается от восстановления участия внутри повторяющихся условий к изменению системы условий, которая регулярно формирует такие позиции."
+  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора. Architect pass P12 завершён. Центральный кандидат: качественная готовность не требует отсутствия выпадений; функциональный доступ должен иногда сохраняться непосредственно внутри значимой нагрузки и повторяемо восстанавливаться после снижения доступности из новой фактической позиции, сохраняя право feedback корректировать траекторию. Следующая practically useful задача S5 смещается от дальнейшего самоконтроля внутри тех же условий к изменению системы условий, формирующей вероятные будущие позиции. P12 не утверждён; следующий обязательный шаг — Reality Check."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -33,6 +33,7 @@ active_sources:
   parameter_delta: null
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
+  architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
   transition_boundary: "docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
@@ -119,6 +120,7 @@ constraints:
   p11_maximum_stress_is_not_training_criterion: true
   p11_specific_exercises_deferred_to_phase_5: true
   p12_opened: true
+  p12_architect_pass_complete: true
   p12_quantitative_thresholds_deferred_to_phase_6: true
   p12_no_errorlessness_requirement: true
   p12_reentry_is_core_candidate_not_sole_criterion: true
