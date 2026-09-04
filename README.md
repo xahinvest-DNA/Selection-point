@@ -13,7 +13,8 @@
 - Ступени 1–3 завершены;
 - Ступень 4: **SP-S4-P01–SP-S4-P11 утверждены**, P07 и P09 = `zero-delta`;
 - последний утверждённый параметр: **SP-S4-P11 «Соответствующие практики»**;
-- активный параметр: **SP-S4-P12 «Критерии перехода»**, статус `на обсуждении`;
+- активный параметр: **SP-S4-P12 «Критерии перехода»**;
+- Architect pass P12 завершён; следующий обязательный шаг — Reality Check;
 - SP-S4-P13 остаётся `unopened`.
 
 ## Центральная идея
@@ -44,9 +45,9 @@
 
 После обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей принял рабочий синтез и разрешил открыть P12.
 
-Предварительная формула:
+Architect pass сформулировал центрального кандидата:
 
-> **Переход не требует отсутствия выпадений. Способность должна иногда сохраняться непосредственно внутри значимой нагрузки, а после выпадения — становиться повторяемо восстанавливаемой из изменившейся фактической позиции.**
+> **Качественная готовность к переходу из S4 возникает не при безошибочном сохранении выбора, а когда функциональный доступ достаточно надёжен под значимой нагрузкой: способность иногда сохраняется непосредственно внутри нагрузки и повторяемо восстанавливается после снижения доступности из новой фактической позиции, сохраняя право feedback корректировать траекторию.**
 
 Рабочая граница следующей ступени:
 
@@ -55,7 +56,7 @@ S4 = сохранять / восстанавливать участие внут
 S5 = изменять систему условий, формирующую вероятные будущие позиции
 ```
 
-Эта конструкция пока является рабочей гипотезой и должна пройти Architect pass, Reality Check и Red Team / Falsification.
+Эта конструкция пока является рабочей гипотезой и должна пройти Reality Check и Red Team / Falsification.
 
 ## Последний утверждённый SP-S4-P11
 
@@ -73,8 +74,9 @@ P11 задаёт функциональный профиль будущих пр
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
 4. `docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md`;
-5. `docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md`;
-6. `docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
-7. `docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`.
+5. `docs/FOUNDATION/GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md`;
+6. `docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md`;
+7. `docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`;
+8. `docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md`.
 
-**SP-S4-P12 открыт и находится на обсуждении. SP-S4-P13 не открыт.**
+**SP-S4-P12: Architect pass завершён; Reality Check pending. SP-S4-P13 не открыт.**
