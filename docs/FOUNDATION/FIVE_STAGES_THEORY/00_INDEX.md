@@ -23,25 +23,44 @@
 | SP-S4-P08 | Следующий навык | утверждено | `47_STAGE_4_NEXT_SKILL.md` | `../CANONICAL/38_STAGE_4_P08_CANONICAL.md` |
 | SP-S4-P09 | Телесные проявления | утверждено: amended zero-delta | `48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md` | — |
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
-| SP-S4-P11 | Соответствующие практики | **утверждено** | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
-| SP-S4-P12 | Критерии перехода | не открыт | — | — |
+| SP-S4-P11 | Соответствующие практики | утверждено | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
+| SP-S4-P12 | Критерии перехода | **на обсуждении** | — | — |
 | SP-S4-P13 | Ловушка ступени | не открыт | — | — |
 
-## SP-S4-P11
+## Активный SP-S4-P12
+
+Параметр открыт 4 сентября 2026 года после обязательных трёх вопросов и принятого владельцем сравнительного синтеза Williams / Millman / Fritz.
+
+Активный рабочий источник:
+
+- `../SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md` — SP-SRC-022.
+
+Граница параметра:
+
+- `../TRANSITION_CRITERIA_BOUNDARY.md`.
+
+Предварительная рабочая формула:
+
+> **Переход не требует отсутствия выпадений. Способность должна иногда сохраняться непосредственно внутри значимой нагрузки, а после выпадения — становиться повторяемо восстанавливаемой из изменившейся фактической позиции.**
+
+Предварительная дельта S4 → S5:
+
+```text
+S4:
+сохранять / восстанавливать участие внутри нагрузки
+
+S5:
+изменять систему условий,
+формирующую вероятные будущие позиции
+```
+
+Это не утверждённый P12. Full theory, canonical и parameter delta будут созданы только после Architect pass, Reality Check, Red Team / Falsification и явного решения владельца.
+
+## Последний утверждённый SP-S4-P11
 
 > **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
 
 > **Нагрузка становится частью учебной позиции, а не целью практики.**
-
-```text
-S3-P11:
-качество участия в обычном процессе
-
-S4-P11:
-тот же reality-coupled цикл
-тренируется и восстанавливается
-в условиях, способных снижать его доступность
-```
 
 Утверждённые функциональные классы:
 
@@ -53,26 +72,8 @@ S4-P11:
 - reality-coupled feedback;
 - recovery / re-entry.
 
-Обязательные ограничения:
-
-```text
-«панель» ≠ тотальный self-monitoring
-нагрузка ≠ toughness test
-state regulation ≠ choice recovery
-maximum stress ≠ best training
-visualization may help ≠ sufficient reality-coupled verification
-```
-
 Конкретные упражнения остаются за Фазой 5.
-
-Связанные материалы:
-
-- `../SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md`;
-- `../GOVERNANCE/SP-S4-P11_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-015_SP-S4-P11.md`;
-- `../GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`;
-- `../LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.
 
 ## Текущая точка
 
-**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
+**SP-S4-P12 открыт и находится на обсуждении. SP-S4-P13 не открыт.**
