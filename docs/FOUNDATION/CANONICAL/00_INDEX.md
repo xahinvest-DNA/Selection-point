@@ -28,36 +28,32 @@
 | SP-S4-P08 | `38_STAGE_4_P08_CANONICAL.md` | утверждено |
 | SP-S4-P09 | — | утверждено: amended zero-delta |
 | SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | утверждено |
-| SP-S4-P11 | `40_STAGE_4_P11_CANONICAL.md` | **утверждено** |
-| SP-S4-P12 | — | не открыт |
+| SP-S4-P11 | `40_STAGE_4_P11_CANONICAL.md` | утверждено |
+| SP-S4-P12 | `41_STAGE_4_P12_CANONICAL.md` | **утверждено** |
 | SP-S4-P13 | — | не открыт |
 
-## Последний канонический параметр — SP-S4-P11
+## Последний канонический параметр — SP-S4-P12
 
-> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
+> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-> **Нагрузка становится частью учебной позиции, а не целью практики.**
+> **Re-entry должен изменить ещё доступное продолжение.**
 
 Главные границы:
 
 ```text
-нагрузка ≠ цель практики
-«панель» ≠ тотальный self-monitoring
-load-awareness ≠ доказательство потери выбора
-state regulation ≠ choice recovery
-maximum stress ≠ best training
-visualization may help ≠ sufficient reality-coupled verification
+late understanding ≠ functional re-entry
+natural recovery ≠ own recovery operation
+one rehearsed stressor ≠ sufficient transfer
+support scaffold ≠ external operator of choice
+universal stress resilience ≠ S4 transition criterion
+recovery speed ≠ maturity criterion
 ```
 
-Ключевой принцип:
-
-> **Практика должна оставлять реальности возможность показать человеку, что он ошибся.**
-
-Full theory: `../FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`.  
-Local delta: `../LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.  
-Reality Check: `../GOVERNANCE/RC-015_SP-S4-P11.md`.  
-Owner approval: `../GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`.
+Full theory: `../FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`.  
+Local delta: `../LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.  
+Owner approval: `../GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
+**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
