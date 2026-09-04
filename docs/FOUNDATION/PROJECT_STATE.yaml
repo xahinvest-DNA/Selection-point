@@ -1,6 +1,6 @@
 schema_version: 2
 project: Selection Point
-updated_at: 2026-09-03
+updated_at: 2026-09-04
 
 status:
   active_phase: 3
@@ -8,13 +8,13 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P11
-  active_parameter: null
-  active_parameter_name: null
-  active_parameter_status: null
-  next_candidate: SP-S4-P12
+  active_parameter: SP-S4-P12
+  active_parameter_name: "Критерии перехода"
+  active_parameter_status: "на обсуждении"
+  next_candidate: SP-S4-P13
   next_status: unopened
   explicit_pause: false
-  owner_decision: "3 сентября 2026 года после обязательных трёх вопросов, Architect pass, Reality Check и Red Team Андрей явно утвердил SP-S4-P11 решением: 'Утверждаем'. P11 утверждён как самостоятельная stage-specific functional-practice delta. Центральный смысл: практики S4 тренируют доступность reality-coupled цикла выбора под дозированной или естественно возникающей нагрузкой и повторный вход в него после частичного снижения доступности. Нагрузка является частью учебной позиции, а не целью и не мерой зрелости; 'панель управления' означает достаточную reorientation, а не тотальный мониторинг; state regulation не равно восстановлению выбора; визуализация может быть вспомогательной, но не достаточной reality-coupled проверкой; независимый ответ реальности должен иметь право корректировать следующий цикл. SP-S4-P12 остаётся unopened до отдельного открытия."
+  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора для разработки SP-S4-P12. Это решение открывает P12 для архитектурного цикла, но не утверждает сам параметр. Предварительная граница: освоение S4 не требует отсутствия реакции или выпадений; способность должна иногда сохраняться внутри значимой нагрузки и после снижения доступности повторяемо восстанавливаться из изменившейся фактической позиции. Переход к S5 становится релевантным, когда новая задача смещается от восстановления участия внутри повторяющихся условий к изменению системы условий, которая регулярно формирует такие позиции."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -28,15 +28,16 @@ active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-0
 previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
-  canonical: "docs/FOUNDATION/CANONICAL/40_STAGE_4_P11_CANONICAL.md"
-  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P11_CORRESPONDING_PRACTICES_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/21_2026-09-03_P11_LOAD_DASHBOARD_AND_FEEDBACK.md"
+  full_theory: null
+  canonical: null
+  parameter_delta: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
-  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/49_STAGE_4_LIFE_MANIFESTATIONS.md"
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
+  transition_boundary: "docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
-  reality_check: RC-015
-  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md"
+  reality_check: null
+  approval_addendum: null
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -117,3 +118,8 @@ constraints:
   p11_reentry_after_partial_loss_is_required_function: true
   p11_maximum_stress_is_not_training_criterion: true
   p11_specific_exercises_deferred_to_phase_5: true
+  p12_opened: true
+  p12_quantitative_thresholds_deferred_to_phase_6: true
+  p12_no_errorlessness_requirement: true
+  p12_reentry_is_core_candidate_not_sole_criterion: true
+  p12_s5_boundary_is_system_conditions_not_more_self_control: true
