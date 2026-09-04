@@ -1,7 +1,7 @@
 # Общие библиотеки Selection Point
 
 **Статус:** действующая инфраструктура канонического слоя  
-**Дата обновления:** 3 сентября 2026 года
+**Дата обновления:** 4 сентября 2026 года
 
 ## Approved local records
 
@@ -16,7 +16,8 @@
 - `S4_P08_NEXT_SKILL_DELTA.md`;
 - `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`;
 - `S4_P10_LIFE_MANIFESTATIONS_DELTA.md`;
-- `S4_P11_CORRESPONDING_PRACTICES_DELTA.md`.
+- `S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
+- `S4_P12_TRANSITION_CRITERIA_DELTA.md`.
 
 Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
 
@@ -31,23 +32,23 @@ Local parameter delta создаётся только после явного у
 
 После P10 была выполнена плановая большая консолидация. Следующая плановая консолидация — после P13 / на границе ступени.
 
-## SP-S4-P11
+## SP-S4-P12
 
-Утверждённая stage-specific functional-practice delta:
+Утверждённая transition-criteria delta:
 
-> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
+> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
 ```text
-нагрузка ≠ цель / toughness test
-«панель» ≠ тотальный self-monitoring
-state regulation ≠ choice recovery
-maximum stress ≠ best training
-visualization may help ≠ sufficient reality-coupled verification
+late understanding ≠ functional re-entry
+natural recovery ≠ own recovery operation
+one stressor ≠ transfer
+support scaffold ≠ external operator
+universal stress resilience ≠ S4 criterion
 ```
 
-Full theory: `../FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md`.  
-Canonical: `../CANONICAL/40_STAGE_4_P11_CANONICAL.md`.  
-Reality Check: `../GOVERNANCE/RC-015_SP-S4-P11.md`.
+Full theory: `../FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`.  
+Canonical: `../CANONICAL/41_STAGE_4_P12_CANONICAL.md`.  
+Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.
 
 ## Текущий approved scope
 
@@ -55,7 +56,7 @@ Reality Check: `../GOVERNANCE/RC-015_SP-S4-P11.md`.
 - SP-S1-P01–P13;
 - SP-S2-P01–P13;
 - SP-S3-P01–P13;
-- SP-S4-P01–P11, где P07 и P09 = `zero-delta`;
+- SP-S4-P01–P12, где P07 и P09 = `zero-delta`;
 - SP-VM-01–SP-VM-02.
 
-**SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
+**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
