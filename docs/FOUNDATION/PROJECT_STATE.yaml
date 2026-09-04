@@ -7,30 +7,30 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P11
-  active_parameter: SP-S4-P12
-  active_parameter_name: "Критерии перехода"
-  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; owner-decision-pending"
+  last_approved: SP-S4-P12
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
   next_candidate: SP-S4-P13
   next_status: unopened
   explicit_pause: false
-  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора. Дополнительное обсуждение Fritz underlying structure сохранено как SP-SRC-023; ключевое различение: effort of action ≠ effort of compensating the structure. Architect pass, RC-016 и Red Team P12 завершены. Уточнённый кандидат: S4 readiness не требует безошибочности или universal stress resilience; в конкретной области при некоторой вариативности релевантной нагрузки функциональный доступ должен иногда сохраняться непосредственно внутри нагрузки, а после реального снижения доступности человек должен быть способен сам заметить изменившуюся фактическую позицию и изменить ещё доступное продолжение. Позднее объяснение после полного окончания ситуации, natural recovery и внешний оператор выбора не считаются достаточным re-entry. Следующая central task может смещаться к системному уровню условий, регулярно формирующих вероятные будущие позиции, без преждевременного утверждения полной архитектуры S5. P12 ожидает явного решения владельца."
+  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов, сравнительной реконструкции Williams / Millman / Fritz, Architect pass, RC-016 и Red Team Андрей явно утвердил SP-S4-P12 решением: 'Утверждаем'. Утверждён качественный профиль перехода: S4 readiness не требует безошибочности или universal stress resilience; в конкретной области при некоторой вариативности релевантной нагрузки функциональный доступ должен иногда сохраняться непосредственно внутри нагрузки, а после реального снижения доступности человек должен быть способен сам заметить изменившуюся фактическую позицию и изменить ещё доступное продолжение. Позднее объяснение после полного окончания ситуации, natural recovery и внешний оператор выбора не считаются достаточным re-entry. Следующая central task может смещаться к системному уровню условий, регулярно формирующих вероятные будущие позиции, без преждевременного утверждения полной архитектуры S5. SP-S4-P13 остаётся unopened."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P11 (P07 and P09 zero-delta)"
+  stage_4: "SP-S4-P01–SP-S4-P12 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-03_SP-S4-P11.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-04_SP-S4-P12.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: null
-  canonical: null
-  parameter_delta: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
+  canonical: "docs/FOUNDATION/CANONICAL/41_STAGE_4_P12_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
@@ -38,10 +38,9 @@ active_sources:
   reality_check: RC-016
   reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12.md"
   red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_RED_TEAM_NOTES.md"
-  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md"
   transition_boundary: "docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
-  approval_addendum: null
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -122,16 +121,12 @@ constraints:
   p11_reentry_after_partial_loss_is_required_function: true
   p11_maximum_stress_is_not_training_criterion: true
   p11_specific_exercises_deferred_to_phase_5: true
-  p12_opened: true
-  p12_architect_pass_complete: true
-  p12_reality_check_complete: true
-  p12_red_team_complete: true
-  p12_owner_decision_pending: true
+  p12_approved: true
   p12_quantitative_thresholds_deferred_to_phase_6: true
   p12_no_errorlessness_requirement: true
   p12_not_universal_stress_resilience: true
   p12_relevant_load_must_be_context_specific: true
-  p12_reentry_is_core_candidate_not_sole_criterion: true
+  p12_reentry_is_core_not_sole_criterion: true
   p12_late_explanation_is_not_reentry: true
   p12_natural_recovery_is_not_reentry: true
   p12_support_scaffold_is_not_external_operator: true
