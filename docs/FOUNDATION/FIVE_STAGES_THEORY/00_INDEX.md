@@ -24,55 +24,45 @@
 | SP-S4-P09 | Телесные проявления | утверждено: amended zero-delta | `48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md` | — |
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
 | SP-S4-P11 | Соответствующие практики | утверждено | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
-| SP-S4-P12 | Критерии перехода | **Architect pass + RC-016 + Red Team complete; owner decision pending** | — | — |
+| SP-S4-P12 | Критерии перехода | **утверждено** | `51_STAGE_4_TRANSITION_CRITERIA.md` | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` |
 | SP-S4-P13 | Ловушка ступени | не открыт | — | — |
 
-## Активный SP-S4-P12
+## SP-S4-P12
 
-Рабочие источники:
+> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-- `../SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md` — SP-SRC-022;
-- `../SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md` — SP-SRC-023;
-- `../GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-016_SP-S4-P12.md`;
-- `../GOVERNANCE/SP-S4-P12_RED_TEAM_NOTES.md`;
-- `../TRANSITION_CRITERIA_BOUNDARY.md`.
-
-Уточнённый кандидат после Reality Check и Red Team:
-
-> **Переход от четвёртой ступени становится обоснованным, когда в конкретной области reality-coupled способность участия становится качественно достаточно надёжной при некоторой вариативности релевантной значимой нагрузки: в части таких ситуаций она остаётся функционально доступной непосредственно внутри нагрузки, а после реального снижения доступности человек способен сам заметить изменившуюся фактическую позицию и повторяемо изменить ещё доступное продолжение, снова входя в цикл фактов, релевантного направления, доступного хода и обратной связи.**
-
-Обязательные ограничения:
+> **Re-entry должен изменить ещё доступное продолжение.**
 
 ```text
-безошибочность не требуется
-universal stress resilience не утверждается
-late insight ≠ functional re-entry
-natural recovery ≠ re-entry
-один отрепетированный stressor ≠ достаточный transfer
-support scaffold ≠ внешний оператор выбора
-хороший исход ≠ P12
-скорость восстановления ≠ самостоятельный критерий зрелости
+сохранение функционального доступа
++
+functional re-entry
 ```
 
-Рабочая граница следующей задачи:
+Главные ограничения:
 
-> **Не бесконечно лучше возвращаться из одних и тех же условий, а начать видеть условия, которые регулярно делают возвращение необходимым.**
+```text
+late understanding ≠ functional re-entry
+natural recovery ≠ own recovery operation
+one rehearsed stressor ≠ sufficient transfer
+support scaffold ≠ external operator of choice
+universal stress resilience ≠ S4 criterion
+recovery speed ≠ maturity criterion
+```
 
-SP-SRC-023 сохраняет дополнительное различение:
+Граница следующей задачи:
 
-> **Усилие действия ≠ усилие компенсации структуры.**
+```text
+S4 = надёжность участия внутри релевантной нагрузки
+S5 = системный уровень условий становится следующей central task
+```
 
-Это source material и не предопределяет полную архитектуру S5.
-
-Full theory, canonical и parameter delta будут созданы только после явного решения владельца.
-
-## Последний утверждённый SP-S4-P11
-
-> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
-
-> **Нагрузка становится частью учебной позиции, а не целью практики.**
+Full theory: `51_STAGE_4_TRANSITION_CRITERIA.md`.  
+Canonical: `../CANONICAL/41_STAGE_4_P12_CANONICAL.md`.  
+Delta: `../LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.  
+Approval: `../GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**SP-S4-P12 прошёл Architect pass, RC-016 и Red Team; ожидает явного решения владельца. SP-S4-P13 не открыт.**
+**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
