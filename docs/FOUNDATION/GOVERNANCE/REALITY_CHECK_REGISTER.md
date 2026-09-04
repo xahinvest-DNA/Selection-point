@@ -1,7 +1,7 @@
 # Reality Check Register
 
 **Статус:** действующий реестр проверок  
-**Дата обновления:** 3 сентября 2026 года
+**Дата обновления:** 4 сентября 2026 года
 
 | ID | Объект | Архитектурный статус | Reality Check status | Итог / следующий шаг |
 |---|---|---|---|---|
@@ -20,6 +20,7 @@
 | RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality — сквозное свойство, не S4-specific delta. |
 | RC-014 | SP-S4-P10 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Устойчивость траектории ≠ неизменность её формы. |
 | RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой, а не toughness или relaxation. |
+| RC-016 | SP-S4-P12 | на обсуждении | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Контекстно-релевантное сохранение + функциональный re-entry; не universal stress resilience. |
 
 ## RC-015 — закрытый итог
 
@@ -66,6 +67,42 @@ P11 пересматривается / схлопывается в S3-P11, ес�
 
 Approval addendum: `RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md`.
 
+## RC-016 — открытый итог
+
+4 сентября 2026 года для SP-S4-P12 завершены Architect pass, Reality Check и Red Team. Параметр ещё не утверждён владельцем.
+
+### Сохранившийся центральный кандидат
+
+> **Переход не требует непрерывного контроля или отсутствия выпадений. В конкретной области способность должна быть качественно достаточно надёжна при некоторой вариативности релевантной нагрузки: иногда сохраняться непосредственно внутри нагрузки, а после реального снижения доступности — позволять человеку самостоятельно изменить ещё продолжающуюся траекторию из новой фактической позиции.**
+
+### External compatibility
+
+- behaviour-maintenance literature различает lapse / relapse и отдельно описывает recovery self-efficacy;
+- resilience literature поддерживает динамическое восстановление, а не отсутствие реакции как единственный образ устойчивости;
+- regulatory-flexibility literature поддерживает context sensitivity и feedback responsiveness;
+- training-transfer literature ограничивает генерализацию: перенос на новые условия не автоматичен;
+- habit/context literature поддерживает влияние системы условий на вероятность поведения, но не доказывает отдельную S5.
+
+### Ключевые ограничения Red Team
+
+```text
+позднее понимание ≠ functional re-entry
+natural recovery ≠ собственная операция восстановления участия
+один отрепетированный стрессор ≠ достаточный transfer
+support scaffold ≠ внешний оператор выбора
+хороший исход ≠ P12
+быстрое восстановление ≠ автоматически зрелость
+S5 systemic task ≠ запрет менять среду раньше
+```
+
+### Falsifier
+
+P12 пересматривается, если в пилоте нельзя отличить re-entry от natural recovery, если релевантную нагрузку невозможно выбирать prospectively, если критерий подтверждается только post hoc storytelling, если поддержка и собственная операция не различимы либо если S4→S5 boundary не добавляет practically useful distinction.
+
+Связанные файлы:
+- `RC-016_SP-S4-P12.md`;
+- `SP-S4-P12_RED_TEAM_NOTES.md`.
+
 ## Текущая граница
 
-**RC-015 закрыт как owner-approved. SP-S4-P11 утверждён. SP-S4-P12 не открыт.**
+**SP-S4-P12 прошёл Architect pass, RC-016 и Red Team; ожидается явное решение владельца. SP-S4-P13 не открыт.**
