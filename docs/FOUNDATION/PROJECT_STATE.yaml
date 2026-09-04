@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P11
   active_parameter: SP-S4-P12
   active_parameter_name: "Критерии перехода"
-  active_parameter_status: "architect-pass-complete; reality-check-pending"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; owner-decision-pending"
   next_candidate: SP-S4-P13
   next_status: unopened
   explicit_pause: false
-  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора. Architect pass P12 завершён. Центральный кандидат: качественная готовность не требует отсутствия выпадений; функциональный доступ должен иногда сохраняться непосредственно внутри значимой нагрузки и повторяемо восстанавливаться после снижения доступности из новой фактической позиции, сохраняя право feedback корректировать траекторию. Следующая practically useful задача S5 смещается от дальнейшего самоконтроля внутри тех же условий к изменению системы условий, формирующей вероятные будущие позиции. P12 не утверждён; следующий обязательный шаг — Reality Check."
+  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов и сравнительной реконструкции Williams / Millman / Fritz Андрей ответил: 'Полностью согласен. Сохрани информацию и переходи к P12.' Синтез сохранён как SP-SRC-022 и принят как рабочая опора. Дополнительное обсуждение Fritz underlying structure сохранено как SP-SRC-023; ключевое различение: effort of action ≠ effort of compensating the structure. Architect pass, RC-016 и Red Team P12 завершены. Уточнённый кандидат: S4 readiness не требует безошибочности или universal stress resilience; в конкретной области при некоторой вариативности релевантной нагрузки функциональный доступ должен иногда сохраняться непосредственно внутри нагрузки, а после реального снижения доступности человек должен быть способен сам заметить изменившуюся фактическую позицию и изменить ещё доступное продолжение. Позднее объяснение после полного окончания ситуации, natural recovery и внешний оператор выбора не считаются достаточным re-entry. Следующая central task может смещаться к системному уровню условий, регулярно формирующих вероятные будущие позиции, без преждевременного утверждения полной архитектуры S5. P12 ожидает явного решения владельца."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -32,12 +32,15 @@ active_sources:
   canonical: null
   parameter_delta: null
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
+  systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
   architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md"
+  reality_check: RC-016
+  reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12.md"
+  red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_RED_TEAM_NOTES.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/50_STAGE_4_CORRESPONDING_PRACTICES.md"
   transition_boundary: "docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
-  reality_check: null
   approval_addendum: null
 
 sources_of_truth:
@@ -121,7 +124,17 @@ constraints:
   p11_specific_exercises_deferred_to_phase_5: true
   p12_opened: true
   p12_architect_pass_complete: true
+  p12_reality_check_complete: true
+  p12_red_team_complete: true
+  p12_owner_decision_pending: true
   p12_quantitative_thresholds_deferred_to_phase_6: true
   p12_no_errorlessness_requirement: true
+  p12_not_universal_stress_resilience: true
+  p12_relevant_load_must_be_context_specific: true
   p12_reentry_is_core_candidate_not_sole_criterion: true
+  p12_late_explanation_is_not_reentry: true
+  p12_natural_recovery_is_not_reentry: true
+  p12_support_scaffold_is_not_external_operator: true
+  p12_recovery_speed_is_not_maturity_criterion: true
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
+  p12_does_not_predefine_full_stage_5_architecture: true
