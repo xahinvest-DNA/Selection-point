@@ -7,60 +7,62 @@
 
 - Фаза 3 — точная архитектура пяти ступеней.
 - Ступени 1–3 завершены.
-- Ступень 4: **SP-S4-P01–SP-S4-P11 утверждены**, P07 и P09 = `zero-delta`.
-- Последний утверждённый параметр: **SP-S4-P11 — «Соответствующие практики»**.
-- **SP-S4-P12 — «Критерии перехода» активен.**
-- Architect pass, RC-016 и Red Team P12 завершены.
-- Статус: **owner-decision-pending**.
-- SP-S4-P13 — `unopened`.
+- Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`.
+- Последний утверждённый параметр: **SP-S4-P12 — «Критерии перехода»**.
+- Открытого параметра нет.
+- SP-S4-P13 — следующий кандидат, **`unopened`**.
 
-## Уточнённый кандидат SP-S4-P12
-
-> **Переход от S4 становится обоснованным, когда в конкретной области способность участия достаточно надёжна при некоторой вариативности релевантной значимой нагрузки: иногда сохраняется непосредственно внутри нагрузки, а после реального снижения доступности человек способен сам заметить изменившуюся позицию и изменить ещё доступное продолжение.**
-
-Коротко:
+## SP-S4-P12
 
 > **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-Главные ограничения:
-
 ```text
-безошибочность не требуется
-universal stress resilience не утверждается
-late insight ≠ functional re-entry
-natural recovery ≠ re-entry
-один отрепетированный стрессор ≠ достаточный transfer
-support scaffold ≠ внешний оператор выбора
-хороший исход ≠ P12
-быстрое восстановление ≠ автоматически зрелость
+сохранение функционального доступа
++
+functional re-entry после снижения доступности
 ```
 
-## Рабочая граница S4 → S5
+Ключевая граница:
+
+> **Re-entry должен изменить ещё доступное продолжение.**
+
+Обязательные ограничения:
 
 ```text
-S4 = сохранять / восстанавливать участие внутри релевантной нагрузки
-S5 = системный уровень условий становится следующей центральной задачей
+late understanding ≠ functional re-entry
+natural recovery ≠ own recovery operation
+one rehearsed stressor ≠ sufficient transfer
+support scaffold ≠ external operator
+universal stress resilience ≠ S4 criterion
+recovery speed ≠ maturity criterion
+```
+
+## Граница S4 → S5
+
+```text
+S4 = надёжность участия внутри релевантной нагрузки
+S5 = системный уровень условий становится следующей central task
 ```
 
 > **Не бесконечно лучше возвращаться из одних и тех же условий, а начать видеть условия, которые регулярно делают возвращение необходимым.**
 
-SP-SRC-023 дополнительно фиксирует:
+SP-SRC-023:
 
 > **Усилие действия ≠ усилие компенсации структуры.**
 
-Это рабочий source material и не предопределяет полную архитектуру S5.
+Это рабочая опора для будущей S5, а не её заранее утверждённая архитектура.
 
-## Граница Фазы 6
+## Фаза 6
 
-P12 в Фазе 3 определяет только качественный профиль. Количество эпизодов, сроки, проценты, пороги, тесты, допустимая поддержка и operational transfer относятся к Фазе 6.
+Числовые пороги, сроки, число эпизодов, допустимая поддержка, operationalization релевантной нагрузки, transfer и процедура оценки относятся к Фазе 6.
 
-## Активные источники
+## Источники
 
-- `FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md`;
-- `FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md`;
+- `FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`;
+- `FOUNDATION/CANONICAL/41_STAGE_4_P12_CANONICAL.md`;
+- `FOUNDATION/LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`;
 - `FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P12_RED_TEAM_NOTES.md`;
-- `FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md`.
+- `FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`;
+- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-04_SP-S4-P12.md`.
 
-**SP-S4-P12 ожидает явного решения владельца. SP-S4-P13 не открыт.**
+**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
