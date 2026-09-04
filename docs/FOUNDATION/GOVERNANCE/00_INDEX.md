@@ -1,7 +1,7 @@
 # Governance Selection Point
 
 **Статус:** действующий индекс управления проектом  
-**Дата обновления:** 3 сентября 2026 года
+**Дата обновления:** 4 сентября 2026 года
 
 ## Действующие документы
 
@@ -15,8 +15,11 @@
 8. `RC-013_SP-S4-P09.md` + reanalysis + approval addendum — P09.
 9. `RC-014_SP-S4-P10.md` + approval addendum — P10.
 10. `SP-S4-P11_ARCHITECT_PASS_NOTES.md` — Architect pass P11.
-11. `RC-015_SP-S4-P11.md` — Reality Check / Red Team P11.
-12. `RC-015_SP-S4-P11_APPROVAL_ADDENDUM.md` — явное утверждение P11.
+11. `RC-015_SP-S4-P11.md` + approval addendum — P11.
+12. `SP-S4-P12_ARCHITECT_PASS_NOTES.md` — Architect pass P12.
+13. `RC-016_SP-S4-P12.md` — Reality Check P12.
+14. `SP-S4-P12_RED_TEAM_NOTES.md` — Red Team / Falsification P12.
+15. `RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md` — явное утверждение P12.
 
 ## Основной цикл
 
@@ -27,11 +30,10 @@
 → Reality Check
 → Red Team / Falsification
 → явное решение владельца
-→ PROJECT_STATE.yaml first
 → full theory
 → canonical при самостоятельной дельте
 → parameter delta
-→ плановая консолидация при P05/P10/P13
+→ PROJECT_STATE.yaml
 → derived status sync
 → checkpoint
 → consistency check
@@ -39,28 +41,29 @@
 
 ## Последний закрытый governance cycle
 
-**SP-S4-P11 — «Соответствующие практики»** закрыт 3 сентября 2026 года как самостоятельная stage-specific functional-practice delta.
+**SP-S4-P12 — «Критерии перехода»** закрыт 4 сентября 2026 года как самостоятельная transition-criteria delta.
 
 Центральная формула:
 
-> **Тренировать цикл выбора под нагрузкой, а не отдельную технику снятия нагрузки.**
+> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-Дополнительная:
+Ключевая граница:
 
-> **Нагрузка становится частью учебной позиции, а не целью практики.**
+> **Re-entry должен изменить ещё доступное продолжение.**
 
 Обязательные ограничения:
 
 ```text
-«панель» = достаточная reorientation ≠ тотальный self-monitoring
-нагрузка = training condition ≠ toughness test
-load-awareness ≠ доказательство потери выбора
-state regulation ≠ choice recovery
-visualization may help ≠ sufficient reality-coupled verification
+late understanding ≠ functional re-entry
+natural recovery ≠ own recovery operation
+one rehearsed stressor ≠ sufficient transfer
+support scaffold ≠ external operator
+universal stress resilience ≠ S4 transition criterion
+recovery speed ≠ maturity criterion
 ```
 
-Конкретные упражнения и дозирование остаются за Фазой 5.
+Quantitative transition system остаётся задачей Фазы 6.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P11. Открытого параметра нет. SP-S4-P12 не открыт.**
+**Последний утверждённый параметр — SP-S4-P12. Открытого параметра нет. SP-S4-P13 не открыт.**
