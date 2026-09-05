@@ -27,11 +27,18 @@
 - `CASE_KOMASHNYA_CLOSED_MODEL_2026-09-01.md` — потенциальное замыкание мировоззренческой модели.
 - `CASE_TASK_VS_DIRECTION_FLEXIBILITY_2026-09-01.md` — различие настойчивости и ригидности.
 
-## Delta-first
+## Delta-first и консолидация
 
 Local parameter delta создаётся только после явного утверждения параметра.
 
-P13 является плановой точкой консолидации. Утверждённая локальная дельта сохранена отдельно; перенос в большие реестры должен сохранять смысл без расширения claims.
+Плановая консолидация на границе P13 / Ступени 4 **выполнена 5 сентября 2026 года**:
+
+- `CLAIMS_REGISTRY.md` — SP-S4-P13 + завершение S4;
+- `CROSS_REFERENCE_MAP.md` — связи P11–P13 и граница S4→S5;
+- `EVIDENCE_MAP.md` — RC-015–RC-017 и evidence boundaries;
+- `RISKS_AND_BOUNDARIES.md` — добавлен SP-RISK-030.
+
+`TERMS_REGISTRY.md` не расширялся: `moment-level` и `trajectory-level` остаются описательными масштабами анализа, а не отдельными автономными терминами Selection Point.
 
 ## SP-S4-P13
 
