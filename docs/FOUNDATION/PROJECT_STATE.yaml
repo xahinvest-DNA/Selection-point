@@ -7,30 +7,30 @@ status:
   active_phase_name: "Точная архитектура пяти ступеней"
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
-  last_approved: SP-S4-P12
-  active_parameter: SP-S4-P13
-  active_parameter_name: "Ловушка четвёртой ступени"
-  active_parameter_status: "revised-architect-pass-complete; revised-reality-check-complete; revised-red-team-complete; owner-decision-pending"
-  next_candidate: null
-  next_status: null
+  last_approved: SP-S4-P13
+  active_parameter: null
+  active_parameter_name: null
+  active_parameter_status: null
+  next_candidate: SP-S5-P01
+  next_status: unopened
   explicit_pause: false
-  owner_decision: "5 сентября 2026 года после первого Architect / RC-017 / Red Team Андрей уточнил центральный механизм P13: чрезмерная фиксация на формуле 'здесь и сейчас' может удерживать наблюдение в слишком мелком временном масштабе. Каждый отдельный эпизод может быть корректно замечен и закрыт новым выбором, но серия сходных эпизодов за дни/недели не агрегируется в данные о фактической траектории. Уточнение сохранено как SP-SRC-025; Architect pass, RC-017 и Red Team полностью пересобраны. Surviving candidate: ловушка S4 — не настоящий момент сам по себе, а его монополия как масштаба оценки. Ключевые формулы: 'Выбор совершается в моменте. Траектория обнаруживается во времени'; 'Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции'. P13 остаётся неутверждённым и ожидает явного решения владельца."
+  owner_decision: "5 сентября 2026 года после первоначального Architect / RC-017 / Red Team Андрей уточнил механизм P13 через временной масштаб: отдельный момент может быть обслужен корректно, но серия сходных эпизодов должна иметь право изменить описание фактической траектории. Уточнение сохранено как SP-SRC-025, после чего Architect pass, RC-017 и Red Team были полностью пересобраны. Андрей явно утвердил итоговую версию решением: 'Утверждаем'. Утверждённая ловушка S4: настоящий момент остаётся местом выбора, но становится ловушкой, если превращается в почти единственный масштаб оценки и accumulated series-level feedback не меняет current position. Ключевые формулы: 'Выбор совершается в моменте. Траектория обнаруживается во времени'; 'Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции'. SP-S4-P13 утверждён; Ступень 4 завершена полностью. SP-S5-P01 остаётся unopened."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
-  stage_4: "SP-S4-P01–SP-S4-P12 (P07 and P09 zero-delta)"
+  stage_4: "SP-S4-P01–SP-S4-P13 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-04_SP-S4-P12.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: null
-  canonical: null
-  parameter_delta: null
+  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md"
+  canonical: "docs/FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md"
+  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md"
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md"
   preceding_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
@@ -39,7 +39,7 @@ active_sources:
   reality_check: RC-017
   reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md"
   red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md"
-  approval_addendum: null
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md"
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
 
 sources_of_truth:
@@ -133,16 +133,12 @@ constraints:
   p12_recovery_speed_is_not_maturity_criterion: true
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
   p12_does_not_predefine_full_stage_5_architecture: true
-  p13_opened: true
-  p13_revised_architect_pass_complete: true
-  p13_revised_reality_check_complete: true
-  p13_revised_red_team_complete: true
-  p13_owner_decision_pending: true
-  p13_source_material_is_not_approval: true
+  p13_approved: true
   p13_temporal_scale_refinement_source: SP-SRC-025
   p13_present_moment_is_not_the_problem: true
-  p13_trap_candidate_is_present_moment_monopoly_as_evaluation_scale: true
+  p13_trap_is_present_moment_monopoly_as_evaluation_scale: true
   p13_choice_occurs_in_moment_trajectory_requires_time_aggregation: true
+  p13_relevant_history_may_change_current_position: true
   p13_past_informs_but_does_not_determine_next_choice: true
   p13_series_is_candidate_data_not_proof_of_single_cause: true
   p13_aggregation_must_not_be_guilt_score: true
@@ -150,5 +146,6 @@ constraints:
   p13_macro_review_must_not_be_total_self_monitoring: true
   p13_must_not_repeat_s1_understanding_replaces_action: true
   p13_must_preserve_simple_explanations: true
-  p13_zero_delta_if_not_distinct_from_p12: true
-  p13_must_not_predefine_full_stage_5_architecture: true
+  p13_does_not_predefine_full_stage_5_architecture: true
+  stage_4_complete: true
+  stage_5_not_opened: true
