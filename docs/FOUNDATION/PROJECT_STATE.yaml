@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P12
   active_parameter: SP-S4-P13
   active_parameter_name: "Ловушка четвёртой ступени"
-  active_parameter_status: "discussion-complete; architect-pass-pending"
+  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; owner-decision-pending"
   next_candidate: null
   next_status: null
   explicit_pause: false
-  owner_decision: "5 сентября 2026 года после обязательных трёх вопросов для SP-S4-P13 Андрей предложил гипотезу: развитая способность видеть, понимать и восстанавливать выбор может сосуществовать с продолжением по проторенной траектории, если underlying structure остаётся прежней. Дополнительный owner-example: в период строительного роста рабочая стратегия была 'просто делай', тогда как сегодня развитое мышление иногда откладывает фактическое действие. Сравнительный Williams / Millman / Fritz synthesis принят словами 'Принято, сохрани. Идём дальше' и сохранён как SP-SRC-024. Ключевые рабочие формулы: 'способность восстанавливаться может стать механизмом сохранения того, что постоянно делает восстановление необходимым' и 'можно настолько хорошо научиться работать с собой, что работа с собой начнёт заменять работу с реальностью'. Это открывает P13 для Architect pass, но не утверждает сам параметр."
+  owner_decision: "5 сентября 2026 года после обязательных трёх вопросов Андрей предложил гипотезу: развитая способность видеть, понимать и восстанавливать выбор может сосуществовать с продолжением по проторенной траектории, если generating conditions остаются прежними; дополнительный пример — развитое мышление иногда откладывает фактическое действие. Материал Williams / Millman / Fritz и owner-examples сохранён как SP-SRC-024. Architect pass, RC-017 и Red Team завершены. Surviving candidate: ловушка S4 — не само мышление, усилие или recovery, а возможная ошибка масштаба, когда доказанная локальная компетентность удерживает episodic self-regulation как основной уровень вмешательства и тем самым маскирует данные о повторяющейся конфигурации условий. Короткая формула: 'Я справляюсь' может скрыть вопрос 'почему мне снова приходится справляться с тем же типом позиции?'. P13 должен стать zero-delta, если его нельзя отличить от S1/procrastination, от P12 transition failure или если generating conditions нельзя описать prospectively. P13 ожидает явного решения владельца."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -35,10 +35,10 @@ active_sources:
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
-  architect_pass: null
-  reality_check: null
-  reality_check_file: null
-  red_team: null
+  architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md"
+  reality_check: RC-017
+  reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md"
+  red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md"
   approval_addendum: null
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
 
@@ -134,8 +134,16 @@ constraints:
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
   p12_does_not_predefine_full_stage_5_architecture: true
   p13_opened: true
+  p13_architect_pass_complete: true
+  p13_reality_check_complete: true
+  p13_red_team_complete: true
+  p13_owner_decision_pending: true
   p13_source_material_is_not_approval: true
   p13_must_not_repeat_s1_understanding_replaces_action: true
   p13_must_not_define_thinking_as_bad: true
+  p13_must_not_define_effort_as_bad_structure: true
   p13_must_distinguish_compensation_from_effective_recovery: true
+  p13_generating_conditions_must_be_observable_hypotheses: true
+  p13_must_preserve_simple_explanations: true
+  p13_zero_delta_if_not_distinct_from_p12: true
   p13_must_not_predefine_full_stage_5_architecture: true
