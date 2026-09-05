@@ -21,36 +21,38 @@
 | RC-014 | SP-S4-P10 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Устойчивость траектории ≠ неизменность её формы. |
 | RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой. |
 | RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry. |
-| RC-017 | SP-S4-P13 | на обсуждении | revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Moment-level recovery может недоучитывать trajectory-level feedback. |
+| RC-017 | SP-S4-P13 | **утверждено** | owner-approved; revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Moment-level recovery не должен обнулять trajectory-level feedback. |
 
-## RC-017 — revised open result
+## RC-017 — закрытый итог
 
-5 сентября 2026 года после первого Architect / RC-017 / Red Team Андрей уточнил P13 через временной масштаб. На этом основании Architect pass, Reality Check и Red Team пересобраны.
+5 сентября 2026 года после temporal-scale refinement, повторного Architect pass, revised Reality Check и revised Red Team Андрей явно утвердил SP-S4-P13 решением:
 
-### Surviving candidate
+> **«Утверждаем».**
 
-> **Ловушка S4 возникает, когда полезная способность возвращаться к доступному выбору в каждом отдельном моменте непреднамеренно превращает moment-level view в основной и почти единственный масштаб оценки. Тогда серия функционально сходных эпизодов может не получить достаточного веса как новая фактическая позиция, и человек локально остаётся в выборе, одновременно недооценивая устойчивое изменение собственной траектории во времени.**
+### Центральный тезис
 
-Короткая формула:
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-> **Выбор совершается в моменте. Ошибка — считать момент достаточным масштабом для оценки траектории.**
+Ловушка:
 
-Корректирующая:
+> **Полезная способность возвращаться к выбору в каждом отдельном моменте становится ловушкой, если moment-level view превращается в почти единственный масштаб оценки и серия функционально сходных эпизодов не получает достаточного веса как новая фактическая позиция.**
 
-> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+Корректирующая формула:
+
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ### External compatibility
 
 - behaviour-maintenance literature различает lapse и relapse / sequence of lapses;
 - EMA literature различает fast local processes и slower unfolding/background processes;
 - maintenance models требуют учитывать поведение во времени и контекстах;
-- context-dependent relapse literature показывает, что повторение может зависеть от устойчивых условий, но не доказывает одну скрытую причину.
+- context-dependent relapse literature поддерживает возможность влияния устойчивых условий, но не доказывает одну скрытую причину.
 
 ### Red Team boundaries
 
 ```text
-present moment ≠ problem
-past = data ≠ verdict / identity / destiny
+present moment ≠ trap
+history = data ≠ verdict / identity / destiny
 single lapse ≠ trajectory
 series ≠ proof of one cause
 aggregation ≠ guilt score
@@ -58,17 +60,12 @@ negative outcomes alone ≠ negative trajectory
 macro-awareness ≠ total self-monitoring
 ```
 
-### Zero-delta / falsification condition
+### Falsifier
 
-P13 должен быть пересмотрен или признан `zero-delta`, если temporal aggregation не добавляет practically useful distinction к P12, если временное окно неизбежно выбирается post hoc, если macro-review создаёт в основном guilt / hyper-control либо если невозможно наблюдаемо показать случай, где local recovery работает, но trajectory-level feedback систематически недоучитывается.
+P13 пересматривается, если temporal aggregation не добавляет practically useful distinction к P12, если временной масштаб неизбежно выбирается post hoc, если macro-review создаёт преимущественно guilt / hyper-control либо если local recovery и trajectory-level feedback практически неразличимы как отдельные функции.
 
-Связанные файлы:
-- `SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
-- `RC-017_SP-S4-P13.md`;
-- `SP-S4-P13_RED_TEAM_NOTES.md`;
-- `../SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
-- `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`.
+Approval addendum: `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
 
 ## Текущая граница
 
-**SP-S4-P13 повторно прошёл Architect pass, RC-017 и Red Team после temporal-scale refinement; ожидается явное решение владельца.**
+**RC-017 закрыт как owner-approved. Ступень 4 завершена полностью. SP-S5-P01 не открыт.**
