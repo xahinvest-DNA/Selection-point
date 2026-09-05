@@ -1,7 +1,7 @@
 # Governance Selection Point
 
 **Статус:** действующий индекс управления проектом  
-**Дата обновления:** 4 сентября 2026 года
+**Дата обновления:** 5 сентября 2026 года
 
 ## Действующие документы
 
@@ -17,9 +17,10 @@
 10. `SP-S4-P11_ARCHITECT_PASS_NOTES.md` — Architect pass P11.
 11. `RC-015_SP-S4-P11.md` + approval addendum — P11.
 12. `SP-S4-P12_ARCHITECT_PASS_NOTES.md` — Architect pass P12.
-13. `RC-016_SP-S4-P12.md` — Reality Check P12.
-14. `SP-S4-P12_RED_TEAM_NOTES.md` — Red Team / Falsification P12.
-15. `RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md` — явное утверждение P12.
+13. `RC-016_SP-S4-P12.md` + Red Team + approval addendum — P12.
+14. `SP-S4-P13_ARCHITECT_PASS_NOTES.md` — Architect pass P13.
+15. `RC-017_SP-S4-P13.md` — Reality Check P13.
+16. `SP-S4-P13_RED_TEAM_NOTES.md` — Red Team / Falsification P13.
 
 ## Основной цикл
 
@@ -41,29 +42,34 @@
 
 ## Последний закрытый governance cycle
 
-**SP-S4-P12 — «Критерии перехода»** закрыт 4 сентября 2026 года как самостоятельная transition-criteria delta.
-
-Центральная формула:
+**SP-S4-P12 — «Критерии перехода»** закрыт 4 сентября 2026 года.
 
 > **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-Ключевая граница:
+## Активный governance cycle — SP-S4-P13
 
-> **Re-entry должен изменить ещё доступное продолжение.**
+5 сентября 2026 года после трёх owner-вопросов, owner-examples и Williams / Millman / Fritz synthesis выполнены Architect pass, RC-017 и Red Team.
 
-Обязательные ограничения:
+Surviving candidate:
+
+> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+
+Более полно:
+
+> **Ловушка S4 возникает, когда доказанная локальная компетентность удерживает episodic self-regulation как основной уровень вмешательства и тем самым маскирует данные о повторяющейся конфигурации условий.**
+
+Ключевые защиты:
 
 ```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one rehearsed stressor ≠ sufficient transfer
-support scaffold ≠ external operator
-universal stress resilience ≠ S4 transition criterion
-recovery speed ≠ maturity criterion
+thinking ≠ trap
+recovery ≠ trap
+effort ≠ bad structure
+repetition ≠ proof of hidden structure
+systemic view ≠ снятие авторства
 ```
 
-Quantitative transition system остаётся задачей Фазы 6.
+Zero-delta обязателен, если P13 неотличим от S1 / procrastination или от P12 transition failure.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P12. Открытого параметра нет. SP-S4-P13 не открыт.**
+**Последний утверждённый параметр — SP-S4-P12. SP-S4-P13 прошёл Architect / RC-017 / Red Team и ожидает явного решения владельца.**
