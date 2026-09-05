@@ -8,95 +8,69 @@
 
 - Фаза 3 — «Точная архитектура пяти ступеней».
 - Ступени 1–3 завершены полностью.
-- Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`.
-- Последний утверждённый параметр: **SP-S4-P12 — «Критерии перехода»**.
-- Активный параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
-- После owner refinement P13 повторно прошёл **Architect pass, RC-017 и Red Team / Falsification**.
-- Статус P13: **owner-decision-pending**.
+- **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`.
+- Последний утверждённый параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
+- Открытого параметра нет.
+- Следующий кандидат: **SP-S5-P01**, `unopened`.
 
-## 2. Новое уточнение P13
+## 2. Утверждённый SP-S4-P13
 
-Рабочий источник:
+5 сентября 2026 года после temporal-scale refinement, повторного Architect pass, RC-017 и Red Team Андрей явно утвердил P13 решением:
 
-- `SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md` — SP-SRC-025.
+> **«Утверждаем».**
 
-Предшествующий источник:
-
-- `SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md` — SP-SRC-024.
-
-Центральное owner-различение:
+Центральная формула:
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-И:
-
-> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
-
-## 3. Surviving candidate после revised Architect / RC / Red Team
-
-> **Ловушка S4 возникает, когда полезная способность возвращаться к доступному выбору в каждом отдельном моменте непреднамеренно превращает moment-level view в основной и почти единственный масштаб оценки. Тогда серия функционально сходных эпизодов может не получить достаточного веса как новая фактическая позиция, и человек локально остаётся в выборе, одновременно недооценивая устойчивое изменение собственной траектории во времени.**
-
-Коротко:
+Ловушка:
 
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-## 4. Дельта относительно P12
+Полная граница:
 
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+
+## 3. Дельта относительно P12
+
+```text
 P12:
+не превращать отдельное выпадение
+в глобальный приговор
 
-```text
-отдельное выпадение не отменяет освоение
-→ functional re-entry остаётся возможным
+P13:
+не превращать каждый новый момент
+в обнуление accumulated series-level feedback
 ```
 
-P13 candidate:
+Право на re-entry не означает право забыть фактическую динамику.
+
+## 4. Обязательные ограничения
 
 ```text
-каждый новый выбор остаётся возможным
-но
-серия выпадений сама становится feedback
-→ history must update current-position model
-```
-
-Право на новый выбор **не равно** праву обнулить накопленную информацию.
-
-## 5. Обязательные ограничения
-
-```text
-present moment ≠ problem
-past = data ≠ verdict / identity / destiny
+present moment ≠ trap
+history = data ≠ verdict / identity / destiny
 single lapse ≠ trajectory
-series ≠ proof of one hidden cause
-aggregation ≠ guilt score
+series ≠ proof of single cause
 negative outcomes alone ≠ negative trajectory
-macro-awareness ≠ total self-monitoring
+macro review ≠ total self-monitoring
+aggregation ≠ guilt scoreboard
 ```
 
 Временной горизонт не задаётся универсально в Фазе 3.
 
-## 6. External compatibility
+## 5. Утверждённые документы P13
 
-RC-017 обнаружил совместимость отдельных компонентов с:
-
-- различением lapse / relapse в behaviour-maintenance literature;
-- EMA-различением локальных процессов и unfolding trajectory;
-- моделями поведения во времени и контексте;
-- context-dependent relapse / habit literature.
-
-Это не доказывает пятиступенчатую архитектуру и не задаёт универсальный период агрегации.
-
-## 7. Zero-delta condition
-
-P13 должен стать `zero-delta` / быть пересмотрен, если temporal aggregation не добавляет practically useful distinction к P12, если окно всегда выбирается post hoc, если macro-review неизбежно создаёт guilt / hyper-control или если невозможно наблюдаемо показать случай, где local recovery работает, но trajectory-level feedback систематически недоучитывается.
-
-## 8. Активные документы
-
+- `FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
+- `CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
+- `LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
 - `SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
-- `SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
 - `GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
 - `GOVERNANCE/RC-017_SP-S4-P13.md`;
-- `GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
+- `GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`;
+- `GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
+- checkpoint: `PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
 
-## 9. Текущая рабочая точка
+## 6. Текущая рабочая точка
 
-**SP-S4-P13 повторно прошёл Architect pass, RC-017 и Red Team после temporal-scale refinement. Параметр ожидает явного решения Андрея. Full theory / canonical / delta пока не создаются.**
+**Ступень 4 закрыта. SP-S5-P01 автоматически не открыт.**
