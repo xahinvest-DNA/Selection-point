@@ -1,7 +1,7 @@
 # CURRENT_STATE
 
 **Авторитетный статус:** `FOUNDATION/PROJECT_STATE.yaml`  
-**Дата:** 4 сентября 2026 года
+**Дата:** 5 сентября 2026 года
 
 ## Актуальная точка
 
@@ -9,60 +9,39 @@
 - Ступени 1–3 завершены.
 - Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`.
 - Последний утверждённый параметр: **SP-S4-P12 — «Критерии перехода»**.
-- Открытого параметра нет.
-- SP-S4-P13 — следующий кандидат, **`unopened`**.
+- Активный параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
+- Architect pass, RC-017 и Red Team завершены.
+- Статус: **owner-decision-pending**.
 
-## SP-S4-P12
+## Surviving candidate P13
 
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
+> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
 
-```text
-сохранение функционального доступа
-+
-functional re-entry после снижения доступности
-```
+Полнее:
 
-Ключевая граница:
+> **Ловушка S4 возникает, когда доказанная локальная компетентность систематически удерживает episodic self-regulation как основной масштаб вмешательства: человек успешно справляется с повторяющимися эпизодами и поэтому недооценивает данные о повторяющейся конфигурации условий.**
 
-> **Re-entry должен изменить ещё доступное продолжение.**
+Рабочий вопрос:
 
-Обязательные ограничения:
+> **«Я справляюсь» — но почему мне снова приходится справляться с тем же типом позиции?**
 
-```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one rehearsed stressor ≠ sufficient transfer
-support scaffold ≠ external operator
-universal stress resilience ≠ S4 criterion
-recovery speed ≠ maturity criterion
-```
-
-## Граница S4 → S5
+## Границы
 
 ```text
-S4 = надёжность участия внутри релевантной нагрузки
-S5 = системный уровень условий становится следующей central task
+thinking ≠ trap
+recovery ≠ trap
+effort ≠ bad structure
+repetition ≠ proof of structure
+systemic view ≠ снятие авторства
 ```
 
-> **Не бесконечно лучше возвращаться из одних и тех же условий, а начать видеть условия, которые регулярно делают возвращение необходимым.**
-
-SP-SRC-023:
-
-> **Усилие действия ≠ усилие компенсации структуры.**
-
-Это рабочая опора для будущей S5, а не её заранее утверждённая архитектура.
-
-## Фаза 6
-
-Числовые пороги, сроки, число эпизодов, допустимая поддержка, operationalization релевантной нагрузки, transfer и процедура оценки относятся к Фазе 6.
+P13 должен стать `zero-delta`, если его нельзя отличить от S1 / procrastination или от уже утверждённой P12 transition boundary.
 
 ## Источники
 
-- `FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`;
-- `FOUNDATION/CANONICAL/41_STAGE_4_P12_CANONICAL.md`;
-- `FOUNDATION/LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`;
-- `FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12.md`;
-- `FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`;
-- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-04_SP-S4-P12.md`.
+- `FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
+- `FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+- `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
+- `FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
 
-**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
+**SP-S4-P13 ожидает явного решения владельца. Full theory / canonical / delta не созданы.**
