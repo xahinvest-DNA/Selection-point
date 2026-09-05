@@ -21,6 +21,7 @@
 14. `SP-S4-P13_ARCHITECT_PASS_NOTES.md` — revised Architect pass P13.
 15. `RC-017_SP-S4-P13.md` — revised Reality Check P13.
 16. `SP-S4-P13_RED_TEAM_NOTES.md` — revised Red Team / Falsification P13.
+17. `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md` — явное утверждение P13.
 
 ## Основной цикл
 
@@ -31,10 +32,10 @@
 → Reality Check
 → Red Team / Falsification
 → явное решение владельца
+→ PROJECT_STATE.yaml first
 → full theory
 → canonical при самостоятельной дельте
 → parameter delta
-→ PROJECT_STATE.yaml
 → derived status sync
 → checkpoint
 → consistency check
@@ -42,37 +43,33 @@
 
 ## Последний закрытый governance cycle
 
-**SP-S4-P12 — «Критерии перехода»** закрыт 4 сентября 2026 года.
+**SP-S4-P13 — «Ловушка четвёртой ступени»** закрыт 5 сентября 2026 года после temporal-scale refinement и полного повторного Architect / RC-017 / Red Team.
 
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
-
-## Активный governance cycle — SP-S4-P13
-
-После первого прохода P13 Андрей уточнил механизм через временной масштаб. Уточнение сохранено как `SP-SRC-025`, после чего Architect pass, RC-017 и Red Team пересобраны.
-
-Surviving candidate:
+Главная формула:
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-> **Ловушка S4 — риск того, что правильная ориентация на новый выбор в текущем моменте превращается в почти единственный масштаб оценки, а накопленная серия эпизодов не получает права изменить модель current position.**
-
-Коротко:
+Ловушка:
 
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-Ключевые защиты:
+Корректирующая граница:
+
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+
+Обязательные защиты:
 
 ```text
-present moment ≠ problem
-past = data ≠ verdict
+present moment ≠ trap
+history = data ≠ verdict
 single lapse ≠ trajectory
 series ≠ proof of one cause
 aggregation ≠ guilt score
 macro-awareness ≠ total self-monitoring
 ```
 
-Zero-delta обязателен, если temporal-scale distinction не добавляет practically useful отличие от P12.
+## Stage closure
 
-## Текущая остановка
+**Ступень 4 — «Сохранение выбора под напряжением» завершена полностью: SP-S4-P01–SP-S4-P13.**
 
-**Последний утверждённый параметр — SP-S4-P12. SP-S4-P13 повторно прошёл Architect / RC-017 / Red Team и ожидает явного решения владельца.**
+Следующий кандидат — SP-S5-P01. Он не открыт автоматически.
