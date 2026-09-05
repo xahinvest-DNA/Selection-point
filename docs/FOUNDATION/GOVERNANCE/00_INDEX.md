@@ -18,9 +18,9 @@
 11. `RC-015_SP-S4-P11.md` + approval addendum — P11.
 12. `SP-S4-P12_ARCHITECT_PASS_NOTES.md` — Architect pass P12.
 13. `RC-016_SP-S4-P12.md` + Red Team + approval addendum — P12.
-14. `SP-S4-P13_ARCHITECT_PASS_NOTES.md` — Architect pass P13.
-15. `RC-017_SP-S4-P13.md` — Reality Check P13.
-16. `SP-S4-P13_RED_TEAM_NOTES.md` — Red Team / Falsification P13.
+14. `SP-S4-P13_ARCHITECT_PASS_NOTES.md` — revised Architect pass P13.
+15. `RC-017_SP-S4-P13.md` — revised Reality Check P13.
+16. `SP-S4-P13_RED_TEAM_NOTES.md` — revised Red Team / Falsification P13.
 
 ## Основной цикл
 
@@ -48,28 +48,31 @@
 
 ## Активный governance cycle — SP-S4-P13
 
-5 сентября 2026 года после трёх owner-вопросов, owner-examples и Williams / Millman / Fritz synthesis выполнены Architect pass, RC-017 и Red Team.
+После первого прохода P13 Андрей уточнил механизм через временной масштаб. Уточнение сохранено как `SP-SRC-025`, после чего Architect pass, RC-017 и Red Team пересобраны.
 
 Surviving candidate:
 
-> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Более полно:
+> **Ловушка S4 — риск того, что правильная ориентация на новый выбор в текущем моменте превращается в почти единственный масштаб оценки, а накопленная серия эпизодов не получает права изменить модель current position.**
 
-> **Ловушка S4 возникает, когда доказанная локальная компетентность удерживает episodic self-regulation как основной уровень вмешательства и тем самым маскирует данные о повторяющейся конфигурации условий.**
+Коротко:
+
+> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
 Ключевые защиты:
 
 ```text
-thinking ≠ trap
-recovery ≠ trap
-effort ≠ bad structure
-repetition ≠ proof of hidden structure
-systemic view ≠ снятие авторства
+present moment ≠ problem
+past = data ≠ verdict
+single lapse ≠ trajectory
+series ≠ proof of one cause
+aggregation ≠ guilt score
+macro-awareness ≠ total self-monitoring
 ```
 
-Zero-delta обязателен, если P13 неотличим от S1 / procrastination или от P12 transition failure.
+Zero-delta обязателен, если temporal-scale distinction не добавляет practically useful отличие от P12.
 
 ## Текущая остановка
 
-**Последний утверждённый параметр — SP-S4-P12. SP-S4-P13 прошёл Architect / RC-017 / Red Team и ожидает явного решения владельца.**
+**Последний утверждённый параметр — SP-S4-P12. SP-S4-P13 повторно прошёл Architect / RC-017 / Red Team и ожидает явного решения владельца.**
