@@ -25,53 +25,46 @@
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
 | SP-S4-P11 | Соответствующие практики | утверждено | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
 | SP-S4-P12 | Критерии перехода | утверждено | `51_STAGE_4_TRANSITION_CRITERIA.md` | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` |
-| SP-S4-P13 | Ловушка ступени | **revised Architect + RC-017 + Red Team complete; owner decision pending** | — | — |
+| SP-S4-P13 | Ловушка ступени | **утверждено** | `52_STAGE_4_STAGE_TRAP.md` | `../CANONICAL/42_STAGE_4_P13_CANONICAL.md` |
 
-## Активный SP-S4-P13
-
-Рабочие источники:
-
-- `../SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md` — SP-SRC-025;
-- `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md` — SP-SRC-024.
-
-Governance:
-
-- `../GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
-- `../GOVERNANCE/RC-017_SP-S4-P13.md`;
-- `../GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
-
-Surviving candidate:
+## Утверждённый SP-S4-P13
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-> **Ловушка S4 — риск того, что правильная ориентация на новый выбор в текущем моменте превращается в почти единственный масштаб оценки, а накопленная серия эпизодов не получает права изменить модель current position.**
-
-Коротко:
+Ловушка:
 
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-Ключевая защита:
+Корректирующая граница:
 
-> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ```text
-present moment ≠ problem
-single lapse ≠ trajectory
-series ≠ proof of one cause
-aggregation ≠ guilt score
-macro-awareness ≠ total self-monitoring
+P12:
+не превращать отдельный lapse в глобальный приговор
+
+P13:
+не превращать каждый новый момент
+в амнезию относительно accumulated trajectory feedback
 ```
 
-P13 должен стать `zero-delta`, если temporal-scale distinction не добавляет practically useful отличие от P12.
+Главные ограничения:
 
-Full theory, canonical и parameter delta будут созданы только после явного решения владельца.
+```text
+present moment ≠ trap
+single lapse ≠ trajectory
+series ≠ proof of single cause
+bad outcomes ≠ bad process
+macro review ≠ total self-monitoring
+aggregation ≠ guilt scoreboard
+```
 
-## Последний утверждённый SP-S4-P12
-
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
-
-> **Re-entry должен изменить ещё доступное продолжение.**
+Full theory: `52_STAGE_4_STAGE_TRAP.md`.  
+Canonical: `../CANONICAL/42_STAGE_4_P13_CANONICAL.md`.  
+Delta: `../LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-017_SP-S4-P13.md`.  
+Approval: `../GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**SP-S4-P13 повторно прошёл Architect pass, RC-017 и Red Team после temporal-scale refinement; ожидает явного решения владельца.**
+**Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13. Следующий кандидат SP-S5-P01 остаётся `unopened`.**
