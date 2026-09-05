@@ -11,11 +11,10 @@
 - Фаза 3 — точная архитектура пяти ступеней;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены;
-- Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`;
-- последний утверждённый параметр: **SP-S4-P12 «Критерии перехода»**;
-- активный параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
-- после temporal-scale refinement revised Architect pass, RC-017 и Red Team завершены;
-- P13 ожидает явного решения владельца.
+- **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`;
+- последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
+- открытого параметра нет;
+- SP-S5-P01 — следующий кандидат, **не открыт**.
 
 ## Центральная идея
 
@@ -41,53 +40,51 @@
 создание траектории ≠ предопределение результата
 ```
 
-## Активный SP-S4-P13
-
-После дополнительного owner refinement центральный кандидат изменён.
+## Утверждённый SP-S4-P13
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Surviving candidate:
-
-> **Ловушка S4 возникает, когда полезная способность возвращаться к доступному выбору в каждом отдельном моменте делает moment-level view почти единственным масштабом оценки. Тогда серия функционально сходных эпизодов может не получить достаточного веса как новая фактическая позиция, и человек локально остаётся в выборе, одновременно недооценивая устойчивое изменение траектории во времени.**
-
-Коротко:
+Ловушка:
 
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
 Корректирующая формула:
 
-> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
-
-Обязательные границы:
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ```text
-present moment ≠ problem
+present moment ≠ trap
 single lapse ≠ trajectory
-series ≠ proof of one hidden cause
-past = data ≠ verdict / identity / destiny
-aggregation ≠ guilt score
-negative outcome series alone ≠ negative trajectory
-macro-awareness ≠ total self-monitoring
+series ≠ proof of one cause
+history = data ≠ verdict / identity / destiny
+macro review ≠ total self-monitoring
+aggregation ≠ guilt scoreboard
 ```
 
-P13 должен стать `zero-delta`, если это различение не добавляет practically useful отличие к P12.
+## Граница следующего уровня
 
-## Последний утверждённый SP-S4-P12
+```text
+S4:
+выбор / recovery в фактической позиции
++
+trajectory-level feedback
 
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
+S5 candidate:
+система условий, формирующая вероятные будущие позиции
+```
 
-> **Re-entry должен изменить ещё доступное продолжение.**
+Полная архитектура S5 ещё не открыта.
 
 ## Точки входа
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
-5. `docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
-6. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+4. `docs/FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
+5. `docs/FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
+6. `docs/FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
 7. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
-8. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
+8. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
+9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
 
-**SP-S4-P13 ожидает явного решения. До решения full theory / canonical / delta не создаются.**
+**Ступень 4 завершена. SP-S5-P01 не открыт.**
