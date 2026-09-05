@@ -7,19 +7,18 @@
 
 - Фаза 3 — точная архитектура пяти ступеней.
 - Ступени 1–3 завершены.
-- Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`.
-- Последний утверждённый параметр: **SP-S4-P12 — «Критерии перехода»**.
-- Активный параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
-- Revised Architect pass, RC-017 и Red Team завершены.
-- Статус: **owner-decision-pending**.
+- **Ступень 4 завершена: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`.
+- Последний утверждённый параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
+- Открытого параметра нет.
+- SP-S5-P01 — следующий кандидат, **`unopened`**.
 
-## Surviving candidate P13
+## SP-S4-P13
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
 Ловушка:
 
-> **Полезный возврат к выбору «здесь и сейчас» может стать почти единственным масштабом оценки, из-за чего серия сходных эпизодов не получает достаточного веса как новая фактическая позиция.**
+> **Полезный возврат к выбору «здесь и сейчас» становится ловушкой, если moment-level view превращается в почти единственный масштаб оценки и accumulated series-level feedback не меняет current position.**
 
 Коротко:
 
@@ -27,28 +26,27 @@
 
 Корректирующая формула:
 
-> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ## Границы
 
 ```text
-present moment ≠ problem
+present moment ≠ trap
 single lapse ≠ trajectory
 series ≠ proof of one cause
-past = data ≠ verdict
+history = data ≠ verdict
 aggregation ≠ guilt score
 outcome series alone ≠ trajectory
 macro-awareness ≠ total monitoring
 ```
 
-P13 должен стать `zero-delta`, если temporal-scale distinction не добавляет practically useful отличие от P12.
-
 ## Источники
 
-- `FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
-- `FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+- `FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
+- `FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
+- `FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
 - `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
-- `FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
+- `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
+- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
 
-**SP-S4-P13 ожидает явного решения владельца. Full theory / canonical / delta не созданы.**
+**Ступень 4 завершена. SP-S5-P01 не открыт.**
