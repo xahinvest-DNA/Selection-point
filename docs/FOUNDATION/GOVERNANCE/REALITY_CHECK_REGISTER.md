@@ -17,64 +17,58 @@
 | RC-010 | SP-S4-P06 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Сформированная способность ≠ гарантированная доступность. |
 | RC-011 | SP-S4-P07 | утверждено: zero-delta | owner-approved; zero-delta; externally-compatible; falsifier-defined | Отдельная S4-боль не подтверждена. |
 | RC-012 | SP-S4-P08 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Восстанавливать участие из фактической доступности. |
-| RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality — сквозное свойство, не S4-specific delta. |
+| RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality — сквозное свойство. |
 | RC-014 | SP-S4-P10 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Устойчивость траектории ≠ неизменность её формы. |
 | RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой. |
 | RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry. |
-| RC-017 | SP-S4-P13 | на обсуждении | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Возможная ошибка масштаба: успешная episodic self-regulation маскирует repeated generating conditions. |
+| RC-017 | SP-S4-P13 | на обсуждении | revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Moment-level recovery может недоучитывать trajectory-level feedback. |
 
-## RC-016 — закрытый итог
+## RC-017 — revised open result
 
-4 сентября 2026 года SP-S4-P12 утверждён владельцем после Architect pass / Reality Check / Red Team.
-
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
-
-Approval addendum: `RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
-
-## RC-017 — открытый итог
-
-5 сентября 2026 года для SP-S4-P13 завершены Architect pass, Reality Check и Red Team. Параметр ещё не утверждён владельцем.
+5 сентября 2026 года после первого Architect / RC-017 / Red Team Андрей уточнил P13 через временной масштаб. На этом основании Architect pass, Reality Check и Red Team пересобраны.
 
 ### Surviving candidate
 
-> **Ловушка S4 возникает не от самого recovery, reflection или усилия, а когда доказанная локальная компетентность систематически удерживает прежний масштаб вмешательства: человек продолжает успешно восстанавливать участие в повторяющихся эпизодах и именно поэтому недооценивает данные о том, что practically relevant объектом стала повторяющаяся конфигурация условий.**
+> **Ловушка S4 возникает, когда полезная способность возвращаться к доступному выбору в каждом отдельном моменте непреднамеренно превращает moment-level view в основной и почти единственный масштаб оценки. Тогда серия функционально сходных эпизодов может не получить достаточного веса как новая фактическая позиция, и человек локально остаётся в выборе, одновременно недооценивая устойчивое изменение собственной траектории во времени.**
 
-Короткие формулы:
+Короткая формула:
 
-> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+> **Выбор совершается в моменте. Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-> **«Я справляюсь» может скрыть вопрос «почему мне снова приходится справляться с тем же типом позиции?»**
+Корректирующая:
+
+> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ### External compatibility
 
-- intention–behavior literature: сильное намерение / понимание не гарантирует действие;
-- implementation intentions: точная cue→action организация может уменьшать разрыв между намерением и действием;
-- behaviour-maintenance literature: привычки, ресурсы и среда влияют на объём требуемой активной саморегуляции;
-- behavioral activation: некоторые формы rumination могут функционально поддерживать avoidance, но это не универсальный вывод о мышлении;
-- deliberate-reflection research: рефлексия может улучшать решение сложных задач, поэтому `thinking = trap` отвергается;
-- habit/context research: generating conditions могут участвовать в вероятности повторяющегося поведения.
+- behaviour-maintenance literature различает lapse и relapse / sequence of lapses;
+- EMA literature различает fast local processes и slower unfolding/background processes;
+- maintenance models требуют учитывать поведение во времени и контекстах;
+- context-dependent relapse literature показывает, что повторение может зависеть от устойчивых условий, но не доказывает одну скрытую причину.
 
 ### Red Team boundaries
 
 ```text
-thinking ≠ trap
-recovery ≠ trap
-effort ≠ bad structure
-repetition ≠ proof of hidden structure
-systemic view ≠ externalization of responsibility
-local action may itself accumulate into system change
+present moment ≠ problem
+past = data ≠ verdict / identity / destiny
+single lapse ≠ trajectory
+series ≠ proof of one cause
+aggregation ≠ guilt score
+negative outcomes alone ≠ negative trajectory
+macro-awareness ≠ total self-monitoring
 ```
 
 ### Zero-delta / falsification condition
 
-P13 должен быть пересмотрен или признан `zero-delta`, если его нельзя отличить от S1/procrastination, от уже утверждённого P12 transition failure, от нормального repeated recovery в объективно трудной среде либо если generating conditions нельзя описывать prospectively без post hoc storytelling.
+P13 должен быть пересмотрен или признан `zero-delta`, если temporal aggregation не добавляет practically useful distinction к P12, если временное окно неизбежно выбирается post hoc, если macro-review создаёт в основном guilt / hyper-control либо если невозможно наблюдаемо показать случай, где local recovery работает, но trajectory-level feedback систематически недоучитывается.
 
 Связанные файлы:
 - `SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
 - `RC-017_SP-S4-P13.md`;
 - `SP-S4-P13_RED_TEAM_NOTES.md`;
+- `../SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
 - `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`.
 
 ## Текущая граница
 
-**SP-S4-P13 прошёл Architect pass, RC-017 и Red Team; ожидается явное решение владельца.**
+**SP-S4-P13 повторно прошёл Architect pass, RC-017 и Red Team после temporal-scale refinement; ожидается явное решение владельца.**
