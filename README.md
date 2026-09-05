@@ -14,7 +14,7 @@
 - Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`;
 - последний утверждённый параметр: **SP-S4-P12 «Критерии перехода»**;
 - активный параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
-- Architect pass, RC-017 и Red Team P13 завершены;
+- после temporal-scale refinement revised Architect pass, RC-017 и Red Team завершены;
 - P13 ожидает явного решения владельца.
 
 ## Центральная идея
@@ -43,31 +43,35 @@
 
 ## Активный SP-S4-P13
 
-После owner-examples и Williams / Millman / Fritz synthesis рабочая гипотеза прошла Architect pass, Reality Check и Red Team.
+После дополнительного owner refinement центральный кандидат изменён.
+
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
 Surviving candidate:
 
-> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+> **Ловушка S4 возникает, когда полезная способность возвращаться к доступному выбору в каждом отдельном моменте делает moment-level view почти единственным масштабом оценки. Тогда серия функционально сходных эпизодов может не получить достаточного веса как новая фактическая позиция, и человек локально остаётся в выборе, одновременно недооценивая устойчивое изменение траектории во времени.**
 
-Полнее:
+Коротко:
 
-> **Ловушка S4 возникает, когда доказанная локальная компетентность удерживает episodic self-regulation как основной масштаб вмешательства: повторяющиеся эпизоды успешно компенсируются, а данные о повторяющейся конфигурации условий недооцениваются.**
+> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-Рабочий вопрос:
+Корректирующая формула:
 
-> **«Я справляюсь» — но почему мне снова приходится справляться с тем же типом позиции?**
+> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 Обязательные границы:
 
 ```text
-thinking ≠ trap
-recovery ≠ trap
-effort ≠ bad structure
-repetition ≠ proof of hidden structure
-systemic view ≠ externalization of responsibility
+present moment ≠ problem
+single lapse ≠ trajectory
+series ≠ proof of one hidden cause
+past = data ≠ verdict / identity / destiny
+aggregation ≠ guilt score
+negative outcome series alone ≠ negative trajectory
+macro-awareness ≠ total self-monitoring
 ```
 
-P13 должен стать `zero-delta`, если его нельзя отличить от S1 / обычной прокрастинации или от уже утверждённого P12 transition boundary.
+P13 должен стать `zero-delta`, если это различение не добавляет practically useful отличие к P12.
 
 ## Последний утверждённый SP-S4-P12
 
@@ -80,9 +84,10 @@ P13 должен стать `zero-delta`, если его нельзя отли�
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
-5. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
-6. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
-7. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
+4. `docs/FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
+5. `docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
+6. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+7. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
+8. `docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
 
 **SP-S4-P13 ожидает явного решения. До решения full theory / canonical / delta не создаются.**
