@@ -1,6 +1,6 @@
 schema_version: 2
 project: Selection Point
-updated_at: 2026-09-04
+updated_at: 2026-09-05
 
 status:
   active_phase: 3
@@ -8,13 +8,13 @@ status:
   active_stage: 4
   active_stage_name: "Сохранение выбора под напряжением"
   last_approved: SP-S4-P12
-  active_parameter: null
-  active_parameter_name: null
-  active_parameter_status: null
-  next_candidate: SP-S4-P13
-  next_status: unopened
+  active_parameter: SP-S4-P13
+  active_parameter_name: "Ловушка четвёртой ступени"
+  active_parameter_status: "discussion-complete; architect-pass-pending"
+  next_candidate: null
+  next_status: null
   explicit_pause: false
-  owner_decision: "4 сентября 2026 года после обязательных трёх вопросов, сравнительной реконструкции Williams / Millman / Fritz, Architect pass, RC-016 и Red Team Андрей явно утвердил SP-S4-P12 решением: 'Утверждаем'. Утверждён качественный профиль перехода: S4 readiness не требует безошибочности или universal stress resilience; в конкретной области при некоторой вариативности релевантной нагрузки функциональный доступ должен иногда сохраняться непосредственно внутри нагрузки, а после реального снижения доступности человек должен быть способен сам заметить изменившуюся фактическую позицию и изменить ещё доступное продолжение. Позднее объяснение после полного окончания ситуации, natural recovery и внешний оператор выбора не считаются достаточным re-entry. Следующая central task может смещаться к системному уровню условий, регулярно формирующих вероятные будущие позиции, без преждевременного утверждения полной архитектуры S5. SP-S4-P13 остаётся unopened."
+  owner_decision: "5 сентября 2026 года после обязательных трёх вопросов для SP-S4-P13 Андрей предложил гипотезу: развитая способность видеть, понимать и восстанавливать выбор может сосуществовать с продолжением по проторенной траектории, если underlying structure остаётся прежней. Дополнительный owner-example: в период строительного роста рабочая стратегия была 'просто делай', тогда как сегодня развитое мышление иногда откладывает фактическое действие. Сравнительный Williams / Millman / Fritz synthesis принят словами 'Принято, сохрани. Идём дальше' и сохранён как SP-SRC-024. Ключевые рабочие формулы: 'способность восстанавливаться может стать механизмом сохранения того, что постоянно делает восстановление необходимым' и 'можно настолько хорошо научиться работать с собой, что работа с собой начнёт заменять работу с реальностью'. Это открывает P13 для Architect pass, но не утверждает сам параметр."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -28,18 +28,18 @@ active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-0
 previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md"
 
 active_sources:
-  full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
-  canonical: "docs/FOUNDATION/CANONICAL/41_STAGE_4_P12_CANONICAL.md"
-  parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
+  full_theory: null
+  canonical: null
+  parameter_delta: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
-  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/07_2026-08-28_STAGE_4_WILLIAMS_MILLMAN_EMBODIED_SKILL.md"
-  architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_ARCHITECT_PASS_NOTES.md"
-  reality_check: RC-016
-  reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12.md"
-  red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P12_RED_TEAM_NOTES.md"
-  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md"
-  transition_boundary: "docs/FOUNDATION/TRANSITION_CRITERIA_BOUNDARY.md"
+  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
+  architect_pass: null
+  reality_check: null
+  reality_check_file: null
+  red_team: null
+  approval_addendum: null
   cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
 
 sources_of_truth:
@@ -133,3 +133,9 @@ constraints:
   p12_recovery_speed_is_not_maturity_criterion: true
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
   p12_does_not_predefine_full_stage_5_architecture: true
+  p13_opened: true
+  p13_source_material_is_not_approval: true
+  p13_must_not_repeat_s1_understanding_replaces_action: true
+  p13_must_not_define_thinking_as_bad: true
+  p13_must_distinguish_compensation_from_effective_recovery: true
+  p13_must_not_predefine_full_stage_5_architecture: true
