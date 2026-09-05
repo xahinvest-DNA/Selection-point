@@ -25,12 +25,13 @@
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
 | SP-S4-P11 | Соответствующие практики | утверждено | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
 | SP-S4-P12 | Критерии перехода | утверждено | `51_STAGE_4_TRANSITION_CRITERIA.md` | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` |
-| SP-S4-P13 | Ловушка ступени | **Architect + RC-017 + Red Team complete; owner decision pending** | — | — |
+| SP-S4-P13 | Ловушка ступени | **revised Architect + RC-017 + Red Team complete; owner decision pending** | — | — |
 
 ## Активный SP-S4-P13
 
-Рабочий источник:
+Рабочие источники:
 
+- `../SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md` — SP-SRC-025;
 - `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md` — SP-SRC-024.
 
 Governance:
@@ -41,30 +42,27 @@ Governance:
 
 Surviving candidate:
 
-> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Полнее:
+> **Ловушка S4 — риск того, что правильная ориентация на новый выбор в текущем моменте превращается в почти единственный масштаб оценки, а накопленная серия эпизодов не получает права изменить модель current position.**
 
-> **Ловушка S4 возникает, когда доказанная локальная компетентность систематически удерживает episodic self-regulation как основной масштаб вмешательства: отдельные эпизоды решаются / компенсируются, а данные о повторяющейся конфигурации условий недооцениваются.**
+Коротко:
 
-Ключевая проверка самостоятельной дельты:
+> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-```text
-S1-P13 = понимание вместо действия
-S4-P13 candidate = действие / recovery есть,
-но локальная компетентность может маскировать mismatch масштаба
-```
+Ключевая защита:
 
-Обязательные границы:
+> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ```text
-thinking ≠ trap
-recovery ≠ trap
-effort ≠ bad structure
-repetition ≠ proof of hidden structure
+present moment ≠ problem
+single lapse ≠ trajectory
+series ≠ proof of one cause
+aggregation ≠ guilt score
+macro-awareness ≠ total self-monitoring
 ```
 
-P13 должен стать `zero-delta`, если его нельзя отличить от S1 / procrastination или от уже утверждённого P12 transition boundary.
+P13 должен стать `zero-delta`, если temporal-scale distinction не добавляет practically useful отличие от P12.
 
 Full theory, canonical и parameter delta будут созданы только после явного решения владельца.
 
@@ -76,4 +74,4 @@ Full theory, canonical и parameter delta будут созданы только
 
 ## Текущая точка
 
-**SP-S4-P13 прошёл Architect pass, RC-017 и Red Team; ожидает явного решения владельца.**
+**SP-S4-P13 повторно прошёл Architect pass, RC-017 и Red Team после temporal-scale refinement; ожидает явного решения владельца.**
