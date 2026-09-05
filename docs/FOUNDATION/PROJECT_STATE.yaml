@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P12
   active_parameter: SP-S4-P13
   active_parameter_name: "Ловушка четвёртой ступени"
-  active_parameter_status: "reopened-after-owner-refinement; architect-revision-pending"
+  active_parameter_status: "revised-architect-pass-complete; revised-reality-check-complete; revised-red-team-complete; owner-decision-pending"
   next_candidate: null
   next_status: null
   explicit_pause: false
-  owner_decision: "5 сентября 2026 года после первого Architect pass / RC-017 / Red Team Андрей уточнил центральный механизм P13: чрезмерная фиксация на формуле 'здесь и сейчас' может удерживать наблюдение в слишком мелком временном масштабе. Каждый отдельный эпизод может быть корректно замечен и закрыт новым выбором, но серия сходных эпизодов за дни/недели не агрегируется в данные о фактической траектории. Рабочие формулы: 'выбор совершается в моменте, траектория обнаруживается во времени'; 'прошлое не должно определять следующий выбор, но должно информировать текущую позицию'. Андрей ответил 'Да, делаем', что означает переработать Architect / Reality Check / Red Team, но не утверждает P13."
+  owner_decision: "5 сентября 2026 года после первого Architect / RC-017 / Red Team Андрей уточнил центральный механизм P13: чрезмерная фиксация на формуле 'здесь и сейчас' может удерживать наблюдение в слишком мелком временном масштабе. Каждый отдельный эпизод может быть корректно замечен и закрыт новым выбором, но серия сходных эпизодов за дни/недели не агрегируется в данные о фактической траектории. Уточнение сохранено как SP-SRC-025; Architect pass, RC-017 и Red Team полностью пересобраны. Surviving candidate: ловушка S4 — не настоящий момент сам по себе, а его монополия как масштаба оценки. Ключевые формулы: 'Выбор совершается в моменте. Траектория обнаруживается во времени'; 'Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции'. P13 остаётся неутверждённым и ожидает явного решения владельца."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -31,10 +31,9 @@ active_sources:
   full_theory: null
   canonical: null
   parameter_delta: null
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
-  temporal_scale_refinement_source: null
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md"
+  preceding_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
-  comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
   architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md"
   reality_check: RC-017
@@ -135,16 +134,21 @@ constraints:
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
   p12_does_not_predefine_full_stage_5_architecture: true
   p13_opened: true
+  p13_revised_architect_pass_complete: true
+  p13_revised_reality_check_complete: true
+  p13_revised_red_team_complete: true
+  p13_owner_decision_pending: true
   p13_source_material_is_not_approval: true
-  p13_reopened_after_temporal_scale_refinement: true
-  p13_previous_pass_superseded_pending_revision: true
-  p13_choice_occurs_in_moment_trajectory_requires_time_aggregation_candidate: true
-  p13_past_does_not_determine_next_choice_but_may_inform_current_position_candidate: true
+  p13_temporal_scale_refinement_source: SP-SRC-025
+  p13_present_moment_is_not_the_problem: true
+  p13_trap_candidate_is_present_moment_monopoly_as_evaluation_scale: true
+  p13_choice_occurs_in_moment_trajectory_requires_time_aggregation: true
+  p13_past_informs_but_does_not_determine_next_choice: true
+  p13_series_is_candidate_data_not_proof_of_single_cause: true
+  p13_aggregation_must_not_be_guilt_score: true
+  p13_outcome_series_is_not_sufficient_for_trajectory: true
+  p13_macro_review_must_not_be_total_self_monitoring: true
   p13_must_not_repeat_s1_understanding_replaces_action: true
-  p13_must_not_define_thinking_as_bad: true
-  p13_must_not_define_effort_as_bad_structure: true
-  p13_must_distinguish_compensation_from_effective_recovery: true
-  p13_generating_conditions_must_be_observable_hypotheses: true
   p13_must_preserve_simple_explanations: true
   p13_zero_delta_if_not_distinct_from_p12: true
   p13_must_not_predefine_full_stage_5_architecture: true
