@@ -10,35 +10,42 @@
 - Ступень 4: **SP-S4-P01–SP-S4-P12 утверждены**, P07 и P09 = `zero-delta`.
 - Последний утверждённый параметр: **SP-S4-P12 — «Критерии перехода»**.
 - Активный параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
-- Architect pass, RC-017 и Red Team завершены.
+- Revised Architect pass, RC-017 и Red Team завершены.
 - Статус: **owner-decision-pending**.
 
 ## Surviving candidate P13
 
-> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Полнее:
+Ловушка:
 
-> **Ловушка S4 возникает, когда доказанная локальная компетентность систематически удерживает episodic self-regulation как основной масштаб вмешательства: человек успешно справляется с повторяющимися эпизодами и поэтому недооценивает данные о повторяющейся конфигурации условий.**
+> **Полезный возврат к выбору «здесь и сейчас» может стать почти единственным масштабом оценки, из-за чего серия сходных эпизодов не получает достаточного веса как новая фактическая позиция.**
 
-Рабочий вопрос:
+Коротко:
 
-> **«Я справляюсь» — но почему мне снова приходится справляться с тем же типом позиции?**
+> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
+
+Корректирующая формула:
+
+> **Прошлое не определяет следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 ## Границы
 
 ```text
-thinking ≠ trap
-recovery ≠ trap
-effort ≠ bad structure
-repetition ≠ proof of structure
-systemic view ≠ снятие авторства
+present moment ≠ problem
+single lapse ≠ trajectory
+series ≠ proof of one cause
+past = data ≠ verdict
+aggregation ≠ guilt score
+outcome series alone ≠ trajectory
+macro-awareness ≠ total monitoring
 ```
 
-P13 должен стать `zero-delta`, если его нельзя отличить от S1 / procrastination или от уже утверждённой P12 transition boundary.
+P13 должен стать `zero-delta`, если temporal-scale distinction не добавляет practically useful отличие от P12.
 
 ## Источники
 
+- `FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
 - `FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`;
 - `FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
 - `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
