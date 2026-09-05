@@ -24,45 +24,56 @@
 | SP-S4-P09 | Телесные проявления | утверждено: amended zero-delta | `48_STAGE_4_BODY_MANIFESTATIONS_ZERO_DELTA.md` | — |
 | SP-S4-P10 | Жизненные проявления | утверждено | `49_STAGE_4_LIFE_MANIFESTATIONS.md` | `../CANONICAL/39_STAGE_4_P10_CANONICAL.md` |
 | SP-S4-P11 | Соответствующие практики | утверждено | `50_STAGE_4_CORRESPONDING_PRACTICES.md` | `../CANONICAL/40_STAGE_4_P11_CANONICAL.md` |
-| SP-S4-P12 | Критерии перехода | **утверждено** | `51_STAGE_4_TRANSITION_CRITERIA.md` | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` |
-| SP-S4-P13 | Ловушка ступени | не открыт | — | — |
+| SP-S4-P12 | Критерии перехода | утверждено | `51_STAGE_4_TRANSITION_CRITERIA.md` | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` |
+| SP-S4-P13 | Ловушка ступени | **Architect + RC-017 + Red Team complete; owner decision pending** | — | — |
 
-## SP-S4-P12
+## Активный SP-S4-P13
+
+Рабочий источник:
+
+- `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md` — SP-SRC-024.
+
+Governance:
+
+- `../GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+- `../GOVERNANCE/RC-017_SP-S4-P13.md`;
+- `../GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`.
+
+Surviving candidate:
+
+> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+
+Полнее:
+
+> **Ловушка S4 возникает, когда доказанная локальная компетентность систематически удерживает episodic self-regulation как основной масштаб вмешательства: отдельные эпизоды решаются / компенсируются, а данные о повторяющейся конфигурации условий недооцениваются.**
+
+Ключевая проверка самостоятельной дельты:
+
+```text
+S1-P13 = понимание вместо действия
+S4-P13 candidate = действие / recovery есть,
+но локальная компетентность может маскировать mismatch масштаба
+```
+
+Обязательные границы:
+
+```text
+thinking ≠ trap
+recovery ≠ trap
+effort ≠ bad structure
+repetition ≠ proof of hidden structure
+```
+
+P13 должен стать `zero-delta`, если его нельзя отличить от S1 / procrastination или от уже утверждённого P12 transition boundary.
+
+Full theory, canonical и parameter delta будут созданы только после явного решения владельца.
+
+## Последний утверждённый SP-S4-P12
 
 > **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
 > **Re-entry должен изменить ещё доступное продолжение.**
 
-```text
-сохранение функционального доступа
-+
-functional re-entry
-```
-
-Главные ограничения:
-
-```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one rehearsed stressor ≠ sufficient transfer
-support scaffold ≠ external operator of choice
-universal stress resilience ≠ S4 criterion
-recovery speed ≠ maturity criterion
-```
-
-Граница следующей задачи:
-
-```text
-S4 = надёжность участия внутри релевантной нагрузки
-S5 = системный уровень условий становится следующей central task
-```
-
-Full theory: `51_STAGE_4_TRANSITION_CRITERIA.md`.  
-Canonical: `../CANONICAL/41_STAGE_4_P12_CANONICAL.md`.  
-Delta: `../LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`.  
-Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.  
-Approval: `../GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
-
 ## Текущая точка
 
-**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
+**SP-S4-P13 прошёл Architect pass, RC-017 и Red Team; ожидает явного решения владельца.**
