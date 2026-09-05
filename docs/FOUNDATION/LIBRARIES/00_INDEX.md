@@ -1,7 +1,7 @@
 # Общие библиотеки Selection Point
 
 **Статус:** действующая инфраструктура канонического слоя  
-**Дата обновления:** 4 сентября 2026 года
+**Дата обновления:** 5 сентября 2026 года
 
 ## Approved local records
 
@@ -17,38 +17,41 @@
 - `S4_P09_BODY_MANIFESTATIONS_ZERO_DELTA.md`;
 - `S4_P10_LIFE_MANIFESTATIONS_DELTA.md`;
 - `S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
-- `S4_P12_TRANSITION_CRITERIA_DELTA.md`.
+- `S4_P12_TRANSITION_CRITERIA_DELTA.md`;
+- `S4_P13_STAGE_TRAP_DELTA.md`.
 
 Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
 
 ## Исследовательские кейсы
 
-- `CASE_KOMASHNYA_CLOSED_MODEL_2026-09-01.md` — исследовательский материал о потенциальном замыкании мировоззренческой модели.
-- `CASE_TASK_VS_DIRECTION_FLEXIBILITY_2026-09-01.md` — материал о различии настойчивости и ригидности и праве реальности пересматривать задачу / направление.
+- `CASE_KOMASHNYA_CLOSED_MODEL_2026-09-01.md` — потенциальное замыкание мировоззренческой модели.
+- `CASE_TASK_VS_DIRECTION_FLEXIBILITY_2026-09-01.md` — различие настойчивости и ригидности.
 
 ## Delta-first
 
 Local parameter delta создаётся только после явного утверждения параметра.
 
-После P10 была выполнена плановая большая консолидация. Следующая плановая консолидация — после P13 / на границе ступени.
+P13 является плановой точкой консолидации. Утверждённая локальная дельта сохранена отдельно; перенос в большие реестры должен сохранять смысл без расширения claims.
 
-## SP-S4-P12
+## SP-S4-P13
 
-Утверждённая transition-criteria delta:
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
+Утверждённая trap-delta:
+
+> **Полезная способность нового выбора в моменте может стать ловушкой, если moment-level view превращается в почти единственный масштаб оценки и accumulated series-level feedback перестаёт менять current position.**
 
 ```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one stressor ≠ transfer
-support scaffold ≠ external operator
-universal stress resilience ≠ S4 criterion
+history = data ≠ verdict
+single lapse ≠ trajectory
+series ≠ proof of one cause
+macro review ≠ total self-monitoring
+aggregation ≠ guilt scoreboard
 ```
 
-Full theory: `../FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`.  
-Canonical: `../CANONICAL/41_STAGE_4_P12_CANONICAL.md`.  
-Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.
+Full theory: `../FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`.  
+Canonical: `../CANONICAL/42_STAGE_4_P13_CANONICAL.md`.  
+Reality Check: `../GOVERNANCE/RC-017_SP-S4-P13.md`.
 
 ## Текущий approved scope
 
@@ -56,7 +59,7 @@ Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.
 - SP-S1-P01–P13;
 - SP-S2-P01–P13;
 - SP-S3-P01–P13;
-- SP-S4-P01–P12, где P07 и P09 = `zero-delta`;
+- SP-S4-P01–P13, где P07 = `zero-delta`, P09 = `amended zero-delta`;
 - SP-VM-01–SP-VM-02.
 
-**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
+**Ступень 4 завершена. SP-S5-P01 не открыт.**
