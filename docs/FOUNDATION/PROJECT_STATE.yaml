@@ -10,11 +10,11 @@ status:
   last_approved: SP-S4-P12
   active_parameter: SP-S4-P13
   active_parameter_name: "Ловушка четвёртой ступени"
-  active_parameter_status: "architect-pass-complete; reality-check-complete; red-team-complete; owner-decision-pending"
+  active_parameter_status: "reopened-after-owner-refinement; architect-revision-pending"
   next_candidate: null
   next_status: null
   explicit_pause: false
-  owner_decision: "5 сентября 2026 года после обязательных трёх вопросов Андрей предложил гипотезу: развитая способность видеть, понимать и восстанавливать выбор может сосуществовать с продолжением по проторенной траектории, если generating conditions остаются прежними; дополнительный пример — развитое мышление иногда откладывает фактическое действие. Материал Williams / Millman / Fritz и owner-examples сохранён как SP-SRC-024. Architect pass, RC-017 и Red Team завершены. Surviving candidate: ловушка S4 — не само мышление, усилие или recovery, а возможная ошибка масштаба, когда доказанная локальная компетентность удерживает episodic self-regulation как основной уровень вмешательства и тем самым маскирует данные о повторяющейся конфигурации условий. Короткая формула: 'Я справляюсь' может скрыть вопрос 'почему мне снова приходится справляться с тем же типом позиции?'. P13 должен стать zero-delta, если его нельзя отличить от S1/procrastination, от P12 transition failure или если generating conditions нельзя описать prospectively. P13 ожидает явного решения владельца."
+  owner_decision: "5 сентября 2026 года после первого Architect pass / RC-017 / Red Team Андрей уточнил центральный механизм P13: чрезмерная фиксация на формуле 'здесь и сейчас' может удерживать наблюдение в слишком мелком временном масштабе. Каждый отдельный эпизод может быть корректно замечен и закрыт новым выбором, но серия сходных эпизодов за дни/недели не агрегируется в данные о фактической траектории. Рабочие формулы: 'выбор совершается в моменте, траектория обнаруживается во времени'; 'прошлое не должно определять следующий выбор, но должно информировать текущую позицию'. Андрей ответил 'Да, делаем', что означает переработать Architect / Reality Check / Red Team, но не утверждает P13."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
@@ -32,6 +32,7 @@ active_sources:
   canonical: null
   parameter_delta: null
   primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
+  temporal_scale_refinement_source: null
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
   comparative_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/22_2026-09-04_WILLIAMS_MILLMAN_FRITZ_P12_TRANSITION.md"
   previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
@@ -134,11 +135,11 @@ constraints:
   p12_s5_boundary_is_system_conditions_not_more_self_control: true
   p12_does_not_predefine_full_stage_5_architecture: true
   p13_opened: true
-  p13_architect_pass_complete: true
-  p13_reality_check_complete: true
-  p13_red_team_complete: true
-  p13_owner_decision_pending: true
   p13_source_material_is_not_approval: true
+  p13_reopened_after_temporal_scale_refinement: true
+  p13_previous_pass_superseded_pending_revision: true
+  p13_choice_occurs_in_moment_trajectory_requires_time_aggregation_candidate: true
+  p13_past_does_not_determine_next_choice_but_may_inform_current_position_candidate: true
   p13_must_not_repeat_s1_understanding_replaces_action: true
   p13_must_not_define_thinking_as_bad: true
   p13_must_not_define_effort_as_bad_structure: true
