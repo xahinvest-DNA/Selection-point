@@ -29,31 +29,37 @@
 | SP-S4-P09 | — | утверждено: amended zero-delta |
 | SP-S4-P10 | `39_STAGE_4_P10_CANONICAL.md` | утверждено |
 | SP-S4-P11 | `40_STAGE_4_P11_CANONICAL.md` | утверждено |
-| SP-S4-P12 | `41_STAGE_4_P12_CANONICAL.md` | **утверждено** |
-| SP-S4-P13 | — | не открыт |
+| SP-S4-P12 | `41_STAGE_4_P12_CANONICAL.md` | утверждено |
+| SP-S4-P13 | `42_STAGE_4_P13_CANONICAL.md` | **утверждено** |
 
-## Последний канонический параметр — SP-S4-P12
+## Последний канонический параметр — SP-S4-P13
 
-> **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
+> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-> **Re-entry должен изменить ещё доступное продолжение.**
+Ловушка:
+
+> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
+
+Корректировка:
+
+> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
 Главные границы:
 
 ```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one rehearsed stressor ≠ sufficient transfer
-support scaffold ≠ external operator of choice
-universal stress resilience ≠ S4 transition criterion
-recovery speed ≠ maturity criterion
+present moment ≠ trap
+single lapse ≠ trajectory
+series ≠ proof of single cause
+bad outcomes ≠ bad process
+macro review ≠ total self-monitoring
+aggregation ≠ guilt scoreboard
 ```
 
-Full theory: `../FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md`.  
-Local delta: `../LIBRARIES/S4_P12_TRANSITION_CRITERIA_DELTA.md`.  
-Reality Check: `../GOVERNANCE/RC-016_SP-S4-P12.md`.  
-Owner approval: `../GOVERNANCE/RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
+Full theory: `../FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`.  
+Local delta: `../LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-017_SP-S4-P13.md`.  
+Owner approval: `../GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
+**Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13. SP-S5-P01 не открыт.**
