@@ -1,7 +1,7 @@
 # Reality Check Register
 
 **Статус:** действующий реестр проверок  
-**Дата обновления:** 4 сентября 2026 года
+**Дата обновления:** 5 сентября 2026 года
 
 | ID | Объект | Архитектурный статус | Reality Check status | Итог / следующий шаг |
 |---|---|---|---|---|
@@ -19,41 +19,62 @@
 | RC-012 | SP-S4-P08 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Восстанавливать участие из фактической доступности. |
 | RC-013 | SP-S4-P09 | утверждено: amended zero-delta | owner-approved; amended-zero-delta; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Body-state bidirectionality — сквозное свойство, не S4-specific delta. |
 | RC-014 | SP-S4-P10 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Устойчивость траектории ≠ неизменность её формы. |
-| RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой, а не toughness или relaxation. |
-| RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry; не universal stress resilience. |
+| RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой. |
+| RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry. |
+| RC-017 | SP-S4-P13 | на обсуждении | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Возможная ошибка масштаба: успешная episodic self-regulation маскирует repeated generating conditions. |
 
 ## RC-016 — закрытый итог
 
-4 сентября 2026 года после Architect pass, Reality Check и Red Team Андрей явно утвердил SP-S4-P12 решением:
-
-> **«Утверждаем».**
-
-Утверждённый центральный тезис:
-
-> **Переход от S4 становится обоснованным, когда в конкретной области способность участия качественно достаточно надёжна при некоторой вариативности релевантной нагрузки: иногда сохраняется непосредственно внутри нагрузки, а после реального снижения доступности человек способен самостоятельно изменить ещё доступное продолжение из новой фактической позиции.**
-
-Короткая формула:
+4 сентября 2026 года SP-S4-P12 утверждён владельцем после Architect pass / Reality Check / Red Team.
 
 > **Не непрерывный контроль, а достаточно надёжное сохранение и функциональное возвращение выбора под релевантной нагрузкой.**
 
-### Ключевые ограничения
+Approval addendum: `RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
+
+## RC-017 — открытый итог
+
+5 сентября 2026 года для SP-S4-P13 завершены Architect pass, Reality Check и Red Team. Параметр ещё не утверждён владельцем.
+
+### Surviving candidate
+
+> **Ловушка S4 возникает не от самого recovery, reflection или усилия, а когда доказанная локальная компетентность систематически удерживает прежний масштаб вмешательства: человек продолжает успешно восстанавливать участие в повторяющихся эпизодах и именно поэтому недооценивает данные о том, что practically relevant объектом стала повторяющаяся конфигурация условий.**
+
+Короткие формулы:
+
+> **Компетентность на уровне эпизода может маскировать ошибку масштаба.**
+
+> **«Я справляюсь» может скрыть вопрос «почему мне снова приходится справляться с тем же типом позиции?»**
+
+### External compatibility
+
+- intention–behavior literature: сильное намерение / понимание не гарантирует действие;
+- implementation intentions: точная cue→action организация может уменьшать разрыв между намерением и действием;
+- behaviour-maintenance literature: привычки, ресурсы и среда влияют на объём требуемой активной саморегуляции;
+- behavioral activation: некоторые формы rumination могут функционально поддерживать avoidance, но это не универсальный вывод о мышлении;
+- deliberate-reflection research: рефлексия может улучшать решение сложных задач, поэтому `thinking = trap` отвергается;
+- habit/context research: generating conditions могут участвовать в вероятности повторяющегося поведения.
+
+### Red Team boundaries
 
 ```text
-late understanding ≠ functional re-entry
-natural recovery ≠ own recovery operation
-one rehearsed stressor ≠ sufficient transfer
-support scaffold ≠ external operator of choice
-хороший исход ≠ P12
-recovery speed ≠ maturity
-S4 mastery ≠ universal stress resilience
+thinking ≠ trap
+recovery ≠ trap
+effort ≠ bad structure
+repetition ≠ proof of hidden structure
+systemic view ≠ externalization of responsibility
+local action may itself accumulate into system change
 ```
 
-### Falsifier
+### Zero-delta / falsification condition
 
-P12 пересматривается, если в пилоте нельзя отличить functional re-entry от natural recovery, если релевантную нагрузку невозможно определять prospectively, если критерий подтверждается любым исходом post hoc, если собственная операция неотличима от внешнего управления либо если граница S4→S5 не добавляет practically useful distinction.
+P13 должен быть пересмотрен или признан `zero-delta`, если его нельзя отличить от S1/procrastination, от уже утверждённого P12 transition failure, от нормального repeated recovery в объективно трудной среде либо если generating conditions нельзя описывать prospectively без post hoc storytelling.
 
-Approval addendum: `RC-016_SP-S4-P12_APPROVAL_ADDENDUM.md`.
+Связанные файлы:
+- `SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
+- `RC-017_SP-S4-P13.md`;
+- `SP-S4-P13_RED_TEAM_NOTES.md`;
+- `../SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md`.
 
 ## Текущая граница
 
-**RC-016 закрыт как owner-approved. SP-S4-P12 утверждён. SP-S4-P13 не открыт.**
+**SP-S4-P13 прошёл Architect pass, RC-017 и Red Team; ожидается явное решение владельца.**
