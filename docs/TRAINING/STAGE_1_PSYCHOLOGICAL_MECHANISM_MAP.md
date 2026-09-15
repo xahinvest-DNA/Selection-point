@@ -1,46 +1,59 @@
 # Stage 1 Psychological Mechanism Map
 
 **ID:** SP-TR-S1-PMM-002-PROP  
-**Status:** revised_ready_for_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Gate:** C — Psychological Mechanism Map  
 **Date:** 15 September 2026  
 **Upstream research:** `SP-TR-S1-RP-001`, `SP-TR-S1-RP-RT-001`  
 **Revision trigger:** `SP-TR-S1-PMR-001`  
 **Capability alignment candidate:** `SP-TR-S1-CAP-002-PROP`  
 **Execution contract:** `SP-TR-S1-PMM-SPEC-001`  
+**Red Team:** `SP-TR-S1-PMM-RT-002`  
 **Nature:** training-layer operation map; not new Foundation canon, not therapy, not validated causal theory.
 
 ---
 
 # 1. Map thesis
 
-The central Gate C finding is now stronger:
+The central Gate C finding is:
 
 > **Stage 1 does not need to teach a person why the automatic process arose. It needs to teach the person to notice enough of what is happening now to regain participation in what happens next.**
 
 The required movement is:
 
 ```text
-what is happening now
-→ distinguish the current position
-→ separate what already happened from what remains open
+relevant current position
+→ notice enough
+→ distinguish what matters
+→ separate what already happened from the relevant open edge
 → find a realistically available participation point
-→ select a continuation
-→ actually realize it
+→ select relative to reality + relevant direction
+→ actually realize the continuation
 → observe what happens next
 ```
 
 Causal explanation may remain unknown.
 
-This is not anti-psychology. It is a scope decision: causal archaeology is not required to produce the practical aim of Selection Point.
+This is not anti-causal or anti-psychological. It is a scope decision: speculative hidden psychological origins are not prerequisites for restoring participation.
 
 ---
 
-# 2. What counts as the current position
+# 2. Relevance filter
 
-`Now` is not a zero-history instant.
+The current position is **selective**, not exhaustive.
 
-The current position may include:
+Only information that materially constrains, informs or changes the next relevant continuation enters the active Stage 1 field.
+
+```text
+relevant now
+≠ everything that has ever happened
+```
+
+This protects the method from both total-history analysis and total-present amnesia.
+
+---
+
+# 3. What counts as the relevant current position
 
 ## CPOS-1 — External facts
 
@@ -119,7 +132,22 @@ What is actually available now:
 - tools;
 - safety limits.
 
-## CPOS-7 — Unknown
+## CPOS-7 — Relevant local direction / task / responsibility
+
+The next continuation cannot be evaluated only by whether it is possible.
+
+It is evaluated against a currently relevant operational anchor such as:
+
+- a declared goal;
+- an immediate task;
+- a responsibility;
+- a safety requirement;
+- a commitment;
+- a currently relevant direction.
+
+Stage 1 does **not** claim this anchor is the person's final authentic life direction. Later stages may revise it.
+
+## CPOS-8 — Unknown
 
 Unknown is a valid state.
 
@@ -127,7 +155,7 @@ Stage 1 must not fill uncertainty with psychologically satisfying explanations.
 
 ---
 
-# 3. The critical temporal distinction
+# 4. The critical temporal distinction
 
 The central Stage 1 distinction is not primarily `cause vs effect`.
 
@@ -139,7 +167,9 @@ already happened
 ≠ not happened yet
 ```
 
-The Selection Point is sought at the **open edge** of the current position: the part of continuation that is not yet fully realized.
+But `not happened yet` is too broad by itself.
+
+The Selection Point is sought at the **relevant open edge**: the next not-yet-realized element that is materially connected to the current task/direction and is still potentially influenceable.
 
 Examples:
 
@@ -154,44 +184,49 @@ I must continue the conflict
 
 I already missed the planned workout
 ≠
-I must abandon the rest of the day
+I must abandon the rest of the health plan today
 
 I already made a bad trade
 ≠
 I must place the revenge trade
 ```
 
-The method does not need to prove why the first action occurred before the second continuation can change.
+The method does not need to prove why the first action occurred before the next relevant continuation can change.
 
 ---
 
-# 4. Trainable operation map
+# 5. Trainable operation map
 
 The revised minimal Stage 1 map contains **five operations**.
 
 They are not five hidden psychological mechanisms. They are five operations that can restore participation.
 
-## TO-1 — Notice relevant current process
+## TO-1 — Notice enough of the relevant current process
 
-**Function:** shift from automatic continuation to contact with what is materially present now.
+**Function:** interrupt blind continuation by contacting what materially matters now.
 
 Minimal question:
 
-> **What is happening now?**
+> **What is happening now that matters for what happens next?**
 
-Relevant content may include external event, bodily state, emotion, thought, impulse, action already underway, or consequence.
+Relevant content may include external event, bodily state, emotion, thought, impulse, action already underway, consequence, constraint or direction.
+
+### Minimality rule
+
+```text
+notice enough
+≠ notice everything
+```
+
+Stage 1 does not train exhaustive self-monitoring.
 
 ### Observable expression
 
-The participant can identify at least one relevant current event without immediately replacing it with a global story about self or cause.
-
-### Failure mode
-
-Continuous self-monitoring is not required. The goal is sufficient noticing for the next continuation, not permanent inner surveillance.
+The participant identifies at least one relevant current event without replacing it immediately with a global story about self or hidden cause.
 
 ---
 
-## TO-2 — Distinguish the current position
+## TO-2 — Distinguish what matters in the current position
 
 **Function:** prevent current experience from collapsing into one unquestioned command.
 
@@ -205,6 +240,7 @@ external fact
 ≠ already-realized action
 ≠ consequence
 ≠ constraint/resource
+≠ relevant direction/task
 ≠ unknown
 ```
 
@@ -221,45 +257,48 @@ fact: he answered briefly
 internal event: anger
 interpretation: “he disrespects me”
 impulse: send an aggressive reply
+relevant direction: preserve the relationship while protecting the boundary
 ```
 
 The method does not require deciding why the anger arose.
 
 ---
 
-## TO-3 — Locate the open edge
+## TO-3 — Locate the relevant open edge
 
-**Function:** distinguish what is already fixed by reality from what has not yet happened.
+**Function:** identify an actual decision boundary still open in the current position.
 
 Core questions:
 
 ```text
 What has already happened?
 What is still unfolding?
-What has not happened yet?
+What relevant next element has not happened yet?
 ```
-
-This is the operational heart of Stage 1.
 
 ### Observable expression
 
-The participant can name at least one next element that is not yet realized and therefore remains potentially influenceable.
+The participant identifies one not-yet-realized continuation that is:
+
+- relevant to the current task/direction;
+- not already fixed by reality;
+- potentially executable from the current position.
 
 ### Boundary
 
-If no safe/executable alternative exists, the method does not invent one.
+A grammatical future possibility is not enough. If no safe/executable alternative exists, the method does not invent one.
 
 Late detection remains fully valid.
 
 ---
 
-## TO-4 — Identify and realize one available participation
+## TO-4 — Choose relative to reality and actually participate
 
 **Function:** turn noticing into a real continuation.
 
 The participant asks:
 
-> **Where can I still participate now?**
+> **Given what is true now and what matters here, where can I still participate?**
 
 Then selects one realistically executable continuation.
 
@@ -268,7 +307,7 @@ Possible realized continuations include:
 - act;
 - stop;
 - reduce scale/duration;
-- delay for relevant information;
+- wait for relevant information;
 - conscious non-action;
 - repair;
 - ask for help;
@@ -280,6 +319,7 @@ Possible realized continuations include:
 
 ```text
 imaginable
+≠ relevant
 ≠ available
 ≠ executable
 ≠ realized
@@ -289,13 +329,13 @@ The participant does not need to prove that the same move was available earlier.
 
 ### Observable expression
 
-A continuation is actually realized or clearly recorded as not realized/partially realized/revised.
+A continuation is actually realized or separately recorded as not realized / partially realized / conscious non-action / revised after new fact / unknown.
 
 ---
 
 ## TO-5 — Re-enter reality through consequence
 
-**Function:** stop the training from ending at awareness or intention.
+**Function:** prevent the training from ending at awareness or intention.
 
 Minimal loop:
 
@@ -326,7 +366,48 @@ The participant can distinguish:
 
 ---
 
-# 5. What happened to causal/mechanism analysis
+# 6. Cause boundary
+
+The revised architecture does **not** ban causal knowledge.
+
+Directly observed, testable or operationally useful causal relations may belong to the current position:
+
+```text
+I slept four hours → I am now exhausted.
+I sent the message → the agreement changed.
+When I repeatedly leave the phone next to the bed, I use it immediately on waking.
+```
+
+Such information may justify changing a condition.
+
+What Stage 1 does not require is **speculative hidden psychological origin analysis**:
+
+```text
+I did this because my childhood...
+My ego protected...
+I unconsciously wanted...
+My hidden need was...
+```
+
+The key distinction is:
+
+```text
+known/testable causal information
+≠ speculative hidden psychological cause
+```
+
+A valid Stage 1 record may end with:
+
+```text
+Why did the first action happen psychologically? UNKNOWN.
+What is happening now? DISTINGUISHABLE.
+What remains open? DISTINGUISHABLE.
+What did I do next? OBSERVABLE.
+```
+
+---
+
+# 7. Role of designer-side mechanism hypotheses
 
 The previous Gate C version foregrounded candidate contributor families:
 
@@ -336,7 +417,7 @@ self-image / local priority
 habit/default response
 ```
 
-The revised architecture does **not** declare these false.
+The revised architecture does **not** declare them false.
 
 Their role changes:
 
@@ -345,26 +426,15 @@ possible designer-side explanatory hypotheses
 ≠ mandatory learner-facing operations
 ```
 
-They may help research, safety, adaptation or later theory. But Stage 1 success does not require the learner to correctly identify which one caused the episode.
-
-A valid Stage 1 record may end with:
-
-```text
-Why did the first action happen? UNKNOWN.
-What is happening now? DISTINGUISHABLE.
-What remains open? DISTINGUISHABLE.
-What did I do next? OBSERVABLE.
-```
-
-That is sufficient for the Stage 1 capability candidate.
+They may help research, safety, adaptation or later theory. Stage 1 success does not require the learner to correctly identify which one caused the episode.
 
 ---
 
-# 6. History boundary
+# 8. History boundary
 
-## 6.1 Allowed use of past material
+## 8.1 Allowed use of past material
 
-Past facts are relevant when they exist as part of the current position.
+Past facts are relevant when they materially alter the current position.
 
 Examples:
 
@@ -376,23 +446,7 @@ I have postponed this five days.
 The earlier action created this current consequence.
 ```
 
-These facts can change the available next move.
-
-## 6.2 Non-required causal archaeology
-
-Stage 1 does not require:
-
-```text
-I do this because my father...
-This comes from childhood...
-My hidden need is...
-My ego protects...
-I unconsciously want...
-```
-
-Such hypotheses may sometimes be meaningful elsewhere. They are not necessary to restore current participation.
-
-## 6.3 No retrospective lost-choice hunt
+## 8.2 No retrospective lost-choice hunt
 
 The learner is not required to answer:
 
@@ -406,7 +460,7 @@ Preferred question:
 
 ---
 
-# 7. Protection against shallow presentism
+# 9. Protection against shallow presentism
 
 The present-centered architecture has a major risk: `here and now` can be used to erase trajectory.
 
@@ -415,16 +469,16 @@ Selection Point rejects that.
 ```text
 this moment is where choice occurs
 but
-this moment contains consequences of previous moments
+this moment contains relevant consequences of previous moments
 ```
 
 Therefore:
 
-- a week of repeated non-execution is a current fact when known;
+- a week of repeated non-execution can be a current fact when materially relevant;
 - debt is a current fact even if created earlier;
 - a damaged relationship is a current condition;
 - accumulated fatigue is a current condition;
-- a repeated promise broken many times changes the present position.
+- a repeated broken commitment changes the present position.
 
 Stage 1 does not need full Stage 2/4 trajectory analysis, but it cannot reset reality to zero at each moment.
 
@@ -434,13 +488,20 @@ Short formula:
 
 ---
 
-# 8. Protection against impulsive action
+# 10. Protection against impulsive action
 
 “Do something now” is not the model.
 
 The next valid continuation may be deliberate waiting, non-action, gathering information or seeking help.
 
-A continuation is evaluated against current facts, resources, safety and relevant direction, not against urgency alone.
+A continuation is evaluated against:
+
+```text
+current facts
++ resources/constraints
++ safety
++ relevant local direction/task/responsibility
+```
 
 Thus:
 
@@ -451,7 +512,24 @@ present participation
 
 ---
 
-# 9. Protection against analysis-as-progress
+# 11. Protection against introspection-as-progress
+
+More noticing is not automatically better.
+
+A participant can name ten emotions and seven thoughts while still avoiding the next relevant continuation.
+
+Therefore:
+
+```text
+more introspection
+≠ more Selection Capacity
+```
+
+TO-1/TO-2 exist only to create enough distinction for relevant participation.
+
+---
+
+# 12. Protection against analysis-as-progress
 
 **ILLUSTRATION:** the Owner described people who became highly sophisticated at identifying hidden motives, needs, mechanisms and early-life origins, but whose relevant life patterns appeared unchanged years later.
 
@@ -478,27 +556,28 @@ This is training-layer wording, not new Foundation canon.
 
 ---
 
-# 10. Relationship map
+# 13. Relationship map
 
 ```text
-CURRENT POSITION
+RELEVANT CURRENT POSITION
 
 external facts
 internal events
 interpretations / impulses
 already-realized actions
 existing consequences
-resources / constraints
+resources / constraints / support
+relevant local direction / task / responsibility
 unknown
         ↓
-TO-1 NOTICE WHAT IS HAPPENING NOW
+TO-1 NOTICE ENOUGH
         ↓
-TO-2 DISTINGUISH RELEVANT ELEMENTS
+TO-2 DISTINGUISH WHAT MATTERS
         ↓
-TO-3 FIND THE OPEN EDGE
-what has not happened yet?
+TO-3 FIND THE RELEVANT OPEN EDGE
         ↓
-TO-4 PARTICIPATE AND ACTUALLY REALIZE
+TO-4 CHOOSE RELATIVE TO REALITY + DIRECTION
+AND ACTUALLY REALIZE
         ↓
 TO-5 OBSERVE CONSEQUENCE / UPDATE CURRENT POSITION
         ↺
@@ -510,42 +589,46 @@ No hidden-motive answer is required.
 
 ---
 
-# 11. Observability hooks for later Gate F
+# 14. Observability hooks for later Gate F
 
 No thresholds are defined.
 
 Potential hooks:
 
-### O1 — current-process notice
-Participant identifies a relevant current event before or after prompting.
+### O1 — relevant current-process notice
+Participant identifies a current event material to the next continuation.
 
 ### O2 — source distinction
 Participant distinguishes at least one fact/internal event/interpretation/impulse/consequence boundary.
 
 ### O3 — temporal distinction
-Participant distinguishes something already realized from something not yet realized.
+Participant distinguishes something already realized from a relevant not-yet-realized continuation.
 
-### O4 — open-edge identification
-Participant identifies one still-open continuation without inventing retrospective freedom.
+### O4 — relevant open-edge identification
+Participant identifies an actual decision boundary rather than any hypothetical future.
 
-### O5 — participant-owned continuation
+### O5 — direction/reality anchor
+Participant can state what current task/direction/constraint makes the continuation relevant.
+
+### O6 — participant-owned continuation
 Participant selects substantive continuation; system does not supply it as the answer.
 
-### O6 — realization evidence
+### O7 — realization evidence
 Selected continuation is separately recorded as realized, partial, non-realized, conscious non-action, revised after new fact, or unknown.
 
-### O7 — consequence update
+### O8 — consequence update
 Observed result changes or confirms the next current position without being treated as automatic causal proof.
 
 ---
 
-# 12. Stage-boundary audit
+# 15. Stage-boundary audit
 
 ## Stage 1 may require
 
 - noticing one relevant current process;
 - basic fact/internal-event/interpretation distinction;
-- separating already-realized from still-open continuation;
+- separating already-realized from a relevant open continuation;
+- a local direction/task/responsibility anchor;
 - one realistically available next participation;
 - actual realization;
 - consequence awareness.
@@ -560,8 +643,8 @@ Observed result changes or confirms the next current position without being trea
 
 ### Stage 3
 
+- proving the authenticity/finality of the person's life direction;
 - rebuilding identity architecture;
-- defining a mature life-direction system;
 - stable cross-context self-regulation.
 
 ### Stage 4
@@ -572,15 +655,16 @@ Observed result changes or confirms the next current position without being trea
 
 ---
 
-# 13. AI / support boundary
+# 16. AI / support boundary
 
 A support system may ask:
 
 ```text
-What is happening now?
+What is happening now that matters here?
 What has already happened?
 What here is fact vs your interpretation?
-What has not happened yet?
+What relevant continuation has not happened yet?
+What matters in this situation / what are you trying to preserve or accomplish?
 What can you realistically do now?
 What did you actually do?
 What happened next?
@@ -591,6 +675,7 @@ It may not:
 - announce the hidden cause;
 - diagnose the participant;
 - tell the participant what childhood event explains the behavior;
+- assign identity/function as fact;
 - create a convincing psychological reconstruction and count agreement as skill;
 - decide the meaningful continuation for the participant;
 - count a plan as execution.
@@ -599,7 +684,7 @@ The participant must own the substantive noticing and realized continuation.
 
 ---
 
-# 14. Open questions
+# 17. Open questions
 
 **OPEN-1:** How little distinction is enough before participation becomes possible?
 
@@ -607,30 +692,29 @@ The participant must own the substantive noticing and realized continuation.
 
 **OPEN-3:** How should the system surface known multi-day history without dragging Stage 1 into Stage 2 scenario analysis?
 
-**OPEN-4:** How should current direction/goal be represented so that `available participation` is not confused with any arbitrary next action?
+**OPEN-4:** What is the minimum viable representation of relevant direction/task so that Stage 1 does not become Stage 3 direction work?
 
 **OPEN-5:** How much consequence observation is needed before an episode becomes usable feedback rather than mere outcome?
 
-**OPEN-6:** When does causal explanation become instrumentally useful, and should it remain completely outside Stage 1 learner flow?
+**OPEN-6:** When does explicit causal analysis become instrumentally useful enough to enter later training, if at all?
 
 ---
 
-# 15. Gate C recommendation before Red Team
+# 18. Gate C recommendation after Red Team
 
-**Recommendation:** retain the present-centered map as the primary Gate C candidate and remove causal/function reconstruction from required Stage 1 operations.
+**Recommendation:** approve the present-centered architecture together with `SP-TR-S1-CAP-002-PROP`, subject to explicit Owner approval.
 
-The proposed core becomes:
+The proposed core is:
 
 ```text
-NOTICE NOW
-→ DISTINGUISH CURRENT POSITION
-→ FIND WHAT IS STILL OPEN
-→ PARTICIPATE / REALIZE
+NOTICE ENOUGH OF NOW
+→ DISTINGUISH WHAT MATTERS
+→ FIND THE RELEVANT OPEN EDGE
+→ CHOOSE RELATIVE TO REALITY + DIRECTION
+→ ACTUALLY REALIZE
 → OBSERVE WHAT HAPPENS NEXT
 ```
 
-Gate D remains closed until:
+Hidden-cause reconstruction is not required.
 
-1. `SP-TR-S1-CAP-002-PROP` is explicitly approved or revised by Owner;
-2. this map passes a new Red Team focused on shallow presentism and action bias;
-3. Owner explicitly approves revised Gate C.
+Gate D remains closed until explicit Owner approval of both the capability revision and this revised Gate C map.
