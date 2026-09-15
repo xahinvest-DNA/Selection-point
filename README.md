@@ -8,6 +8,8 @@ Selection Point рассматривается как **один проект с
 
 Управляющий контур: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` и `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`.
 
+Утверждённая операционная модель работы: `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md` (`SP-OPS-001`).
+
 Текущая топология:
 
 ```text
@@ -22,6 +24,16 @@ Selection-point-health-lab (private)
 ```
 
 `Selection-point-health-lab` хранит приватные longitudinal raw-data, локальные reviews и рабочие гипотезы. Он не имеет права автоматически менять Product Lab или канон. Raw personal data обратно в публичный репозиторий не переносятся.
+
+Рабочий контур проекта разделяет полномочия:
+
+```text
+Owner — направление и окончательное решение
+Chat — методологическая архитектура, критика, Red Team, интерпретация
+Work — research / synthesis / audits / bounded artifact production
+Codex — утверждённая техническая реализация
+Pilot / Reality — эмпирическая проверка и право опровергнуть модель
+```
 
 ## Текущее состояние
 
@@ -38,6 +50,8 @@ Selection-point-health-lab (private)
 - последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
 - утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
 - создан `SP-PSYS-001` — Project Control Plane для синхронизации уровней/репозиториев;
+- утверждён `SP-OPS-001` — рабочий контур Owner → Chat → Work → Codex → Reality → review;
+- разрешён старт цикла **Stage 1 capability definition** для разработки обучающего материала;
 - `SP-HLAB-001` зарегистрирован как private evidence node owner self-pilot;
 - открытого архитектурного параметра нет;
 - SP-S5-P01 — следующий кандидат, **не открыт**;
@@ -119,8 +133,9 @@ S5 candidate:
 
 1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
 2. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
-3. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
-4. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
+3. `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`;
+4. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
+5. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
 
 Для архитектуры метода:
 
@@ -137,4 +152,4 @@ S5 candidate:
 3. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
 4. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`.
 
-**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 активен. SP-S5-P01 и внешний пилот не открыты.**
+**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-001 активны. Цикл Stage 1 capability definition разрешён. SP-S5-P01 и внешний пилот не открыты.**

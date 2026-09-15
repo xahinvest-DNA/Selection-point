@@ -133,9 +133,44 @@ Creating the Project Control Plane does **not**:
 - turn the health pilot into a medical protocol;
 - authorize external participant raw data in the public repository.
 
-## 10. Sources of truth
+## 10. Work operating model
+
+Project work follows the approved operating model `SP-OPS-001` in `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`.
+
+The execution layers are:
+
+```text
+Owner — direction and final approval
+Chat — methodological architecture, critique, Red Team and interpretation
+Work — context-heavy research, synthesis, audits and bounded artifact production
+Codex — approved technical implementation
+Pilot / Reality — empirical validation layer
+```
+
+A task must not be delegated to a lower execution layer while it still contains an unresolved higher-layer methodological decision.
+
+For stage-training development the standard artifact chain is:
+
+```text
+Stage Capability Spec
+→ Stage Research Packet
+→ Psychological Mechanism Map
+→ Learning Units
+→ Practice Protocol
+→ Observability / Measurement Spec
+→ Pilot Evidence Packet
+→ Stage Review
+```
+
+The questionnaire remains a telemetry instrument and is not Selection Point itself.
+
+Approval of this operating model authorizes beginning the Stage 1 capability-definition cycle but does not open any previously closed Foundation, Product Lab or external-pilot gate.
+
+## 11. Sources of truth
 
 System topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
+
+Project work operating model: `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`.
 
 Foundation state: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
