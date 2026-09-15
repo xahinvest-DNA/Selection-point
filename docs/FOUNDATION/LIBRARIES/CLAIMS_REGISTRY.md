@@ -1,12 +1,12 @@
 # Реестр утверждённых положений Selection Point
 
 **Статус:** консолидированный индекс claims  
-**Дата обновления:** 5 сентября 2026 года  
+**Дата обновления:** 15 сентября 2026 года  
 **Режим:** delta-first + плановая консолидация
 
 ## Назначение
 
-Полный смысл хранится в `FIVE_STAGES_THEORY/`, компактный утверждённый смысл — в `CANONICAL/`. Этот реестр фиксирует утверждённые claims и результаты `zero-delta`.
+Полный смысл хранится в `FIVE_STAGES_THEORY/` и фундаментальных cross-cutting addenda, компактный утверждённый смысл — в `CANONICAL/`. Этот реестр фиксирует утверждённые claims и результаты `zero-delta`.
 
 ## Human Change Model
 
@@ -16,11 +16,63 @@
 | SP-HCM-02 | Текущее состояние изменяет восприятие и практически доступный набор действий. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
 | SP-HCM-03 | Автоматическая реакция является цепочкой, а не единичным импульсом. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
 | SP-HCM-04 | Образ себя и внутренний сценарий участвуют в формировании поля выбора. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
-| SP-HCM-05 | Действие изменяет ситуацию и внутреннюю конфигурацию действующего человека. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
-| SP-HCM-06 | Обратная связь может закреплять автоматизм или перестраивать его через следующий цикл. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
+| SP-HCM-05 | Фактически реализованное действие / продолжение изменяет ситуацию и внутреннюю конфигурацию действующего человека. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
+| SP-HCM-06 | Последствия не равны использованной обратной связи; обратная связь может закреплять автоматизм или перестраивать его через следующий цикл. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
 | SP-HCM-07 | Выбор может восстанавливаться на нескольких участках продолжающейся цепочки. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
-| SP-HCM-08 | Новая сборка формируется повторяющимися циклами, а не единичным пониманием. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
+| SP-HCM-08 | Новая сборка формируется повторяющимися фактически развернувшимися циклами, а не единичным пониманием или решением. | `../CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md` |
 | SP-HCM-09 | Участие влияет на следующую фактическую позицию без гарантии внешнего результата; создание ≠ контроль. | `../CANONICAL/01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md` |
+
+## RC-018 — утверждённая cross-cutting boundary ядра
+
+RC-018 не является SP-HCM-10. Он уточняет отношения между уже утверждёнными HCM-05–HCM-08.
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+```text
+selected continuation
+≠ realized continuation
+≠ consequences
+≠ used feedback
+```
+
+Короткая формула:
+
+> **Выбрать ≠ сделать. Сделать ≠ получить желаемое. Последствия ≠ автоматически использованная обратная связь.**
+
+Диагностическая дельта:
+
+```text
+Что было выбрано?
+≠
+Что фактически произошло?
+```
+
+Если выбранное действие не было реализовано, нельзя приписывать ему внешний feedback как будто оно произошло. При этом внутренний выбор остаётся реальным событием, а разрыв `selected → realized` является отдельными данными о процессе исполнения.
+
+Обязательные границы:
+
+```text
+internal choice = real event
+≠ proof of execution
+
+selected ≠ realized
+≠ automatically sabotage / weakness
+
+conscious non-action
+may be realized continuation
+
+partial execution
+→ partial test only
+
+action
+≠ guaranteed desired outcome
+≠ guaranteed clear causal attribution
+```
+
+Полный источник: `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`.  
+Canonical: `../CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.  
+Delta: `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`.
 
 ## Ступени 1–3
 
@@ -50,7 +102,7 @@
 | SP-S4-P12 | Критерии перехода | **Готовность к переходу определяется не отсутствием выпадений, а достаточно надёжным сохранением функционального доступа внутри части релевантных нагрузок и самостоятельным functional re-entry после снижения доступности.** | `../CANONICAL/41_STAGE_4_P12_CANONICAL.md` | `S4_P12_TRANSITION_CRITERIA_DELTA.md` |
 | SP-S4-P13 | Ловушка ступени | **Выбор совершается в моменте. Траектория обнаруживается во времени.** Ловушка возникает, если moment-level view становится почти единственным масштабом оценки и accumulated series-level feedback не получает права изменить current position. | `../CANONICAL/42_STAGE_4_P13_CANONICAL.md` | `S4_P13_STAGE_TRAP_DELTA.md` |
 
-## Ключевые различения P06–P13
+## Ключевые различения P06–P13 + RC-018
 
 ```text
 сформированная способность
@@ -85,11 +137,17 @@ universal stress resilience
 
 новый выбор в моменте
 ≠ обнуление accumulated trajectory feedback
+
+выбранный ход
+≠ автоматически реализованный ход
+
+последствия
+≠ автоматически использованная обратная связь
 ```
 
 ## P11 — консолидированный claim
 
-> **Практический класс S4 должен тренировать reality-coupled цикл выбора в условиях релевантной нагрузки, включая распознавание нагрузки, переориентацию, доступный функциональный ход, обратную связь и самостоятельный re-entry при частичном снижении доступности.**
+> **Практический класс S4 должен тренировать reality-coupled цикл выбора в условиях релевантной нагрузки, включая распознавание нагрузки, переориентацию, доступный функциональный ход, фактическую реализацию, обратную связь и самостоятельный re-entry при частичном снижении доступности.**
 
 Обязательные границы:
 
@@ -119,6 +177,10 @@ recovery speed ≠ maturity
 
 > **Настоящий момент является местом выбора, но не всегда достаточным масштабом оценки траектории. Релевантная история серии эпизодов должна иметь право изменить описание текущей фактической позиции, не определяя следующий выбор.**
 
+RC-018 уточняет:
+
+> **Внутренние выборы показывают направление намерения; фактически реализованные продолжения участвуют в построении фактической траектории.**
+
 Обязательные границы:
 
 ```text
@@ -128,12 +190,13 @@ series ≠ proof of single cause
 negative outcomes alone ≠ negative trajectory
 macro review ≠ total self-monitoring
 aggregation ≠ guilt scoreboard
+selected continuation ≠ automatically realized continuation
 ```
 
 Граница следующей задачи:
 
 ```text
-S4 = выбор / recovery внутри позиции + trajectory-level feedback
+S4 = выбор / recovery внутри позиции + realized-action / trajectory-level feedback
 S5 candidate = системный уровень условий, формирующих вероятные будущие позиции
 ```
 
@@ -143,14 +206,15 @@ S5 candidate = системный уровень условий, формиру�
 
 - после P05 — выполнена 29 августа 2026 года;
 - после P10 — выполнена 30 августа 2026 года;
-- после P13 / на границе Ступени 4 — **выполнена 5 сентября 2026 года**.
+- после P13 / на границе Ступени 4 — выполнена 5 сентября 2026 года;
+- RC-018 cross-cutting consolidation — **выполнена 15 сентября 2026 года**.
 
 ## Reality Check status
 
-Внутреннее утверждение claim не равно внешней доказанности. Для S4 соответствующие external/pilot/falsifier статусы хранятся в `EVIDENCE_MAP.md` и `../GOVERNANCE/REALITY_CHECK_REGISTER.md`; P11 соответствует RC-015, P12 — RC-016, P13 — RC-017.
+Внутреннее утверждение claim не равно внешней доказанности. Для S4 соответствующие external/pilot/falsifier статусы хранятся в `EVIDENCE_MAP.md` и `../GOVERNANCE/REALITY_CHECK_REGISTER.md`; P11 соответствует RC-015, P12 — RC-016, P13 — RC-017, cross-cutting choice/action boundary — RC-018.
 
 ## Текущая остановка
 
 Согласно `../PROJECT_STATE.yaml`:
 
-**Ступень 4 завершена полностью. SP-S5-P01 не открыт.**
+**Ступень 4 завершена полностью. RC-018 утверждён как cross-cutting boundary. SP-S5-P01 не открыт.**
