@@ -8,7 +8,26 @@
 ## Human Change Model
 
 - SP-HCM-01–SP-HCM-08 — `01_HUMAN_CHANGE_MODEL_CANONICAL.md`;
-- SP-HCM-09 — `01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md`.
+- SP-HCM-09 — `01A_HUMAN_CHANGE_MODEL_HCM09_CANONICAL.md`;
+- cross-cutting boundary choice → realized continuation → feedback — `01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.
+
+RC-018 не создаёт SP-HCM-10. Он уточняет core cycle уже утверждённой HCM.
+
+## Утверждённая cross-cutting boundary RC-018
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+```text
+выбрать ≠ сделать
+сделать ≠ получить желаемое
+последствия ≠ автоматически использованная обратная связь
+```
+
+Full foundation: `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`.  
+Canonical: `01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.  
+Delta: `../LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`.  
+Reality Check: `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`.  
+Owner approval: `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
 
 ## Ступени 1–3
 
@@ -44,6 +63,10 @@
 
 > **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
+RC-018 уточняет чтение этой траектории:
+
+> **Внутренние выборы показывают направление намерения; фактически реализованные продолжения участвуют в построении фактической траектории.**
+
 Главные границы:
 
 ```text
@@ -53,6 +76,7 @@ series ≠ proof of single cause
 bad outcomes ≠ bad process
 macro review ≠ total self-monitoring
 aggregation ≠ guilt scoreboard
+selected continuation ≠ automatically realized continuation
 ```
 
 Full theory: `../FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`.  
@@ -62,4 +86,4 @@ Owner approval: `../GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
 
 ## Текущая точка
 
-**Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13. SP-S5-P01 не открыт.**
+**Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13. RC-018 утверждён как cross-cutting boundary. SP-S5-P01 не открыт.**
