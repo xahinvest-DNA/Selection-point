@@ -1,12 +1,12 @@
 # Governance Selection Point
 
 **Статус:** действующий индекс управления проектом  
-**Дата обновления:** 5 сентября 2026 года
+**Дата обновления:** 15 сентября 2026 года
 
 ## Действующие документы
 
-1. `../PROJECT_STATE.yaml` — единственный источник текущего статуса.
-2. `../PROJECT_OPERATING_PROTOCOL.md` — process protocol v4.0.
+1. `../PROJECT_STATE.yaml` — единственный источник текущего статуса параметров.
+2. `../PROJECT_OPERATING_PROTOCOL.md` — process protocol v4.1.
 3. `PROJECT_GOVERNANCE_SYSTEM.md` — источники истины, delta-first, consistency check.
 4. `REALITY_CHECK_PROTOCOL.md` — внешняя проверка и falsification.
 5. `REALITY_CHECK_REGISTER.md` — реестр Reality Check.
@@ -20,56 +20,71 @@
 13. `RC-016_SP-S4-P12.md` + Red Team + approval addendum — P12.
 14. `SP-S4-P13_ARCHITECT_PASS_NOTES.md` — revised Architect pass P13.
 15. `RC-017_SP-S4-P13.md` — revised Reality Check P13.
-16. `SP-S4-P13_RED_TEAM_NOTES.md` — revised Red Team / Falsification P13.
+16. `SP-S4-P13_RED_TEAM_NOTES.md` — revised Red Team P13.
 17. `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md` — явное утверждение P13.
+18. `CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md` — Architect pass сквозной boundary choice → realized continuation.
+19. `RC-018_CORE_CHOICE_ACTION_FEEDBACK.md` — Reality Check этого boundary.
+20. `CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md` — Red Team / Falsification.
 
 ## Основной цикл
 
 ```text
-3 вопроса
+3 вопроса для нового архитектурного параметра
 → обсуждение / comparative synthesis
 → Architect pass
 → Reality Check
 → Red Team / Falsification
 → явное решение владельца
 → PROJECT_STATE.yaml first
-→ full theory
-→ canonical при самостоятельной дельте
-→ parameter delta
+→ approved full / canonical layers
+→ delta / libraries
 → derived status sync
 → checkpoint
 → consistency check
 ```
 
-## Последний закрытый governance cycle
+Для сквозных уточнений уже утверждённого ядра действует тот же Architect / Reality Check / Red Team / owner-decision принцип, но обязательные три вопроса не добавляются механически, если новый параметр не открывается.
 
-**SP-S4-P13 — «Ловушка четвёртой ступени»** закрыт 5 сентября 2026 года после temporal-scale refinement и полного повторного Architect / RC-017 / Red Team.
+## Последний закрытый parameter cycle
 
-Главная формула:
+**SP-S4-P13 — «Ловушка четвёртой ступени»** закрыт 5 сентября 2026 года.
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Ловушка:
-
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
 
-Корректирующая граница:
+Ступень 4 завершена полностью.
 
-> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+## Активный cross-cutting review — RC-018
+
+15 сентября 2026 года открыта проверка границы:
+
+> **Сделанный внутренний выбор не означает совершённого действия, которое в реальности и даёт обратную связь.**
+
+После Architect pass, RC-018 и Red Team surviving candidate:
+
+> **Selection Point должен различать внутренне выбранное и фактически реализованное продолжение. Выбранное направление является реальным внутренним фактом, но не засчитывается как исполнение. Последствия относятся к фактически произошедшему продолжению; использованная обратная связь является ещё отдельным шагом.**
+
+Коротко:
+
+```text
+выбрать ≠ сделать
+сделать ≠ получить желаемое
+последствия ≠ автоматически feedback
+```
 
 Обязательные защиты:
 
 ```text
-present moment ≠ trap
-history = data ≠ verdict
-single lapse ≠ trajectory
-series ≠ proof of one cause
-aggregation ≠ guilt score
-macro-awareness ≠ total self-monitoring
+internal choice remains real
+selected ≠ realized ≠ moral failure
+conscious non-action may be realized continuation
+partial execution → partial test
+action ≠ clear causal attribution automatically
 ```
 
-## Stage closure
+RC-018 ожидает явного owner decision. До него `ARCHITECTURAL_DECLARATION.md`, HCM и canonical layer не меняются.
 
-**Ступень 4 — «Сохранение выбора под напряжением» завершена полностью: SP-S4-P01–SP-S4-P13.**
+## Текущая остановка
 
-Следующий кандидат — SP-S5-P01. Он не открыт автоматически.
+**Ступень 4 завершена. SP-S5-P01 не открыт. RC-018 owner-decision-pending.**
