@@ -1,7 +1,7 @@
 # Текущая контрольная точка проекта Selection Point
 
 **Статус:** человекочитаемое представление `PROJECT_STATE.yaml`  
-**Дата обновления:** 5 сентября 2026 года  
+**Дата обновления:** 15 сентября 2026 года  
 **Авторитетный источник:** `PROJECT_STATE.yaml`
 
 ## 1. Текущий статус
@@ -10,16 +10,11 @@
 - Ступени 1–3 завершены полностью.
 - **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`.
 - Последний утверждённый параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
+- Дополнительно утверждена сквозная фундаментальная boundary **RC-018 — choice → realized continuation → feedback**.
 - Открытого параметра нет.
 - Следующий кандидат: **SP-S5-P01**, `unopened`.
 
 ## 2. Утверждённый SP-S4-P13
-
-5 сентября 2026 года после temporal-scale refinement, повторного Architect pass, RC-017 и Red Team Андрей явно утвердил P13 решением:
-
-> **«Утверждаем».**
-
-Центральная формула:
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
@@ -31,46 +26,87 @@
 
 > **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
-## 3. Дельта относительно P12
+## 3. Утверждённая RC-018 boundary
+
+15 сентября 2026 года после Architect pass, Reality Check и Red Team Андрей явно утвердил уточнение:
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+Короткая формула:
+
+> **Выбрать ≠ сделать. Сделать ≠ получить желаемое. Последствия ≠ автоматически использованная обратная связь.**
+
+Уточнённый core cycle:
 
 ```text
-P12:
-не превращать отдельное выпадение
-в глобальный приговор
+фактическая позиция
+→ доступная точка выбора
+→ выбранное продолжение
+→ фактически реализованное продолжение
+→ последствия
+→ замеченные / интерпретированные данные
+→ обратная связь
+→ корректировка
+→ следующая фактическая позиция
+```
 
+Главное следствие:
+
+> **Неисполненный выбор не получает внешней проверки как неслучившееся действие.**
+
+При этом внутренний выбор остаётся реальным событием и может дать данные о состоянии, намерении и разрыве исполнения.
+
+## 4. Связь P13 и RC-018
+
+```text
 P13:
-не превращать каждый новый момент
-в обнуление accumulated series-level feedback
+выбор совершается в моменте
+→ траектория обнаруживается во времени
+
+RC-018:
+внутренние выборы показывают направление намерения
+≠
+фактически реализованные продолжения,
+которые участвуют в построении фактической траектории
 ```
 
-Право на re-entry не означает право забыть фактическую динамику.
+То есть серия правильных внутренних решений не засчитывается автоматически как серия совершённых ходов.
 
-## 4. Обязательные ограничения
+## 5. Обязательные ограничения RC-018
 
 ```text
-present moment ≠ trap
-history = data ≠ verdict / identity / destiny
-single lapse ≠ trajectory
-series ≠ proof of single cause
-negative outcomes alone ≠ negative trajectory
-macro review ≠ total self-monitoring
-aggregation ≠ guilt scoreboard
+internal choice = real event
+≠ proof of execution
+
+selected ≠ realized
+≠ automatically sabotage / weak will
+
+conscious pause / non-action
+may be realized continuation
+
+partial execution
+→ partial test only
+
+action
+≠ guaranteed desired outcome
+≠ guaranteed clear causal feedback
+
+consequences
+≠ automatically used feedback
 ```
 
-Временной горизонт не задаётся универсально в Фазе 3.
+## 6. Утверждённые документы RC-018
 
-## 5. Утверждённые документы P13
+- `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+- `CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+- `LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+- `SOURCE_MATERIALS/28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md`;
+- `GOVERNANCE/CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md`;
+- `GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
+- `GOVERNANCE/CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md`;
+- `GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
+- checkpoint: `PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
 
-- `FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
-- `CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
-- `LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
-- `SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md`;
-- `GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md`;
-- `GOVERNANCE/RC-017_SP-S4-P13.md`;
-- `GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md`;
-- `GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
-- checkpoint: `PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
+## 7. Текущая рабочая точка
 
-## 6. Текущая рабочая точка
-
-**Ступень 4 закрыта. SP-S5-P01 автоматически не открыт.**
+**Ступень 4 закрыта. RC-018 закрыт как owner-approved. SP-S5-P01 автоматически не открыт.**
