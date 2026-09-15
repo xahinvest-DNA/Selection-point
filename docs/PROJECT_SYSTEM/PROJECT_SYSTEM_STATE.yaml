@@ -15,7 +15,7 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_research_packet_review_cycle
+  current_authorization: stage_1_gate_b_owner_review
   questionnaire_role: telemetry_not_sp
   executor_boundaries:
     owner: direction_and_final_approval
@@ -51,12 +51,15 @@ training_state:
   current_gate: Gate B - Stage 1 Research Packet
   stage_1_research_packet:
     id: SP-TR-S1-RP-001
-    status: ready_for_chat_review
+    status: red_team_complete_owner_review_required
     execution_spec: docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md
     deliverable: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
-    next_step: chat_red_team_then_owner_approval
+    red_team: docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
+    red_team_verdict: pass_with_required_constraints
+    owner_approval_required: true
     methodological_approval: false
     gate_c_opened: false
+    recommended_gate_c_constraint: classify_phenomenon_mechanism_trainable_operation_safeguard_before_grouping
   deferred_trainer_hypothesis:
     id: SP-TR-HYP-001
     status: parked
@@ -144,6 +147,7 @@ current_gates:
   external_user_pilot: unopened
   owner_self_pilot: active
   trainer_implementation: unopened
+  training_gate_c: unopened
 
 promotion_rule:
   raw_data_to_public_repo: forbidden
@@ -159,11 +163,13 @@ new_chat_bootstrap:
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
     - docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md
     - docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
+    - docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
     training: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
     training_gate_b_spec: docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md
     training_gate_b_review: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
+    training_gate_b_red_team: docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
     parked_trainer_hypothesis: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
