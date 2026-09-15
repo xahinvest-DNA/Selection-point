@@ -126,7 +126,6 @@ require(system, Path(RECOVERY).name, SYSTEM_STATE)
 require(system, Path(TRAINER_HYPOTHESIS).name, SYSTEM_STATE)
 require(recovery, "Git history preserves every committed state", RECOVERY)
 require(recovery, "Gate B — Stage 1 Research Packet", RECOVERY)
-require(recovery, "trainer implementation authorized", RECOVERY) if False else None
 require(trainer_hypothesis, "**Status:** deferred / parked", TRAINER_HYPOTHESIS)
 require(trainer_hypothesis, "implementation", TRAINER_HYPOTHESIS)
 require(trainer_hypothesis, "Facts constrain self-description", TRAINER_HYPOTHESIS)
