@@ -1,6 +1,7 @@
 # Selection Point Product Lab
 
 **Статус:** активный исследовательский workstream / owner self-pilot active  
+**Обновлено:** 15 сентября 2026 года  
 **Контур:** параллельный Фазе 3, без открытия Фаз 4–8  
 **SSOT лаборатории:** `LAB_STATE.yaml`
 
@@ -8,7 +9,7 @@
 
 Product Lab проверяет, может ли утверждённая методология Selection Point быть передана людям как **тренажёр способности выбирать** и привести к наблюдаемому обучению.
 
-На текущем owner self-pilot проверяется более сильная продуктовая рамка: Selection Point как система, которая **связывает локальный выбор с траекторией во времени и проверяет выбор фактическим действием**.
+На текущем owner self-pilot проверяется более сильная продуктовая рамка: Selection Point как система, которая **связывает локальный выбор с траекторией во времени и проверяет внутренний выбор через фактически реализованное продолжение и последствия**.
 
 Формулировки Product Lab остаются продуктовыми гипотезами, а не новым каноническим определением метода.
 
@@ -30,14 +31,36 @@ CANONICAL_TO_PRODUCT_MAP
 
 Product Lab не имеет права напрямую изменять канонический смысл. Если данные требуют пересмотра метода, создаётся отдельное предложение в основной архитектурный контур и применяется действующий `PROJECT_OPERATING_PROTOCOL.md`.
 
+## RC-018 как обязательная граница Lab
+
+С 15 сентября 2026 года Product Lab синхронизирован с утверждённой boundary RC-018:
+
+```text
+selected continuation
+≠ realized continuation
+≠ consequence
+≠ used feedback
+```
+
+Следствия:
+
+- внутренний выбор остаётся реальным событием, но не является доказательством исполнения;
+- conscious non-action может быть фактически реализованным продолжением;
+- partial execution означает partial test;
+- selected → realized gap является данными, а не моральной оценкой;
+- последствия не считаются использованным feedback автоматически.
+
 ## Документы
 
 - `LAB_CHARTER.md` — полномочия, границы и lifecycle;
 - `LAB_STATE.yaml` — единственный источник текущего состояния Lab;
-- `PERSONAL_TRAJECTORY_PILOT_V0.md` — **текущий активный owner self-pilot**, режим B, Trajectory Engine, Choice→Action, multi-timeframe, вечерний опросник и стартовая запись;
+- `PERSONAL_TRAJECTORY_PILOT_V0.md` — текущий активный owner self-pilot;
+- `REALITY_EVENT_MODEL_V0_2.md` — минимальная RC-018-aligned схема событий Reality Loop;
+- `PILOT_METRICS_SPEC_V0_1.md` — рабочая спецификация измерений без общего score;
+- `PARTICIPANT_DATA_POLICY_V0_1.md` — обязательная граница для данных будущих внешних участников;
 - `PRODUCT_THESIS.md` — рабочая продуктовая гипотеза;
 - `SELECTION_CAPACITY_V0.md` — рабочая декомпозиция предполагаемой тренируемой способности и Red Team;
-- `SP_LAB_001_SYNTHESIS.md` — утверждённый итог SP-LAB-001 как рабочей продуктовой модели;
+- `SP_LAB_001_SYNTHESIS.md` — утверждённый итог SP-LAB-001;
 - `MINIMAL_RECOVERY_LOOP.md` — гипотеза минимального цикла восстановления участия;
 - `TRAINING_ARCHITECTURE_V0.md` — предварительная гипотеза архитектуры обучения;
 - `COMPARATIVE_POSITIONING_RESEARCH_01.md` — сравнительная проверка относительно близких подходов;
@@ -48,7 +71,7 @@ Product Lab не имеет права напрямую изменять кан�
 
 ## Утверждённая база
 
-`SP-LAB-001` **утверждён 1 сентября 2026 года** как рабочая продуктовая модель для последующей внешней проверки.
+`SP-LAB-001` утверждён 1 сентября 2026 года как рабочая продуктовая модель для последующей внешней проверки.
 
 Ключевая формулировка:
 
@@ -60,7 +83,9 @@ Product Lab не имеет права напрямую изменять кан�
 
 ## Текущая точка — SP-LAB-PILOT-001
 
-12 сентября 2026 года владелец явно возобновил работу Product Lab через личный self-pilot, **не открывая SP-LAB-002**.
+12 сентября 2026 года владелец возобновил Product Lab через личный self-pilot, не открывая SP-LAB-002.
+
+15 сентября после диагностики владелец утвердил устранение рассинхронизации Product Lab с RC-018 и создание измерительной инфраструктуры до отдельного обсуждения пилота.
 
 Первый домен: **тело / здоровье / физическая эффективность**.
 
@@ -68,8 +93,8 @@ Product Lab не имеет права напрямую изменять кан�
 
 ```text
 Trajectory Engine
-+ Choice → Action Evidence
-+ day → week → month → quarter
++ Selected → Realized Evidence
++ episode → day → week → month → quarter
 ```
 
 Рабочее ядро Reality Loop:
@@ -79,31 +104,30 @@ fact
 → trajectory
 → forecast
 → selection point
-→ choice
-→ action
+→ selected continuation
+→ realized continuation
 → consequence
+→ observed feedback
 → model update
 ```
-
-Ключевое правило:
-
-> внутренний выбор не считается реализованным, пока не появился наблюдаемый Action Evidence.
 
 Принят режим напоминаний **B**:
 
 - `21:30` — Review + Plan;
-- утром — Plan Recall с возвратом вчерашнего решения и первого физического шага;
-- в середине дня — короткий Trajectory Check.
+- утром — Plan Recall;
+- в середине дня — Trajectory Check.
 
-Полный контекст: `PERSONAL_TRAJECTORY_PILOT_V0.md`.
+`prompt_exposure` должен фиксироваться отдельно, чтобы не спутать самостоятельный навык с поведением под scaffold.
 
 ## Что остаётся закрытым
 
 - `SP-LAB-002 — Problem Discovery Research Design` остаётся `unopened`;
 - внешний пользовательский пилот в LAB-0 не открыт;
+- S5 не открывается из Product Lab;
 - доказанная эффективность не заявляется;
 - Body pilot не превращает SP в медицинское или фитнес-приложение;
-- Simulator / serious game остаётся перспективным вторым контуром после проверки Reality Loop.
+- единый Selection Capacity / Trajectory Score не вводится;
+- Simulator / serious game остаётся вторым контуром после проверки Reality Loop.
 
 ## Bootstrap для нового чата
 
@@ -111,7 +135,9 @@ fact
 
 1. `LAB_STATE.yaml`;
 2. `PERSONAL_TRAJECTORY_PILOT_V0.md`;
-3. `SP_LAB_001_SYNTHESIS.md`;
-4. `DECISION_LOG.md`.
+3. `REALITY_EVENT_MODEL_V0_2.md`;
+4. `PILOT_METRICS_SPEC_V0_1.md`;
+5. `SP_LAB_001_SYNTHESIS.md`;
+6. `DECISION_LOG.md`.
 
-После этого продолжать `SP-LAB-PILOT-001`. `SP-LAB-002` автоматически не открывать.
+После этого продолжать `SP-LAB-PILOT-001`. `SP-LAB-002` и внешний пилот автоматически не открывать.
