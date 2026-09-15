@@ -6,13 +6,14 @@
 
 Авторитетный статус: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
-На 5 сентября 2026 года:
+На 15 сентября 2026 года:
 
 - Фаза 3 — точная архитектура пяти ступеней;
 - SP-HCM-01–SP-HCM-09 утверждены;
 - Ступени 1–3 завершены;
 - **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`;
 - последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
+- утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
 - открытого параметра нет;
 - SP-S5-P01 — следующий кандидат, **не открыт**.
 
@@ -20,17 +21,21 @@
 
 > **Контроль предполагает возможность заранее получить желаемый результат. Создание происходит независимо от контроля.**
 
+Уточнённый core cycle:
+
 ```text
 увидеть фактическую текущую позицию
 → различить / выбрать направление
-→ сделать следующий доступный ход
-→ получить ответ реальности
+→ выбрать доступное продолжение
+→ фактически реализовать продолжение
+→ получить последствия / ответ реальности
+→ извлечь обратную связь
 → оказаться в новой фактической позиции
 → снова увидеть
 → повторить цикл
 ```
 
-## Сквозная граница
+## Сквозные границы
 
 > **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
 
@@ -39,6 +44,18 @@
 участие в причинности ≠ единственная причина
 создание траектории ≠ предопределение результата
 ```
+
+RC-018 добавляет:
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+```text
+выбрать ≠ сделать
+сделать ≠ получить желаемое
+последствия ≠ автоматически использованная обратная связь
+```
+
+Неисполненный выбор остаётся реальным внутренним фактом, но не получает внешней проверки как неслучившееся действие.
 
 ## Утверждённый SP-S4-P13
 
@@ -52,14 +69,9 @@
 
 > **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
-```text
-present moment ≠ trap
-single lapse ≠ trajectory
-series ≠ proof of one cause
-history = data ≠ verdict / identity / destiny
-macro review ≠ total self-monitoring
-aggregation ≠ guilt scoreboard
-```
+RC-018 уточняет:
+
+> **Внутренние выборы показывают направление намерения; фактически реализованные продолжения участвуют в построении фактической траектории.**
 
 ## Граница следующего уровня
 
@@ -80,11 +92,11 @@ S5 candidate:
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
-5. `docs/FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
-6. `docs/FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
-7. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
-8. `docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
-9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
+4. `docs/FOUNDATION/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+5. `docs/FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+6. `docs/FOUNDATION/LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+7. `docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
+8. `docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
+9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
 
-**Ступень 4 завершена. SP-S5-P01 не открыт.**
+**Ступень 4 завершена. RC-018 утверждён. SP-S5-P01 не открыт.**
