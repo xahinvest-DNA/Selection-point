@@ -19,9 +19,13 @@
 - `S4_P11_CORRESPONDING_PRACTICES_DELTA.md`;
 - `S4_P12_TRANSITION_CRITERIA_DELTA.md`;
 - `S4_P13_STAGE_TRAP_DELTA.md`;
-- `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md` — RC-018 cross-cutting boundary.
+- `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md` — RC-018 cross-cutting boundary;
+- `TERMS_REGISTRY_RC018_ADDENDUM.md` — approved terms for selected / realized continuation;
+- `RISKS_AND_BOUNDARIES_RC018_ADDENDUM.md` — approved RC-018 risks SP-RISK-031–SP-RISK-036.
 
 Основные консолидированные библиотеки: `TERMS_REGISTRY.md`, `CLAIMS_REGISTRY.md`, `EXAMPLE_LIBRARY.md`, `RISKS_AND_BOUNDARIES.md`, `EVIDENCE_MAP.md`, `CROSS_REFERENCE_MAP.md`.
+
+До следующей полной консолидации `TERMS_REGISTRY_RC018_ADDENDUM.md` и `RISKS_AND_BOUNDARIES_RC018_ADDENDUM.md` являются действующими утверждёнными дополнениями к соответствующим большим реестрам.
 
 ## Исследовательские кейсы
 
@@ -39,7 +43,13 @@ Local parameter delta создаётся только после явного у
 - `EVIDENCE_MAP.md` — RC-015–RC-017 и evidence boundaries;
 - `RISKS_AND_BOUNDARIES.md` — добавлен SP-RISK-030.
 
-15 сентября 2026 года дополнительно утверждена cross-cutting boundary RC-018. До следующей большой консолидации её действующий reusable meaning хранится в `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md` и canonical-card.
+15 сентября 2026 года утверждена cross-cutting boundary RC-018. Выполнена её локальная консолидация:
+
+- `CLAIMS_REGISTRY.md` — approved cross-cutting claim;
+- `EVIDENCE_MAP.md` — RC-018 evidence boundary;
+- `CROSS_REFERENCE_MAP.md` — связи HCM / S4 / P13;
+- `TERMS_REGISTRY_RC018_ADDENDUM.md` — selected / realized continuation;
+- `RISKS_AND_BOUNDARIES_RC018_ADDENDUM.md` — риски ложного исполнения, action bias и causal overclaim.
 
 ## RC-018 — choice / realization / feedback
 
@@ -63,6 +73,7 @@ Local parameter delta создаётся только после явного у
 
 Full foundation: `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`.  
 Canonical: `../CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.  
+Delta: `CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`.  
 Reality Check: `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`.  
 Approval: `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
 
