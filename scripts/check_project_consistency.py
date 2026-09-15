@@ -38,9 +38,11 @@ def forbid(text: str, needle: str, where: str) -> None:
 PROJECT_STATE = "docs/FOUNDATION/PROJECT_STATE.yaml"
 SYSTEM_STATE = "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
 CONTROL_PLANE = "docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md"
+WORK_MODEL = "docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md"
 SYNC_PROTOCOL = "docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md"
 HEALTH_CONTRACT = "docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md"
 SYSTEM_DECISION = "docs/PROJECT_SYSTEM/DECISION_PSYS_001_2026-09-15.md"
+WORK_MODEL_DECISION = "docs/PROJECT_SYSTEM/DECISION_PSYS_002_2026-09-15.md"
 LAB_STATE = "docs/PRODUCT_LAB/LAB_STATE.yaml"
 RESEARCH_PLAN = "docs/PRODUCT_LAB/RESEARCH_PLAN.md"
 LAB_INDEX = "docs/PRODUCT_LAB/00_LAB_INDEX.md"
@@ -53,9 +55,11 @@ README = "README.md"
 project = read(PROJECT_STATE)
 system = read(SYSTEM_STATE)
 control = read(CONTROL_PLANE)
+work_model = read(WORK_MODEL)
 sync = read(SYNC_PROTOCOL)
 health_contract = read(HEALTH_CONTRACT)
 _ = read(SYSTEM_DECISION)
+_ = read(WORK_MODEL_DECISION)
 lab = read(LAB_STATE)
 research = read(RESEARCH_PLAN)
 index = read(LAB_INDEX)
@@ -90,6 +94,22 @@ require(health_contract, "measurement_adherence", HEALTH_CONTRACT)
 require(readme, "Project Control Plane", README)
 require(readme, "SP-HLAB-001", README)
 
+# Approved work operating model.
+require(system, "id: SP-OPS-001", SYSTEM_STATE)
+require(system, "status: approved", SYSTEM_STATE)
+require(system, "current_authorization: stage_1_capability_definition_cycle", SYSTEM_STATE)
+require(system, "questionnaire_is_telemetry_not_sp: true", SYSTEM_STATE)
+require(control, "Project work follows the approved operating model `SP-OPS-001`", CONTROL_PLANE)
+require(work_model, "**ID:** SP-OPS-001", WORK_MODEL)
+require(work_model, "questionnaire = telemetry", WORK_MODEL)
+require(work_model, "Stage Capability Spec", WORK_MODEL)
+require(work_model, "Stage Research Packet", WORK_MODEL)
+require(work_model, "Psychological Mechanism Map", WORK_MODEL)
+require(work_model, "Pilot Evidence Packet", WORK_MODEL)
+require(work_model, "does not authorize:\n- opening Foundation Stage 5", WORK_MODEL)
+require(readme, "SP_WORK_OPERATING_MODEL.md", README)
+require(readme, "SP-OPS-001", README)
+
 # Product Lab current task and gates.
 require(lab, "current_task: SP-LAB-PILOT-001", LAB_STATE)
 require(lab, "current_task_status: active", LAB_STATE)
@@ -119,7 +139,7 @@ require(metrics, "Selected → Realized", METRICS)
 require(data_policy, "сырые персональные записи участников", DATA_POLICY)
 
 # Project-system and Lab artifacts must be discoverable.
-for rel in (SYSTEM_STATE, CONTROL_PLANE, SYNC_PROTOCOL, HEALTH_CONTRACT, EVENT_MODEL, METRICS, DATA_POLICY):
+for rel in (SYSTEM_STATE, CONTROL_PLANE, WORK_MODEL, SYNC_PROTOCOL, HEALTH_CONTRACT, EVENT_MODEL, METRICS, DATA_POLICY):
     filename = Path(rel).name
     target = README if rel.startswith("docs/PROJECT_SYSTEM/") else LAB_INDEX
     target_text = readme if target == README else index
@@ -151,6 +171,7 @@ if errors:
 print("Selection Point consistency check passed.")
 print("- Foundation: S4 complete, S5 unopened, RC-018 approved")
 print("- Project system: SP-PSYS-001 active; SP-HLAB-001 registered private evidence node")
+print("- Work model: SP-OPS-001 approved; Stage 1 capability-definition cycle authorized")
 print("- Product Lab: owner self-pilot active, external pilot unopened")
 print("- RC-018 event/metrics/privacy/promotion boundaries present")
 print("- Legacy Health Lab raw records are governed as immutable source data")
