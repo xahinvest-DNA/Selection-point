@@ -1,7 +1,7 @@
 # Reality Check Register
 
 **Статус:** действующий реестр проверок  
-**Дата обновления:** 5 сентября 2026 года
+**Дата обновления:** 15 сентября 2026 года
 
 | ID | Объект | Архитектурный статус | Reality Check status | Итог / следующий шаг |
 |---|---|---|---|---|
@@ -21,51 +21,72 @@
 | RC-014 | SP-S4-P10 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Устойчивость траектории ≠ неизменность её формы. |
 | RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой. |
 | RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry. |
-| RC-017 | SP-S4-P13 | **утверждено** | owner-approved; revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Moment-level recovery не должен обнулять trajectory-level feedback. |
+| RC-017 | SP-S4-P13 | утверждено | owner-approved; revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Moment-level recovery не должен обнулять trajectory-level feedback. |
+| RC-018 | Core boundary: choice → realized continuation → feedback | **на обсуждении** | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Выбранное продолжение ≠ фактически реализованное; feedback относится к реально произошедшему. |
 
 ## RC-017 — закрытый итог
 
-5 сентября 2026 года после temporal-scale refinement, повторного Architect pass, revised Reality Check и revised Red Team Андрей явно утвердил SP-S4-P13 решением:
-
-> **«Утверждаем».**
-
-### Центральный тезис
+5 сентября 2026 года после temporal-scale refinement, повторного Architect pass, revised Reality Check и revised Red Team Андрей явно утвердил SP-S4-P13.
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Ловушка:
-
-> **Полезная способность возвращаться к выбору в каждом отдельном моменте становится ловушкой, если moment-level view превращается в почти единственный масштаб оценки и серия функционально сходных эпизодов не получает достаточного веса как новая фактическая позиция.**
-
-Корректирующая формула:
-
 > **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+
+Approval addendum: `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
+
+## RC-018 — открытый итог
+
+15 сентября 2026 года Андрей указал на сквозную границу:
+
+> **Сделанный внутренний выбор не означает совершённого действия, которое в реальности и даёт обратную связь.**
+
+Architect pass, Reality Check и Red Team завершены.
+
+### Surviving candidate
+
+> **Selection Point должен различать внутренне выбранное и фактически реализованное продолжение. Несовпадение между ними — данные о процессе исполнения, а не моральный провал. Обратную связь о последствиях конкретного действия нельзя приписывать этому действию, если оно не произошло; при этом реальность может дать другие данные — о неисполнении, частичном исполнении, сознательной паузе или пересмотре решения.**
+
+Коротко:
+
+> **Выбрать ≠ сделать. Сделать ≠ получить желаемое. Последствия ≠ автоматически использованная обратная связь.**
 
 ### External compatibility
 
-- behaviour-maintenance literature различает lapse и relapse / sequence of lapses;
-- EMA literature различает fast local processes и slower unfolding/background processes;
-- maintenance models требуют учитывать поведение во времени и контекстах;
-- context-dependent relapse literature поддерживает возможность влияния устойчивых условий, но не доказывает одну скрытую причину.
+- intention–behavior literature подтверждает устойчивый gap между намерением и поведением;
+- Rubicon Model функционально разводит decision / planning / actional phases;
+- implementation intentions работают именно как мост от намерения к запуску поведения;
+- feedback research связывает коррекцию с данными о фактическом поведении и его последствиях;
+- sequential decision research ограничивает сильный вывод: реализованный ход не гарантирует однозначного causal feedback при delayed/noisy outcomes.
 
 ### Red Team boundaries
 
 ```text
-present moment ≠ trap
-history = data ≠ verdict / identity / destiny
-single lapse ≠ trajectory
-series ≠ proof of one cause
-aggregation ≠ guilt score
-negative outcomes alone ≠ negative trajectory
-macro-awareness ≠ total self-monitoring
+internal choice = real event
+≠ proof of execution
+
+selected ≠ realized
+≠ автоматически sabotage / weak will
+
+conscious pause / non-action
+может быть realized continuation
+
+partial execution
+→ only partial test
+
+action
+≠ guaranteed clear causal feedback
 ```
 
-### Falsifier
+### Falsifier / downgrade condition
 
-P13 пересматривается, если temporal aggregation не добавляет practically useful distinction к P12, если временной масштаб неизбежно выбирается post hoc, если macro-review создаёт преимущественно guilt / hyper-control либо если local recovery и trajectory-level feedback практически неразличимы как отдельные функции.
+Уточнение должно стать лишь редакционной ремаркой или быть отклонено как самостоятельная cross-cutting delta, если `selected vs realized` не добавляет диагностической функции, невозможно надёжно различить prospectively либо новая терминология создаёт больше complexity, action bias, guilt или ригидности, чем практической точности.
 
-Approval addendum: `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
+Связанные файлы:
+- `CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md`;
+- `RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
+- `CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md`;
+- `../SOURCE_MATERIALS/28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md`.
 
 ## Текущая граница
 
-**RC-017 закрыт как owner-approved. Ступень 4 завершена полностью. SP-S5-P01 не открыт.**
+**Ступень 4 завершена. SP-S5-P01 остаётся unopened. RC-018 ожидает явного решения владельца; фундаментальный канон пока не изменён.**
