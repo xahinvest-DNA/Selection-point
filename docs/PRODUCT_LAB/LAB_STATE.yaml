@@ -1,23 +1,30 @@
-schema_version: 1
+schema_version: 2
 workstream: Selection Point Product Lab
-updated_at: 2026-09-12
+updated_at: 2026-09-15
+foundation_sync: "RC-018"
 
 status:
   active_phase: LAB-0
   active_phase_name: "Bootstrap & Definition + owner self-pilot"
   last_approved: SP-LAB-001
   last_approved_name: "Selection Capacity v0 as a working product model for external discovery"
+  last_governance_sync: SP-LAB-D004
   current_task: SP-LAB-PILOT-001
   current_task_name: "Personal Trajectory Pilot v0 — body / health / physical efficiency"
   current_task_status: active
   next_candidate: SP-LAB-002
   next_candidate_name: "Prepare problem-discovery research design"
   next_status: unopened
+  external_user_pilot_status: unopened
   explicit_pause: false
 
 owner_direction:
   decision_date: 2026-09-12
   decision: "Resume Product Lab through an owner self-pilot without opening SP-LAB-002. Use the body/health/physical-efficiency domain as the first real Reality Loop. Prioritize Trajectory Engine, Choice-to-Action evidence and multi-timeframe visibility. Adopt reminder Mode B: 21:30 Review+Plan, morning Plan Recall, midday Trajectory Check."
+
+latest_owner_decision:
+  decision_date: 2026-09-15
+  decision: "After project diagnostics, synchronize Product Lab with approved RC-018, formalize the event model and pilot metrics, add participant-data boundaries and automated repository consistency checks. Do not open Stage 5, SP-LAB-002 or an external pilot; discuss the pilot separately after this remediation."
 
 approved_working_model:
   product_frame: "Selection Point may be presented and tested as a trainer of the capacity to choose."
@@ -28,20 +35,28 @@ approved_working_model:
   mastery_rule: "A single successful episode is insufficient; future validation must examine repeatability, autonomy, context transfer, feedback sensitivity and, where feasible, retention."
 
 current_product_direction:
-  stronger_frame: "A system that connects local choice to trajectory over time and tests the choice through observable action."
-  core_chain: "fact -> trajectory -> forecast -> selection point -> choice -> action -> consequence -> model update"
-  critical_rule: "Choice is not equivalent to Action; an internal decision is not counted as implemented until observable action evidence exists."
+  stronger_frame: "A system that connects local choice to trajectory over time and tests the choice through realized continuation and observable consequences."
+  core_chain: "fact -> trajectory -> forecast -> selection point -> selected continuation -> realized continuation -> consequence -> observed feedback -> model update"
+  critical_rule: "Selected continuation is not equivalent to realized continuation. An internal choice remains a real event, but it is not counted as executed until the actual continuation is observed. Conscious non-action may itself be a realized continuation; partial execution is a partial test."
   current_priority: "Reality Loop"
   later_priority: "Simulator Loop / serious game after Reality Loop value is demonstrated"
   p0:
     - Trajectory Engine
-    - Choice-to-Action Evidence
-    - multi-timeframe view: day -> week -> month -> quarter
+    - Selected-to-Realized Continuation Evidence
+    - multi-timeframe view: episode -> day -> week -> month -> quarter
   p1:
     - conditional current/target trajectory and required change
     - Selection Point Detector
     - body domain as first validation environment
-  visualization_hypothesis: "OHLC may be used only as a time-aggregation visualization, not as an ontology/model of a person."
+  visualization_hypothesis: "OHLC may be used only as a time-aggregation visualization after an empirically defensible underlying measure exists; it is not an ontology/model of a person."
+
+measurement_foundation:
+  event_model: "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
+  metrics_spec: "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
+  participant_data_policy: "docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md"
+  composite_selection_score_allowed: false
+  raw_participant_data_in_public_repo_allowed: false
+  prompt_exposure_must_be_recorded: true
 
 active_pilot:
   id: SP-LAB-PILOT-001
@@ -57,18 +72,17 @@ active_pilot:
     morning: "Plan Recall — return yesterday's decision and first physical steps; do not reopen the whole decision"
     midday: "Trajectory Check — on plan / circumstances changed / automatic mode"
   plan_limit: 3
-  event_model: "Unexpected Event is stored separately from planned action and from day-level evaluation."
+  event_model: "PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord -> ModelUpdateRecord"
   seed_record_date: 2026-09-12
   seed_record_summary: "Food-portion control was executed successfully; later an acute external/family stressor was followed by beer/alcohol use and cancellation of the planned training. Store as separate causal episodes, not as binary success/failure."
 
 pilot_metrics_candidates:
-  - Decision-to-Action Conversion
-  - Plan recall loss
-  - Intent decay
-  - Recovery latency
-  - Trajectory drift frequency
-  - Unexpected-event sensitivity
-  - Repeated selection-point patterns
+  - Selected-to-Realized Continuation Rate
+  - Plan Recall Loss
+  - Prompted vs Unprompted Realization
+  - Recovery Latency
+  - Selected-to-Realized Gap Reasons
+  - Repeated Selection-Point Patterns
 
 sources_of_truth:
   lab_state: "docs/PRODUCT_LAB/LAB_STATE.yaml"
@@ -80,14 +94,19 @@ sources_of_truth:
   selection_capacity_model: "docs/PRODUCT_LAB/SELECTION_CAPACITY_V0.md"
   training_hypothesis: "docs/PRODUCT_LAB/TRAINING_ARCHITECTURE_V0.md"
   minimal_recovery_loop: "docs/PRODUCT_LAB/MINIMAL_RECOVERY_LOOP.md"
+  reality_event_model: "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
+  pilot_metrics_spec: "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
+  participant_data_policy: "docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md"
 
 new_chat_bootstrap:
   read_in_order:
     - "docs/PRODUCT_LAB/LAB_STATE.yaml"
     - "docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md"
+    - "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
+    - "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
     - "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
     - "docs/PRODUCT_LAB/DECISION_LOG.md"
-  instruction: "Do not open SP-LAB-002 automatically. Continue SP-LAB-PILOT-001 unless the owner explicitly changes direction."
+  instruction: "Do not open SP-LAB-002 automatically. Continue SP-LAB-PILOT-001 unless the owner explicitly changes direction. External user pilot remains unopened."
 
 constraints:
   lab_does_not_open_phase_4_to_8: true
@@ -101,6 +120,12 @@ constraints:
   do_not_open_SP_LAB_002_without_explicit_owner_direction: true
   no_medical_claims_from_body_pilot: true
   do_not_reduce_day_to_binary_success_failure: true
+  selected_continuation_not_equal_realized_continuation: true
+  conscious_non_action_may_be_realized_continuation: true
+  partial_execution_is_partial_test: true
+  selected_realized_gap_is_data_not_moral_failure: true
+  no_composite_selection_capacity_score_without_validation: true
+  raw_external_participant_data_must_not_enter_public_repo: true
 
 phase_exit_criteria:
   LAB-0:
@@ -108,6 +133,7 @@ phase_exit_criteria:
     - canonical-to-product bridge is defined at skeleton level
     - initial hypothesis register exists
     - research sequence is defined
+    - owner self-pilot has a traceable event model and measurement specification
     - no conflict with current Phase 3 governance remains
 
 sp_lab_002_gate:

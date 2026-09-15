@@ -1,0 +1,33 @@
+name: Selection Point consistency
+
+on:
+  pull_request:
+    paths:
+      - 'docs/FOUNDATION/**'
+      - 'docs/PRODUCT_LAB/**'
+      - 'scripts/check_project_consistency.py'
+      - '.github/workflows/selection-point-consistency.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/FOUNDATION/**'
+      - 'docs/PRODUCT_LAB/**'
+      - 'scripts/check_project_consistency.py'
+      - '.github/workflows/selection-point-consistency.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check project invariants
+        run: python scripts/check_project_consistency.py
