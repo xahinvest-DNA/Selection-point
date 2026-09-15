@@ -35,7 +35,7 @@
 25. **SP-SRC-025** — `25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md` — owner refinement P13 через temporal scale / trajectory aggregation.
 26. **SP-SRC-026** — `26_2026-09-11_BUTTERFLY_ACTION_INTERNAL_ALIGNMENT_AND_EMERGENT_PATH.md` — Butterfly Action / проявляющаяся траектория.
 27. **SP-SRC-027** — `27_2026-09-11_TRAJECTORY_TIMEFRAMES_DELAYED_FEEDBACK_AND_TEMPORAL_ENDURANCE.md` — временные масштабы, delayed feedback и временная устойчивость выбора.
-28. **SP-SRC-028** — `28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md` — owner insight и рабочая boundary: внутренний выбор ≠ фактически реализованное продолжение ≠ последствия ≠ использованная обратная связь.
+28. **SP-SRC-028** — `28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md` — owner insight: внутренний выбор ≠ фактически реализованное продолжение ≠ последствия ≠ использованная обратная связь; источник RC-018.
 
 ## SP-SRC-018 — сквозная формула
 
@@ -85,13 +85,15 @@ SP-SRC-025 уточнил stage-specific механизм через време�
 
 Рабочий термин-кандидат: **временная устойчивость выбора**. «Фрактальность» сохраняется только как многомасштабная метафора.
 
-## SP-SRC-028 — выбор / реализация / feedback
+## SP-SRC-028 — утверждённая RC-018 boundary
 
 Owner insight:
 
 > **Сделанный внутренний выбор не означает совершённого действия, которое в реальности и даёт обратную связь.**
 
-Рабочая граница:
+После Architect pass, RC-018 и Red Team Андрей явно утвердил surviving candidate.
+
+Утверждённая граница:
 
 ```text
 выбранное продолжение
@@ -104,7 +106,11 @@ Owner insight:
 
 > **Неисполненный выбор не получает внешней проверки как неслучившееся действие. Он остаётся реальным внутренним фактом и может дать данные о самом выборе и о разрыве исполнения.**
 
-Источник передан в `CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md`, RC-018 и Red Team. Канон не изменён; ожидается owner decision.
+Утверждённые слои:
+- `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+- `../CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+- `../LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+- `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
 
 ## Использование источников
 
@@ -120,4 +126,4 @@ source material
 
 ## Текущая граница
 
-**SP-S4-P13 утверждён. Ступень 4 завершена полностью. SP-S5-P01 не открыт. Сквозное уточнение choice → realized continuation → feedback прошло Architect / RC-018 / Red Team и ожидает явного решения владельца.**
+**SP-S4-P13 утверждён. Ступень 4 завершена полностью. RC-018 утверждён как cross-cutting boundary. SP-S5-P01 не открыт.**
