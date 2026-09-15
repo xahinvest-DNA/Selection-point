@@ -1,11 +1,14 @@
 # Decision PSYS-002 — Selection Point Work Operating Model
 
 **Date:** 2026-09-15  
-**Status:** approved  
+**Status:** superseded  
+**Superseded by:** `DECISION_PSYS_003_2026-09-15.md` / `SP-OPS-002`  
 **Decision owner:** Андрей  
-**Operating model:** `SP-OPS-001`
+**Historical operating model:** `SP-OPS-001`
 
-## Decision
+> Historical record only. This decision no longer has active operating authority. The separate ChatGPT Work layer was removed from the project because its usage limits could block project progress.
+
+## Historical decision
 
 Approve a four-contour operating model for Selection Point:
 
@@ -15,7 +18,7 @@ Approve a four-contour operating model for Selection Point:
 4. **Codex / Technical Executor** — implementation of approved technical requirements.
 5. **Pilot / Reality** remains the validation layer that can confirm, weaken, contradict or leave unresolved project hypotheses.
 
-The operational flow is:
+Historical operational flow:
 
 ```text
 Owner
@@ -28,11 +31,9 @@ Owner
 → Owner decision
 ```
 
-## Stage-development rule
+## Stage-development rule retained by successor model
 
-Training material will be developed strictly one Foundation stage at a time.
-
-For each stage the project should proceed through:
+Training material is developed strictly one Foundation stage at a time:
 
 ```text
 Stage Capability Spec
@@ -45,11 +46,9 @@ Stage Capability Spec
 → Stage Review
 ```
 
-The architecture of the canonical stage is not assumed to equal the architecture of teaching. Canonical parameters may be regrouped into a smaller or larger set of trainable mechanisms if the stage meaning and boundaries are preserved.
+The architecture of the canonical stage is not assumed to equal the architecture of teaching.
 
-## Questionnaire decision
-
-The questionnaire is explicitly classified as a telemetry / information-capture instrument.
+## Boundaries retained by successor model
 
 ```text
 questionnaire ≠ Selection Point
@@ -57,36 +56,10 @@ questionnaire completion ≠ Selection Capacity proof
 measurement adherence ≠ target-domain realization
 ```
 
-## Health-pilot decision
+`Healthy and effective body` remains a training/evidence domain, not the definition of SP.
 
-`Healthy and effective body` is retained as the current training/evidence domain, not as the definition of SP.
+Codex still implements approved technical meaning and does not define it.
 
-Body-domain events may be used to train and observe general SP capabilities while preserving the existing Health Lab evidence and medical-scope boundaries.
+## Supersession
 
-## Authority boundaries
-
-ChatGPT Work may research, synthesize, audit, prepare learning material and assemble evidence, but may not independently:
-
-- change canon;
-- declare hypotheses confirmed;
-- declare stage mastery;
-- infer causality from sequence/correlation;
-- open Foundation/Product Lab/external-pilot gates;
-- promote Health Lab findings upward without explicit review.
-
-Codex implements approved technical meaning and does not define it.
-
-## Current authorization
-
-This decision authorizes beginning the **Stage 1 capability-definition cycle**.
-
-It does not open:
-- Foundation Stage 5;
-- SP-LAB-002;
-- external-user pilot.
-
-It does not create an efficacy claim or a Selection Capacity score.
-
-## Next methodological question
-
-> What exactly should a person become able to do after mastering Stage 1 that was not reliably available before?
+`PSYS-003` preserves the useful governance distinctions from this decision but moves research, synthesis, audits, artifact production and evidence assembly into ordinary Chat. No active project step requires ChatGPT Work.
