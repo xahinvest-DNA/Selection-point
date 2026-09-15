@@ -51,7 +51,8 @@ Pilot / Reality — эмпирическая проверка и право оп
 - утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
 - создан `SP-PSYS-001` — Project Control Plane для синхронизации уровней/репозиториев;
 - утверждён `SP-OPS-001` — рабочий контур Owner → Chat → Work → Codex → Reality → review;
-- разрешён старт цикла **Stage 1 capability definition** для разработки обучающего материала;
+- **Stage 1 Capability Spec `SP-TR-S1-CAP-001` утверждён; текущий разрешённый цикл — Gate B, Stage 1 Research Packet**;
+- задание для Work: `docs/TRAINING/STAGE_1_RESEARCH_PACKET_WORK_BRIEF.md`;
 - `SP-HLAB-001` зарегистрирован как private evidence node owner self-pilot;
 - открытого архитектурного параметра нет;
 - SP-S5-P01 — следующий кандидат, **не открыт**;
@@ -137,6 +138,12 @@ S5 candidate:
 4. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
 5. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
 
+Для разработки обучения:
+
+1. `docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md`;
+2. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_WORK_BRIEF.md`;
+3. после выполнения Work — `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
+
 Для архитектуры метода:
 
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
@@ -152,4 +159,4 @@ S5 candidate:
 3. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
 4. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`.
 
-**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-001 активны. Цикл Stage 1 capability definition разрешён. SP-S5-P01 и внешний пилот не открыты.**
+**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-001 активны. Stage 1 Capability Spec утверждён; текущий Gate B — Stage 1 Research Packet. SP-S5-P01 и внешний пилот не открыты.**
