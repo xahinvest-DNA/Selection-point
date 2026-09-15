@@ -124,7 +124,7 @@ This prevents the research instrument from validating itself merely because the 
 
 ## 9. Gates preserved by this decision
 
-Creating the Project Control Plane does **not**:
+Creating or changing the Project Control Plane does **not**:
 
 - open Stage 5;
 - open SP-LAB-002;
@@ -133,21 +133,24 @@ Creating the Project Control Plane does **not**:
 - turn the health pilot into a medical protocol;
 - authorize external participant raw data in the public repository.
 
-## 10. Work operating model
+## 10. Active operating model
 
-Project work follows the approved operating model `SP-OPS-001` in `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`.
+Project execution follows `SP-OPS-002` in `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
 
 The execution layers are:
 
 ```text
 Owner — direction and final approval
-Chat — methodological architecture, critique, Red Team and interpretation
-Work — context-heavy research, synthesis, audits and bounded artifact production
-Codex — approved technical implementation
+Chat — methodology + research + synthesis + audits + bounded artifacts + evidence review + Red Team
+Codex — approved technical implementation only when required
 Pilot / Reality — empirical validation layer
 ```
 
-A task must not be delegated to a lower execution layer while it still contains an unresolved higher-layer methodological decision.
+There is no required ChatGPT Work layer. Tool or mode availability must not become a project-level dependency.
+
+The critical separation is maintained through governance and epistemic labels inside Chat rather than by handing work to a separate product mode.
+
+A task must not be delegated to Codex while it still contains an unresolved methodological decision.
 
 For stage-training development the standard artifact chain is:
 
@@ -164,13 +167,15 @@ Stage Capability Spec
 
 The questionnaire remains a telemetry instrument and is not Selection Point itself.
 
-Approval of this operating model authorizes beginning the Stage 1 capability-definition cycle but does not open any previously closed Foundation, Product Lab or external-pilot gate.
+Current authorization is Gate B — Stage 1 Research Packet, executed directly in Chat. Gate C remains closed until Red Team review and Owner approval.
 
 ## 11. Sources of truth
 
 System topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
 
-Project work operating model: `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`.
+Project operating model: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
+
+Current recovery checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_SP_OPS_002.md`.
 
 Foundation state: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 
