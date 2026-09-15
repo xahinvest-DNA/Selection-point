@@ -25,6 +25,7 @@
 18. `CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md` — Architect pass сквозной boundary choice → realized continuation.
 19. `RC-018_CORE_CHOICE_ACTION_FEEDBACK.md` — Reality Check этого boundary.
 20. `CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md` — Red Team / Falsification.
+21. `RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md` — явное утверждение RC-018.
 
 ## Основной цикл
 
@@ -55,15 +56,11 @@
 
 Ступень 4 завершена полностью.
 
-## Активный cross-cutting review — RC-018
+## Последний закрытый cross-cutting review — RC-018
 
-15 сентября 2026 года открыта проверка границы:
+15 сентября 2026 года после Architect pass, Reality Check и Red Team Андрей явно утвердил boundary:
 
-> **Сделанный внутренний выбор не означает совершённого действия, которое в реальности и даёт обратную связь.**
-
-После Architect pass, RC-018 и Red Team surviving candidate:
-
-> **Selection Point должен различать внутренне выбранное и фактически реализованное продолжение. Выбранное направление является реальным внутренним фактом, но не засчитывается как исполнение. Последствия относятся к фактически произошедшему продолжению; использованная обратная связь является ещё отдельным шагом.**
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
 
 Коротко:
 
@@ -83,8 +80,16 @@ partial execution → partial test
 action ≠ clear causal attribution automatically
 ```
 
-RC-018 ожидает явного owner decision. До него `ARCHITECTURAL_DECLARATION.md`, HCM и canonical layer не меняются.
+RC-018 утверждён как cross-cutting clarification, не как SP-HCM-10.
+
+Утверждённые файлы:
+
+- `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+- `../CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+- `../LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+- `RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
+- `../PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
 
 ## Текущая остановка
 
-**Ступень 4 завершена. SP-S5-P01 не открыт. RC-018 owner-decision-pending.**
+**Ступень 4 завершена. RC-018 закрыт как owner-approved. SP-S5-P01 не открыт.**
