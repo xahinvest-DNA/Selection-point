@@ -1,145 +1,298 @@
 # Stage 1 Capability Spec
 
-**ID:** SP-TR-S1-CAP-001  
+**ID:** SP-TR-S1-CAP-002  
 **Status:** approved  
 **Approved:** 15 September 2026  
+**Supersedes:** `SP-TR-S1-CAP-001` at the training layer  
 **Foundation stage:** Stage 1 — «Жизнь внутри автоматизма»  
-**Purpose:** define the practical human capability that Stage 1 training must develop without altering the approved Foundation canon.
+**Revision trigger:** `SP-TR-S1-PMR-001`  
+**Related boundary:** `SP-TR-S1-AUTO-NEUTRAL-001`
 
 ## 1. Approved capability
 
-> **Человек учится превращать один собственный автоматический эпизод из переживаемой неизбежности в различимый процесс, находить первый реально доступный участок своего участия и фактически менять хотя бы одно дальнейшее продолжение.**
+> **Человек учится замечать релевантный автоматический процесс как происходящее сейчас, различать в текущей позиции уже случившееся и ещё открытое, находить реально доступное участие относительно текущей реальности и значимого направления и фактически осуществлять следующее продолжение.**
 
 Human-facing formulation:
 
-> **Я начинаю видеть не только то, что со мной произошло, но и как я к этому пришёл — и где ещё могу изменить то, что произойдёт дальше.**
+> **Я замечаю, что происходит сейчас, вижу, что уже случилось и что ещё открыто, и могу участвовать в следующем ходе, не теряя реальность и то, куда мне важно двигаться.**
 
 Compact training formulation:
 
-> **Увидеть происходящее с собой как процесс и вернуть участие в его следующем продолжении.**
+> **Заметить происходящее сейчас и вернуть участие в следующем продолжении.**
 
-## 2. Three nested abilities
+## 2. Core shift from v1
 
-### A. Distinction
+v1 emphasized reconstructing one automatic episode into a distinguishable process.
 
-The learner begins to separate what was previously experienced as one self-evident whole:
-
-```text
-fact ≠ state
-state ≠ interpretation
-interpretation ≠ reality
-activated self-image ≠ whole self
-urgent operational task ≠ objective demand of the situation
-impulse ≠ mandatory action
-```
-
-The purpose is not total doubt. The purpose is to make the internal assembly of the episode observable.
-
-### B. Reconstruction
-
-The learner can reconstruct one concrete automatic episode as a functional sequence rather than a global personality verdict.
-
-Typical reconstruction may distinguish:
-- factual conditions;
-- current state;
-- perceived situation;
-- activated self-image / role;
-- operational task;
-- habitual continuation;
-- immediate result;
-- deferred price;
-- next factual position.
-
-The reconstruction remains a hypothesis where internal causes are inferred; it must not be upgraded into certain causality merely because the sequence sounds coherent.
-
-### C. Participation
-
-Reconstruction must not end with explanation. The learner looks for the first **actually available** window in which the further continuation can still change.
-
-That window may be:
-- before the main action;
-- during an already started action;
-- after the action while consequences continue;
-- while preparing the next similar cycle.
-
-Loss of choice at one point does not imply loss of choice in every later continuation.
-
-## 3. Minimum observable expression
-
-Stage 1 capability is not demonstrated by correct language or insight alone.
-
-A meaningful observation requires, at minimum:
+v2 keeps distinguishability but removes causal reconstruction as a prerequisite.
 
 ```text
-a concrete episode became distinguishable
-+
-a realistically available participation point was identified
-+
-at least one continuation / consequence / next-cycle condition was actually changed or deliberately realized
-+
-feedback from reality became available
+v1 risk:
+what happened → why / how I got here → available participation
+
+v2 center:
+what is happening now → what is already realized → what remains open → available participation → realization → consequence
 ```
 
-Late detection remains valid. Stage 1 does not require prevention of the first automatic reaction.
+The past may be used as current data. Hidden origins do not need to be discovered.
 
-## 4. What Stage 1 does not require
+## 3. Four nested abilities
 
-Stage 1 mastery does not require:
-- disappearance of automatic reactions;
-- constant self-awareness;
-- control over emotions or impulses;
-- prevention of every first reaction;
-- perfect reconstruction;
-- success in every life domain;
+### A. Relevant present contact
+
+The learner notices only the elements of the current position that materially matter for the next continuation:
+
+- external facts;
+- bodily state/sensation;
+- emotion;
+- thought or interpretation;
+- impulse;
+- action already underway;
+- action already completed;
+- consequence already present;
+- resource/constraint/support;
+- currently relevant task, responsibility or declared direction;
+- uncertainty / unknown.
+
+The point is not exhaustive self-monitoring.
+
+```text
+notice enough
+≠ notice everything
+```
+
+### B. Open-edge distinction
+
+The learner distinguishes:
+
+```text
+what already happened
+≠
+what is happening now
+≠
+what has not happened yet
+```
+
+and, where relevant:
+
+```text
+external fact
+≠ internal event
+≠ interpretation
+≠ impulse
+≠ realized action
+≠ consequence
+≠ unknown
+```
+
+The purpose is to reveal a relevant unfinished edge in the current position rather than reconstruct a hidden causal story.
+
+### C. Direction-relative participation
+
+The learner identifies a realistically available next continuation relative to:
+
+```text
+current facts
++ resources/constraints
++ safety
++ relevant local task/responsibility/direction
+```
+
+The direction used at Stage 1 is operational, not a claim about the person's final authentic life direction. Later stages may revise it.
+
+### D. Reality coupling
+
+The learner actually realizes the continuation and observes the next position.
+
+That continuation may be:
+
+- act;
+- stop or limit an ongoing action;
+- consciously not act;
+- wait for necessary information;
+- repair or reduce consequences;
+- ask for support;
+- change a current condition;
+- prepare the next cycle;
+- revise the intended continuation after a new fact.
+
+## 4. Minimum observable expression
+
+A meaningful Stage 1 observation requires, at minimum:
+
+```text
+a relevant current process / position became distinguishable
++
+what was already realized was separated from what remained meaningfully open
++
+a realistically available next participation point was identified relative to current reality and a relevant direction/task
++
+a continuation was actually realized (including conscious non-action where appropriate)
++
+its consequence / next position became available as reality data
+```
+
+No hidden psychological cause is required.
+
+## 5. What Stage 1 does not require
+
+Stage 1 does not require:
+
+- discovering the root cause of behavior;
+- explaining childhood origins;
+- identifying trauma;
+- finding a hidden need or motive;
+- reconstructing the complete past episode;
+- locating the exact lost choice point retrospectively;
+- proving why the automatic response happened;
+- constant present-moment awareness;
+- exhaustive introspection;
+- preventing the first automatic reaction;
 - desired external outcome;
-- independent performance without any support;
-- discovery of the full repeating scenario of Stage 2.
+- independence from all support;
+- Stage 2 pattern recognition across episodes.
 
-## 5. Anti-criteria / false mastery
+## 6. Role of the past
 
-The following do **not** establish capability by themselves:
-- ability to explain psychological mechanisms;
-- fluent use of SP vocabulary;
-- agreement with another person's reconstruction;
+The past is relevant when it exists in the current position as actionable data.
+
+Examples:
+
+```text
+I already sent the message.
+I already drank alcohol.
+I promised something yesterday.
+I slept four hours.
+This debt exists now.
+I have postponed this task for five days.
+The earlier action produced a current consequence.
+```
+
+These facts may matter directly to the next continuation.
+
+By contrast, statements such as:
+
+```text
+I did this because of childhood rejection.
+I protected my identity.
+I unconsciously wanted failure.
+```
+
+are explanatory hypotheses and are not required for Stage 1 capability.
+
+## 7. Cause boundary
+
+The revision does **not** forbid causal knowledge.
+
+Directly known or testable causal relations may be useful:
+
+```text
+I slept four hours → I am now exhausted.
+I sent the message → the agreement changed.
+Changing this environmental condition repeatedly changes what happens next.
+```
+
+The excluded requirement is different:
+
+> **The learner does not need to infer a hidden psychological origin before participating in the next continuation.**
+
+```text
+known/testable causal information
+≠
+speculative hidden psychological cause
+```
+
+## 8. Automaticity neutrality boundary
+
+Automaticity is not treated as a defect, enemy or moral failure.
+
+```text
+automatic ≠ bad
+conscious control ≠ automatically good
+```
+
+Automatic processes may be efficient, protective, learned, resource-saving or simply familiar. Their specific function in a given episode may remain unknown.
+
+Stage 1 does not train permanent conscious control over the person or elimination of automatic behavior. It trains the ability to notice when a relevant continuation remains open and participation is needed and available.
+
+Binding formulation:
+
+> **Selection Point не воюет с автопилотом. Он возвращает участие там, где продолжение ещё можно изменить.**
+
+See `STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md`.
+
+## 9. Anti-criteria / false mastery
+
+The following do not establish the capability by themselves:
+
+- deep psychological explanation;
+- discovery of a plausible hidden motive;
+- accurate description of childhood origins;
+- fluent SP vocabulary;
+- extensive present-moment self-description without changed participation;
+- awareness without any realized continuation;
+- intention without realization;
 - questionnaire completion;
-- desire to change;
-- one accurate retrospective analysis;
-- better external outcome without evidence of the operation;
-- seeing mechanisms in other people;
-- self-criticism after the episode.
+- seeing the mechanism in another person;
+- retrospective identification of many hypothetical alternatives;
+- arbitrary action unrelated to current reality/direction;
+- better outcome caused only by changed circumstances or external control;
+- reducing automatic behavior merely for the sake of being more conscious.
 
-Primary trap:
+Primary anti-trap remains:
 
 > **Я понял, как это происходит, — и снова заменил выбор пониманием.**
 
-## 6. Relationship to approved Foundation canon
+Training-layer extension:
 
-This capability spec is a training-layer operationalization of already approved Stage 1 architecture. It does not redefine Foundation meaning.
+> **Я объясняю, почему это произошло, вместо того чтобы заметить, что происходит сейчас и что ещё могу сделать.**
 
-Primary canonical supports:
-- SP-S1-P01 — life inside automatic reaction;
-- SP-S1-P02 — perceived model vs reality;
-- SP-S1-P03 — activated self-image vs whole self;
-- SP-S1-P04 — operational task as immediate decision driver;
-- SP-S1-P05 — actually available point of participation;
-- SP-S1-P06 — illusion of inevitable continuation;
-- SP-S1-P08 — reconstruction of one automatic episode;
-- SP-S1-P11 — practical work must end in observable participation;
-- SP-S1-P12 — repeated, partially independent operation is required for transition;
-- SP-S1-P13 — explanation must not replace participation.
+## 10. Relationship to Foundation canon
 
-## 7. Current development gate
+This approved training-layer revision does not reject Foundation statements about state, perceived model, self-image, operational task, habit or automatic chains.
 
-**Gate A — Capability Definition: approved.**
+It changes their role in training:
 
-Next allowed artifact under `SP-OPS-001`:
+- they may explain or contextualize observed processes;
+- they are not mandatory learner discoveries;
+- they do not need to be correctly inferred before participation becomes possible;
+- the learner may leave causality `unknown` and still demonstrate Stage 1 capability.
 
-**Gate B — Stage 1 Research Packet.**
+P05, P11, P13 and RC-018 become especially central:
 
-This approval does not:
-- change Foundation Stage 1 canon;
-- open Foundation Stage 5;
-- open SP-LAB-002;
-- open an external-user pilot;
-- define numeric transition thresholds;
-- validate any trainer or measurement instrument.
+```text
+available participation
+→ realized continuation
+→ consequence
+→ feedback
+```
+
+## 11. Critical boundary against shallow presentism
+
+Present-centered does not mean moment-only or context-blind.
+
+A current position is selective but may include relevant accumulated facts and consequences.
+
+```text
+relevant now
+= current external reality
++ current internal state
++ already-created consequences
++ relevant commitments/resources/constraints
++ relevant local direction/task
++ what remains open next
+```
+
+A week of repeated non-execution can therefore be a present fact when it materially changes the current position. Stage 1 need not infer a scenario from it.
+
+Short formula:
+
+> **The present is the place of participation, not an excuse to forget history.**
+
+## 12. Current development gate
+
+**Gate A — Capability Definition: approved as `SP-TR-S1-CAP-002`.**
+
+`SP-TR-S1-CAP-001` remains available through Git history as the superseded training-layer formulation.
+
+Gate C must align to this capability. Gate D may open only after the revised Gate C artifact is approved.
