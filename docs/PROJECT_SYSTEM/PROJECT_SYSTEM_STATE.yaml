@@ -1,0 +1,95 @@
+schema_version: 1
+system: Selection Point
+updated_at: 2026-09-15
+status: active
+control_plane_id: SP-PSYS-001
+control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
+sync_protocol: docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md
+
+system_model:
+  principle: "Selection Point is one project with multiple authority and evidence layers; repository boundaries do not imply separate projects."
+  control_plane_repo: xahinvest-DNA/Selection-point
+  control_plane_role: "Own system topology, authority boundaries, approved methodology contracts, promotion gates and cross-repo synchronization rules."
+
+nodes:
+  - node_id: SP-CORE
+    repository: xahinvest-DNA/Selection-point
+    visibility: public
+    role: foundation_and_product_control
+    authority:
+      - canonical_methodology
+      - foundation_governance
+      - product_lab_hypotheses
+      - reality_event_model
+      - measurement_contracts
+      - participant_data_policy
+    ssot:
+      architecture: docs/FOUNDATION/PROJECT_STATE.yaml
+      product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
+
+  - node_id: SP-HLAB-001
+    repository: xahinvest-DNA/Selection-point-health-lab
+    visibility: private
+    role: private_evidence_node
+    purpose: "Owner self-pilot in body / health / physical-efficiency domain."
+    authority:
+      - raw_owner_self_pilot_data
+      - normalized_pilot_events
+      - local_reviews
+      - local_open_hypotheses
+    forbidden_authority:
+      - redefine_selection_point_canon
+      - promote_local_hypothesis_to_general_claim_automatically
+      - store_external_participant_data_without_separate_pilot_gate
+    upstream_contract: docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md
+    node_state_owned_by_node: docs/NODE_STATE.yaml
+    status: active_owner_self_pilot
+
+flows:
+  downward:
+    direction: SP-CORE -> evidence nodes
+    carries:
+      - approved_boundaries
+      - event_model_contract
+      - measurement_contract
+      - privacy_and_evidence_rules
+    rule: "A downstream node may specialize capture fields but may not silently weaken upstream boundaries."
+  upward:
+    direction: evidence nodes -> SP-CORE
+    carries:
+      - de_identified_observations
+      - candidate_patterns
+      - falsification_signals
+      - protocol_findings
+    rule: "Raw personal data never moves upward; findings require explicit promotion review before changing Product Lab or canon."
+
+current_shared_contract:
+  foundation_boundary: RC-018
+  event_model: Reality Event Model v0.2
+  metrics_spec: Pilot Metrics Specification v0.1
+  key_chain: "PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord -> ModelUpdateRecord"
+  selected_not_realized: true
+  conscious_non_action_may_be_realized: true
+  partial_execution_is_partial_test: true
+  prompt_exposure_must_be_recorded: true
+  measurement_adherence_is_not_domain_outcome: true
+
+current_gates:
+  stage_5: unopened
+  product_lab_002: unopened
+  external_user_pilot: unopened
+  owner_self_pilot: active
+
+promotion_rule:
+  raw_data_to_public_repo: forbidden
+  local_hypothesis_to_product_hypothesis: explicit_review_required
+  product_hypothesis_to_canon: foundation_governance_required
+
+new_chat_bootstrap:
+  read_first:
+    - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
+    - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
+  then_route_by_task:
+    foundation: docs/FOUNDATION/PROJECT_STATE.yaml
+    product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
+    health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
