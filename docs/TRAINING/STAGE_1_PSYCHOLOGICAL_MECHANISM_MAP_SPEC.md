@@ -2,234 +2,243 @@
 
 **Artifact ID:** SP-TR-S1-PMM-SPEC-001  
 **Gate:** C — Psychological Mechanism Map  
-**Status:** active  
+**Status:** active_revision  
 **Date:** 15 September 2026  
-**Upstream:** `SP-TR-S1-CAP-001`, `SP-TR-S1-RP-001`, `SP-TR-S1-RP-RT-001`, decision `SP-TR-DEC-S1-B-001`
+**Upstream:** `SP-TR-S1-CAP-001`, `SP-TR-S1-RP-001`, `SP-TR-S1-RP-RT-001`, `SP-TR-S1-PMR-001`  
+**Capability revision under review:** `SP-TR-S1-CAP-002-PROP`
 
 ## 1. Purpose
 
-Gate C must identify the smallest defensible set of psychological processes and trainable operations required to explain and train the approved Stage 1 capability without converting the Stage 1 canon into an unfalsifiable causal theory.
+Gate C must identify the smallest defensible training architecture needed to restore participation in Stage 1 without making causal explanation of the learner's past a prerequisite.
 
-Approved capability:
+The central revision question is:
 
-> Человек учится превращать один собственный автоматический эпизод из переживаемой неизбежности в различимый процесс, находить первый реально доступный участок своего участия и фактически менять хотя бы одно дальнейшее продолжение.
+> **What must a person be able to notice and do in the current position in order for at least one further continuation to stop being fully automatic?**
 
-Gate C is not a lesson plan, practice protocol, measurement system, trainer design or product implementation.
+Gate C is not a lesson plan, therapy model, causal theory of personality, practice protocol, measurement system or product implementation.
 
-## 2. Central methodological rule
+## 2. Present-moment methodological rule
 
-Do not begin with a target number of mechanisms.
-
-Begin by classifying each candidate item:
+The training path must not require:
 
 ```text
-phenomenon
-→ possible contributing process
-→ trainable operation
-→ observable expression
-→ reality test / weakening condition
+what happened
+→ why it happened
+→ hidden cause / need / trauma / identity explanation
+→ only then action
 ```
 
-A canonical parameter does not become a psychological mechanism merely because it has a stable name.
+The preferred Stage 1 path is:
 
-## 3. Required classification dimensions
+```text
+what is happening now
+→ what has already happened / been realized
+→ what is still unfolding or has not happened yet
+→ where participation is available now
+→ selected continuation
+→ realized continuation
+→ consequence
+→ feedback / next current position
+```
 
-Every retained candidate must be evaluated through this matrix:
+Causal explanation may remain `unknown`.
+
+## 3. Meaning of “now”
+
+`Now` does not mean a memoryless instant.
+
+The current position may contain:
+
+- present external facts;
+- present internal events;
+- actions already realized;
+- consequences accumulated from earlier actions;
+- commitments, debts, plans and constraints that still exist;
+- current resource/body state partly created by earlier behavior;
+- known recent history when it materially changes the next move.
+
+Therefore:
+
+```text
+present-centered
+≠ history-blind
+
+use relevant past facts now
+≠ infer hidden historical cause
+```
+
+## 4. Required classification dimensions
+
+Every retained item must be classified through this matrix:
 
 | Dimension | Required question |
 |---|---|
-| Phenomenon | What is actually experienced, reported or observed? |
-| Candidate mechanism/process | What process could contribute to the phenomenon? |
-| Epistemic status | APPROVED description, DERIVED relation, HYPOTHESIS, or OPEN? |
+| Current phenomenon | What is occurring or present now? |
+| Source/status | External fact, internal event, interpretation, impulse, realized action, consequence, constraint/resource, or unknown? |
+| Temporal status | Already happened, happening now, or not yet happened? |
 | Trainable operation | What operation must become more available to the learner? |
-| Observability | What behavior/event would indicate that operation occurred? |
-| Competing explanation | What else could explain the same episode? |
-| Falsifier / weakening condition | What would reduce confidence in the proposed relation? |
-| Stage boundary | Does the item require Stage 2–4 capability? |
-| Support boundary | Can a prompt/AI produce the answer instead of the learner? |
-| RC-018 check | Is selected continuation being confused with realized continuation or feedback? |
+| Observability | What event would indicate that operation occurred? |
+| Participation | What next continuation remains realistically available? |
+| Support boundary | Did the learner produce the substantive discrimination/continuation or did the system do it? |
+| RC-018 check | Are selection, realization, consequence and feedback still distinct? |
+| History boundary | Is past material being used as current fact or as speculative causal explanation? |
+| Stage boundary | Does this require Stage 2–4 competence? |
 
-## 4. Mandatory source set
+A causal mechanism is not required merely because the artifact is called a Psychological Mechanism Map.
 
-Gate C must use at minimum:
+## 5. Binding constraints
 
-- `docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md`;
-- `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`;
-- `docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md`;
-- `docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md`;
-- `docs/FOUNDATION/CANONICAL/02_STAGE_1_CANONICAL.md`;
-- `docs/FOUNDATION/CANONICAL/03_STAGE_1_P11_CANONICAL.md`;
-- `docs/FOUNDATION/CANONICAL/04_STAGE_1_P12_CANONICAL.md`;
-- `docs/FOUNDATION/CANONICAL/05_STAGE_1_P13_CANONICAL.md`;
-- `docs/FOUNDATION/CANONICAL/01_HUMAN_CHANGE_MODEL_CANONICAL.md`;
-- `docs/FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
-- relevant Stage 1 full-theory files;
-- `docs/FOUNDATION/LIBRARIES/RISKS_AND_BOUNDARIES.md`;
-- `docs/FOUNDATION/LIBRARIES/EVIDENCE_MAP.md`;
-- `docs/FOUNDATION/LIBRARIES/EXAMPLE_LIBRARY.md`.
+### C1 — causal explanation is not a prerequisite
 
-## 5. Binding Red Team constraints
+Stage 1 success cannot require identifying:
 
-### C1 — no tautological mechanism
+- a root cause;
+- childhood origin;
+- trauma;
+- hidden need;
+- unconscious intention;
+- identity-protection mechanism;
+- “true” operational task.
 
-Do not explain “the person experiences the links as fused” by inventing a hidden entity called `fusion` unless independent explanatory content is added.
+These may be hypotheses in other contexts, but they are not required for participation now.
 
-Keep distinct:
+### C2 — current-process noticing before explanation
+
+The first question is not `why?` but:
+
+> **What is happening now?**
+
+Useful follow-ups:
 
 ```text
-experienced closure
-≠ named causal mechanism
+What has already happened?
+What is still happening?
+What has not happened yet?
+What here is fact, internal event, interpretation, impulse or consequence?
+Where can I still participate?
 ```
 
-### C2 — operational task stays hypothetical
+### C3 — no shallow presentism
 
-The functional question “what did this action solve or obtain now?” is useful.
+The learner may not use “only now matters” to erase responsibility, accumulated consequences or known trajectory facts.
 
-But the answer must allow:
+If an earlier action created a current condition, that condition belongs to now.
 
-- unknown;
-- several competing functions;
-- objective necessity;
-- physiological need;
-- habit;
-- skill/resource deficit;
-- evidence against the first interpretation.
+### C4 — current experience is not infallible
 
-No hidden motive is required for successful Stage 1 reconstruction.
-
-### C3 — mechanism vs capability
-
-Do not define the Stage 1 capability itself as the mechanism that causes the capability.
-
-Separate:
+Present-moment noticing does not make interpretation true.
 
 ```text
-what organizes / narrows the automatic episode
-from
-what operation the learner develops to regain participation
+I notice the thought “he is attacking me”
+≠
+he is objectively attacking me
 ```
 
-### C4 — RC-018 is a verification layer
+Fact / internal event / interpretation remain distinct.
 
-Keep distinct:
+### C5 — noticing is not completion
+
+Awareness without changed participation is not Stage 1 practical completion.
 
 ```text
-selected continuation
-≠ realized continuation
+noticed
+≠ selected
+≠ realized
 ≠ consequence
 ≠ used feedback
 ```
 
-RC-018 surrounds the mechanism map as an empirical discipline. It is not automatically another psychological mechanism.
+RC-018 remains binding.
 
-### C5 — transition and anti-trap material
+### C6 — action is not always the answer
 
-P12 and P13 primarily specify readiness/learning-quality boundaries unless a narrower process is independently justified.
+A valid realized continuation may be:
 
-### C6 — body is cross-cutting
+- deliberate action;
+- stopping/limiting an ongoing action;
+- conscious non-action;
+- waiting for necessary information;
+- asking for help;
+- repair;
+- preparing a next cycle;
+- revising the choice after a new fact.
 
-P09 does not authorize a universal bodily marker or a special “body mechanism.” Specific causal body claims require separate evidence.
+Present-centered does not mean impulsive action.
 
-### C7 — do not import later-stage competence
+### C7 — retrospective work is instrumental only
 
-Stage 1 may use immediate next-position consequences but must not require:
+Retrospective review is allowed when it helps establish the current factual position or prepare the next cycle.
 
-- recurring-scenario detection from Stage 2;
-- mature self-model restructuring from Stage 3;
-- stable multi-timeframe trajectory reading under load from Stage 4.
+It is not required to reconstruct a lost hypothetical choice point or hidden cause.
 
-### C8 — participant must produce substantive content
+### C8 — contributor hypotheses stay designer-side
 
-A system/AI may:
+Appraisal, self-image, local priority, habit and other contributor families may remain useful research hypotheses for designers.
 
-- preserve sequence;
-- ask discriminating questions;
-- show competing hypotheses;
-- point out missing observations.
+They must not become required learner discoveries or hidden labels assigned by AI/coach.
+
+### C9 — participant owns substantive noticing and continuation
+
+A system may prompt attention, preserve distinctions and reflect stated content.
 
 It may not:
 
-- assign the participant's hidden motive as fact;
-- construct the whole episode and count agreement as skill;
-- decide psychological availability on the participant's behalf;
-- count a selected move as executed.
+- tell the learner what hidden process “really” caused the event;
+- count agreement with system analysis as ability;
+- select the meaningful continuation for the learner;
+- count an intention as execution.
 
-### C9 — availability is evidence-sensitive and partly uncertain
+### C10 — Stage 1 stays local
 
-For a proposed alternative continuation distinguish:
+Stage 1 may use relevant accumulated facts in the current position but does not require:
 
-```text
-objectively possible
-noticed
-known / understood
-psychologically available
-resource-supported
-actually executable
-actually realized
-```
-
-Retrospective availability may remain `unknown`.
-
-### C10 — map must be able to lose
-
-Every explanatory candidate must preserve at least one competing explanation and one condition that would weaken it.
+- Stage 2 scenario inference across several episodes;
+- Stage 3 stable self-model/direction restructuring;
+- Stage 4 multi-timeframe trajectory management under load.
 
 ## 6. Expected artifact structure
 
-The Gate C artifact should contain:
+The revised Gate C artifact should contain:
 
-1. **Map thesis** — what the map explains and what it does not.
-2. **Category architecture** — explicit distinction between phenomena, candidate processes, trainable operations and safeguards.
-3. **Candidate process map** — minimal process set, with epistemic status.
-4. **Trainable operation map** — operations required for the Stage 1 capability.
-5. **Relationship map** — how processes and operations interact without asserting unsupported causality.
-6. **Competing explanations / falsifiers** — per retained mechanism/process.
-7. **Observability hooks** — what later Gate F could potentially observe; no thresholds yet.
-8. **Stage-boundary audit** — proof that Stage 2–4 capability has not been smuggled into Stage 1.
-9. **AI/support boundary** — what participant must do versus what scaffolding may do.
-10. **Unresolved questions** — explicit OPEN items.
-11. **Red Team section** — strongest attacks against the proposed final map.
-12. **Gate C verdict recommendation** — approve / revise / reject; Owner approval required to close Gate C.
+1. **Map thesis** — why causal explanation is non-required.
+2. **Current-position field** — what kinds of present data matter.
+3. **Trainable operation map** — minimal operations from noticing to realized participation.
+4. **History/past boundary** — relevant facts vs causal archaeology.
+5. **Designer-only contributor hypotheses** — background status only, if retained.
+6. **RC-018 reality loop** — selection, realization, consequence, feedback.
+7. **Observability hooks** — no thresholds.
+8. **Stage-boundary audit**.
+9. **AI/support boundary**.
+10. **Anti-traps** — analysis without action, shallow presentism, impulsive action, self-monitoring overload.
+11. **Red Team**.
+12. **Gate C recommendation** — Owner approval required.
 
-## 7. Candidate starting families — not approved mechanisms
+## 7. Candidate trainable operations — starting hypothesis
 
-Gate C may examine, but must not assume, candidate contributors such as:
-
-```text
-state-dependent attentional weighting
-perceived-model certainty / appraisal closure
-self-image or role constraint
-local functional priority
-habitual response availability
-objective/resource constraints
-```
-
-And candidate trainable operations such as:
+Gate C may examine, merge or rename:
 
 ```text
-episode localization
-fact / interpretation / state distinction
-functional hypothesis formation without overclaiming
-realistic availability discrimination
-selection of one continuation
-realization / execution discrimination
-consequence noticing
-feedback incorporation
+notice relevant current process
+→ distinguish current-position elements and temporal status
+→ identify the open edge: what has not happened yet
+→ identify one realistically available participation point
+→ select and actually realize one continuation
+→ observe consequence and update the next current position
 ```
 
-These are starting hypotheses only. Gate C may merge, split, rename or reject them.
+No `functional hypothesis` or `why` step is mandatory.
 
 ## 8. Explicit non-goals
 
 Gate C must not produce:
 
+- root-cause analysis training;
+- childhood/trauma interpretation;
+- hidden-need typology;
 - finished exercises;
-- lesson sequence;
-- course copy;
-- prompts for the final trainer;
+- final course sequence;
 - validated metrics;
 - transition thresholds;
-- personality typology;
 - clinical diagnosis;
 - universal causal claims;
 - a composite Selection Capacity score;
@@ -239,13 +248,14 @@ Gate C must not produce:
 
 Gate C is ready for Owner review only when:
 
-- every retained mechanism/process has a clear epistemic status;
-- mechanism and trainable operation are not circularly defined;
-- competing explanations remain visible;
-- the map can be contradicted by reality;
-- P11/P12/P13 and RC-018 are placed in the correct architectural role;
+- causal explanation is not required for capability;
+- `now` includes relevant accumulated facts but not mandatory causal archaeology;
+- current facts, internal events, interpretations and impulses remain distinguishable;
+- the open future edge is explicit;
+- actual realization is required;
+- RC-018 distinctions remain intact;
+- the architecture cannot be satisfied by analysis or vocabulary alone;
 - Stage 2–4 abilities have not been imported;
-- support/scaffold boundaries are explicit;
-- the map remains sufficient to explain what needs to be trained for `SP-TR-S1-CAP-001`.
+- support/scaffold boundaries are explicit.
 
-Until explicit Owner approval, Gate D remains closed.
+Until explicit Owner approval of the revised capability alignment and Gate C map, Gate D remains closed.
