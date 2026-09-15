@@ -8,7 +8,7 @@ Selection Point рассматривается как **один проект с
 
 Управляющий контур: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` и `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`.
 
-Утверждённая операционная модель работы: `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md` (`SP-OPS-001`).
+Активная операционная модель: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md` (`SP-OPS-002`).
 
 Текущая топология:
 
@@ -25,15 +25,16 @@ Selection-point-health-lab (private)
 
 `Selection-point-health-lab` хранит приватные longitudinal raw-data, локальные reviews и рабочие гипотезы. Он не имеет права автоматически менять Product Lab или канон. Raw personal data обратно в публичный репозиторий не переносятся.
 
-Рабочий контур проекта разделяет полномочия:
+Рабочий контур проекта:
 
 ```text
 Owner — направление и окончательное решение
-Chat — методологическая архитектура, критика, Red Team, интерпретация
-Work — research / synthesis / audits / bounded artifact production
-Codex — утверждённая техническая реализация
+Chat — методология + research + synthesis + audits + bounded artifacts + evidence review + Red Team
+Codex — только утверждённая техническая реализация, когда она действительно нужна
 Pilot / Reality — эмпирическая проверка и право опровергнуть модель
 ```
+
+Отдельный режим ChatGPT Work **не является частью активной системы и не требуется ни для одного шага проекта**. Устойчивость проекта важнее зависимости от отдельного режима или его лимитов.
 
 ## Текущее состояние
 
@@ -50,9 +51,10 @@ Pilot / Reality — эмпирическая проверка и право оп
 - последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
 - утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
 - создан `SP-PSYS-001` — Project Control Plane для синхронизации уровней/репозиториев;
-- утверждён `SP-OPS-001` — рабочий контур Owner → Chat → Work → Codex → Reality → review;
+- утверждён `SP-OPS-002` — рабочий контур Owner → Chat → Codex при необходимости → Reality → Chat/Red Team → Owner;
+- предыдущий `SP-OPS-001` superseded и не имеет активной власти;
 - **Stage 1 Capability Spec `SP-TR-S1-CAP-001` утверждён; текущий разрешённый цикл — Gate B, Stage 1 Research Packet**;
-- задание для Work: `docs/TRAINING/STAGE_1_RESEARCH_PACKET_WORK_BRIEF.md`;
+- Gate B выполняется прямо в Chat по `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`;
 - `SP-HLAB-001` зарегистрирован как private evidence node owner self-pilot;
 - открытого архитектурного параметра нет;
 - SP-S5-P01 — следующий кандидат, **не открыт**;
@@ -133,16 +135,17 @@ S5 candidate:
 Для проекта в целом:
 
 1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
-2. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
-3. `docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md`;
-4. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
-5. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
+2. `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_SP_OPS_002.md`;
+3. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
+4. `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`;
+5. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
+6. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
 
 Для разработки обучения:
 
 1. `docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md`;
-2. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_WORK_BRIEF.md`;
-3. после выполнения Work — `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
+2. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`;
+3. текущий ожидаемый артефакт — `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
 
 Для архитектуры метода:
 
@@ -159,4 +162,4 @@ S5 candidate:
 3. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
 4. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`.
 
-**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-001 активны. Stage 1 Capability Spec утверждён; текущий Gate B — Stage 1 Research Packet. SP-S5-P01 и внешний пилот не открыты.**
+**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-002 активны. Stage 1 Capability Spec утверждён; текущий Gate B — Stage 1 Research Packet, выполняемый прямо в Chat. SP-S5-P01 и внешний пилот не открыты.**
