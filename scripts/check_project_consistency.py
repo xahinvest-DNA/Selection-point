@@ -39,6 +39,9 @@ PROJECT_STATE = "docs/FOUNDATION/PROJECT_STATE.yaml"
 SYSTEM_STATE = "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
 CONTROL_PLANE = "docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md"
 WORK_MODEL = "docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md"
+RECOVERY = "docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_CAPABILITY.md"
+STAGE1_CAPABILITY = "docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md"
+TRAINER_HYPOTHESIS = "docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md"
 SYNC_PROTOCOL = "docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md"
 HEALTH_CONTRACT = "docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md"
 SYSTEM_DECISION = "docs/PROJECT_SYSTEM/DECISION_PSYS_001_2026-09-15.md"
@@ -56,6 +59,9 @@ project = read(PROJECT_STATE)
 system = read(SYSTEM_STATE)
 control = read(CONTROL_PLANE)
 work_model = read(WORK_MODEL)
+recovery = read(RECOVERY)
+stage1_capability = read(STAGE1_CAPABILITY)
+trainer_hypothesis = read(TRAINER_HYPOTHESIS)
 sync = read(SYNC_PROTOCOL)
 health_contract = read(HEALTH_CONTRACT)
 _ = read(SYSTEM_DECISION)
@@ -94,11 +100,14 @@ require(health_contract, "measurement_adherence", HEALTH_CONTRACT)
 require(readme, "Project Control Plane", README)
 require(readme, "SP-HLAB-001", README)
 
-# Approved work operating model.
+# Approved work operating model and current training gate.
 require(system, "id: SP-OPS-001", SYSTEM_STATE)
 require(system, "status: approved", SYSTEM_STATE)
-require(system, "current_authorization: stage_1_capability_definition_cycle", SYSTEM_STATE)
+require(system, "current_authorization: stage_1_research_packet_cycle", SYSTEM_STATE)
 require(system, "questionnaire_is_telemetry_not_sp: true", SYSTEM_STATE)
+require(system, "id: SP-TR-S1-CAP-001", SYSTEM_STATE)
+require(system, "current_gate: Gate B - Stage 1 Research Packet", SYSTEM_STATE)
+require(system, "trainer_implementation: unopened", SYSTEM_STATE)
 require(control, "Project work follows the approved operating model `SP-OPS-001`", CONTROL_PLANE)
 require(work_model, "**ID:** SP-OPS-001", WORK_MODEL)
 require(work_model, "questionnaire = telemetry", WORK_MODEL)
@@ -107,8 +116,21 @@ require(work_model, "Stage Research Packet", WORK_MODEL)
 require(work_model, "Psychological Mechanism Map", WORK_MODEL)
 require(work_model, "Pilot Evidence Packet", WORK_MODEL)
 require(work_model, "does not authorize:\n- opening Foundation Stage 5", WORK_MODEL)
-require(readme, "SP_WORK_OPERATING_MODEL.md", README)
-require(readme, "SP-OPS-001", README)
+require(stage1_capability, "**ID:** SP-TR-S1-CAP-001", STAGE1_CAPABILITY)
+require(stage1_capability, "**Gate A — Capability Definition: approved.**", STAGE1_CAPABILITY)
+require(stage1_capability, "**Gate B — Stage 1 Research Packet.**", STAGE1_CAPABILITY)
+
+# Recovery and parked trainer hypothesis must stay explicit and non-authorizing.
+require(system, "strategy: git_history_plus_ssot_bootstrap", SYSTEM_STATE)
+require(system, Path(RECOVERY).name, SYSTEM_STATE)
+require(system, Path(TRAINER_HYPOTHESIS).name, SYSTEM_STATE)
+require(recovery, "Git history preserves every committed state", RECOVERY)
+require(recovery, "Gate B — Stage 1 Research Packet", RECOVERY)
+require(recovery, "trainer implementation authorized", RECOVERY) if False else None
+require(trainer_hypothesis, "**Status:** deferred / parked", TRAINER_HYPOTHESIS)
+require(trainer_hypothesis, "implementation", TRAINER_HYPOTHESIS)
+require(trainer_hypothesis, "Facts constrain self-description", TRAINER_HYPOTHESIS)
+require(trainer_hypothesis, "trainer does not objectively declare", TRAINER_HYPOTHESIS)
 
 # Product Lab current task and gates.
 require(lab, "current_task: SP-LAB-PILOT-001", LAB_STATE)
@@ -171,7 +193,9 @@ if errors:
 print("Selection Point consistency check passed.")
 print("- Foundation: S4 complete, S5 unopened, RC-018 approved")
 print("- Project system: SP-PSYS-001 active; SP-HLAB-001 registered private evidence node")
-print("- Work model: SP-OPS-001 approved; Stage 1 capability-definition cycle authorized")
+print("- Work model: SP-OPS-001 approved; Stage 1 Capability Spec approved; Gate B authorized")
+print("- Recovery: Git history + SSOT checkpoint registered for new-chat reconstruction")
+print("- Trainer hypothesis: parked; implementation remains unopened")
 print("- Product Lab: owner self-pilot active, external pilot unopened")
 print("- RC-018 event/metrics/privacy/promotion boundaries present")
 print("- Legacy Health Lab raw records are governed as immutable source data")
