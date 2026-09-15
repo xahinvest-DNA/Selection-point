@@ -1,767 +1,636 @@
 # Stage 1 Psychological Mechanism Map
 
-**ID:** SP-TR-S1-PMM-001  
-**Status:** ready_for_chat_red_team  
+**ID:** SP-TR-S1-PMM-002-PROP  
+**Status:** revised_ready_for_red_team  
 **Gate:** C — Psychological Mechanism Map  
 **Date:** 15 September 2026  
-**Upstream capability:** `SP-TR-S1-CAP-001`  
 **Upstream research:** `SP-TR-S1-RP-001`, `SP-TR-S1-RP-RT-001`  
+**Revision trigger:** `SP-TR-S1-PMR-001`  
+**Capability alignment candidate:** `SP-TR-S1-CAP-002-PROP`  
 **Execution contract:** `SP-TR-S1-PMM-SPEC-001`  
-**Nature:** training-layer mechanism/operation map; not new Foundation canon, not clinical model, not validated causal theory.
+**Nature:** training-layer operation map; not new Foundation canon, not therapy, not validated causal theory.
 
 ---
 
-## 1. Map thesis
+# 1. Map thesis
 
-Stage 1 does not require a single hidden psychological mechanism called “automaticity”, “fusion”, “ego”, “sabotage” or “lack of awareness”. The approved capability can be trained more defensibly by distinguishing:
+The central Gate C finding is now stronger:
 
-```text
-A. what is experienced / observed in an automatic episode
-B. candidate processes that may contribute to narrowing participation
-C. operations the learner must become able to perform
-D. safeguards that keep the learning reality-coupled
-```
+> **Stage 1 does not need to teach a person why the automatic process arose. It needs to teach the person to notice enough of what is happening now to regain participation in what happens next.**
 
-The map therefore uses **two linked layers**, not one flat list of “mechanisms”:
+The required movement is:
 
 ```text
-candidate contributors to automatic continuation
-↕
-trainable operations that restore distinguishability and participation
+what is happening now
+→ distinguish the current position
+→ separate what already happened from what remains open
+→ find a realistically available participation point
+→ select a continuation
+→ actually realize it
+→ observe what happens next
 ```
 
-RC-018 surrounds both layers as a verification boundary:
+Causal explanation may remain unknown.
 
-```text
-selected continuation
-≠ realized continuation
-≠ consequence
-≠ used feedback
-```
-
-The map explains what must be distinguishable and trainable for Stage 1. It does **not** establish that any candidate contributor is a universal cause of behavior.
+This is not anti-psychology. It is a scope decision: causal archaeology is not required to produce the practical aim of Selection Point.
 
 ---
 
-## 2. Category architecture
+# 2. What counts as the current position
 
-### 2.1 Phenomena
+`Now` is not a zero-history instant.
 
-Phenomena are what may be experienced, reported or observed in one concrete episode:
+The current position may include:
 
-- an interpretation is experienced as the situation itself;
-- current state changes what is salient or feels possible;
-- an activated role/self-image makes some actions feel incompatible with “who I am”;
-- a local task or need outranks a broader declared direction;
-- a familiar response appears first, fastest or as the only practical continuation;
-- the whole continuation is experienced as inevitable;
-- the learner notices the process only after action has begun or ended.
+## CPOS-1 — External facts
 
-These phenomena are **not themselves hidden mechanisms**.
+Examples:
 
-### 2.2 Candidate contributing processes
+- where the person is;
+- what another person actually said/did;
+- time available;
+- money/resource constraints;
+- an obligation that currently exists;
+- an already-created external consequence.
 
-Candidate processes are explanatory families that may contribute to the phenomena. They remain evidence-sensitive and can overlap.
+## CPOS-2 — Internal events
 
-### 2.3 Trainable operations
+Examples:
 
-Trainable operations describe what the learner must increasingly be able to do. They are not explanations for why the original episode happened.
+- bodily sensation;
+- fatigue/hunger/excitation;
+- emotion;
+- thought;
+- image/memory;
+- urge/impulse.
 
-### 2.4 Safeguards / context
+These are real as internal events but do not automatically prove an external interpretation.
 
-Safeguards prevent the training from becoming self-sealing, blaming, overly introspective, AI-produced or detached from realized action and consequences.
+## CPOS-3 — Interpretations and predictions
 
----
-
-# 3. Candidate process map
-
-The smallest defensible working set contains **three contributor families** plus one non-mechanism context layer. The number three is not canon; it is a compression hypothesis for Gate C review.
-
-## CP-1 — State-weighted appraisal / situation-model narrowing
-
-**Epistemic status:** `DERIVED + externally-compatible; not externally validated as an SP-specific mechanism`.
-
-### Phenomenon
+Examples:
 
 ```text
-external fact
-+ current bodily / emotional state
-+ attention / salience
-+ interpretation / prediction
-→ a situation model that feels self-evident
+“He disrespects me.”
+“I will fail.”
+“If I stop now, everything is ruined.”
+“I have no other option.”
 ```
 
-The learner may experience:
+They may be accurate or inaccurate. Stage 1 does not require disproving them; it requires not silently equating them with established fact.
 
-```text
-“this is what is happening”
-```
+## CPOS-4 — Already-realized continuation
 
-when the available evidence supports only:
+What has already actually occurred:
 
-```text
-“this is how the situation currently appears to me.”
-```
+- the message was sent;
+- alcohol was consumed;
+- money was spent;
+- the voice was raised;
+- the task was postponed;
+- a planned action was not executed;
+- conscious non-action was maintained.
 
-### Possible contributing process
+Under RC-018, selected but unrealized continuation does not belong here.
 
-Current state and appraisal may alter salience, meaning, expected outcomes and the apparent action field. This is consistent with SP-HCM-01/02 and P01/P02, but the exact causal composition of a particular episode remains open.
+## CPOS-5 — Existing consequences
 
-### What this process is not
+Consequences already present now, whether immediate or accumulated:
 
-- not a claim that the interpretation is false;
-- not a claim that emotion causes all actions;
-- not a hidden entity called “fusion”;
-- not proof that more cognitive options were psychologically available in the original moment.
+- current bodily condition;
+- damaged agreement;
+- reduced available time;
+- debt;
+- unfinished work;
+- changed relationship context;
+- a better or worse next position.
 
-### Competing explanations
+## CPOS-6 — Resources, constraints and support
 
-- the interpretation may be substantially accurate;
-- objective constraints may genuinely narrow the field;
-- missing expertise may make alternatives unavailable;
-- the main driver may instead be habit, resource depletion, social constraint or another factor.
+What is actually available now:
 
-### Weakening condition
-
-Confidence in CP-1 as a major contributor should decrease if changes in state or appraisal do not materially alter what the person notices, predicts or can execute across comparable episodes.
-
-### Trainable operations linked
-
-- TO-1 Episode localization and segmentation;
-- TO-2 Epistemic differentiation.
-
----
-
-## CP-2 — Context-activated self/role and local-priority constraint
-
-**Epistemic status:** `DERIVED/HYPOTHESIS as a contributor family; components are Foundation-approved descriptions`.
-
-### Phenomenon
-
-Within a concrete episode:
-
-```text
-activated role / self-image
-and/or
-urgent local task / need
-```
-
-can constrain which actions feel admissible or urgent, even while a broader direction remains sincerely endorsed.
-
-Examples of local priority may include:
-
-- obtain relief;
-- restore control;
-- avoid exposure/evaluation;
-- protect status or role;
-- finish an immediate task;
-- meet a real physiological or practical need.
-
-### Possible contributing process
-
-A contextually active self-representation and/or focal local goal may temporarily dominate action selection. P03 and P04 support the distinction, but they do not prove that self-image or a hidden “operational task” is present in every episode.
-
-### Critical epistemic rule
-
-`operational task` is never promoted from inference to fact merely because it creates a coherent story.
-
-Allowed outputs include:
-
-```text
-unknown
-several competing functions
-objective necessity
-physiological need
-habit
-skill/resource deficit
-mixed explanation
-```
-
-### Competing explanations
-
-- the action may simply be the best available response;
-- the short-term priority may be rational and explicitly chosen;
-- no identity protection may be involved;
-- the apparent “function” may be a post-hoc narrative;
-- the behavior may be mostly context-triggered habit.
-
-### Weakening condition
-
-Confidence should decrease when the proposed self-role/function does not predict any meaningful difference in choice, attention, felt admissibility or later behavior, or when alternative explanations fit the episode better.
-
-### Trainable operations linked
-
-- TO-2 Epistemic differentiation;
-- TO-3 Functional hypothesis without closure;
-- TO-4 Availability discrimination.
-
----
-
-## CP-3 — Habitual response availability / default continuation
-
-**Epistemic status:** `HYPOTHESIS for a specific episode; externally-compatible as a general behavioral process`.
-
-### Phenomenon
-
-A familiar continuation may appear rapidly and with little comparison against alternatives, especially in recurring contexts or states.
-
-```text
-familiar cue / state / context
-→ readily available response
-→ immediate local payoff or completion
-→ increased probability of reuse
-```
-
-This can contribute to the subjective formula:
-
-> “There was nothing else to do.”
-
-### Possible contributing process
-
-Repetition can increase the accessibility/default status of context-linked responses. This is compatible with habit research, but Stage 1 does not label every repeated action a habit.
-
-### What this process is not
-
-- not proof of compulsion;
-- not proof that goals are irrelevant;
-- not proof that an alternative was executable;
-- not a moral category.
-
-### Competing explanations
-
-- deliberate choice;
-- objective best option;
-- resource or time constraint;
-- social rule;
-- lack of skill/knowledge;
-- strong local goal rather than habit.
-
-### Weakening condition
-
-Confidence should decrease if the response changes readily without changing cues, resources, state or deliberation, or if the person repeatedly chooses it after explicit comparison for reasons consistent with current goals.
-
-### Trainable operations linked
-
-- TO-1 Episode localization and segmentation;
-- TO-4 Availability discrimination;
-- TO-5 Realized-continuation test and feedback.
-
----
-
-## CX-1 — Objective / resource / support constraints
-
-**Category:** `CONTEXT, not psychological mechanism`.
-
-This layer is deliberately outside CP-1–CP-3.
-
-Relevant constraints may include:
-
-- physical safety;
-- money;
+- skill;
 - time;
-- legal/social restrictions;
-- knowledge and skill;
-- fatigue, hunger, illness or other physiological limits;
-- availability of another person or professional support;
-- irreversible consequences already created.
+- physical ability;
+- information;
+- another person;
+- professional help;
+- environment;
+- tools;
+- safety limits.
 
-### Binding rule
+## CPOS-7 — Unknown
 
-The map must never infer psychological closure merely because only one safe/executable continuation is available.
+Unknown is a valid state.
+
+Stage 1 must not fill uncertainty with psychologically satisfying explanations.
+
+---
+
+# 3. The critical temporal distinction
+
+The central Stage 1 distinction is not primarily `cause vs effect`.
+
+It is:
 
 ```text
-few options
-≠ low Selection Capacity
-
-many imaginable options
-≠ real freedom
+already happened
+≠ happening now
+≠ not happened yet
 ```
+
+The Selection Point is sought at the **open edge** of the current position: the part of continuation that is not yet fully realized.
+
+Examples:
+
+```text
+I already drank one beer
+≠
+I must drink the next one
+
+I already shouted
+≠
+I must continue the conflict
+
+I already missed the planned workout
+≠
+I must abandon the rest of the day
+
+I already made a bad trade
+≠
+I must place the revenge trade
+```
+
+The method does not need to prove why the first action occurred before the second continuation can change.
 
 ---
 
 # 4. Trainable operation map
 
-The approved Stage 1 capability can be represented by **five operations**. These are operations to be trained, not causal explanations of automaticity.
+The revised minimal Stage 1 map contains **five operations**.
 
-## TO-1 — Episode localization and temporal segmentation
+They are not five hidden psychological mechanisms. They are five operations that can restore participation.
 
-**Function:** turn a global verdict (“I always…”, “I am…”, “everything went wrong”) into one concrete reconstructable episode.
+## TO-1 — Notice relevant current process
 
-### Minimal operation
+**Function:** shift from automatic continuation to contact with what is materially present now.
 
-The learner can identify:
+Minimal question:
 
-```text
-starting conditions
-→ what changed
-→ what was actually done / not done
-→ immediate result
-→ what happened next
-```
+> **What is happening now?**
 
-Detailed interpretation is not yet required.
+Relevant content may include external event, bodily state, emotion, thought, impulse, action already underway, or consequence.
 
 ### Observable expression
 
-A bounded episode can be described with enough temporal order to distinguish at least one transition rather than only a global summary.
+The participant can identify at least one relevant current event without immediately replacing it with a global story about self or cause.
 
-### Support boundary
+### Failure mode
 
-A system may help delimit the time window. It cannot manufacture the sequence and count learner agreement as competence.
+Continuous self-monitoring is not required. The goal is sufficient noticing for the next continuation, not permanent inner surveillance.
 
 ---
 
-## TO-2 — Epistemic differentiation
+## TO-2 — Distinguish the current position
 
-**Function:** separate heterogeneous elements that were experienced as one obvious reality.
+**Function:** prevent current experience from collapsing into one unquestioned command.
 
-### Minimal distinctions
+Useful distinctions include:
 
 ```text
-fact ≠ state
-state ≠ interpretation
-interpretation ≠ prediction
-activated self-image ≠ whole self
-felt urgency ≠ objective demand
-impulse ≠ mandatory action
+external fact
+≠ internal event
+≠ interpretation / prediction
+≠ impulse
+≠ already-realized action
+≠ consequence
+≠ constraint/resource
+≠ unknown
 ```
 
-The learner need not perform every distinction in every episode. Only relevant distinctions are required.
+The participant does not need to classify every element.
 
 ### Observable expression
 
-The learner can mark at least one important element as:
+At least one distinction materially changes how the next continuation can be considered.
+
+Example:
 
 ```text
-observed / known
-self-reported internal state
-interpretation
-unknown
+fact: he answered briefly
+internal event: anger
+interpretation: “he disrespects me”
+impulse: send an aggressive reply
 ```
 
-and can preserve uncertainty where evidence is absent.
-
-### Competing failure mode
-
-Pseudo-differentiation can become endless doubt or linguistic compliance without behavioral consequence.
+The method does not require deciding why the anger arose.
 
 ---
 
-## TO-3 — Functional hypothesis without closure
+## TO-3 — Locate the open edge
 
-**Function:** ask what the behavior appeared to accomplish locally without inventing a definitive hidden motive.
+**Function:** distinguish what is already fixed by reality from what has not yet happened.
 
-### Minimal operation
-
-The learner can formulate one or more provisional answers to:
-
-> What did this continuation appear to solve, obtain, avoid, preserve or complete right then?
-
-and can retain:
+Core questions:
 
 ```text
-unknown
-or
-multiple plausible explanations
+What has already happened?
+What is still unfolding?
+What has not happened yet?
 ```
+
+This is the operational heart of Stage 1.
 
 ### Observable expression
 
-The learner can name an immediate payoff/function hypothesis and at least one plausible competing explanation, or explicitly state that the function is not known.
-
-### Safeguard
-
-No successful Stage 1 episode requires discovery of the “true hidden motive.”
-
----
-
-## TO-4 — Realistic availability discrimination
-
-**Function:** find the first point at which a different continuation may actually be executable without pretending that every imaginable alternative was available.
-
-### Required ladder
-
-For any proposed move distinguish:
-
-```text
-objectively possible
-→ noticed?
-→ known / understood?
-→ psychologically available?
-→ resources/support present?
-→ executable as a first step?
-→ actually realized?
-```
-
-Retrospective answers may remain `unknown`.
-
-### Observable expression
-
-The learner can identify one candidate participation point and give concrete reasons for why the proposed next step was or is executable from the current position.
+The participant can name at least one next element that is not yet realized and therefore remains potentially influenceable.
 
 ### Boundary
 
-Late participation is fully valid: limiting damage, repairing, asking for help or changing the next-cycle condition may be the first available move.
+If no safe/executable alternative exists, the method does not invent one.
+
+Late detection remains fully valid.
 
 ---
 
-## TO-5 — Realized-continuation test and feedback incorporation
+## TO-4 — Identify and realize one available participation
 
-**Function:** prevent insight or intention from being counted as change.
+**Function:** turn noticing into a real continuation.
 
-### Minimal operation
+The participant asks:
+
+> **Where can I still participate now?**
+
+Then selects one realistically executable continuation.
+
+Possible realized continuations include:
+
+- act;
+- stop;
+- reduce scale/duration;
+- delay for relevant information;
+- conscious non-action;
+- repair;
+- ask for help;
+- change an environmental condition;
+- prepare the next cycle;
+- revise the choice after a new fact.
+
+### Availability boundary
 
 ```text
-select one continuation
-→ distinguish what was actually realized
-→ observe consequence / next position
-→ identify what this does or does not support
-→ adjust the next cycle if relevant
+imaginable
+≠ available
+≠ executable
+≠ realized
 ```
 
-### RC-018 binding rule
+The participant does not need to prove that the same move was available earlier.
+
+### Observable expression
+
+A continuation is actually realized or clearly recorded as not realized/partially realized/revised.
+
+---
+
+## TO-5 — Re-enter reality through consequence
+
+**Function:** stop the training from ending at awareness or intention.
+
+Minimal loop:
 
 ```text
-choice ≠ execution
-execution ≠ desired outcome
+selected continuation
+→ realized continuation
+→ observed consequence / next position
+→ relevant update
+```
+
+RC-018 remains binding:
+
+```text
+selected ≠ realized
+realized ≠ desired outcome
 consequence ≠ causal proof
 consequence ≠ automatically used feedback
 ```
 
 ### Observable expression
 
-The learner can state separately:
+The participant can distinguish:
 
 - what was selected;
-- what actually happened;
-- whether execution was full, partial, conscious non-action, revised after new fact, not executed or unknown;
-- what consequence was observed;
-- what, if anything, should change next.
-
-### Boundary
-
-One realized alternative does not prove mastery. One negative outcome does not prove the alternative was wrong.
+- what was actually realized;
+- what happened next;
+- what this changes, if anything, in the next current position.
 
 ---
 
-# 5. Relationship map
+# 5. What happened to causal/mechanism analysis
 
-The map does **not** assert a universal fixed sequence. A conservative interaction model is:
+The previous Gate C version foregrounded candidate contributor families:
 
 ```text
-[external conditions / resources]
-          ↓
-[state + appraisal / situation model] ───────┐
-          ↕                                  │
-[active self / role + local priority]        │
-          ↕                                  ├─→ experienced narrowing / inevitability
-[habitual response availability]             │
-          ↕                                  │
-[objective constraints] ─────────────────────┘
-
-               TRAINING RESPONSE
-
-TO-1 localize one episode
-   ↓
-TO-2 distinguish relevant layers
-   ↓
-TO-3 keep function explanatory hypotheses open
-   ↓
-TO-4 identify a realistically available participation point
-   ↓
-TO-5 realize / observe / use feedback
+state/appraisal
+self-image / local priority
+habit/default response
 ```
 
-The downward training sequence is a **learning architecture hypothesis**, not a claim that the mind operates linearly in that order.
+The revised architecture does **not** declare these false.
 
-A learner may enter at any point:
+Their role changes:
 
-- only after consequences;
-- during an action already underway;
-- before a familiar response;
-- while preparing the next cycle.
+```text
+possible designer-side explanatory hypotheses
+≠ mandatory learner-facing operations
+```
 
----
+They may help research, safety, adaptation or later theory. But Stage 1 success does not require the learner to correctly identify which one caused the episode.
 
-# 6. External compatibility check — not validation
+A valid Stage 1 record may end with:
 
-This section records compatibility only. It does not upgrade SP constructs to scientific entities.
+```text
+Why did the first action happen? UNKNOWN.
+What is happening now? DISTINGUISHABLE.
+What remains open? DISTINGUISHABLE.
+What did I do next? OBSERVABLE.
+```
 
-## 6.1 Automaticity is multidimensional
-
-Reviews of automaticity distinguish multiple features and causal routes rather than one perfectly coherent automatic-process entity. This supports the Gate C decision not to create one universal “fusion mechanism.”
-
-## 6.2 Habit/default responding
-
-Habit research supports context-linked repetition and efficient default responding while also showing that habits and deliberate goals can coexist. This is compatible with CP-3 and incompatible with the simplistic rule “habit means no goal.”
-
-## 6.3 Appraisal
-
-Meta-analytic and process research supports substantial relationships between appraisal and emotional responding while retaining important heterogeneity and model uncertainty. This is compatible with CP-1 but does not prove that appraisal is the unique cause of action.
-
-## 6.4 Self / identity
-
-Research supports links between active self-concept/identity and behavior, but reviews also highlight construct-overlap and operationalization problems. This supports keeping CP-2 cautious and episode-local rather than treating “identity” as a sufficient hidden cause.
-
-## 6.5 Decentering / metacognitive distinction
-
-Research on mindfulness/acceptance approaches treats decentering as a plausible mediator in some contexts. This is compatible with TO-2’s practical distinction between thought/interpretation and fact, but does not validate SP’s full Stage 1 architecture.
-
-## 6.6 Functional inference caution
-
-Behavior-analytic literature shows that descriptive assessments of behavioral function do not always correspond to experimental functional analyses. Transfer from that clinical literature to SP is limited, but it reinforces a key epistemic rule: observed sequence and plausible function are not equivalent to established cause.
+That is sufficient for the Stage 1 capability candidate.
 
 ---
 
-# 7. Observability hooks for later Gate F
+# 6. History boundary
 
-No thresholds are set here.
+## 6.1 Allowed use of past material
 
-Potential observable events include:
+Past facts are relevant when they exist as part of the current position.
 
-### O1 — bounded episode
-A participant independently identifies one concrete episode rather than only a global self-description.
+Examples:
+
+```text
+I slept four hours.
+I promised this yesterday.
+I already spent the money.
+I have postponed this five days.
+The earlier action created this current consequence.
+```
+
+These facts can change the available next move.
+
+## 6.2 Non-required causal archaeology
+
+Stage 1 does not require:
+
+```text
+I do this because my father...
+This comes from childhood...
+My hidden need is...
+My ego protects...
+I unconsciously want...
+```
+
+Such hypotheses may sometimes be meaningful elsewhere. They are not necessary to restore current participation.
+
+## 6.3 No retrospective lost-choice hunt
+
+The learner is not required to answer:
+
+> “Where exactly could I have chosen differently back then?”
+
+This can generate hindsight bias and self-blame.
+
+Preferred question:
+
+> **“Given the position that exists now, where can I participate next?”**
+
+---
+
+# 7. Protection against shallow presentism
+
+The present-centered architecture has a major risk: `here and now` can be used to erase trajectory.
+
+Selection Point rejects that.
+
+```text
+this moment is where choice occurs
+but
+this moment contains consequences of previous moments
+```
+
+Therefore:
+
+- a week of repeated non-execution is a current fact when known;
+- debt is a current fact even if created earlier;
+- a damaged relationship is a current condition;
+- accumulated fatigue is a current condition;
+- a repeated promise broken many times changes the present position.
+
+Stage 1 does not need full Stage 2/4 trajectory analysis, but it cannot reset reality to zero at each moment.
+
+Short formula:
+
+> **The present is the place of participation, not an excuse to forget history.**
+
+---
+
+# 8. Protection against impulsive action
+
+“Do something now” is not the model.
+
+The next valid continuation may be deliberate waiting, non-action, gathering information or seeking help.
+
+A continuation is evaluated against current facts, resources, safety and relevant direction, not against urgency alone.
+
+Thus:
+
+```text
+present participation
+≠ impulsivity
+```
+
+---
+
+# 9. Protection against analysis-as-progress
+
+**ILLUSTRATION:** the Owner described people who became highly sophisticated at identifying hidden motives, needs, mechanisms and early-life origins, but whose relevant life patterns appeared unchanged years later.
+
+The case is not proof that analysis is useless.
+
+It supports a training warning:
+
+```text
+more explanatory depth
+≠ more Selection Capacity
+```
+
+A Stage 1 interaction that ends with:
+
+> “Now I understand why.”
+
+but produces no change in available participation remains incomplete.
+
+Candidate extension of P13:
+
+> **Я объясняю, почему это произошло, вместо того чтобы заметить, что происходит сейчас и что ещё могу сделать.**
+
+This is training-layer wording, not new Foundation canon.
+
+---
+
+# 10. Relationship map
+
+```text
+CURRENT POSITION
+
+external facts
+internal events
+interpretations / impulses
+already-realized actions
+existing consequences
+resources / constraints
+unknown
+        ↓
+TO-1 NOTICE WHAT IS HAPPENING NOW
+        ↓
+TO-2 DISTINGUISH RELEVANT ELEMENTS
+        ↓
+TO-3 FIND THE OPEN EDGE
+what has not happened yet?
+        ↓
+TO-4 PARTICIPATE AND ACTUALLY REALIZE
+        ↓
+TO-5 OBSERVE CONSEQUENCE / UPDATE CURRENT POSITION
+        ↺
+```
+
+No `why` step is mandatory.
+
+No hidden-motive answer is required.
+
+---
+
+# 11. Observability hooks for later Gate F
+
+No thresholds are defined.
+
+Potential hooks:
+
+### O1 — current-process notice
+Participant identifies a relevant current event before or after prompting.
 
 ### O2 — source distinction
-At least one consequential statement is correctly kept separate as fact, state/self-report, interpretation or unknown.
+Participant distinguishes at least one fact/internal event/interpretation/impulse/consequence boundary.
 
-### O3 — explanatory openness
-A proposed local function remains provisional; at least one competing explanation or `unknown` remains possible when evidence is insufficient.
+### O3 — temporal distinction
+Participant distinguishes something already realized from something not yet realized.
 
-### O4 — availability reasoning
-A candidate move is evaluated using concrete constraints/resources rather than hindsight imagination alone.
+### O4 — open-edge identification
+Participant identifies one still-open continuation without inventing retrospective freedom.
 
-### O5 — participant-produced continuation
-The participant, not the system, selects substantive content for the next continuation.
+### O5 — participant-owned continuation
+Participant selects substantive continuation; system does not supply it as the answer.
 
-### O6 — realization record
-Selected and realized continuation are recorded separately.
+### O6 — realization evidence
+Selected continuation is separately recorded as realized, partial, non-realized, conscious non-action, revised after new fact, or unknown.
 
-### O7 — feedback use
-Observed consequences can change the next hypothesis, condition, support, timing or move.
-
-These hooks are candidates for later observability design, not validated measures.
+### O7 — consequence update
+Observed result changes or confirms the next current position without being treated as automatic causal proof.
 
 ---
 
-# 8. Stage-boundary audit
+# 12. Stage-boundary audit
 
 ## Stage 1 may require
 
-- one episode;
-- retrospective reconstruction;
-- one relevant functional hypothesis;
-- one available participation point;
-- one realized continuation or next-cycle change;
-- immediate or sufficiently observable consequence;
-- limited support/scaffold.
+- noticing one relevant current process;
+- basic fact/internal-event/interpretation distinction;
+- separating already-realized from still-open continuation;
+- one realistically available next participation;
+- actual realization;
+- consequence awareness.
 
-## Stage 1 must not require
+## Stage 1 does not require
 
-### Stage 2 competence
+### Stage 2
 
-- grouping multiple episodes into one scenario;
-- identifying a stable repeating hidden organization;
-- inferring a repeated function from surface similarity.
+- constructing a scenario from multiple episodes;
+- finding a stable repeated hidden function;
+- explaining recurring patterns causally.
 
-### Stage 3 competence
+### Stage 3
 
-- mature restructuring of identity/self-model;
-- stable direction architecture across life domains;
-- autonomous operation across ordinary contexts as an established trait.
+- rebuilding identity architecture;
+- defining a mature life-direction system;
+- stable cross-context self-regulation.
 
-### Stage 4 competence
+### Stage 4
 
-- stable preservation of choice under high load;
-- multi-timeframe trajectory evaluation under stress;
-- reliable transfer under substantially different pressure contexts.
-
-### Consequence
-
-P07/P10 may be used only locally at Stage 1:
-
-> What did this realized continuation make factually easier, harder, more costly, more likely or already true next?
-
-They must not require trajectory diagnosis across weeks/months.
+- robust choice under high load;
+- full multi-timeframe trajectory reading;
+- stable transfer across severe stress contexts.
 
 ---
 
-# 9. AI / support boundary
+# 13. AI / support boundary
 
-## Support may
-
-- delimit one episode;
-- ask what is known vs interpreted;
-- remind the learner of missing categories;
-- show several possible explanations;
-- ask what made a move executable or not;
-- preserve the selected/realized distinction;
-- record consequences.
-
-## Support may not count as learner capability when it
-
-- invents the episode sequence and asks only for agreement;
-- assigns a hidden motive;
-- decides the participant's self-image as fact;
-- declares an alternative psychologically available without evidence;
-- selects the move on the participant's behalf;
-- treats prompt-driven execution as independent mastery;
-- interprets an outcome causally without uncertainty.
-
-### Minimum participant ownership
-
-Substantive learner evidence requires the participant to contribute, in material part:
+A support system may ask:
 
 ```text
-what happened
-what was inferred
-what remains unknown
-where participation appears available
-what continuation to test
-what was actually realized
-what the consequence changes in the next cycle
+What is happening now?
+What has already happened?
+What here is fact vs your interpretation?
+What has not happened yet?
+What can you realistically do now?
+What did you actually do?
+What happened next?
 ```
 
----
+It may not:
 
-# 10. Placement of P09, P11, P12, P13 and RC-018
+- announce the hidden cause;
+- diagnose the participant;
+- tell the participant what childhood event explains the behavior;
+- create a convincing psychological reconstruction and count agreement as skill;
+- decide the meaningful continuation for the participant;
+- count a plan as execution.
 
-## P09 — body manifestations
-
-**Role:** cross-cutting observation/context channel.  
-**Not:** a standalone “body mechanism”.
-
-## P11 — corresponding practices
-
-**Role:** functional requirements for future practice design.  
-**Not:** evidence that concrete practices already exist.
-
-## P12 — transition criteria
-
-**Role:** qualitative readiness profile / learning-quality boundary.  
-**Not:** psychological mechanism and not a numeric threshold system.
-
-## P13 — stage trap
-
-**Role:** anti-false-mastery safeguard.
-
-Primary failure:
-
-> **Я понял, как это происходит, — и снова заменил выбор пониманием.**
-
-## RC-018
-
-**Role:** empirical verification layer across the entire map.  
-**Not:** another Stage 1 psychological mechanism.
+The participant must own the substantive noticing and realized continuation.
 
 ---
 
-# 11. Unresolved questions
+# 14. Open questions
 
-## OPEN-1 — Is CP-2 too broad?
+**OPEN-1:** How little distinction is enough before participation becomes possible?
 
-Self/role constraint and local functional priority may later need to be split if training or evidence shows that they require materially different discriminations.
+**OPEN-2:** Can TO-1 and TO-2 be merged in learner-facing training even if they remain distinct for design?
 
-## OPEN-2 — How much functional inference is actually necessary?
+**OPEN-3:** How should the system surface known multi-day history without dragging Stage 1 into Stage 2 scenario analysis?
 
-Stage 1 may work with a weaker question:
+**OPEN-4:** How should current direction/goal be represented so that `available participation` is not confused with any arbitrary next action?
 
-> “What did this action change or provide immediately?”
+**OPEN-5:** How much consequence observation is needed before an episode becomes usable feedback rather than mere outcome?
 
-without requiring a deeper inferred operational task. This may reduce confabulation.
-
-## OPEN-3 — What is the minimum sufficient differentiation?
-
-The current architecture names many possible elements. Future learning-unit work must determine the smallest set that improves participation without turning reconstruction into a long analytic ritual.
-
-## OPEN-4 — Availability remains partly counterfactual
-
-Retrospective “I could have done X” is intrinsically uncertain. Future observability work needs prospective/near-time evidence where feasible.
-
-## OPEN-5 — Does TO-5 belong fully inside Stage 1 or partly as a cross-stage reality discipline?
-
-The Stage 1 capability requires actual change and feedback, so TO-5 is necessary. However, sophisticated model-updating belongs to later development. At Stage 1, feedback incorporation should remain local and minimal.
-
-## OPEN-6 — External validation
-
-The current process families are externally compatible in parts but have not been validated as the minimal or uniquely correct decomposition for Selection Point.
+**OPEN-6:** When does causal explanation become instrumentally useful, and should it remain completely outside Stage 1 learner flow?
 
 ---
 
-# 12. Internal Red Team against this map
+# 15. Gate C recommendation before Red Team
 
-## Attack A — the three contributor families may still be arbitrary compression
+**Recommendation:** retain the present-centered map as the primary Gate C candidate and remove causal/function reconstruction from required Stage 1 operations.
 
-CP-1–CP-3 are useful conceptual groupings, but there is no evidence that exactly three families exist or that their boundaries are psychologically natural. They must remain a working map, not ontology.
+The proposed core becomes:
 
-**Defense:** the artifact explicitly allows merge/split/rejection and identifies context as separate.
+```text
+NOTICE NOW
+→ DISTINGUISH CURRENT POSITION
+→ FIND WHAT IS STILL OPEN
+→ PARTICIPATE / REALIZE
+→ OBSERVE WHAT HAPPENS NEXT
+```
 
-## Attack B — CP-2 can still become a hidden-motive machine
+Gate D remains closed until:
 
-Even with safeguards, language such as “protecting self-image” can seduce trainer and learner into compelling post-hoc stories.
-
-**Required response:** future learning units should prefer observable immediate payoff/function first and permit `unknown`; identity/function interpretations are optional hypotheses.
-
-## Attack C — TO-2 may reward verbal sophistication
-
-A verbally skilled participant may produce perfect distinctions without changing action.
-
-**Required response:** TO-2 never closes a learning cycle without TO-4/TO-5 evidence.
-
-## Attack D — TO-4 may create hindsight blame
-
-The more articulate the participant becomes, the easier it is to invent alternatives after the fact.
-
-**Required response:** availability requires evidence and may remain `unknown`; current/next-cycle availability is more defensible than retrospective certainty.
-
-## Attack E — TO-5 can reward compliance with the trainer
-
-A prompted action can look like restored capacity.
-
-**Required response:** later observability must preserve prompt/scaffold exposure and distinguish assisted performance from independent availability.
-
-## Attack F — changing continuation does not validate the inferred mechanism
-
-A different action may work even if the reconstruction was wrong.
-
-**Required response:** action tests a continuation and produces new data; it does not retroactively prove the story that generated it.
-
-## Attack G — consequence attribution remains noisy
-
-Outcomes can be delayed, multi-causal and influenced by third parties.
-
-**Required response:** causal confidence remains limited; the map asks what happened next, not “what this action certainly caused.”
-
-## Attack H — the map could become too cognitively heavy for Stage 1
-
-Five trainable operations and multiple distinctions may become a sophisticated analysis system that the Stage 1 person cannot execute.
-
-**Required response:** Gate D must not teach the whole map as one checklist. The map is an architecture for designers; learning units must progressively train minimal discriminations while preserving late entry.
-
----
-
-# 13. Gate C verdict recommendation
-
-**Recommendation:** `PASS WITH CONSTRAINTS → OWNER REVIEW`.
-
-The map is sufficient to proceed because it:
-
-- separates phenomena, candidate contributors, trainable operations and safeguards;
-- avoids a tautological “fusion mechanism”;
-- retains operational task as hypothesis;
-- separates capability from candidate cause;
-- places RC-018 as verification boundary;
-- keeps body as cross-cutting context;
-- does not require Stage 2–4 competence;
-- makes AI/support limits explicit;
-- preserves falsifiers/competing explanations;
-- can be contradicted or simplified by pilot evidence.
-
-### Binding constraints if approved
-
-1. CP-1–CP-3 are **working contributor families**, not validated universal mechanisms.
-2. Future learning design must privilege trainable operations TO-1–TO-5 over teaching mechanism labels.
-3. No learner must identify a hidden motive for Stage 1 success.
-4. Every learning cycle that claims practical capability must reach realized continuation / consequence data under RC-018.
-5. Gate D must aggressively simplify learner-facing load; the mechanism map is designer-facing architecture.
-6. Gate D remains closed until explicit Owner approval.
+1. `SP-TR-S1-CAP-002-PROP` is explicitly approved or revised by Owner;
+2. this map passes a new Red Team focused on shallow presentism and action bias;
+3. Owner explicitly approves revised Gate C.
