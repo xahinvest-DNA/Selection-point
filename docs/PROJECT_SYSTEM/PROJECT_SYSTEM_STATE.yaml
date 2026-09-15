@@ -1,10 +1,34 @@
-schema_version: 1
+schema_version: 2
 system: Selection Point
 updated_at: 2026-09-15
 status: active
 control_plane_id: SP-PSYS-001
 control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
 sync_protocol: docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md
+work_operating_model:
+  id: SP-OPS-001
+  status: approved
+  document: docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md
+  decision: docs/PROJECT_SYSTEM/DECISION_PSYS_002_2026-09-15.md
+  operating_flow: "Owner -> Chat -> Work -> Codex when technical implementation is required -> Pilot/Reality -> Work evidence assembly -> Chat interpretation/Red Team -> Owner decision"
+  stage_development_rule: one_foundation_stage_at_a_time
+  current_authorization: stage_1_capability_definition_cycle
+  questionnaire_role: telemetry_not_sp
+  executor_boundaries:
+    owner: direction_and_final_approval
+    chat: methodology_critique_red_team_governance_interpretation
+    work: context_heavy_research_synthesis_audits_bounded_artifact_production
+    codex: approved_technical_implementation
+    reality: empirical_validation_and_contradiction
+  standard_stage_artifacts:
+    - Stage Capability Spec
+    - Stage Research Packet
+    - Psychological Mechanism Map
+    - Learning Units
+    - Practice Protocol
+    - Observability / Measurement Spec
+    - Pilot Evidence Packet
+    - Stage Review
 
 system_model:
   principle: "Selection Point is one project with multiple authority and evidence layers; repository boundaries do not imply separate projects."
@@ -73,6 +97,7 @@ current_shared_contract:
   partial_execution_is_partial_test: true
   prompt_exposure_must_be_recorded: true
   measurement_adherence_is_not_domain_outcome: true
+  questionnaire_is_telemetry_not_sp: true
 
 current_gates:
   stage_5: unopened
@@ -89,6 +114,7 @@ new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
+    - docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
