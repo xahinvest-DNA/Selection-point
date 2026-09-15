@@ -15,7 +15,7 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_gate_c_owner_review
+  current_authorization: stage_1_present_moment_revision_owner_review
   questionnaire_role: telemetry_not_sp
   executor_boundaries:
     owner: direction_and_final_approval
@@ -44,11 +44,19 @@ operating_model:
 
 training_state:
   current_stage: 1
+  current_gate: Stage 1 training alignment review - present-moment capability revision + Gate C
   stage_1_capability:
-    id: SP-TR-S1-CAP-001
-    status: approved
-    document: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
-  current_gate: Gate C - Stage 1 Psychological Mechanism Map
+    approved_previous:
+      id: SP-TR-S1-CAP-001
+      status: approved_historical_pending_revision_decision
+      document: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
+    revision_candidate:
+      id: SP-TR-S1-CAP-002-PROP
+      status: owner_review_required
+      document: docs/TRAINING/STAGE_1_CAPABILITY_SPEC_V2_PROPOSAL.md
+      trigger: docs/TRAINING/STAGE_1_PRESENT_MOMENT_REVISION_NOTE.md
+      proposed_center: "notice relevant current process -> distinguish already-realized from relevant open edge -> participate relative to reality and local direction -> actually realize -> observe consequence"
+      hidden_cause_required: false
   stage_1_research_packet:
     id: SP-TR-S1-RP-001
     status: approved
@@ -57,27 +65,30 @@ training_state:
     red_team: docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
     red_team_verdict: pass_with_required_constraints
     approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md
-    owner_approval_required: false
     methodological_approval: true
-    gate_c_opened: true
-    required_gate_c_constraint: classify_phenomenon_mechanism_trainable_operation_safeguard_before_grouping
+    reinterpretation_required: present_moment_rule_causal_archaeology_not_required
   stage_1_psychological_mechanism_map:
-    id: SP-TR-S1-PMM-001
+    id: SP-TR-S1-PMM-002-PROP
     status: red_team_complete_owner_review_required
     execution_spec: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_SPEC.md
     deliverable: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
-    external_compatibility_notes: docs/TRAINING/STAGE_1_PMM_EXTERNAL_COMPATIBILITY_NOTES.md
+    revision_trigger: docs/TRAINING/STAGE_1_PRESENT_MOMENT_REVISION_NOTE.md
     red_team: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_RED_TEAM.md
-    red_team_verdict: pass_with_required_constraints
+    red_team_id: SP-TR-S1-PMM-RT-002
+    red_team_verdict: pass_with_refinements_incorporated
     owner_approval_required: true
     methodological_approval: false
     binding_interpretation:
-      - cp_1_to_cp_3_are_candidate_contributor_families_not_validated_mechanisms
-      - to_3_function_hypothesis_is_optional_when_not_useful
-      - hidden_motive_not_required
-      - retrospective_availability_may_be_unknown
+      - hidden_psychological_cause_not_required
+      - present_centered_does_not_mean_history_blind
+      - current_position_is_relevance_filtered_not_exhaustive
+      - relevant_local_direction_task_or_responsibility_anchors_choice
+      - known_testable_causal_information_is_allowed
+      - speculative_hidden_origin_is_not_required
+      - noticing_is_not_completion
       - rc_018_keeps_selection_realization_consequence_feedback_separate
-      - gate_d_must_simplify_learner_facing_load
+      - conscious_non_action_waiting_repair_and_help_seeking_can_be_valid_continuations
+      - ai_may_not_assign_hidden_cause_as_fact
     gate_d_opened: false
   deferred_trainer_hypothesis:
     id: SP-TR-HYP-001
@@ -87,7 +98,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_GATE_C_OPEN.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_PRESENT_MOMENT_REVISION.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -166,6 +177,7 @@ current_gates:
   external_user_pilot: unopened
   owner_self_pilot: active
   trainer_implementation: unopened
+  training_capability_v2: owner_review_required
   training_gate_c: owner_review_required
   training_gate_d: unopened
 
@@ -177,19 +189,20 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_GATE_C_OPEN.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_PRESENT_MOMENT_REVISION.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
+    - docs/TRAINING/STAGE_1_PRESENT_MOMENT_REVISION_NOTE.md
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
+    - docs/TRAINING/STAGE_1_CAPABILITY_SPEC_V2_PROPOSAL.md
     - docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
-    - docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md
     - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_SPEC.md
     - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
     - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_RED_TEAM.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
-    training: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
+    training_revision: docs/TRAINING/STAGE_1_PRESENT_MOMENT_REVISION_NOTE.md
+    training_capability_v2: docs/TRAINING/STAGE_1_CAPABILITY_SPEC_V2_PROPOSAL.md
     training_gate_b: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
     training_gate_c: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
     training_gate_c_red_team: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_RED_TEAM.md
