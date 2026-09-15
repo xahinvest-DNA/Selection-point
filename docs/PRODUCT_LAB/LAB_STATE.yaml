@@ -1,7 +1,8 @@
-schema_version: 2
+schema_version: 3
 workstream: Selection Point Product Lab
 updated_at: 2026-09-15
 foundation_sync: "RC-018"
+project_system_sync: "SP-PSYS-001"
 
 status:
   active_phase: LAB-0
@@ -24,7 +25,22 @@ owner_direction:
 
 latest_owner_decision:
   decision_date: 2026-09-15
-  decision: "After project diagnostics, synchronize Product Lab with approved RC-018, formalize the event model and pilot metrics, add participant-data boundaries and automated repository consistency checks. Do not open Stage 5, SP-LAB-002 or an external pilot; discuss the pilot separately after this remediation."
+  decision: "Synchronize Selection-point and Selection-point-health-lab as one project with different internal authority/evidence levels. Establish a Project Control Plane, register Health Lab as a private evidence node, keep historical raw records immutable, align future Health Lab capture with RC-018/event-model/metrics contracts, and return to detailed pilot design only after synchronization. Do not open Stage 5, SP-LAB-002 or an external pilot."
+
+project_system:
+  control_plane_state: "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
+  control_plane_document: "docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md"
+  sync_protocol: "docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md"
+  health_node_contract: "docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md"
+  health_node:
+    node_id: SP-HLAB-001
+    repository: xahinvest-DNA/Selection-point-health-lab
+    visibility: private
+    role: private_evidence_node
+    local_state: "docs/NODE_STATE.yaml"
+    status: active_owner_self_pilot
+  authority_rule: "Evidence nodes may specialize capture and analysis but may not redefine Product Lab or canonical meaning automatically."
+  upward_promotion_rule: "Only de-identified reviewed findings, contradictions and falsification signals may move upward; raw personal data remain in the private evidence node."
 
 approved_working_model:
   product_frame: "Selection Point may be presented and tested as a trainer of the capacity to choose."
@@ -57,12 +73,15 @@ measurement_foundation:
   composite_selection_score_allowed: false
   raw_participant_data_in_public_repo_allowed: false
   prompt_exposure_must_be_recorded: true
+  measurement_adherence_is_domain_outcome: false
 
 active_pilot:
   id: SP-LAB-PILOT-001
   document: "docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md"
   status: active
   type: owner_self_pilot
+  evidence_node: SP-HLAB-001
+  evidence_repository: xahinvest-DNA/Selection-point-health-lab
   domain: "body / health / physical efficiency"
   goal: "Create a system in which the body preserves health and increases functional efficiency."
   data_entry_constraint: "New reflective data can be entered once per day in the evening."
@@ -73,8 +92,10 @@ active_pilot:
     midday: "Trajectory Check — on plan / circumstances changed / automatic mode"
   plan_limit: 3
   event_model: "PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord -> ModelUpdateRecord"
-  seed_record_date: 2026-09-12
-  seed_record_summary: "Food-portion control was executed successfully; later an acute external/family stressor was followed by beer/alcohol use and cancellation of the planned training. Store as separate causal episodes, not as binary success/failure."
+  legacy_raw_period:
+    start: 2026-09-12
+    end: 2026-09-14
+    rule: "Preserve as captured; do not rewrite to v0.2. Normalize only in a derived layer with source traceability and unknown/not_observed for missing fields."
 
 pilot_metrics_candidates:
   - Selected-to-Realized Continuation Rate
@@ -85,28 +106,28 @@ pilot_metrics_candidates:
   - Repeated Selection-Point Patterns
 
 sources_of_truth:
+  project_system_state: "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
   lab_state: "docs/PRODUCT_LAB/LAB_STATE.yaml"
   lab_governance: "docs/PRODUCT_LAB/LAB_CHARTER.md"
   architecture_state: "docs/FOUNDATION/PROJECT_STATE.yaml"
   architecture_process: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md"
   approved_task_synthesis: "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
   active_owner_pilot: "docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md"
-  selection_capacity_model: "docs/PRODUCT_LAB/SELECTION_CAPACITY_V0.md"
-  training_hypothesis: "docs/PRODUCT_LAB/TRAINING_ARCHITECTURE_V0.md"
-  minimal_recovery_loop: "docs/PRODUCT_LAB/MINIMAL_RECOVERY_LOOP.md"
   reality_event_model: "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
   pilot_metrics_spec: "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
   participant_data_policy: "docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md"
+  health_evidence_node_state: "xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml"
 
 new_chat_bootstrap:
   read_in_order:
+    - "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
     - "docs/PRODUCT_LAB/LAB_STATE.yaml"
     - "docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md"
     - "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
     - "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
     - "docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md"
     - "docs/PRODUCT_LAB/DECISION_LOG.md"
-  instruction: "Do not open SP-LAB-002 automatically. Continue SP-LAB-PILOT-001 unless the owner explicitly changes direction. External user pilot remains unopened."
+  instruction: "Treat Health Lab as the private evidence node of the same project. Do not open SP-LAB-002, Stage 5 or an external pilot automatically."
 
 constraints:
   lab_does_not_open_phase_4_to_8: true
@@ -126,6 +147,8 @@ constraints:
   selected_realized_gap_is_data_not_moral_failure: true
   no_composite_selection_capacity_score_without_validation: true
   raw_external_participant_data_must_not_enter_public_repo: true
+  health_node_cannot_promote_local_hypothesis_automatically: true
+  legacy_raw_records_must_not_be_rewritten: true
 
 phase_exit_criteria:
   LAB-0:
@@ -134,6 +157,7 @@ phase_exit_criteria:
     - initial hypothesis register exists
     - research sequence is defined
     - owner self-pilot has a traceable event model and measurement specification
+    - evidence node is synchronized with current Project Control Plane contract
     - no conflict with current Phase 3 governance remains
 
 sp_lab_002_gate:

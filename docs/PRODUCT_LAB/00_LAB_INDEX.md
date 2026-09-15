@@ -13,6 +13,31 @@ Product Lab проверяет, может ли утверждённая мет�
 
 Формулировки Product Lab остаются продуктовыми гипотезами, а не новым каноническим определением метода.
 
+## Product Lab внутри единого проекта
+
+С 15 сентября 2026 года репозитории Selection Point рассматриваются как узлы **одного проекта**, а не как независимые проекты.
+
+Управляющий контур проекта:
+
+- `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` — topology / authority SSOT;
+- `../PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` — роли уровней и поток решений/данных;
+- `../PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` — правила синхронизации;
+- `../PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md` — контракт первого private evidence-node.
+
+Текущая структура:
+
+```text
+Foundation / Canon
+        ↓
+Product Lab
+        ↓ contract
+SP-HLAB-001 — Selection-point-health-lab (private evidence node)
+        ↑
+de-identified findings / contradictions / falsification signals
+```
+
+`SP-HLAB-001` хранит owner self-pilot raw-data, локальные reviews и локальные H-xxx hypotheses. Эти данные и гипотезы не имеют автоматического права изменять Product Lab или канон.
+
 ## Граница с основным проектом
 
 ```text
@@ -22,9 +47,11 @@ CANONICAL_TO_PRODUCT_MAP
         ↓
 продуктовые гипотезы
         ↓
-исследования / эксперименты
+research contracts
         ↓
-данные
+evidence nodes / experiments
+        ↓
+reviewed de-identified findings
         ↓
 решение лаборатории
 ```
@@ -48,9 +75,19 @@ selected continuation
 - conscious non-action может быть фактически реализованным продолжением;
 - partial execution означает partial test;
 - selected → realized gap является данными, а не моральной оценкой;
-- последствия не считаются использованным feedback автоматически.
+- последствия не считаются использованным feedback автоматически;
+- measurement adherence не считается автоматически domain success или доказательством Selection Capacity.
 
 ## Документы
+
+### Управление проектом
+
+- `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` — система уровней и зарегистрированные repository nodes;
+- `../PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` — Project Control Plane;
+- `../PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` — downward/upward sync;
+- `../PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md` — контракт `SP-HLAB-001`.
+
+### Product Lab
 
 - `LAB_CHARTER.md` — полномочия, границы и lifecycle;
 - `LAB_STATE.yaml` — единственный источник текущего состояния Lab;
@@ -85,7 +122,9 @@ selected continuation
 
 12 сентября 2026 года владелец возобновил Product Lab через личный self-pilot, не открывая SP-LAB-002.
 
-15 сентября после диагностики владелец утвердил устранение рассинхронизации Product Lab с RC-018 и создание измерительной инфраструктуры до отдельного обсуждения пилота.
+15 сентября после диагностики владелец утвердил устранение рассинхронизации Product Lab с RC-018 и создание измерительной инфраструктуры.
+
+15 сентября затем утверждено системное решение `SP-PSYS-001`: `Selection-point` и `Selection-point-health-lab` — единый проект с разными authority/evidence уровнями. Health Lab зарегистрирован как `SP-HLAB-001`.
 
 Первый домен: **тело / здоровье / физическая эффективность**.
 
@@ -119,6 +158,8 @@ fact
 
 `prompt_exposure` должен фиксироваться отдельно, чтобы не спутать самостоятельный навык с поведением под scaffold.
 
+Исторические raw-записи Health Lab за 12–14 сентября сохраняются как были получены и не переписываются под новую схему. При необходимости они нормализуются только в derived layer с явной ссылкой на источник и `unknown/not_observed` для отсутствующих наблюдений.
+
 ## Что остаётся закрытым
 
 - `SP-LAB-002 — Problem Discovery Research Design` остаётся `unopened`;
@@ -131,13 +172,16 @@ fact
 
 ## Bootstrap для нового чата
 
-Новый чат должен читать в таком порядке:
+Новый чат, работающий с проектом в целом, сначала читает:
 
-1. `LAB_STATE.yaml`;
-2. `PERSONAL_TRAJECTORY_PILOT_V0.md`;
-3. `REALITY_EVENT_MODEL_V0_2.md`;
-4. `PILOT_METRICS_SPEC_V0_1.md`;
-5. `SP_LAB_001_SYNTHESIS.md`;
-6. `DECISION_LOG.md`.
+1. `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
+2. `LAB_STATE.yaml`;
+3. `PERSONAL_TRAJECTORY_PILOT_V0.md`;
+4. `REALITY_EVENT_MODEL_V0_2.md`;
+5. `PILOT_METRICS_SPEC_V0_1.md`;
+6. `SP_LAB_001_SYNTHESIS.md`;
+7. `DECISION_LOG.md`.
 
-После этого продолжать `SP-LAB-PILOT-001`. `SP-LAB-002` и внешний пилот автоматически не открывать.
+При работе с фактическими pilot data затем читать `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml` и локальные данные Health Lab.
+
+`SP-LAB-002`, S5 и внешний пилот автоматически не открывать.
