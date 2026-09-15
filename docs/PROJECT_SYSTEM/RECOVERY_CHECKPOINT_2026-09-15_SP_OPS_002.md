@@ -63,8 +63,8 @@ Deferred material that must not be treated as active authorization:
 - Health Lab remains `SP-HLAB-001`, a private evidence node.
 
 ### Health Lab
-At checkpoint creation, last verified Health Lab `main` recorded in system SSOT is:
-`a4f87de28d66613eac67dcd958b65058498f2b84`
+At checkpoint creation, verified Health Lab `main` is:
+`06990ea2bb7a261c64fa07e87fa102c44e4020f5`
 
 Historical raw records remain immutable by meaning; later schema changes do not authorize retrospective invention.
 
