@@ -1,7 +1,7 @@
 # CURRENT_STATE
 
 **Авторитетный статус:** `FOUNDATION/PROJECT_STATE.yaml`  
-**Дата:** 5 сентября 2026 года
+**Дата:** 15 сентября 2026 года
 
 ## Актуальная точка
 
@@ -9,6 +9,7 @@
 - Ступени 1–3 завершены.
 - **Ступень 4 завершена: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`.
 - Последний утверждённый параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
+- Сквозная boundary **RC-018 choice → realized continuation → feedback** утверждена.
 - Открытого параметра нет.
 - SP-S5-P01 — следующий кандидат, **`unopened`**.
 
@@ -16,37 +17,49 @@
 
 > **Выбор совершается в моменте. Траектория обнаруживается во времени.**
 
-Ловушка:
-
-> **Полезный возврат к выбору «здесь и сейчас» становится ловушкой, если moment-level view превращается в почти единственный масштаб оценки и accumulated series-level feedback не меняет current position.**
-
-Коротко:
-
 > **Ошибка — считать момент достаточным масштабом для оценки траектории.**
-
-Корректирующая формула:
 
 > **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
 
-## Границы
+## RC-018 — выбор / реализация / feedback
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+Коротко:
 
 ```text
-present moment ≠ trap
-single lapse ≠ trajectory
-series ≠ proof of one cause
-history = data ≠ verdict
-aggregation ≠ guilt score
-outcome series alone ≠ trajectory
-macro-awareness ≠ total monitoring
+выбрать ≠ сделать
+сделать ≠ получить желаемое
+последствия ≠ автоматически использованная обратная связь
 ```
+
+Core cycle:
+
+```text
+фактическая позиция
+→ доступная точка выбора
+→ выбранное продолжение
+→ фактически реализованное продолжение
+→ последствия
+→ замеченные / интерпретированные данные
+→ обратная связь
+→ корректировка
+→ следующая фактическая позиция
+```
+
+Главная граница:
+
+> **Неисполненный выбор не получает внешней проверки как неслучившееся действие.**
+
+При этом сознательная пауза / невмешательство может быть фактически реализованным продолжением, а несовпадение selected vs realized сначала является данными, а не моральной оценкой.
 
 ## Источники
 
-- `FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md`;
-- `FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md`;
-- `FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md`;
-- `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md`;
-- `FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`;
-- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md`.
+- `FOUNDATION/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+- `FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+- `FOUNDATION/LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+- `FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
+- `FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
+- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
 
-**Ступень 4 завершена. SP-S5-P01 не открыт.**
+**Ступень 4 завершена. RC-018 утверждён. SP-S5-P01 не открыт.**
