@@ -1,6 +1,6 @@
 schema_version: 2
 project: Selection Point
-updated_at: 2026-09-08
+updated_at: 2026-09-15
 
 status:
   active_phase: 3
@@ -14,33 +14,34 @@ status:
   next_candidate: SP-S5-P01
   next_status: unopened
   explicit_pause: false
-  owner_decision: "5 сентября 2026 года после первоначального Architect / RC-017 / Red Team Андрей уточнил механизм P13 через временной масштаб: отдельный момент может быть обслужен корректно, но серия сходных эпизодов должна иметь право изменить описание фактической траектории. Уточнение сохранено как SP-SRC-025, после чего Architect pass, RC-017 и Red Team были полностью пересобраны. Андрей явно утвердил итоговую версию решением: 'Утверждаем'. Утверждённая ловушка S4: настоящий момент остаётся местом выбора, но становится ловушкой, если превращается в почти единственный масштаб оценки и accumulated series-level feedback не меняет current position. Ключевые формулы: 'Выбор совершается в моменте. Траектория обнаруживается во времени'; 'Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции'. SP-S4-P13 утверждён; Ступень 4 завершена полностью. SP-S5-P01 остаётся unopened."
+  owner_decision: "15 сентября 2026 года Андрей явно утвердил сквозную boundary RC-018: внутренне выбранное продолжение не равно фактически реализованному продолжению. Выбор остаётся реальным внутренним событием, но неисполненный выбор нельзя засчитывать как совершённый ход или использовать как будто реальность уже дала feedback на неслучившееся действие. Фактическую траекторию формируют реально произошедшие продолжения — действие, частичное исполнение, сознательно выдержанная пауза/невмешательство либо иное фактическое продолжение — и их последствия. Последствия становятся обратной связью только через замечание, интерпретацию и корректировку следующего цикла. Короткая формула: 'Выбрать ≠ сделать. Сделать ≠ получить желаемое. Последствия ≠ автоматически использованная обратная связь.' RC-018 утверждён как cross-cutting clarification, не как SP-HCM-10. Ступень 4 остаётся завершённой; SP-S5-P01 остаётся unopened."
 
 completed:
   human_change_model: "SP-HCM-01–SP-HCM-09"
+  core_clarifications: "RC-018 choice → realized continuation → feedback boundary"
   stage_1: "SP-S1-P01–SP-S1-P13"
   stage_2: "SP-S2-P01–SP-S2-P13"
   stage_3: "SP-S3-P01–SP-S3-P13"
   stage_4: "SP-S4-P01–SP-S4-P13 (P07 and P09 zero-delta)"
   visual_models: "SP-VM-01–SP-VM-02"
 
-active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-05_SP-S4-P13.md"
-previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md"
+active_checkpoint: "docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md"
+previous_architecture_checkpoint: "docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md"
 
 active_sources:
   full_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md"
   canonical: "docs/FOUNDATION/CANONICAL/42_STAGE_4_P13_CANONICAL.md"
   parameter_delta: "docs/FOUNDATION/LIBRARIES/S4_P13_STAGE_TRAP_DELTA.md"
-  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/25_2026-09-05_P13_TEMPORAL_SCALE_AND_TRAJECTORY.md"
-  preceding_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/24_2026-09-05_P13_COMPENSATION_THINKING_AND_REALITY_CONTACT.md"
+  primary_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md"
+  preceding_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/27_2026-09-11_TRAJECTORY_TIMEFRAMES_DELAYED_FEEDBACK_AND_TEMPORAL_ENDURANCE.md"
   systemic_working_source: "docs/FOUNDATION/SOURCE_MATERIALS/23_2026-09-04_FRITZ_STRUCTURE_EFFORT_AND_S5_BOUNDARY.md"
-  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/51_STAGE_4_TRANSITION_CRITERIA.md"
-  architect_pass: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_ARCHITECT_PASS_NOTES.md"
-  reality_check: RC-017
-  reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13.md"
-  red_team: "docs/FOUNDATION/GOVERNANCE/SP-S4-P13_RED_TEAM_NOTES.md"
-  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md"
-  cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/20_2026-09-03_HEALTH_TRAJECTORY_DRIVING_METAPHOR.md"
+  previous_approved_theory: "docs/FOUNDATION/FIVE_STAGES_THEORY/52_STAGE_4_STAGE_TRAP.md"
+  architect_pass: "docs/FOUNDATION/GOVERNANCE/CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md"
+  reality_check: RC-018
+  reality_check_file: "docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md"
+  red_team: "docs/FOUNDATION/GOVERNANCE/CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md"
+  approval_addendum: "docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md"
+  cross_cutting_source: "docs/FOUNDATION/SOURCE_MATERIALS/28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md"
 
 sources_of_truth:
   explicit_owner_decision_priority: 1
@@ -150,5 +151,14 @@ constraints:
   p13_must_not_repeat_s1_understanding_replaces_action: true
   p13_must_preserve_simple_explanations: true
   p13_does_not_predefine_full_stage_5_architecture: true
+  rc018_approved: true
+  rc018_is_cross_cutting_boundary_not_hcm10: true
+  rc018_selected_continuation_not_equal_realized_continuation: true
+  rc018_nonexecution_not_feedback_on_unperformed_action: true
+  rc018_internal_choice_is_real_event: true
+  rc018_conscious_nonaction_may_be_realized_continuation: true
+  rc018_partial_execution_yields_partial_test: true
+  rc018_action_does_not_guarantee_clear_causal_feedback: true
+  rc018_selected_realized_gap_is_data_not_moral_failure: true
   stage_4_complete: true
   stage_5_not_opened: true
