@@ -334,15 +334,31 @@ A task should not be delegated to a lower layer when it contains an unresolved h
 
 ## 8. Current next step
 
-The approved operating model authorizes the project to begin the **Stage 1 capability-definition cycle**.
+**Gate A — Stage 1 Capability Definition is complete and approved as `SP-TR-S1-CAP-001`.**
 
-It does not authorize:
-- opening Foundation Stage 5;
-- opening SP-LAB-002;
-- opening an external-user pilot;
-- declaring the owner self-pilot effective;
-- creating a Selection Capacity score.
+The currently authorized cycle is:
 
-The next methodological question is:
+**Gate B — Stage 1 Research Packet.**
 
-> What exactly should a person become able to do after mastering Stage 1 that was not reliably available before?
+Work must execute the bounded research task defined in:
+
+`docs/TRAINING/STAGE_1_RESEARCH_PACKET_WORK_BRIEF.md`
+
+The expected Work deliverable is:
+
+`docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`
+
+Work may collect, compare, structure and propose candidate mechanism groupings, but it may not approve new methodological meaning. The resulting packet must return to Chat for methodological review and then to Owner for approval before Gate C is opened.
+
+This authorization does not:
+- change Foundation Stage 1 canon;
+- open Foundation Stage 5;
+- open SP-LAB-002;
+- open an external-user pilot;
+- declare the owner self-pilot effective;
+- define numeric Stage 1 transition thresholds;
+- validate a trainer or Selection Capacity score.
+
+The next methodological question after Work returns the packet is:
+
+> Which smallest coherent set of trainable psychological mechanisms is actually required to produce the approved Stage 1 capability without collapsing explanation into proof or insight into realized participation?
