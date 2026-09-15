@@ -2,9 +2,32 @@
 
 **Selection Point** — самостоятельная система восстановления способности выбора.
 
+## Project system
+
+Selection Point рассматривается как **один проект с несколькими уровнями и repository nodes**, а не как набор независимых проектов.
+
+Управляющий контур: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` и `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`.
+
+Текущая топология:
+
+```text
+Selection-point (public)
+├─ Foundation / Canon
+├─ Product Lab
+└─ Project Control Plane
+       ↓ contracts
+Selection-point-health-lab (private)
+└─ SP-HLAB-001 / owner self-pilot evidence node
+       ↑ de-identified findings / falsification signals only
+```
+
+`Selection-point-health-lab` хранит приватные longitudinal raw-data, локальные reviews и рабочие гипотезы. Он не имеет права автоматически менять Product Lab или канон. Raw personal data обратно в публичный репозиторий не переносятся.
+
 ## Текущее состояние
 
-Авторитетный статус: `docs/FOUNDATION/PROJECT_STATE.yaml`.
+Авторитетный статус архитектуры: `docs/FOUNDATION/PROJECT_STATE.yaml`.
+
+Авторитетная топология проекта: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
 
 На 15 сентября 2026 года:
 
@@ -14,8 +37,11 @@
 - **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`;
 - последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
 - утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
-- открытого параметра нет;
-- SP-S5-P01 — следующий кандидат, **не открыт**.
+- создан `SP-PSYS-001` — Project Control Plane для синхронизации уровней/репозиториев;
+- `SP-HLAB-001` зарегистрирован как private evidence node owner self-pilot;
+- открытого архитектурного параметра нет;
+- SP-S5-P01 — следующий кандидат, **не открыт**;
+- внешний пользовательский пилот — **не открыт**.
 
 ## Центральная идея
 
@@ -89,14 +115,26 @@ S5 candidate:
 
 ## Точки входа
 
+Для проекта в целом:
+
+1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
+2. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
+3. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
+4. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
+
+Для архитектуры метода:
+
 1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
 2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
 3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
 4. `docs/FOUNDATION/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
-5. `docs/FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
-6. `docs/FOUNDATION/LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
-7. `docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
-8. `docs/FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
-9. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
+5. `docs/FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.
 
-**Ступень 4 завершена. RC-018 утверждён. SP-S5-P01 не открыт.**
+Для Product Lab:
+
+1. `docs/PRODUCT_LAB/LAB_STATE.yaml`;
+2. `docs/PRODUCT_LAB/00_LAB_INDEX.md`;
+3. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
+4. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`.
+
+**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 активен. SP-S5-P01 и внешний пилот не открыты.**
