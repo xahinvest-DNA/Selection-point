@@ -22,7 +22,7 @@
 | RC-015 | SP-S4-P11 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Тренировать доступность / re-entry reality-coupled выбора под нагрузкой. |
 | RC-016 | SP-S4-P12 | утверждено | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Контекстно-релевантное сохранение + functional re-entry. |
 | RC-017 | SP-S4-P13 | утверждено | owner-approved; revised; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Moment-level recovery не должен обнулять trajectory-level feedback. |
-| RC-018 | Core boundary: choice → realized continuation → feedback | **на обсуждении** | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined; owner-decision-pending | Выбранное продолжение ≠ фактически реализованное; feedback относится к реально произошедшему. |
+| RC-018 | Core boundary: choice → realized continuation → feedback | **утверждено** | owner-approved; externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | Выбранное продолжение ≠ фактически реализованное; feedback относится к реально произошедшему. |
 
 ## RC-017 — закрытый итог
 
@@ -34,15 +34,13 @@
 
 Approval addendum: `RC-017_SP-S4-P13_APPROVAL_ADDENDUM.md`.
 
-## RC-018 — открытый итог
+## RC-018 — закрытый итог
 
-15 сентября 2026 года Андрей указал на сквозную границу:
+15 сентября 2026 года после Architect pass, RC-018 Reality Check и Red Team Андрей явно утвердил сквозную boundary решением:
 
-> **Сделанный внутренний выбор не означает совершённого действия, которое в реальности и даёт обратную связь.**
+> **«Утверждаем».**
 
-Architect pass, Reality Check и Red Team завершены.
-
-### Surviving candidate
+### Центральный тезис
 
 > **Selection Point должен различать внутренне выбранное и фактически реализованное продолжение. Несовпадение между ними — данные о процессе исполнения, а не моральный провал. Обратную связь о последствиях конкретного действия нельзя приписывать этому действию, если оно не произошло; при этом реальность может дать другие данные — о неисполнении, частичном исполнении, сознательной паузе или пересмотре решения.**
 
@@ -77,16 +75,18 @@ action
 ≠ guaranteed clear causal feedback
 ```
 
-### Falsifier / downgrade condition
+### Архитектурный итог
 
-Уточнение должно стать лишь редакционной ремаркой или быть отклонено как самостоятельная cross-cutting delta, если `selected vs realized` не добавляет диагностической функции, невозможно надёжно различить prospectively либо новая терминология создаёт больше complexity, action bias, guilt или ригидности, чем практической точности.
+RC-018 утверждён как **cross-cutting clarification / boundary**, не как новый SP-HCM-10.
 
-Связанные файлы:
-- `CORE_CHOICE_ACTION_FEEDBACK_ARCHITECT_PASS_NOTES.md`;
-- `RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
-- `CORE_CHOICE_ACTION_FEEDBACK_RED_TEAM_NOTES.md`;
-- `../SOURCE_MATERIALS/28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md`.
+Утверждённые слои:
+- `../CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
+- `../CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
+- `../LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
+- `RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
+
+Approval addendum: `RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
 
 ## Текущая граница
 
-**Ступень 4 завершена. SP-S5-P01 остаётся unopened. RC-018 ожидает явного решения владельца; фундаментальный канон пока не изменён.**
+**RC-018 закрыт как owner-approved. Ступень 4 завершена. SP-S5-P01 остаётся unopened.**
