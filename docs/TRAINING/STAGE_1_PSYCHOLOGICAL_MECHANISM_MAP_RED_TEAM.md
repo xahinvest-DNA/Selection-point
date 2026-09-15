@@ -1,209 +1,224 @@
 # Stage 1 Psychological Mechanism Map — Red Team Review
 
-**ID:** SP-TR-S1-PMM-RT-001  
+**ID:** SP-TR-S1-PMM-RT-002  
 **Date:** 15 September 2026  
-**Reviewed artifact:** `SP-TR-S1-PMM-001`  
+**Reviewed artifact:** `SP-TR-S1-PMM-002-PROP`  
 **Gate:** C — Psychological Mechanism Map  
-**Status:** red_team_complete_owner_review_required  
+**Status:** red_team_complete_revision_required  
 **Gate D:** not opened
 
 ## 1. Review question
 
-Does the proposed map identify a small enough and defensible enough set of contributor families and trainable operations to support Stage 1 training, while remaining falsifiable and avoiding hidden-motive, identity, hindsight and AI-scaffolding traps?
+Does the present-centered revision remove unnecessary causal archaeology while still preserving reality, history, direction, responsibility and actual realization?
 
 ## 2. Verdict
 
-**PASS WITH REQUIRED CONSTRAINTS.**
+**PASS WITH REQUIRED REFINEMENTS.**
 
-The map is materially stronger than a flat list of Stage 1 parameters because it separates:
+The revision is stronger for Selection Point's practical purpose because it no longer makes hidden-cause discovery a prerequisite for choice.
+
+The core move is defensible:
 
 ```text
-phenomena
-candidate contributors
-trainable operations
-context/safeguards
+notice current position
+→ distinguish what is already realized from what remains open
+→ participate in the next continuation
+→ reality-test through realization/consequence
 ```
 
-It also places RC-018 outside the causal map as a reality-verification layer.
-
-However, the proposed CP-1–CP-3 compression must remain a **designer-facing working decomposition**, not a claim that three natural psychological mechanisms have been discovered.
+However, “present-centered” creates new failure modes that must be constrained before Owner approval.
 
 ## 3. Main attacks
 
-### RT-C-01 — CP-1 still bundles several processes
+### RT2-01 — shallow presentism can erase trajectory
 
-`state-weighted appraisal / situation-model narrowing` combines state, attention, appraisal, prediction and salience. Evidence does not establish this as one natural mechanism.
-
-**Constraint:** CP-1 is a contributor family only. Gate D must not teach learners that one hidden process called “situation-model narrowing” caused the episode.
-
----
-
-### RT-C-02 — CP-2 has the highest risk of explanatory seduction
-
-`self/role + local-priority constraint` can generate psychologically satisfying stories that cannot lose.
-
-**Constraint:** learner success must never depend on finding a hidden motive. Prefer the weaker question:
-
-> What did this continuation appear to change/provide immediately?
-
-Identity/function hypotheses are optional and must permit `unknown`, competing explanations and disconfirmation.
-
----
-
-### RT-C-03 — CP-3 can become a lazy label for repetition
-
-Repeated behavior is not automatically habit. Deliberate repetition, stable incentives, objective constraints or skill limitations can produce the same surface pattern.
-
-**Constraint:** `habitual response availability` is candidate explanation only; repetition alone is insufficient.
-
----
-
-### RT-C-04 — TO-2 can become a verbal intelligence test
-
-A participant may fluently classify facts, interpretations and states without gaining practical choice.
-
-**Constraint:** TO-2 cannot count as Stage 1 practical capability without subsequent availability and realization evidence. Correct vocabulary is not mastery.
-
----
-
-### RT-C-05 — TO-3 may be unnecessary in some episodes
-
-A useful changed continuation may be found without knowing why the previous behavior occurred.
-
-**Constraint:** functional hypothesis is **optional when it adds practical discrimination**. Gate D should not force a function field into every episode.
-
-This is a substantive simplification relative to many earlier Stage 1 reconstructions.
-
----
-
-### RT-C-06 — TO-4 is the hardest epistemic problem
-
-Psychological availability in a past episode is partly counterfactual. A retrospective learner can always become more articulate than the person who was actually present in the original state.
-
-**Constraint:** prefer current/next-cycle executable participation over strong retrospective claims. Historical availability may remain `unknown`.
-
----
-
-### RT-C-07 — TO-5 bundles action and learning
-
-Realization, consequence observation and model update are distinguishable events. Bundling them can hide where the loop failed.
-
-**Constraint:** retain TO-5 as one Stage 1 reality-coupling operation for simplicity, but all records and later measurement must keep:
+Failure:
 
 ```text
-selection
-realization
-consequence
-feedback/update
+“Yesterday is gone; only this moment matters.”
 ```
 
-separate under RC-018.
+This can let a person reset accountability after every repeated episode.
+
+**Required constraint:** `now` must include relevant accumulated facts and consequences. Known history can be a current fact without requiring causal interpretation.
 
 ---
 
-### RT-C-08 — the relationship map can be misread as a causal pipeline
+### RT2-02 — “what has not happened yet?” is underconstrained
 
-Even with arrows marked as conservative, diagrams invite literal interpretation.
+At any moment infinitely many things have not happened.
 
-**Constraint:** future learner-facing materials must not show CP-1 → CP-2 → CP-3 as a universal causal sequence. The process families are interacting hypotheses, not a fixed order.
+Without a relevance criterion, the learner can select arbitrary action and call it participation.
 
----
+**Required constraint:** the current position must include a **relevant direction / task / responsibility / safety constraint** against which the next continuation is evaluated.
 
-### RT-C-09 — external compatibility can be overclaimed
-
-Habit, appraisal, self/identity and decentering literatures support neighboring constructs, not the Selection Point stage architecture.
-
-**Constraint:** external sources stay `compatible / limited`; they cannot be cited as proof that SP Stage 1 is scientifically validated.
+This does not require a full Stage 3 life-direction architecture. It requires only enough local orientation to distinguish relevant participation from random action.
 
 ---
 
-### RT-C-10 — the map may still overload a Stage 1 learner
+### RT2-03 — removing `why` must not become anti-causal dogma
 
-Five trainable operations plus multiple epistemic distinctions are too large for a single in-the-moment protocol.
-
-**Constraint for Gate D:** the map is designer-facing. Learning Units must chunk the ability and preserve retrospective entry. No unit may require the whole map under pressure.
-
----
-
-### RT-C-11 — environment change can masquerade as capability
-
-A better outcome may occur because circumstances changed, the trigger disappeared, another person controlled the situation, or a reminder scaffolded the action.
-
-**Constraint:** later observability must preserve source/prompt/context and avoid treating outcome improvement alone as capability evidence.
-
----
-
-### RT-C-12 — explanation can still replace action even inside the new map
-
-The map itself is sophisticated enough to become a new intellectual game.
-
-**Constraint:** the canonical Stage 1 anti-trap remains binding:
-
-> **Я понял, как это происходит, — и снова заменил выбор пониманием.**
-
-Any Gate D learning unit that ends only in explanation fails the architecture.
-
-## 4. Required changes to interpretation, not to the current artifact structure
-
-The map can pass without structural rewrite if the following are binding:
-
-1. CP-1–CP-3 are **candidate contributor families**, not validated mechanisms.
-2. TO-3 functional hypothesis is **not mandatory in every episode**.
-3. Identity/operational-task explanation is optional and falsifiable.
-4. Historical availability may be `unknown`; current/next-cycle executability is preferred evidence.
-5. TO-5 remains one training operation, but data layers stay separate under RC-018.
-6. Gate D must be substantially simpler than the designer map.
-7. No lesson/unit can count insight, language or agreement as practical completion.
-8. External literature provides compatibility only.
-
-## 5. Recommended final architecture after attack
-
-### Contributor side
+Some causal information is directly observable and useful:
 
 ```text
-CP-1  state/appraisal/salience family
-CP-2  active self/role + local-priority family
-CP-3  habit/default-response family
-CX-1  objective/resource/support constraints
+I did not sleep → I am currently exhausted.
+I pressed the switch → the machine stopped.
+I sent the message → the agreement changed.
 ```
 
-These describe **possible contributors to narrowing**, not a mandatory causal sequence.
+The method should not forbid known causal relations.
 
-### Trainable side
+**Required constraint:** distinguish:
 
 ```text
-TO-1  localize one episode
-TO-2  distinguish relevant layers
-TO-3  form a provisional function hypothesis only when useful
-TO-4  find a realistically executable participation point
-TO-5  realize a continuation and reality-couple it through consequence/feedback
+known / testable causal information
+from
+speculative hidden psychological origin
 ```
 
-### Cross-cutting safeguards
+The latter is non-required; the former may be part of current reality.
+
+---
+
+### RT2-04 — present noticing can become a new introspection ritual
+
+A learner can spend ten minutes naming sensations, thoughts and emotions while still avoiding the next relevant move.
+
+**Required constraint:** TO-1/TO-2 must be **minimal and instrumental**. Notice only enough to alter the next continuation.
 
 ```text
-RC-018
-P13 anti-intellectualization
-AI/support ownership boundary
-stage boundary
-clinical/professional-help boundary
-unknown allowed
+more noticing
+≠ more capacity
 ```
+
+---
+
+### RT2-05 — temporal distinction can be trivial without choice relevance
+
+“I already drank one beer; the second has not happened” is useful only if the distinction changes the action field.
+
+**Required constraint:** the open edge must be linked to an actually executable decision boundary, not merely a grammatical future statement.
+
+---
+
+### RT2-06 — action bias remains possible
+
+Once the open edge is seen, a learner may feel compelled to “do something” to prove agency.
+
+**Required constraint:** valid continuation includes deliberate waiting, non-action, gathering information, support-seeking and revision after new facts. Agency is not movement for its own sake.
+
+---
+
+### RT2-07 — direction can itself be an interpretation
+
+A declared goal may be inherited, outdated, externally imposed or unrealistic.
+
+Stage 1 cannot solve full direction validity.
+
+**Required constraint:** use a **currently relevant declared direction / task / responsibility** as an operational anchor without claiming it is the person's final authentic direction. Later stages may revise it.
+
+---
+
+### RT2-08 — “current position” can become too large
+
+If every past consequence, commitment, resource, relationship and bodily condition enters `now`, the concept can expand until it equals the whole life.
+
+**Required constraint:** include only facts that materially constrain or inform the next relevant continuation.
+
+Current position is selective, not exhaustive.
+
+---
+
+### RT2-09 — causal archaeology can sneak back through interpretation labels
+
+A system may stop asking “why?” but still say:
+
+> “You are feeling this because your identity is threatened.”
+
+This reproduces the same problem.
+
+**Required constraint:** AI/coach may reflect reported current content but must not assign inferred hidden mechanisms as facts.
+
+---
+
+### RT2-10 — no-cause architecture must still permit system redesign
+
+Sometimes changing a next move requires changing environment, timing, resources or preparation. That can depend on simple functional knowledge about what reliably precedes/follows behavior.
+
+**Required constraint:** Stage 1 may use directly observed relations such as:
+
+```text
+when I leave the phone next to the bed, I use it immediately on waking
+```
+
+without needing a hidden psychological explanation.
+
+Observed relation is enough to justify testing a changed condition.
+
+---
+
+### RT2-11 — the revised capability may collapse into generic mindfulness
+
+“Notice what happens now” alone is not Selection Point.
+
+**Required constraint:** the architecture must retain the full move:
+
+```text
+notice
+→ distinguish open continuation
+→ select relative to relevant reality/direction
+→ actually realize
+→ receive consequence
+```
+
+Present awareness is an entry operation, not the endpoint.
+
+---
+
+### RT2-12 — feedback can still be misread causally
+
+A good outcome after one new move can tempt the learner to conclude the explanation/action was universally correct.
+
+**Required constraint:** consequence updates the current model but does not prove a universal mechanism. RC-018 remains binding.
+
+## 4. Required map refinements
+
+Before Owner review the map should add:
+
+1. `CPOS-7/8` — relevant local direction/task/responsibility as part of the current position;
+2. explicit `relevance filter`: only data material to the next continuation enters the active current position;
+3. distinction `known/testable causal relation ≠ speculative hidden psychological origin`;
+4. TO-3 open edge must be an executable decision boundary, not any unrealized future;
+5. TO-4 must evaluate continuation against current reality + relevant local direction, not agency for its own sake;
+6. TO-1/TO-2 minimality rule: enough noticing, not maximal noticing.
+
+## 5. Revised compact architecture after attack
+
+```text
+RELEVANT CURRENT POSITION
+facts + internal events + interpretations + realized actions + consequences
++ resources/constraints + relevant local direction + unknown
+
+        ↓
+NOTICE ENOUGH
+        ↓
+DISTINGUISH WHAT MATTERS
+        ↓
+FIND THE RELEVANT OPEN EDGE
+        ↓
+CHOOSE RELATIVE TO REALITY + DIRECTION
+        ↓
+ACTUALLY REALIZE / CONSCIOUSLY NOT ACT
+        ↓
+OBSERVE CONSEQUENCE
+        ↓
+UPDATED CURRENT POSITION
+```
+
+No hidden psychological cause is required.
 
 ## 6. Gate C recommendation
 
-**APPROVE WITH BINDING CONSTRAINTS.**
+**REVISE, THEN OWNER REVIEW.**
 
-The proposed map is sufficient to define what Stage 1 training must be able to work with without claiming a new universal causal theory.
-
-Approval would authorize Gate D — Learning Units — but would **not** authorize:
-
-- finished exercises;
-- final course sequence;
-- measurement thresholds;
-- trainer implementation;
-- external-user pilot;
-- claims of scientific validation;
-- Stage 2 work.
-
-Explicit Owner approval is required before Gate C closes.
+The new center is preferable to the previous causal/function-heavy architecture, but the refinements above should be incorporated before asking the Owner to approve the revised Capability Spec and Gate C together.
