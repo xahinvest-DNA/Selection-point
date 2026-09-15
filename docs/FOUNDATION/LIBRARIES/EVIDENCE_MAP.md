@@ -1,7 +1,7 @@
 # Карта доказательного статуса Selection Point
 
 **Статус:** консолидированный evidence index  
-**Дата обновления:** 5 сентября 2026 года  
+**Дата обновления:** 15 сентября 2026 года  
 **Режим:** internal approval ≠ external evidence
 
 ## Назначение
@@ -26,6 +26,7 @@ Selection Point является самостоятельной авторско
 |---|---|---|---|
 | SP-HCM-01–SP-HCM-08 | internal-approved | external-review-pending | perception, appraisal, state effects, habits, self-schema, learning, feedback |
 | SP-HCM-09 | internal-approved | external-review-pending; falsifier-defined | agency, reciprocal causation, path dependence, perceived control |
+| RC-018 core boundary | internal-approved | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | intention–behavior gap, action phases, implementation intentions, feedback on actual behavior, temporal credit assignment |
 | SP-S1-P01–SP-S1-P13 | internal-approved | external-review-pending; pilot-observability-pending | functional analysis, perception, self-regulation, transfer |
 | SP-S2-P01–SP-S2-P13 | internal-approved | external-review-pending; pilot-observability-pending | pattern recognition, narrative identity, expectancy, scenario generalization |
 | SP-S3-P01–SP-S3-P12 | internal-approved | external-review-pending; pilot-observability-pending | goal systems, psychological flexibility, skill acquisition, transfer |
@@ -44,6 +45,64 @@ Selection Point является самостоятельной авторско
 | SP-S4-P12 | internal-approved | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | recovery after lapse, dynamic resilience, regulatory flexibility, transfer limits, context dependence |
 | SP-S4-P13 | internal-approved | externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined | lapse vs relapse, EMA temporal aggregation, behaviour maintenance over time, context-dependent recurrence |
 | SP-VM-01–SP-VM-02 | internal-approved as visual models | not evidence | риск ложного контроля, равной доступности и буквального чтения метафор |
+
+## RC-018 — evidence boundary
+
+RC-018 утверждает внутреннее архитектурное различение:
+
+> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+
+### Intention–behavior gap
+
+Внешняя литература по intention–behavior gap совместима с тем, что даже сильное намерение не гарантирует фактическое поведение.
+
+Это поддерживает границу:
+
+```text
+intention / choice
+≠ proof of execution
+```
+
+Но не доказывает терминологию или полный core cycle Selection Point.
+
+### Rubicon Model / action phases
+
+Модели action phases различают принятие решения, подготовку к действию и реализацию. Это совместимо с выделением отдельной execution phase между внутренним решением и фактически произошедшим поведением.
+
+### Implementation intentions
+
+If–then planning работает как мост между намерением и запуском поведения. Это дополнительно совместимо с идеей, что переход `selected → realized` является отдельной практически значимой частью процесса.
+
+### Feedback on actual behavior
+
+Feedback research совместим с требованием опираться на данные о реально выполненном поведении и его последствиях, а не только на заявленное намерение.
+
+### Delayed / noisy outcomes
+
+Sequential decision research ограничивает слишком сильную формулу:
+
+```text
+realized action
+≠ automatically clear causal feedback
+```
+
+При задержанных, многопричинных и шумных исходах attribution остаётся гипотезой.
+
+### External verdict
+
+RC-018 имеет статус:
+
+`externally-compatible; externally-limited; pilot-observability-pending; falsifier-defined`.
+
+Внешние данные не доказывают:
+
+- что любой selected–realized gap является self-regulation failure;
+- что внутренний выбор не имеет собственных внутренних эффектов;
+- что активное действие всегда предпочтительнее паузы / невмешательства;
+- что одно выполненное действие даёт однозначный causal answer;
+- что новый термин обязателен как универсальная психологическая сущность.
+
+Поэтому RC-018 остаётся **cross-cutting architectural boundary**, а не SP-HCM-10.
 
 ## SP-S4-P05 — evidence boundary
 
@@ -213,9 +272,7 @@ P13 имеет статус:
 - RC-001 — SP-HCM-09;
 - RC-002 — SP-S3-P13;
 - RC-003–RC-017 — соответствующие параметры S4;
-- RC-015 — SP-S4-P11;
-- RC-016 — SP-S4-P12;
-- RC-017 — SP-S4-P13.
+- RC-018 — cross-cutting choice/action/feedback boundary.
 
 ## Клиническая и предметная граница
 
@@ -227,8 +284,9 @@ Selection Point не заменяет медицинскую диагности�
 
 - после P05 — выполнена 29 августа 2026 года;
 - после P10 — выполнена 30 августа 2026 года;
-- после P13 / на границе Ступени 4 — **выполнена 5 сентября 2026 года**.
+- после P13 / на границе Ступени 4 — выполнена 5 сентября 2026 года;
+- RC-018 cross-cutting consolidation — **выполнена 15 сентября 2026 года**.
 
 ## Текущая остановка
 
-**Ступень 4 завершена полностью. SP-S5-P01 не открыт.**
+**Ступень 4 завершена полностью. RC-018 утверждён. SP-S5-P01 не открыт.**
