@@ -21,7 +21,9 @@ Read in this order:
 5. `docs/PRODUCT_LAB/LAB_STATE.yaml`
 6. `docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md`
 7. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`
-8. If health/self-pilot evidence is relevant: `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml`
+8. `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`
+9. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md`
+10. If health/self-pilot evidence is relevant: `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml`
 
 Deferred material that must not be treated as active authorization:
 - `docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md`
@@ -51,9 +53,28 @@ Deferred material that must not be treated as active authorization:
 > Человек учится превращать один собственный автоматический эпизод из переживаемой неизбежности в различимый процесс, находить первый реально доступный участок своего участия и фактически менять хотя бы одно дальнейшее продолжение.
 
 - Current gate: **Gate B — Stage 1 Research Packet**.
-- Gate B is executed directly in ordinary Chat using `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`.
-- Expected artifact: `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
-- Gate C remains closed until Red Team review and Owner approval.
+- Research Packet `SP-TR-S1-RP-001` exists at `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
+- Chat Red Team is complete at `docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md`.
+- Red Team verdict: **pass_with_required_constraints**.
+- Owner approval is now required to close Gate B and open Gate C.
+- Gate C remains unopened.
+
+### Required constraint if Gate C is opened
+
+Do not promote the Research Packet's M1–M5 or three-layer hypothesis directly into a mechanism map.
+
+Gate C must first classify candidate material as:
+
+```text
+phenomenon
+candidate mechanism
+trainable operation
+cross-cutting safeguard
+context / manifestation
+readiness / assessment boundary
+```
+
+For each candidate mechanism preserve competing explanations, observability limits and weakening/falsification conditions.
 
 ### Product Lab / evidence
 - Owner self-pilot remains active.
@@ -70,7 +91,7 @@ Historical raw records remain immutable by meaning; later schema changes do not 
 
 ## 4. Epistemic discipline
 
-Because one Chat now performs both research/synthesis and methodological review, preserve visible labels where relevant:
+Because one Chat performs both research/synthesis and methodological review, preserve visible labels where relevant:
 
 `APPROVED`, `DERIVED`, `HYPOTHESIS`, `OPEN`, `CONTRADICTION`, `ILLUSTRATION`, `OBSERVED`, `SELF-REPORT`, `INTERPRETATION`.
 
@@ -91,6 +112,7 @@ Do not infer any of the following:
 - Stage 5 opened;
 - SP-LAB-002 opened;
 - external pilot opened;
+- Gate C opened before Owner approval;
 - trainer implementation authorized;
 - Selection Capacity score validated;
 - owner self-pilot proven effective;
@@ -108,4 +130,6 @@ Git history remains the technical record of the superseded model; new chats must
 
 Reconstruct authoritative context from the read order above first. Conversational/project memory may accelerate orientation, but the repository is the durable source of truth.
 
-Do not ask the Owner to launch or hand work off to ChatGPT Work. Continue Gate B directly in Chat unless the Owner changes the operating model explicitly.
+Do not ask the Owner to launch or hand work off to ChatGPT Work.
+
+If Owner has not explicitly approved Gate B after this checkpoint, do not open Gate C. Present the Red Team recommendation for Owner decision.
