@@ -15,8 +15,8 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_automaticity_transformation_research_owner_review
-  questionnaire_role: telemetry_not_sp
+  current_authorization: stage_1_learning_units_cycle
+  questionnaire_role: telemetry_with_possible_measurement_reactivity_not_sp_proof
   executor_boundaries:
     owner: direction_and_final_approval
     chat: methodology_research_synthesis_audits_artifacts_evidence_red_team_governance_interpretation
@@ -44,7 +44,7 @@ operating_model:
 
 training_state:
   current_stage: 1
-  current_gate: Gate D - Stage 1 Learning Units / automaticity transformation research prerequisite
+  current_gate: Gate D - Stage 1 Learning Units
 
   stage_1_capability:
     id: SP-TR-S1-CAP-002
@@ -97,12 +97,13 @@ training_state:
 
   stage_1_automaticity_transformation_research:
     id: SP-TR-S1-ATR-001
-    status: red_team_complete_owner_review_required
+    status: approved
     execution_spec: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
     deliverable: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
     red_team: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
     red_team_id: SP-TR-S1-ATR-RT-001
-    owner_approval_required: true
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_APPROVED_2026-09-17.md
+    owner_approval_required: false
     long_term_hypothesis: "useful automatic default + selective interruptibility / rapid re-entry under meaningful mismatch"
     binding_research_boundaries:
       - intention_is_not_realization
@@ -113,12 +114,27 @@ training_state:
       - replacement_must_be_reality_coupled
       - robust_high_load_transfer_is_not_stage_1_requirement
 
+  stage_1_measurement_reactivity:
+    id: SP-TR-S1-MR-OBS-001
+    status: observed_owner_self_report_research_required
+    document: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    core_observation: "Repeated evening questionnaire use appeared by approximately day 4 to alter in-day attention/participation because actions were being noticed partly for later reporting."
+    binding_interpretation:
+      - questionnaire_completion_is_not_sp_proof
+      - questionnaire_data_is_telemetry
+      - questionnaire_exposure_may_be_intervention_or_scaffold
+      - measurement_reactivity_must_remain_visible
+      - prompted_noticing_must_not_be_confused_with_independent_capacity
+      - scaffold_dependence_vs_internalization_is_open
+
   stage_1_learning_units:
-    status: research_blocked_pending_owner_review
+    status: active_in_chat
     execution_spec: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
     expected_deliverable: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
     research_prerequisite: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
-    next_step_after_research_approval: integrate_selective_interruption_and_reautomatization_boundaries_then_draft_units
+    research_prerequisite_status: approved
+    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    next_step: integrate_selective_interruption_reautomatization_and_scaffold_reactivity_then_draft_units
     next_step_after_draft: chat_red_team_then_owner_approval
     gate_e_opened: false
 
@@ -130,7 +146,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_AUTOMATICITY_TRANSFORMATION_RESEARCH.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_ATR_APPROVED_MEASUREMENT_REACTIVITY.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -201,7 +217,10 @@ current_shared_contract:
   partial_execution_is_partial_test: true
   prompt_exposure_must_be_recorded: true
   measurement_adherence_is_not_domain_outcome: true
-  questionnaire_is_telemetry_not_sp: true
+  questionnaire_completion_is_not_sp_proof: true
+  questionnaire_data_is_telemetry: true
+  questionnaire_exposure_may_be_intervention_or_scaffold: true
+  measurement_reactivity_must_remain_visible: true
   hidden_cause_analysis_not_required: true
   automaticity_neutrality_required: true
 
@@ -214,7 +233,8 @@ current_gates:
   training_capability_v2: approved
   training_gate_b: approved
   training_gate_c: approved
-  training_gate_d: open_research_prerequisite_owner_review
+  training_automaticity_transformation_research: approved
+  training_gate_d: open
   training_gate_e: unopened
 
 promotion_rule:
@@ -225,15 +245,15 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_AUTOMATICITY_TRANSFORMATION_RESEARCH.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_ATR_APPROVED_MEASUREMENT_REACTIVITY.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
     - docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
     - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
-    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
     - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
     - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
+    - docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
     - docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
@@ -242,6 +262,7 @@ new_chat_bootstrap:
     training_gate_b: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
     training_gate_c: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
     training_automaticity_research: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    training_measurement_reactivity: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
     training_gate_d: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
