@@ -1,6 +1,6 @@
 schema_version: 4
 system: Selection Point
-updated_at: 2026-09-15
+updated_at: 2026-09-17
 status: active
 control_plane_id: SP-PSYS-001
 control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
@@ -15,7 +15,7 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_learning_units_cycle
+  current_authorization: stage_1_automaticity_transformation_research_owner_review
   questionnaire_role: telemetry_not_sp
   executor_boundaries:
     owner: direction_and_final_approval
@@ -44,7 +44,7 @@ operating_model:
 
 training_state:
   current_stage: 1
-  current_gate: Gate D - Stage 1 Learning Units
+  current_gate: Gate D - Stage 1 Learning Units / automaticity transformation research prerequisite
 
   stage_1_capability:
     id: SP-TR-S1-CAP-002
@@ -95,10 +95,30 @@ training_state:
       - ai_may_not_assign_hidden_cause_as_fact
     gate_d_opened: true
 
+  stage_1_automaticity_transformation_research:
+    id: SP-TR-S1-ATR-001
+    status: red_team_complete_owner_review_required
+    execution_spec: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    red_team: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
+    red_team_id: SP-TR-S1-ATR-RT-001
+    owner_approval_required: true
+    long_term_hypothesis: "useful automatic default + selective interruptibility / rapid re-entry under meaningful mismatch"
+    binding_research_boundaries:
+      - intention_is_not_realization
+      - automatic_continuation_is_broader_than_habit
+      - interruption_is_not_new_automaticity
+      - old_learning_may_remain_retrievable
+      - external_scaffold_effect_must_remain_visible
+      - replacement_must_be_reality_coupled
+      - robust_high_load_transfer_is_not_stage_1_requirement
+
   stage_1_learning_units:
-    status: active_in_chat
+    status: research_blocked_pending_owner_review
     execution_spec: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
     expected_deliverable: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
+    research_prerequisite: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    next_step_after_research_approval: integrate_selective_interruption_and_reautomatization_boundaries_then_draft_units
     next_step_after_draft: chat_red_team_then_owner_approval
     gate_e_opened: false
 
@@ -110,7 +130,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_GATE_D_OPEN.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_AUTOMATICITY_TRANSFORMATION_RESEARCH.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -194,7 +214,7 @@ current_gates:
   training_capability_v2: approved
   training_gate_b: approved
   training_gate_c: approved
-  training_gate_d: open
+  training_gate_d: open_research_prerequisite_owner_review
   training_gate_e: unopened
 
 promotion_rule:
@@ -205,13 +225,15 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_GATE_D_OPEN.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-17_AUTOMATICITY_TRANSFORMATION_RESEARCH.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
     - docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
     - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
-    - docs/TRAINING/DECISION_STAGE_1_CAPABILITY_V2_AND_GATE_C_APPROVED_2026-09-15.md
+    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
+    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
     - docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
@@ -219,6 +241,7 @@ new_chat_bootstrap:
     training_automaticity_boundary: docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
     training_gate_b: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
     training_gate_c: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
+    training_automaticity_research: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
     training_gate_d: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
