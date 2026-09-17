@@ -3,10 +3,11 @@
 **ID:** SP-TR-S1-LU-SPEC-001  
 **Gate:** D — Learning Units  
 **Status:** active  
-**Date:** 15 September 2026  
+**Date:** 17 September 2026  
 **Upstream capability:** `SP-TR-S1-CAP-002`  
 **Upstream map:** `SP-TR-S1-PMM-002`  
-**Approval decision:** `SP-TR-DEC-S1-C-002`
+**Approved research prerequisite:** `SP-TR-S1-ATR-001`  
+**Measurement-reactivity input:** `SP-TR-S1-MR-OBS-001`
 
 ## 1. Purpose
 
@@ -32,7 +33,7 @@ RELEVANT CURRENT POSITION
 
 No hidden psychological cause is required.
 
-## 3. Automaticity neutrality
+## 3. Automaticity neutrality and long-term direction
 
 Every Learning Unit must preserve:
 
@@ -47,7 +48,26 @@ The training goal is not to make every action conscious.
 
 > **Selection Point не воюет с автопилотом. Он возвращает участие там, где продолжение ещё можно изменить.**
 
-A unit must never reward self-monitoring merely because it reduces automaticity.
+The approved automaticity-transformation direction adds:
+
+```text
+useful automatic default
++
+selective interruptibility / rapid re-entry under meaningful mismatch
++
+repeated realization of a better continuation
+→ progressively lower cognitive cost / useful re-automaticity
+```
+
+A Learning Unit must therefore distinguish:
+
+```text
+interrupting an old continuation
+≠
+creating a new automatic continuation
+```
+
+The latter requires repeated successful realization across relevant conditions; Gate D does not yet define repetition thresholds.
 
 ## 4. Learner-load rule
 
@@ -88,21 +108,69 @@ A Learning Unit may use prior facts when they are current constraints or consequ
 
 It must not require Stage 2 scenario construction.
 
-## 7. Required learner-facing functions
+## 7. Interruption research boundary
+
+Learning Units that work with an existing automatic continuation must preserve these findings from `SP-TR-S1-ATR-001`:
+
+- intention is not realization;
+- a strong prior decision does not guarantee availability under another state/context;
+- old learning may remain retrievable after new learning;
+- context/cue changes can alter automatic response availability;
+- a prepared alternative may increase the chance that the old response is not the only available route;
+- stopping or delaying the old route is not proof that a replacement has been learned;
+- return of the old response is data, not proof of weak will or total failure;
+- high-load robust transfer belongs beyond minimum Stage 1 capability.
+
+Gate D should therefore include a learner-facing unit or function for **opening a small interruption window** without promising deletion of the old automatic route.
+
+## 8. Measurement / questionnaire reactivity boundary
+
+Repeated measurement may alter the phenomenon being measured.
+
+Owner self-report `SP-TR-S1-MR-OBS-001` suggests that repeated evening questionnaire use may begin to change in-day attention and participation.
+
+Gate D must therefore preserve:
+
+```text
+questionnaire completion ≠ SP proof
+questionnaire data = telemetry
+questionnaire exposure may itself be scaffold/intervention
+prompted noticing ≠ independently available noticing
+```
+
+A repeated question/reminder may be useful as a transitional cue, but its effect must remain visible rather than being credited to independent capacity.
+
+Potential learner-development hypothesis:
+
+```text
+external prompt / expected later report
+→ increased salience / prospective monitoring
+→ in-the-moment noticing
+→ participant-owned re-entry
+→ possible later reduction in prompt dependence
+```
+
+This is a hypothesis for later testing, not an approved law.
+
+Learning Units must avoid turning the participant into a continuous observer of themselves. Selective monitoring is preferred over permanent monitoring.
+
+## 9. Required learner-facing functions
 
 Gate D must cover, at minimum:
 
 1. **Relevant noticing** — notice enough of the current position to stop blind continuation.
 2. **Useful distinction** — separate at least one element that materially changes the action field.
 3. **Open edge** — distinguish what is already done from what still remains genuinely open.
-4. **Reality/direction anchor** — identify what matters here without requiring final life-purpose certainty.
-5. **Available participation** — identify one actually executable continuation.
-6. **Realization** — distinguish choosing from doing.
-7. **Consequence return** — use what happened next as current-position data.
+4. **Interruption window** — create or recognize enough space that an old automatic continuation is no longer the only active route.
+5. **Reality/direction anchor** — identify what matters here without requiring final life-purpose certainty.
+6. **Available replacement participation** — identify one actually executable next continuation.
+7. **Realization** — distinguish choosing from doing.
+8. **Consequence return** — use what happened next as current-position data.
+9. **Repetition toward useful automaticity** — understand that repeated realized continuations can reduce cognitive cost over time without assuming that old learning is erased.
 
 Gate D may merge these functions into fewer Learning Units if the merge reduces learner load without losing capability.
 
-## 8. Anti-traps
+## 10. Anti-traps
 
 No unit may count any of the following as practical completion by itself:
 
@@ -115,9 +183,12 @@ No unit may count any of the following as practical completion by itself:
 - a plan not realized;
 - agreement with AI/coach;
 - arbitrary action proving “agency”;
-- reduction of automatic behavior for its own sake.
+- reduction of automatic behavior for its own sake;
+- questionnaire completion;
+- behavior performed only because a prompt was present without recording that support;
+- one successful interruption treated as a new stable automaticity.
 
-## 9. RC-018 binding rule
+## 11. RC-018 binding rule
 
 Every unit that reaches action must preserve:
 
@@ -130,14 +201,15 @@ selected continuation
 
 No Learning Unit may collapse these into one “successful choice” field.
 
-## 10. AI/support boundary
+## 12. AI/support boundary
 
 Scaffolding may:
 
 - ask concise discriminating questions;
 - remind the learner of the sequence;
 - surface missing facts;
-- offer neutral categories when the learner is stuck.
+- offer neutral categories when the learner is stuck;
+- act as an explicit temporary cue for noticing when that support is recorded.
 
 Scaffolding may not:
 
@@ -145,9 +217,11 @@ Scaffolding may not:
 - supply the participant's motive as fact;
 - choose the meaningful continuation for the learner;
 - count recognition/agreement as skill;
-- count intention as realization.
+- count intention as realization;
+- hide the fact that a prompt or questionnaire altered performance;
+- claim independent capacity when performance depends on the scaffold.
 
-## 11. Expected artifact
+## 13. Expected artifact
 
 Target:
 
@@ -158,6 +232,8 @@ The artifact should contain for each proposed unit:
 - unit purpose;
 - minimal learner operation;
 - why it is necessary for `SP-TR-S1-CAP-002`;
+- relation to automaticity interruption/re-automaticity where relevant;
+- possible scaffold role and dependency risk where relevant;
 - what it is not;
 - prerequisites;
 - observable expression candidate;
@@ -166,7 +242,7 @@ The artifact should contain for each proposed unit:
 - relation to next unit;
 - strongest Red Team attack.
 
-## 12. Non-goals
+## 14. Non-goals
 
 Gate D does not create:
 
@@ -181,8 +257,8 @@ Gate D does not create:
 - external pilot;
 - Stage 2 curriculum.
 
-## 13. Completion criterion
+## 15. Completion criterion
 
-Gate D is ready for Owner review when the proposed units together are sufficient for `SP-TR-S1-CAP-002`, learner-facing load is materially smaller than the Gate C designer map, automaticity remains non-pathologized, and no unit can terminate at explanation without movement toward realized participation.
+Gate D is ready for Owner review when the proposed units together are sufficient for `SP-TR-S1-CAP-002`, learner-facing load is materially smaller than the Gate C designer map, automaticity remains non-pathologized, selective interruption and movement toward useful re-automaticity are represented without overclaiming, scaffold/measurement reactivity remains visible, and no unit can terminate at explanation without movement toward realized participation.
 
 Gate E remains closed until explicit Owner approval.
