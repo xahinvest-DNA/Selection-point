@@ -1,77 +1,60 @@
 # CODEX_TASKS
 
-**Статус:** активна одна ограниченная инфраструктурная задача Codex.  
+**Статус:** активна одна ограниченная follow-up задача Codex.
 
 ## Авторитетный статус
 
-Этот файл не хранит собственную текущую архитектурную точку.
+Перед любой задачей Codex обязан читать актуальный SSOT проекта.
 
-Перед любой задачей Codex обязан читать:
+Codex не должен самостоятельно открывать Stage 5, SP-LAB-002 или изменять канон/методологию Selection Point.
 
-`docs/FOUNDATION/PROJECT_STATE.yaml`.
-
-Codex не должен самостоятельно открывать следующий параметр архитектуры, Stage 5, SP-LAB-002 или изменять канон Selection Point.
-
-## Активная задача
+## Завершённая задача
 
 ### Local Participant Storage v0.1
 
-**Статус:** ACTIVE  
-**Явное решение владельца:** 2026-09-15 — персональные данные микропилота хранить локально на ПК и реализовать приватный local-first data layer через Codex.
+**Статус:** COMPLETED по отчёту Codex от 2026-09-18.
 
 Task-файл:
 
 `docs/CODEX_TASKS/TASK_LOCAL_PARTICIPANT_STORAGE_V0_1.md`
 
-Граница задачи:
+Реализованы local-first storage, CLI, schema validation, duplicate protection, privacy guardrails, tests и operator guide.
 
-- инфраструктура хранения и валидации данных;
-- raw participant data только во внешней локальной папке на ПК;
-- GitHub содержит только код, схемы, документацию и synthetic fixtures;
-- без изменения методологии;
-- без открытия SP-LAB-002;
-- без открытия Stage 5;
-- без разработки полноценного приложения.
+## Активная задача
 
-После выполнения задача должна вернуть owner bootstrap-команды для локального хранилища и результаты тестов.
+### Local Participant Storage v0.2 — Time Provenance
+
+**Статус:** ACTIVE  
+**Причина:** участники могут отправлять D1 вовремя, а владелец переносит отчёт в локальное хранилище позже. Эти два времени нельзя смешивать.
+
+Task-файл:
+
+`docs/CODEX_TASKS/TASK_LOCAL_PARTICIPANT_STORAGE_V0_2_TIME_PROVENANCE.md`
+
+Граница:
+
+- сохранить `date` как дату отчёта/событий;
+- добавить optional participant submission timestamp;
+- автоматически фиксировать local-store ingestion timestamp;
+- не считать задержку владельца задержкой участника;
+- сохранить provenance при revision/overwrite;
+- обновить tests/operator guide;
+- не менять методологию, канон или продуктовый scope.
 
 ## Общие ограничения Codex
 
 Codex не должен самостоятельно:
 
-- открывать следующий параметр;
+- открывать следующий архитектурный параметр;
+- открывать Stage 5;
+- открывать SP-LAB-002;
 - дописывать метод;
-- определять параметры ступеней;
-- выполнять Reality Check вместо методологического обсуждения;
-- принимать решение `zero-delta`;
-- проектировать модули курса;
-- определять количество уроков;
-- создавать продуктовый scope сверх конкретного task-файла;
-- выбирать новую продуктовую стратегию.
-
-## Источники перед активной задачей
-
-1. `README.md`;
-2. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
-3. `docs/FOUNDATION/PROJECT_STATE.yaml`;
-4. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
-6. `docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md`;
-7. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
-8. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`;
-9. активный task-файл.
-
-## Статус прежних задач
-
-| Задача | Статус |
-|---|---|
-| TASK-000 | завершённый исторический черновик |
-| TASK-000B | отменена как преждевременная |
-| TASK-001 | отложена до Фазы 9 |
-| TASK-002–TASK-018 | неактивны и требуют перепроектирования после утверждения метода и формата |
+- менять канон;
+- создавать новый product scope;
+- помещать реальные participant raw-data в Git/GitHub.
 
 ## Правило активации
 
-Codex получает новую задачу только после явного решения Андрея и появления ограниченного task-файла с измеримым результатом.
+Codex получает новую задачу только после явного решения владельца и появления ограниченного task-файла с измеримым результатом.
 
-**Сейчас активна только `TASK_LOCAL_PARTICIPANT_STORAGE_V0_1`.**
+**Сейчас активна только `TASK_LOCAL_PARTICIPANT_STORAGE_V0_2_TIME_PROVENANCE.md`.**
