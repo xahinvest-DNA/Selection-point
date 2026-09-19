@@ -1,13 +1,14 @@
 # Stage 1 Observability / Measurement
 
 **ID:** SP-TR-S1-OM-001  
-**Status:** ready_for_chat_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Gate:** F — Observability / Measurement Spec  
 **Date:** 19 September 2026  
 **Upstream capability:** \`SP-TR-S1-CAP-002\`  
 **Upstream Learning Units:** \`SP-TR-S1-LU-001\`  
 **Upstream Practice Protocol:** \`SP-TR-S1-PP-001\`  
 **Execution contract:** \`SP-TR-S1-OM-SPEC-001\`  
+**Red Team:** \`SP-TR-S1-OM-RT-001\`  
 **Product Lab compatibility:** \`REALITY_EVENT_MODEL_V0_2.md\`, \`PILOT_METRICS_SPEC_V0_1.md\`  
 **Nature:** training-layer observability contract; not a validated psychometric scale, diagnosis or final product schema.
 
@@ -24,7 +25,7 @@ That collapses several distinct events.
 The minimum evidence logic is:
 
 ~~~text
-DOCUMENTED OPPORTUNITY
+DOCUMENTED RELEVANT EVENT / CANDIDATE OPPORTUNITY
 → NOTICING
 → OPEN EDGE / INTERRUPTION
 → SELECTION
@@ -121,23 +122,49 @@ If a participant cannot reliably reconstruct timing, support or what was selecte
 
 Unknown is better evidence discipline than a plausible story.
 
+## 3.2 Source-lineage rule
+
+Normalization never upgrades epistemic status.
+
+Every normalized field should retain a pointer or lineage to the raw participant report, observer note or system event from which it was derived.
+
+~~~text
+structured field
+≠
+objective fact by default
+~~~
+
 ---
 
-# 4. Core unit: Documented Practice Opportunity
+# 4. Core unit: Documented Relevant Event / Candidate Opportunity
 
 The denominator problem is fundamental.
 
 The system usually cannot know every moment in which a Selection Point “should” have occurred.
 
-Therefore Gate F uses **documented opportunity**, not inferred total opportunity.
+Therefore Gate F uses a **documented relevant event / candidate opportunity**, not an inferred total opportunity.
 
-## 4.1 Opportunity status
+A recurrence is not automatically proof that a meaningful Selection Point was objectively available.
+
+## 4.1 Candidate-opportunity evaluability
+
+~~~text
+candidate_opportunity_evaluable:
+  yes
+  no
+  unclear
+  unknown
+~~~
+
+An open edge is not inferred merely because the lane recurred.
+
+## 4.2 Event status
 
 ~~~text
 opportunity_status:
   documented_recurrence
   documented_mismatch_without_reentry
-  useful_automatic_performance
+  aligned_automatic_performance
   no_relevant_recurrence_reported
   rehearsal_only
   unknown
@@ -172,7 +199,7 @@ episode_class:
   live_sp_cycle
   live_partial_sp_cycle
   live_old_route_without_reentry
-  live_useful_automatic_performance
+  live_aligned_automatic_performance
   live_aligned_automatic_no_interruption_needed
   rehearsal
   no_relevant_recurrence_reported
@@ -181,12 +208,12 @@ episode_class:
 
 ## 5.1 Why this matters
 
-A useful automated response can be a success of training while containing no observable conscious Stage 1 cycle.
+A aligned automated response can be a success of training while containing no observable conscious Stage 1 cycle.
 
 Therefore:
 
 ~~~text
-live_useful_automatic_performance
+live_aligned_automatic_performance
 ≠
 live_sp_cycle
 ~~~
@@ -206,17 +233,17 @@ It records evidence that a relevant process became distinguishable in the episod
 ## 6.1 Noticing evidence
 
 ~~~text
-noticing_evidence:
-  present
-  absent_reported
-  not_applicable_useful_automatic
-  not_observed
+noticing_report:
+  noticed
+  reports_not_noticed
+  not_recalled
+  not_applicable_aligned_automatic
   unknown
 ~~~
 
 ## 6.2 Noticing timing
 
-When \`present\`:
+When noticing is reported:
 
 ~~~text
 noticing_timing:
@@ -279,17 +306,60 @@ B_anticipatory_scaffold_linked
 → no immediate prompt, but future reporting/support was salient
 
 C_participant_initiated
-→ no identifiable current scaffold activation reported
+→ no identifiable current prompt activation reported
+
+Important:
+
+~~~text
+C_participant_initiated
+≠
+independent of all prior/environmental/social scaffolding
+~~~
 ~~~
 
-## 7.2 Reactivity flag
+## 7.2 Orthogonal support dimensions
+
+Support should not be forced into one mutually exclusive category.
+
+Where relevant, preserve separately:
+
+~~~text
+current_prompt_activation:
+  yes
+  no
+  unknown
+
+environment_configuration:
+  unchanged
+  old_route_access_reduced
+  alternative_access_increased
+  old_route_physically_unavailable
+  other
+  unknown
+
+social_support_activation:
+  active
+  available_not_used
+  none_reported
+  unknown
+
+future_reporting_salience:
+  yes
+  no
+  unclear
+  unknown
+~~~
+
+A/B/C remains a compact event-provenance label, but these orthogonal fields preserve overlapping support.
+
+## 7.3 Reactivity flag
 
 When a questionnaire/review is active, one optional low-burden field is allowed:
 
 > **В момент события ты помнил, что потом будешь это фиксировать?**
 
 ~~~text
-future_reporting_salient:
+future_reporting_salience:
   yes
   no
   unclear
@@ -329,7 +399,19 @@ open_edge_status:
   unknown
 ~~~
 
-## 8.2 Interruption result
+## 8.2 Open-edge identification timing
+
+~~~text
+open_edge_identification_timing:
+  in_event
+  immediate_post_event
+  retrospective_hypothesis
+  unknown
+~~~
+
+A retrospectively hypothesized alternative is not equivalent to evidence that it was available in the live moment.
+
+## 8.3 Interruption result
 
 Where an old route was active:
 
@@ -350,7 +432,7 @@ interruption_result:
 
 Multiple values may apply.
 
-## 8.3 Boundary
+## 8.4 Boundary
 
 ~~~text
 noticed
@@ -560,7 +642,19 @@ update_target:
   unknown
 ~~~
 
-## 13.2 Update evidence
+## 13.2 Update timing
+
+~~~text
+update_timing:
+  spontaneous_before_review
+  elicited_during_review
+  later
+  unknown
+~~~
+
+An update elicited by the review may still be useful training, but it is not evidence that feedback was independently used before measurement.
+
+## 13.3 Update evidence
 
 ~~~text
 update_evidence:
@@ -603,14 +697,14 @@ They do not substitute for live evidence.
 
 ---
 
-# 15. Useful automatic performance
+# 15. Aligned automatic performance
 
 Gate F must not penalize successful automation.
 
 A live event may be classified:
 
 ~~~text
-episode_class = live_useful_automatic_performance
+episode_class = live_aligned_automatic_performance
 ~~~
 
 when:
@@ -636,6 +730,16 @@ retrieval_latency_optional
 These are exploratory proxies, not validated automaticity measures.
 
 ## 15.1 Reopenability evidence
+
+If no meaningful mismatch occurs during the observation window:
+
+~~~text
+reopenability = not_observed
+~~~
+
+Do not infer either rigidity or flexibility from absence of a mismatch event.
+
+
 
 The stronger long-term SP target is not automaticity alone but:
 
@@ -685,21 +789,49 @@ No moral interpretation attaches to latency.
 
 ---
 
-# 17. Minimal Event Trace
+# 17. Participant capture surface vs normalized research trace
+
+Gate F separates what the participant is asked from what the research system may normalize.
+
+## 17.1 Minimal participant capture surface
+
+A minimal review surface can be:
+
+~~~text
+1. What happened / marker?
+2. When did you notice it?
+3. Did a prompt or future report come to mind?
+4. What was still open?
+5. What did you choose?
+6. What actually happened?
+7. What changed immediately?
+8. Is there one next test/change?
+~~~
+
+Questions should be conditional and omitted when already known from system/observer evidence.
+
+The learner is **not** required to fill every normalized field.
+
+## 17.2 Normalized research trace
+
+The richer schema below may be derived only when justified, and every normalized value must retain lineage to its raw source and capture timing.
 
 To limit measurement burden, the default Stage 1 live record should be short.
 
-## 17.1 Core trace
+## 17.3 Core research trace
 
 ~~~text
 lane_id
 episode_class
 
-noticing_evidence
+noticing_report
 noticing_timing
 support_provenance
+current_prompt_activation_optional
+future_reporting_salience_optional
 
 open_edge_status
+open_edge_identification_timing_optional
 
 selected_continuation
 execution_status
@@ -708,16 +840,18 @@ selected_realized_relation
 immediate_position_change
 
 update_target_optional
+update_timing_optional
 evidence_source
 capture_timing
+raw_source_reference_optional
 ~~~
 
-## 17.2 Conditional fields
+## 17.4 Conditional research fields
 
 Only collect when relevant:
 
 ~~~text
-future_reporting_salient
+future_reporting_salience
 reporting_expectation_changed_behavior
 environment_support
 interruption_result
@@ -727,7 +861,7 @@ deliberation_report
 marker_match
 ~~~
 
-## 17.3 Burden rule
+## 17.5 Burden rule
 
 > **If a field does not change an important interpretation, do not require it.**
 
@@ -739,6 +873,10 @@ The system should prefer conditional follow-up over a large universal questionna
 
 Gate F allows transparent summaries that can always be expanded back to episodes.
 
+**Default rule:** summaries are lane-local. Cross-lane aggregation is descriptive only unless comparability is explicitly justified. No participant-to-participant ranking is authorized.
+
+Raw episode count describes data volume/composition only and must never be interpreted as better capacity.
+
 No overall Selection Capacity score is approved.
 
 ## S1 — Episode composition
@@ -749,7 +887,7 @@ Show counts by:
 live_sp_cycle
 live_partial_sp_cycle
 live_old_route_without_reentry
-live_useful_automatic_performance
+live_aligned_automatic_performance
 live_aligned_automatic_no_interruption_needed
 rehearsal
 unknown
@@ -775,6 +913,8 @@ unknown
 
 Do not interpret “earlier” as universally better.
 
+Noticing timing is descriptive and must not be converted into points or mastery levels.
+
 Earlier may indicate skill improvement in a selected lane, but context and difficulty matter.
 
 ---
@@ -789,7 +929,7 @@ mixed
 unknown
 ~~~
 
-No causal claim and no mastery ordering.
+No causal claim, no mastery ordering, and C does not mean independence from all scaffolding.
 
 ---
 
@@ -855,7 +995,7 @@ used feedback
 
 ---
 
-## S8 — Useful automatic performance
+## S8 — Aligned automatic performance
 
 Show occurrences of useful automated performance separately from conscious SP cycles.
 
@@ -891,27 +1031,26 @@ These would introduce value judgments or construct validity claims not yet earne
 
 ---
 
-# 20. Candidate readiness evidence for Gate G
+# 20. Coverage capability required before Gate G
 
-Gate F should not define a numeric mastery threshold.
+Gate F does not define a participant-level numeric readiness threshold.
 
-Instead, Stage 1 is ready to move into Gate G evidence assembly when the measurement system can capture a **diverse, interpretable evidence set** rather than only idealized successes.
+Before Gate G, the **measurement architecture** must be capable of representing, when they occur:
 
-A useful evidence packet should be capable of containing:
+- live realized SP traces;
+- partial/non-realized episodes;
+- old-route return and recovery;
+- late-entry evidence;
+- scaffold/prompt/reporting salience;
+- environment-supported performance;
+- aligned automatic performance without conscious SP;
+- immediate and delayed consequences;
+- explicit updates and review-elicited updates;
+- unknowns, contradictions and missing evidence.
 
-- at least one live realized SP trace;
-- supported and/or unsupported live evidence where naturally available;
-- at least one non-realized or old-route return episode;
-- late-entry evidence where it occurs;
-- environment-supported evidence where used;
-- immediate consequence and at least some update evidence;
-- useful automatic performance if it emerges;
-- explicit unknowns and contradictory evidence;
-- questionnaire/reactivity provenance.
+This is a schema/evidence-packet coverage requirement, not a quota of participant events.
 
-This is a **coverage requirement for the evidence packet architecture**, not a participant mastery threshold.
-
-Gate G should not open merely because all episodes look successful.
+Gate G should not open merely because the available episodes look successful.
 
 ---
 
@@ -928,7 +1067,7 @@ Gate G should not open merely because all episodes look successful.
 | more reported SP events | measurement itself may create/surface events |
 | stable behavior | lane may not have recurred |
 | poor behavior under no prompt | scaffold dependence may remain |
-| good behavior with no prompt | participant initiation, environment, or established automaticity may each explain it |
+| good behavior with no prompt | participant initiation, prior scaffolding, environment, or established automaticity may each explain it |
 
 Measurement does not resolve all alternatives automatically. It prevents them from disappearing.
 
@@ -967,7 +1106,7 @@ From Stage 1 data alone, do not infer:
 
 # 24. Gate F recommendation before Red Team
 
-**Recommendation:** use a trace-first observability architecture layered onto Reality Event Model v0.2.
+**Recommendation:** APPROVE WITH BINDING BOUNDARIES — use a trace-first observability architecture layered onto Reality Event Model v0.2.
 
 Core structure:
 
@@ -985,16 +1124,17 @@ Cross-cutting evidence:
 
 ~~~text
 source / capture timing
-support provenance
+source lineage / capture timing
+support provenance + orthogonal support dimensions
 measurement reactivity
-environment support
+environment configuration
 rehearsal vs live
-useful automatic performance
+aligned automatic performance
 lapse / recovery
 ~~~
 
 No composite score.
 
-Run dedicated Gate F Red Team before Owner review.
+Red Team completed; revised artifact is ready for Owner review.
 
 Gate G remains closed.
