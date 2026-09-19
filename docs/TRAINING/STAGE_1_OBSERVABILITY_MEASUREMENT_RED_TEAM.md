@@ -4,7 +4,7 @@
 **Date:** 19 September 2026  
 **Reviewed artifact:** SP-TR-S1-OM-001  
 **Gate:** F — Observability / Measurement  
-**Status:** red_team_complete_revision_required  
+**Status:** red_team_complete_owner_review_required  
 **Gate G:** not opened
 
 # 1. Review question
@@ -269,3 +269,27 @@ Required before Owner review:
 13. make support dimensions orthogonal;
 14. preserve raw-source lineage;
 15. keep Gate G closed.
+
+---
+
+# 7. Post-revision verification
+
+The revised SP-TR-S1-OM-001 incorporates the required refinements:
+
+- opportunity language is candidate/documented rather than assumed;
+- reported absence of noticing remains source-bound retrospective evidence;
+- C participant-initiated is explicitly not independence from all scaffolding;
+- automatic events are captured as aligned automatic performance, not prematurely “useful” fact;
+- counterfactual environment-role claims were removed;
+- participant capture surface is separated from normalized research trace;
+- longitudinal summaries are lane-local by default;
+- episode count and noticing timing are explicitly non-scoring;
+- retrospective open-edge reconstruction is labeled;
+- update timing relative to review is preserved;
+- Gate G readiness is schema coverage capability, not participant quota;
+- reopenability is not-observed when no mismatch occurs;
+- support dimensions are orthogonalized;
+- raw-source lineage is preserved;
+- Gate G remains closed.
+
+**Final Red Team verdict:** **PASS WITH BINDING BOUNDARIES — READY FOR OWNER REVIEW.**
