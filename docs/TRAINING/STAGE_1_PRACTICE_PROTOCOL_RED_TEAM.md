@@ -4,7 +4,7 @@
 **Date:** 19 September 2026  
 **Reviewed artifact:** \`SP-TR-S1-PP-001\`  
 **Gate:** E — Practice Protocol  
-**Status:** red_team_complete_revision_required  
+**Status:** red_team_complete_owner_review_required  
 **Gate F:** not opened
 
 ---
@@ -381,3 +381,23 @@ Required before Owner review:
 8. convert lapse analysis into testable/actionable updates only;
 9. preserve environment-effect vs participant-re-entry distinction;
 10. keep Gate F closed.
+
+
+---
+
+# 6. Post-revision verification
+
+The revised \`SP-TR-S1-PP-001\` incorporates the required refinements:
+
+- PREPARE compressed into the Lane Card;
+- safe rehearsal added and separated from real-world evidence;
+- unsafe introspective interruption boundary added;
+- review minimized by design;
+- useful automatic performance is allowed to remain automatic;
+- UPDATE split into immediate next position + later consequence;
+- A/B/C retained as event provenance, not mastery ranks;
+- lapse review constrained to actionable/testable updates;
+- environment-produced improvement separated from participant re-entry evidence;
+- Gate F remains closed.
+
+**Final Red Team verdict:** **PASS WITH BINDING BOUNDARIES — READY FOR OWNER REVIEW.**
