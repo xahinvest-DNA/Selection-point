@@ -4,7 +4,7 @@
 **Date:** 19 September 2026  
 **Reviewed artifact:** SP-TR-S1-LU-001  
 **Gate:** D — Learning Units  
-**Status:** red_team_complete_revision_required  
+**Status:** red_team_complete_owner_review_required  
 **Gate E:** not opened
 
 ---
@@ -258,3 +258,21 @@ Required before Owner review:
 6. preserve scaffold provenance without assuming internalization;
 7. retain clinical/support boundary;
 8. keep Gate E closed.
+
+
+---
+
+# 8. Post-revision verification
+
+The revised \`SP-TR-S1-LU-001\` incorporates all required refinements:
+
+- LU-4 is narrowed to UPDATE / consequence return;
+- re-automatization is cross-cycle direction, not one-cycle completion;
+- late-entry path is first-class;
+- local direction anchors are preserved without importing final life-direction work;
+- automated replacement is separated from evidence of current Stage 1 operation;
+- scaffold provenance remains visible without assuming internalization;
+- clinical / external-support boundary is retained;
+- Gate E remains closed.
+
+**Final Red Team verdict:** **PASS WITH BINDING BOUNDARIES — READY FOR OWNER REVIEW.**
