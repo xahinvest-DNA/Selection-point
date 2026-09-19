@@ -1,7 +1,7 @@
 # Stage 1 Observability / Measurement
 
 **ID:** SP-TR-S1-OM-001  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Gate:** F — Observability / Measurement Spec  
 **Date:** 19 September 2026  
 **Upstream capability:** \`SP-TR-S1-CAP-002\`  
@@ -9,6 +9,7 @@
 **Upstream Practice Protocol:** \`SP-TR-S1-PP-001\`  
 **Execution contract:** \`SP-TR-S1-OM-SPEC-001\`  
 **Red Team:** \`SP-TR-S1-OM-RT-001\`  
+**Approval decision:** \`SP-TR-DEC-S1-F-001\`  
 **Product Lab compatibility:** \`REALITY_EVENT_MODEL_V0_2.md\`, \`PILOT_METRICS_SPEC_V0_1.md\`  
 **Nature:** training-layer observability contract; not a validated psychometric scale, diagnosis or final product schema.
 
