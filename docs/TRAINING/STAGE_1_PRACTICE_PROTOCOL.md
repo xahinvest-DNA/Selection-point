@@ -1,13 +1,14 @@
 # Stage 1 Practice Protocol
 
 **ID:** SP-TR-S1-PP-001  
-**Status:** ready_for_chat_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Gate:** E — Practice Protocol  
 **Date:** 19 September 2026  
 **Upstream capability:** \`SP-TR-S1-CAP-002\`  
 **Upstream Learning Units:** \`SP-TR-S1-LU-001\`  
 **Execution contract:** \`SP-TR-S1-PP-SPEC-001\`  
 **Research inputs:** \`SP-TR-S1-ATR-001\`, \`SP-TR-S1-MR-OBS-001\`  
+**Red Team:** \`SP-TR-S1-PP-RT-001\`  
 **Nature:** practice architecture; not validated measurement, scoring, software implementation, diagnosis or external-user pilot.
 
 ---
@@ -29,38 +30,34 @@ Learner-facing compression:
 
 > **Заметь → открой → сделай → сверься.**
 
-The protocol is designed around a central asymmetry:
+The protocol is designed around a practical asymmetry:
 
 - the old automatic continuation may already be fast, accessible and context-linked;
-- the desired continuation may initially be slow, effortful and easy to forget;
-- therefore the protocol should not wait for peak impulse and then demand heroic willpower;
-- where possible, it prepares the future Selection Point in advance.
+- the alternative may initially be slow, effortful and easy to forget;
+- therefore training should not wait for peak impulse and then demand heroic willpower;
+- where useful, the future Selection Point is prepared in advance.
 
-The protocol has two layers:
-
-~~~text
-PREPARE
-set up a narrow training lane and make a useful alternative retrievable
-
-LIVE CYCLE
-NOTICE → OPEN → REALIZE → UPDATE
-~~~
-
-Across recurrences:
+The final practice architecture contains five layers:
 
 ~~~text
-repeat useful realized continuation
-→ retrieval/execution may become easier
-→ possible useful automaticity
-while
-meaningful mismatch must remain capable of reopening participation
+0. SELECT ONE LANE
+1. LANE CARD
+2. OPTIONAL REHEARSAL
+3. LIVE CYCLE
+4. MINIMAL REVIEW / RECURRENCE
 ~~~
+
+The target is not permanent conscious control.
+
+The longer learning direction is:
+
+> **useful automatic default + selective reopenability when reality meaningfully changes.**
 
 ---
 
-# 2. Practice target: one training lane, not the whole person
+# 2. Layer 0 — Select one training lane
 
-## 2.1 Why a narrow lane is required
+## 2.1 Why one lane
 
 The protocol must not ask:
 
@@ -68,7 +65,7 @@ The protocol must not ask:
 
 That would create observer overload and reward hypervigilance.
 
-Instead, a practice period uses one **training lane**: one currently relevant class of continuation where the person already sees enough reason to train participation.
+Instead, practice is organized around one **training lane**: one currently relevant continuation where the participant already has enough reason to train participation.
 
 Examples:
 
@@ -76,48 +73,153 @@ Examples:
 - abandoning the rest of the day after one plan failure;
 - reaching for the phone immediately after waking;
 - escalating a conflict after the first sharp reply;
-- postponing one selected task when the familiar avoidance cue appears;
-- taking a revenge trade after a loss.
+- postponing one selected task when the familiar cue appears;
+- placing a revenge trade after a loss.
 
-These are examples, not approved universal target categories.
+These are examples, not universal target classes.
 
-## 2.2 Target-selection rule
+## 2.2 Lane-selection rule
 
-A training lane is suitable when:
+A lane is suitable when:
 
 ~~~text
-a continuation recurs or is reasonably expected
+the continuation recurs or is reasonably expected
 +
-it matters relative to a current task / safety / commitment / direction
+it matters relative to current safety / task / commitment / direction
 +
-some later continuation is still potentially influenceable
+some later continuation remains potentially influenceable
 +
 self-directed practice is reasonably safe
 ~~~
 
-The participant does **not** need to prove why the pattern exists.
+The participant does not need to prove why the pattern exists.
 
-## 2.3 Exclusion / routing boundary
+## 2.3 No episode-count goal
 
-Self-directed Stage 1 practice is not the only valid response.
+The participant is not rewarded for finding more “problems.”
 
-If the situation involves acute danger, severe intoxication, medical risk, severe psychiatric symptoms, coercion/violence, or a dependency pattern where self-directed interruption is not reasonably safe or sufficient, the available participation may be:
+Outside the selected lane, there is no duty to scan or interrupt ordinary automaticity.
+
+Unexpected relevant SP events may still be used, but episode count is not a practice objective.
+
+## 2.4 Routing boundary
+
+Self-directed practice may be insufficient or inappropriate in acute danger, severe intoxication, medical risk, severe psychiatric symptoms, coercion/violence, or dependency patterns where safe self-interruption is not realistic.
+
+In such cases, valid participation may be:
 
 > seek / use professional, emergency or external support.
 
-The protocol must not convert inability to self-interrupt into moral or capability blame.
+Failure to self-interrupt is not treated as moral or capability failure.
 
 ---
 
-# 3. PREPARE — prepare the future Selection Point
+# 3. Layer 1 — Lane Card
 
-PREPARE is not another Learning Unit. It is a practice scaffold for making the four-unit cycle executable under real conditions.
+Preparation must be short enough that it does not become another analysis ritual.
 
-The participant prepares only what is useful for the selected lane.
+The Lane Card has five possible fields, but only relevant fields need to be active.
 
-## P1 — Local anchor
+~~~text
+WHEN — what marker can I notice?
+OPEN — what small move makes the old route non-exclusive?
+THEN — what executable alternative will I try if the facts still fit?
+WHY — what local reality/task/commitment makes this relevant?
+SUPPORT — what external scaffold is active, if any?
+~~~
 
-Complete one sentence:
+The learner does not need to memorize the labels.
+
+---
+
+## 3.1 WHEN — recognition marker
+
+Choose one or more observable markers likely to appear before the useful open edge closes.
+
+Possible markers:
+
+- external cue;
+- body sensation;
+- urge;
+- characteristic thought;
+- action already starting;
+- consequence signaling late entry;
+- time/place/context transition.
+
+Preferred meaning:
+
+> **Это не ответ на “почему”; это сигнал проверить, что ещё открыто.**
+
+The marker is a retrieval cue, not a causal explanation.
+
+---
+
+## 3.2 OPEN — opening move
+
+Select one minimal move whose only function is to make the old continuation non-exclusive.
+
+Candidate classes:
+
+- short delay;
+- stop or reduce an already-started sequence;
+- change physical position/place;
+- remove/change cue or access;
+- look at a prepared reminder;
+- begin a competing action;
+- ask for a pre-agreed support action;
+- wait for necessary information.
+
+No universal pause method is approved.
+
+### Safety boundary
+
+> **Do not deliberately insert introspective interruption into an activity where shifting attention itself creates risk.**
+
+Examples may include driving, operating machinery, swimming, fighting or other time-critical skilled activity.
+
+In such cases, practice begins:
+- before the activity;
+- after it;
+- or at a safe operational boundary.
+
+---
+
+## 3.3 THEN — executable alternative
+
+Prepare one simple continuation that can actually be executed in the expected context/state.
+
+Candidate format:
+
+> **Если [marker], то после [opening move] я [specific executable continuation].**
+
+This is an implementation-intention style scaffold, not a guarantee.
+
+The alternative should be:
+
+- concrete;
+- safe;
+- short enough to retrieve under load;
+- available with current resources;
+- locally relevant;
+- participant-owned;
+- revisable after new facts.
+
+### Fast veto rule
+
+A prepared response is a default candidate, not a command.
+
+~~~text
+new fact invalidates plan
+→ revise
+~~~
+
+Preparation must not become blind rule-following.
+
+---
+
+## 3.4 WHY — local anchor
+
+If relevance is not obvious, complete one short statement:
 
 > **В этой ситуации мне важно ________.**
 
@@ -125,89 +227,22 @@ The anchor may be:
 
 - safety;
 - a specific task;
-- a current commitment;
-- preserving a relationship boundary;
+- explicit commitment;
+- immediate responsibility;
+- current relationship boundary;
 - protecting tomorrow's condition;
-- following an already chosen trading/risk rule;
-- another locally relevant direction.
+- following a selected trading/risk rule;
+- another local operational direction.
 
-No final life-purpose answer is required.
+The learner does not need to re-prove this reason during the live event.
 
-## P2 — Recognition marker
+No final life-purpose certainty is required.
 
-Identify one or more **observable markers** likely to appear before the next useful open edge closes.
+---
 
-Markers may be:
+## 3.5 SUPPORT — scaffold provenance
 
-- external cue;
-- body sensation;
-- urge;
-- characteristic thought;
-- action already starting;
-- consequence that signals late entry;
-- context/time/place;
-- a repeated transition.
-
-Preferred wording:
-
-> **Если я замечаю ________, это не ответ на “почему”; это сигнал проверить, что ещё открыто.**
-
-The marker is a retrieval cue, not a causal theory.
-
-## P3 — Opening move
-
-Select one minimal action whose sole function is to make the old continuation non-exclusive.
-
-Candidate classes:
-
-- short delay;
-- physically change position/place;
-- stop or reduce an already-started sequence;
-- remove/change cue or access;
-- look at a prepared reminder;
-- begin a competing action;
-- ask another person for a pre-agreed support action;
-- wait for missing information.
-
-The participant chooses the smallest workable move for the lane.
-
-The protocol does not require one universal pause technique.
-
-## P4 — Executable alternative
-
-Prepare one simple continuation that can actually be performed from the expected state/context.
-
-Preferred format:
-
-> **Если [marker], то после [opening move] я [specific executable continuation].**
-
-This is an implementation-intention style scaffold, not a guarantee.
-
-A good alternative is:
-
-- concrete;
-- short enough to retrieve under load;
-- safe;
-- available with current resources;
-- locally relevant;
-- not dependent on discovering a hidden motive.
-
-Examples of structure, not prescriptions:
-
-~~~text
-IF I notice the first-drink → second-drink transition,
-THEN I leave the alcohol context and start the prepared substitute routine.
-
-IF I notice “the day is ruined” after one missed action,
-THEN I choose the next smallest still-open item rather than cancel the entire plan.
-
-IF I notice revenge-trade urgency after a loss,
-THEN I disable order entry / move away from execution and follow the preselected review step.
-~~~
-
-## P5 — Optional scaffold
-
-Choose whether an external support will be used:
+A Lane Card may include:
 
 - reminder;
 - visible cue;
@@ -215,25 +250,66 @@ Choose whether an external support will be used:
 - environmental arrangement;
 - AI/trainer prompt;
 - another person;
-- no external scaffold.
+- no planned external support.
 
-Record only the provenance class intended:
+Preserve provenance:
 
 ~~~text
 A — externally prompted
 B — anticipatory scaffold-linked
-C — no planned current scaffold
+C — participant-initiated
+unknown
 ~~~
 
-This is not a mastery rating.
+These are event-source categories, not beginner/intermediate/advanced levels.
+
+Supported performance can be strategically useful and does not have to be faded automatically.
 
 ---
 
-# 4. LIVE CYCLE
+# 4. Layer 2 — Optional rehearsal
 
-The live cycle should be lighter than the preparation.
+Real episodes may be too fast, too rare or too loaded for the first attempt at the new sequence.
 
-The learner should not mentally recite the designer architecture.
+Therefore the protocol allows safe rehearsal:
+
+~~~text
+WHEN
+→ OPEN
+→ THEN
+~~~
+
+Rehearsal may be:
+
+- verbal;
+- written;
+- simulated;
+- physically rehearsed when safe;
+- environmental setup rehearsal.
+
+Its purpose is retrieval preparation.
+
+## 4.1 Rehearsal boundary
+
+~~~text
+rehearsal
+≠
+real-life Selection Point evidence
+~~~
+
+A person can perform the sequence perfectly in calm rehearsal and still fail to retrieve it in the live context.
+
+Gate F must preserve this distinction later.
+
+---
+
+# 5. Layer 3 — Live cycle
+
+The live cycle is intentionally shorter than the preparation.
+
+The participant should not carry the full designer architecture in working memory.
+
+---
 
 ## Step 1 — NOTICE
 
@@ -241,7 +317,7 @@ Minimal live question:
 
 > **Что сейчас происходит, что имеет значение для следующего шага?**
 
-The participant may notice only one thing.
+One relevant element may be enough.
 
 Examples:
 
@@ -250,16 +326,24 @@ Examples:
 - “Я уже открыл приложение и собираюсь нажать Buy.”
 - “Я повысил голос; следующий ответ ещё не отправлен.”
 
-No explanation is required.
+No hidden-cause explanation is required.
 
-### NOTICE completion
+### Minimal fact-check when consequential
 
-NOTICE has occurred when a relevant process becomes distinguishable enough to identify a still-relevant next boundary.
+Only when needed:
+
+> **Что здесь известно, а что я сейчас предполагаю?**
+
+This is not a universal taxonomy exercise.
+
+### NOTICE boundary
 
 ~~~text
 noticed
 ≠
 explained
+≠
+interrupted
 ~~~
 
 ---
@@ -270,7 +354,7 @@ Minimal live question:
 
 > **Что ещё не произошло — и как сделать старое продолжение не единственным?**
 
-The participant uses the prepared opening move or another reality-appropriate opening.
+Use the prepared opening move if it still fits.
 
 Possible results:
 
@@ -284,7 +368,7 @@ Possible results:
 
 ### OPEN completion
 
-OPEN has occurred when at least one relevant continuation is no longer mechanically exclusive.
+OPEN occurs when at least one relevant continuation is no longer mechanically exclusive.
 
 ~~~text
 noticing
@@ -296,7 +380,9 @@ opening
 
 ### No-mismatch rule
 
-If the automatic continuation remains aligned with current reality and the local anchor, interruption is not required.
+If the automatic continuation still fits current reality and the lane's local anchor:
+
+> **let it run.**
 
 The protocol does not reward interruption frequency.
 
@@ -308,27 +394,27 @@ Minimal live question:
 
 > **Что я реально могу сделать сейчас?**
 
-Use the prepared alternative if it still fits reality.
+Use the prepared alternative if the facts still fit.
 
-If new facts invalidate it, revise.
+If not, revise.
 
-The continuation may be:
+Possible realized continuations:
 
-- action;
-- stopping;
-- reducing;
+- act;
+- stop;
+- reduce;
 - conscious non-action;
-- waiting;
+- wait;
+- gather information;
 - repair;
-- asking for support;
-- changing the environment;
-- preparing the next cycle.
+- ask for help;
+- change environment;
+- prepare the next cycle;
+- revise after a new fact.
 
 Then actually do it.
 
-### REALIZE completion
-
-Record the factual realization state, not the strength of intention:
+### REALIZE state
 
 ~~~text
 realized
@@ -346,11 +432,32 @@ RC-018 remains binding:
 selected ≠ realized
 ~~~
 
+### Automated useful response boundary
+
+A prepared response may eventually execute automatically:
+
+~~~text
+marker
+→ useful alternative
+~~~
+
+If it fits current reality, **do not force extra awareness merely to generate a visible SP event**.
+
+Useful automatic performance can be a good long-term outcome.
+
+But:
+
+~~~text
+useful automated performance
+≠
+evidence that a conscious Stage 1 SP cycle occurred in that episode
+~~~
+
 ---
 
 ## Step 4 — UPDATE
 
-UPDATE occurs when enough consequence is available to say what the next factual position is.
+UPDATE returns the practice to reality.
 
 Minimal questions:
 
@@ -358,20 +465,28 @@ Minimal questions:
 > **Что теперь изменилось в позиции?**  
 > **Что остаётся неизвестным?**
 
-Do not ask:
+### UPDATE-1 — immediate next position
 
-> “What hidden mechanism have I finally discovered?”
+The live cycle closes when the immediate factual next position is available.
 
-### UPDATE completion
+Examples:
 
-A minimal update contains:
+- action was/was not realized;
+- conflict paused/did not pause;
+- second drink was/not taken;
+- order was/not placed;
+- environment was changed;
+- support was contacted.
 
-- what was actually realized;
-- what consequence is observable;
-- what changed now;
-- what remains open/unknown.
+### UPDATE-2 — later consequence
 
-One outcome does not establish universal causality.
+If important consequences appear later, they may update the record then.
+
+No fixed delay is prescribed.
+
+The episode does not need to remain mentally “open” until every downstream outcome is known.
+
+### Causal boundary
 
 ~~~text
 desired outcome
@@ -379,19 +494,22 @@ desired outcome
 
 undesired outcome
 ≠ proof that Selection Point failed
+
+one consequence
+≠ universal causal law
 ~~~
 
 ---
 
-# 5. Late-entry protocol
+# 6. Late-entry protocol
 
-Late noticing is normal.
+Late noticing is a normal Stage 1 path.
 
-If the main automatic action has already occurred, the protocol starts from the position that actually exists.
+If the main automatic action has already occurred:
 
 ~~~text
 NOTICE
-What is happening now / what consequence is already here?
+What is happening now / what consequence already exists?
 
 OPEN
 What continuation is still open?
@@ -409,7 +527,7 @@ Examples:
 - alcohol already consumed → the next drink / driving / food / sleep / support decision may remain open;
 - conflict already escalated → the next message, distance, repair or boundary may remain open;
 - missed task → the entire day is not automatically fixed;
-- bad trade → revenge trade is not yet realized.
+- bad trade → revenge trade may still be open.
 
 The protocol never requires:
 
@@ -417,179 +535,112 @@ The protocol never requires:
 
 ---
 
-# 6. Review / questionnaire layer
+# 7. Layer 4 — Minimal review
 
 The review is a **training scaffold + telemetry surface**, not proof of capability.
 
-The review should remain brief and factual.
+It must stay deliberately small.
 
-Minimum useful record:
+> **Do not add questions merely because more data could be interesting. Every question increases intervention load.**
+
+Minimum useful trace:
 
 ~~~text
-1. What was the relevant event / marker?
-2. When did I notice it?
-3. Noticing provenance:
-   A externally prompted
-   B anticipatory scaffold-linked
-   C participant-initiated
-   unknown
-4. What was already done?
-5. What was still open?
-6. What did I select?
-7. What was actually realized?
-8. What consequence was observable?
-9. What changed for the next recurrence?
+1. Marker / relevant event
+2. Noticing provenance: A / B / C / unknown
+3. What was already done?
+4. What remained open?
+5. What was selected?
+6. What was actually realized?
+7. Immediate next position
+8. Later consequence, if available
+9. One actionable update, if any
 ~~~
 
 This is a practice record, not the final Gate F measurement instrument.
 
-## 6.1 Measurement-reactivity rule
+---
 
-The review may itself alter the next day's behavior.
+## 7.1 Measurement-reactivity rule
 
-That is not contamination to hide; it is a protocol fact to preserve.
+The review/questionnaire may itself alter later attention or behavior.
 
-The participant may report:
+That effect must remain visible.
 
-- “I noticed because I remembered I would have to answer tonight.”
+Valid reports include:
+
+- “I noticed because I remembered I would answer tonight.”
 - “The questionnaire did not come to mind.”
 - “A reminder directly triggered the noticing.”
 - “I behaved differently partly because I knew I would report it.”
 
-All are valid data.
+The protocol does not decide whether this is:
+- prospective monitoring;
+- improved memory;
+- social/reporting demand;
+- discrepancy regulation;
+- internalized skill;
+- some combination.
 
-## 6.2 No explanatory essay requirement
+That causal question remains OPEN.
 
-The review should not reward:
+---
 
-- psychological depth;
+## 7.2 No explanatory essay
+
+Review must not reward:
+
+- hidden-motive discovery;
+- psychological sophistication;
 - long narrative;
-- hidden motive discovery;
-- trauma reconstruction;
-- sophisticated SP vocabulary.
+- childhood/trauma reconstruction;
+- elaborate SP terminology.
 
-The desired unit is a usable reality trace.
-
----
-
-# 7. Three practice modes
-
-The same architecture can be trained through three modes.
-
-## Mode A — Supported live practice
-
-Purpose: make the cycle executable before independent retrieval exists.
-
-Uses one or more explicit scaffolds:
-
-- reminder;
-- visible cue;
-- prepared card/text;
-- questionnaire expectation;
-- trainer/AI prompt;
-- environmental modification.
-
-Evidence interpretation:
-
-> supported performance is real performance, but support remains part of the position.
+The desired object is a usable reality trace.
 
 ---
 
-## Mode B — Anticipatory practice
-
-Purpose: exploit the possible measurement-reactivity/prospective-monitoring effect without pretending it is independent mastery.
-
-No immediate prompt is necessary, but the participant knows:
-
-> “This type of moment is something I will review later.”
-
-Candidate mechanism remains OPEN.
-
-Possible effects include:
-
-- increased salience;
-- better encoding;
-- discrepancy monitoring;
-- future-reporting demand;
-- genuine earlier re-entry.
-
-The protocol records the effect without deciding its cause.
-
----
-
-## Mode C — Participant-initiated practice
-
-The relevant moment is noticed without an identifiable immediate scaffold and without the participant reporting that future reporting was what made it salient.
-
-This is a provenance category, not a claim of stable mastery.
-
-Gate E does not define how many Mode C events are needed.
-
----
-
-# 8. Cross-cycle repetition logic
-
-The practice goal is not a single heroic interruption.
-
-For a selected lane:
-
-~~~text
-recurrence
-→ run whatever part of the cycle is still needed
-→ observe consequence
-→ keep / modify / reject the alternative
-→ encounter recurrence again
-~~~
-
-If the useful continuation becomes easier:
-
-- do not force extra deliberation;
-- do not interrupt it simply to “practice awareness”;
-- let useful automaticity operate.
-
-If meaningful mismatch appears again:
-
-- reopen participation.
-
-This yields the target:
-
-> **efficient default + reopenability.**
-
-## 8.1 Lapse rule
+# 8. Actionable update after lapse
 
 Return of the old route is not a reset to zero.
 
 A lapse creates a new current position.
 
-Protocol response:
+Preferred review form:
 
 ~~~text
-old route returned
-→ no self-verdict
-→ identify the next open edge
-→ resume participation
-→ update the training lane if needed
+OBSERVED:
+marker was noticed only after the action began.
+
+NEXT TEST:
+move the retrieval cue earlier.
 ~~~
 
-Possible updates include:
+or:
 
-- marker was too late;
-- opening move was too weak;
-- alternative was not executable in that state;
-- scaffold was absent;
-- context changed;
-- support is needed;
-- unknown.
+~~~text
+OBSERVED:
+prepared alternative could not be executed in that location.
 
-These are hypotheses until supported by evidence.
+NEXT TEST:
+prepare an alternative that is actually available there.
+~~~
+
+Avoid unsupported post-hoc stories such as:
+
+~~~text
+I failed because my ego / trauma / hidden need...
+~~~
+
+Update hypotheses should be actionable and testable where possible.
 
 ---
 
 # 9. Environment-first principle
 
-When an old route is strongly context-cued, the protocol should consider changing conditions before relying on peak-moment effort.
+When the old route is strongly context-cued, the protocol should consider changing conditions before relying on peak-moment effort.
 
-Candidate order:
+Candidate design order:
 
 ~~~text
 1. Can the cue/context be changed?
@@ -601,68 +652,155 @@ Candidate order:
 
 This is a design preference, not an efficacy ranking.
 
-It reflects a core principle:
+Core rule:
 
 > **Do not make willpower do work that the environment can do more reliably.**
 
+## 9.1 Evidence boundary
+
+A better outcome caused mainly by environmental redesign can be highly useful.
+
+But keep separate:
+
+~~~text
+environment produced better continuation
+≠
+participant independently regained participation
+~~~
+
+Gate F will later decide how those evidence types are represented.
+
 ---
 
-# 10. Practice component map
+# 10. Recurrence and re-automatization
 
-| Learning Unit | Primary practice form | Optional scaffold | Episode evidence |
-|---|---|---|---|
-| NOTICE | marker recognition in one training lane | reminder / questionnaire anticipation / cue | relevant event noticed; provenance visible |
-| OPEN | selected micro-interruption at mismatch | environment / cue change / support | old continuation became non-exclusive |
-| REALIZE | one executable prepared or current alternative | if–then plan / competing response / support | selected vs realized kept separate |
-| UPDATE | brief factual consequence review | questionnaire / log | consequence + new position captured |
-| Cross-cycle | recurrence of same training lane | stable cue/support when useful | easier retrieval is observed, not assumed |
+Practice repeats when the selected lane naturally recurs.
+
+Do not manufacture problems merely to produce more episodes.
+
+~~~text
+recurrence
+→ run only the parts of the cycle still needed
+→ observe consequence
+→ keep / modify / reject the alternative
+→ next recurrence
+~~~
+
+If the useful continuation becomes easier and begins to run automatically:
+
+> let it run while it still fits reality.
+
+Do not interrupt it just to “practice awareness.”
+
+If meaningful mismatch appears:
+
+> reopen SP.
+
+This preserves the long-term target:
+
+> **efficient default + reopenability.**
+
+No fixed repetition count, time threshold or mastery threshold is approved.
 
 ---
 
-# 11. Episode completion
+# 11. Practice modes
 
-A **complete Stage 1 practice episode** requires:
+These modes describe how the practice is supported, not a ladder of human development.
+
+## Mode R — Rehearsal
+
+Safe practice of:
+
+~~~text
+WHEN → OPEN → THEN
+~~~
+
+No real-life execution claim.
+
+## Mode A — Externally supported live practice
+
+A current reminder, prompt, person or visible cue directly supports noticing/action.
+
+## Mode B — Anticipatory scaffold-linked live practice
+
+No immediate prompt is present, but future reporting/support is salient and may influence noticing/action.
+
+## Mode C — Participant-initiated live practice
+
+No identifiable current scaffold activation is reported.
+
+These modes may fluctuate by context.
+
+Mode A is not inherently inferior to Mode C.
+
+No forced scaffold fading is approved at Gate E.
+
+---
+
+# 12. Compression rule
+
+The full protocol is for learning and troubleshooting.
+
+The desired live burden should shrink.
+
+~~~text
+if useful automatic continuation fits reality
+→ let it run
+→ no full SP cycle needed
+
+if meaningful mismatch appears
+→ NOTICE → OPEN → REALIZE → UPDATE
+~~~
+
+The protocol must not become permanent self-surveillance.
+
+---
+
+# 13. Episode completion
+
+A **complete realized Stage 1 practice cycle** requires:
 
 ~~~text
 relevant process noticed
 +
 a still-open continuation identified
 +
-old route became non-exclusive OR late-entry open edge was used
+old route became non-exclusive OR a late-entry open edge was used
 +
 one continuation was selected
 +
-realization status is known
+a realization state was established
 +
-at least one consequence/current-position update is available
+at least an immediate next-position update became available
 ~~~
 
-A complete episode does **not** require:
+If realization is \`not_realized\`, the record can still be useful for training and Gate F telemetry, but it is not a realized Stage 1 cycle.
+
+A complete cycle does **not** require:
 
 - desired outcome;
-- independent performance;
-- no scaffold;
+- independence from support;
+- no prompt;
 - prevention of the first reaction;
 - elimination of urge;
 - new habit formation;
 - psychological explanation.
 
-If realization was \`not_realized\`, the episode can still be useful telemetry/review, but it is **not** a realized Stage 1 cycle.
-
-This distinction is reserved for later Gate F formalization.
+Gate F will later formalize observability and thresholds, if any.
 
 ---
 
-# 12. Minimal learner script
+# 14. Minimal learner script
 
-The shortest live form is:
+Shortest live form:
 
 > **1. Заметь.** Что сейчас важно?  
 > **2. Открой.** Что ещё не произошло?  
 > **3. Сделай.** Что реально можно сделать сейчас?  
 > **4. Сверься.** Что произошло на самом деле?
 
-If the learner has a prepared lane:
+Lane form:
 
 > **Маркер → открывающий ход → альтернатива → факт результата.**
 
@@ -670,54 +808,80 @@ No hidden-cause question is mandatory.
 
 ---
 
-# 13. Research compatibility notes
+# 15. Research compatibility notes
 
-The protocol architecture is compatible with, but not validated by, several external literatures:
+The practice architecture is evidence-informed but not externally validated as SP.
 
-- habit/context research: context changes can weaken habitual cueing and restore greater goal sensitivity (Wood et al., PMID 15982113; Bouton, PMID 34713424);
-- implementation intentions: cue-linked if–then plans can reduce the accessibility advantage of a habitual response, without immediately automating the alternative (Adriaanse et al., PMID 21317315);
-- habit reversal: awareness training plus competing response is effective in specific repetitive-behavior domains, but transfer to all SP situations is not assumed (Woods & Miltenberger, PMID 7593685);
-- measurement reactivity: repeated in-the-moment measurement can itself change behavior/cognition, with small pooled effects in studied health behaviors (König et al., PMID 35264084);
-- reminders/cognitive offloading: external reminders can improve prospective remembering while also changing how intentions are internally maintained; dependence and withdrawal effects are plausible and must remain visible (PMIDs 39930086, 40455537, 42613406);
-- broad behavior-change synthesis: durable change can be usefully separated into motivation, follow-through and durable habit formation rather than assuming intention automatically becomes behavior (Voelkel, Milkman & Duckworth, PMID 42566686).
+Compatible literatures include:
 
-These sources support intervention classes and boundaries, not SP validation.
+- context/habit disruption: context change can weaken habitual cueing and increase goal sensitivity (Wood et al., PMID 15982113; Bouton, PMID 34713424);
+- implementation intentions: cue-linked if–then plans can reduce the accessibility advantage of a habitual response without instantly automating the alternative (Adriaanse et al., PMID 21317315; Gollwitzer & Schaal, PMID 15647140);
+- habit reversal: awareness + competing response is effective in specific repetitive-behavior domains; generalization to all SP contexts is not assumed (Woods & Miltenberger, PMID 7593685; Miltenberger et al., PMID 9757583);
+- measurement reactivity: repeated measurement can alter behavior/cognition; studied pooled effects are small but meaningful in some health-behavior contexts (König et al., PMID 35264084);
+- prospective-memory/reminder research: reminders improve retrieval but can change how intentions are internally maintained; recent work shows strategic offloading and possible reduced unaided retrieval after trusted reminders are unexpectedly removed (PMIDs 39930086, 40455537, 42613406);
+- broad behavior-change synthesis: motivation, follow-through and durable habit formation are distinguishable behavior-change problems (Voelkel, Milkman & Duckworth, PMID 42566686).
+
+These sources justify caution and candidate practice classes, not claims of SP scientific validation.
 
 ---
 
-# 14. What remains for Gate F
+# 16. What remains for Gate F
 
 Gate E deliberately does not decide:
 
-- how many completed episodes indicate readiness;
+- how many cycles indicate readiness;
 - how much prompt dependence is acceptable;
-- how to score A/B/C provenance;
+- whether A/B/C should ever become an ordinal scale;
 - what counts as independent capability;
-- how to quantify interruption success;
-- how to measure re-automatization;
+- how interruption success is measured;
+- how to quantify re-automatization;
 - how much recurrence is enough;
-- how to distinguish memory improvement from true in-the-moment re-entry statistically;
-- how to aggregate day/week trajectories;
+- how to distinguish memory/reporting effects from true in-the-moment re-entry;
+- how to aggregate day/week trajectory;
 - any composite Selection Capacity score.
 
 These belong to Observability / Measurement.
 
 ---
 
-# 15. Gate E recommendation before Red Team
+# 17. Gate E recommendation after Red Team
 
-**Recommendation:** retain the protocol as a two-layer architecture:
+**Recommendation:** APPROVE WITH BINDING BOUNDARIES.
+
+Approved-candidate practice architecture:
 
 ~~~text
-PREPARE
-local anchor + recognition marker + opening move + executable alternative + optional scaffold
-
+SELECT ONE LANE
+↓
+LANE CARD
+WHEN / OPEN / THEN / WHY / SUPPORT
+↓
+OPTIONAL SAFE REHEARSAL
+↓
 LIVE
 NOTICE → OPEN → REALIZE → UPDATE
+↓
+MINIMAL REVIEW
+↓
+NATURAL RECURRENCE
+↓
+possible lower-load useful automaticity
+with reopenability preserved
 ~~~
 
-with a narrow training lane, late-entry path, visible scaffold provenance, environment-first preference and cross-cycle repetition toward useful automaticity.
+Binding boundaries:
 
-Run dedicated Gate E Red Team before Owner review.
+1. practice one narrow lane rather than scanning the whole person;
+2. rehearsal is not real-world evidence;
+3. interruption is selective, not virtuous in itself;
+4. no introspective interruption during unsafe/time-critical skilled action;
+5. prepared alternatives remain revisable after new facts;
+6. environment effects remain distinguishable from participant re-entry;
+7. review stays minimal because measurement is itself an intervention;
+8. A/B/C are provenance categories, not developmental ranks;
+9. lapse analysis uses actionable/testable updates rather than hidden-cause stories;
+10. useful automatic behavior is allowed to remain automatic;
+11. UPDATE may close on immediate position and later accept delayed consequences;
+12. Gate F remains closed until explicit Owner approval.
 
-Gate F remains closed.
+Explicit Owner approval is required before Gate E closes.
