@@ -1,7 +1,7 @@
 # Stage 1 Learning Units
 
 **ID:** SP-TR-S1-LU-001  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Gate:** D — Learning Units  
 **Date:** 19 September 2026  
 **Upstream capability:** SP-TR-S1-CAP-002  
@@ -9,6 +9,7 @@
 **Automaticity research:** SP-TR-S1-ATR-001  
 **Measurement-reactivity input:** SP-TR-S1-MR-OBS-001  
 **Red Team:** SP-TR-S1-LU-RT-001  
+**Approval decision:** SP-TR-DEC-S1-D-001  
 **Nature:** learner-capability decomposition; not finished exercises, protocol, scoring system or trainer implementation.
 
 ---
