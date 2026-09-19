@@ -38,14 +38,14 @@ while separately preserving:
 
 ~~~text
 support provenance
-environment contribution
+environment configuration
 measurement reactivity
 rehearsal vs live context
-useful automated performance
+aligned automatic performance
 evidence source / capture timing
 ~~~
 
-The default output is a **trace**, not a score.
+The default output is a **trace**, not a score. Normalization never upgrades self-report into objective fact.
 
 ---
 
@@ -307,6 +307,7 @@ B_anticipatory_scaffold_linked
 
 C_participant_initiated
 → no identifiable current prompt activation reported
+~~~
 
 Important:
 
@@ -314,7 +315,6 @@ Important:
 C_participant_initiated
 ≠
 independent of all prior/environmental/social scaffolding
-~~~
 ~~~
 
 ## 7.2 Orthogonal support dimensions
@@ -529,7 +529,7 @@ Observed reasons may be recorded only when evidence exists.
 
 Gate E explicitly allows environment-first design.
 
-Gate F therefore records environmental support separately from internal re-entry.
+Gate F therefore records environmental configuration separately from participant re-entry.
 
 ## 11.1 Environment exposure
 
@@ -547,22 +547,24 @@ environment_support:
 
 Multiple values may apply.
 
-## 11.2 Environment role
+## 11.2 Environment configuration facts
 
-Avoid unsupported causal claims.
+Avoid counterfactual causal claims.
 
-Prefer:
+Prefer directly observable/configuration fields:
 
 ~~~text
-environment_role_report:
-  participant_reports_material
-  system_condition_was_necessary
-  present_but_role_unclear
-  no_material_role_reported
+environment_configuration:
+  unchanged
+  old_route_physically_unavailable
+  old_route_access_reduced
+  alternative_access_increased
+  support_present
+  role_unclear
   unknown
 ~~~
 
-The stronger \`system_condition_was_necessary\` label should be used only where objectively defensible, for example when access was technically blocked.
+These describe the action space that existed; they do not claim what the participant would have done in a different environment.
 
 ## 11.3 Boundary
 
@@ -743,7 +745,7 @@ Do not infer either rigidity or flexibility from absence of a mismatch event.
 
 The stronger long-term SP target is not automaticity alone but:
 
-> **useful automaticity + reopenability under meaningful mismatch.**
+> **aligned/useful automaticity + reopenability under meaningful mismatch.**
 
 Gate F may record a separate event when:
 
@@ -877,6 +879,8 @@ Gate F allows transparent summaries that can always be expanded back to episodes
 
 Raw episode count describes data volume/composition only and must never be interpreted as better capacity.
 
+Do not compare rates across lanes as if lane difficulty/exposure were equivalent.
+
 No overall Selection Capacity score is approved.
 
 ## S1 — Episode composition
@@ -997,14 +1001,14 @@ used feedback
 
 ## S8 — Aligned automatic performance
 
-Show occurrences of useful automated performance separately from conscious SP cycles.
+Show occurrences of aligned automatic performance separately from conscious SP cycles.
 
 Important interpretation:
 
 ~~~text
 fewer conscious SP events
 +
-more useful automated performance
+more aligned automatic performance
 may be compatible with successful training
 ~~~
 
@@ -1062,7 +1066,7 @@ Gate G should not open merely because the available episodes look successful.
 | better questionnaire answers | reporting skill / recall improved |
 | earlier noticing | questionnaire anticipation increased monitoring |
 | more realized alternatives | prompts directly retrieved the response |
-| fewer conscious SP events | useful behavior may have automated |
+| fewer conscious SP events | aligned behavior may have automated |
 | better outcomes | external events may explain outcomes |
 | more reported SP events | measurement itself may create/surface events |
 | stable behavior | lane may not have recurred |
@@ -1104,14 +1108,14 @@ From Stage 1 data alone, do not infer:
 
 ---
 
-# 24. Gate F recommendation before Red Team
+# 24. Gate F recommendation after Red Team
 
 **Recommendation:** APPROVE WITH BINDING BOUNDARIES — use a trace-first observability architecture layered onto Reality Event Model v0.2.
 
 Core structure:
 
 ~~~text
-DOCUMENTED OPPORTUNITY
+DOCUMENTED RELEVANT EVENT / CANDIDATE OPPORTUNITY
 → NOTICE
 → OPEN
 → SELECT
@@ -1123,7 +1127,6 @@ DOCUMENTED OPPORTUNITY
 Cross-cutting evidence:
 
 ~~~text
-source / capture timing
 source lineage / capture timing
 support provenance + orthogonal support dimensions
 measurement reactivity
