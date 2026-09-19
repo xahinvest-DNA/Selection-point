@@ -1,7 +1,7 @@
 # Stage 1 Practice Protocol
 
 **ID:** SP-TR-S1-PP-001  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Gate:** E — Practice Protocol  
 **Date:** 19 September 2026  
 **Upstream capability:** \`SP-TR-S1-CAP-002\`  
