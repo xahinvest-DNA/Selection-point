@@ -1,13 +1,14 @@
 # Stage 1 Learning Units
 
 **ID:** SP-TR-S1-LU-001  
-**Status:** ready_for_chat_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Gate:** D — Learning Units  
 **Date:** 19 September 2026  
-**Upstream capability:** `SP-TR-S1-CAP-002`  
-**Upstream map:** `SP-TR-S1-PMM-002`  
-**Automaticity research:** `SP-TR-S1-ATR-001`  
-**Measurement-reactivity input:** `SP-TR-S1-MR-OBS-001`  
+**Upstream capability:** SP-TR-S1-CAP-002  
+**Upstream map:** SP-TR-S1-PMM-002  
+**Automaticity research:** SP-TR-S1-ATR-001  
+**Measurement-reactivity input:** SP-TR-S1-MR-OBS-001  
+**Red Team:** SP-TR-S1-LU-RT-001  
 **Nature:** learner-capability decomposition; not finished exercises, protocol, scoring system or trainer implementation.
 
 ---
@@ -18,29 +19,31 @@ Stage 1 should not teach a learner to analyze the whole psychological architectu
 
 It should train a compact operational cycle:
 
-```text
+~~~text
 NOTICE
 → OPEN
 → REALIZE
-→ LEARN / REPEAT
-```
+→ UPDATE
+~~~
 
 Expanded:
 
-```text
+~~~text
 notice enough of the relevant current position
 → make the old continuation non-exclusive
 → realize one reality-anchored alternative
-→ observe the consequence and repeat the useful route when the cue returns
-```
+→ observe the consequence and update the current position
+~~~
 
 The target is not permanent conscious control.
 
-The longer-term direction is:
+The longer-term training direction is:
 
 > **a useful automatic default that remains selectively interruptible when reality meaningfully changes.**
 
 Thus Stage 1 uses conscious participation as a bridge between an outdated automatic continuation and a potentially more useful automatic continuation.
+
+Re-automatization is **not** the completion criterion of one Stage 1 cycle. It is a possible cross-cycle result of repeated useful realizations.
 
 ---
 
@@ -50,12 +53,12 @@ The Gate C designer map contains many distinctions, but a learner should not hav
 
 The minimum coherent decomposition is four units:
 
-```text
+~~~text
 LU-1 NOTICE — notice the relevant current process
 LU-2 OPEN — create / recognize an interruption window
 LU-3 REALIZE — execute one available replacement continuation
-LU-4 LEARN — return to consequence and repeat toward lower-load execution
-```
+LU-4 UPDATE — return to consequence and update the current position
+~~~
 
 These units preserve all required Stage 1 functions while reducing learner-facing cognitive load.
 
@@ -64,8 +67,11 @@ They are ordered for teaching, not claimed as a universal mental sequence.
 A learner may enter late:
 - after the old response has started;
 - after part of it has completed;
+- after the main action has ended;
 - at consequence/repair;
 - while preparing the next recurrence.
+
+Late entry is not a degraded version of Stage 1. It is one of its normal forms.
 
 ---
 
@@ -79,7 +85,7 @@ A learner may enter late:
 
 Move from blind continuation to minimal relevant contact with the current position.
 
-The learner does **not** need to understand the cause of the process.
+The learner does not need to understand the hidden cause of the process.
 
 The learner needs to notice enough that the next continuation is no longer completely invisible.
 
@@ -99,12 +105,12 @@ Recognize at least one currently relevant element such as:
 
 Then preserve at least one useful distinction where needed:
 
-```text
+~~~text
 fact ≠ interpretation
 urge ≠ action
 selected ≠ realized
 already happened ≠ still open
-```
+~~~
 
 Not every category is required.
 
@@ -116,17 +122,17 @@ But more noticing is not automatically better.
 
 The function is instrumental:
 
-```text
+~~~text
 notice enough
 → action field becomes more distinguishable
-```
+~~~
 
 not:
 
-```text
+~~~text
 notice everything
 → endlessly monitor yourself
-```
+~~~
 
 ## Scaffold / questionnaire role
 
@@ -139,22 +145,19 @@ Examples:
 - environmental cue;
 - another explicit signal.
 
-Measurement-reactivity hypothesis:
+Owner self-report SP-TR-S1-MR-OBS-001 suggests a possible pathway in which future reporting increases in-day salience.
 
-```text
-external question
-→ future reporting becomes salient
-→ relevant events are noticed during the day
-→ possible participant-owned noticing
-```
+But the causal pathway remains OPEN.
 
-But performance must preserve provenance:
+Preserve provenance:
 
-```text
-noticed independently
-≠
-noticed because prompt/questionnaire was active
-```
+~~~text
+A — externally prompted
+B — anticipatory scaffold-linked
+C — participant-initiated
+~~~
+
+These are provenance categories, not mastery levels.
 
 Questionnaire completion itself is not LU-1 mastery.
 
@@ -170,7 +173,7 @@ Questionnaire completion itself is not LU-1 mastery.
 
 ## Observable-expression candidate
 
-The participant identifies a relevant current event **before the next relevant continuation is fully closed**, or recognizes it late enough to alter repair / consequence / next-cycle preparation.
+The participant identifies a relevant current event before the next relevant continuation is fully closed, or recognizes it late enough to alter repair / consequence / next-cycle preparation.
 
 Prompt exposure is recorded where possible.
 
@@ -212,19 +215,27 @@ Transform noticing into a usable interruption window.
 
 The target is **non-exclusivity**, not total suppression.
 
+Noticing and interruption remain distinct:
+
+~~~text
+I noticed
+≠
+the old continuation became non-exclusive
+~~~
+
 ## Minimal learner operation
 
 Identify the relevant open edge:
 
-```text
+~~~text
 what already happened
 ≠
 what is still unfolding
 ≠
 what relevant next continuation has not happened yet
-```
+~~~
 
-Then create or use one small interruption.
+Then create or use one small interruption where a meaningful mismatch exists.
 
 Candidate interruption classes, not fixed techniques:
 
@@ -243,19 +254,32 @@ The learner does not need to return to the original trigger.
 
 Any still-open relevant boundary is valid.
 
+## Mismatch condition
+
+The learner is not trained to interrupt automaticity merely because it is automatic.
+
+Interruption becomes relevant when current reality, consequence, safety, commitment, responsibility or declared local direction indicates that continued default execution may no longer fit.
+
+~~~text
+automatic ≠ needs interruption
+misaligned + still influenceable → interruption may be useful
+~~~
+
+The local anchor is enough. Stage 1 does not require a final answer about life purpose.
+
 ## Why necessary
 
 Intentions made earlier may be unavailable when the old route is strongly cued.
 
 A micro-interruption can create enough time/context change for another continuation to become retrievable.
 
-```text
+~~~text
 old route activated
 → interruption
 → old route no longer exclusive
-```
+~~~
 
-This does **not** mean the old learning is erased.
+This does not mean the old learning is erased.
 
 ## What LU-2 is not
 
@@ -265,15 +289,6 @@ This does **not** mean the old learning is erased.
 - interrupting useful skilled automaticity;
 - searching retrospectively for the perfect lost choice point;
 - assuming every automatic response should be interrupted.
-
-## Automaticity-neutrality rule
-
-Interruption is warranted only when there is meaningful mismatch involving current reality, consequence, safety, commitment or relevant direction.
-
-```text
-automatic ≠ needs interruption
-misaligned + still influenceable → interruption may be useful
-```
 
 ## Observable-expression candidate
 
@@ -287,11 +302,27 @@ but then the exact old continuation resumed with no additional availability or n
 
 A pause can still be useful data, but interruption alone is not completion.
 
+## Late-entry path
+
+If the main action already occurred, LU-2 can target what remains open:
+
+~~~text
+main action happened
+→ escalation still open
+→ repair still open
+→ consequence reduction still open
+→ next-cycle condition still open
+~~~
+
+Stage 1 does not demand retrospective self-blame about an earlier lost opportunity.
+
 ## Stage boundary
 
 Stage 1 needs only a small usable interruption window.
 
 It does not require reliable inhibition under intense stress, addiction, crisis or every high-load context.
+
+In stronger clinical / dependency / crisis conditions, valid participation may be seeking or using professional/external support.
 
 ## Relation to next unit
 
@@ -319,21 +350,21 @@ Convert the opened Selection Point into factual participation.
 
 This is the core RC-018 transition:
 
-```text
+~~~text
 selected
 → actually realized
-```
+~~~
 
 ## Minimal learner operation
 
 Anchor the next continuation to:
 
-```text
+~~~text
 current facts
 + constraints/resources
 + safety
 + relevant local task / responsibility / direction
-```
+~~~
 
 Select one executable alternative.
 
@@ -358,14 +389,36 @@ Where an old route is strong, the replacement may need to be prepared before the
 
 Candidate format:
 
-```text
+~~~text
 IF relevant cue / state / situation
 THEN executable alternative
-```
+~~~
 
 This is support, not a guarantee.
 
 A plan is not realization.
+
+## Important distinction: effective automation vs Stage 1 evidence
+
+A trained alternative may later execute automatically:
+
+~~~text
+cue → useful trained response
+~~~
+
+That may be a desirable long-term result.
+
+But successful automated behavior alone does not demonstrate that the Stage 1 Selection Point operation occurred in that episode.
+
+Therefore:
+
+~~~text
+effective automated replacement
+≠
+evidence of current Stage 1 noticing/re-entry
+~~~
+
+Later measurement must preserve this distinction.
 
 ## Why necessary
 
@@ -373,11 +426,11 @@ Interruption without an available replacement often leaves the old route as the 
 
 Thus:
 
-```text
+~~~text
 stop old
 ≠
 have new
-```
+~~~
 
 LU-3 makes the alternative concrete enough to compete in reality.
 
@@ -426,7 +479,7 @@ It does not require generalization across domains or stable execution under seve
 
 LU-3 creates a new factual continuation.
 
-LU-4 determines whether that continuation becomes usable learning rather than a one-off event.
+LU-4 returns the learner to reality rather than letting intention or execution become the endpoint.
 
 ## Strongest Red Team attack
 
@@ -436,209 +489,210 @@ The learner may simply obey an external script.
 
 ---
 
-# 6. LU-4 — LEARN / REPEAT
+# 6. LU-4 — UPDATE
 
 ## Learner-facing idea
 
-> **Посмотри, что реально произошло, и при следующем релевантном повторении снова используй то, что оказалось полезным.**
+> **Посмотри, что реально произошло, и обнови следующую позицию.**
 
 ## Purpose
 
-Close the loop through consequence and begin movement toward useful automaticity.
+Close the minimum Stage 1 cycle through consequence and reality correction.
 
-The aim is not to keep the new response permanently conscious.
+The goal is not to judge the outcome as success/failure.
 
-The aim is to make the useful continuation progressively easier to retrieve and execute when the relevant cue returns.
+The goal is to re-enter current reality.
 
 ## Minimal learner operation
 
 Keep separate:
 
-```text
+~~~text
 selected continuation
 ≠ realized continuation
 ≠ consequence
 ≠ used feedback
-```
+~~~
 
-Then:
+Then answer:
 
-1. observe what actually happened next;
-2. update the current position;
-3. preserve what should be repeated / changed / abandoned;
-4. when the relevant cue recurs, realize the useful route again.
-
-Working learning loop:
-
-```text
-cue
-→ notice / interrupt
-→ alternative
-→ realization
-→ consequence
-→ repeat / adjust
-→ lower-load retrieval
-```
-
-## Re-automatization principle
-
-Repeated useful realization may make the route faster, easier and more default.
-
-But Stage 1 does not claim:
-
-- the old route is erased;
-- one success creates a new habit;
-- a fixed number of repetitions is sufficient;
-- the route will transfer automatically to new contexts.
-
-Return of the old continuation is treated as data and another possible re-entry point.
-
-## Scaffold-fading hypothesis
-
-The questionnaire observation creates an important research path:
-
-```text
-external prompt
-→ prompted noticing
-→ anticipatory noticing
-→ spontaneous selective noticing
-→ lower prompt dependence
-```
-
-This is not yet an approved law.
-
-LU-4 must therefore distinguish:
-- externally cued performance;
-- participant-initiated performance;
-- whether the effect persists when support is reduced.
-
-No withdrawal protocol is defined at Gate D.
+~~~text
+What actually happened?
+What does this change in the current position?
+What remains supported, unsupported or unknown?
+What is now open next?
+~~~
 
 ## Why necessary
 
-Without return to consequence, SP becomes intention training.
+Without consequence return, SP ends at intention or performance.
 
-Without repetition, the learner may repeatedly depend on expensive conscious effort while the old route remains dominant.
+A realized continuation changes the factual position regardless of whether the result was desired.
 
 ## What LU-4 is not
 
 - reward for “good behavior” regardless of reality;
 - assuming a good outcome proves the move was correct;
 - assuming a bad outcome disproves the capability;
-- forcing repetition of a response after facts change;
-- declaring a new stable habit after one or several successes;
+- declaring universal causality from one event;
+- declaring a new habit after one or several successes;
 - requiring permanent self-monitoring.
 
 ## Observable-expression candidate
 
-Across at least one recurrence, the learner can use prior consequence as current data and either:
-- repeat the useful continuation;
-- modify it based on new facts;
-- detect return of the old route and re-enter without treating it as total reset.
+The participant can distinguish:
 
-No repetition threshold is set here.
+- what was selected;
+- what was realized;
+- what consequence appeared;
+- what changed in the current position;
+- what remains uncertain.
+
+The participant may then repeat, modify or abandon the continuation when reality warrants it.
 
 ## False mastery
 
-> “Теперь я умею.”
-
-after one successful event.
+> “Получилось — значит я нашёл правильный механизм.”
 
 or:
 
-> “Снова сорвался — значит всё было бесполезно.”
+> “Не получилось — значит выбор был неправильным.”
 
-after the old route reappears.
+Neither conclusion follows automatically.
 
 ## Stage boundary
 
-Stage 1 can begin repetition and reduced dependence on scaffolds.
+One cycle can complete Stage 1 practice evidence without proving stable habit change.
 
-Robust transfer across stress, multiple contexts and domains belongs to later stages.
+Repeated cycles are needed to investigate strengthening, independence, transfer and re-automatization.
+
+Those later properties must not be smuggled into one-cycle completion.
 
 ## Relation forward
 
-LU-4 completes the minimum Stage 1 learning cycle and creates the material later needed for practice protocol and observability design.
+LU-4 completes the minimum Stage 1 cycle.
+
+The next relevant recurrence starts another cycle from the updated position.
 
 ## Strongest Red Team attack
 
-“Repeat the useful route” can become rigid rule-following and create a new maladaptive automaticity.
+The learner can overfit to one consequence and form a rigid new rule.
 
-**Constraint:** every repetition remains subordinate to current reality. A changed fact can reopen Selection Point and invalidate yesterday's useful response.
-
----
-
-# 7. Integrated learner architecture
-
-The four units form one compact structure:
-
-```text
-LU-1 NOTICE
-What is happening now that matters?
-
-        ↓
-
-LU-2 OPEN
-What is still open, and how do I stop the old route
-from being the only route?
-
-        ↓
-
-LU-3 REALIZE
-What can I actually do now relative to reality
-and what matters here?
-Did I actually do it?
-
-        ↓
-
-LU-4 LEARN
-What happened next?
-What should be repeated, changed or dropped
-when the relevant cue returns?
-```
-
-Even shorter:
-
-> **Заметил → открыл → сделал → научился.**
-
-This compact formulation is a learner-facing candidate, not final course copy.
+**Constraint:** consequence updates the current model; it does not close inquiry permanently.
 
 ---
 
-# 8. Scaffold architecture
+# 7. Cross-cycle learning direction — toward useful automaticity
 
-External support can enter at every unit, but provenance must remain visible.
+Re-automatization is not a fifth Learning Unit and not LU-4 completion.
 
-```text
-LU-1: prompt helps noticing
-LU-2: prompt / environment helps interrupt
+It is the proposed longer learning direction across repeated cycles:
+
+~~~text
+relevant cue / mismatch
+→ SP cycle
+→ useful realized continuation
+→ consequence
+→ recurrence
+→ useful route retrieved again
+→ execution becomes easier / faster / lower-load
+~~~
+
+Possible long-term result:
+
+~~~text
+useful automatic default
++
+selective interruptibility when meaningful mismatch appears
+~~~
+
+Old learning may remain retrievable.
+
+A lapse does not mean total reset.
+
+A new automatic response is not automatically good forever.
+
+The endpoint is not rigid replacement but **efficient default + reopenability**.
+
+No repetition count, time threshold or mastery threshold is set in Gate D.
+
+---
+
+# 8. Scaffold / measurement-reactivity architecture
+
+External support can enter at every unit:
+
+~~~text
+LU-1: prompt/questionnaire helps noticing
+LU-2: prompt/environment helps interrupt
 LU-3: prompt retrieves prepared alternative
-LU-4: questionnaire helps register consequence / recurrence
-```
+LU-4: questionnaire helps register consequence
+~~~
 
-Development hypothesis:
+Preserve three provenance categories:
 
-```text
-external scaffold
-→ supported performance
-→ repeated supported performance
-→ participant-initiated retrieval
-→ selective independent re-entry
-```
+~~~text
+A — externally prompted
+direct reminder/question triggered noticing/action
 
-Failure alternative:
+B — anticipatory scaffold-linked
+no immediate prompt, but future reporting/support was salient
 
-```text
-external scaffold
-→ dependence
-→ performance collapses without scaffold
-```
+C — participant-initiated
+no identifiable current scaffold activation
+~~~
 
-Gate D does not decide between these. Later observability/pilot work must test it.
+These are not scores and not assumed developmental stages.
+
+Two competing hypotheses remain open:
+
+~~~text
+supported performance
+→ participant-initiated availability
+
+OR
+
+supported performance
+→ dependence / demand effect / reporting effect
+~~~
+
+Later observability/pilot work must distinguish them.
+
+Gate D does not define scaffold withdrawal schedules.
 
 ---
 
-# 9. What the learner does NOT need to learn in Stage 1
+# 9. Late-entry architecture
+
+The same four units must work even after the main automatic action occurred.
+
+Example structure:
+
+~~~text
+NOTICE
+I already shouted; conflict is still escalating.
+
+OPEN
+The first shout cannot be undone, but the next message / tone / repair is open.
+
+REALIZE
+I stop escalation / leave temporarily / repair / ask for time.
+
+UPDATE
+What changed? What remains damaged? What is open next?
+~~~
+
+Therefore Stage 1 is not:
+
+> catch yourself before the mistake.
+
+It is:
+
+> **find the next still-open relevant continuation from the position that actually exists now.**
+
+---
+
+# 10. What the learner does NOT need to learn in Stage 1
 
 The learner does not need to:
 
@@ -651,26 +705,25 @@ The learner does not need to:
 - identify repeating scenarios across episodes;
 - validate their final life direction;
 - perform reliably under every stressful condition;
-- become independent from all support immediately.
+- become independent from all support immediately;
+- prove that a new useful response has already become automatic.
 
 ---
 
-# 10. Gate D completeness check
+# 11. Gate D completeness check
 
-The units cover the required functions:
-
-| Required function | Unit |
+| Required function | Unit / layer |
 |---|---|
 | relevant noticing | LU-1 |
 | useful distinction | LU-1 |
 | open edge | LU-2 |
 | interruption window | LU-2 |
-| reality/direction anchor | LU-3 |
+| reality/local-direction anchor | LU-2 / LU-3 |
 | available replacement | LU-3 |
 | realization | LU-3 |
 | consequence return | LU-4 |
-| repetition toward useful automaticity | LU-4 |
-| scaffold/reactivity visibility | cross-cutting, especially LU-1/LU-4 |
+| repetition toward useful automaticity | cross-cycle direction |
+| scaffold/reactivity visibility | cross-cutting |
 
 The architecture preserves:
 - automaticity neutrality;
@@ -679,27 +732,69 @@ The architecture preserves:
 - history without hindsight blame;
 - selective rather than continuous monitoring;
 - supported performance without false independence claims;
-- lapse/recovery without total-reset framing.
+- lapse/recovery without total-reset framing;
+- late-entry participation;
+- clinical/support boundary.
 
 ---
 
-# 11. Open questions for Gate D Red Team
+# 12. Learner-facing compression candidate
 
-1. Is LU-1 still too cognitively broad?
-2. Does LU-2 require an explicit trained interruption action, or can recognizing an already-existing open edge be enough?
-3. Does LU-3 overload choice + realization into one unit?
-4. Does LU-4 prematurely import habit formation / later-stage transfer into Stage 1?
-5. How can scaffold fading be represented without prematurely designing a protocol?
-6. Is “relevant mismatch” sufficiently clear to prevent unnecessary interruption of useful automaticity?
-7. Can the four units work when noticing happens only after the main action?
-8. How should clinical/addiction/crisis cases be bounded when automatic continuation is unusually strong?
-9. Does “Заметил → открыл → сделал → научился” accidentally imply learning after one cycle?
-10. What evidence would distinguish questionnaire-driven prospective monitoring from simple improved memory?
+Candidate short form:
+
+> **Заметь → открой → сделай → сверься с реальностью.**
+
+Longer training direction:
+
+> **Повторяй полезное так, чтобы со временем думать об этом приходилось всё меньше — но сохраняй возможность снова заметить, когда реальность изменилась.**
+
+These are candidates for later learner-facing language, not final course copy.
 
 ---
 
-# 12. Gate D recommendation before Red Team
+# 13. Remaining open questions
 
-**Recommendation:** retain four Learning Units as the minimal learner-facing decomposition and run a dedicated Red Team before Owner review.
+**OPEN-1:** Is LU-1 still too cognitively broad for first exposure?
 
-Gate E remains unopened.
+**OPEN-2:** Does the learner need an explicitly trained interruption action, or is recognizing an already-existing open edge sometimes sufficient?
+
+**OPEN-3:** What is the minimum local anchor needed to decide that interruption is relevant?
+
+**OPEN-4:** How should questionnaire/prompt provenance be captured without making self-observation heavier?
+
+**OPEN-5:** What evidence would distinguish anticipatory reporting from genuine participant-initiated noticing?
+
+**OPEN-6:** At what later gate should scaffold fading / independence testing be designed?
+
+**OPEN-7:** How should automatic useful performance be interpreted when it no longer contains an observable conscious Selection Point?
+
+**OPEN-8:** How much recurrence evidence is needed before speaking about re-automatization rather than repeated supported execution?
+
+---
+
+# 14. Gate D recommendation after Red Team
+
+**Recommendation:** APPROVE WITH BINDING BOUNDARIES.
+
+The four-unit architecture is:
+
+~~~text
+NOTICE
+→ OPEN
+→ REALIZE
+→ UPDATE
+~~~
+
+with re-automatization treated as a cross-cycle direction rather than one-cycle completion criterion.
+
+Approval would authorize Gate E — Practice Protocol design — but would not authorize:
+
+- finished product/trainer implementation;
+- repetition thresholds;
+- validated mastery criteria;
+- scaffold-withdrawal protocol;
+- external-user pilot;
+- Stage 2 work;
+- claims that questionnaire reactivity equals internalized Selection Capacity.
+
+Explicit Owner approval is required before Gate D closes.
