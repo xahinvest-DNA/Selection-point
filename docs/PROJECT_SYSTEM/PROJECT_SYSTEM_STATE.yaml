@@ -15,7 +15,7 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_gate_g_owner_review
+  current_authorization: stage_1_stage_review_cycle
   questionnaire_role: telemetry_with_possible_measurement_reactivity_not_sp_proof
   executor_boundaries:
     owner: direction_and_final_approval
@@ -44,7 +44,7 @@ operating_model:
 
 training_state:
   current_stage: 1
-  current_gate: Gate G - Stage 1 Pilot Evidence Packet / Owner Review
+  current_gate: Gate H - Stage 1 Stage Review
 
   stage_1_capability:
     id: SP-TR-S1-CAP-002
@@ -225,19 +225,20 @@ training_state:
 
   stage_1_pilot_evidence_packet:
     id: SP-TR-S1-PEP-001
-    status: red_team_complete_owner_review_required
+    status: approved
     execution_spec: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_SPEC.md
     deliverable: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
     red_team: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
     red_team_id: SP-TR-S1-PEP-RT-001
     red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
     upstream_observability: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
     evidence_scope: owner_self_pilot_and_authorized_deidentified_evidence_only
     corpus_summary: "3 participants; 14 submitted participant-days; P-A 12-19 Sep; P-B/P-C 16-18 Sep"
     corpus_classification: pre_protocol_transitional_compatibility_evidence
     raw_private_data_promoted_upstream: false
-    owner_approval_required: true
-    methodological_approval: false
+    owner_approval_required: false
+    methodological_approval: true
     binding_interpretation:
       - corpus_is_not_gate_e_efficacy_test
       - event_chains_are_partial_reconstructions
@@ -254,9 +255,23 @@ training_state:
       - reopenability_is_not_observed
       - proposed_open_discriminator_is_reactive_measurement_experiment
       - public_artifact_contains_deidentified_findings_only
-      - gate_h_remains_closed_until_owner_approval
-    next_step: owner_review
-    gate_h_opened: false
+    gate_h_opened: true
+
+  stage_1_stage_review:
+    id: SP-TR-S1-SR-001
+    status: active_in_chat
+    execution_spec: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
+    expected_deliverable: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    upstream_evidence_packet: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
+    owner_approval_required: true
+    decision_space:
+      - close_stage_1_architecture
+      - require_post_protocol_pilot_before_stage_1_closure
+      - return_to_gate_e_or_f
+      - return_to_earlier_gate
+      - hold
+    next_step: draft_stage_review_then_red_team_then_owner_decision
+    stage_2_opened: false
 
   deferred_trainer_hypothesis:
     id: SP-TR-HYP-001
@@ -266,7 +281,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_G_OWNER_REVIEW.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_H_OPEN.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -357,8 +372,8 @@ current_gates:
   training_gate_d: approved
   training_gate_e: approved
   training_gate_f: approved
-  training_gate_g: owner_review_required
-  training_gate_h: unopened
+  training_gate_g: approved
+  training_gate_h: open
 
 promotion_rule:
   raw_data_to_public_repo: forbidden
@@ -368,7 +383,7 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_G_OWNER_REVIEW.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_H_OPEN.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
@@ -392,6 +407,8 @@ new_chat_bootstrap:
     - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_SPEC.md
     - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
     - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
+    - docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
+    - docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
     training_capability: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
@@ -408,6 +425,7 @@ new_chat_bootstrap:
     training_gate_f_red_team: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_RED_TEAM.md
     training_gate_g: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
     training_gate_g_red_team: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
+    training_gate_h: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
     parked_trainer_hypothesis: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
