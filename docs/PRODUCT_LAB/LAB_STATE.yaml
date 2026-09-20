@@ -1,6 +1,6 @@
 schema_version: 3
 workstream: Selection Point Product Lab
-updated_at: 2026-09-15
+updated_at: 2026-09-20
 foundation_sync: "RC-018"
 project_system_sync: "SP-PSYS-001"
 
@@ -74,6 +74,18 @@ measurement_foundation:
   raw_participant_data_in_public_repo_allowed: false
   prompt_exposure_must_be_recorded: true
   measurement_adherence_is_domain_outcome: false
+
+daily_trajectory_questionnaire:
+  id: SP-DTQ-002
+  status: draft_for_owner_review
+  document: "docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md"
+  role: longitudinal_trajectory_telemetry
+  cadence: once_daily_evening
+  target_burden: "2-4 minutes"
+  multi_timeframe_target: "episode -> day -> week -> month -> quarter -> 6M/1Y"
+  composite_score: forbidden
+  measurement_reactivity_visible: true
+  course_mastery_measure: false
 
 active_pilot:
   id: SP-LAB-PILOT-001
