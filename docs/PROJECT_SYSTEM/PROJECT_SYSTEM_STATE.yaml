@@ -51,10 +51,22 @@ course_first_reset:
   active_objective: build_effective_stage_1_course
   active_brief: docs/COURSE/STAGE_1_COURSE_WORK_BRIEF.md
   gate_pipeline_active: false
-  questionnaire_development_active: false
+  questionnaire_development_active: limited_trajectory_telemetry_only
   v0_validation_execution_active: false
   gate_era_artifacts_role: research_reference_only
-  next_step: develop_stage_1_teaching_architecture
+  trajectory_questionnaire:
+    id: SP-DTQ-002
+    status: draft_for_owner_review
+    document: docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md
+    role: multi_timeframe_trajectory_telemetry
+    course_prerequisite: false
+  stage_1_course:
+    teaching_field: effective_body
+    operational_direction: "Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем."
+    short_direction: "Тело со временем становится здоровее, сильнее и способнее."
+    teaching_architecture: docs/COURSE/STAGE_1_EFFECTIVE_BODY_TEACHING_ARCHITECTURE.md
+    teaching_architecture_status: working_draft_for_owner_review
+  next_step: owner_review_questionnaire_and_teaching_architecture
 
 training_state:
   current_stage: 1
@@ -356,7 +368,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_COURSE_FIRST_RESET.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_QUESTIONNAIRE_AND_STAGE1_COURSE.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -458,7 +470,7 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_COURSE_FIRST_RESET.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_QUESTIONNAIRE_AND_STAGE1_COURSE.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
     - docs/COURSE/STAGE_1_COURSE_WORK_BRIEF.md
