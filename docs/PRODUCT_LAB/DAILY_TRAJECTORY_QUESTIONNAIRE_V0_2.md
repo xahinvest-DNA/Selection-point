@@ -118,13 +118,23 @@ Important: the questionnaire does not require the participant to identify a hidd
 
 It captures the episode as reported.
 
-### 9. Следующая позиция
+### 9. Фактическая позиция на конец дня
 
-> **После сегодняшнего дня что завтра стало немного легче/доступнее, а что — сложнее/менее доступно?**
+> **С какими 1–3 фактами ты входишь в завтра?**
 
-`Не знаю` is a valid answer.
+Examples:
 
-This question connects today's continuation with the next position without converting trajectory into a moral score.
+- работа не завершена;
+- тренировка выполнена;
+- алкоголь был / не был;
+- еда на завтра приготовлена;
+- боль или дискомфорт усилились;
+- спал мало и усталость сохраняется;
+- важная договорённость выполнена / не выполнена.
+
+The participant is not asked to infer what has become psychologically “more available” or “less available.”
+
+The purpose is to preserve a compact factual end-of-day position that can be compared with later days and higher timeframes.
 
 ### 10. Одно проверяемое действие на завтра
 
@@ -154,7 +164,7 @@ training
 activity/load
 energy/pain/stress
 intention → fact
-next position
+end-of-day factual position
 tomorrow action
 ~~~
 
