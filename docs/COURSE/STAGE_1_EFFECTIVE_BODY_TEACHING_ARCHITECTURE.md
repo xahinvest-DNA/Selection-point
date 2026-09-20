@@ -2,7 +2,7 @@
 # Stage 1 — “Эффективное тело” Teaching Architecture
 
 **ID:** SP-COURSE-S1-TA-001  
-**Status:** working_draft_for_owner_review  
+**Status:** supporting_draft / course_structure_controls_sequence  
 **Date:** 20 September 2026  
 **Course mode:** course-first  
 **Foundation stage:** Stage 1 — «Жизнь внутри автоматизма»  
@@ -429,19 +429,18 @@ Not:
 
 It is a course in the first Selection Point operation, taught through the concrete field of the body.
 
-## 13. Next course-design task
+## 13. Course structure control
 
-Turn this architecture into the first learner-facing lesson sequence.
+The detailed sequence is now defined separately in:
 
-Proposed next output:
+docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
 
-~~~text
-Stage 1
-Lesson 1 — why knowledge does not change the body
-Lesson 2 — how one automatic episode is assembled
-Lesson 3 — need vs familiar means
-Lesson 4 — where participation is still available
-Lesson 5 — action, consequence and next position
-~~~
+That document controls:
+- lesson count;
+- lesson sequence;
+- lesson anatomy;
+- field-practice rhythm;
+- final integration review;
+- relationship to the daily trajectory questionnaire.
 
-Lesson count is a working proposal, not yet approved.
+Do not write full lesson scripts before Owner review of the course structure.
