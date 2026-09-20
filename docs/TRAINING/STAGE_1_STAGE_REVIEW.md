@@ -2,7 +2,7 @@
 
 **ID:** SP-TR-S1-SR-001  
 **Gate:** H — Stage Review  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Date:** 20 September 2026  
 **Execution contract:** SP-TR-S1-SR-SPEC-001  
 **Upstream Capability:** SP-TR-S1-CAP-002  
@@ -11,6 +11,8 @@
 **Upstream Evidence Packet:** SP-TR-S1-PEP-001  
 **Red Team:** SP-TR-S1-SR-RT-001  
 **Red Team verdict:** pass_with_binding_boundaries  
+**Approval decision:** SP-TR-DEC-S1-H-001  
+**Owner decision:** A — CLOSE_STAGE_1_ARCHITECTURE  
 **Nature:** stage-level methodological review; not an efficacy claim, clinical claim, external-pilot authorization or Stage 2 authorization.
 
 ---
@@ -597,4 +599,4 @@ The final approved Stage 1 package would be:
 
 > **Close Stage 1 architecture as coherent and testable, while explicitly refusing to treat the current evidence as an efficacy demonstration. Move next to direct post-protocol validation. Reopen architecture only if reality returns a concrete contradiction.**
 
-**Status before Owner decision:** proposal only.
+**Final status:** Owner approved option A — Stage 1 architecture closed; validation remains empirically open.
