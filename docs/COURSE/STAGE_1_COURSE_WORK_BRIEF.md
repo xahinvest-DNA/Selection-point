@@ -14,6 +14,22 @@ The module should be understandable without reading Foundation documents or proj
 
 It should contain enough theory to make the mechanism intelligible and enough practice to produce direct lived feedback.
 
+## 1.1. Field and direction
+
+First teaching field:
+
+> **Эффективное тело**
+
+Operational direction:
+
+> **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**
+
+Short formulation:
+
+> **Тело со временем становится здоровее, сильнее и способнее.**
+
+The course is not a weight-loss course. Weight may be one indicator; health is the direction; trajectory management is the transferable skill.
+
 ## 2. Central course question
 
 > **What must a person understand, notice and practice so that they begin to see the difference between an automatic continuation and an actually available next choice?**
