@@ -217,7 +217,7 @@ Shows:
 - activity;
 - training;
 - intended vs realized continuation;
-- next-position report.
+- end-of-day factual position.
 
 ### W1 — week
 
@@ -228,7 +228,7 @@ Can show:
 - training/activity recurrence;
 - intended → realized pattern;
 - recurring event/context classes;
-- next-position changes.
+- recurring changes in end-of-day factual position.
 
 ### M1 — month
 
