@@ -2,13 +2,15 @@
 
 **ID:** SP-TR-S1-SR-001  
 **Gate:** H — Stage Review  
-**Status:** draft_for_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Date:** 20 September 2026  
 **Execution contract:** SP-TR-S1-SR-SPEC-001  
 **Upstream Capability:** SP-TR-S1-CAP-002  
 **Upstream Practice Protocol:** SP-TR-S1-PP-001  
 **Upstream Observability:** SP-TR-S1-OM-001  
 **Upstream Evidence Packet:** SP-TR-S1-PEP-001  
+**Red Team:** SP-TR-S1-SR-RT-001  
+**Red Team verdict:** pass_with_binding_boundaries  
 **Nature:** stage-level methodological review; not an efficacy claim, clinical claim, external-pilot authorization or Stage 2 authorization.
 
 ---
@@ -252,7 +254,7 @@ measurement/questionnaire exposure may itself alter behavior
 legacy retrospective data are insufficient to reconstruct NOTICE/OPEN reliably
 ```
 
-These are enough to validate the need for the architecture's distinctions.
+These are enough to justify preserving the architecture's distinctions under the current evidence.
 
 They are not enough to validate training efficacy.
 
@@ -286,6 +288,16 @@ In fact, the architecture already contains explicit representations for these pr
 - consequence vs update.
 
 The evidence therefore identifies a **validation gap**, not an architectural contradiction.
+
+Binding Red Team boundary:
+
+```text
+no contradiction requiring reopening was observed
+≠
+the architecture has been confirmed true
+```
+
+Gate H is a closure-under-current-evidence decision. Reality retains authority to reopen the architecture.
 
 ---
 
@@ -488,6 +500,9 @@ Reopen D/E/F only when evidence identifies a specific design contradiction, for 
 - Lane Card consistently creates more burden than access;
 - measurement cannot distinguish key interpretations it claims to distinguish;
 - practice systematically induces hypervigilance or unsafe interruption;
+- the final protocol repeatedly fails to produce any observable OPEN/REALIZE opportunity in situations where a relevant open edge is otherwise well evidenced;
+- direct evidence contradicts a core capability distinction;
+- important safety or harm signals appear;
 - the capability decomposition proves incompatible with observed live events.
 
 Poor outcomes alone are insufficient.
@@ -506,7 +521,43 @@ If later tested, it must remain separately identifiable as a possible scaffold/i
 
 ---
 
-# 16. Proposed SSOT promotion if Owner approves
+# 16. Required status separation after Red Team
+
+To prevent semantic slippage, SSOT must not encode a single ambiguous `stage_1: complete` state.
+
+The two states must remain separate:
+
+```text
+architecture_status:
+  owner_review_required
+  → approved_closed only after Owner approval
+
+validation_status:
+  empirically_open
+  efficacy_not_demonstrated
+```
+
+Owner self-pilot remains:
+
+```text
+high-value design evidence
+≠
+strong independent efficacy evidence
+```
+
+Additional-participant evidence remains cross-case recurrence, not efficacy replication.
+
+The direct validation object is the learner-facing compression:
+
+```text
+one lane
+→ short Lane Card
+→ Заметь → открой → сделай → сверься
+```
+
+If live use requires the learner to hold the full designer/research architecture in mind, that is a Gate E contradiction and must trigger reopening.
+
+# 17. Proposed SSOT promotion if Owner approves
 
 If status A is explicitly approved, promote:
 
@@ -542,7 +593,7 @@ The final approved Stage 1 package would be:
 
 ---
 
-# 17. Gate H proposal
+# 18. Gate H proposal
 
 > **Close Stage 1 architecture as coherent and testable, while explicitly refusing to treat the current evidence as an efficacy demonstration. Move next to direct post-protocol validation. Reopen architecture only if reality returns a concrete contradiction.**
 
