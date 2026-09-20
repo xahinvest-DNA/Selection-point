@@ -2,7 +2,7 @@
 # Stage 1 Post-Protocol Validation Design
 
 **ID:** SP-TR-S1-VAL-001  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Date:** 20 September 2026  
 **Parent decision:** SP-TR-DEC-S1-H-001  
 **Architecture status:** approved_closed  
@@ -11,6 +11,8 @@
 **Upstream Observability:** SP-TR-S1-OM-001  
 **Red Team:** SP-TR-S1-VAL-RT-001  
 **Red Team verdict:** pass_with_binding_boundaries  
+**Approval decision:** SP-TR-DEC-S1-VAL-001  
+**Owner decision:** approved for V0 execution  
 **Nature:** direct post-protocol validation design; not an efficacy study by itself, not a mastery scale, not an external-user pilot authorization.
 
 ## 1. Purpose
@@ -625,4 +627,4 @@ Before V0 execution, Owner should approve or revise:
 7. exclusion of SP-TR-HYP-002 from this pass;
 8. external-user execution remaining closed.
 
-**Status before Owner decision:** Red Team complete; proposal only. V0 execution remains unauthorized.
+**Final status:** Owner approved; V0 execution authorized for Owner self-pilot only.
