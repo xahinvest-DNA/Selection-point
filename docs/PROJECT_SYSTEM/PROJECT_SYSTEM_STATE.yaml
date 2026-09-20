@@ -15,7 +15,7 @@ operating_model:
   operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
   separate_work_mode_required: false
   stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_stage_review_cycle
+  current_authorization: stage_1_stage_review_owner_review
   questionnaire_role: telemetry_with_possible_measurement_reactivity_not_sp_proof
   executor_boundaries:
     owner: direction_and_final_approval
@@ -44,7 +44,7 @@ operating_model:
 
 training_state:
   current_stage: 1
-  current_gate: Gate H - Stage 1 Stage Review
+  current_gate: Gate H - Stage 1 Stage Review / Owner Review
 
   stage_1_capability:
     id: SP-TR-S1-CAP-002
@@ -259,18 +259,36 @@ training_state:
 
   stage_1_stage_review:
     id: SP-TR-S1-SR-001
-    status: active_in_chat
+    status: red_team_complete_owner_review_required
     execution_spec: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
-    expected_deliverable: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    deliverable: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    red_team: docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
+    red_team_id: SP-TR-S1-SR-RT-001
+    red_team_verdict: pass_with_binding_boundaries
     upstream_evidence_packet: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
     owner_approval_required: true
+    proposed_status: close_stage_1_architecture
+    architecture_status: owner_review_required
+    validation_status: efficacy_not_demonstrated_empirically_open
+    post_protocol_validation_recommended: true
+    external_user_pilot_authorized: false
     decision_space:
       - close_stage_1_architecture
       - require_post_protocol_pilot_before_stage_1_closure
       - return_to_gate_e_or_f
       - return_to_earlier_gate
       - hold
-    next_step: draft_stage_review_then_red_team_then_owner_decision
+    binding_interpretation:
+      - architecture_closure_is_not_efficacy_validation
+      - no_observed_contradiction_is_not_confirmation_of_truth
+      - owner_self_pilot_is_design_evidence_not_independent_efficacy_evidence
+      - cross_case_recurrence_is_not_efficacy_replication
+      - final_gate_e_protocol_not_yet_directly_validated
+      - post_protocol_validation_is_next_recommended_empirical_move
+      - stage_2_does_not_open_automatically
+      - reality_may_reopen_architecture_on_specific_contradiction
+      - directed_question_hypothesis_remains_parked
+    next_step: owner_gate_h_decision
     stage_2_opened: false
 
   deferred_trainer_hypothesis:
@@ -299,7 +317,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_DIRECTED_QUESTION_HYPOTHESIS_PARKED.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_H_OWNER_REVIEW.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
@@ -391,7 +409,7 @@ current_gates:
   training_gate_e: approved
   training_gate_f: approved
   training_gate_g: approved
-  training_gate_h: open
+  training_gate_h: owner_review_required
 
 promotion_rule:
   raw_data_to_public_repo: forbidden
@@ -401,7 +419,7 @@ promotion_rule:
 new_chat_bootstrap:
   read_first:
     - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_DIRECTED_QUESTION_HYPOTHESIS_PARKED.md
+    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_GATE_H_OWNER_REVIEW.md
     - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
     - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
     - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
@@ -427,6 +445,8 @@ new_chat_bootstrap:
     - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
     - docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
     - docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
+    - docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    - docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
     training_capability: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
@@ -443,7 +463,9 @@ new_chat_bootstrap:
     training_gate_f_red_team: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_RED_TEAM.md
     training_gate_g: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
     training_gate_g_red_team: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
-    training_gate_h: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
+    training_gate_h_spec: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
+    training_gate_h: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    training_gate_h_red_team: docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
     product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
     parked_trainer_hypothesis: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
