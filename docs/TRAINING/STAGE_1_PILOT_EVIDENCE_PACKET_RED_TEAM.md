@@ -4,7 +4,7 @@
 **Date:** 20 September 2026  
 **Reviewed artifact:** SP-TR-S1-PEP-001  
 **Gate:** G — Pilot Evidence Packet  
-**Status:** red_team_complete_revision_required  
+**Status:** red_team_complete_owner_review_required  
 **Gate H:** not opened
 
 ---
@@ -271,3 +271,25 @@ Before Owner review:
 **REVISE, THEN OWNER REVIEW.**
 
 Gate G can become a sound evidence packet if it is framed as a **pre-protocol reality stress test**, not a pilot efficacy result.
+
+
+---
+
+# 7. Post-revision verification
+
+The revised SP-TR-S1-PEP-001 now:
+
+- labels the corpus pre-protocol/transitional;
+- separates SELF-REPORT, DERIVED, OPEN and CONTRADICTION;
+- treats event chains as partial reconstructions;
+- makes Owner/designer expectancy explicit;
+- separates cross-case recurrence from efficacy replication;
+- separates submitted reports from unseen days/opportunities;
+- keeps planning effects as self-reported accessibility;
+- states automaticity is not demonstrated rather than absent;
+- treats the OPEN discriminator as a reactive measurement experiment;
+- preserves lane-local interpretation;
+- preserves public de-identification and private raw-data boundaries;
+- keeps Gate H closed.
+
+**Final Red Team verdict:** **PASS WITH BINDING BOUNDARIES — READY FOR OWNER REVIEW.**
