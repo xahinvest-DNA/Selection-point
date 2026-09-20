@@ -1,7 +1,7 @@
 # Stage 1 Pilot Evidence Packet
 
 **ID:** SP-TR-S1-PEP-001  
-**Status:** red_team_complete_owner_review_required  
+**Status:** approved  
 **Gate:** G — Pilot Evidence Packet  
 **Date:** 20 September 2026  
 **Upstream capability:** SP-TR-S1-CAP-002  
@@ -9,6 +9,7 @@
 **Upstream Observability / Measurement:** SP-TR-S1-OM-001  
 **Execution contract:** SP-TR-S1-PEP-SPEC-001  
 **Red Team:** SP-TR-S1-PEP-RT-001  
+**Approval decision:** SP-TR-DEC-S1-G-001  
 **Evidence scope:** private owner self-pilot + authorized neighboring-project participant data, promoted here only as de-identified findings.  
 **Nature:** empirical evidence assembly; not an efficacy study, psychometric validation, diagnosis or external-pilot authorization.
 
