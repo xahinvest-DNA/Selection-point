@@ -1,13 +1,14 @@
 # Stage 1 Pilot Evidence Packet
 
 **ID:** SP-TR-S1-PEP-001  
-**Status:** ready_for_chat_red_team  
+**Status:** red_team_complete_owner_review_required  
 **Gate:** G — Pilot Evidence Packet  
 **Date:** 20 September 2026  
 **Upstream capability:** SP-TR-S1-CAP-002  
 **Upstream Practice Protocol:** SP-TR-S1-PP-001  
 **Upstream Observability / Measurement:** SP-TR-S1-OM-001  
 **Execution contract:** SP-TR-S1-PEP-SPEC-001  
+**Red Team:** SP-TR-S1-PEP-RT-001  
 **Evidence scope:** private owner self-pilot + authorized neighboring-project participant data, promoted here only as de-identified findings.  
 **Nature:** empirical evidence assembly; not an efficacy study, psychometric validation, diagnosis or external-pilot authorization.
 
@@ -16,6 +17,8 @@
 # 1. Executive finding
 
 The current evidence does **not** establish that Selection Point training is effective.
+
+This corpus is best classified as **pre-protocol / transitional compatibility evidence**: it was collected largely before the approved Gate E protocol existed in its final form.
 
 It does provide a useful reality test of the Stage 1 architecture.
 
@@ -73,6 +76,22 @@ Participant identities, exact body measurements and raw free-text reports remain
 
 ---
 
+# 2.1 Sampling / adherence boundary
+
+The analyzed corpus contains **submitted reports**, not a known unbiased sample of all relevant days or all candidate opportunities.
+
+~~~text
+submitted report
+≠
+all opportunities that occurred
+~~~
+
+Missing or unsubmitted data could be related to difficult days, forgetting, low motivation, collection friction or unrelated circumstances.
+
+Measurement adherence must therefore remain separate from behavior/capability interpretation.
+
+---
+
 # 3. Data quality and provenance
 
 ## 3.1 P-A / 12–15 September
@@ -108,7 +127,7 @@ Limitations:
 
 ## 3.3 P-B / P-C / 16–18 September
 
-These records provide two additional participants and therefore useful cross-case falsification.
+These records provide two additional participants and therefore useful cross-case recurrence/falsification. They do not constitute independent replication of efficacy.
 
 Strengths:
 - same general questionnaire structure;
@@ -123,11 +142,38 @@ Limitations:
 - no controlled questionnaire-off condition;
 - some early fields are ambiguous or mixed-domain.
 
+## 3.4 Source-lineage caveat for external participants
+
+External reports were transferred through the Owner/local collection workflow before normalization.
+
+Where original participant submission timestamps are unavailable:
+
+~~~text
+participant_submitted_at_local = unknown
+~~~
+
+Ingestion time must not be interpreted as participant response time.
+
+Future collection should preserve the raw participant submission separately from ingestion/normalization.
+
+---
+
 ---
 
 # 4. De-identified event reconstruction
 
-The following are **derived event summaries**, not raw records.
+The following are **partial derived event reconstructions**, not raw records.
+
+Evidence-status legend:
+
+~~~text
+SELF-REPORT — directly reported by participant
+DERIVED — analyst mapping/synthesis from source report
+OPEN — not observed / not resolvable from current evidence
+CONTRADICTION — evidence that weakens a simple current interpretation
+~~~
+
+A chain is never treated as fully observed merely because it is presented sequentially. Missing NOTICE / OPEN / timing links remain OPEN.
 
 ## 4.1 P-A
 
@@ -409,11 +455,11 @@ action
 
 This distinction is empirically useful in the current data.
 
-## F-4 — Prior planning appears helpful but is not sufficient
+## F-4 — Participants report greater accessibility after planning, but planning is not sufficient
 
 **DERIVED + HYPOTHESIS.**
 
-All three participants provide some evidence compatible with greater accessibility of a prepared continuation.
+All three participants provide self-reports compatible with greater accessibility of a prepared continuation. Because planning is foregrounded by the questionnaire, this may reflect genuine accessibility, questionnaire framing, or both.
 
 Participants report variants of:
 - planning makes action simpler;
@@ -434,9 +480,11 @@ guaranteed realization
 
 It does not establish an implementation-intention mechanism specifically.
 
-## F-5 — Measurement reactivity is real enough to be a first-class confound
+## F-5 — Measurement reactivity is directly reported in P-A and must be a first-class confound
 
 **OBSERVED SELF-REPORT for P-A; OPEN for generalization.**
+
+P-A is also the project Owner/designer and is highly familiar with the Selection Point model. This makes the self-pilot high-value design evidence but weak independent efficacy evidence.
 
 Two pieces of owner evidence matter:
 
@@ -463,7 +511,7 @@ This is compatible with reduced retrieval/action friction.
 
 It is **not enough** to classify aligned automatic performance because the records still describe plans, urges and conscious comparisons.
 
-Therefore re-automatization remains **OPEN**.
+Therefore re-automatization remains **OPEN**. Automaticity is **not demonstrated**; this does not mean automaticity is absent, because low-attention events may be underreported by a reflective questionnaire.
 
 ## F-7 — No clean test of reopenability exists
 
@@ -601,9 +649,9 @@ Add a low-burden conditional distinction:
 - only afterward;
 - unknown.
 
-## M-2 — OPEN is under-observed
+## M-2 — OPEN is under-observed; measuring it may also train it
 
-When a participant reports an urge + changed action, one conditional question is needed:
+When a participant reports an urge + changed action, one conditional question is a candidate measurement experiment:
 
 > **Что именно сделало старое продолжение не единственным?**
 
@@ -649,7 +697,7 @@ This supports a dedicated collection layer, but does not itself authorize implem
 
 # 12. Cross-participant interpretation
 
-The three-participant corpus is useful for **replication of distinctions**, not effect-size estimation.
+The three-participant corpus is useful for **cross-case recurrence of distinctions**, not independent replication of efficacy or effect-size estimation.
 
 Across all three participants there is evidence compatible with:
 - intention/realization divergence;
@@ -657,7 +705,7 @@ Across all three participants there is evidence compatible with:
 - lane-specific rather than global behavior;
 - planning/repetition sometimes making an alternative feel easier.
 
-Only P-A currently provides explicit evidence that questionnaire anticipation altered behavior.
+Only P-A currently provides explicit evidence that questionnaire anticipation altered behavior. P-B and P-C broaden the case set but remain inside the same social/research context and short reporting window.
 
 Therefore:
 
@@ -677,7 +725,7 @@ No cross-lane ranking is valid.
 
 # 13. Automaticity analysis
 
-Evidence potentially relevant to re-automatization:
+Evidence potentially relevant to re-automatization is lane-local and source-qualified:
 - repeated statements of “easier” or “simpler” action;
 - some repeated successful continuations after earlier difficulty;
 - substitute choices becoming more accessible in one participant.
@@ -780,7 +828,7 @@ This prevents “good day” aggregation and mixed-plan contamination.
 
 **HYPOTHESIS.**
 
-A single conditional question may be sufficient:
+A single conditional question may be sufficient, but adding it is itself a **measurement experiment** because the question may train noticing, rationalization or interruption:
 
 > **Что сделало старое продолжение не единственным?**
 
@@ -795,7 +843,7 @@ Possible classes:
 - cannot identify;
 - retrospective hypothesis.
 
-This should be tested for burden before adoption.
+This should be tested for burden **and measurement reactivity** before adoption.
 
 ## U-4 — Preserve review-created learning as real but scaffolded
 
@@ -832,9 +880,9 @@ From the current evidence we cannot determine:
 
 ---
 
-# 17. Gate G evidence verdict before Red Team
+# 17. Gate G evidence verdict after Red Team
 
-The current 14-record corpus is **methodologically useful but efficacy-insufficient**.
+The current 14-record corpus is **methodologically useful but efficacy-insufficient pre-protocol evidence**.
 
 It supports several architecture boundaries:
 
@@ -866,6 +914,28 @@ The corpus does **not** justify:
 - transfer claims;
 - Gate H conclusions yet.
 
-Run dedicated Gate G Red Team before Owner review.
+Red Team completed; revised packet is ready for Owner review.
 
 Gate H remains closed.
+
+
+---
+
+# 18. Post-Red-Team binding interpretation
+
+The packet must be read under these constraints:
+
+1. this is a pre-protocol/transitional corpus, not a Gate E efficacy test;
+2. event chains are partial reconstructions, not direct recordings of hidden mental sequence;
+3. most internal events are participant self-report;
+4. P-A owner/designer expectancy is a major confound;
+5. P-B/P-C provide cross-case recurrence, not independent efficacy replication;
+6. submitted reports are not an unbiased sample of all days/opportunities;
+7. planning-related “easier” language is self-reported accessibility, not causal effect;
+8. automaticity is not demonstrated, not ruled out;
+9. proposed OPEN measurement can itself be reactive;
+10. public artifacts remain de-identified; raw participant data stay private;
+11. lane-local interpretation remains the default;
+12. Gate H remains closed until Owner approval.
+
+**Final Gate G recommendation:** **PASS WITH BINDING BOUNDARIES — READY FOR OWNER REVIEW.**
