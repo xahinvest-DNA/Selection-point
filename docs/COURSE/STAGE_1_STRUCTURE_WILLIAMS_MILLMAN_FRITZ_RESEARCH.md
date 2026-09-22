@@ -2,8 +2,10 @@
 
 **ID:** SP-COURSE-S1-WMF-RES-001  
 **Date:** 22 September 2026  
-**Status:** research_complete / owner_interpretation_required  
-**Reviewed structure:** SP-COURSE-S1-STRUCT-002
+**Status:** approved_research_input  
+**Reviewed structure:** SP-COURSE-S1-STRUCT-002  
+**Owner decision:** approved  
+**Applied to:** SP-COURSE-S1-STRUCT-003
 
 ## Executive finding
 
