@@ -1,6 +1,6 @@
 schema_version: 4
 system: Selection Point
-updated_at: 2026-09-20
+updated_at: 2026-09-22
 status: active
 control_plane_id: SP-PSYS-001
 control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
@@ -66,15 +66,22 @@ course_first_reset:
     short_direction: "Тело со временем становится здоровее, сильнее и способнее."
     teaching_architecture: docs/COURSE/STAGE_1_EFFECTIVE_BODY_TEACHING_ARCHITECTURE.md
     course_structure: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
-    course_structure_status: revised_working_draft_for_owner_review
+    course_structure_id: SP-COURSE-S1-STRUCT-003
+    course_structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
+    course_structure_status: approved
     proposed_lesson_count: 5
+    course_wide_axis: "participant-owned created direction + factual current reality"
+    cross_cutting_layers:
+      - "Fritz: created direction + current reality"
+      - "Millman: present contact + action when available"
+      - "Williams: level-appropriate maps/tools"
     orientation_counted_as_lesson: false
     integration_counted_as_lesson: false
     structure_review: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE_REVIEW.md
     structure_research_williams_millman_fritz: docs/COURSE/STAGE_1_STRUCTURE_WILLIAMS_MILLMAN_FRITZ_RESEARCH.md
-    structure_research_status: research_complete_owner_interpretation_required
+    structure_research_status: approved_research_input
     teaching_architecture_status: supporting_draft
-  next_step: owner_review_williams_millman_fritz_research_and_structure_revisions
+  next_step: design_reusable_stage_1_lesson_template
 
 training_state:
   current_stage: 1
@@ -376,7 +383,7 @@ training_state:
 
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-22_WMF_STRUCTURE_RESEARCH.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-22_STAGE1_STRUCTURE_APPROVED.md
   principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
 
