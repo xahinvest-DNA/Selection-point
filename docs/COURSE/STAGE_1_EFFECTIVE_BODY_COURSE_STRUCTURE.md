@@ -1,19 +1,21 @@
+
 # Stage 1 — “Эффективное тело” Course Structure
 
-**ID:** SP-COURSE-S1-STRUCT-001  
-**Status:** working_draft_for_owner_review  
-**Date:** 20 September 2026  
+**ID:** SP-COURSE-S1-STRUCT-002  
+**Status:** revised_working_draft_for_owner_review  
+**Date:** 22 September 2026  
+**Supersedes draft:** SP-COURSE-S1-STRUCT-001  
 **Field:** body / health / physical efficiency  
 **Foundation basis:** Stage 1 — «Жизнь внутри автоматизма»  
-**Purpose:** define the full learner-facing structure before writing Lesson 1.
+**Purpose:** define the complete learner-facing structure before writing individual lesson scripts.
 
-## 1. Course goal
+## 1. Course objective
 
-Product direction:
+Direction:
 
 > **Эффективное тело.**
 
-Operational direction:
+Operational formulation:
 
 > **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**
 
@@ -21,494 +23,551 @@ Short formulation:
 
 > **Тело со временем становится здоровее, сильнее и способнее.**
 
-The course does not promise a final body state.
+Stage 1 does not teach an ideal health regime.
 
-It teaches the first operation required for trajectory management:
+It teaches the first operation needed to manage a trajectory:
 
-> **turn one concrete automatic episode from “it just happened” into something the learner can distinguish, participate in and test through reality.**
+> **turn one concrete automatic episode from “it just happened / I am just like this” into a distinguishable process, find where participation is still available, make one real continuation, and return to what reality actually produced.**
 
-## 2. Structural decision
+## 2. Structure
 
-Recommended Stage 1 format:
+Recommended structure:
 
-```text
-START
-→ 5 teaching lessons
-→ real-life practice between lessons
-→ final integration / transition review
-```
-
-The five lessons are not five theory chapters.
-
-Each lesson must create one new usable distinction and immediately send the learner back into ordinary life.
-
-Why five:
-
-- fewer than five would force several psychologically different transitions into one lesson;
-- more than five would likely turn Stage 1 into an explanatory course instead of a first practical skill;
-- the current Foundation architecture naturally contains five teachable movements:
-  1. result → concrete episode;
-  2. episode → functional chain;
-  3. need → familiar means distinction;
-  4. automatic continuation → available participation;
-  5. participation → reality feedback / next position.
-
-The number remains a course-design hypothesis until manual teaching tests it.
-
-## 3. Course rhythm
-
-Recommended rhythm:
-
-```text
-lesson
+~~~text
+ORIENTATION
+→ LESSON 1
 → field practice
-→ short debrief
-→ next lesson
-```
+→ LESSON 2
+→ field practice
+→ LESSON 3
+→ field practice
+→ LESSON 4
+→ field practice
+→ LESSON 5
+→ repeated field practice
+→ INTEGRATION
+~~~
 
-Do not deliver all five lessons as one lecture series.
+There are **five core lessons**.
 
-A typical learner should spend more time in real-life practice than consuming theory.
+Orientation and integration are not counted as lessons because they do not introduce additional Stage 1 operations.
 
-Recommed first manual format:
+The five lessons map directly to the five required functions already approved in SP-S1-P11:
 
-```text
-5 lessons
-over approximately 7–14 calendar days
-```
+~~~text
+1. localize one episode
+2. reconstruct distinguishable links
+3. distinguish the body/state regulation contour
+4. link the habitual move to the next position
+   and find available participation
+5. realize a move and use consequences as feedback
+~~~
 
-This is a delivery hypothesis, not a mastery threshold.
+In the learner-facing course, functions 4 and 5 are organized so that participation is taught before the full feedback cycle.
 
-A learner may need more time if relevant episodes occur rarely.
+## 3. Why five lessons
 
-## 4. Anatomy of every lesson
+Five is currently the smallest structure that preserves the necessary learning transitions without collapsing unlike tasks.
 
-Target lesson duration:
+A shorter course would tend to combine:
+- observation with causal interpretation;
+- understanding with action;
+- body-state discrimination with behavior change;
+- retrospective reconstruction with live participation.
 
-```text
-20–35 minutes of active learning
-+
-real-life field practice
-```
+A longer course risks turning Stage 1 into a conceptual psychology course.
 
-Each lesson contains six parts.
+The number remains a design hypothesis until manual teaching tests it.
 
-### A. Hook / recognisable problem — 2–5 min
+## 4. Orientation — “Почему тело и почему знания недостаточно”
 
-Start from an ordinary body/life situation.
+**Purpose:** create relevance and define the field, not teach a separate Stage 1 skill.
 
-No abstract theory first.
+Core points:
+- body is the first concrete and repeatedly observable field;
+- weight is an indicator, not the whole goal;
+- health is a direction, not a finish line;
+- knowing the right advice does not determine what is realized;
+- the course studies what actually happens in one episode.
 
-Example:
-
-> “Почему человек прекрасно знает, что алкоголь ухудшит сон, и всё равно вечером покупает его после тяжёлого дня?”
-
-### B. One teaching idea — 5–8 min
-
-Maximum one central distinction per lesson.
-
-No full Foundation terminology dump.
-
-### C. Worked example — 5–8 min
-
-Show one concrete episode from beginning to consequence.
-
-The example must include why the old action was locally functional, not only why it was “bad.”
-
-### D. Guided work on the learner's own episode — 8–15 min
-
-The learner produces the content.
-
-Teacher/form holds structure but does not assign hidden motives.
-
-### E. One field experiment
-
-A small task to perform or observe in ordinary life before the next lesson.
-
-### F. Debrief bridge
-
-At the beginning of the next lesson:
-
-> What actually happened?
-
-No “did you succeed?” framing.
-
-## 5. Lesson sequence
-
-# Lesson 1 — Знание не управляет телом
-
-### Teaching problem
-
-The learner often already knows what is “healthy,” but knowledge and actual trajectory diverge.
-
-### Core distinction
-
-```text
-what I know
-≠
-what I repeatedly realize
-```
-
-### Key experience
-
-The body makes repetition visible.
+Key formula:
 
 > **Тело реагирует не на качество объяснения, а на то, что человек реально повторяет.**
 
-### Guided task
+Orientation ends with one task:
 
-Choose one recent concrete episode with a visible body/behavior consequence.
+> choose one recent concrete body/behavior episode.
 
-No deep interpretation yet.
+No deep analysis yet.
 
-### Field practice
+## 5. Lesson 1 — Один эпизод вместо “я такой”
 
-Notice one concrete episode rather than evaluating the whole day/person.
+### New operation
 
-### Why Lesson 1 exists
+**Localize one concrete episode.**
 
-Without this step the learner approaches the course as another source of correct advice.
+### Entry problem
 
----
+The learner sees:
+- “I overeat”;
+- “I am lazy”;
+- “I have no willpower”;
+- “I always drink after hard work”;
+- “my regime is broken.”
 
-# Lesson 2 — Один эпизод вместо “я такой”
-
-### Teaching problem
-
-A result is converted into identity or a global story:
-
-> “У меня нет силы воли.”  
-> “Я ленивый.”  
-> “Я всегда срываюсь.”
+These are too broad to train.
 
 ### Core distinction
 
-```text
-result
+~~~text
+global conclusion about me
 ≠
-personality explanation
+one concrete episode
+~~~
 
-one episode
-=
-something that can be reconstructed
-```
+### Learner output
 
-### Learner-facing chain
+A bounded event:
+- what happened;
+- when/where;
+- relevant conditions;
+- actual action or inaction;
+- immediate observable result.
 
-```text
-what was happening
-→ my state
-→ how the situation looked to me
-→ what I urgently wanted to change
-→ what I actually did
-→ what it gave immediately
-→ what happened next
-```
+### Worked example
 
-### Key experience
-
-> “То, что казалось одним действием, на самом деле разворачивалось как последовательность.”
+Use a simple body-domain example before asking the learner to work on their own episode.
 
 ### Field practice
 
-Reconstruct one real episode after it occurs.
+Capture one real episode as an episode, without explaining personality or searching for a global pattern.
 
-Unknown is allowed.
+### Completion signal
 
-### Why Lesson 2 exists
+The learner can return from a global label to one bounded event.
 
-Without a concrete episode there is nothing trainable; only identity, advice and theory remain.
+## 6. Lesson 2 — Как собирается автоматическое продолжение
 
----
+### New operation
 
-# Lesson 3 — Реальная потребность ≠ привычное средство
+**Reconstruct a functionally connected chain.**
 
-### Teaching problem
+### Core chain
 
-The person's state can be real, while the familiar method of changing it is treated as the need itself.
+~~~text
+conditions
+→ state
+→ perceived situation
+→ urgent task / function
+→ habitual continuation
+→ immediate result
+→ later consequence / next position
+~~~
+
+The full Foundation vocabulary is not required.
 
 ### Core distinction
 
-```text
-body state
-≠ meaning
-≠ need
-≠ familiar means
-```
+> **“Так произошло — поэтому я так сделал” is a compressed experience, not the whole sequence.**
+
+### Epistemic rule
+
+- facts remain facts;
+- interpretation remains interpretation;
+- the urgent task/function may remain a hypothesis;
+- unknown is valid.
+
+### Worked example
+
+Show why the habitual move was locally functional.
+
+Do not present it merely as irrational or “bad.”
+
+### Guided practice
+
+The learner reconstructs their own episode after seeing the worked example.
+
+### Field practice
+
+Reconstruct one naturally occurring episode after it happens.
+
+### Completion signal
+
+The learner can describe a connected sequence without needing a single hidden cause.
+
+## 7. Lesson 3 — Состояние ≠ привычный способ его изменить
+
+### New operation
+
+**Distinguish bodily state, interpretation/function and familiar regulation method.**
+
+This replaces the stronger wording “real need ≠ familiar means,” because a learner may not objectively know the true need.
+
+### Core distinction
+
+~~~text
+body state / sensation
+≠
+meaning assigned to it
+≠
+possible need or urgent task
+≠
+familiar means of changing the state
+~~~
 
 Examples:
 
-```text
-I need recovery
-≠ I necessarily need alcohol
+~~~text
+I am exhausted
+≠ I objectively need alcohol
 
-I need energy
-≠ I necessarily need overeating / sugar
+I am hungry
+≠ this exact food / amount is the only response
 
-I need reduce overload
-≠ I must abandon the whole direction
-```
+I am tense
+≠ the tension itself dictates the next act
+~~~
 
-### Key experience
+### Important correction
 
-The old continuation is not stupid.
+The teacher does not tell the learner what they “really need.”
 
-It usually solves an immediate problem.
-
-The learner identifies:
-
-```text
-what was genuinely needed
-→ what familiar means was used
-→ what it gave immediately
-→ what it created afterward
-```
+Instead ask:
+- what state was present?
+- what did the habitual action seem to solve or change immediately?
+- what did it actually give immediately?
+- what happened later?
 
 ### Field practice
 
-In one episode, name the real state/need and the familiar means separately.
+In one episode, separate:
+1. state;
+2. what the action seemed to solve;
+3. familiar means;
+4. immediate effect;
+5. later consequence.
 
-No alternative action is required yet.
+No alternative behavior is required yet.
 
-### Why Lesson 3 exists
+### Completion signal
 
-Trying to change behavior before understanding its immediate function easily becomes willpower war.
+The learner can see that a real state does not automatically establish one mandatory response.
 
----
+## 8. Lesson 4 — Где участие ещё остаётся возможным
 
-# Lesson 4 — Участие начинается не только “до срыва”
+### New operation
 
-### Teaching problem
-
-The learner assumes:
-
-> “If I did not stop the first impulse, the Selection Point is already lost.”
+**Find and realize one available participation point without requiring perfect early control.**
 
 ### Core distinction
 
-```text
-first reaction already happened
+~~~text
+first reaction happened
 ≠
 the whole continuation is closed
-```
+~~~
 
-### Central question
+### Timing rule
 
-> **Какой участок стал различим первым и что после него ещё реально можно изменить?**
+Do not ask retrospectively:
 
-Possible participation:
+> “What definitely could you have done earlier?”
 
-- reduce scale;
-- stop further continuation;
-- change the next step;
-- repair a consequence;
-- return after a miss;
-- ask for help;
-- change one condition of the next recurrence.
+Instead distinguish:
 
-### Key experience
+~~~text
+what I actually noticed then
+what was still open when I noticed it
+what can still be changed now
+what can be changed in the next cycle
+~~~
 
-Late participation still changes reality.
+### Four valid forms of participation
+
+The lesson explicitly covers all four Stage 1 practical classes:
+
+1. **Retrospective reconstruction** — if noticing came only afterward.
+2. **Return inside continuation** — reduce/stop/change the ongoing chain.
+3. **Repair after the episode** — correct a consequence or prevent further damage.
+4. **Change one condition of the next cycle** — prepare support, resource, environment or first move.
 
 ### Field practice
 
-When a relevant episode occurs, make one actually available continuation different from the default where safe.
+When a relevant episode occurs, make one actually available move different from the default where safe.
 
-### Why Lesson 4 exists
+If live participation is not available, perform a repair or one concrete next-cycle change.
 
-This is where the course moves from explanation to participation.
+### Completion signal
 
----
+The learner no longer treats “I noticed too late” as equivalent to “nothing can be changed.”
 
-# Lesson 5 — Реальность завершает цикл
+## 9. Lesson 5 — Сделал → получил ответ реальности
 
-### Teaching problem
+### New operation
 
-Insight can itself become the reward:
-
-> “Теперь я понял.”
-
-But nothing changes in the world.
+**Complete one reality-coupled cycle.**
 
 ### Core distinction
 
-```text
+~~~text
 understanding
-≠ selection
-≠ realization
-≠ consequence
-≠ feedback
-```
+≠
+selection
+≠
+realization
+≠
+consequence
+≠
+used feedback
+~~~
 
-### Learning cycle
+### Cycle
 
-```text
+~~~text
 one episode
-→ distinction
-→ one actual continuation
+→ reconstruction
+→ available participation
+→ selected continuation
+→ realized continuation
 → consequence
-→ end-of-episode / end-of-day position
-→ update
-```
+→ factual next position
+→ one update
+~~~
 
-### Key experience
+### Important boundary
 
-The learner does not need the desired outcome.
+The desired outcome is not required.
 
-They need reality to answer the realized continuation.
+The purpose is not to prove that the method works.
+
+The purpose is to let the realized continuation meet reality.
 
 ### Field practice
 
-Complete a full real cycle and return with facts:
-
+Complete a real cycle and return with:
 - what was noticed;
+- what was selected;
 - what was actually done;
 - what happened;
-- what, if anything, should change next time.
+- what, if anything, will be changed in the next attempt.
 
-### Why Lesson 5 exists
+### Completion signal
 
-It prevents Stage 1 from becoming an introspection course.
+The learner can distinguish insight from actual realization and consequence.
 
----
+## 10. Integration — сохранить несколько эпизодов отдельно
 
-## 6. Final integration / transition review
+Integration is not Lesson 6 and must not begin Stage 2 analysis.
 
-This is not Lesson 6.
+The learner reviews several separate episodes and checks whether they can:
 
-It is a short synthesis session after the five teaching movements.
+- hold one episode without turning it into a personality verdict;
+- reconstruct a functional chain with uncertainty preserved;
+- distinguish state from the familiar means of regulating it;
+- locate participation even after the process has started;
+- make or prepare a real continuation;
+- return to consequences;
+- preserve several episodes as separate comparable units.
 
-The learner reviews several concrete episodes and asks:
+### Stage 2 boundary
 
-- Can I stay with one episode instead of describing my entire personality?
-- Can I reconstruct a connected sequence without pretending certainty?
-- Can I distinguish need from familiar means at least sometimes?
-- Can I identify participation after the process has already begun?
-- Have I actually changed or prepared a real continuation?
-- Can I use consequences as data?
-- Can I keep different episodes separate rather than immediately naming one global pattern?
+Do **not** ask the learner in Stage 1 to identify the repeating scenario.
 
-The last question creates the natural bridge to Stage 2:
+Correct bridge:
 
-> **Что в нескольких отдельных эпизодах действительно повторяется?**
+> **У тебя теперь есть несколько отдельных эпизодов, которые можно поставить рядом. Следующая ступень будет исследовать, что между ними действительно повторяется и что только кажется похожим.**
 
-Stage 1 should not answer that for the learner in advance.
+This preserves:
 
-## 7. What a lesson is not
+~~~text
+Stage 1:
+one episode becomes a reliable unit of observation and participation
 
-Not:
-- a 60–90 minute lecture;
-- a list of Foundation terms;
-- a motivational story;
-- an evening questionnaire;
-- a quiz on correct answers;
-- a therapy session;
-- a prescription for the ideal body regime.
+Stage 2:
+relations between several episodes become the object of investigation
+~~~
 
-The learner should leave every lesson with one operation they can recognize and use.
+## 11. Anatomy of each lesson
 
-## 8. Relationship to the trajectory questionnaire
+Recommended active session: approximately 25–40 minutes.
 
-The two systems run in parallel:
+Each lesson uses the same teaching rhythm:
 
-```text
+### 1. Retrieval / debrief — 3–7 min
+
+Start from prior field practice:
+
+> **Что фактически произошло?**
+
+Do not begin with “Did you succeed?”
+
+### 2. Worked example — 5–8 min
+
+Show the new operation on a clear body-domain episode.
+
+For novices, examples reduce the need to invent the operation while learning it.
+
+### 3. One explicit model/distinction — 5–8 min
+
+Name only the principle needed for this lesson.
+
+### 4. Guided self-application — 8–15 min
+
+Apply the operation to one learner episode.
+
+The learner generates the content; teacher/AI holds the structure.
+
+### 5. Field assignment — 2–3 min
+
+One observation or action in ordinary life.
+
+### 6. Capture
+
+Only the minimum needed to bring a usable episode into the next lesson.
+
+The daily trajectory questionnaire remains separate.
+
+## 12. Learning-science rationale for the lesson anatomy
+
+The instructional design uses several evidence-supported principles as **design inputs**, not as proof that this exact SP course will be effective.
+
+### Worked example before independent application
+
+Worked-example research generally supports examples for novice skill acquisition and can reduce unnecessary cognitive load compared with unguided problem solving.
+
+SP implication:
+
+~~~text
+show one clear episode first
+→ then guide the learner through their own episode
+~~~
+
+### Active learner generation
+
+The learner must reconstruct their own case rather than merely agree with the teacher's explanation.
+
+SP implication:
+
+> teacher holds structure; learner produces content.
+
+### Spaced real-life practice
+
+Distributed practice has robust support in learning research, although the optimal spacing for this specific behavioral skill is unknown.
+
+SP implication:
+
+> do not compress all lessons into one sitting.
+
+### Structured debrief
+
+Meta-analytic evidence across training settings supports structured debriefing as a performance-learning tool.
+
+SP implication:
+
+> every next lesson begins with what actually happened in the field.
+
+## 13. Course rhythm
+
+The structure is **event-informed, not rigidly calendar-gated**.
+
+Initial manual-delivery hypothesis:
+
+~~~text
+orientation
+lesson 1
+1–3 days field practice
+lesson 2
+1–3 days field practice
+lesson 3
+1–3 days field practice
+lesson 4
+1–3 days field practice
+lesson 5
+additional real cycles
+integration
+~~~
+
+A rough total of 7–21 days is plausible for the first manual pilot.
+
+This is not a scientific threshold and should be revised from real teaching data.
+
+Do not force a learner to wait for a dramatic “failure” episode. Ordinary examples from sleep, food, fatigue, training, recovery and planning are sufficient.
+
+## 14. Relationship to the daily trajectory questionnaire
+
+~~~text
 DAILY QUESTIONNAIRE
-records body / behavior / trajectory facts over time
+= longitudinal telemetry
 
 STAGE 1 COURSE
-teaches how to distinguish and participate in one automatic episode
-```
+= skill acquisition
+~~~
 
-Course exercises may use an episode already mentioned in the questionnaire.
+Questionnaire data may provide candidate episodes.
 
 But:
+- questionnaire completion is not lesson completion;
+- course practices do not automatically become questionnaire fields;
+- the questionnaire should remain stable enough for time-series comparison;
+- the course is allowed to ask deeper questions inside a lesson without adding them to daily telemetry.
 
-```text
-questionnaire answer
-≠ completed course practice
+## 15. Teacher / AI role
 
-course practice
-≠ mandatory new questionnaire field
-```
-
-This separation reduces the risk that measurement becomes the entire training method.
-
-## 9. Teacher / AI role
-
-The teacher may:
-
-- keep the learner on one concrete episode;
-- ask for facts;
-- help separate observation from interpretation;
-- ask what the old action gave immediately;
-- ask where participation first became realistically available;
+Teacher/AI may:
+- keep work on one concrete episode;
+- provide a worked example;
+- ask for facts and uncertainty;
+- help distinguish state from interpretation and familiar means;
+- ask what the action gave immediately;
+- ask what was actually noticed at the time;
+- identify what remains changeable now;
 - return to actual consequences.
 
-The teacher must not:
+Teacher/AI must not:
+- assign a hidden cause as fact;
+- tell the learner what they “really need”;
+- claim a retrospective alternative was definitely available;
+- turn several episodes into a Stage 2 scenario prematurely;
+- reward only prevention of the first reaction;
+- confuse verbal insight with realized behavior.
 
-- assign a hidden psychlogical cause as fact;
-- tell the learner what they “really needed”;
-- invent an available alternative retrospectively;
-- turn one episode into a personality label;
-- reward only prevention of the first reaction.
+## 16. Completion profile
 
-## 10. Course completion profile
+Stage 1 completion remains qualitative.
 
-Completion is qualitative, not a score.
+With limited structural support, the learner should increasingly be able to:
 
-By the end of Stage 1, the operation should be available often enough that the learner can, with limited structural support:
+~~~text
+localize one episode
+→ reconstruct a coherent enough chain
+→ preserve fact / interpretation / hypothesis distinctions
+→ distinguish state from habitual regulation means
+→ find a realistically available participation point
+→ realize or prepare one real continuation
+→ return to consequences and factual next position
+→ preserve the episode as a separate comparable unit
+~~~
 
-```text
-take one concrete episode
-→ reconstruct it coherently enough
-→ keep facts and hypotheses distinguishable
-→ identify immediate function of the habitual continuation
-→ find a realistic participation point
-→ realize or prepare a real continuation
-→ return to consequences
-```
-
-No requirement:
+Not required:
 - perfect early noticing;
-- elimination of automatic reactions;
-- weight loss by a fixed amount;
+- elimination of automaticity;
+- fixed weight loss;
 - zero alcohol;
-- perfect food compliance;
-- complete independence from support.
+- perfect diet adherence;
+- complete autonomy from all support;
+- discovery of the recurring scenario.
 
-The body is the training field and independent value, but Stage 1 completion is a learned operation, not an ideal physical state.
+## 17. Manual pilot purpose
 
-## 11. Manual pilot format
+The first manual delivery should test the **course**, not the participant.
 
-Before designing an app, the first useful delivery format is:
+Observe:
+- which lesson is confusing;
+- whether worked examples are clear;
+- whether learner language remains their own;
+- whether field assignments generate usable experience;
+- where theory overload appears;
+- whether the five operations actually build on one another;
+- whether any lesson can be removed or must be split.
 
-```text
-teacher/AI + learner
-5 lessons
-short workbook prompts
-real-ilife field practice between lessons
-daily trajectory questionnaire continues separately
-final integration review
-```
-
-The manual pilot should test:
-- where learners become confused;
-- which lesson carries too much theory;
-- whether examples are relatable;
-- whether the field task actually occurs in life;
-- whether the learner can produce their own distinctions rather than repeat the teacher's language.
-
-## 12. Next design task
-
-Do not write Lesson 1 in full yet.
-
-First Owner review should decide:
-
-1. five-lesson structure;
-2. lesson sequence;
-3. lesson anatomy;
-4. 7–14 day manual rhythm as a working hypothesis;
-5. final integration format;
-6. separation from the daily trajectory questionnaire.
-
-Only after that should individual lesson scripts be produced.
+No course structure is considered final until this has been tested with real learners.
