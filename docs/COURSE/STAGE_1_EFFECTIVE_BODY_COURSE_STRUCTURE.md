@@ -1,13 +1,15 @@
 
 # Stage 1 — “Эффективное тело” Course Structure
 
-**ID:** SP-COURSE-S1-STRUCT-002  
-**Status:** revised_working_draft_for_owner_review  
+**ID:** SP-COURSE-S1-STRUCT-003  
+**Status:** approved  
 **Date:** 22 September 2026  
-**Supersedes draft:** SP-COURSE-S1-STRUCT-001  
+**Supersedes:** SP-COURSE-S1-STRUCT-002  
 **Field:** body / health / physical efficiency  
 **Foundation basis:** Stage 1 — «Жизнь внутри автоматизма»  
-**Purpose:** define the complete learner-facing structure before writing individual lesson scripts.
+**Purpose:** define the complete learner-facing structure before writing individual lesson scripts.  
+**Research input:** SP-COURSE-S1-WMF-RES-001  
+**Approval decision:** SP-COURSE-DEC-S1-STRUCT-001
 
 ## 1. Course objective
 
@@ -94,11 +96,25 @@ Key formula:
 
 > **Тело реагирует не на качество объяснения, а на то, что человек реально повторяет.**
 
-Orientation ends with one task:
+Orientation produces three outputs:
 
-> choose one recent concrete body/behavior episode.
+1. **Created body direction:** what the participant wants to create in relation to the body.
+2. **Current reality:** what is factually true now, without improvement or condemnation.
+3. **One recent episode:** selected because it matters relative to that direction.
 
-No deep analysis yet.
+Working frame:
+
+~~~text
+what I want to create
++
+what is true now
+→
+which episode is worth examining?
+~~~
+
+No deep episode analysis yet.
+
+The created direction is not a rigid promise. New reality may justify revising it.
 
 ## 5. Lesson 1 — Один эпизод вместо “я такой”
 
@@ -138,9 +154,13 @@ A bounded event:
 
 Use a simple body-domain example before asking the learner to work on their own episode.
 
+### Episode-selection rule
+
+Choose an episode because it is relevant to the created body direction, not because it is the worst failure or most shameful event.
+
 ### Field practice
 
-Capture one real episode as an episode, without explaining personality or searching for a global pattern.
+Capture one real relevant episode as an episode, without explaining personality or searching for a global pattern.
 
 ### Completion signal
 
@@ -191,9 +211,17 @@ The learner reconstructs their own episode after seeing the worked example.
 
 Reconstruct one naturally occurring episode after it happens.
 
+### Present-action bridge
+
+Before ending the lesson, return from explanation to current reality:
+
+> **Что этот эпизод теперь показывает мне о фактической позиции?**
+
+If a simple safe physical action is already available, it may be taken now. The lesson does not require waiting for the next failure episode.
+
 ### Completion signal
 
-The learner can describe a connected sequence without needing a single hidden cause.
+The learner can describe a connected sequence without needing a single hidden cause and can return from explanation to current reality.
 
 ## 7. Lesson 3 — Состояние ≠ привычный способ его изменить
 
@@ -247,7 +275,19 @@ In one episode, separate:
 4. immediate effect;
 5. later consequence.
 
-No alternative behavior is required yet.
+No full alternative behavior is required yet.
+
+### Present-action bridge
+
+If a small safe action in current reality is already obvious, perform it now rather than ending with insight alone.
+
+Examples:
+- prepare water/food/recovery support;
+- put training clothes/equipment in place;
+- stop one further continuation;
+- ask for needed support.
+
+This is not yet the full Lesson 4 participation task.
 
 ### Completion signal
 
@@ -291,11 +331,33 @@ The lesson explicitly covers all four Stage 1 practical classes:
 3. **Repair after the episode** — correct a consequence or prevent further damage.
 4. **Change one condition of the next cycle** — prepare support, resource, environment or first move.
 
+### Direction rule
+
+An available move is not chosen merely because it is opposite to the old behavior.
+
+It should be:
+
+> **one realistically available continuation that serves the participant's created body direction under current reality.**
+
+~~~text
+not-X
+≠
+created direction
+
+available move
++
+current reality
++
+chosen direction
+→
+next continuation
+~~~
+
 ### Field practice
 
-When a relevant episode occurs, make one actually available move different from the default where safe.
+When a relevant episode occurs, make one actually available move that serves the created direction where safe.
 
-If live participation is not available, perform a repair or one concrete next-cycle change.
+If live participation is not available, perform a repair or one concrete next-cycle change that still serves that direction.
 
 ### Completion signal
 
@@ -324,15 +386,20 @@ used feedback
 ### Cycle
 
 ~~~text
-one episode
+created direction
++
+current reality
+→ one episode
 → reconstruction
 → available participation
 → selected continuation
 → realized continuation
 → consequence
-→ factual next position
-→ one update
+→ updated current reality
+→ one next secondary move, if any
 ~~~
+
+The created direction itself may also be revised if new reality makes the previous formulation inaccurate or no longer meaningful.
 
 ### Important boundary
 
@@ -349,7 +416,9 @@ Complete a real cycle and return with:
 - what was selected;
 - what was actually done;
 - what happened;
-- what, if anything, will be changed in the next attempt.
+- what is factually true now;
+- whether the created direction still stands;
+- what, if anything, is the next secondary move.
 
 ### Completion signal
 
@@ -366,7 +435,8 @@ The learner reviews several separate episodes and checks whether they can:
 - distinguish state from the familiar means of regulating it;
 - locate participation even after the process has started;
 - make or prepare a real continuation;
-- return to consequences;
+- return to consequences and updated current reality;
+- relate each episode to the participant-owned created direction without judging the person;
 - preserve several episodes as separate comparable units.
 
 ### Stage 2 boundary
@@ -493,7 +563,47 @@ This is not a scientific threshold and should be revised from real teaching data
 
 Do not force a learner to wait for a dramatic “failure” episode. Ordinary examples from sleep, food, fatigue, training, recovery and planning are sufficient.
 
-## 14. Relationship to the daily trajectory questionnaire
+## 14. Cross-cutting design layers
+
+These are design disciplines, not additional lessons.
+
+### Fritz layer — created direction + current reality
+
+Across the course:
+
+~~~text
+what am I creating?
++
+what is true now?
+→
+what continuation serves that direction?
+~~~
+
+This prevents the course from becoming only problem removal.
+
+### Millman layer — return to now and action
+
+Across the course:
+
+~~~text
+reflection
+→ return to present reality
+→ one physical action when genuinely available
+~~~
+
+This prevents reconstruction from becoming an end in itself.
+
+### Williams layer — level-appropriate map
+
+Across the course:
+
+- use only concepts needed for the current operation;
+- do not teach Stage 2 scenario analysis early;
+- experience precedes broader conceptual complexity.
+
+These author frameworks remain design inputs, not psychological laws.
+
+## 15. Relationship to the daily trajectory questionnaire
 
 ~~~text
 DAILY QUESTIONNAIRE
@@ -511,7 +621,7 @@ But:
 - the questionnaire should remain stable enough for time-series comparison;
 - the course is allowed to ask deeper questions inside a lesson without adding them to daily telemetry.
 
-## 15. Teacher / AI role
+## 16. Teacher / AI role
 
 Teacher/AI may:
 - keep work on one concrete episode;
@@ -531,7 +641,7 @@ Teacher/AI must not:
 - reward only prevention of the first reaction;
 - confuse verbal insight with realized behavior.
 
-## 16. Completion profile
+## 17. Completion profile
 
 Stage 1 completion remains qualitative.
 
@@ -557,7 +667,7 @@ Not required:
 - complete autonomy from all support;
 - discovery of the recurring scenario.
 
-## 17. Manual pilot purpose
+## 18. Manual pilot purpose
 
 The first manual delivery should test the **course**, not the participant.
 
