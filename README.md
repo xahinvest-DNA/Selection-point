@@ -45,11 +45,15 @@ Pilot / Reality — эмпирическая проверка и право оп
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Подготовить рабочий бриф первого урока первой ступени.**
+**Следующий шаг: Рассмотреть и утвердить либо доработать первый урок первой ступени.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `approved`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_1.md` — `draft_for_owner_review`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
+
+Шаблон: `SP-COURSE-S1-TEMPLATE-001` v2 — `approved`.
+
+Lesson 1 brief: `SP-COURSE-S1-L1-BRIEF-001` — `approved`.
 
 Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
 
@@ -57,7 +61,7 @@ Capability: `SP-TR-S1-CAP-002`.
 
 Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_TEMPLATE_V2_APPROVED.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_LESSON_1_DRAFT_FOR_REVIEW.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 
@@ -146,7 +150,7 @@ S5 candidate:
 По задаче:
 - архитектура: `docs/FOUNDATION/PROJECT_STATE.yaml` и `PROJECT_OPERATING_PROTOCOL.md`;
 - управление: `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` и `SP_CHAT_OPERATING_MODEL.md`;
-- курс: `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md` и `STAGE_1_LESSON_TEMPLATE.md`;
+- курс: `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`, `STAGE_1_LESSON_TEMPLATE.md` и текущий lesson artifact из SSOT;
 - Lab: `docs/PRODUCT_LAB/LAB_STATE.yaml`;
 - техника: `docs/CODEX_TASKS.md`;
 - напоминания: `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`;
