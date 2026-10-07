@@ -1,7 +1,14 @@
 # Stage 1 Research Packet
 
+Approval: `docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md`. The original body preserves the CAP-001 source snapshot; CAP-002 (`STAGE_1_CAPABILITY_SPEC.md`) governs its current interpretation. Causal reconstruction is not a prerequisite for participation.
+
+
+<!-- SP:REFERENCE -->
+> **Current operational role: research_reference_only.** The course-first reset (`docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md`) supersedes Gate progression as the active route. Historical approval remains valid within its scope; older next-step/Gate instructions below do not authorize current execution. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` for current work.
+
+
 **ID:** SP-TR-S1-RP-001  
-**Status:** ready_for_chat_review  
+**Status:** approved_research_material
 **Gate:** B — Stage 1 Research Packet  
 **Date:** 15 September 2026  
 **Upstream capability:** `SP-TR-S1-CAP-001`  

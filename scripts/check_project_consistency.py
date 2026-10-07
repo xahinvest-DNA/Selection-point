@@ -1,200 +1,109 @@
 #!/usr/bin/env python3
-"""Fail fast on known Selection Point status/documentation drift.
-
-Stdlib-only by design: this check must run in GitHub Actions without project dependencies.
-It does not validate the truth of the method; it validates repository/project-system invariants.
-"""
-
+"""Validate current authority, recovery and execution boundaries, not historical phrases."""
+import argparse
 from pathlib import Path
-import sys
+import re
+import yaml
+from project_state import ROOT,SYSTEM,FOUNDATION,LAB,load,metadata,managed_views,replace_block
 
-ROOT = Path(__file__).resolve().parents[1]
-
-errors: list[str] = []
-
-
-def fail(message: str) -> None:
-    errors.append(message)
-
-
-def read(rel: str) -> str:
-    path = ROOT / rel
-    if not path.exists():
-        fail(f"missing required file: {rel}")
-        return ""
-    return path.read_text(encoding="utf-8")
-
-
-def require(text: str, needle: str, where: str) -> None:
-    if needle not in text:
-        fail(f"{where}: expected marker not found: {needle!r}")
-
-
-def forbid(text: str, needle: str, where: str) -> None:
-    if needle in text:
-        fail(f"{where}: stale/conflicting marker still present: {needle!r}")
-
-
-PROJECT_STATE = "docs/FOUNDATION/PROJECT_STATE.yaml"
-SYSTEM_STATE = "docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml"
-CONTROL_PLANE = "docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md"
-WORK_MODEL = "docs/PROJECT_SYSTEM/SP_WORK_OPERATING_MODEL.md"
-RECOVERY = "docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_STAGE1_CAPABILITY.md"
-STAGE1_CAPABILITY = "docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md"
-TRAINER_HYPOTHESIS = "docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md"
-SYNC_PROTOCOL = "docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md"
-HEALTH_CONTRACT = "docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md"
-SYSTEM_DECISION = "docs/PROJECT_SYSTEM/DECISION_PSYS_001_2026-09-15.md"
-WORK_MODEL_DECISION = "docs/PROJECT_SYSTEM/DECISION_PSYS_002_2026-09-15.md"
-LAB_STATE = "docs/PRODUCT_LAB/LAB_STATE.yaml"
-RESEARCH_PLAN = "docs/PRODUCT_LAB/RESEARCH_PLAN.md"
-LAB_INDEX = "docs/PRODUCT_LAB/00_LAB_INDEX.md"
-EVENT_MODEL = "docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md"
-METRICS = "docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md"
-DATA_POLICY = "docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md"
-PILOT = "docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md"
-README = "README.md"
-
-project = read(PROJECT_STATE)
-system = read(SYSTEM_STATE)
-control = read(CONTROL_PLANE)
-work_model = read(WORK_MODEL)
-recovery = read(RECOVERY)
-stage1_capability = read(STAGE1_CAPABILITY)
-trainer_hypothesis = read(TRAINER_HYPOTHESIS)
-sync = read(SYNC_PROTOCOL)
-health_contract = read(HEALTH_CONTRACT)
-_ = read(SYSTEM_DECISION)
-_ = read(WORK_MODEL_DECISION)
-lab = read(LAB_STATE)
-research = read(RESEARCH_PLAN)
-index = read(LAB_INDEX)
-event_model = read(EVENT_MODEL)
-metrics = read(METRICS)
-data_policy = read(DATA_POLICY)
-pilot = read(PILOT)
-readme = read(README)
-
-# Foundation remains paused before S5 unless owner explicitly changes it.
-require(project, "active_stage: 4", PROJECT_STATE)
-require(project, "active_parameter: null", PROJECT_STATE)
-require(project, "next_candidate: SP-S5-P01", PROJECT_STATE)
-require(project, "next_status: unopened", PROJECT_STATE)
-require(project, "stage_5_not_opened: true", PROJECT_STATE)
-require(project, "rc018_approved: true", PROJECT_STATE)
-
-# Project-level control plane and registered evidence node.
-require(system, "control_plane_id: SP-PSYS-001", SYSTEM_STATE)
-require(system, "node_id: SP-HLAB-001", SYSTEM_STATE)
-require(system, "repository: xahinvest-DNA/Selection-point-health-lab", SYSTEM_STATE)
-require(system, "role: private_evidence_node", SYSTEM_STATE)
-require(system, "external_user_pilot: unopened", SYSTEM_STATE)
-require(system, "raw_data_to_public_repo: forbidden", SYSTEM_STATE)
-require(system, "measurement_adherence_is_not_domain_outcome: true", SYSTEM_STATE)
-require(control, "measurement adherence ≠ health-domain action", CONTROL_PLANE)
-require(sync, "Raw records decide what was actually recorded", SYNC_PROTOCOL)
-require(health_contract, "SP-HLAB-001", HEALTH_CONTRACT)
-require(health_contract, "Legacy raw records", HEALTH_CONTRACT)
-require(health_contract, "prompt_exposure", HEALTH_CONTRACT)
-require(health_contract, "measurement_adherence", HEALTH_CONTRACT)
-require(readme, "Project Control Plane", README)
-require(readme, "SP-HLAB-001", README)
-
-# Approved work operating model and current training gate.
-require(system, "id: SP-OPS-001", SYSTEM_STATE)
-require(system, "status: approved", SYSTEM_STATE)
-require(system, "current_authorization: stage_1_research_packet_cycle", SYSTEM_STATE)
-require(system, "questionnaire_is_telemetry_not_sp: true", SYSTEM_STATE)
-require(system, "id: SP-TR-S1-CAP-001", SYSTEM_STATE)
-require(system, "current_gate: Gate B - Stage 1 Research Packet", SYSTEM_STATE)
-require(system, "trainer_implementation: unopened", SYSTEM_STATE)
-require(control, "Project work follows the approved operating model `SP-OPS-001`", CONTROL_PLANE)
-require(work_model, "**ID:** SP-OPS-001", WORK_MODEL)
-require(work_model, "questionnaire = telemetry", WORK_MODEL)
-require(work_model, "Stage Capability Spec", WORK_MODEL)
-require(work_model, "Stage Research Packet", WORK_MODEL)
-require(work_model, "Psychological Mechanism Map", WORK_MODEL)
-require(work_model, "Pilot Evidence Packet", WORK_MODEL)
-require(work_model, "does not authorize:\n- opening Foundation Stage 5", WORK_MODEL)
-require(stage1_capability, "**ID:** SP-TR-S1-CAP-001", STAGE1_CAPABILITY)
-require(stage1_capability, "**Gate A — Capability Definition: approved.**", STAGE1_CAPABILITY)
-require(stage1_capability, "**Gate B — Stage 1 Research Packet.**", STAGE1_CAPABILITY)
-
-# Recovery and parked trainer hypothesis must stay explicit and non-authorizing.
-require(system, "strategy: git_history_plus_ssot_bootstrap", SYSTEM_STATE)
-require(system, Path(RECOVERY).name, SYSTEM_STATE)
-require(system, Path(TRAINER_HYPOTHESIS).name, SYSTEM_STATE)
-require(recovery, "Git history preserves every committed state", RECOVERY)
-require(recovery, "Gate B — Stage 1 Research Packet", RECOVERY)
-require(trainer_hypothesis, "**Status:** deferred / parked", TRAINER_HYPOTHESIS)
-require(trainer_hypothesis, "implementation", TRAINER_HYPOTHESIS)
-require(trainer_hypothesis, "Facts constrain self-description", TRAINER_HYPOTHESIS)
-require(trainer_hypothesis, "trainer does not objectively declare", TRAINER_HYPOTHESIS)
-
-# Product Lab current task and gates.
-require(lab, "current_task: SP-LAB-PILOT-001", LAB_STATE)
-require(lab, "current_task_status: active", LAB_STATE)
-require(lab, 'foundation_sync: "RC-018"', LAB_STATE)
-require(lab, 'project_system_sync: "SP-PSYS-001"', LAB_STATE)
-require(lab, "evidence_node: SP-HLAB-001", LAB_STATE)
-require(lab, "no_external_user_pilot_in_lab_0: true", LAB_STATE)
-require(lab, "do_not_open_SP_LAB_002_without_explicit_owner_direction: true", LAB_STATE)
-require(lab, "external_user_pilot_status: unopened", LAB_STATE)
-require(lab, "legacy_raw_records_must_not_be_rewritten: true", LAB_STATE)
-require(lab, "measurement_adherence_is_domain_outcome: false", LAB_STATE)
-
-# Known drift fixed on 2026-09-15 must not reappear.
-forbid(research, "\n- пилот;\n", RESEARCH_PLAN)
-forbid(
-    pilot,
-    "Внутренне принятое решение не считается реализованным выбором, пока оно не проявилось в наблюдаемом действии.",
-    PILOT,
-)
-
-# RC-018-aware research instrumentation.
-require(event_model, "selected_continuation", EVENT_MODEL)
-require(event_model, "realized_continuation", EVENT_MODEL)
-require(event_model, "conscious_non_action", EVENT_MODEL)
-require(metrics, "prompt_exposure", METRICS)
-require(metrics, "Selected → Realized", METRICS)
-require(data_policy, "сырые персональные записи участников", DATA_POLICY)
-
-# Project-system and Lab artifacts must be discoverable.
-for rel in (SYSTEM_STATE, CONTROL_PLANE, WORK_MODEL, SYNC_PROTOCOL, HEALTH_CONTRACT, EVENT_MODEL, METRICS, DATA_POLICY):
-    filename = Path(rel).name
-    target = README if rel.startswith("docs/PROJECT_SYSTEM/") else LAB_INDEX
-    target_text = readme if target == README else index
-    require(target_text, filename, target)
-
-# Product Lab index must explain the evidence-node boundary.
-require(index, "SP-HLAB-001", LAB_INDEX)
-require(index, "measurement adherence", LAB_INDEX)
-require(index, "Исторические raw-записи Health Lab за 12–14 сентября", LAB_INDEX)
-
-# LAB_STATE points at measurement and project-system foundations.
-for filename in (
-    Path(EVENT_MODEL).name,
-    Path(METRICS).name,
-    Path(DATA_POLICY).name,
-    Path(SYSTEM_STATE).name,
-    Path(CONTROL_PLANE).name,
-    Path(SYNC_PROTOCOL).name,
-    Path(HEALTH_CONTRACT).name,
-):
-    require(lab, filename, LAB_STATE)
-
-if errors:
-    print("Selection Point consistency check FAILED:\n")
-    for item in errors:
-        print(f"- {item}")
-    sys.exit(1)
-
-print("Selection Point consistency check passed.")
-print("- Foundation: S4 complete, S5 unopened, RC-018 approved")
-print("- Project system: SP-PSYS-001 active; SP-HLAB-001 registered private evidence node")
-print("- Work model: SP-OPS-001 approved; Stage 1 Capability Spec approved; Gate B authorized")
-print("- Recovery: Git history + SSOT checkpoint registered for new-chat reconstruction")
-print("- Trainer hypothesis: parked; implementation remains unopened")
-print("- Product Lab: owner self-pilot active, external pilot unopened")
-print("- RC-018 event/metrics/privacy/promotion boundaries present")
-print("- Legacy Health Lab raw records are governed as immutable source data")
+def validate(root=ROOT):
+    errors=[]
+    def require(condition,message):
+        if not condition:errors.append(message)
+    def paths(value,trail,external=False):
+        if isinstance(value,dict):
+            external=external or value.get('repository')=='xahinvest-DNA/Selection-point-health-lab'
+            for k,v in value.items():paths(v,f'{trail}.{k}',external)
+        elif isinstance(value,list):
+            for i,v in enumerate(value):paths(v,f'{trail}[{i}]',external)
+        elif isinstance(value,str) and value.startswith('docs/') and value.endswith(('.md','.yaml')) and not external:
+            target=(root/value).resolve()
+            require(target.is_relative_to(root.resolve()) and target.is_file(),f'{trail}: missing local file {value}')
+    try:
+        s,f,lab=(load(root,p) for p in (SYSTEM,FOUNDATION,LAB))
+        for name,doc in ((SYSTEM,s),(FOUNDATION,f),(LAB,lab)):paths(doc,name)
+        w=s['current_work'];r=s['course_first_reset'];c=r['stage_1_course'];t=s['training_state'];b=s['new_chat_bootstrap']['read_first']
+        require(len(b)==len(set(b)),'bootstrap: duplicate documents')
+        require(b[:2]==[SYSTEM,s['recovery']['current_checkpoint']],'bootstrap: current checkpoint must be second')
+        required=[r['decision'],c['course_structure_decision'],c['course_structure'],w['artifact']]+[x['document'] for x in s['active_working_inputs']]
+        require(all(p in b for p in required),'bootstrap: current course/decision/working input missing')
+        require(len(b)<=10,'bootstrap: more than ten mandatory documents; route additional reading by task')
+        require(w['route']==s['operating_model']['current_authorization'],'active route differs from operating authorization')
+        require(w['objective']==r['active_objective'],'current objective differs from course-first objective')
+        require(w['next_step']==r['next_step'],'two different next steps in system state')
+        require(w['artifact']==c['lesson_template'],'current artifact differs from lesson template')
+        require(w['artifact_status']==c['lesson_template_status'],'current artifact status differs from template status')
+        for path,field,expected,label in [
+            (w['artifact'],'Status',w['artifact_status'],'template document status'),
+            (c['lesson_template'],'ID',c['lesson_template_id'],'template ID'),
+            (c['course_structure'],'ID',c['course_structure_id'],'course structure ID'),
+            (c['course_structure'],'Status',c['course_structure_status'],'course structure status'),
+            (t['stage_1_capability']['document'],'ID',t['stage_1_capability']['id'],'capability ID'),
+            (t['stage_1_research_packet']['deliverable'],'Status',t['stage_1_research_packet']['status'],'research packet status')]:
+            require(metadata(root,path,field)==expected,f'{label} differs from SSOT')
+        if w['artifact_status']=='draft_for_owner_review':
+            require(w['owner_decision_required'] is True and w['execution_authorized'] is False,'unapproved template must not authorize full lesson execution')
+        if r['status']=='approved' and not r['gate_pipeline_active']:
+            require(r['v0_validation_execution_active'] is False,'course-first reset conflicts with V0 execution')
+            require(t['stage_1_post_protocol_validation']['v0_execution_authorized'] is False,'suspended V0 is authorized')
+            require(t['stage_1_post_protocol_validation']['operational_role']=='execution_suspended','V0 role is not suspended')
+            for k,v in t.items():
+                if isinstance(v,dict) and k.startswith('stage_1_'):
+                    require('next_step' not in v,f'{k}: historical next step leaks into active state')
+                    require(v.get('operational_role') in ('research_reference_only','execution_suspended'),f'{k}: missing operational role')
+                    require(not any(re.fullmatch(r'gate_[a-h]_opened',x) for x in v),f'{k}: undated historical gate authorization')
+        for p in [t['stage_1_post_protocol_validation']['design'],t['stage_1_post_protocol_validation']['approval_decision']]:
+            require('<!-- SP:SUSPENDED -->' in (root/p).read_text(),f'{p}: suspended permission lacks successor notice')
+        for p in (root/'docs/TRAINING').glob('STAGE_1_*.md'):
+            require('<!-- SP:REFERENCE -->' in p.read_text(),f'{p.name}: historical training artifact lacks role notice')
+        for path in [r['active_brief'],c['course_structure'],c['lesson_template']]:
+            content=(root/path).read_text()
+            for item in s['active_working_inputs']:require(item['document'] in content,f'{path}: active working input missing')
+        for path,name,body in managed_views(root):
+            text=(root/path).read_text()
+            require(text==replace_block(text,name,body),f'{path}: generated {name} view stale')
+        for k in ('id','status','document'):
+            require(lab['daily_trajectory_questionnaire'][k]==r['trajectory_questionnaire'][k],f'questionnaire {k} differs between manifests')
+        q=lab['daily_trajectory_questionnaire']
+        require(metadata(root,q['document'],'Status')==q['status'],'questionnaire document status differs')
+        require(metadata(root,q['document'],'ID')==q['id'],'questionnaire document ID differs')
+        require(lab['project_route_authority']==SYSTEM,'Lab has no current project-route authority')
+        require(s['current_gates']['external_user_pilot']==lab['status']['external_user_pilot_status'],'external pilot status differs')
+        if f['constraints']['stage_5_not_opened']:
+            require(s['current_gates']['stage_5']=='unopened' and f['status']['next_status']=='unopened','Foundation S5 boundary differs')
+        require(s['current_gates']['product_lab_002']==lab['sp_lab_002_gate']['status'],'SP-LAB-002 status differs')
+        require(s['promotion_rule']['raw_data_to_public_repo']=='forbidden' and lab['measurement_foundation']['raw_participant_data_in_public_repo_allowed'] is False,'raw-data publication boundary weakened')
+        require(s['current_shared_contract']['selected_not_realized'] is True and lab['constraints']['selected_continuation_not_equal_realized_continuation'] is True,'selected/realized boundary weakened')
+        require(f['constraints']['rc018_approved'] is True, 'RC-018 approval boundary missing')
+        require(lab['measurement_foundation']['composite_selection_score_allowed'] is False, 'unvalidated composite score authorized')
+        require(lab['measurement_foundation']['measurement_adherence_is_domain_outcome'] is False, 'measurement adherence confused with domain outcome')
+        require(lab['measurement_foundation']['prompt_exposure_must_be_recorded'] is True, 'prompt exposure contract missing')
+        require(lab['constraints']['legacy_raw_records_must_not_be_rewritten'] is True, 'legacy raw immutability weakened')
+        require(s['current_shared_contract']['conscious_non_action_may_be_realized'] is True, 'conscious non-action boundary missing')
+        for path in ['docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md', 'docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md']:
+            current_text=(root/path).read_text()
+            require('PROJECT_SYSTEM_STATE.yaml.current_work' in current_text, f'{path}: missing active-route pointer')
+            require('Current authorization is Gate B' not in current_text and 'The currently authorized training cycle is:' not in current_text, f'{path}: obsolete Gate authorization')
+        tech=s['technical_work']
+        require((metadata(root,tech['task'],'Status') or '').startswith(tech['status']),'technical task status differs from SSOT')
+        if tech['status']=='completed':require(bool(tech['implementation_repository'] and tech['completion_commit']),'technical completion lacks provenance')
+        d=load(root,s['operations_contract'])
+        require(lab['reminder_delivery_state']==s['operations_contract'],'reminder contract differs between manifests')
+        if q['status']=='draft_for_owner_review':
+            require(d['full_questionnaire_v0_2_approved'] is False and d['full_questionnaire_v0_2_deployed'] is False,'draft questionnaire marked deployed/approved')
+        require(d['evening']['q9']=='С какими 1–3 фактами ты входишь в завтра?','deployed Q9 reintroduces inferred availability')
+        require(d['timezone']=='Europe/Moscow','reminder timezone differs from owner timezone')
+        for name in ('morning','midday'):require(d[name]['data_entry_required'] is False,f'{name}: violates once-daily data entry')
+        wf=yaml.load((root/'.github/workflows/selection-point-consistency.yml').read_text(),Loader=yaml.BaseLoader)
+        require('pull_request' in wf['on'] and 'push' in wf['on'],'CI must cover pushes and pull requests')
+        for event in ('push','pull_request'):
+            config=wf['on'].get(event) or {}
+            require(not any(k in config for k in ('paths','paths-ignore')),f'CI {event}: path filter leaves drift blind spots')
+    except (KeyError,ValueError,TypeError,AttributeError,OSError,yaml.YAMLError) as e:
+        errors.append(f'State/schema error: {e}')
+    return errors
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=ROOT);a=p.parse_args()
+    errors=validate(a.root)
+    print('Selection Point consistency check FAILED:\n'+'\n'.join('- '+e for e in errors) if errors else 'Selection Point consistency check passed: current route, recovery, roles, generated views, contracts and CI agree.')
+    raise SystemExit(bool(errors))

@@ -152,22 +152,9 @@ The critical separation is maintained through governance and epistemic labels in
 
 A task must not be delegated to Codex while it still contains an unresolved methodological decision.
 
-For stage-training development the standard artifact chain is:
-
-```text
-Stage Capability Spec
-→ Stage Research Packet
-→ Psychological Mechanism Map
-→ Learning Units
-→ Practice Protocol
-→ Observability / Measurement Spec
-→ Pilot Evidence Packet
-→ Stage Review
-```
-
-The questionnaire remains a telemetry instrument and is not Selection Point itself.
-
-Current authorization is Gate B — Stage 1 Research Packet, executed directly in Chat. Gate C remains closed until Red Team review and Owner approval.
+The active development route is `PROJECT_SYSTEM_STATE.yaml.current_work`.
+The course-first decision supersedes the former A–H pipeline as the working route; those artifacts remain reference material.
+The questionnaire is separate trajectory telemetry.
 
 ## 11. Sources of truth
 
@@ -175,7 +162,7 @@ System topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
 
 Project operating model: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
 
-Current recovery checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_SP_OPS_002.md`.
+Current recovery checkpoint: read `PROJECT_SYSTEM_STATE.yaml.recovery.current_checkpoint`.
 
 Foundation state: `docs/FOUNDATION/PROJECT_STATE.yaml`.
 

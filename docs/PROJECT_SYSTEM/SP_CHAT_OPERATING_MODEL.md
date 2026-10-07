@@ -121,26 +121,13 @@ Use these labels where material:
 
 A change of label requires an explicit reason and, where it changes methodology, Owner approval.
 
-## 4. Gate discipline without mode handoff
+## 4. Active route and reference artifacts
 
-The absence of Work does not remove gates.
+The active route is read from `PROJECT_SYSTEM_STATE.yaml.current_work`.
+The course-first reset of 20 September supersedes Gate progression as the development route.
+The A–H descriptions below are a research reference taxonomy, not an active sequence or a prerequisite for course production.
 
-The project still proceeds one approved Foundation stage at a time:
-
-```text
-Gate A — Stage Capability Spec
-Gate B — Stage Research Packet
-Gate C — Psychological Mechanism Map
-Gate D — Learning Units
-Gate E — Practice Protocol
-Gate F — Observability / Measurement Spec
-Gate G — Pilot Evidence Packet
-Gate H — Stage Review
-```
-
-Each gate must have an explicit status in SSOT. Chat must not silently move to the next gate merely because it can continue working in the same conversation.
-
-## 5. Gate responsibilities
+## 5. Historical Gate artifact responsibilities (reference only)
 
 ### Gate A — Capability definition
 
@@ -253,27 +240,7 @@ Long tasks may be split across chats by committing intermediate artifacts/status
 
 ## 8. Current authorization
 
-**Gate A — Stage 1 Capability Definition is approved as `SP-TR-S1-CAP-001`.**
+Read `PROJECT_SYSTEM_STATE.yaml.current_work`, the selected recovery checkpoint and `active_working_inputs`.
+Only their current owner-approved route controls work. Course structure approval, template approval and execution permission are distinct.
 
-The currently authorized training cycle is:
-
-**Gate B — Stage 1 Research Packet.**
-
-Gate B is executed directly in Chat under:
-
-`docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`
-
-Expected deliverable:
-
-`docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`
-
-Gate C remains closed until Gate B receives methodological review and Owner approval.
-
-This authorization does not:
-- change Foundation Stage 1 canon;
-- open Foundation Stage 5;
-- open SP-LAB-002;
-- open an external-user pilot;
-- declare the owner self-pilot effective;
-- define numeric Stage 1 transition thresholds;
-- validate a trainer or Selection Capacity score.
+The course-first reset does not open Foundation S5, SP-LAB-002, an external pilot or trainer implementation. Historical approvals do not authorize suspended execution.

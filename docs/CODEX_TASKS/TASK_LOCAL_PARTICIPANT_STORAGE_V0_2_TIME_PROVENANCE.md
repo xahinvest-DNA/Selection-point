@@ -1,6 +1,9 @@
 # TASK — Local Participant Storage v0.2 / Time Provenance
 
-**Status:** ACTIVE / explicitly authorized follow-up to v0.1  
+Implementation repository and completion commit: **unknown in core**. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.technical_work`; locate the existing implementation before continuing.
+
+
+**Status:** authorized_completion_unverified / explicitly authorized follow-up to v0.1
 **Scope:** narrow data-provenance patch only  
 **Do not open:** Stage 5, SP-LAB-002, new methodology, app/product scope
 

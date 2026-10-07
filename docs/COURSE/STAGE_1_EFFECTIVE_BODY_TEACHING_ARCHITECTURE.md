@@ -443,4 +443,4 @@ That document controls:
 - final integration review;
 - relationship to the daily trajectory questionnaire.
 
-Do not write full lesson scripts before Owner review of the course structure.
+Current authorization is read from `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work`. This supporting draft does not reopen structure approval or independently authorize lesson writing.

@@ -1,527 +1,44 @@
-schema_version: 4
+schema_version: 5
 system: Selection Point
-updated_at: 2026-09-28
+updated_at: '2026-10-07'
 status: active
-control_plane_id: SP-PSYS-001
-control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
-sync_protocol: docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md
-
-operating_model:
-  id: SP-OPS-002
-  status: approved
-  document: docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
-  decision: docs/PROJECT_SYSTEM/DECISION_PSYS_003_2026-09-15.md
-  supersedes: SP-OPS-001
-  operating_flow: "Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision"
-  separate_work_mode_required: false
-  stage_development_rule: one_foundation_stage_at_a_time
-  current_authorization: stage_1_course_first_development
-  questionnaire_role: telemetry_with_possible_measurement_reactivity_not_sp_proof
-  executor_boundaries:
-    owner: direction_and_final_approval
-    chat: methodology_research_synthesis_audits_artifacts_evidence_red_team_governance_interpretation
-    codex: approved_technical_implementation_only
-    reality: empirical_validation_and_contradiction
-  epistemic_labels:
-    - APPROVED
-    - DERIVED
-    - HYPOTHESIS
-    - OPEN
-    - CONTRADICTION
-    - ILLUSTRATION
-    - OBSERVED
-    - SELF-REPORT
-    - INTERPRETATION
-  standard_stage_artifacts:
-    - Stage Capability Spec
-    - Stage Research Packet
-    - Psychological Mechanism Map
-    - Learning Units
-    - Practice Protocol
-    - Observability / Measurement Spec
-    - Pilot Evidence Packet
-    - Stage Review
-
-course_first_reset:
-  id: SP-DEC-COURSE-FIRST-RESET-001
-  status: approved
-  decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
-  semantic_pre_gate_reference_commit: 59b705d8362c9c7c7be4690e805093a26fdb758f
-  gate_pipeline_introduction_commit: 30601cb7a4deef9cdd8fa64595d334c631afaaaf
-  active_objective: build_effective_stage_1_course
-  active_brief: docs/COURSE/STAGE_1_COURSE_WORK_BRIEF.md
-  gate_pipeline_active: false
-  questionnaire_development_active: limited_trajectory_telemetry_only
-  v0_validation_execution_active: false
-  gate_era_artifacts_role: research_reference_only
-  trajectory_questionnaire:
-    id: SP-DTQ-002
-    status: draft_for_owner_review
-    document: docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md
-    role: multi_timeframe_trajectory_telemetry
-    course_prerequisite: false
-  stage_1_course:
-    teaching_field: effective_body
-    operational_direction: "Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем."
-    short_direction: "Тело со временем становится здоровее, сильнее и способнее."
-    teaching_architecture: docs/COURSE/STAGE_1_EFFECTIVE_BODY_TEACHING_ARCHITECTURE.md
-    course_structure: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
-    course_structure_id: SP-COURSE-S1-STRUCT-003
-    course_structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
-    course_structure_status: approved
-    proposed_lesson_count: 5
-    course_wide_axis: "participant-owned created direction + factual current reality"
-    cross_cutting_layers:
-      - "Fritz: created direction + current reality"
-      - "Millman: present contact + action when available"
-      - "Williams: level-appropriate maps/tools"
-    orientation_counted_as_lesson: false
-    integration_counted_as_lesson: false
-    structure_review: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE_REVIEW.md
-    structure_research_williams_millman_fritz: docs/COURSE/STAGE_1_STRUCTURE_WILLIAMS_MILLMAN_FRITZ_RESEARCH.md
-    structure_research_status: approved_research_input
-    teaching_architecture_status: supporting_draft
-    lesson_template: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
-    lesson_template_id: SP-COURSE-S1-TEMPLATE-001
-    lesson_template_status: draft_for_owner_review
+current_work:
+  direction: Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность
+    и расширяют возможности тела в будущем.
+  route: stage_1_course_first_development
+  objective: build_effective_stage_1_course
   next_step: owner_review_stage_1_lesson_template
-
-training_state:
-  current_stage: 1
-  current_gate: none / course-first development
-
-  stage_1_capability:
-    id: SP-TR-S1-CAP-002
-    status: approved
-    document: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
-    supersedes: SP-TR-S1-CAP-001
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_CAPABILITY_V2_AND_GATE_C_APPROVED_2026-09-15.md
-    compact_formulation: "Заметить происходящее сейчас и вернуть участие в следующем продолжении."
-    hidden_cause_required: false
-
-  stage_1_automaticity_neutrality:
-    id: SP-TR-S1-AUTO-NEUTRAL-001
-    status: approved_training_boundary
-    document: docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
-    core_rule: "Automaticity is not moral failure, pathology by default or enemy to eliminate; Selection Point restores participation where continuation remains open."
-    selection_capacity_not_inverse_automaticity: true
-
-  stage_1_research_packet:
-    id: SP-TR-S1-RP-001
-    status: approved_research_material
-    execution_spec: docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
-    red_team: docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md
-    reinterpretation_rule: present_moment_capability_v2_outweighs_causal_reconstruction_as_training_requirement
-
-  stage_1_psychological_mechanism_map:
-    id: SP-TR-S1-PMM-002
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
-    red_team: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_RED_TEAM.md
-    red_team_id: SP-TR-S1-PMM-RT-002
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_CAPABILITY_V2_AND_GATE_C_APPROVED_2026-09-15.md
-    methodological_approval: true
-    binding_interpretation:
-      - hidden_psychological_cause_not_required
-      - present_centered_does_not_mean_history_blind
-      - current_position_is_relevance_filtered_not_exhaustive
-      - relevant_local_direction_task_or_responsibility_anchors_choice
-      - known_testable_causal_information_is_allowed
-      - speculative_hidden_origin_is_not_required
-      - noticing_is_not_completion
-      - automaticity_is_neutral_not_enemy
-      - selection_capacity_is_not_less_automaticity
-      - rc_018_keeps_selection_realization_consequence_feedback_separate
-      - conscious_non_action_waiting_repair_and_help_seeking_can_be_valid_continuations
-      - ai_may_not_assign_hidden_cause_as_fact
-    gate_d_opened: true
-
-  stage_1_automaticity_transformation_research:
-    id: SP-TR-S1-ATR-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
-    red_team: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
-    red_team_id: SP-TR-S1-ATR-RT-001
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_APPROVED_2026-09-17.md
-    owner_approval_required: false
-    long_term_hypothesis: "useful automatic default + selective interruptibility / rapid re-entry under meaningful mismatch"
-    binding_research_boundaries:
-      - intention_is_not_realization
-      - automatic_continuation_is_broader_than_habit
-      - interruption_is_not_new_automaticity
-      - old_learning_may_remain_retrievable
-      - external_scaffold_effect_must_remain_visible
-      - replacement_must_be_reality_coupled
-      - robust_high_load_transfer_is_not_stage_1_requirement
-
-  stage_1_measurement_reactivity:
-    id: SP-TR-S1-MR-OBS-001
-    status: observed_owner_self_report_research_required
-    document: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
-    core_observation: "Repeated evening questionnaire use appeared by approximately day 4 to alter in-day attention/participation because actions were being noticed partly for later reporting."
-    binding_interpretation:
-      - questionnaire_completion_is_not_sp_proof
-      - questionnaire_data_is_telemetry
-      - questionnaire_exposure_may_be_intervention_or_scaffold
-      - measurement_reactivity_must_remain_visible
-      - prompted_noticing_must_not_be_confused_with_independent_capacity
-      - scaffold_dependence_vs_internalization_is_open
-
-  stage_1_learning_units:
-    id: SP-TR-S1-LU-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
-    red_team: docs/TRAINING/STAGE_1_LEARNING_UNITS_RED_TEAM.md
-    red_team_id: SP-TR-S1-LU-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_D_APPROVED_2026-09-19.md
-    owner_approval_required: false
-    methodological_approval: true
-    research_prerequisite: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
-    research_prerequisite_status: approved
-    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
-    learner_architecture: "NOTICE -> OPEN -> REALIZE -> UPDATE"
-    cross_cycle_direction: "repeated useful SP cycles -> easier retrieval/lower load -> possible useful automaticity with selective interruptibility preserved"
-    binding_interpretation:
-      - noticing_is_not_interruption
-      - interruption_is_selective_under_relevant_mismatch
-      - local_anchor_not_final_life_direction
-      - selected_is_not_realized
-      - one_cycle_is_not_new_automaticity
-      - automated_replacement_is_not_proof_of_current_stage_1_operation
-      - prompt_scaffold_provenance_must_remain_visible
-      - scaffold_internalization_is_open
-      - late_entry_is_valid
-      - clinical_or_external_support_may_be_the_available_participation
-    gate_e_opened: true
-
-  stage_1_practice_protocol:
-    id: SP-TR-S1-PP-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL.md
-    red_team: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_RED_TEAM.md
-    red_team_id: SP-TR-S1-PP-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_E_APPROVED_2026-09-19.md
-    upstream_learning_units: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
-    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
-    owner_approval_required: false
-    methodological_approval: true
-    practice_architecture: "one lane -> Lane Card -> optional rehearsal -> NOTICE -> OPEN -> REALIZE -> UPDATE -> minimal review -> natural recurrence"
-    live_compression: "Заметь -> открой -> сделай -> сверься"
-    binding_interpretation:
-      - one_narrow_lane_not_whole_person_scanning
-      - rehearsal_is_not_real_world_evidence
-      - interruption_is_selective_under_meaningful_mismatch
-      - no_introspective_interruption_during_unsafe_or_time_critical_skilled_activity
-      - prepared_alternative_is_revisable_after_new_fact
-      - environment_effect_is_not_independent_participant_reentry
-      - review_is_minimal_because_measurement_can_be_intervention
-      - support_provenance_is_not_mastery_rank
-      - lapse_update_is_actionable_and_testable_not_hidden_cause_story
-      - useful_automatic_performance_should_run_when_aligned
-      - update_can_include_immediate_and_later_consequence
-    gate_f_opened: true
-
-  stage_1_observability_measurement:
-    id: SP-TR-S1-OM-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
-    red_team: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_RED_TEAM.md
-    red_team_id: SP-TR-S1-OM-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_F_APPROVED_2026-09-19.md
-    upstream_practice_protocol: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL.md
-    product_lab_compatibility:
-      - docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
-      - docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
-    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
-    owner_approval_required: false
-    methodological_approval: true
-    architecture: "documented relevant event/candidate opportunity -> NOTICE -> OPEN -> SELECT -> REALIZE -> CONSEQUENCE -> UPDATE"
-    default_output: trace_not_score
-    default_summary_scope: lane_local
-    binding_interpretation:
-      - no_invisible_total_opportunity_denominator
-      - unknown_is_valid
-      - normalization_does_not_upgrade_self_report
-      - source_lineage_and_capture_timing_required_where_practical
-      - participant_capture_surface_is_smaller_than_research_trace
-      - episode_count_is_not_performance
-      - noticing_timing_is_descriptive_not_mastery
-      - support_provenance_is_not_independence_or_mastery
-      - environment_effect_is_distinct_from_participant_reentry
-      - aligned_automatic_performance_is_distinct_from_conscious_sp_cycle
-      - no_mismatch_means_reopenability_not_observed
-      - rehearsal_is_not_live_evidence
-      - review_elicited_update_is_distinct_from_spontaneous_update
-      - consequence_is_not_used_feedback
-      - outcome_valence_is_not_capacity
-      - gate_g_readiness_is_schema_coverage_not_participant_quota
-    gate_g_opened: true
-
-  stage_1_pilot_evidence_packet:
-    id: SP-TR-S1-PEP-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
-    red_team: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
-    red_team_id: SP-TR-S1-PEP-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
-    upstream_observability: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
-    evidence_scope: owner_self_pilot_and_authorized_deidentified_evidence_only
-    corpus_summary: "3 participants; 14 submitted participant-days; P-A 12-19 Sep; P-B/P-C 16-18 Sep"
-    corpus_classification: pre_protocol_transitional_compatibility_evidence
-    raw_private_data_promoted_upstream: false
-    owner_approval_required: false
-    methodological_approval: true
-    binding_interpretation:
-      - corpus_is_not_gate_e_efficacy_test
-      - event_chains_are_partial_reconstructions
-      - self_report_remains_self_report
-      - owner_designer_expectancy_is_major_confound
-      - cross_case_recurrence_is_not_efficacy_replication
-      - submitted_reports_are_not_all_days_or_all_opportunities
-      - intention_realization_divergence_is_supported
-      - lane_specificity_is_supported
-      - urge_is_not_action
-      - questionnaire_reactivity_is_observed_for_owner_not_generalized
-      - notice_timing_and_open_are_under_observed
-      - automaticity_is_not_demonstrated_not_absent
-      - reopenability_is_not_observed
-      - proposed_open_discriminator_is_reactive_measurement_experiment
-      - public_artifact_contains_deidentified_findings_only
-    gate_h_opened: true
-
-  stage_1_stage_review:
-    id: SP-TR-S1-SR-001
-    status: approved
-    execution_spec: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
-    deliverable: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
-    red_team: docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
-    red_team_id: SP-TR-S1-SR-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_H_APPROVED_2026-09-20.md
-    owner_decision: close_stage_1_architecture
-    upstream_evidence_packet: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
-    owner_approval_required: false
-    architecture_status: approved_closed
-    validation_status: efficacy_not_demonstrated_empirically_open
-    post_protocol_validation_recommended: true
-    post_protocol_validation_design_opened: true
-    external_user_pilot_authorized: false
-    binding_interpretation:
-      - architecture_closure_is_not_efficacy_validation
-      - no_observed_contradiction_is_not_confirmation_of_truth
-      - owner_self_pilot_is_design_evidence_not_independent_efficacy_evidence
-      - cross_case_recurrence_is_not_efficacy_replication
-      - final_gate_e_protocol_not_yet_directly_validated
-      - post_protocol_validation_is_next_authorized_design_track
-      - stage_2_does_not_open_automatically
-      - reality_may_reopen_architecture_on_specific_contradiction
-      - directed_question_hypothesis_remains_parked
-    next_step: draft_stage_1_post_protocol_validation_design
-    stage_2_opened: false
-
-  stage_1_post_protocol_validation:
-    id: SP-TR-S1-VAL-001
-    status: approved
-    design: docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN.md
-    red_team: docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_RED_TEAM.md
-    red_team_id: SP-TR-S1-VAL-RT-001
-    red_team_verdict: pass_with_binding_boundaries
-    approval_decision: docs/TRAINING/DECISION_STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN_APPROVED_2026-09-20.md
-    owner_approval_required: false
-    v0_execution_authorized: false
-    suspension_reason: superseded_by_course_first_reset
-    external_user_pilot_authorized: false
-    initial_participant_scope: owner_self_pilot_only
-    design_type: feasibility_and_architecture_stress_test
-    primary_test_object: "one lane -> short Lane Card -> NOTICE -> OPEN -> REALIZE -> UPDATE"
-    pragmatic_coverage_target: "at least 6 evaluable live recurrences; not a mastery or efficacy threshold"
-    calendar_cap_days: 21
-    directed_question_hypothesis_included: false
-    binding_interpretation:
-      - owner_v0_cannot_establish_independent_efficacy
-      - phase_sequence_does_not_estimate_causal_prompt_fading
-      - only_in_event_open_supports_live_open_claim
-      - capture_is_itself_measurement_exposure
-      - no_running_success_score
-      - safety_support_is_not_withdrawn_for_independence
-      - automaticity_and_reopenability_are_opportunistic_v0_observations
-      - external_user_execution_requires_separate_owner_authorization
-    next_step: select_lane_and_create_lane_card
-
-  deferred_trainer_hypothesis:
-    id: SP-TR-HYP-001
-    status: parked
-    document: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
-    implementation_authorized: false
-
-  directed_question_hypothesis:
-    id: SP-TR-HYP-002
-    status: parked_owner_approved_research_hypothesis
-    document: docs/TRAINING/DIRECTED_QUESTION_AS_SELECTION_SCAFFOLD_HYPOTHESIS.md
-    owner_decision_date: 2026-09-20
-    core_hypothesis: "A reality-coupled directed question may alter search/retrieval and the availability of the next continuation without prescribing truth."
-    gate_h_scope_changed: false
-    practice_protocol_changed: false
-    measurement_spec_changed: false
-    implementation_authorized: false
-    binding_boundaries:
-      - question_may_guide_search_but_does_not_establish_truth
-      - presuppositional_questions_may_bias_attention_memory_or_report
-      - question_greater_than_affirmation_is_not_established
-      - changed_report_is_not_changed_realization
-      - measurement_reactivity_remains_visible
-      - reality_must_be_allowed_to_contradict_the_question_premise
-
+  next_step_label: Рассмотреть и утвердить либо доработать шаблон урока первой ступени
+  artifact: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+  artifact_status: draft_for_owner_review
+  owner_decision_required: true
+  execution_authorized: false
+  authorization_boundary: Full lesson writing waits for template approval; synchronization does not grant methodological approval.
+  route_decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
+  structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
+  synchronization_decision: docs/PROJECT_SYSTEM/DECISION_SYNC_REPAIR_2026-10-07.md
+  supporting_tasks_are_not_course_prerequisites: true
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-28_STAGE1_LESSON_TEMPLATE_REVIEW.md
-  principle: "Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project meaning."
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md
+  principle: Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project
+    meaning.
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
-
-system_model:
-  principle: "Selection Point is one project with multiple authority and evidence layers; repository boundaries do not imply separate projects."
-  control_plane_repo: xahinvest-DNA/Selection-point
-  control_plane_role: "Own system topology, authority boundaries, approved methodology contracts, promotion gates and cross-repo synchronization rules."
-
-nodes:
-  - node_id: SP-CORE
-    repository: xahinvest-DNA/Selection-point
-    visibility: public
-    role: foundation_and_product_control
-    authority:
-      - canonical_methodology
-      - foundation_governance
-      - product_lab_hypotheses
-      - reality_event_model
-      - measurement_contracts
-      - participant_data_policy
-    ssot:
-      architecture: docs/FOUNDATION/PROJECT_STATE.yaml
-      product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
-
-  - node_id: SP-HLAB-001
-    repository: xahinvest-DNA/Selection-point-health-lab
-    visibility: private
-    role: private_evidence_node
-    purpose: "Owner self-pilot in body / health / physical-efficiency domain."
-    authority:
-      - raw_owner_self_pilot_data
-      - normalized_pilot_events
-      - local_reviews
-      - local_open_hypotheses
-    forbidden_authority:
-      - redefine_selection_point_canon
-      - promote_local_hypothesis_to_general_claim_automatically
-      - store_external_participant_data_without_separate_pilot_gate
-    upstream_contract: docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md
-    node_state_owned_by_node: docs/NODE_STATE.yaml
-    status: active_owner_self_pilot
-
-flows:
-  downward:
-    direction: SP-CORE -> evidence nodes
-    carries:
-      - approved_boundaries
-      - event_model_contract
-      - measurement_contract
-      - privacy_and_evidence_rules
-    rule: "A downstream node may specialize capture fields but may not silently weaken upstream boundaries."
-  upward:
-    direction: evidence nodes -> SP-CORE
-    carries:
-      - de_identified_observations
-      - candidate_patterns
-      - falsification_signals
-      - protocol_findings
-    rule: "Raw personal data never moves upward; findings require explicit promotion review before changing Product Lab or canon."
-
-current_shared_contract:
-  foundation_boundary: RC-018
-  event_model: Reality Event Model v0.2
-  metrics_spec: Pilot Metrics Specification v0.1
-  key_chain: "PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord -> ModelUpdateRecord"
-  selected_not_realized: true
-  conscious_non_action_may_be_realized: true
-  partial_execution_is_partial_test: true
-  prompt_exposure_must_be_recorded: true
-  measurement_adherence_is_not_domain_outcome: true
-  questionnaire_completion_is_not_sp_proof: true
-  questionnaire_data_is_telemetry: true
-  questionnaire_exposure_may_be_intervention_or_scaffold: true
-  measurement_reactivity_must_remain_visible: true
-  hidden_cause_analysis_not_required: true
-  automaticity_neutrality_required: true
-
-current_gates:
-  stage_5: unopened
-  product_lab_002: unopened
-  external_user_pilot: unopened
-  owner_self_pilot: active
-  trainer_implementation: unopened
-  training_capability_v2: approved
-  training_gate_b: approved
-  training_gate_c: approved
-  training_automaticity_transformation_research: approved
-  training_gate_d: approved
-  training_gate_e: approved
-  training_gate_f: approved
-  training_gate_g: approved
-  training_gate_h: approved
-
-promotion_rule:
-  raw_data_to_public_repo: forbidden
-  local_hypothesis_to_product_hypothesis: explicit_review_required
-  product_hypothesis_to_canon: foundation_governance_required
-
+  health_lab_verification_status: historical_snapshot_not_verified_in_2026_10_07_core_audit
+active_working_inputs:
+- id: SP-WORKING-2026-10-05-DRA
+  status: owner_approved_working_proposition
+  document: docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
+  canonical_promotion_authorized: false
 new_chat_bootstrap:
   read_first:
-    - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-    - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-20_STAGE1_COURSE_STRUCTURE.md
-    - docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
-    - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
-    - docs/COURSE/STAGE_1_COURSE_WORK_BRIEF.md
-    - docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
-    - docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
-    - docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
-    - docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
-    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
-    - docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
-    - docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
-    - docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
-    - docs/TRAINING/STAGE_1_LEARNING_UNITS.md
-    - docs/TRAINING/STAGE_1_LEARNING_UNITS_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_D_APPROVED_2026-09-19.md
-    - docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_SPEC.md
-    - docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL.md
-    - docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_E_APPROVED_2026-09-19.md
-    - docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_SPEC.md
-    - docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
-    - docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_F_APPROVED_2026-09-19.md
-    - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_SPEC.md
-    - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
-    - docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
-    - docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
-    - docs/TRAINING/STAGE_1_STAGE_REVIEW.md
-    - docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_GATE_H_APPROVED_2026-09-20.md
-    - docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN.md
-    - docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_RED_TEAM.md
-    - docs/TRAINING/DECISION_STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN_APPROVED_2026-09-20.md
+  - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
+  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md
+  - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
+  - docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
+  - docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
+  - docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+  - docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
     training_capability: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
@@ -549,3 +66,496 @@ new_chat_bootstrap:
     health_evidence_node: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
     parked_trainer_hypothesis: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
     directed_question_hypothesis: docs/TRAINING/DIRECTED_QUESTION_AS_SELECTION_SCAFFOLD_HYPOTHESIS.md
+    course: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
+    lesson_template: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+    technical_work: docs/CODEX_TASKS.md
+control_plane_id: SP-PSYS-001
+control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
+sync_protocol: docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md
+operating_model:
+  id: SP-OPS-002
+  status: approved
+  document: docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md
+  decision: docs/PROJECT_SYSTEM/DECISION_PSYS_003_2026-09-15.md
+  supersedes: SP-OPS-001
+  operating_flow: Owner -> Chat for methodology/research/synthesis/artifacts -> Codex only when technical implementation is
+    required -> Pilot/Reality -> Chat evidence assembly/interpretation/Red Team -> Owner decision
+  separate_work_mode_required: false
+  stage_development_rule: one_foundation_stage_at_a_time
+  current_authorization: stage_1_course_first_development
+  questionnaire_role: telemetry_with_possible_measurement_reactivity_not_sp_proof
+  executor_boundaries:
+    owner: direction_and_final_approval
+    chat: methodology_research_synthesis_audits_artifacts_evidence_red_team_governance_interpretation
+    codex: approved_technical_implementation_only
+    reality: empirical_validation_and_contradiction
+  epistemic_labels:
+  - APPROVED
+  - DERIVED
+  - HYPOTHESIS
+  - OPEN
+  - CONTRADICTION
+  - ILLUSTRATION
+  - OBSERVED
+  - SELF-REPORT
+  - INTERPRETATION
+  reference_artifact_types:
+  - Stage Capability Spec
+  - Stage Research Packet
+  - Psychological Mechanism Map
+  - Learning Units
+  - Practice Protocol
+  - Observability / Measurement Spec
+  - Pilot Evidence Packet
+  - Stage Review
+  gate_pipeline_role: historical_reference_not_active_route
+course_first_reset:
+  id: SP-DEC-COURSE-FIRST-RESET-001
+  status: approved
+  decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
+  semantic_pre_gate_reference_commit: 59b705d8362c9c7c7be4690e805093a26fdb758f
+  gate_pipeline_introduction_commit: 30601cb7a4deef9cdd8fa64595d334c631afaaaf
+  active_objective: build_effective_stage_1_course
+  active_brief: docs/COURSE/STAGE_1_COURSE_WORK_BRIEF.md
+  gate_pipeline_active: false
+  questionnaire_development_active: limited_trajectory_telemetry_only
+  v0_validation_execution_active: false
+  gate_era_artifacts_role: research_reference_only
+  trajectory_questionnaire:
+    id: SP-DTQ-002
+    status: draft_for_owner_review
+    document: docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md
+    role: multi_timeframe_trajectory_telemetry
+    course_prerequisite: false
+  stage_1_course:
+    teaching_field: effective_body
+    operational_direction: Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую
+      эффективность и расширяют возможности тела в будущем.
+    short_direction: Тело со временем становится здоровее, сильнее и способнее.
+    teaching_architecture: docs/COURSE/STAGE_1_EFFECTIVE_BODY_TEACHING_ARCHITECTURE.md
+    course_structure: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
+    course_structure_id: SP-COURSE-S1-STRUCT-003
+    course_structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
+    course_structure_status: approved
+    proposed_lesson_count: 5
+    course_wide_axis: participant-owned created direction + factual current reality
+    cross_cutting_layers:
+    - 'Fritz: created direction + current reality'
+    - 'Millman: present contact + action when available'
+    - 'Williams: level-appropriate maps/tools'
+    orientation_counted_as_lesson: false
+    integration_counted_as_lesson: false
+    structure_review: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE_REVIEW.md
+    structure_research_williams_millman_fritz: docs/COURSE/STAGE_1_STRUCTURE_WILLIAMS_MILLMAN_FRITZ_RESEARCH.md
+    structure_research_status: approved_research_input
+    teaching_architecture_status: supporting_draft
+    lesson_template: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+    lesson_template_id: SP-COURSE-S1-TEMPLATE-001
+    lesson_template_status: draft_for_owner_review
+  next_step: owner_review_stage_1_lesson_template
+training_state:
+  current_stage: 1
+  current_gate: none / course-first development
+  stage_1_capability:
+    id: SP-TR-S1-CAP-002
+    status: approved
+    document: docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md
+    supersedes: SP-TR-S1-CAP-001
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_CAPABILITY_V2_AND_GATE_C_APPROVED_2026-09-15.md
+    compact_formulation: Заметить происходящее сейчас и вернуть участие в следующем продолжении.
+    hidden_cause_required: false
+    operational_role: research_reference_only
+  stage_1_automaticity_neutrality:
+    id: SP-TR-S1-AUTO-NEUTRAL-001
+    status: approved_training_boundary
+    document: docs/TRAINING/STAGE_1_AUTOMATICITY_NEUTRALITY_BOUNDARY.md
+    core_rule: Automaticity is not moral failure, pathology by default or enemy to eliminate; Selection Point restores participation
+      where continuation remains open.
+    selection_capacity_not_inverse_automaticity: true
+    operational_role: research_reference_only
+  stage_1_research_packet:
+    id: SP-TR-S1-RP-001
+    status: approved_research_material
+    execution_spec: docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_RESEARCH_PACKET.md
+    red_team: docs/TRAINING/STAGE_1_RESEARCH_PACKET_RED_TEAM.md
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_B_APPROVED_2026-09-15.md
+    reinterpretation_rule: present_moment_capability_v2_outweighs_causal_reconstruction_as_training_requirement
+    operational_role: research_reference_only
+  stage_1_psychological_mechanism_map:
+    id: SP-TR-S1-PMM-002
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP.md
+    red_team: docs/TRAINING/STAGE_1_PSYCHOLOGICAL_MECHANISM_MAP_RED_TEAM.md
+    red_team_id: SP-TR-S1-PMM-RT-002
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_CAPABILITY_V2_AND_GATE_C_APPROVED_2026-09-15.md
+    methodological_approval: true
+    binding_interpretation:
+    - hidden_psychological_cause_not_required
+    - present_centered_does_not_mean_history_blind
+    - current_position_is_relevance_filtered_not_exhaustive
+    - relevant_local_direction_task_or_responsibility_anchors_choice
+    - known_testable_causal_information_is_allowed
+    - speculative_hidden_origin_is_not_required
+    - noticing_is_not_completion
+    - automaticity_is_neutral_not_enemy
+    - selection_capacity_is_not_less_automaticity
+    - rc_018_keeps_selection_realization_consequence_feedback_separate
+    - conscious_non_action_waiting_repair_and_help_seeking_can_be_valid_continuations
+    - ai_may_not_assign_hidden_cause_as_fact
+    operational_role: research_reference_only
+    historical_gate_d_opened: true
+  stage_1_automaticity_transformation_research:
+    id: SP-TR-S1-ATR-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    red_team: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_RED_TEAM.md
+    red_team_id: SP-TR-S1-ATR-RT-001
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_APPROVED_2026-09-17.md
+    owner_approval_required: false
+    long_term_hypothesis: useful automatic default + selective interruptibility / rapid re-entry under meaningful mismatch
+    binding_research_boundaries:
+    - intention_is_not_realization
+    - automatic_continuation_is_broader_than_habit
+    - interruption_is_not_new_automaticity
+    - old_learning_may_remain_retrievable
+    - external_scaffold_effect_must_remain_visible
+    - replacement_must_be_reality_coupled
+    - robust_high_load_transfer_is_not_stage_1_requirement
+    operational_role: research_reference_only
+  stage_1_measurement_reactivity:
+    id: SP-TR-S1-MR-OBS-001
+    status: observed_owner_self_report_research_required
+    document: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    core_observation: Repeated evening questionnaire use appeared by approximately day 4 to alter in-day attention/participation
+      because actions were being noticed partly for later reporting.
+    binding_interpretation:
+    - questionnaire_completion_is_not_sp_proof
+    - questionnaire_data_is_telemetry
+    - questionnaire_exposure_may_be_intervention_or_scaffold
+    - measurement_reactivity_must_remain_visible
+    - prompted_noticing_must_not_be_confused_with_independent_capacity
+    - scaffold_dependence_vs_internalization_is_open
+    operational_role: research_reference_only
+  stage_1_learning_units:
+    id: SP-TR-S1-LU-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_LEARNING_UNITS_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
+    red_team: docs/TRAINING/STAGE_1_LEARNING_UNITS_RED_TEAM.md
+    red_team_id: SP-TR-S1-LU-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_D_APPROVED_2026-09-19.md
+    owner_approval_required: false
+    methodological_approval: true
+    research_prerequisite: docs/TRAINING/STAGE_1_AUTOMATICITY_TRANSFORMATION_RESEARCH_PACKET.md
+    research_prerequisite_status: approved
+    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    learner_architecture: NOTICE -> OPEN -> REALIZE -> UPDATE
+    cross_cycle_direction: repeated useful SP cycles -> easier retrieval/lower load -> possible useful automaticity with selective
+      interruptibility preserved
+    binding_interpretation:
+    - noticing_is_not_interruption
+    - interruption_is_selective_under_relevant_mismatch
+    - local_anchor_not_final_life_direction
+    - selected_is_not_realized
+    - one_cycle_is_not_new_automaticity
+    - automated_replacement_is_not_proof_of_current_stage_1_operation
+    - prompt_scaffold_provenance_must_remain_visible
+    - scaffold_internalization_is_open
+    - late_entry_is_valid
+    - clinical_or_external_support_may_be_the_available_participation
+    operational_role: research_reference_only
+    historical_gate_e_opened: true
+  stage_1_practice_protocol:
+    id: SP-TR-S1-PP-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL.md
+    red_team: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL_RED_TEAM.md
+    red_team_id: SP-TR-S1-PP-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_E_APPROVED_2026-09-19.md
+    upstream_learning_units: docs/TRAINING/STAGE_1_LEARNING_UNITS.md
+    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    owner_approval_required: false
+    methodological_approval: true
+    practice_architecture: one lane -> Lane Card -> optional rehearsal -> NOTICE -> OPEN -> REALIZE -> UPDATE -> minimal review
+      -> natural recurrence
+    live_compression: Заметь -> открой -> сделай -> сверься
+    binding_interpretation:
+    - one_narrow_lane_not_whole_person_scanning
+    - rehearsal_is_not_real_world_evidence
+    - interruption_is_selective_under_meaningful_mismatch
+    - no_introspective_interruption_during_unsafe_or_time_critical_skilled_activity
+    - prepared_alternative_is_revisable_after_new_fact
+    - environment_effect_is_not_independent_participant_reentry
+    - review_is_minimal_because_measurement_can_be_intervention
+    - support_provenance_is_not_mastery_rank
+    - lapse_update_is_actionable_and_testable_not_hidden_cause_story
+    - useful_automatic_performance_should_run_when_aligned
+    - update_can_include_immediate_and_later_consequence
+    operational_role: research_reference_only
+    historical_gate_f_opened: true
+  stage_1_observability_measurement:
+    id: SP-TR-S1-OM-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
+    red_team: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT_RED_TEAM.md
+    red_team_id: SP-TR-S1-OM-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_F_APPROVED_2026-09-19.md
+    upstream_practice_protocol: docs/TRAINING/STAGE_1_PRACTICE_PROTOCOL.md
+    product_lab_compatibility:
+    - docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
+    - docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
+    measurement_reactivity_input: docs/TRAINING/STAGE_1_MEASUREMENT_REACTIVITY_OBSERVATION.md
+    owner_approval_required: false
+    methodological_approval: true
+    architecture: documented relevant event/candidate opportunity -> NOTICE -> OPEN -> SELECT -> REALIZE -> CONSEQUENCE ->
+      UPDATE
+    default_output: trace_not_score
+    default_summary_scope: lane_local
+    binding_interpretation:
+    - no_invisible_total_opportunity_denominator
+    - unknown_is_valid
+    - normalization_does_not_upgrade_self_report
+    - source_lineage_and_capture_timing_required_where_practical
+    - participant_capture_surface_is_smaller_than_research_trace
+    - episode_count_is_not_performance
+    - noticing_timing_is_descriptive_not_mastery
+    - support_provenance_is_not_independence_or_mastery
+    - environment_effect_is_distinct_from_participant_reentry
+    - aligned_automatic_performance_is_distinct_from_conscious_sp_cycle
+    - no_mismatch_means_reopenability_not_observed
+    - rehearsal_is_not_live_evidence
+    - review_elicited_update_is_distinct_from_spontaneous_update
+    - consequence_is_not_used_feedback
+    - outcome_valence_is_not_capacity
+    - gate_g_readiness_is_schema_coverage_not_participant_quota
+    operational_role: research_reference_only
+    historical_gate_g_opened: true
+  stage_1_pilot_evidence_packet:
+    id: SP-TR-S1-PEP-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
+    red_team: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET_RED_TEAM.md
+    red_team_id: SP-TR-S1-PEP-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_G_APPROVED_2026-09-20.md
+    upstream_observability: docs/TRAINING/STAGE_1_OBSERVABILITY_MEASUREMENT.md
+    evidence_scope: owner_self_pilot_and_authorized_deidentified_evidence_only
+    corpus_summary: 3 participants; 14 submitted participant-days; P-A 12-19 Sep; P-B/P-C 16-18 Sep
+    corpus_classification: pre_protocol_transitional_compatibility_evidence
+    raw_private_data_promoted_upstream: false
+    owner_approval_required: false
+    methodological_approval: true
+    binding_interpretation:
+    - corpus_is_not_gate_e_efficacy_test
+    - event_chains_are_partial_reconstructions
+    - self_report_remains_self_report
+    - owner_designer_expectancy_is_major_confound
+    - cross_case_recurrence_is_not_efficacy_replication
+    - submitted_reports_are_not_all_days_or_all_opportunities
+    - intention_realization_divergence_is_supported
+    - lane_specificity_is_supported
+    - urge_is_not_action
+    - questionnaire_reactivity_is_observed_for_owner_not_generalized
+    - notice_timing_and_open_are_under_observed
+    - automaticity_is_not_demonstrated_not_absent
+    - reopenability_is_not_observed
+    - proposed_open_discriminator_is_reactive_measurement_experiment
+    - public_artifact_contains_deidentified_findings_only
+    operational_role: research_reference_only
+    historical_gate_h_opened: true
+  stage_1_stage_review:
+    id: SP-TR-S1-SR-001
+    status: approved
+    execution_spec: docs/TRAINING/STAGE_1_STAGE_REVIEW_SPEC.md
+    deliverable: docs/TRAINING/STAGE_1_STAGE_REVIEW.md
+    red_team: docs/TRAINING/STAGE_1_STAGE_REVIEW_RED_TEAM.md
+    red_team_id: SP-TR-S1-SR-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_GATE_H_APPROVED_2026-09-20.md
+    owner_decision: close_stage_1_architecture
+    upstream_evidence_packet: docs/TRAINING/STAGE_1_PILOT_EVIDENCE_PACKET.md
+    owner_approval_required: false
+    architecture_status: approved_closed
+    validation_status: efficacy_not_demonstrated_empirically_open
+    external_user_pilot_authorized: false
+    binding_interpretation:
+    - architecture_closure_is_not_efficacy_validation
+    - no_observed_contradiction_is_not_confirmation_of_truth
+    - owner_self_pilot_is_design_evidence_not_independent_efficacy_evidence
+    - cross_case_recurrence_is_not_efficacy_replication
+    - final_gate_e_protocol_not_yet_directly_validated
+    - post_protocol_validation_was_authorized_before_course_first_reset
+    - stage_2_does_not_open_automatically
+    - reality_may_reopen_architecture_on_specific_contradiction
+    - directed_question_hypothesis_remains_parked
+    stage_2_opened: false
+    operational_role: research_reference_only
+    historical_next_step: draft_stage_1_post_protocol_validation_design
+    historical_post_protocol_validation_recommended: true
+    historical_post_protocol_validation_design_opened: true
+  stage_1_post_protocol_validation:
+    id: SP-TR-S1-VAL-001
+    status: approved
+    design: docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN.md
+    red_team: docs/TRAINING/STAGE_1_POST_PROTOCOL_VALIDATION_RED_TEAM.md
+    red_team_id: SP-TR-S1-VAL-RT-001
+    red_team_verdict: pass_with_binding_boundaries
+    approval_decision: docs/TRAINING/DECISION_STAGE_1_POST_PROTOCOL_VALIDATION_DESIGN_APPROVED_2026-09-20.md
+    owner_approval_required: false
+    v0_execution_authorized: false
+    suspension_reason: superseded_by_course_first_reset
+    external_user_pilot_authorized: false
+    initial_participant_scope: owner_self_pilot_only
+    design_type: feasibility_and_architecture_stress_test
+    primary_test_object: one lane -> short Lane Card -> NOTICE -> OPEN -> REALIZE -> UPDATE
+    pragmatic_coverage_target: at least 6 evaluable live recurrences; not a mastery or efficacy threshold
+    calendar_cap_days: 21
+    directed_question_hypothesis_included: false
+    binding_interpretation:
+    - owner_v0_cannot_establish_independent_efficacy
+    - phase_sequence_does_not_estimate_causal_prompt_fading
+    - only_in_event_open_supports_live_open_claim
+    - capture_is_itself_measurement_exposure
+    - no_running_success_score
+    - safety_support_is_not_withdrawn_for_independence
+    - automaticity_and_reopenability_are_opportunistic_v0_observations
+    - external_user_execution_requires_separate_owner_authorization
+    operational_role: execution_suspended
+    historical_next_step: select_lane_and_create_lane_card
+  deferred_trainer_hypothesis:
+    id: SP-TR-HYP-001
+    status: parked
+    document: docs/TRAINING/DEFERRED_TRAINER_AS_STAGE_EVIDENCE_SYSTEM.md
+    implementation_authorized: false
+  directed_question_hypothesis:
+    id: SP-TR-HYP-002
+    status: parked_owner_approved_research_hypothesis
+    document: docs/TRAINING/DIRECTED_QUESTION_AS_SELECTION_SCAFFOLD_HYPOTHESIS.md
+    owner_decision_date: 2026-09-20
+    core_hypothesis: A reality-coupled directed question may alter search/retrieval and the availability of the next continuation
+      without prescribing truth.
+    gate_h_scope_changed: false
+    practice_protocol_changed: false
+    measurement_spec_changed: false
+    implementation_authorized: false
+    binding_boundaries:
+    - question_may_guide_search_but_does_not_establish_truth
+    - presuppositional_questions_may_bias_attention_memory_or_report
+    - question_greater_than_affirmation_is_not_established
+    - changed_report_is_not_changed_realization
+    - measurement_reactivity_remains_visible
+    - reality_must_be_allowed_to_contradict_the_question_premise
+system_model:
+  principle: Selection Point is one project with multiple authority and evidence layers; repository boundaries do not imply
+    separate projects.
+  control_plane_repo: xahinvest-DNA/Selection-point
+  control_plane_role: Own system topology, authority boundaries, approved methodology contracts, promotion gates and cross-repo
+    synchronization rules.
+nodes:
+- node_id: SP-CORE
+  repository: xahinvest-DNA/Selection-point
+  visibility: public
+  role: foundation_and_product_control
+  authority:
+  - canonical_methodology
+  - foundation_governance
+  - product_lab_hypotheses
+  - reality_event_model
+  - measurement_contracts
+  - participant_data_policy
+  ssot:
+    architecture: docs/FOUNDATION/PROJECT_STATE.yaml
+    product_lab: docs/PRODUCT_LAB/LAB_STATE.yaml
+- node_id: SP-HLAB-001
+  repository: xahinvest-DNA/Selection-point-health-lab
+  visibility: private
+  role: private_evidence_node
+  purpose: Owner self-pilot in body / health / physical-efficiency domain.
+  authority:
+  - raw_owner_self_pilot_data
+  - normalized_pilot_events
+  - local_reviews
+  - local_open_hypotheses
+  forbidden_authority:
+  - redefine_selection_point_canon
+  - promote_local_hypothesis_to_general_claim_automatically
+  - store_external_participant_data_without_separate_pilot_gate
+  upstream_contract: docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md
+  node_state_owned_by_node: docs/NODE_STATE.yaml
+  status: active_owner_self_pilot
+flows:
+  downward:
+    direction: SP-CORE -> evidence nodes
+    carries:
+    - approved_boundaries
+    - event_model_contract
+    - measurement_contract
+    - privacy_and_evidence_rules
+    rule: A downstream node may specialize capture fields but may not silently weaken upstream boundaries.
+  upward:
+    direction: evidence nodes -> SP-CORE
+    carries:
+    - de_identified_observations
+    - candidate_patterns
+    - falsification_signals
+    - protocol_findings
+    rule: Raw personal data never moves upward; findings require explicit promotion review before changing Product Lab or
+      canon.
+current_shared_contract:
+  foundation_boundary: RC-018
+  event_model: Reality Event Model v0.2
+  metrics_spec: Pilot Metrics Specification v0.1
+  key_chain: PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord
+    -> ModelUpdateRecord
+  selected_not_realized: true
+  conscious_non_action_may_be_realized: true
+  partial_execution_is_partial_test: true
+  prompt_exposure_must_be_recorded: true
+  measurement_adherence_is_not_domain_outcome: true
+  questionnaire_completion_is_not_sp_proof: true
+  questionnaire_data_is_telemetry: true
+  questionnaire_exposure_may_be_intervention_or_scaffold: true
+  measurement_reactivity_must_remain_visible: true
+  hidden_cause_analysis_not_required: true
+  automaticity_neutrality_required: true
+current_gates:
+  stage_5: unopened
+  product_lab_002: unopened
+  external_user_pilot: unopened
+  owner_self_pilot: active
+  trainer_implementation: unopened
+  training_capability_v2: approved
+  training_automaticity_transformation_research: approved
+promotion_rule:
+  raw_data_to_public_repo: forbidden
+  local_hypothesis_to_product_hypothesis: explicit_review_required
+  product_hypothesis_to_canon: foundation_governance_required
+technical_work:
+  task: docs/CODEX_TASKS/TASK_LOCAL_PARTICIPANT_STORAGE_V0_2_TIME_PROVENANCE.md
+  status: authorized_completion_unverified
+  implementation_repository: null
+  completion_commit: null
+  verification_scope: Core repository only; local/private implementation must be located before resuming or claiming completion.
+  previous_task:
+    document: docs/CODEX_TASKS/TASK_LOCAL_PARTICIPANT_STORAGE_V0_1.md
+    status: reported_completed
+    report_date: '2026-09-18'
+    completion_commit: null
+operations_contract: docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml
+historical_gate_approvals:
+  training_gate_b: approved
+  training_gate_c: approved
+  training_gate_d: approved
+  training_gate_e: approved
+  training_gate_f: approved
+  training_gate_g: approved
+  training_gate_h: approved

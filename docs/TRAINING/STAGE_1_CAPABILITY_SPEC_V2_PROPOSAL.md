@@ -1,5 +1,9 @@
 # Stage 1 Capability Spec — v2 Proposal
 
+<!-- SP:REFERENCE -->
+> **Current operational role: research_reference_only.** The course-first reset (`docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md`) supersedes Gate progression as the active route. Historical approval remains valid within its scope; older next-step/Gate instructions below do not authorize current execution. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` for current work.
+
+
 **ID:** SP-TR-S1-CAP-002-PROP  
 **Status:** owner_review_required  
 **Date:** 15 September 2026  

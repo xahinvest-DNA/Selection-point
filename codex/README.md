@@ -1,64 +1,8 @@
-# Codex tasks
+# Codex task entry point
 
-**Активных задач Codex сейчас нет.**
+Current technical task status is owned by `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.technical_work` and displayed in `docs/CODEX_TASKS.md`.
+Files in this directory are historical tasks or future templates; they do not authorize execution.
 
-Файлы в этой папке являются историческими заданиями или будущими шаблонами. Само наличие task-файла не означает разрешение на выполнение.
+Before work read system SSOT, its current checkpoint, the task file and relevant Foundation/Lab contracts. The local participant-store v0.2 follow-up is authorized, but its completion and implementation location are not verified in core. Locate and inspect the implementation before resuming; do not create a duplicate store or claim it is complete.
 
-## Авторитетный текущий статус
-
-Codex **не хранит и не определяет текущую архитектурную точку в этом README**.
-
-Перед любой работой обязательна проверка:
-
-`docs/FOUNDATION/PROJECT_STATE.yaml`.
-
-Именно manifest определяет:
-
-- активную фазу и ступень;
-- последний утверждённый параметр;
-- открытый параметр, если он есть;
-- следующий кандидат и его статус;
-- явную паузу;
-- активный checkpoint и рабочие источники.
-
-Если текст любого task-файла, исторического checkpoint или этого README расходится с `PROJECT_STATE.yaml`, текущий статус берётся из manifest. Датированные исторические материалы сохраняют состояние своего момента и не должны переписываться ради текущего статуса.
-
-## Задача считается активной только если
-
-1. соответствующее решение явно утверждено Андреем;
-2. текущая фаза разрешает исполнение;
-3. `PROJECT_STATE.yaml` и/или `CURRENT_PROJECT_STATE.md` прямо допускают эту задачу;
-4. существует конкретный task-файл с ограниченным результатом и измеримыми критериями готовности;
-5. Codex не должен самостоятельно проектировать метод, ступени, курс или формат продукта.
-
-## Обязательное чтение
-
-Перед любой будущей задачей:
-
-1. `README.md`;
-2. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
-3. `docs/FOUNDATION/PROJECT_STATE.yaml`;
-4. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-5. `docs/FOUNDATION/GOVERNANCE/PROJECT_GOVERNANCE_SYSTEM.md`;
-6. утверждённые документы соответствующей фазы;
-7. конкретный новый task-файл.
-
-## Ограничения
-
-Codex является исполнителем утверждённых решений и не определяет:
-
-- философию Selection Point;
-- содержание параметров;
-- научный статус claims;
-- результаты Reality Check;
-- решение о `zero-delta`;
-- изменение матрицы 5 × 13;
-- открытие следующего параметра.
-
-## Исторические task-файлы
-
-- `TASK-000B-course-foundation.md` — архивирован, не выполнять;
-- `TASK-001-bootstrap-mobile-app.md` — архивирован до Фазы 9, не выполнять;
-- остальные ранние задачи требуют повторного проектирования после соответствующего утверждения.
-
-**Текущая архитектурная работа выполняется Андреем и ChatGPT. Активной задачи Codex нет.**
+Technical support does not change methodology or open Foundation S5, SP-LAB-002, external pilot or trainer implementation. Raw participant data remain outside Git.

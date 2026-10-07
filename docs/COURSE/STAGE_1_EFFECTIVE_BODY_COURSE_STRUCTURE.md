@@ -1,4 +1,8 @@
 
+
+<!-- SP:WORKING-INPUT -->
+> **Active working input:** `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`. During template review distinguish direction, provisional route, selected step and realized action. A practice is a means; feedback may change the route or, where justified, direction. No extra lesson or mandatory route-planning exercise is approved by this synchronization.
+
 # Stage 1 — “Эффективное тело” Course Structure
 
 **ID:** SP-COURSE-S1-STRUCT-003  

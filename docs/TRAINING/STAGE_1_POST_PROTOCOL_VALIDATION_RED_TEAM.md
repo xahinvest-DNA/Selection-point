@@ -1,4 +1,8 @@
 
+
+<!-- SP:REFERENCE -->
+> **Current operational role: research_reference_only.** The course-first reset (`docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md`) supersedes Gate progression as the active route. Historical approval remains valid within its scope; older next-step/Gate instructions below do not authorize current execution. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` for current work.
+
 # Stage 1 Post-Protocol Validation Design — Red Team
 
 **ID:** SP-TR-S1-VAL-RT-001  

@@ -1,5 +1,10 @@
 # Текущая контрольная точка проекта Selection Point
 
+## Активные рабочие уточнения
+
+`docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md` — owner-approved working proposition «направление → маршрут → действие». Учитывать при ближайшей работе; канонический статус автоматически не повышается. Текущая работа и checkpoint: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
+
+
 **Статус:** человекочитаемое представление `PROJECT_STATE.yaml`  
 **Дата обновления:** 15 сентября 2026 года  
 **Авторитетный источник:** `PROJECT_STATE.yaml`

@@ -1,5 +1,8 @@
 # Addendum — Direction → Route → Action
 
+Traceability note (7 October 2026): this is an owner-origin working proposition, not a formal evidence-node promotion packet. The illustrative episode below is an owner self-report; its raw source and node lineage were not verified in the core audit. Do not count it as independently observed evidence or add it to the approved Pilot Evidence Packet. Stronger promotion requires the normal documented review.
+
+
 **Date:** 2026-10-05  
 **Status:** owner-approved methodological working proposition; must remain active in near-term Selection Point work  
 **Scope:** cross-cutting architecture, Stage 1 / Effective Body, training and product interpretation  

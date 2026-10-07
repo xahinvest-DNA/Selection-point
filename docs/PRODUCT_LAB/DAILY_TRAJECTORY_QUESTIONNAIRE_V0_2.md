@@ -1,4 +1,7 @@
 
+
+Deployment note (7 October 2026): the factual Q9 correction is applied to the existing evening reminder under the owner's synchronization directive. Full v0.2 remains `draft_for_owner_review`; correcting the reminder does not approve or deploy the whole draft. See `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`.
+
 # Daily Trajectory Questionnaire v0.2
 
 **ID:** SP-DTQ-002  

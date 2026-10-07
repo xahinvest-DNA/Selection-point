@@ -1,4 +1,8 @@
 
+
+<!-- SP:SUSPENDED -->
+> **Current execution status: suspended.** Owner course-first reset on 20 September supersedes the earlier V0 execution permission. `v0_execution_authorized: false` in `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` controls current work. The approval recorded below is historical and does not authorize running V0 now.
+
 # Decision — Stage 1 Post-Protocol Validation Design Approved
 
 **ID:** SP-TR-DEC-S1-VAL-001  

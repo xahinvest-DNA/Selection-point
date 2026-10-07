@@ -1,4 +1,12 @@
 
+
+<!-- SP:SUSPENDED -->
+> **Current execution status: suspended.** Owner course-first reset on 20 September supersedes the earlier V0 execution permission. `v0_execution_authorized: false` in `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` controls current work. The approval recorded below is historical and does not authorize running V0 now.
+
+
+<!-- SP:REFERENCE -->
+> **Current operational role: research_reference_only.** The course-first reset (`docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md`) supersedes Gate progression as the active route. Historical approval remains valid within its scope; older next-step/Gate instructions below do not authorize current execution. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` for current work.
+
 # Stage 1 Post-Protocol Validation Design
 
 **ID:** SP-TR-S1-VAL-001  

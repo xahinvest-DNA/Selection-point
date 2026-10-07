@@ -1,5 +1,9 @@
 # Stage 1 Automaticity Transformation Research Packet
 
+<!-- SP:REFERENCE -->
+> **Current operational role: research_reference_only.** The course-first reset (`docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md`) supersedes Gate progression as the active route. Historical approval remains valid within its scope; older next-step/Gate instructions below do not authorize current execution. Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` for current work.
+
+
 **ID:** SP-TR-S1-ATR-001  
 **Status:** ready_for_chat_red_team  
 **Date:** 17 September 2026  

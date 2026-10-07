@@ -38,27 +38,35 @@ Pilot / Reality — эмпирическая проверка и право оп
 
 ## Текущее состояние
 
-Авторитетный статус архитектуры: `docs/FOUNDATION/PROJECT_STATE.yaml`.
+<!-- SP:CURRENT:BEGIN -->
+Дата синхронизации: **2026-10-07**.
 
-Авторитетная топология проекта: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
+Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
-На 15 сентября 2026 года:
+Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-- Фаза 3 — точная архитектура пяти ступеней;
-- SP-HCM-01–SP-HCM-09 утверждены;
-- Ступени 1–3 завершены;
-- **Ступень 4 завершена полностью: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`;
-- последний утверждённый параметр: **SP-S4-P13 «Ловушка четвёртой ступени»**;
-- утверждена сквозная boundary **RC-018 — choice → realized continuation → feedback**;
-- создан `SP-PSYS-001` — Project Control Plane для синхронизации уровней/репозиториев;
-- утверждён `SP-OPS-002` — рабочий контур Owner → Chat → Codex при необходимости → Reality → Chat/Red Team → Owner;
-- предыдущий `SP-OPS-001` superseded и не имеет активной власти;
-- **Stage 1 Capability Spec `SP-TR-S1-CAP-001` утверждён; текущий разрешённый цикл — Gate B, Stage 1 Research Packet**;
-- Gate B выполняется прямо в Chat по `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`;
-- `SP-HLAB-001` зарегистрирован как private evidence node owner self-pilot;
-- открытого архитектурного параметра нет;
-- SP-S5-P01 — следующий кандидат, **не открыт**;
-- внешний пользовательский пилот — **не открыт**.
+**Следующий шаг: Рассмотреть и утвердить либо доработать шаблон урока первой ступени.**
+
+Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `draft_for_owner_review`.
+
+Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
+
+Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
+
+Capability: `SP-TR-S1-CAP-002`.
+
+Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
+
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md`.
+
+Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
+
+Gate-маршрут активен: `false`; V0 execution: `false`.
+
+Закрытые области: `stage_5: unopened`; `product_lab_002: unopened`; `external_user_pilot: unopened`; `trainer_implementation: unopened`.
+
+Источники: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`; `docs/FOUNDATION/PROJECT_STATE.yaml`; `docs/PRODUCT_LAB/LAB_STATE.yaml`.
+<!-- SP:CURRENT:END -->
 
 ## Центральная идея
 
@@ -132,34 +140,16 @@ S5 candidate:
 
 ## Точки входа
 
-Для проекта в целом:
+Начните с `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` → `new_chat_bootstrap.read_first`.
+Это единственный список обязательного восстановления активной работы.
 
-1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
-2. `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-09-15_SP_OPS_002.md`;
-3. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
-4. `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`;
-5. `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md`;
-6. `docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md`.
+По задаче:
+- архитектура: `docs/FOUNDATION/PROJECT_STATE.yaml` и `PROJECT_OPERATING_PROTOCOL.md`;
+- управление: `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` и `SP_CHAT_OPERATING_MODEL.md`;
+- курс: `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md` и `STAGE_1_LESSON_TEMPLATE.md`;
+- Lab: `docs/PRODUCT_LAB/LAB_STATE.yaml`;
+- техника: `docs/CODEX_TASKS.md`;
+- напоминания: `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`;
+- межрепозиторный контракт: `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` и `HEALTH_LAB_NODE_CONTRACT.md`.
 
-Для разработки обучения:
-
-1. `docs/TRAINING/STAGE_1_CAPABILITY_SPEC.md`;
-2. `docs/TRAINING/STAGE_1_RESEARCH_PACKET_SPEC.md`;
-3. текущий ожидаемый артефакт — `docs/TRAINING/STAGE_1_RESEARCH_PACKET.md`.
-
-Для архитектуры метода:
-
-1. `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`;
-2. `docs/FOUNDATION/PROJECT_STATE.yaml`;
-3. `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`;
-4. `docs/FOUNDATION/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
-5. `docs/FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`.
-
-Для Product Lab:
-
-1. `docs/PRODUCT_LAB/LAB_STATE.yaml`;
-2. `docs/PRODUCT_LAB/00_LAB_INDEX.md`;
-3. `docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md`;
-4. `docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md`.
-
-**Ступень 4 завершена. RC-018 утверждён. SP-PSYS-001 и SP-OPS-002 активны. Stage 1 Capability Spec утверждён; текущий Gate B — Stage 1 Research Packet, выполняемый прямо в Chat. SP-S5-P01 и внешний пилот не открыты.**
+Текущий блок выше генерируется командой `python scripts/render_project_status.py`.

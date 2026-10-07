@@ -1,78 +1,15 @@
 # ROADMAP
 
-**Статус:** актуальная сводная карта фаз.  
-**Главный регламент:** `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md`.  
-**Дата обновления:** 6 июля 2026 года.
+**Role:** phase map; current progress is read from the manifests.
 
-## Фаза 0 — Очистка основания
+| Layer | Authority |
+|---|---|
+| Current objective, route and next action | `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` |
+| Foundation phase/stage progress | `docs/FOUNDATION/PROJECT_STATE.yaml` |
+| Lab/pilot scope | `docs/PRODUCT_LAB/LAB_STATE.yaml` |
 
-Статус: **в основном завершена**.
+The original phase map remains: 0 assembly; 1 declaration; 2 Human Change Model; 3 five-stage architecture; 4 course modules; 5 practices; 6 mastery criteria; 7 product format; 8 manual pilot; 9 digital product.
 
-## Фаза 1 — Архитектурная декларация
+The owner-approved course-first route permits bounded Stage 1 course design before completing all five Foundation stages. This is an explicit development exception, not automatic opening of S5 or product/pilot gates. See `docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md` and the Stage 1 course structure approval.
 
-Статус: **завершена и утверждена**.
-
-## Фаза 2 — Модель человека и механизма изменения
-
-Статус: **завершена и утверждена**.
-
-Утверждены SP-HCM-01–SP-HCM-08.
-
-## Фаза 3 — Точная архитектура пяти ступеней
-
-Для каждой ступени последовательно определяются тринадцать параметров: состояние, восприятие реальности, восприятие себя, драйверы решений, точка выбора, главная иллюзия, главная боль, следующий навык, телесные и жизненные проявления, практики, критерии перехода и ловушка.
-
-Статус: **активная фаза; текущий цикл завершён на SP-S1-P10**.
-
-Текущая контрольная точка:
-
-- Ступень 1 «Жизнь внутри автоматизма»;
-- SP-S1-P01–SP-S1-P10 утверждены;
-- SP-S1-P10 — «Текущая жизнь как позиция траектории»;
-- SP-VM-01 связана с SP-S1-P05–SP-S1-P10;
-- SP-S1-P11 не открыт.
-
-Основные документы:
-
-- `docs/FOUNDATION/FIVE_STAGES_THEORY/00_INDEX.md`;
-- `docs/FOUNDATION/FIVE_STAGES_THEORY/10_STAGE_1_LIFE_MANIFESTATIONS.md`;
-- `docs/FOUNDATION/CANONICAL/02_STAGE_1_CANONICAL.md`;
-- `docs/FOUNDATION/VISUAL_MODELS/01_CHOICE_TRAJECTORY_GRAPH.md`;
-- `docs/FOUNDATION/CURRENT_PROJECT_STATE.md`.
-
-## Фаза 4 — Карта модулей курса
-
-Статус: **не начата**.
-
-## Фаза 5 — Практическая архитектура
-
-Статус: **не начата**.
-
-Обязательные будущие результаты:
-
-1. система системной корректировки;
-2. карта точек восстановления выбора;
-3. единый повторяемый цикл Selection Point;
-4. практическая форма графа траекторий, если она будет утверждена.
-
-## Фаза 6 — Критерии освоения и перехода
-
-Статус: **не начата**.
-
-## Фаза 7 — Формат первой версии продукта
-
-Статус: **не начата**.
-
-14-дневный формат не является утверждённым решением.
-
-## Фаза 8 — Ручной пилот
-
-Статус: **не начата**.
-
-## Фаза 9 — Цифровой продукт
-
-Статус: **не начата**.
-
-## Текущее действие
-
-Новый параметр не открыт. Продолжение Фазы 3 требует отдельного решения Андрея.
+For the next action follow `current_work` and the selected recovery checkpoint. A phase map never authorizes execution by itself.

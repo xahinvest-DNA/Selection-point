@@ -1,5 +1,10 @@
 # SP-LAB-PILOT-001 — Personal Trajectory Pilot v0
 
+## Current project route and delivery
+
+Course-first development is the active project route under `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`. Lab priorities below describe its supporting telemetry workstream and do not activate trainer implementation or block the course. Actual reminder deployment is recorded in `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`; Mode B design alone is not evidence of delivery.
+
+
 **Статус:** active owner self-pilot / unvalidated research instrument  
 **Дата запуска:** 12 сентября 2026 года  
 **RC-018 sync:** 15 сентября 2026 года  

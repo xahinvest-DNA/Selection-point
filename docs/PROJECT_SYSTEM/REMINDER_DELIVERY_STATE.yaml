@@ -1,0 +1,43 @@
+schema_version: 1
+verified_at: '2026-10-07'
+verification_method: automation_service_successful_updates_and_creates
+scope: ChatGPT_reminders_only
+timezone: Europe/Moscow
+mode: B
+future_delivery_success: not_yet_observed
+telegram_delivery: unverified_not_claimed
+same_chat_delivery_guaranteed: false
+full_questionnaire_v0_2_approved: false
+full_questionnaire_v0_2_deployed: false
+evening:
+  status: enabled_configuration_verified
+  title: Заполнить SP-опросник
+  time: '21:30'
+  timing_mode: exact_schedule
+  role: Review_and_Plan
+  data_entry_required: true
+  q9: С какими 1–3 фактами ты входишь в завтра?
+  version: existing_evening_capture_with_q9_correction_2026_10_07
+morning:
+  status: enabled_configuration_verified
+  title: Вспомнить план SP
+  approximate_time: '08:00'
+  first_date: '2026-10-08'
+  timing_mode: flexible_schedule
+  role: Plan_Recall
+  data_entry_required: false
+  missing_plan_rule: remind_owner_to_open_previous_plan_do_not_invent_content
+midday:
+  status: enabled_configuration_verified
+  title: Сверить траекторию SP
+  approximate_time: '15:00'
+  first_date: '2026-10-07'
+  timing_mode: flexible_schedule
+  role: Trajectory_Check
+  data_entry_required: false
+drift_audit:
+  status: enabled_configuration_verified
+  title: Проверять рассинхронизацию Selection Point
+  cadence: daily_existing_schedule_preserved
+  coverage: three_ssot_layers_current_work_bootstrap_course_working_inputs_ci
+  notify_only_on_significant_drift: true

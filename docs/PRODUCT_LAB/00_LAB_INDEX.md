@@ -1,5 +1,10 @@
 # Selection Point Product Lab
 
+## Current project route and delivery
+
+Course-first development is the active project route under `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`. Lab priorities below describe its supporting telemetry workstream and do not activate trainer implementation or block the course. Actual reminder deployment is recorded in `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`; Mode B design alone is not evidence of delivery.
+
+
 **Статус:** активный исследовательский workstream / owner self-pilot active  
 **Обновлено:** 15 сентября 2026 года  
 **Контур:** параллельный Фазе 3, без открытия Фаз 4–8  

@@ -1,5 +1,9 @@
 # Stage 1 Course — Work Brief
 
+<!-- SP:WORKING-INPUT -->
+> **Active working input:** `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`. During template review distinguish direction, provisional route, selected step and realized action. A practice is a means; feedback may change the route or, where justified, direction. No extra lesson or mandatory route-planning exercise is approved by this synchronization.
+
+
 **ID:** SP-COURSE-S1-BRIEF-001  
 **Status:** active  
 **Date:** 20 September 2026  
@@ -111,20 +115,9 @@ Use when it helps decide:
 - which exercise is plausible;
 - where a claim needs qualification.
 
-## 8. Immediate task
+## 8. Current task routing
 
-Before writing lessons, produce one compact **Stage 1 Teaching Architecture** answering:
-
-1. Who is the learner at entry?
-2. What is their central error/limitation?
-3. What new distinction must become visible?
-4. What experience should make that distinction real?
-5. What sequence of 3–5 teaching steps gets them there?
-6. What practices create the experience?
-7. What mistakes will likely derail learning?
-8. What shows, qualitatively, that the learner is ready to continue?
-
-This Teaching Architecture is not another Gate. It is the outline of the course itself.
+Read `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml.current_work` and the selected recovery checkpoint. The structure is approved; its current version and template review status are recorded there. This brief defines the purpose and boundaries, not a parallel backlog.
 
 ## 9. Working principle
 

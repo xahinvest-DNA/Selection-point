@@ -1,65 +1,33 @@
 # CURRENT_STATE
 
-**Авторитетный статус:** `FOUNDATION/PROJECT_STATE.yaml`  
-**Дата:** 15 сентября 2026 года
+Производная оперативная карточка; редактируется через системный SSOT и генератор.
 
-## Актуальная точка
+<!-- SP:CURRENT:BEGIN -->
+Дата синхронизации: **2026-10-07**.
 
-- Фаза 3 — точная архитектура пяти ступеней.
-- Ступени 1–3 завершены.
-- **Ступень 4 завершена: SP-S4-P01–SP-S4-P13**, P07 = `zero-delta`, P09 = `amended zero-delta`.
-- Последний утверждённый параметр: **SP-S4-P13 — «Ловушка четвёртой ступени»**.
-- Сквозная boundary **RC-018 choice → realized continuation → feedback** утверждена.
-- Открытого параметра нет.
-- SP-S5-P01 — следующий кандидат, **`unopened`**.
+Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
-## SP-S4-P13
+Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
+**Следующий шаг: Рассмотреть и утвердить либо доработать шаблон урока первой ступени.**
 
-> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
+Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `draft_for_owner_review`.
 
-> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
+Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
 
-## RC-018 — выбор / реализация / feedback
+Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
 
-> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+Capability: `SP-TR-S1-CAP-002`.
 
-Коротко:
+Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
 
-```text
-выбрать ≠ сделать
-сделать ≠ получить желаемое
-последствия ≠ автоматически использованная обратная связь
-```
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md`.
 
-Core cycle:
+Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 
-```text
-фактическая позиция
-→ доступная точка выбора
-→ выбранное продолжение
-→ фактически реализованное продолжение
-→ последствия
-→ замеченные / интерпретированные данные
-→ обратная связь
-→ корректировка
-→ следующая фактическая позиция
-```
+Gate-маршрут активен: `false`; V0 execution: `false`.
 
-Главная граница:
+Закрытые области: `stage_5: unopened`; `product_lab_002: unopened`; `external_user_pilot: unopened`; `trainer_implementation: unopened`.
 
-> **Неисполненный выбор не получает внешней проверки как неслучившееся действие.**
-
-При этом сознательная пауза / невмешательство может быть фактически реализованным продолжением, а несовпадение selected vs realized сначала является данными, а не моральной оценкой.
-
-## Источники
-
-- `FOUNDATION/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY.md`;
-- `FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md`;
-- `FOUNDATION/LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
-- `FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK.md`;
-- `FOUNDATION/GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`;
-- `FOUNDATION/PROJECT_OPERATING_PROTOCOL_CHECKPOINT_2026-09-15_RC-018.md`.
-
-**Ступень 4 завершена. RC-018 утверждён. SP-S5-P01 не открыт.**
+Источники: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`; `docs/FOUNDATION/PROJECT_STATE.yaml`; `docs/PRODUCT_LAB/LAB_STATE.yaml`.
+<!-- SP:CURRENT:END -->

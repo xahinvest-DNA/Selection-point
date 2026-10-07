@@ -1,6 +1,6 @@
 # TASK — Local Participant Storage v0.1
 
-**Status:** ACTIVE / explicitly authorized by owner on 2026-09-15  
+**Status:** reported_completed / Codex report 2026-09-18; completion commit not verified in core
 **Scope:** infrastructure only  
 **Project:** Selection Point  
 **Do not open:** Stage 5, SP-LAB-002, new methodology, app/product scope
