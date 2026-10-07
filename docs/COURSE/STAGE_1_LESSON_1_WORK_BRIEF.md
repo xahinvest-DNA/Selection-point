@@ -1,7 +1,7 @@
 # Stage 1 — Lesson 1 Work Brief
 
 **ID:** SP-COURSE-S1-L1-BRIEF-001  
-**Status:** draft_for_owner_review  
+**Status:** approved  
 **Date:** 7 October 2026  
 **Course:** Stage 1 / «Эффективное тело»  
 **Lesson:** 1 — «Один эпизод вместо “я такой”»  
@@ -378,4 +378,4 @@ Review questions:
 9. Is questionnaire telemetry kept separate?
 10. Is the Stage 2 pattern boundary preserved?
 
-**Owner decision requested:** approve, revise or reject this work brief before learner-facing Lesson 1 script development.
+**Owner decision:** approved on 7 October 2026. Learner-facing Lesson 1 script development is authorized under `DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md`.
