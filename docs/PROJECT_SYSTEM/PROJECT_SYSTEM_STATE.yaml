@@ -7,17 +7,18 @@ current_work:
     и расширяют возможности тела в будущем.
   route: stage_1_course_first_development
   objective: build_effective_stage_1_course
-  next_step: prepare_stage_1_lesson_1
-  next_step_label: Подготовить рабочий бриф первого урока первой ступени
-  artifact: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
-  artifact_status: approved
-  owner_decision_required: false
-  execution_authorized: true
-  authorization_boundary: Lesson 1 work may begin from TEMPLATE-001 v2; any new methodological change requires owner review.
+  next_step: owner_review_stage_1_lesson_1
+  next_step_label: Рассмотреть и утвердить либо доработать первый урок первой ступени
+  artifact: docs/COURSE/STAGE_1_LESSON_1.md
+  artifact_status: draft_for_owner_review
+  owner_decision_required: true
+  execution_authorized: false
+  authorization_boundary: Lesson 1 draft awaits Owner review; Lesson 2 work is not authorized.
   route_decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   synchronization_decision: docs/PROJECT_SYSTEM/DECISION_SYNC_REPAIR_2026-10-07.md
   template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V2_APPROVED_2026-10-07.md
+  lesson_1_brief_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
   supporting_tasks_are_not_course_prerequisites: true
 project_management:
   protocol: docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
@@ -32,7 +33,7 @@ project_management:
   completed_requires_verification: true
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_TEMPLATE_V2_APPROVED.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_LESSON_1_DRAFT_FOR_REVIEW.md
   principle: Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project
     meaning.
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
@@ -45,12 +46,15 @@ active_working_inputs:
 new_chat_bootstrap:
   read_first:
   - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_TEMPLATE_V2_APPROVED.md
+  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_LESSON_1_DRAFT_FOR_REVIEW.md
   - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   - docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   - docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
   - docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
   - docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V2_APPROVED_2026-10-07.md
+  - docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
+  - docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
+  - docs/COURSE/STAGE_1_LESSON_1.md
   - docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
   - docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
   then_route_by_task:
@@ -82,6 +86,8 @@ new_chat_bootstrap:
     directed_question_hypothesis: docs/TRAINING/DIRECTED_QUESTION_AS_SELECTION_SCAFFOLD_HYPOTHESIS.md
     course: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
     lesson_template: docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+    lesson_1_brief: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
+    lesson_1: docs/COURSE/STAGE_1_LESSON_1.md
     technical_work: docs/CODEX_TASKS.md
 control_plane_id: SP-PSYS-001
 control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
@@ -168,7 +174,14 @@ course_first_reset:
     lesson_template_status: approved
     lesson_template_version: 2
     lesson_template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V2_APPROVED_2026-10-07.md
-  next_step: prepare_stage_1_lesson_1
+    lesson_1_brief: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
+    lesson_1_brief_id: SP-COURSE-S1-L1-BRIEF-001
+    lesson_1_brief_status: approved
+    lesson_1_brief_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
+    lesson_1: docs/COURSE/STAGE_1_LESSON_1.md
+    lesson_1_id: SP-COURSE-S1-L1-001
+    lesson_1_status: draft_for_owner_review
+  next_step: owner_review_stage_1_lesson_1
 training_state:
   current_stage: 1
   current_gate: none / course-first development
