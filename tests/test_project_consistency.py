@@ -52,7 +52,7 @@ class DriftDetectionTests(unittest.TestCase):
     def test_document_status_must_match_manifest(self):
         p=self.root/'docs/COURSE/STAGE_1_LESSON_TEMPLATE.md'
         p.write_text(p.read_text().replace('**Status:** draft_for_owner_review','**Status:** approved'))
-        self.detected('template document status differs')
+        self.detected('current artifact document status differs')
     def test_duplicate_yaml_keys_fail_closed(self):
         p=self.root/SYSTEM;p.write_text(p.read_text()+'\nschema_version: 1\n')
         self.detected('Duplicate YAML key')
@@ -73,6 +73,20 @@ class DriftDetectionTests(unittest.TestCase):
     def test_reminder_does_not_reintroduce_inferred_availability(self):
         self.change('docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml',lambda d:d['evening'].__setitem__('q9','Что стало доступнее?'))
         self.detected('Q9 reintroduces')
+    def test_consistency_does_not_freeze_work_at_template_review(self):
+        # A later owner-approved transition can select a new artifact without changing the checker.
+        template=self.root/'docs/COURSE/STAGE_1_LESSON_TEMPLATE.md'
+        template.write_text(template.read_text().replace('**Status:** draft_for_owner_review','**Status:** approved'))
+        next_path='docs/COURSE/TEST_NEXT_LESSON.md'
+        (self.root/next_path).write_text('# Next lesson\n\n**Status:** draft\n')
+        def advance(d):
+            d['course_first_reset']['stage_1_course']['lesson_template_status']='approved'
+            d['course_first_reset']['next_step']='write_first_lesson'
+            d['current_work'].update(artifact=next_path,artifact_status='draft',next_step='write_first_lesson',next_step_label='Write first lesson',owner_decision_required=False,execution_authorized=True)
+            d['new_chat_bootstrap']['read_first'].append(next_path)
+        self.change(SYSTEM,advance)
+        render(self.root)
+        self.assertEqual(validate(self.root),[])
     def test_raw_data_boundary_cannot_be_weakened(self):
         self.change(LAB,lambda d:d['measurement_foundation'].__setitem__('raw_participant_data_in_public_repo_allowed',True))
         self.detected('raw-data publication boundary weakened')

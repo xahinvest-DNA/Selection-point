@@ -31,17 +31,17 @@ def validate(root=ROOT):
         require(w['route']==s['operating_model']['current_authorization'],'active route differs from operating authorization')
         require(w['objective']==r['active_objective'],'current objective differs from course-first objective')
         require(w['next_step']==r['next_step'],'two different next steps in system state')
-        require(w['artifact']==c['lesson_template'],'current artifact differs from lesson template')
-        require(w['artifact_status']==c['lesson_template_status'],'current artifact status differs from template status')
+        if w['artifact']==c['lesson_template']:
+            require(w['artifact_status']==c['lesson_template_status'],'current artifact status differs from template status')
         for path,field,expected,label in [
-            (w['artifact'],'Status',w['artifact_status'],'template document status'),
+            (w['artifact'],'Status',w['artifact_status'],'current artifact document status'),
             (c['lesson_template'],'ID',c['lesson_template_id'],'template ID'),
             (c['course_structure'],'ID',c['course_structure_id'],'course structure ID'),
             (c['course_structure'],'Status',c['course_structure_status'],'course structure status'),
             (t['stage_1_capability']['document'],'ID',t['stage_1_capability']['id'],'capability ID'),
             (t['stage_1_research_packet']['deliverable'],'Status',t['stage_1_research_packet']['status'],'research packet status')]:
             require(metadata(root,path,field)==expected,f'{label} differs from SSOT')
-        if w['artifact_status']=='draft_for_owner_review':
+        if w['artifact']==c['lesson_template'] and w['artifact_status']=='draft_for_owner_review':
             require(w['owner_decision_required'] is True and w['execution_authorized'] is False,'unapproved template must not authorize full lesson execution')
         if r['status']=='approved' and not r['gate_pipeline_active']:
             require(r['v0_validation_execution_active'] is False,'course-first reset conflicts with V0 execution')
