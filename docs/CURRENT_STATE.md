@@ -9,9 +9,9 @@
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Рассмотреть и утвердить либо доработать шаблон урока первой ступени.**
+**Следующий шаг: Подготовить рабочий бриф первого урока первой ступени.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `draft_for_owner_review`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `approved`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
 
@@ -21,7 +21,7 @@ Capability: `SP-TR-S1-CAP-002`.
 
 Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_TEMPLATE_V2_APPROVED.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 

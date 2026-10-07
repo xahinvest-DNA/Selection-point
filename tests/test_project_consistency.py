@@ -44,14 +44,18 @@ class DriftDetectionTests(unittest.TestCase):
         self.change(SYSTEM,lambda d:d['training_state']['stage_1_post_protocol_validation'].__setitem__('v0_execution_authorized',True))
         self.detected('suspended V0 is authorized')
     def test_unapproved_template_cannot_authorize_execution(self):
-        self.change(SYSTEM,lambda d:d['current_work'].__setitem__('execution_authorized',True))
+        def make_unapproved(d):
+            d['current_work']['artifact_status']='draft_for_owner_review'
+            d['current_work']['owner_decision_required']=True
+            d['current_work']['execution_authorized']=True
+        self.change(SYSTEM,make_unapproved)
         self.detected('unapproved template')
     def test_unknown_local_file_is_rejected(self):
         self.change(SYSTEM,lambda d:d['current_work'].__setitem__('route_decision','docs/MISSING.md'))
         self.detected('missing local file')
     def test_document_status_must_match_manifest(self):
         p=self.root/'docs/COURSE/STAGE_1_LESSON_TEMPLATE.md'
-        p.write_text(p.read_text().replace('**Status:** draft_for_owner_review','**Status:** approved'))
+        p.write_text(p.read_text().replace('**Status:** approved','**Status:** draft_for_owner_review'))
         self.detected('current artifact document status differs')
     def test_duplicate_yaml_keys_fail_closed(self):
         p=self.root/SYSTEM;p.write_text(p.read_text()+'\nschema_version: 1\n')

@@ -6,7 +6,7 @@
 
 **ID:** SP-COURSE-S1-TEMPLATE-001  
 **Version:** 2
-**Status:** draft_for_owner_review  
+**Status:** approved
 **Date:** 7 October 2026
 **Applies to:** SP-COURSE-S1-STRUCT-003  
 **Field:** «Эффективное тело»
