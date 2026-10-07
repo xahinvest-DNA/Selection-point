@@ -5,8 +5,9 @@
 
 
 **ID:** SP-COURSE-S1-TEMPLATE-001  
+**Version:** 2
 **Status:** draft_for_owner_review  
-**Date:** 28 September 2026  
+**Date:** 7 October 2026
 **Applies to:** SP-COURSE-S1-STRUCT-003  
 **Field:** «Эффективное тело»
 
@@ -16,11 +17,13 @@ This template defines the stable delivery mechanics for all five Stage 1 lessons
 
 Core rule:
 
-    real experience
+    real experience and current position
     → one new distinction
     → guided application
-    → one real-world task
-    → reality
+    → provisional route and next step
+    → realized action
+    → consequences and new position
+    → route correction
     → next debrief
 
 A lesson is incomplete if it produces only insight, agreement, motivation, a plan or a promise.
@@ -30,17 +33,33 @@ A lesson is incomplete if it produces only insight, agreement, motivation, a pla
 Every lesson remains anchored to:
 
 1. **Created direction** — what the participant wants to create in relation to the body.
-2. **Current reality** — what is factually true now.
+2. **Current position** — what is factually true now, including relevant resources, limits and load.
+3. **Current route** — the provisional way of moving in that direction.
+4. **Next step** — the smallest realistically available action from the current position.
 
 Working relation:
 
     created direction
     +
-    current reality
+    current position
+    +
+    provisional route
     →
-    relevant next learning/action
+    relevant next step
 
 The direction is participant-owned and revisable after new reality.
+
+### Attention is a project resource
+
+The course does not make the weakest behavior the center of the participant's identity or the permanent center of attention. A difficulty remains observable and may require a safety response, but the teaching operation returns attention to:
+
+- the direction being created;
+- existing capabilities and successful continuations;
+- available resources and support;
+- a route that can be tested from the current position;
+- the next real step.
+
+This is an owner-origin design proposition inspired by the user's reading of Sun Tzu. It is a course orientation, not a historical quotation or a claim about Sun Tzu's exact wording. The purpose is to redirect energy toward effective movement while keeping risks and contradictions visible.
 
 ## 3. Standard seven-phase lesson
 
@@ -58,6 +77,8 @@ Clarify only as needed:
 - what was intended;
 - what was actually done;
 - what happened afterward;
+- what the current position is now;
+- what resources and limits were present;
 - what remains unknown.
 
 Do not begin with «Получилось?».
@@ -87,7 +108,7 @@ Better:
 
 > «После тяжёлого дня алкоголь обещал быстро изменить состояние. Это объясняет его локальную привлекательность, но не делает его обязательным продолжением».
 
-Only today's new operation is demonstrated.
+Do not make alcohol, overeating or another single weakness the default course example. Use varied body-domain episodes: sleep, workload, recovery, food, training, support, planning and competing demands. Only today's new operation is demonstrated.
 
 ### Phase 3 — One explicit distinction
 
@@ -128,6 +149,10 @@ Typical hierarchy:
 - Что оно фактически дало сразу?
 - Что произошло потом?
 - Что ты действительно заметил тогда, а не только сейчас?
+- Какое направление ты хотел сохранить?
+- Каким маршрутом ты фактически двигался?
+- Какой следующий шаг был реально доступен из той позиции?
+- Какие ресурсы или сильные стороны уже помогали двигаться?
 
 Keep distinguishable:
 - fact;
@@ -144,13 +169,13 @@ Never:
 
 > «Ты сделал это потому, что на самом деле...»
 
-### Phase 5 — Present-action bridge
+### Phase 5 — Route and present-action bridge
 
 Target: 1–5 minutes.
 
 Before ending analysis, ask:
 
-> **После этого разбора есть ли один небольшой реальный шаг, который имеет смысл сделать сейчас?**
+> **Какой один небольшой реальный шаг сейчас поддерживает направление и соответствует текущей позиции?**
 
 Possible outcome:
 - yes — do or prepare it now;
@@ -164,7 +189,7 @@ Examples:
 - stop one further continuation;
 - prepare tomorrow's first physical step.
 
-Purpose: prevent analysis from becoming the endpoint.
+Purpose: prevent analysis from becoming the endpoint and prevent a practice from silently becoming the goal.
 
 ### Phase 6 — One field assignment
 
@@ -175,13 +200,15 @@ Every lesson gives one task only.
 Good form:
 
     WHEN a relevant episode occurs,
-    NOTICE/DO one specific thing,
-    CAPTURE one minimal fact.
+    NOTICE one relevant distinction,
+    TEST one available route/step,
+    CAPTURE one minimal fact and its consequence.
 
 Bad:
 - «будь осознаннее всю неделю»;
 - «следи за собой постоянно»;
-- «не допускай срывов».
+- «не допускай срывов»;
+- «всегда выбирай противоположное привычному».
 
 Field capture target: 30–90 seconds.
 
@@ -210,7 +237,8 @@ Orientation:
 - one relevant episode.
 
 Lesson 1:
-- one bounded episode.
+- one bounded episode;
+- current position and one relevant resource.
 
 Lesson 2:
 - one reconstructed chain.
@@ -220,10 +248,10 @@ Lesson 3:
 
 Lesson 4:
 - one genuinely available participation point;
-- one continuation serving the created direction.
+- one route and continuation serving the created direction.
 
 Lesson 5:
-- selected → realized → consequence → updated current reality → next move.
+- direction → route → selected → realized → consequence → updated position → route correction.
 
 These artifacts are reviewed together during integration.
 
@@ -290,7 +318,7 @@ Keep the question, but do not let it block Stage 1. One episode and available pa
 - no requirement to eliminate automaticity;
 - no global self-monitoring.
 
-## 8. Questionnaire separation
+## 8. Questionnaire separation and measurement reactivity
 
     DAILY QUESTIONNAIRE
     = longitudinal telemetry
@@ -301,6 +329,14 @@ Keep the question, but do not let it block Stage 1. One episode and available pa
 Questionnaire data may supply a candidate episode.
 
 Lesson questions do not automatically become questionnaire fields.
+
+The questionnaire may itself change attention, preparation or action. Therefore the lesson and later review distinguish:
+
+- an action that occurred without recalling the questionnaire;
+- an action influenced by expecting the questionnaire;
+- an action changed by the act of reporting.
+
+Questionnaire exposure is a possible scaffold or intervention. It is not independent proof that the learner can perform the operation without that support.
 
 This preserves longitudinal comparability and avoids turning measurement into the whole training method.
 
@@ -344,14 +380,17 @@ Before approving a lesson script:
 5. Is current reality preserved without moral judgment?
 6. Are fact, interpretation and hypothesis distinguishable?
 7. Is Stage 2 pattern analysis excluded?
-8. Is there a present-action bridge?
-9. Is there only one field assignment?
-10. Can field capture be done in 30–90 seconds?
-11. Is next debrief obvious?
-12. Is questionnaire telemetry separate?
-13. Is success defined as learning/participation, not body outcome?
-14. Is unknown allowed?
-15. Is late noticing valid?
+8. Does it distinguish direction, route, next step and realized action?
+9. Does it account for current resources, limits and load?
+10. Is attention returned to effective movement and available strengths?
+11. Is there a present-action bridge?
+12. Is there only one field assignment?
+13. Can field capture be done in 30–90 seconds?
+14. Is next debrief obvious?
+15. Is questionnaire telemetry and its possible reactivity visible?
+16. Is success defined as learning/participation, not body outcome?
+17. Is unknown allowed?
+18. Is late noticing valid?
 
 Any “no” requires revision.
 
@@ -359,13 +398,13 @@ Any “no” requires revision.
 
 Stable across all five lessons:
 
-    reality return
+    reality return and current position
     → worked example
     → one distinction
     → guided self-application
-    → present-action bridge
+    → route and present-action bridge
     → field task
-    → next debrief
+    → consequence and next debrief
 
 Variable:
 - central distinction;
@@ -387,16 +426,31 @@ Variable:
 
 Calendar remains flexible. Progression depends mainly on whether enough real material exists to make the next operation meaningful.
 
-## 14. Decision requested
+## 14. Version 2 changes for review
+
+Version 2 keeps the seven-phase lesson anatomy and adds four cross-cutting requirements:
+
+1. direction → current position → route → next step → realized action → feedback;
+2. attention routing toward effective movement, resources and strengths;
+3. current load, limits and available resources as part of the episode;
+4. explicit visibility of questionnaire exposure as a possible scaffold or intervention.
+
+The change does not add a sixth lesson, require an ideal route before action, turn the course into alcohol-focused training or authorize a universal rule such as “always train” or “always choose the opposite behavior.”
+
+## 15. Decision requested
 
 Before writing Lesson 1 in full, Owner should approve or revise:
 - seven-phase architecture;
 - one-question-at-a-time guided work;
 - worked-example-first approach;
 - present-action bridge;
+- direction / route / next-step axis;
+- attention-routing principle;
+- resources and limits in current-position work;
 - one narrow field task;
 - compact learner artifact;
 - four teacher/AI modes;
 - adaptive branches;
 - questionnaire/course separation;
+- measurement-reactivity distinction;
 - lesson-quality checklist.
