@@ -158,6 +158,9 @@ The questionnaire is separate trajectory telemetry.
 
 ## 11. Sources of truth
 
+Project management protocol: `docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md`.
+It defines the four operating registers, task statuses, the single current next step and the weekly review cadence.
+
 System topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
 
 Project operating model: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.

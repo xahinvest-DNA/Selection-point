@@ -18,6 +18,17 @@ current_work:
   structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   synchronization_decision: docs/PROJECT_SYSTEM/DECISION_SYNC_REPAIR_2026-10-07.md
   supporting_tasks_are_not_course_prerequisites: true
+project_management:
+  protocol: docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
+  status: approved_operating_proposal
+  single_current_next_step: true
+  registers:
+  - current_work
+  - decision_log
+  - task_register
+  - evidence_data_register
+  weekly_review: required
+  completed_requires_verification: true
 recovery:
   strategy: git_history_plus_ssot_bootstrap
   current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_SYNC_REPAIR.md
@@ -38,6 +49,7 @@ new_chat_bootstrap:
   - docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   - docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
   - docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
+  - docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
   - docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
   then_route_by_task:
     foundation: docs/FOUNDATION/PROJECT_STATE.yaml
