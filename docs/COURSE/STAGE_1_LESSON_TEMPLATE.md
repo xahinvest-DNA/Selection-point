@@ -1,5 +1,8 @@
 # Stage 1 — Reusable Self-Paced Lesson Template
 
+<!-- SP:WORKING-INPUT -->
+> **Active working input:** `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`. Distinguish direction, provisional route, selected step and realized action. A practice is a means; feedback may change the route or, where justified, direction. This synchronization note does not add a lesson or change the approved template anatomy.
+
 **ID:** SP-COURSE-S1-TEMPLATE-001  
 **Version:** 3  
 **Status:** approved  
