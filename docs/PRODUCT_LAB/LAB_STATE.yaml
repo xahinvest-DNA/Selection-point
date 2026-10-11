@@ -1,6 +1,6 @@
 schema_version: 3
 workstream: Selection Point Product Lab
-updated_at: '2026-10-07'
+updated_at: '2026-10-11'
 foundation_sync: RC-018
 project_system_sync: SP-PSYS-001
 status:
@@ -11,7 +11,7 @@ status:
   last_governance_sync: SP-LAB-D004
   current_task: SP-LAB-PILOT-001
   current_task_name: Personal Trajectory Pilot v0 — body / health / physical efficiency
-  current_task_status: active
+  current_task_status: active_without_automatic_capture
   next_candidate: SP-LAB-002
   next_candidate_name: Prepare problem-discovery research design
   next_status: unopened
@@ -21,13 +21,12 @@ owner_direction:
   decision_date: 2026-09-12
   decision: 'Resume Product Lab through an owner self-pilot without opening SP-LAB-002. Use the body/health/physical-efficiency
     domain as the first real Reality Loop. Prioritize Trajectory Engine, Choice-to-Action evidence and multi-timeframe visibility.
-    Adopt reminder Mode B: 21:30 Review+Plan, morning Plan Recall, midday Trajectory Check.'
+    Historical reminder Mode B was adopted at this point and was later disabled by Owner on 11 October 2026.'
 latest_owner_decision:
-  decision_date: 2026-09-15
-  decision: Synchronize Selection-point and Selection-point-health-lab as one project with different internal authority/evidence
-    levels. Establish a Project Control Plane, register Health Lab as a private evidence node, keep historical raw records
-    immutable, align future Health Lab capture with RC-018/event-model/metrics contracts, and return to detailed pilot design
-    only after synchronization. Do not open Stage 5, SP-LAB-002 or an external pilot.
+  decision_date: 2026-10-11
+  decision: Disable all automatic Selection Point reminders. Disable the current questionnaire because it requires a full redesign.
+    Keep questionnaire redesign outside the current course task until explicitly resumed. Continue course-first development from
+    the current approved self-paced architecture and current Lesson 1 brief revision boundary.
 project_system:
   control_plane_state: docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
   control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
@@ -83,32 +82,35 @@ measurement_foundation:
   measurement_adherence_is_domain_outcome: false
 daily_trajectory_questionnaire:
   id: SP-DTQ-002
-  status: draft_for_owner_review
+  status: withdrawn_pending_full_redesign
   document: docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md
-  role: longitudinal_trajectory_telemetry
-  cadence: once_daily_evening
-  target_burden: 2-4 minutes
+  role: historical_longitudinal_trajectory_telemetry_draft
+  cadence: none_while_disabled
+  target_burden: historical_2-4_minutes
   multi_timeframe_target: episode -> day -> week -> month -> quarter -> 6M/1Y
   composite_score: forbidden
   measurement_reactivity_visible: true
   course_mastery_measure: false
-  deployment_status: full_v0_2_not_deployed_q9_only_corrected_in_evening_reminder
+  deployment_status: disabled_not_in_operational_use_pending_full_redesign
+  redesign_required: true
+  redesign_active: false
 active_pilot:
   id: SP-LAB-PILOT-001
   document: docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md
-  status: active
+  status: active_without_automatic_capture
   type: owner_self_pilot
   evidence_node: SP-HLAB-001
   evidence_repository: xahinvest-DNA/Selection-point-health-lab
   domain: body / health / physical efficiency
   goal: Create a system in which the body preserves health and increases functional efficiency.
-  data_entry_constraint: New reflective data can be entered once per day in the evening.
-  reminder_mode: B
-  schedule:
+  data_entry_constraint: historical_once_daily_evening_design; automatic questionnaire capture currently disabled
+  reminder_mode: disabled_by_owner
+  automatic_capture_status: disabled_pending_questionnaire_redesign
+  historical_mode_b:
     evening: 21:30 Review + Plan
     morning: Plan Recall — return yesterday's decision and first physical steps; do not reopen the whole decision
     midday: Trajectory Check — on plan / circumstances changed / automatic mode
-    authority: docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml
+  reminder_authority: docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml
   plan_limit: 3
   event_model: PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord
     -> ModelUpdateRecord
@@ -145,8 +147,8 @@ new_chat_bootstrap:
   - docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
   - docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md
   - docs/PRODUCT_LAB/DECISION_LOG.md
-  instruction: Treat Health Lab as the private evidence node of the same project. Do not open SP-LAB-002, Stage 5 or an external
-    pilot automatically.
+  instruction: Treat Health Lab as the private evidence node of the same project. Automatic questionnaire/reminder delivery is
+    disabled. Do not open questionnaire redesign, SP-LAB-002, Stage 5 or an external pilot automatically.
 constraints:
   lab_does_not_open_phase_4_to_8: true
   lab_does_not_modify_canon_directly: true
