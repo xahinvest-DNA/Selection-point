@@ -7,20 +7,22 @@ current_work:
     и расширяют возможности тела в будущем.
   route: stage_1_course_first_development
   objective: build_effective_stage_1_course
-  next_step: redesign_orientation_lesson_1_boundary_and_revise_brief
-  next_step_label: Пересмотреть границу Orientation ↔ Урок 1 в логике Фрица и переработать brief Урока 1
+  next_step: write_lesson_1_self_paced_v3
+  next_step_label: Написать новый learner-facing Урок 1 по утверждённому brief v3
   artifact: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
-  artifact_status: reopened_for_revision
+  artifact_status: approved
   owner_decision_required: false
   execution_authorized: true
-  authorization_boundary: Orientation ↔ Lesson 1 analysis and Lesson 1 work-brief revision are authorized. A new learner-facing Lesson 1 remains unauthorized until the revised brief is approved by Owner. Lesson 2 work is not authorized.
+  authorization_boundary: Writing a new learner-facing Lesson 1 is authorized under approved brief v3 and lesson template v3. Lesson 2 work is not authorized.
   route_decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   synchronization_decision: docs/PROJECT_SYSTEM/DECISION_SYNC_REPAIR_2026-10-07.md
   self_paced_format_decision: docs/COURSE/DECISION_SELF_PACED_COURSE_FORMAT_RESET_2026-10-07.md
   template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md
+  orientation_lesson_1_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
   lesson_1_brief_previous_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
   lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
+  lesson_1_brief_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
   supporting_tasks_are_not_course_prerequisites: true
 project_management:
   protocol: docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
@@ -36,7 +38,7 @@ project_management:
   completed_requires_verification: true
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_RETURNED_FOR_REVISION.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md
   principle: Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project
     meaning.
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
@@ -49,13 +51,13 @@ active_working_inputs:
 new_chat_bootstrap:
   read_first:
   - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_RETURNED_FOR_REVISION.md
+  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md
   - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   - docs/COURSE/DECISION_SELF_PACED_COURSE_FORMAT_RESET_2026-10-07.md
   - docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   - docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
   - docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
-  - docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
+  - docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
   - docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
   - docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
   then_route_by_task:
@@ -175,7 +177,8 @@ course_first_reset:
     - 'Williams: level-appropriate maps/tools'
     orientation_counted_as_lesson: false
     integration_counted_as_lesson: false
-    orientation_lesson_1_boundary_status: under_owner_requested_revision
+    orientation_lesson_1_boundary_status: approved
+    orientation_lesson_1_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
     structure_review: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE_REVIEW.md
     structure_research_williams_millman_fritz: docs/COURSE/STAGE_1_STRUCTURE_WILLIAMS_MILLMAN_FRITZ_RESEARCH.md
     structure_research_status: approved_research_input
@@ -188,13 +191,14 @@ course_first_reset:
     lesson_template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md
     lesson_1_brief: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
     lesson_1_brief_id: SP-COURSE-S1-L1-BRIEF-001
-    lesson_1_brief_status: reopened_for_revision
+    lesson_1_brief_status: approved
     lesson_1_brief_previous_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
     lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
+    lesson_1_brief_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
     lesson_1: docs/COURSE/STAGE_1_LESSON_1.md
     lesson_1_id: SP-COURSE-S1-L1-001
     lesson_1_status: withdrawn_product_format_mismatch
-  next_step: redesign_orientation_lesson_1_boundary_and_revise_brief
+  next_step: write_lesson_1_self_paced_v3
 training_state:
   current_stage: 1
   current_gate: none / course-first development
