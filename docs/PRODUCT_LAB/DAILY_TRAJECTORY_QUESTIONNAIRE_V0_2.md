@@ -1,20 +1,19 @@
-
-
-Deployment note (7 October 2026): the factual Q9 correction is applied to the existing evening reminder under the owner's synchronization directive. Full v0.2 remains `draft_for_owner_review`; correcting the reminder does not approve or deploy the whole draft. See `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`.
-
 # Daily Trajectory Questionnaire v0.2
 
+> **Operational status update — 11 October 2026.** The Owner disabled the questionnaire and all automatic Selection Point reminders and required the questionnaire to be fully redesigned. This v0.2 artifact is retained only as historical design material. It must not be deployed, automatically delivered, or treated as a current candidate for approval. Questionnaire redesign is not the current course task and starts only when explicitly resumed by the Owner.
+
 **ID:** SP-DTQ-002  
-**Status:** draft_for_owner_review  
+**Status:** withdrawn_pending_full_redesign  
 **Date:** 20 September 2026  
-**Role:** longitudinal trajectory telemetry  
+**Operational withdrawal:** 11 October 2026  
+**Role:** historical longitudinal trajectory telemetry draft  
 **Domain:** body / health / physical efficiency  
-**Target burden:** ~2–4 minutes once per evening  
+**Target burden (historical design):** ~2–4 minutes once per evening  
 **Not:** Selection Point training, mastery test, psychological scale, medical assessment or composite score.
 
-## 1. Purpose
+## 1. Purpose of the historical draft
 
-The questionnaire exists to create a stable daily observation stream from which a participant's trajectory can later be reconstructed and visualized across multiple time scales.
+The questionnaire was designed to create a stable daily observation stream from which a participant's trajectory could later be reconstructed and visualized across multiple time scales.
 
 ~~~text
 episode
@@ -27,7 +26,9 @@ episode
 
 Each scale answers a different question.
 
-The daily questionnaire should preserve enough continuity to make trends and repeated structures visible without trying to explain the whole person.
+The daily questionnaire was intended to preserve enough continuity to make trends and repeated structures visible without trying to explain the whole person.
+
+This purpose remains useful research context, but the v0.2 instrument itself is not active.
 
 ## 2. Core distinction
 
@@ -38,9 +39,11 @@ questionnaire ≠ Selection Point capability
 questionnaire completion ≠ successful day
 ~~~
 
-The questionnaire may itself influence attention or behavior. This measurement reactivity is a property to keep visible, not a reason to remove the instrument.
+The questionnaire may itself influence attention or behavior. This measurement reactivity remains important evidence for the future redesign.
 
-## 3. Participant-facing questionnaire
+## 3. Historical participant-facing questionnaire
+
+The following questions are preserved as the v0.2 historical draft and are **not currently delivered**.
 
 ### 1. Вес
 
@@ -117,9 +120,7 @@ Answer briefly:
 → что произошло сразу после
 ~~~
 
-Important: the questionnaire does not require the participant to identify a hidden motive or a “correct Selection Point.”
-
-It captures the episode as reported.
+Important: the questionnaire did not require the participant to identify a hidden motive or a “correct Selection Point.”
 
 ### 9. Фактическая позиция на конец дня
 
@@ -135,29 +136,27 @@ Examples:
 - спал мало и усталость сохраняется;
 - важная договорённость выполнена / не выполнена.
 
-The participant is not asked to infer what has become psychologically “more available” or “less available.”
-
-The purpose is to preserve a compact factual end-of-day position that can be compared with later days and higher timeframes.
+The participant was not asked to infer what had become psychologically “more available” or “less available.”
 
 ### 10. Одно проверяемое действие на завтра
 
 > **Какое одно конкретное действие завтра поддержит направление “эффективное тело”? Какой первый физический шаг?**
 
-The action can later be revised if reality changes.
+The action could later be revised if reality changed.
 
 ## 4. Optional measurement-reactivity note
 
-Do not ask a separate mandatory leading question every day.
+The v0.2 design did not require a separate mandatory leading question every day.
 
-If the participant spontaneously noticed that future reporting/questionnaire expectation affected behavior, add:
+If the participant spontaneously noticed that future reporting/questionnaire expectation affected behavior, the draft allowed:
 
 > **Опросник/будущий отчёт сегодня повлиял на действие: ...**
 
-No note does not prove there was no measurement effect.
+No note did not prove there was no measurement effect.
 
-## 5. Why v0.2 differs from the recent 10-question form
+## 5. Why v0.2 differed from the preceding form
 
-The stable body/trajectory fields are retained:
+The stable body/trajectory fields were retained:
 
 ~~~text
 weight
@@ -171,11 +170,11 @@ end-of-day factual position
 tomorrow action
 ~~~
 
-The main revision is question 8.
+The main revision was question 8.
 
-Previous form used a more explicitly framed “точка выбора” question.
+The previous form used a more explicitly framed “точка выбора” question.
 
-v0.2 uses a neutral event formulation:
+v0.2 used a neutral event formulation:
 
 ~~~text
 significant episode
@@ -190,18 +189,17 @@ Reason:
 - retrospective questions can manufacture a coherent alternative after the fact;
 - the trajectory instrument should observe first and interpret later.
 
-Therefore:
+Therefore the draft avoided requiring:
 
 ~~~text
-daily telemetry should not require
 “what else was open?”
 or
 “what was the correct choice?”
 ~~~
 
-Those may belong to course practice or later analysis, not mandatory daily measurement.
+These may belong to course practice or later analysis, not mandatory daily measurement.
 
-## 6. Multi-timeframe use
+## 6. Multi-timeframe use considered by v0.2
 
 ### Episode level
 
@@ -253,30 +251,32 @@ higher timeframe
 
 ## 7. Visualization boundary
 
-Do not collapse the questionnaire into one “health score” or “Selection Capacity score.”
+Do not collapse questionnaire data into one “health score” or “Selection Capacity score.”
 
-Preferred future visualization:
+The historical design considered:
 
 - parallel time series;
 - event markers;
 - weekly/monthly summaries;
 - selected → realized traces;
-- alcohol/training/activity recurrence;
+- behavior/activity recurrence;
 - state overlays;
 - expandable lower-level events.
 
 OHLC or a single synthetic trajectory coordinate remains deferred until there is a defensible underlying measure.
 
-## 8. Data quality rules
+## 8. Data quality rules retained for future redesign
 
 - `unknown` / `не знаю` is valid.
 - Missing report ≠ bad day.
 - No reported episode ≠ no episode objectively occurred.
 - Self-report remains self-report.
 - Sequence ≠ causality.
-- The questionnaire may affect behavior.
+- Measurement may affect behavior.
 - Historical versions are not rewritten; version changes are preserved.
 
-## 9. Current decision requested
+## 9. Current status
 
-Owner review is required before v0.2 replaces the currently used participant-facing form.
+v0.2 is **withdrawn from operational use and from the approval queue**.
+
+A replacement questionnaire requires a full redesign when the Owner explicitly resumes that work. The redesign must start from purpose and required trajectory information rather than treating v0.2 as the default form to edit.
