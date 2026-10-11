@@ -8,12 +8,14 @@
 **Originally approved:** 22 September 2026  
 **Entry-boundary refinement approved:** 11 October 2026  
 **Current-action entry refinement approved:** 11 October 2026  
+**Lesson 1 learner journey v4 approved:** 11 October 2026  
 **Field:** body / health / physical efficiency  
 **Foundation basis:** Stage 1 — «Жизнь внутри автоматизма»  
 **Research input:** SP-COURSE-S1-WMF-RES-001  
 **Structure decision:** `docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md`  
 **Previous entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`  
 **Current entry refinement:** `docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md`  
+**Current Lesson 1 journey decision:** `docs/COURSE/DECISION_STAGE_1_LESSON_1_LEARNER_JOURNEY_V4_APPROVED_2026-10-11.md`  
 **Delivery mechanics:** `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` v3
 
 ## 1. Course direction
@@ -159,6 +161,8 @@ Useful prompts may include:
 
 This output is an **initial self-description of current movement**, not yet a verified frequency claim or causal explanation.
 
+Statements such as «часто», «обычно» or «постоянно» remain provisional until later concrete cases support, qualify or contradict them.
+
 ### Orientation boundary
 
 Orientation does **not** require:
@@ -192,11 +196,11 @@ This is the entry frame from which Lesson 1 begins.
 
 Learner-facing language should remain simple, for example:
 
-> **Вспомните один конкретный случай, когда это произошло.**
+> **Вспомните один недавний конкретный случай, когда это произошло и который вы достаточно хорошо помните.**
 
 ### Why this is Lesson 1
 
-Orientation now provides:
+Orientation provides:
 
 ```text
 created result / direction
@@ -236,6 +240,8 @@ A single case can show that something happened once. It cannot by itself establi
 
 Choose a case from one of the learner's Orientation output-3 statements.
 
+Prefer a **recent case that is sufficiently well remembered**, rather than a distant or merely dramatic case.
+
 Do not choose a case merely because it is:
 
 - the worst failure;
@@ -252,21 +258,47 @@ One concrete remembered case containing enough fact to know what event is being 
 - approximately when / in what situation it happened;
 - what happened;
 - what the learner actually did or did not do;
-- the immediate observable result.
+- the immediate observable result;
+- optionally, a prior concrete plan / intention when one genuinely existed.
 
-If these core identifying elements cannot be remembered well enough, the learner chooses another case or waits for a naturally occurring future case.
+If the core identifying elements cannot be remembered well enough, the learner chooses another case or waits for a naturally occurring future case.
 
 `Не знаю / не наблюдал` remains valid for causes and genuinely unobserved details. It is not a substitute for remembering the core event itself.
 
+### Approved learner journey
+
+Lesson 1 uses the seven-step path approved in `DECISION_STAGE_1_LESSON_1_LEARNER_JOURNEY_V4_APPROVED_2026-10-11.md`:
+
+```text
+1. return to the three Orientation outputs
+2. choose one general action / inaction statement
+3. see one complete worked example
+4. remember one recent, sufficiently well-remembered concrete case
+5. record it in a small case card
+6. check whether the case is usable without overclaiming
+7. see the result and carry the same observation into ordinary life
+```
+
 ### Field practice
 
-In ordinary life, if a naturally occurring situation matches the selected area, preserve it with minimal capture close enough to the event to reduce retrospective reconstruction.
+Field practice must allow reality to **confirm, qualify or contradict** the learner's initial description.
+
+Do not ask only for the next event that repeats the presumed behavior.
+
+Instead, when the next suitable situation in the selected area naturally occurs, preserve what actually happened with minimal capture:
+
+- when / situation;
+- what happened;
+- what the learner actually did or did not do;
+- what happened immediately after.
+
+Capture should occur close enough to the event to reduce avoidable retrospective reconstruction when practical and safe.
 
 Do not require all-day self-monitoring or deliberately create a difficult situation.
 
 ### Completion signal
 
-The learner can take one general statement about current action or inaction and connect it to one identifiable real case without converting explanation into fact.
+The learner can take one general statement about current action or inaction and connect it to one identifiable real case without converting explanation into fact or treating one case as proof of «часто / всегда / обычно».
 
 No behavior change is required yet.
 
@@ -398,9 +430,9 @@ Stage 2 begins only when relations and genuinely repeating structure across seve
 
 ## 11. Delivery mechanics
 
-The controlling delivery architecture is `STAGE_1_LESSON_TEMPLATE.md` v3, interpreted together with the current entry refinement decision.
+The controlling delivery architecture is `STAGE_1_LESSON_TEMPLATE.md` v3, interpreted together with the current entry and learner-journey decisions.
 
-For Lesson 1 specifically, the template's first-block language about “establishing” created direction and current reality is superseded: those inputs are produced in Orientation and returned to on entry to Lesson 1.
+For Lesson 1 specifically, Orientation already supplies the three entry outputs; Lesson 1 returns to them rather than recreating them.
 
 The course is **self-paced online**. A teacher, facilitator or AI assistant is not required.
 
@@ -463,6 +495,7 @@ Across all lessons:
 - appropriate professional support may be a valid continuation;
 - no hidden cause is assigned as fact;
 - one case does not prove frequency or a recurring pattern;
+- field observation must allow reality to confirm, qualify or contradict an initial self-description;
 - no single weak behavior becomes the permanent center of attention.
 
 ## 15. Current development boundary
@@ -472,15 +505,18 @@ Approved now:
 - the five-lesson sequence;
 - Orientation as a standalone short module;
 - the three-part Orientation entry: `desired result + current position + current realized action/inaction layer`;
+- Orientation output 3 as an initial general description rather than verified frequency or causality;
 - Lesson 1 as grounding one general action/inaction statement in one concrete remembered case;
+- the seven-step Lesson 1 learner journey v4;
+- preference for a recent, sufficiently well-remembered first case;
+- field observation that can confirm, qualify or contradict the initial description;
 - the simple-language rule for learner-facing material;
-- self-paced template v3, subject to the current entry refinement above.
+- `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` v4 as approved;
+- self-paced template v3, synchronized with the current entry refinement.
 
-`docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` is reopened for revision because v3 no longer fully matches the approved entry architecture.
+Authorized now:
 
-Not authorized until the revised learner journey / brief is approved:
-
-- final learner-facing Lesson 1 writing.
+- writing the final learner-facing Lesson 1 under the approved journey and brief.
 
 Still not authorized:
 

@@ -10,7 +10,9 @@
 **Applies to:** SP-COURSE-S1-STRUCT-003  
 **Field:** «Эффективное тело»  
 **Delivery:** self-paced online course; no required teacher, facilitator or AI assistant  
-**Approval decision:** `docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md`
+**Approval decision:** `docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md`  
+**Lesson 1 entry refinement:** `docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md`  
+**Lesson 1 journey refinement:** `docs/COURSE/DECISION_STAGE_1_LESSON_1_LEARNER_JOURNEY_V4_APPROVED_2026-10-11.md`
 
 ## 1. Core principle
 
@@ -55,7 +57,9 @@ The organizing frame is not merely removal of a problem. Local moves such as not
 
 What is factually true now, without improvement, condemnation or positive-story substitution.
 
-Learning and action occur between these two points.
+For course entry, current reality may be made more explicit by distinguishing the factual current position from what the learner actually does or does not do now. This distinction does not establish causality in advance.
+
+Learning and action occur between created direction and current reality.
 
 Therefore:
 
@@ -67,10 +71,11 @@ The direction itself may later be revised when new reality justifies revision.
 
 ### Block 1 — Current position
 
-For the first lesson, establish:
+For Lesson 1, **return to** the outputs already produced by the standalone Orientation module rather than establishing them again:
 
-- the participant-owned created direction;
-- relevant factual current reality.
+- participant-owned desired result / direction;
+- factual current position relative to it;
+- initial general description of what the learner actually does or does not do now in this area.
 
 For later lessons, begin from the prior field cycle:
 
@@ -119,7 +124,7 @@ Stage 1 must not require:
 - Stage 2 concepts or tasks;
 - full Foundation vocabulary.
 
-Stage 1 works with enough local structure to enable observation and participation in one episode.
+Stage 1 works with enough local structure to enable observation and participation in one concrete case.
 
 ### Block 4 — Worked example
 
@@ -146,7 +151,9 @@ Prefer ordinary body-domain material such as:
 - planning;
 - ordinary daily choices.
 
-The example need not be the learner's worst failure, most shameful behavior or most dramatic episode.
+The example need not be the learner's worst failure, most shameful behavior or most dramatic case.
+
+Where the operation tests a general self-description against concrete reality, the example must leave room for later reality to confirm, qualify or contradict that description.
 
 ### Block 5 — Independent application
 
@@ -171,7 +178,7 @@ Replace self-evaluation such as:
 
 with factual discrimination such as:
 
-- Am I working with one concrete episode rather than my whole life or identity?
+- Am I working with one concrete case rather than my whole life or identity?
 - What here is directly observable fact?
 - What is my interpretation?
 - What do I actually know?
@@ -179,7 +186,7 @@ with factual discrimination such as:
 - Have I crossed beyond the operation of this lesson?
 - Does the output correspond to factual reality?
 
-`Unknown / I do not know` is a valid result.
+`Unknown / I do not know` is valid **where the information is genuinely unknown**. A lesson may still require enough known information to identify its working material. For Lesson 1, for example, an unusable or unremembered case is replaced rather than completed with invented memory.
 
 The check evaluates the quality of discrimination, not the worth of the learner.
 
@@ -199,6 +206,8 @@ Give one bounded field task appropriate to the lesson, for example to:
 - change one condition;
 - prepare support;
 - verify a fact.
+
+If field practice is testing an initial self-description, sampling must not be restricted only to confirming events; the next suitable situation should be allowed to confirm, qualify or contradict the learner's expectation.
 
 Do not require:
 
@@ -257,7 +266,7 @@ Each lesson leaves an observable trace of learning.
 
 It need not always be a document. It may be:
 
-- one bounded episode record;
+- one bounded concrete-case record;
 - a completed local chain or distinction;
 - facts separated from interpretations;
 - a selected and realized action;
@@ -294,9 +303,11 @@ The next lesson begins from the position produced by the prior cycle, not merely
 
 Both may exist, but they must not be silently collapsed into one another.
 
-### 5.2 Unknown is valid
+### 5.2 Unknown is valid where genuinely unknown
 
-The learner does not invent a cause merely to complete a form.
+The learner does not invent a cause or missing detail merely to complete a form.
+
+This rule does not make insufficient source material usable. If the current lesson requires an identifiable concrete case and the learner cannot remember it, the learner selects another case rather than inventing one.
 
 ### 5.3 Late noticing is valid
 
@@ -318,9 +329,11 @@ A decision or intention is recorded separately from what was actually done.
 
 A compelling theory, correct answer or strong intention does not replace observable consequence.
 
+Reality must be allowed to contradict the learner's initial description or expectation.
+
 ### 5.7 Do not center the weakest link
 
-Choose episodes because they are relevant to the created direction, not because they represent the learner's worst behavior.
+Choose working material because it is relevant to the created direction, not because it represents the learner's worst behavior.
 
 No single weakness, including alcohol or another salient behavior, becomes the default center of attention.
 
@@ -429,8 +442,8 @@ This is the controlling architecture for Stage 1 lesson redesign.
 Approval of this template:
 
 - preserves the approved five-lesson Stage 1 course structure;
-- permits the Lesson 1 work brief to be revised for self-paced delivery;
-- does **not** by itself approve a new Lesson 1 script;
+- supports the approved Lesson 1 entry and learner journey when read with their later decisions;
+- does **not** by itself approve any future lesson script beyond the separately approved lesson-specific brief / decision;
 - does not open Lesson 2 development;
 - does not open Stage 2 or Foundation S5;
 - does not authorize external pilot execution;
