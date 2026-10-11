@@ -3,15 +3,15 @@
 Производная оперативная карточка; редактируется через системный SSOT и генератор.
 
 <!-- SP:CURRENT:BEGIN -->
-Дата синхронизации: **2026-10-07**.
+Дата синхронизации: **2026-10-11**.
 
 Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Подготовить рабочий бриф первого урока первой ступени.**
+**Следующий шаг: Пересмотреть границу Orientation ↔ Урок 1 в логике Фрица и переработать brief Урока 1.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` — `approved`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `reopened_for_revision`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
 
@@ -19,9 +19,9 @@ Foundation: последний утверждённый параметр `SP-S4-
 
 Capability: `SP-TR-S1-CAP-002`.
 
-Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
+Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_TEMPLATE_V2_APPROVED.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_RETURNED_FOR_REVISION.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 
