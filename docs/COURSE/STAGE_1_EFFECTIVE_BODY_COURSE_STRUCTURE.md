@@ -7,11 +7,13 @@
 **Status:** approved  
 **Originally approved:** 22 September 2026  
 **Entry-boundary refinement approved:** 11 October 2026  
+**Current-action entry refinement approved:** 11 October 2026  
 **Field:** body / health / physical efficiency  
 **Foundation basis:** Stage 1 — «Жизнь внутри автоматизма»  
 **Research input:** SP-COURSE-S1-WMF-RES-001  
 **Structure decision:** `docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md`  
-**Entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`  
+**Previous entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`  
+**Current entry refinement:** `docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md`  
 **Delivery mechanics:** `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` v3
 
 ## 1. Course direction
@@ -30,11 +32,11 @@ Short formulation:
 
 The course does not prescribe one ideal health regime and is not organized around removal of one symptom or behavior.
 
-The participant establishes a concrete created result inside this direction and compares it with factual current reality.
+The participant establishes a concrete created result inside this direction, identifies the factual current position relative to it, and separately describes what they actually do or do not do now in this area.
 
 ## 2. Course-wide axis
 
-Across the whole course:
+Across the whole course the Fritz organizing axis remains:
 
 ```text
 participant-owned created result / direction
@@ -47,6 +49,16 @@ reality response
 →
 updated current reality
 ```
+
+For course entry, factual current reality is made more explicit by distinguishing:
+
+```text
+current position
+≠
+current realized movement / what I actually do or do not do
+```
+
+The second line is still part of current reality. It is not a third causal law and does not imply that a listed action has already been proven to cause the current position.
 
 The created result is not identical to a route, practice or next action.
 
@@ -89,18 +101,18 @@ Orientation and Integration are not counted as lessons because they do not intro
 The five functions remain:
 
 ```text
-1. make one relevant part of current reality observable through a concrete episode
+1. ground one general statement about current action / inaction in one concrete remembered case
 2. reconstruct distinguishable local links
 3. distinguish body/state from the familiar regulation means
 4. find and realize one available participation point serving the created direction
 5. complete a reality-coupled cycle and update current reality
 ```
 
-## 4. Orientation — establish the coordinate system
+## 4. Orientation — establish the entry frame
 
 **Purpose:** establish the learner's frame before Stage 1 skill training begins.
 
-Orientation is practical but is not counted as a separate Stage 1 operation.
+Orientation is a short standalone self-paced module and is not counted as a separate Stage 1 lesson or operation.
 
 ### Output 1 — participant-owned created result / direction
 
@@ -108,24 +120,52 @@ The participant specifies what they want to create in relation to the body insid
 
 The result must be meaningful enough to organize later choices, but it need not be perfect or permanent. New reality may justify revision.
 
-### Output 2 — factual current reality relative to that result
+Learner-facing question:
+
+> **Чего я хочу?**
+
+### Output 2 — factual current position relative to that result
 
 The participant identifies what is factually true now **in relation to the created result**.
 
-Current reality is not:
+Current position is not:
 
 - a personality verdict;
 - a total inventory of the person;
 - a demand to explain why everything happened;
 - a list of failures.
 
-It is the relevant factual starting position.
+Learner-facing question:
+
+> **Что есть сейчас?**
+
+### Output 3 — current realized movement
+
+The participant gives an initial description of what they actually do or do not do now in this area across ordinary days and weeks.
+
+This may include actions or inactions that seem to support the desired direction, not support it, or have an unclear role.
+
+Learner-facing question:
+
+> **Что я реально делаю или не делаю сейчас в этой области?**
+
+Useful prompts may include:
+
+- Что я действительно делаю регулярно?
+- Что собираюсь делать, но часто не делаю?
+- Что повторяется?
+- Что уже помогает мне двигаться в нужную сторону?
+- Что происходит иначе, чем я хотел бы?
+
+This output is an **initial self-description of current movement**, not yet a verified frequency claim or causal explanation.
 
 ### Orientation boundary
 
 Orientation does **not** require:
 
-- selecting a problem episode;
+- selecting or analysing a concrete case;
+- proving how often an action really occurs;
+- claiming that one action causes the current position;
 - analysing an automatic chain;
 - identifying a hidden cause;
 - finding an alternative behavior;
@@ -135,71 +175,98 @@ Orientation does **not** require:
 Working frame:
 
 ```text
-What do I want to create?
+Чего я хочу?
 +
-What is factually true now relative to it?
+Что есть сейчас?
++
+Что я реально делаю или не делаю сейчас?
 ```
 
-This is the coordinate system from which Lesson 1 begins.
+This is the entry frame from which Lesson 1 begins.
 
-## 5. Lesson 1 — make current reality observable in one concrete episode
+## 5. Lesson 1 — ground one general action statement in one concrete case
 
 ### New operation
 
-> **Make one relevant part of current reality observable through one concrete episode.**
+> **Take one general statement about what I actually do or do not do now and ground it in one concrete remembered case where this really happened.**
+
+Learner-facing language should remain simple, for example:
+
+> **Вспомните один конкретный случай, когда это произошло.**
 
 ### Why this is Lesson 1
 
-Orientation establishes `B` and `A`:
+Orientation now provides:
 
 ```text
-created result B
+created result / direction
 +
-current reality A
+current position
++
+initial description of current action / inaction
 ```
 
-Lesson 1 does not create another goal. It teaches the learner to move from an abstract description of part of `A` to one bounded event in which that reality can be observed.
+The third output can still contain compression such as:
+
+- «я часто пропускаю тренировку после тяжёлого дня»;
+- «я обычно ложусь поздно»;
+- «если готовлю всё заранее, утром чаще тренируюсь».
+
+Lesson 1 does not accept such statements as proven patterns. It teaches the learner to move from one general statement to one concrete case in which the described action or inaction actually occurred.
 
 ### Core distinction
 
 ```text
-global self-description / vague statement
+general statement about what I do
 ≠
-one concrete observable episode
+one concrete remembered case
 ```
 
-The episode is an observation tool, not the organizing center of the course.
+And:
 
-### Episode-selection rule
+```text
+what happened
+≠
+my explanation of why it happened
+```
 
-Choose an episode because it illuminates a relevant part of current reality relative to the created result.
+A single case can show that something happened once. It cannot by itself establish frequency, recurrence, causality or a stable pattern.
 
-Do not choose it merely because it is:
+### Case-selection rule
+
+Choose a case from one of the learner's Orientation output-3 statements.
+
+Do not choose a case merely because it is:
 
 - the worst failure;
 - the most shameful behavior;
 - the most dramatic event;
 - the easiest target for self-criticism.
 
+Cases where the learner acted in a useful, neutral or unwanted way are all admissible if they correspond to the selected general statement.
+
 ### Learner output
 
-One bounded factual episode containing only the minimum needed for Lesson 2, for example:
+One concrete remembered case containing enough fact to know what event is being discussed:
 
+- approximately when / in what situation it happened;
 - what happened;
-- when / where;
-- relevant known conditions;
-- actual action or inaction;
-- immediate observable result.
+- what the learner actually did or did not do;
+- the immediate observable result.
 
-`Unknown / I do not remember` is valid.
+If these core identifying elements cannot be remembered well enough, the learner chooses another case or waits for a naturally occurring future case.
+
+`Не знаю / не наблюдал` remains valid for causes and genuinely unobserved details. It is not a substitute for remembering the core event itself.
 
 ### Field practice
 
-In ordinary life, capture one naturally occurring relevant episode without turning it into a personality explanation or Stage 2 pattern analysis.
+In ordinary life, if a naturally occurring situation matches the selected area, preserve it with minimal capture close enough to the event to reduce retrospective reconstruction.
+
+Do not require all-day self-monitoring or deliberately create a difficult situation.
 
 ### Completion signal
 
-The learner can take one relevant statement about current reality and ground it in one bounded episode.
+The learner can take one general statement about current action or inaction and connect it to one identifiable real case without converting explanation into fact.
 
 No behavior change is required yet.
 
@@ -223,7 +290,7 @@ conditions
 
 Facts remain facts; interpretation remains interpretation; the inferred function may remain a hypothesis; unknown is valid.
 
-The lesson ends by asking what the reconstructed episode now reveals about factual current reality.
+The lesson ends by asking what the reconstructed case now reveals about factual current reality.
 
 Stage 2 recurring-pattern analysis remains outside scope.
 
@@ -264,7 +331,7 @@ Valid forms include:
 
 1. retrospective reconstruction when live noticing was unavailable;
 2. return inside an ongoing continuation;
-3. repair after the episode;
+3. repair after the case;
 4. change one condition of the next cycle.
 
 An available move is not selected merely because it is opposite to the old behavior.
@@ -289,7 +356,7 @@ next continuation
 created direction
 +
 current reality
-→ episode
+→ concrete case
 → reconstruction
 → available participation
 → selected continuation
@@ -317,21 +384,23 @@ The created direction itself may be revised if new facts justify revision.
 
 Integration is not Lesson 6 and does not begin Stage 2.
 
-The learner preserves several separate episodes and checks whether they can:
+The learner preserves several separate cases and checks whether they can:
 
-- ground current reality in concrete events;
+- connect general self-descriptions to concrete events;
 - reconstruct a local chain while preserving uncertainty;
 - distinguish state from familiar regulation means;
 - locate participation even after the process has started;
 - realize or prepare a real continuation;
 - return to consequences and updated current reality;
-- relate each episode to the created direction without converting it into a verdict about the person.
+- relate each case to the created direction without converting it into a verdict about the person.
 
-Stage 2 begins only when relations and genuinely repeating structure across several episodes become the object of investigation.
+Stage 2 begins only when relations and genuinely repeating structure across several cases become the object of investigation.
 
 ## 11. Delivery mechanics
 
-The controlling delivery architecture is `STAGE_1_LESSON_TEMPLATE.md` v3.
+The controlling delivery architecture is `STAGE_1_LESSON_TEMPLATE.md` v3, interpreted together with the current entry refinement decision.
+
+For Lesson 1 specifically, the template's first-block language about “establishing” created direction and current reality is superseded: those inputs are produced in Orientation and returned to on entry to Lesson 1.
 
 The course is **self-paced online**. A teacher, facilitator or AI assistant is not required.
 
@@ -354,11 +423,13 @@ Old teacher-led debrief, guided dialogue and teacher-correction mechanics are no
 
 Optional support or future software may assist, but the lesson must function without it.
 
+Learner-facing language should be simpler than internal methodological language whenever the internal term is not required to perform the next action.
+
 ## 12. Williams / Millman / Fritz layers
 
 ### Fritz — created result + current reality
 
-The participant's created result and factual current reality organize the course. Skills and local actions serve this relationship rather than replacing it.
+The participant's created result and factual current reality organize the course. The explicit current-action layer belongs inside current reality and makes ongoing movement visible without claiming causality in advance.
 
 ### Millman — ordinary life + now + action
 
@@ -383,7 +454,7 @@ Any future telemetry instrument must remain separate from Stage 1 learning opera
 Across all lessons:
 
 - fact ≠ interpretation;
-- unknown is valid;
+- unknown is valid where something is genuinely unknown, but a chosen concrete case must be identifiable enough to work with;
 - late noticing is valid;
 - automaticity is not moral failure;
 - internal selection ≠ realized action;
@@ -391,6 +462,7 @@ Across all lessons:
 - safety overrides an exercise;
 - appropriate professional support may be a valid continuation;
 - no hidden cause is assigned as fact;
+- one case does not prove frequency or a recurring pattern;
 - no single weak behavior becomes the permanent center of attention.
 
 ## 15. Current development boundary
@@ -398,13 +470,20 @@ Across all lessons:
 Approved now:
 
 - the five-lesson sequence;
-- Orientation as `created result + factual current reality`;
-- Lesson 1 as grounding one relevant part of current reality in one concrete episode;
-- self-paced template v3.
+- Orientation as a standalone short module;
+- the three-part Orientation entry: `desired result + current position + current realized action/inaction layer`;
+- Lesson 1 as grounding one general action/inaction statement in one concrete remembered case;
+- the simple-language rule for learner-facing material;
+- self-paced template v3, subject to the current entry refinement above.
 
-Not automatically authorized by this structure:
+`docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` is reopened for revision because v3 no longer fully matches the approved entry architecture.
 
-- learner-facing Lesson 1 before its work brief is approved;
+Not authorized until the revised learner journey / brief is approved:
+
+- final learner-facing Lesson 1 writing.
+
+Still not authorized:
+
 - Lesson 2 development;
 - Stage 2 / Foundation S5;
 - questionnaire redesign;

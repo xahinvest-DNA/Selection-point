@@ -1,107 +1,142 @@
 # Stage 1 — Lesson 1 Work Brief
 
 **ID:** SP-COURSE-S1-L1-BRIEF-001  
-**Version:** 3  
-**Status:** approved  
-**Review state:** owner_approved  
+**Version:** 4  
+**Status:** reopened_for_revision  
+**Review state:** owner_review_required_after_learner_journey_revision  
 **Date:** 11 October 2026  
 **Course:** Stage 1 / «Эффективное тело»  
 **Lesson:** 1 — working title to be refined  
 **Delivery:** self-paced online course; no required teacher, facilitator or AI assistant  
 **Template:** `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` v3  
 **Course structure:** `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`  
-**Entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`  
-**Approval decision:** `docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md`
+**Current entry decision:** `docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md`  
+**Previous approved version:** v3 / `docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md`
 
-## 1. Purpose of this brief
+## 1. Purpose of this revision
 
-Define the exact methodological boundary and required outputs for Lesson 1 before learner-facing copy is written.
-
-This brief implements the approved Orientation ↔ Lesson 1 boundary:
+The v3 brief was approved under an earlier two-output Orientation boundary. The owner has since approved a refined entry architecture in which Orientation produces three learner-facing outputs:
 
 ```text
-ORIENTATION
-created result / direction
-+
-factual current reality
-
-→ LESSON 1
-make one relevant part of current reality observable
-through one concrete episode
+1. Чего я хочу?
+2. Что есть сейчас?
+3. Что я реально делаю или не делаю сейчас в этой области?
 ```
+
+This brief is therefore reopened before final learner-facing copy is written.
+
+The approved core below is binding. The detailed learner journey, screen sequence, exact work-card wording and final learner-facing copy still require owner review.
 
 ## 2. Entry conditions
 
-Lesson 1 begins only after Orientation has produced two things.
+Lesson 1 begins only after the standalone Orientation module has produced three things.
 
-### 2.1 Participant-owned created result / direction
+### 2.1 Participant-owned desired result / direction
 
 The learner has identified what they want to create in relation to the body inside the broader course direction.
 
-The formulation need not be perfect or permanent, but it must be concrete enough to organize relevance.
+Learner-facing formulation:
 
-### 2.2 Factual current reality relative to that result
+> **Чего я хочу?**
 
-The learner has identified what is currently true in relation to that created result without requiring causal explanation or self-judgment.
+### 2.2 Factual current position relative to that result
 
-Orientation does **not** need to supply an episode.
+The learner has identified what is currently true in relation to that desired result without requiring causal explanation or self-judgment.
+
+Learner-facing formulation:
+
+> **Что есть сейчас?**
+
+### 2.3 Initial description of current realized movement
+
+The learner has described what they actually do or do not do now in this area across ordinary days and weeks.
+
+Learner-facing formulation:
+
+> **Что я реально делаю или не делаю сейчас в этой области?**
+
+This third output may include useful, unwanted, neutral or unclear actions / inactions.
+
+It is an initial self-description, not yet a verified frequency claim and not a causal explanation of the current position.
+
+Orientation does **not** need to supply a concrete case.
 
 ## 3. One main learning operation
 
-> **Take one relevant part of current reality and make it observable through one bounded concrete episode.**
+> **Take one general statement about what I actually do or do not do now and ground it in one concrete remembered case where this really happened.**
 
-Compact form:
+Compact internal form:
 
 ```text
-created result / direction
+desired result / direction
 +
-current reality
-→ select one relevant part of that reality
-→ locate one concrete episode where it became observable
-→ describe only enough fact to preserve the episode
+current position
++
+general statement about current action / inaction
+→ choose one statement
+→ remember one concrete case where it happened
+→ preserve what actually happened
 ```
 
-This is one operation: **grounding an abstract current-reality statement in observable experience**.
+Learner-facing formulation should be simpler:
 
-The episode is a means, not the goal of the course.
+> **Вспомните один конкретный случай, когда это произошло.**
+
+The case is a means of grounding an initial self-description in reality. It is not the organizing goal of the course.
 
 ## 4. Why this operation belongs first
 
-Without this operation, “current reality” can remain an abstract story:
+Orientation can produce useful but compressed statements such as:
 
-- «я не в форме»;
-- «у меня нет режима»;
-- «я ленивый»;
-- «я не умею восстанавливаться»;
-- «я постоянно срываюсь».
+- «я часто пропускаю тренировку после тяжёлого рабочего дня»;
+- «я обычно ложусь поздно»;
+- «если готовлю всё заранее, утром чаще тренируюсь»;
+- «в выходные я двигаюсь меньше».
 
-Lesson 1 teaches the learner to move from such compression to one inspectable unit of reality.
+Such statements may be directionally useful, but they still combine multiple days, memories and implicit conclusions.
 
-It does not yet teach why the event happened or how to change it.
+Lesson 1 teaches the learner to connect one such statement to one identifiable real case.
+
+A single case establishes only that the event happened at least once. It does **not** establish:
+
+- actual frequency;
+- a repeating pattern;
+- causality;
+- representativeness of the whole person or trajectory.
+
+Lesson 1 does not yet teach why the event happened or how to change it.
 
 ## 5. Minimum map
 
-The lesson needs only two distinctions.
+The lesson needs only the distinctions required for this operation.
 
-### 5.1 Created result ≠ current reality
+### 5.1 Current position ≠ current realized movement
 
-The desired result is not evidence that it already exists.
+What is true about the learner's present state is not identical to what they actually do or do not do across ordinary life.
 
-Current reality is not a verdict on the created result.
+Both belong to current reality, but they should not be silently collapsed.
 
-### 5.2 Global statement ≠ concrete episode
+### 5.2 General action statement ≠ one concrete case
 
 ```text
-“I am like this / this always happens”
+«я часто / обычно / постоянно делаю X»
 ≠
-what actually happened once, where and when
+one identifiable case where X actually happened
+```
+
+### 5.3 What happened ≠ explanation of why it happened
+
+```text
+«я не начал тренировку»
+≠
+«я не начал, потому что ленивый»
 ```
 
 No additional psychological model is required in Lesson 1.
 
-## 6. Episode-selection rule
+## 6. Case-selection rule
 
-The learner selects an episode because it helps make **a relevant part of current reality** observable relative to the created result.
+The learner selects one statement from Orientation output 3 and remembers one concrete case where the described action or inaction really occurred.
 
 Selection must not default to:
 
@@ -111,23 +146,40 @@ Selection must not default to:
 - alcohol or another salient weak point;
 - whatever seems easiest to moralize.
 
-Successful, neutral and unsuccessful episodes are all admissible if they reveal relevant current reality.
+Useful, neutral and unwanted actions are all admissible.
 
-## 7. Minimum factual episode fields
+The case is chosen because it corresponds to the selected statement, not because it is dramatic.
 
-The working form should remain small.
+## 7. Case eligibility and minimum factual fields
 
-Required fields:
+The working form should remain small, but the case must be identifiable enough to work with.
 
-1. **What happened?**
-2. **When / where did it happen?**
-3. **What relevant factual conditions are known?**
-4. **What did I actually do or not do?**
-5. **What immediate observable result followed?**
+Core required information:
 
-`Не знаю / не помню / не наблюдал` is valid.
+1. **Approximately when / in what situation did it happen?**
+2. **What happened?**
+3. **What did I actually do or not do?**
+4. **What immediate observable result followed?**
 
-The form must not force the learner to invent missing causes.
+A fifth field may be used if the learner journey shows that it adds value without duplication, for example an optional prior intention / plan when it was genuinely present. That exact field remains a design decision for the learner-journey revision.
+
+### 7.1 Important uncertainty boundary
+
+For the core event-identifying information above, `не знаю / не помню` does **not** count as a normal completed answer.
+
+If the learner cannot remember enough to identify what happened, they should:
+
+- choose another remembered case; or
+- wait for a naturally occurring future case and capture it then.
+
+`Не знаю / не наблюдал` remains valid for information that is genuinely unknown, especially:
+
+- why it happened;
+- whether a particular condition caused it;
+- unobserved internal or external details;
+- whether the case represents a broader pattern.
+
+The lesson must not force the learner to invent a cause or missing detail.
 
 ## 8. Worked example requirement
 
@@ -136,9 +188,10 @@ Before independent application, show one ordinary body-domain example.
 The example should demonstrate:
 
 ```text
-abstract current-reality statement
-→ one relevant concrete episode
+Orientation output-3 statement
+→ one concrete remembered case
 → minimum factual description
+→ explicit separation of what happened from what is still unknown
 ```
 
 Prefer low-drama material such as:
@@ -148,35 +201,37 @@ Prefer low-drama material such as:
 - food organization;
 - physical workload;
 - preparation for a body-related action;
-- a normal choice that was actually realized.
+- an ordinary action that was actually realized.
 
 The example should not imply that the course is primarily about failure prevention.
+
+The example should also make clear that one case does not prove a recurring pattern.
 
 ## 9. Independent in-lesson application
 
 The learner:
 
-1. returns to their created result;
-2. identifies one relevant current-reality statement;
-3. selects one concrete episode that makes part of it observable;
-4. fills the minimum factual fields;
-5. performs the reality check below.
+1. returns to the three Orientation outputs;
+2. chooses one general statement about what they actually do or do not do;
+3. remembers one concrete case where that happened;
+4. records enough factual information to identify the case;
+5. performs the factual quality check below.
 
 The lesson structure itself holds the boundary. A teacher or AI is not required.
 
-## 10. Reality check
+## 10. Factual quality check
 
-The learner checks:
+The learner checks, in simple language:
 
-- Is this one concrete event rather than a description of my whole life?
-- Can I say when / where it happened?
-- What here is observable fact?
-- What have I added as interpretation?
-- What do I genuinely not know?
-- Does this episode actually illuminate something relevant to my created result and current reality?
-- Have I started explaining causes or patterns that belong to later lessons?
+- Is this one concrete case rather than a description of a whole week, habit or identity?
+- Can I say approximately when / in what situation it happened?
+- Can I say what I actually did or did not do?
+- Have I written what happened rather than turning an explanation into fact?
+- Am I treating one case as if it already proves «часто / всегда / обычно»?
 
-This is a factual quality check, not a score.
+This is not a score.
+
+If the case cannot be identified, the correct continuation is to choose another case or wait for a naturally occurring case, not to complete the form with invented memory.
 
 ## 11. Field practice
 
@@ -184,7 +239,9 @@ Field practice is the second part of Lesson 1.
 
 Task:
 
-> **When an ordinary relevant situation naturally occurs, preserve one bounded episode as factual current-reality material.**
+> **If a similar situation naturally occurs in ordinary life, preserve one concrete case close enough to the event that you can still say what actually happened.**
+
+The field capture should remain minimal in order not to turn observation into a new all-day monitoring task.
 
 Do not require the learner to:
 
@@ -195,27 +252,26 @@ Do not require the learner to:
 - observe themselves continuously all day;
 - create a difficult situation deliberately.
 
-The field task trains the same operation as the lesson: **make current reality observable in one event**.
+A naturally occurring case is sufficient.
 
 ## 12. Observable learning trace
 
 At Lesson 1 completion, the learner should possess:
 
 1. the Orientation outputs:
-   - created result / direction;
-   - factual current reality;
-2. one bounded episode that makes a relevant part of current reality observable;
-3. one additional field episode if naturally available before Lesson 2.
+   - desired result / direction;
+   - factual current position;
+   - initial description of current action / inaction;
+2. one identifiable concrete case connected to one of those action statements;
+3. one additional field case if one naturally occurs before the next lesson.
 
-The minimum mandatory Lesson 1 artifact is **one usable factual episode**.
+The minimum mandatory Lesson 1 artifact is **one usable concrete case**.
 
 ## 13. Lesson 2 handoff
 
-Lesson 1 stops once an episode is sufficiently bounded and factual.
+Lesson 1 stops once a case is sufficiently concrete and factual.
 
-Lesson 2 receives that episode and asks a different question:
-
-> **Из каких различимых звеньев складывалось это продолжение?**
+Lesson 2 receives that case and asks a different question about how the continuation was composed from distinguishable local links.
 
 Therefore Lesson 1 must **not** perform:
 
@@ -226,62 +282,102 @@ Therefore Lesson 1 must **not** perform:
 - selection of alternative behavior;
 - participation-point training;
 - consequence-feedback analysis of a changed action;
-- repeating-pattern / scenario analysis.
+- repeating-pattern / scenario analysis;
+- frequency validation from a single case.
 
-## 14. Williams / Millman / Fritz alignment
+## 14. User-language rule
+
+Learner-facing language must be simpler than the internal methodological language whenever the term is not needed to perform the next action.
+
+Do not require the learner to understand terms such as:
+
+- `episode` / «эпизод»;
+- `релевантный эпизод`;
+- `current reality` / «текущая реальность» as technical vocabulary;
+- `реализация`;
+- `reality check`;
+- `observable learning trace`;
+- `functional chain`.
+
+Prefer ordinary formulations such as:
+
+- «Чего я хочу?»
+- «Что есть сейчас?»
+- «Что я реально делаю сейчас?»
+- «Вспомните один конкретный случай, когда это произошло».
+- «Что тогда произошло?»
+- «Что вы реально сделали?»
+
+The methodological layer may remain precise internally. The learner should not need to learn the vocabulary of Selection Point in order to use it.
+
+## 15. Williams / Millman / Fritz alignment
 
 ### Fritz
 
-The lesson remains subordinate to:
+The course remains organized by:
 
 ```text
 created result
 +
-current reality
+factual current reality
 ```
 
-The episode exists to make current reality more concrete, not to turn the course into problem removal.
+The explicit current-action layer is treated as part of current reality, not as a replacement for the Fritz axis and not as a causal claim made in advance.
 
 ### Millman
 
-The learner leaves abstract self-story and returns to ordinary lived reality. The field task uses naturally occurring life rather than purely retrospective theory.
+The learner moves from generalized self-story to ordinary lived reality. The field task uses naturally occurring life rather than purely retrospective theory.
 
 Lesson 1 does not force action change before the learner has learned to see what actually happened.
 
 ### Williams
 
-The learner receives one level-appropriate tool: a bounded episode as a unit of observation.
+The learner receives one level-appropriate tool: move from a broad action statement to one concrete case.
 
 The lesson does not introduce broader underlying-structure or Stage 2 pattern analysis.
 
-## 15. Safety and epistemic boundaries
+## 16. Safety and epistemic boundaries
 
 - fact ≠ interpretation;
-- unknown is valid;
+- one case ≠ verified frequency or recurring pattern;
+- the learner does not invent memory to complete a form;
+- unknown remains valid for causes and genuinely unobserved details;
 - no hidden cause is assigned as fact;
 - no worst-failure selection rule;
 - no permanent attention to the weakest behavior;
 - no unsafe or deliberately provocative field task;
 - appropriate support may override the exercise;
-- late noticing does not invalidate the episode.
+- late noticing does not invalidate a naturally occurring case.
 
-## 16. Approved acceptance criteria
+## 17. Approved core vs open design work
 
-Owner approval confirms that:
+The following is already approved by owner decision `SP-COURSE-DEC-S1-ENTRY-ACTION-001`:
 
-1. Orientation ends with `created result + factual current reality` and does not require episode selection.
-2. Lesson 1 has exactly one main operation: grounding one relevant part of current reality in one bounded episode.
-3. The episode is a tool for observing current reality, not the organizing goal of the course.
-4. Lesson 1 requires no behavior change.
-5. Lesson 1 ends before explanation of the episode's functional chain.
-6. Its artifact is usable as the direct input to Lesson 2.
-7. The course remains self-paced and preserves the five-core-lesson sequence.
+1. Orientation produces three learner-facing outputs: desired result, current position, current action / inaction layer.
+2. The third output is not a causal conclusion.
+3. Lesson 1 begins from one general action / inaction statement and grounds it in one concrete remembered case.
+4. A single case does not prove frequency, recurrence or causality.
+5. The concrete case must be identifiable; `не знаю / не помню` cannot replace core event memory.
+6. Unknown remains valid for causes and genuinely unobserved details.
+7. Learner-facing language must be simple and need not expose internal Selection Point terminology.
+8. Lesson 1 still requires no behavior change and stops before functional-chain reconstruction.
 
-## 17. Authorization boundary
+Still open for owner review:
 
-Approval of this brief authorizes writing a new learner-facing Lesson 1 under template v3.
+- the final learner journey / screen sequence;
+- whether an optional intention / plan field belongs in the case card;
+- exact learner-facing wording;
+- exact field-capture compression;
+- final worked example;
+- final learner-facing Lesson 1 copy.
 
-It does **not** authorize:
+## 18. Authorization boundary
+
+This reopened brief authorizes continued design of the Lesson 1 learner journey and mechanical repository synchronization that preserves the approved core above.
+
+It does **not** yet authorize final learner-facing Lesson 1 writing.
+
+It also does not authorize:
 
 - Lesson 2 development;
 - changing the five-lesson sequence;

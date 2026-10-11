@@ -9,9 +9,9 @@
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Написать новый learner-facing Урок 1 по утверждённому brief v3.**
+**Следующий шаг: Пересобрать learner journey Урока 1 вокруг утверждённого трёхчастного входа Orientation и представить на утверждение.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `approved`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `reopened_for_revision`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
 
@@ -21,7 +21,7 @@ Capability: `SP-TR-S1-CAP-002`.
 
 Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_ORIENTATION_ACTION_LAYER_APPROVED.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 

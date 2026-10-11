@@ -7,22 +7,24 @@ current_work:
     и расширяют возможности тела в будущем.
   route: stage_1_course_first_development
   objective: build_effective_stage_1_course
-  next_step: write_lesson_1_self_paced_v3
-  next_step_label: Написать новый learner-facing Урок 1 по утверждённому brief v3
+  next_step: redesign_lesson_1_learner_journey_after_three_part_orientation
+  next_step_label: Пересобрать learner journey Урока 1 вокруг утверждённого трёхчастного входа Orientation и представить на утверждение
   artifact: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
-  artifact_status: approved
-  owner_decision_required: false
+  artifact_status: reopened_for_revision
+  owner_decision_required: true
   execution_authorized: true
-  authorization_boundary: Writing a new learner-facing Lesson 1 is authorized under approved brief v3 and lesson template v3. Lesson 2 work is not authorized.
+  authorization_boundary: Revision of the Lesson 1 brief and learner journey is authorized under the approved three-part Orientation entry. Final learner-facing Lesson 1 writing requires owner approval of the revised journey / brief. Lesson 2 work is not authorized.
   route_decision: docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   synchronization_decision: docs/PROJECT_SYSTEM/DECISION_SYNC_REPAIR_2026-10-07.md
   self_paced_format_decision: docs/COURSE/DECISION_SELF_PACED_COURSE_FORMAT_RESET_2026-10-07.md
   template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md
-  orientation_lesson_1_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
+  orientation_lesson_1_previous_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
+  orientation_action_layer_decision: docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
   lesson_1_brief_previous_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
-  lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
-  lesson_1_brief_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
+  lesson_1_brief_previous_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
+  lesson_1_brief_previous_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
+  lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
   supporting_tasks_are_not_course_prerequisites: true
 project_management:
   protocol: docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md
@@ -38,7 +40,7 @@ project_management:
   completed_requires_verification: true
 recovery:
   strategy: git_history_plus_ssot_bootstrap
-  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md
+  current_checkpoint: docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_ORIENTATION_ACTION_LAYER_APPROVED.md
   principle: Git commits are technical recovery points; SSOT and the current recovery checkpoint reconstruct approved project
     meaning.
   health_lab_verified_main: 06990ea2bb7a261c64fa07e87fa102c44e4020f5
@@ -51,13 +53,13 @@ active_working_inputs:
 new_chat_bootstrap:
   read_first:
   - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md
+  - docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_ORIENTATION_ACTION_LAYER_APPROVED.md
   - docs/PROJECT_SYSTEM/DECISION_COURSE_FIRST_RESET_2026-09-20.md
   - docs/COURSE/DECISION_SELF_PACED_COURSE_FORMAT_RESET_2026-10-07.md
   - docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
   - docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md
+  - docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
   - docs/COURSE/STAGE_1_LESSON_TEMPLATE.md
-  - docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
   - docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
   - docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md
   then_route_by_task:
@@ -170,15 +172,18 @@ course_first_reset:
     course_structure_decision: docs/COURSE/DECISION_STAGE_1_STRUCTURE_WMF_APPROVED_2026-09-22.md
     course_structure_status: approved
     proposed_lesson_count: 5
-    course_wide_axis: participant-owned created direction + factual current reality
+    course_wide_axis: participant-owned created direction + factual current reality, with current realized action / inaction explicitly distinguished inside current reality
     cross_cutting_layers:
     - 'Fritz: created direction + current reality'
     - 'Millman: ordinary life + present contact + action when available'
     - 'Williams: level-appropriate maps/tools'
     orientation_counted_as_lesson: false
     integration_counted_as_lesson: false
-    orientation_lesson_1_boundary_status: approved
-    orientation_lesson_1_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
+    orientation_lesson_1_boundary_status: approved_refined
+    orientation_lesson_1_previous_boundary_decision: docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md
+    orientation_lesson_1_boundary_decision: docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
+    orientation_current_action_layer_status: approved
+    orientation_current_action_layer_decision: docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
     structure_review: docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE_REVIEW.md
     structure_research_williams_millman_fritz: docs/COURSE/STAGE_1_STRUCTURE_WILLIAMS_MILLMAN_FRITZ_RESEARCH.md
     structure_research_status: approved_research_input
@@ -191,14 +196,15 @@ course_first_reset:
     lesson_template_decision: docs/COURSE/DECISION_STAGE_1_LESSON_TEMPLATE_V3_APPROVED_2026-10-11.md
     lesson_1_brief: docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md
     lesson_1_brief_id: SP-COURSE-S1-L1-BRIEF-001
-    lesson_1_brief_status: approved
+    lesson_1_brief_status: reopened_for_revision
     lesson_1_brief_previous_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_APPROVED_2026-10-07.md
-    lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
-    lesson_1_brief_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
+    lesson_1_brief_previous_revision_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_BRIEF_RETURNED_FOR_REVISION_2026-10-11.md
+    lesson_1_brief_previous_approval_decision: docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md
+    lesson_1_brief_revision_decision: docs/COURSE/DECISION_STAGE_1_ORIENTATION_ACTION_LAYER_AND_LESSON_1_REFRAMING_APPROVED_2026-10-11.md
     lesson_1: docs/COURSE/STAGE_1_LESSON_1.md
     lesson_1_id: SP-COURSE-S1-L1-001
     lesson_1_status: withdrawn_product_format_mismatch
-  next_step: write_lesson_1_self_paced_v3
+  next_step: redesign_lesson_1_learner_journey_after_three_part_orientation
 training_state:
   current_stage: 1
   current_gate: none / course-first development
