@@ -2,7 +2,8 @@
 
 **ID:** SP-COURSE-S1-L1-BRIEF-001  
 **Version:** 3  
-**Status:** draft_for_owner_review  
+**Status:** reopened_for_revision  
+**Review state:** candidate_for_owner_review  
 **Date:** 11 October 2026  
 **Course:** Stage 1 / «Эффективное тело»  
 **Lesson:** 1 — working title to be refined  
