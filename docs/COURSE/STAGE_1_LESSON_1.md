@@ -15,4 +15,4 @@ The artifact remains in Git history and repository state only as a record of the
 
 Do not continue from this file.
 
-Active work returns to redesigning the reusable lesson anatomy for self-paced online delivery before Lesson 1 is written again.
+The reusable self-paced lesson template v3 is now approved. Current active work is `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md`, which has itself been returned for architectural revision. The current issue is the Orientation ↔ Lesson 1 boundary: created result/direction + factual current reality must be resolved before a new learner-facing Lesson 1 can be authorized.
