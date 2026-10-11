@@ -2,15 +2,16 @@
 
 **ID:** SP-COURSE-S1-L1-BRIEF-001  
 **Version:** 3  
-**Status:** reopened_for_revision  
-**Review state:** candidate_for_owner_review  
+**Status:** approved  
+**Review state:** owner_approved  
 **Date:** 11 October 2026  
 **Course:** Stage 1 / «Эффективное тело»  
 **Lesson:** 1 — working title to be refined  
 **Delivery:** self-paced online course; no required teacher, facilitator or AI assistant  
 **Template:** `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` v3  
 **Course structure:** `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`  
-**Entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`
+**Entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`  
+**Approval decision:** `docs/COURSE/DECISION_STAGE_1_LESSON_1_WORK_BRIEF_V3_APPROVED_2026-10-11.md`
 
 ## 1. Purpose of this brief
 
@@ -264,9 +265,9 @@ The lesson does not introduce broader underlying-structure or Stage 2 pattern an
 - appropriate support may override the exercise;
 - late noticing does not invalidate the episode.
 
-## 16. Acceptance criteria for the brief
+## 16. Approved acceptance criteria
 
-This brief is ready for approval if the Owner agrees that:
+Owner approval confirms that:
 
 1. Orientation ends with `created result + factual current reality` and does not require episode selection.
 2. Lesson 1 has exactly one main operation: grounding one relevant part of current reality in one bounded episode.
@@ -278,9 +279,9 @@ This brief is ready for approval if the Owner agrees that:
 
 ## 17. Authorization boundary
 
-Approval of this brief would authorize writing a new learner-facing Lesson 1 under template v3.
+Approval of this brief authorizes writing a new learner-facing Lesson 1 under template v3.
 
-It would **not** authorize:
+It does **not** authorize:
 
 - Lesson 2 development;
 - changing the five-lesson sequence;
