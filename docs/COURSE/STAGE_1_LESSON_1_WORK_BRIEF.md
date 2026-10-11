@@ -1,143 +1,290 @@
 # Stage 1 — Lesson 1 Work Brief
 
 **ID:** SP-COURSE-S1-L1-BRIEF-001  
-**Version:** 2  
-**Status:** reopened_for_revision  
+**Version:** 3  
+**Status:** draft_for_owner_review  
 **Date:** 11 October 2026  
 **Course:** Stage 1 / «Эффективное тело»  
-**Lesson:** 1 — «Один эпизод вместо “я такой”»  
+**Lesson:** 1 — working title to be refined  
 **Delivery:** self-paced online course; no required teacher, facilitator or AI assistant  
 **Template:** `docs/COURSE/STAGE_1_LESSON_TEMPLATE.md` v3  
-**Course structure:** `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`
-
-> **Owner review outcome — 11 October 2026:** not approved. Returned for architectural revision. The current draft begins too quickly with episode localization. Before revising Lesson 1, reconsider the boundary between Orientation and Lesson 1 so that the learner first establishes a concrete created body result/direction and factual current reality in the Fritz sense. Episode work, if retained in Lesson 1, must serve the clarification of current reality rather than become the organizing center of the course. Do not write a learner-facing Lesson 1 until the revised brief is approved.
+**Course structure:** `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`  
+**Entry-boundary decision:** `docs/COURSE/DECISION_ORIENTATION_LESSON_1_BOUNDARY_APPROVED_2026-10-11.md`
 
 ## 1. Purpose of this brief
 
-Define the exact methodological and delivery boundary for Lesson 1 before a new learner-facing lesson is written.
+Define the exact methodological boundary and required outputs for Lesson 1 before learner-facing copy is written.
 
-This brief translates the approved self-paced template v3 into Lesson 1 requirements. It does not itself contain the final lesson copy.
+This brief implements the approved Orientation ↔ Lesson 1 boundary:
 
-The sections below preserve the previous working draft as input. They are **not controlling** until the Orientation ↔ Lesson 1 boundary and Lesson 1's central operation are revised and re-approved.
+```text
+ORIENTATION
+created result / direction
++
+factual current reality
 
-## 2. Previous candidate learning operation — reopened
+→ LESSON 1
+make one relevant part of current reality observable
+through one concrete episode
+```
 
-Previous candidate:
+## 2. Entry conditions
 
-> **Replace a global conclusion about the person or their life with one bounded, reality-anchored episode that can actually be examined.**
+Lesson 1 begins only after Orientation has produced two things.
+
+### 2.1 Participant-owned created result / direction
+
+The learner has identified what they want to create in relation to the body inside the broader course direction.
+
+The formulation need not be perfect or permanent, but it must be concrete enough to organize relevance.
+
+### 2.2 Factual current reality relative to that result
+
+The learner has identified what is currently true in relation to that created result without requiring causal explanation or self-judgment.
+
+Orientation does **not** need to supply an episode.
+
+## 3. One main learning operation
+
+> **Take one relevant part of current reality and make it observable through one bounded concrete episode.**
 
 Compact form:
 
 ```text
-global label / vague problem
-→ one concrete episode
-→ minimum factual description
-→ current position becomes more distinguishable
-```
-
-This is no longer accepted as the starting operation of Lesson 1 without further review.
-
-The revision must first answer whether Lesson 1 should instead begin with a broader operation such as establishing a distinguishable starting position:
-
-```text
 created result / direction
 +
-factual current reality
-→
-what concrete evidence makes this current reality observable?
+current reality
+→ select one relevant part of that reality
+→ locate one concrete episode where it became observable
+→ describe only enough fact to preserve the episode
 ```
 
-Episode localization may remain a tool inside that operation rather than the primary organizing goal.
+This is one operation: **grounding an abstract current-reality statement in observable experience**.
 
-## 3. Architectural issue to resolve
+The episode is a means, not the goal of the course.
 
-The current course structure places created direction + current reality in Orientation and then moves Lesson 1 directly into episode localization.
+## 4. Why this operation belongs first
 
-Owner review identified a methodological risk: for the learner, this may make the practical course feel as though it begins with finding a problem episode. That can shift the course toward problem-solving rather than Fritz-style creative orientation.
+Without this operation, “current reality” can remain an abstract story:
 
-Revision must determine:
+- «я не в форме»;
+- «у меня нет режима»;
+- «я ленивый»;
+- «я не умею восстанавливаться»;
+- «я постоянно срываюсь».
 
-1. whether Orientation remains a separate but mandatory working phase that produces a concrete created result and factual current reality;
-2. whether those operations should instead become the opening and central operation of Lesson 1;
-3. how episode localization should be positioned as evidence about current reality rather than as problem collection;
-4. whether the currently approved five-lesson sequence needs wording changes while preserving five core lessons unless separately re-authorized;
-5. how to retain the template-v3 rule of one main learning operation per lesson without collapsing several unlike operations into Lesson 1.
+Lesson 1 teaches the learner to move from such compression to one inspectable unit of reality.
 
-## 4. Working hypothesis for revision — not approved
+It does not yet teach why the event happened or how to change it.
 
-A stronger Lesson 1 candidate is:
+## 5. Minimum map
 
-> **Create a distinguishable starting position for movement.**
+The lesson needs only two distinctions.
 
-Possible structure:
+### 5.1 Created result ≠ current reality
+
+The desired result is not evidence that it already exists.
+
+Current reality is not a verdict on the created result.
+
+### 5.2 Global statement ≠ concrete episode
 
 ```text
-what I want to create in relation to the body
-+
-what is factually true now
-+
-one concrete piece of reality that makes part of that position observable
+“I am like this / this always happens”
+≠
+what actually happened once, where and when
 ```
 
-Under this hypothesis, an episode is not the lesson's goal. It is one possible instrument for making current reality concrete.
+No additional psychological model is required in Lesson 1.
 
-This remains a working hypothesis and requires explicit Owner approval before it becomes the new brief.
+## 6. Episode-selection rule
 
-## 5. Preserved methodological boundaries
+The learner selects an episode because it helps make **a relevant part of current reality** observable relative to the created result.
 
-Regardless of the final Lesson 1 formulation, the following remain controlling unless separately revised:
+Selection must not default to:
 
-- the course is self-paced and must work without a required teacher or AI;
-- created direction + factual current reality is the course-wide axis;
-- skills, routes and exercises are means rather than substitutes for the created result;
-- facts and interpretations must not be silently collapsed;
+- the worst lapse;
+- the most shameful behavior;
+- the strongest emotional event;
+- alcohol or another salient weak point;
+- whatever seems easiest to moralize.
+
+Successful, neutral and unsuccessful episodes are all admissible if they reveal relevant current reality.
+
+## 7. Minimum factual episode fields
+
+The working form should remain small.
+
+Required fields:
+
+1. **What happened?**
+2. **When / where did it happen?**
+3. **What relevant factual conditions are known?**
+4. **What did I actually do or not do?**
+5. **What immediate observable result followed?**
+
+`Не знаю / не помню / не наблюдал` is valid.
+
+The form must not force the learner to invent missing causes.
+
+## 8. Worked example requirement
+
+Before independent application, show one ordinary body-domain example.
+
+The example should demonstrate:
+
+```text
+abstract current-reality statement
+→ one relevant concrete episode
+→ minimum factual description
+```
+
+Prefer low-drama material such as:
+
+- planned movement or training;
+- sleep / recovery;
+- food organization;
+- physical workload;
+- preparation for a body-related action;
+- a normal choice that was actually realized.
+
+The example should not imply that the course is primarily about failure prevention.
+
+## 9. Independent in-lesson application
+
+The learner:
+
+1. returns to their created result;
+2. identifies one relevant current-reality statement;
+3. selects one concrete episode that makes part of it observable;
+4. fills the minimum factual fields;
+5. performs the reality check below.
+
+The lesson structure itself holds the boundary. A teacher or AI is not required.
+
+## 10. Reality check
+
+The learner checks:
+
+- Is this one concrete event rather than a description of my whole life?
+- Can I say when / where it happened?
+- What here is observable fact?
+- What have I added as interpretation?
+- What do I genuinely not know?
+- Does this episode actually illuminate something relevant to my created result and current reality?
+- Have I started explaining causes or patterns that belong to later lessons?
+
+This is a factual quality check, not a score.
+
+## 11. Field practice
+
+Field practice is the second part of Lesson 1.
+
+Task:
+
+> **When an ordinary relevant situation naturally occurs, preserve one bounded episode as factual current-reality material.**
+
+Do not require the learner to:
+
+- prevent the first reaction;
+- change behavior;
+- choose a better alternative;
+- interrupt automaticity;
+- observe themselves continuously all day;
+- create a difficult situation deliberately.
+
+The field task trains the same operation as the lesson: **make current reality observable in one event**.
+
+## 12. Observable learning trace
+
+At Lesson 1 completion, the learner should possess:
+
+1. the Orientation outputs:
+   - created result / direction;
+   - factual current reality;
+2. one bounded episode that makes a relevant part of current reality observable;
+3. one additional field episode if naturally available before Lesson 2.
+
+The minimum mandatory Lesson 1 artifact is **one usable factual episode**.
+
+## 13. Lesson 2 handoff
+
+Lesson 1 stops once an episode is sufficiently bounded and factual.
+
+Lesson 2 receives that episode and asks a different question:
+
+> **Из каких различимых звеньев складывалось это продолжение?**
+
+Therefore Lesson 1 must **not** perform:
+
+- causal reconstruction;
+- hidden-cause search;
+- need identification;
+- full state-regulation analysis;
+- selection of alternative behavior;
+- participation-point training;
+- consequence-feedback analysis of a changed action;
+- repeating-pattern / scenario analysis.
+
+## 14. Williams / Millman / Fritz alignment
+
+### Fritz
+
+The lesson remains subordinate to:
+
+```text
+created result
++
+current reality
+```
+
+The episode exists to make current reality more concrete, not to turn the course into problem removal.
+
+### Millman
+
+The learner leaves abstract self-story and returns to ordinary lived reality. The field task uses naturally occurring life rather than purely retrospective theory.
+
+Lesson 1 does not force action change before the learner has learned to see what actually happened.
+
+### Williams
+
+The learner receives one level-appropriate tool: a bounded episode as a unit of observation.
+
+The lesson does not introduce broader underlying-structure or Stage 2 pattern analysis.
+
+## 15. Safety and epistemic boundaries
+
+- fact ≠ interpretation;
 - unknown is valid;
-- the learner must not be pushed toward the worst, most shameful or most dramatic behavior;
-- Stage 1 must not begin global repeating-pattern or underlying-structure diagnosis;
-- behavior change, participation-point training and full consequence-feedback cycles must not be smuggled into Lesson 1 merely for completeness;
-- ordinary life provides reality contact, but field work must match the actual operation of the revised lesson;
-- safety and appropriate professional support take priority over course exercises.
+- no hidden cause is assigned as fact;
+- no worst-failure selection rule;
+- no permanent attention to the weakest behavior;
+- no unsafe or deliberately provocative field task;
+- appropriate support may override the exercise;
+- late noticing does not invalidate the episode.
 
-## 6. Material preserved from the prior draft as reference only
+## 16. Acceptance criteria for the brief
 
-The following may be reused if they remain appropriate after the architectural revision:
+This brief is ready for approval if the Owner agrees that:
 
-- a bounded episode as a useful unit of observation;
-- minimum factual episode fields: what happened; when/where; relevant known conditions; realized action/inaction; immediate observable result;
-- `unknown / I do not remember` as a valid field state;
-- ordinary low-drama body-domain examples;
-- prewritten `if → then` branches for self-paced drift correction;
-- a short reality-check rather than learner scoring;
-- no deliberate creation of a lapse or unsafe situation;
-- the output of Lesson 1 should become usable input for Lesson 2.
+1. Orientation ends with `created result + factual current reality` and does not require episode selection.
+2. Lesson 1 has exactly one main operation: grounding one relevant part of current reality in one bounded episode.
+3. The episode is a tool for observing current reality, not the organizing goal of the course.
+4. Lesson 1 requires no behavior change.
+5. Lesson 1 ends before explanation of the episode's functional chain.
+6. Its artifact is usable as the direct input to Lesson 2.
+7. The course remains self-paced and preserves the five-core-lesson sequence.
 
-These items are subordinate to the revised Lesson 1 purpose and may be changed or removed.
+## 17. Authorization boundary
 
-## 7. Revision acceptance questions
+Approval of this brief would authorize writing a new learner-facing Lesson 1 under template v3.
 
-Before the next version can return for Owner review, it must answer clearly:
+It would **not** authorize:
 
-1. What exactly is the participant creating in Lesson 1?
-2. What does “current reality” mean operationally for this lesson?
-3. Is Orientation informational, practical, or part of Lesson 1?
-4. What is the **one main operation** of Lesson 1?
-5. Why is episode localization inside or outside that operation?
-6. What observable result remains at the end of Lesson 1?
-7. How does that result become the input for Lesson 2?
-8. How does the lesson avoid beginning from “what is wrong with me?”
-9. How does the lesson preserve Fritz's created-result/current-reality axis while remaining compatible with Millman's action/reality contact and Williams's level-appropriate maps?
-10. Does the revised design still preserve the approved five-core-lesson structure, or is a separate structure revision decision required?
-
-## 8. Authorization boundary
-
-This return-for-revision decision authorizes only redesign of the Lesson 1 work brief and, where necessary for that redesign, analysis of the Orientation ↔ Lesson 1 boundary.
-
-It does **not** authorize:
-
-- writing a new learner-facing Lesson 1;
 - Lesson 2 development;
-- Stage 2 or Foundation S5;
-- external pilot execution;
-- trainer implementation;
+- changing the five-lesson sequence;
+- Stage 2 / Foundation S5;
 - questionnaire redesign;
-- claims of course efficacy.
+- external pilot;
+- trainer implementation;
+- efficacy claims.
