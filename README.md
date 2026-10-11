@@ -39,29 +39,25 @@ Pilot / Reality — эмпирическая проверка и право оп
 ## Текущее состояние
 
 <!-- SP:CURRENT:BEGIN -->
-Дата синхронизации: **2026-10-07**.
+Дата синхронизации: **2026-10-11**.
 
 Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Рассмотреть и утвердить либо доработать первый урок первой ступени.**
+**Следующий шаг: Пересмотреть границу Orientation ↔ Урок 1 в логике Фрица и переработать brief Урока 1.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_1.md` — `draft_for_owner_review`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `reopened_for_revision`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
-
-Шаблон: `SP-COURSE-S1-TEMPLATE-001` v2 — `approved`.
-
-Lesson 1 brief: `SP-COURSE-S1-L1-BRIEF-001` — `approved`.
 
 Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
 
 Capability: `SP-TR-S1-CAP-002`.
 
-Опросник: `SP-DTQ-002` — `draft_for_owner_review`; отдельная телеметрия.
+Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-07_LESSON_1_DRAFT_FOR_REVIEW.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_RETURNED_FOR_REVISION.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 
