@@ -45,9 +45,9 @@ Pilot / Reality — эмпирическая проверка и право оп
 
 Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
 
-**Следующий шаг: Пересмотреть границу Orientation ↔ Урок 1 в логике Фрица и переработать brief Урока 1.**
+**Следующий шаг: Написать новый learner-facing Урок 1 по утверждённому brief v3.**
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `reopened_for_revision`.
+Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `approved`.
 
 Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
 
@@ -57,7 +57,7 @@ Capability: `SP-TR-S1-CAP-002`.
 
 Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_RETURNED_FOR_REVISION.md`.
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_BRIEF_V3_APPROVED.md`.
 
 Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
 
