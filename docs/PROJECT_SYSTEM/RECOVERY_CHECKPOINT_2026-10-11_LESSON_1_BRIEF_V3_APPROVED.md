@@ -92,6 +92,16 @@ All automatic Selection Point reminders remain disabled.
 
 `SP-DTQ-002` remains withdrawn pending full redesign and is not part of the current course task.
 
+### Persistent repository-write rule
+
+For every repository change, follow `docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md`, section **4.1 — Атомарность связанных изменений репозитория**.
+
+If one logical project change touches SSOT, recovery state, decisions, generated views or any other consistency-coupled files, prepare the complete synchronized set first and publish it to `main` as **one atomic commit**. Do not expose intermediate partially synchronized commits on `main`. If direct atomic publication is not technically possible, use a separate branch and move/merge into `main` only after consistency checks pass.
+
+After publication, verify the consistency workflow before claiming synchronization complete.
+
+**Carry this rule or its canonical protocol reference into every successor recovery checkpoint.**
+
 ## 7. Recovery order
 
 For a new chat, recover active work from:
