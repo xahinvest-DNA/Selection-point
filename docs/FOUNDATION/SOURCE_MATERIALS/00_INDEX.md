@@ -2,14 +2,16 @@
 
 ## Активные рабочие уточнения
 
-`docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md` — owner-approved working proposition «направление → маршрут → действие». Учитывать при ближайшей работе; канонический статус автоматически не повышается. Текущая работа и checkpoint: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
+- `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md` — owner-approved working proposition «направление → маршрут → действие».
+- `29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md` — owner insight + evidence review: обучение как адаптация к среде, simulation/imagery boundary и обязательная отдельная проверка transfer.
 
+Оба материала учитывать в текущей product-design работе; их канонический статус автоматически не повышается. Текущая работа и checkpoint определяются `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
 
 **Статус:** действующий реестр первичных материалов  
-**Дата обновления:** 15 сентября 2026 года  
-**Текущий статус:** `../PROJECT_STATE.yaml`
+**Дата обновления:** 3 ноября 2026 года  
+**Текущий Foundation status:** `../PROJECT_STATE.yaml`
 
-Исходные материалы питают архитектуру, но не становятся каноном автоматически.
+Исходные материалы питают архитектуру и Product Lab, но не становятся каноном автоматически.
 
 ## Зарегистрированные источники
 
@@ -41,6 +43,7 @@
 26. **SP-SRC-026** — `26_2026-09-11_BUTTERFLY_ACTION_INTERNAL_ALIGNMENT_AND_EMERGENT_PATH.md` — Butterfly Action / проявляющаяся траектория.
 27. **SP-SRC-027** — `27_2026-09-11_TRAJECTORY_TIMEFRAMES_DELAYED_FEEDBACK_AND_TEMPORAL_ENDURANCE.md` — временные масштабы, delayed feedback и временная устойчивость выбора.
 28. **SP-SRC-028** — `28_2026-09-15_CHOICE_ACTION_EXECUTION_FEEDBACK_BOUNDARY.md` — owner insight: внутренний выбор ≠ фактически реализованное продолжение ≠ последствия ≠ использованная обратная связь; источник RC-018.
+29. **SP-SRC-029** — `29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md` — environment-first owner insight; scientific boundary for imagery/simulation; separate transfer requirement.
 
 ## SP-SRC-018 — сквозная формула
 
@@ -117,18 +120,44 @@ Owner insight:
 - `../LIBRARIES/CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_DELTA.md`;
 - `../GOVERNANCE/RC-018_CORE_CHOICE_ACTION_FEEDBACK_APPROVAL_ADDENDUM.md`.
 
+## SP-SRC-029 — environment-first working source
+
+Owner insight translated into a bounded working hypothesis:
+
+> **Не объяснение само по себе является основным механизмом изменения, а повторяющийся опыт внутри среды, где выбор имеет последствия и обратную связь.**
+
+Scientific boundary:
+
+```text
+imagined/simulated experience may support learning
+≠ neural/functional identity with real execution
+≠ automatic real-world transfer
+```
+
+Product implication:
+
+```text
+representative simulation
+→ repeated selection
+→ consequences / feedback
+→ varied repetition
+→ separate real-world transfer test
+```
+
+Этот источник не открывает S5 и не изменяет Foundation canon автоматически.
+
 ## Использование источников
 
 ```text
 source material
-→ архитектурная гипотеза
+→ архитектурная / продуктовая гипотеза
 → Architect pass
 → Reality Check / counterevidence
 → Red Team / falsification
 → явное решение владельца
-→ full theory + canonical + delta / zero-delta
+→ approved layer only when explicitly promoted
 ```
 
 ## Текущая граница
 
-**SP-S4-P13 утверждён. Ступень 4 завершена полностью. RC-018 утверждён как cross-cutting boundary. SP-S5-P01 не открыт.**
+**SP-S4-P13 утверждён. Ступень 4 завершена полностью. RC-018 утверждён как cross-cutting boundary. SP-S5-P01 не открыт. Environment-first является текущим Product Lab/project route и не меняет этот Foundation status.**
