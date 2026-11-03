@@ -3,36 +3,30 @@
 **ID:** SP-OPS-002  
 **Status:** approved  
 **Approved:** 15 September 2026  
-**Supersedes:** SP-OPS-001  
-**Scope:** project operating model for methodology, research, synthesis, artifact production, technical execution and reality-based validation without dependency on ChatGPT Work.
+**Updated:** 3 November 2026  
+**Scope:** project operating model for methodology, research, synthesis, artifact production, technical execution and reality-based validation without dependency on a specific ChatGPT mode.
 
 ## 1. Purpose
 
 Selection Point must remain operable without a separate execution mode whose usage limits can block the project.
 
-The project therefore uses one persistent Chat as both:
-- methodological architect;
-- research / synthesis / project operator for all non-technical work.
-
-The separation that matters is **epistemic and governance separation**, not product-mode separation.
-
-The operating principle is:
+One persistent Chat may perform methodological architecture, research, synthesis, project operation and bounded repository work. The separation that matters is **epistemic and governance separation**, not product-mode separation.
 
 ```text
 Owner
   ↓
 Chat — methodology + research + synthesis + bounded artifact production
   ↓
-Codex — only when approved technical implementation is required
+Simulation — bounded repeated experience when authorized
   ↓
-Pilot / Reality — actual realization, consequences, contradictions, evidence
+Reality — actual realization, consequences, contradictions, transfer evidence
   ↓
 Chat — evidence assembly + interpretation + Red Team
   ↓
 Owner — approve, reject or revise
 ```
 
-There is no required handoff to ChatGPT Work.
+Codex is inserted only when separately authorized software implementation is actually required.
 
 ## 2. Roles and authority
 
@@ -41,206 +35,171 @@ There is no required handoff to ChatGPT Work.
 Owns project direction and final decisions.
 
 Authority:
-- approve or reject methodological decisions;
+- approve or reject methodological/product decisions;
 - open or keep closed project gates;
-- approve movement between stages/tasks;
+- approve movement between tasks/routes;
 - authorize changes to canon, Product Lab or pilot scope through the relevant governance layer.
 
-An item remains provisional until explicit owner approval such as `утверждаем`, unless it is a purely mechanical repository synchronization that does not change meaning.
+An item remains provisional until explicit owner approval such as `утверждаем`, except purely mechanical synchronization that does not change meaning.
 
 ### 2.2 Chat — Methodological Architect + Project Operator
 
-Chat owns all non-technical project work that does not require a separate software implementation environment.
-
 Responsibilities:
+- reconstruct repository/context from SSOT;
 - conceptual discussion and methodological architecture;
 - critical analysis and Red Team;
-- repository/context reconstruction from SSOT;
-- research across approved project sources;
-- external research when materially useful;
-- synthesis, comparison and contradiction mapping;
-- preparation of research packets;
-- preparation of learning/research/analysis artifacts;
-- evidence assembly and review packets;
-- repository audits and synchronization;
-- bounded document changes through available repository tools;
-- formulation of technical requirements before Codex handoff;
-- interpretation of evidence without upgrading uncertainty into stronger claims.
+- external and internal research where materially useful;
+- prepare/revise bounded artifacts;
+- audit synchronization and contradictions;
+- assemble and interpret evidence without upgrading uncertainty;
+- formulate implementation requirements only after the product meaning is stable enough.
 
 Chat may propose but may not silently approve its own methodological proposal on behalf of Owner.
 
 Chat has no authority to:
-- change approved Selection Point canon without Owner approval through the relevant governance process;
-- declare a hypothesis confirmed merely because it is coherent;
-- declare a participant or Owner to have mastered a stage without the required evidence/review;
+- change approved Foundation canon without the relevant owner decision;
+- declare a hypothesis confirmed because it is coherent;
+- treat simulator completion or preferred answers as proof of Selection Capacity;
+- treat simulator improvement as real-world transfer;
 - convert correlation or temporal order into causation;
-- treat questionnaire completion or reminder response as proof of Selection Capacity;
-- open the next Foundation stage, Product Lab gate or external-user pilot without Owner authorization;
-- promote Health Lab findings into Product Lab or Foundation without explicit review.
+- open Foundation Stage 5, SP-LAB-002, external pilot or software implementation without Owner authorization;
+- promote private evidence into Product Lab/Foundation without explicit review;
+- expand V0 merely because a new idea is interesting.
 
 ### 2.3 Codex — Technical Executor
 
-Codex is optional and is used only when actual software/repository engineering requires a coding execution environment beyond ordinary bounded repository editing.
+Codex is optional and is used only after software implementation is explicitly opened.
 
-Responsibilities:
-- implement approved software requirements;
-- create or modify application code, schemas, parsers, storage, dashboards, tests, CI and automation;
-- verify implementation consistency against an approved technical brief.
+It may implement approved code, schemas, parsers, storage, dashboards, tests, CI and automation. It does not define methodological meaning.
 
-Codex does not define methodological meaning. Terms such as `SelectionPointEvent`, `FeedbackRecord`, stage capability or evidence status must be defined upstream in Chat before implementation.
+### 2.4 Simulation — Experience Layer
 
-### 2.4 Pilot / Reality — Validation Layer
+Simulation is a product mechanism, not proof.
 
-Reality is not an execution agent and has no obligation to validate Selection Point.
+Its role is to create repeated representative selection situations and expose:
+- relevant cues/constraints;
+- available continuations;
+- selected vs realized continuation;
+- immediate/delayed consequences;
+- trajectory effects;
+- feedback;
+- varied repetition and prompt fading.
 
-Its role is to return:
+Simulation must not become a disguised morality quiz. Success inside simulation is an observation about simulation performance only.
+
+### 2.5 Reality — Validation Layer
+
+Reality returns:
 - actual realization or non-realization;
 - consequences;
 - unexpected events;
 - contradictions;
 - missing observability;
-- evidence that may weaken, revise or falsify a working model.
+- transfer / non-transfer evidence;
+- evidence that may weaken or falsify the working model.
 
 Reality outranks explanatory elegance.
 
-## 3. Epistemic separation inside one Chat
-
-Because research, synthesis and methodological review now occur in the same Chat, the project must preserve explicit epistemic labels rather than relying on separate product modes.
+## 3. Epistemic labels
 
 Use these labels where material:
 
 - **APPROVED** — explicit approved project meaning;
-- **DERIVED** — conservative synthesis directly implied by approved material;
-- **HYPOTHESIS** — candidate explanation/grouping requiring review or evidence;
+- **DERIVED** — conservative synthesis implied by approved material;
+- **HYPOTHESIS** — candidate explanation requiring review/evidence;
 - **OPEN** — unresolved question;
-- **CONTRADICTION** — tension that cannot safely be smoothed over;
+- **CONTRADICTION** — tension that must not be smoothed over;
 - **ILLUSTRATION** — example that explains but does not prove;
 - **OBSERVED** — directly recorded fact/behavior;
 - **SELF-REPORT** — participant account;
-- **INTERPRETATION** — project or analyst reading of evidence.
+- **INTERPRETATION** — analyst/project reading of evidence.
 
-A change of label requires an explicit reason and, where it changes methodology, Owner approval.
+A label change that alters methodology requires an explicit reason and, where appropriate, Owner approval.
 
-## 4. Active route and reference artifacts
+## 4. Active route
 
-The active route is read from `PROJECT_SYSTEM_STATE.yaml.current_work`.
-The course-first reset of 20 September supersedes Gate progression as the development route.
-The A–H descriptions below are a research reference taxonomy, not an active sequence or a prerequisite for course production.
+The active route is always read from `PROJECT_SYSTEM_STATE.yaml.current_work`.
 
-## 5. Historical Gate artifact responsibilities (reference only)
+As of 3 November 2026:
+- the active route is `stage_1_environment_first_development`;
+- `DECISION_ENVIRONMENT_FIRST_RESET_2026-11-03.md` supersedes course-first as the active product route;
+- `docs/COURSE/` is historical/reference and a scenario/content source;
+- A–H training artifacts are research/reference inputs, not an active prerequisite sequence;
+- no software implementation or external pilot is authorized.
 
-### Gate A — Capability definition
+## 5. Environment-first work sequence
 
-Chat + Owner define what practically available human capability should exist after the stage.
-
-Output: **Stage Capability Spec**.
-
-### Gate B — Stage Research Packet
-
-Chat reconstructs the complete approved stage context and assembles:
-- canonical propositions;
-- relevant decisions and Reality Checks;
-- examples and source material;
-- contradictions;
-- open questions;
-- candidate psychological mechanisms;
-- evidence boundaries.
-
-Chat does not rewrite canon in this step.
-
-Output: **Stage Research Packet**.
-
-### Gate C — Psychological Mechanism Map
-
-Chat proposes the minimum coherent set of trainable mechanisms and runs Red Team against the proposal. Owner approval is required before the map becomes approved methodology.
-
-Output: **Psychological Mechanism Map**.
-
-### Gate D — Learning Units
-
-Chat turns approved mechanisms into learning units while preserving evidence boundaries and returning each unit to reality-facing action.
-
-Output: **Learning Units**.
-
-### Gate E — Practice Protocol
-
-Every practice must connect learning to a real event chain:
+The authorized design sequence is:
 
 ```text
-noticed
-→ distinguished
-→ selected continuation
-→ realized / partially realized / consciously did not act / did not realize
-→ consequence
-→ noticed / interpreted data
-→ feedback used or not used
-→ model preserved or updated
+one target capability
+→ scenario grammar
+→ 10–15 representative scenarios
+→ manual/simplest viable environment
+→ one bounded reality-transfer experiment
+→ evidence + contradictions
+→ Owner review
 ```
 
-Output: **Practice Protocol**.
+At the current checkpoint only the first two design objects are authorized. Later steps require the state/owner gates recorded in `PROJECT_SYSTEM_STATE.yaml`.
 
-### Gate F — Observability / Measurement Spec
+## 6. Evidence contract
 
-Chat defines what information is required to evaluate the training process while preserving:
+Preserve these distinctions:
 
 ```text
-questionnaire = telemetry
-questionnaire ≠ Selection Point
-measurement adherence ≠ target-domain realization
-measurement adherence ≠ Selection Capacity proof
+selected continuation ≠ realized continuation
+simulated realization ≠ real-world realization
+scenario completion ≠ Selection Capacity proof
+simulator improvement ≠ real-world transfer
+questionnaire adherence ≠ target-domain behavior
 ```
 
-Output: **Observability / Measurement Spec**.
+Theory vocabulary is not a mastery criterion.
 
-### Gate G — Pilot evidence
+## 7. Scientific boundary
 
-Reality produces events and consequences. Chat assembles the evidence packet while preserving:
-- facts vs self-report vs interpretation;
-- selected vs realized continuation;
-- prompt exposure;
-- consequence vs used feedback;
-- alternative explanations;
-- contradicting cases;
-- unknown / not_observed fields.
+Do not use “the brain does not distinguish simulated/imagined and real experience” as a project fact.
 
-Output: **Pilot Evidence Packet**.
+The active working hypothesis is narrower:
+- simulated practice can support learning;
+- immersion is not assumed to be the mechanism;
+- representative information/action structure matters;
+- transfer must be checked in reality.
 
-### Gate H — Stage Review
+Source: `docs/FOUNDATION/SOURCE_MATERIALS/29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md`.
 
-Chat performs interpretation and Red Team; Owner approves, rejects or revises the stage package.
-
-Completion of the educational package does not itself open the next Foundation stage.
-
-Output: **Stage Review**.
-
-## 6. Tool-use boundary
+## 8. Tool-use boundary
 
 Tool choice is implementation detail, not a project authority layer.
 
-- **Chat + repository/web/file tools:** default for methodology, research, synthesis, audits, documents, evidence packets and bounded repository edits.
-- **Codex:** only for approved technical/software implementation that materially benefits from a coding execution environment.
-- **Pilot / Reality:** empirical contact.
+- **Chat + repository/web/file tools:** methodology, research, synthesis, audits, documents, evidence packets and bounded repository edits.
+- **Codex:** only after approved technical/software implementation.
+- **Simulation:** only to the extent authorized by the current route.
+- **Reality:** empirical contact.
 
-No project step may depend on access to ChatGPT Work.
+If a tool is unavailable or rate-limited, project meaning and continuity must remain recoverable from repository SSOT.
 
-If a tool is unavailable or rate-limited, the project should continue using the ordinary Chat and repository SSOT unless the task itself is technically impossible without that tool.
+## 9. Continuity across chats
 
-## 7. Continuity across chats
+Durable state lives in the repository, not in a conversation or product mode.
 
-Durable state lives in the repository, not in a specific conversation or mode.
+A new Chat reconstructs context in the order defined in `PROJECT_SYSTEM_STATE.yaml.new_chat_bootstrap.read_first`.
 
-A new Chat reconstructs context from:
+The first two documents are always:
 1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
-2. the current recovery checkpoint;
-3. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`;
-4. this operating model;
-5. task-specific SSOT.
+2. the current recovery checkpoint.
 
-Long tasks may be split across chats by committing intermediate artifacts/status to the repository. No separate Work handoff is required.
+Older course/Gate artifacts may not override the active route merely because they contain earlier approvals.
 
-## 8. Current authorization
+## 10. Current authorization
 
-Read `PROJECT_SYSTEM_STATE.yaml.current_work`, the selected recovery checkpoint and `active_working_inputs`.
-Only their current owner-approved route controls work. Course structure approval, template approval and execution permission are distinct.
+Read `PROJECT_SYSTEM_STATE.yaml.current_work`, the current recovery checkpoint and `active_working_inputs`.
 
-The course-first reset does not open Foundation S5, SP-LAB-002, an external pilot or trainer implementation. Historical approvals do not authorize suspended execution.
+Current authorization is **design/specification of the V0 capability and scenario grammar only**.
+
+The environment-first reset does not open:
+- Foundation Stage 5;
+- SP-LAB-002;
+- external-user pilot;
+- software implementation.
