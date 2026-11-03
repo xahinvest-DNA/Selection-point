@@ -1,155 +1,104 @@
 # Selection Point
 
-**Selection Point** — самостоятельная система восстановления способности выбора.
+Selection Point — проект о восстановлении и развитии практически доступной способности выбирать продолжение в реальной ситуации и превращать выбранное продолжение в действие с обратной связью.
 
-## Project system
+С 3 ноября 2026 года активная продуктовая гипотеза — **environment-first**: не курс как основной механизм, а ограниченная адаптивная среда / симулятор, в которой человек многократно сталкивается с репрезентативными ситуациями, делает выбор, видит последствия и затем проверяет перенос различения в реальность.
 
-Selection Point рассматривается как **один проект с несколькими уровнями и repository nodes**, а не как набор независимых проектов.
+Это изменение не переписывает утверждённый Foundation canon. Старые course/training artifacts сохраняются как история и исследовательское сырьё.
 
-Управляющий контур: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` и `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`.
-
-Активная операционная модель: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md` (`SP-OPS-002`).
-
-Текущая топология:
-
-```text
-Selection-point (public)
-├─ Foundation / Canon
-├─ Product Lab
-└─ Project Control Plane
-       ↓ contracts
-Selection-point-health-lab (private)
-└─ SP-HLAB-001 / owner self-pilot evidence node
-       ↑ de-identified findings / falsification signals only
-```
-
-`Selection-point-health-lab` хранит приватные longitudinal raw-data, локальные reviews и рабочие гипотезы. Он не имеет права автоматически менять Product Lab или канон. Raw personal data обратно в публичный репозиторий не переносятся.
-
-Рабочий контур проекта:
-
-```text
-Owner — направление и окончательное решение
-Chat — методология + research + synthesis + audits + bounded artifacts + evidence review + Red Team
-Codex — только утверждённая техническая реализация, когда она действительно нужна
-Pilot / Reality — эмпирическая проверка и право опровергнуть модель
-```
-
-Отдельный режим ChatGPT Work **не является частью активной системы и не требуется ни для одного шага проекта**. Устойчивость проекта важнее зависимости от отдельного режима или его лимитов.
-
-## Текущее состояние
+## Current state
 
 <!-- SP:CURRENT:BEGIN -->
-Дата синхронизации: **2026-10-11**.
+Дата синхронизации: **2026-11-03**.
 
 Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
-Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
+Продуктовое направление: **Создать среду, в которой способность выбора становится практически доступнее через повторяющиеся репрезентативные ситуации, последствия, обратную связь и проверяемый перенос в реальность.**.
 
-**Следующий шаг: Написать новый learner-facing Урок 1 по утверждённому learner journey v4.**
+Маршрут: `stage_1_environment_first_development`; цель: `define_and_build_minimal_adaptive_selection_environment`.
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `approved`.
+**Следующий шаг: Зафиксировать одну тренируемую способность V0, сценарную грамматику 10–15 репрезентативных ситуаций и минимальные признаки переноса из симуляции в реальность.**
 
-Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
+Активная архитектура: `docs/PRODUCT_LAB/ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md` — `approved_direction_working_architecture`.
 
-Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
+V0: одна способность; 10–15 сценариев; 1 эксперимент переноса в реальность; ручная подача допустима.
 
-Capability: `SP-TR-S1-CAP-002`.
+Product thesis: `docs/PRODUCT_LAB/PRODUCT_THESIS.md`.
 
-Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
+Foundation: последний утверждённый параметр `SP-S4-P13`; Stage 5 — `unopened`.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_JOURNEY_V4_APPROVED.md`.
+Capability reference: `SP-TR-S1-CAP-002`.
 
-Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
+Опросник: `SP-DTQ-002` — `withdrawn_for_redesign`; телеметрия, не механизм продукта.
 
-Gate-маршрут активен: `false`; V0 execution: `false`.
+Курс: `superseded_as_active_route`; роль — `historical_reference_and_scenario_source`.
 
-Закрытые области: `stage_5: unopened`; `product_lab_002: unopened`; `external_user_pilot: unopened`; `trainer_implementation: unopened`.
+Реализация ПО: `false`; внешний пилот: `false`.
+
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-11-03_ENVIRONMENT_FIRST_RESET.md`.
+
+Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`; `docs/FOUNDATION/SOURCE_MATERIALS/29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md`.
+
+Научная граница: успех в симуляции не доказывает перенос; реальный перенос фиксируется отдельно.
 
 Источники: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`; `docs/FOUNDATION/PROJECT_STATE.yaml`; `docs/PRODUCT_LAB/LAB_STATE.yaml`.
 <!-- SP:CURRENT:END -->
 
-## Центральная идея
-
-> **Контроль предполагает возможность заранее получить желаемый результат. Создание происходит независимо от контроля.**
-
-Уточнённый core cycle:
+## Active product loop
 
 ```text
-увидеть фактическую текущую позицию
-→ различить / выбрать направление
-→ выбрать доступное продолжение
-→ фактически реализовать продолжение
-→ получить последствия / ответ реальности
-→ извлечь обратную связь
-→ оказаться в новой фактической позиции
-→ снова увидеть
-→ повторить цикл
+representative situation
+→ perceived position and constraints
+→ Selection Point
+→ available continuations
+→ selected continuation
+→ realized / non-realized continuation
+→ consequences
+→ feedback
+→ varied next situation
 ```
 
-## Сквозные границы
-
-> **Модель остаётся рабочей только пока реальность сохраняет возможность её изменить.**
+Validation requires a second loop:
 
 ```text
-влияние ≠ контроль
-участие в причинности ≠ единственная причина
-создание траектории ≠ предопределение результата
+simulation
+→ bounded real-world experiment
+→ factual realization / non-realization
+→ real consequence
+→ review
+→ next simulation
 ```
 
-RC-018 добавляет:
+## V0 anti-expansion boundary
 
-> **Внутренне выбранное продолжение не равно фактически реализованному продолжению.**
+V0 is deliberately limited to one target capability, 10–15 manually authorable scenarios and one real-world transfer experiment. VR, AI, a platform, gamification and a full curriculum are not prerequisites.
 
-```text
-выбрать ≠ сделать
-сделать ≠ получить желаемое
-последствия ≠ автоматически использованная обратная связь
+## Project authority
+
+Read in this order for the active route:
+
+1. `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`
+2. `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-11-03_ENVIRONMENT_FIRST_RESET.md`
+3. `docs/PROJECT_SYSTEM/DECISION_ENVIRONMENT_FIRST_RESET_2026-11-03.md`
+4. `docs/PRODUCT_LAB/ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md`
+5. `docs/PRODUCT_LAB/PRODUCT_THESIS.md`
+6. `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md`
+
+Foundation authority remains under `docs/FOUNDATION/` and is not silently changed by Product Lab decisions.
+
+## Historical/reference layers
+
+- `docs/COURSE/` — previous course-first route; scenario/content source only unless explicitly reactivated.
+- `docs/TRAINING/` — capability, progression, practice and measurement research; reference input, not active Gate progression.
+- `docs/CONTENT/` and older prototype material — legacy unless another current manifest explicitly promotes it.
+
+## Consistency
+
+The repository uses strict manifests and generated current-state views. Run:
+
+```bash
+python scripts/check_project_consistency.py
+python -m unittest discover -s tests
 ```
 
-Неисполненный выбор остаётся реальным внутренним фактом, но не получает внешней проверки как неслучившееся действие.
-
-## Утверждённый SP-S4-P13
-
-> **Выбор совершается в моменте. Траектория обнаруживается во времени.**
-
-Ловушка:
-
-> **Ошибка — считать момент достаточным масштабом для оценки траектории.**
-
-Корректирующая формула:
-
-> **Прошлое не должно определять следующий выбор, но релевантная история должна иметь право изменить описание текущей позиции.**
-
-RC-018 уточняет:
-
-> **Внутренние выборы показывают направление намерения; фактически реализованные продолжения участвуют в построении фактической траектории.**
-
-## Граница следующего уровня
-
-```text
-S4:
-выбор / recovery в фактической позиции
-+
-trajectory-level feedback
-
-S5 candidate:
-система условий, формирующая вероятные будущие позиции
-```
-
-Полная архитектура S5 ещё не открыта.
-
-## Точки входа
-
-Начните с `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` → `new_chat_bootstrap.read_first`.
-Это единственный список обязательного восстановления активной работы.
-
-По задаче:
-- архитектура: `docs/FOUNDATION/PROJECT_STATE.yaml` и `PROJECT_OPERATING_PROTOCOL.md`;
-- управление: `docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` и `SP_CHAT_OPERATING_MODEL.md`;
-- курс: `docs/COURSE/STAGE_1_EFFECTIVE_BODY_COURSE_STRUCTURE.md`, `STAGE_1_LESSON_TEMPLATE.md` и текущий lesson artifact из SSOT;
-- Lab: `docs/PRODUCT_LAB/LAB_STATE.yaml`;
-- техника: `docs/CODEX_TASKS.md`;
-- напоминания: `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`;
-- межрепозиторный контракт: `docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` и `HEALTH_LAB_NODE_CONTRACT.md`.
-
-Текущий блок выше генерируется командой `python scripts/render_project_status.py`.
+The checker must fail if the course-first route silently regains execution authority, if implementation/pilot gates open without an owner decision, if V0 expands past its approved boundary, or if simulator performance is treated as proof of real-world transfer.
