@@ -1,33 +1,41 @@
-# CURRENT_STATE
+# Selection Point — Current State
 
-Производная оперативная карточка; редактируется через системный SSOT и генератор.
+This file is a generated projection of the active manifests. Do not use historical checkpoints to override this view.
 
 <!-- SP:CURRENT:BEGIN -->
-Дата синхронизации: **2026-10-11**.
+Дата синхронизации: **2026-11-03**.
 
 Направление: **Системно выбирать и фактически совершать действия, которые сохраняют здоровье, повышают физическую эффективность и расширяют возможности тела в будущем.**.
 
-Маршрут: `stage_1_course_first_development`; цель: `build_effective_stage_1_course`.
+Продуктовое направление: **Создать среду, в которой способность выбора становится практически доступнее через повторяющиеся репрезентативные ситуации, последствия, обратную связь и проверяемый перенос в реальность.**.
 
-**Следующий шаг: Написать новый learner-facing Урок 1 по утверждённому learner journey v4.**
+Маршрут: `stage_1_environment_first_development`; цель: `define_and_build_minimal_adaptive_selection_environment`.
 
-Артефакт: `docs/COURSE/STAGE_1_LESSON_1_WORK_BRIEF.md` — `approved`.
+**Следующий шаг: Зафиксировать одну тренируемую способность V0, сценарную грамматику 10–15 репрезентативных ситуаций и минимальные признаки переноса из симуляции в реальность.**
 
-Структура: `SP-COURSE-S1-STRUCT-003` — `approved`; 5 уроков, ориентация и интеграция отдельно.
+Активная архитектура: `docs/PRODUCT_LAB/ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md` — `approved_direction_working_architecture`.
 
-Foundation: последний утверждённый параметр `SP-S4-P13`; следующий кандидат `SP-S5-P01` — `unopened`.
+V0: одна способность; 10–15 сценариев; 1 эксперимент переноса в реальность; ручная подача допустима.
 
-Capability: `SP-TR-S1-CAP-002`.
+Product thesis: `docs/PRODUCT_LAB/PRODUCT_THESIS.md`.
 
-Опросник: `SP-DTQ-002` — `withdrawn_pending_full_redesign`; отдельная телеметрия.
+Foundation: последний утверждённый параметр `SP-S4-P13`; Stage 5 — `unopened`.
 
-Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-10-11_LESSON_1_JOURNEY_V4_APPROVED.md`.
+Capability reference: `SP-TR-S1-CAP-002`.
 
-Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`.
+Опросник: `SP-DTQ-002` — `withdrawn_for_redesign`; телеметрия, не механизм продукта.
 
-Gate-маршрут активен: `false`; V0 execution: `false`.
+Курс: `superseded_as_active_route`; роль — `historical_reference_and_scenario_source`.
 
-Закрытые области: `stage_5: unopened`; `product_lab_002: unopened`; `external_user_pilot: unopened`; `trainer_implementation: unopened`.
+Реализация ПО: `false`; внешний пилот: `false`.
+
+Checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-11-03_ENVIRONMENT_FIRST_RESET.md`.
+
+Активные рабочие уточнения: `docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md`; `docs/FOUNDATION/SOURCE_MATERIALS/29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md`.
+
+Научная граница: успех в симуляции не доказывает перенос; реальный перенос фиксируется отдельно.
 
 Источники: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`; `docs/FOUNDATION/PROJECT_STATE.yaml`; `docs/PRODUCT_LAB/LAB_STATE.yaml`.
 <!-- SP:CURRENT:END -->
+
+For route changes, update `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` and then run `python scripts/render_project_status.py`.
