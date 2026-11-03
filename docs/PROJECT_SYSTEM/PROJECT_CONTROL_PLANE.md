@@ -2,7 +2,8 @@
 
 **ID:** SP-PSYS-001  
 **Status:** active  
-**Date:** 15 September 2026
+**Created:** 15 September 2026  
+**Updated:** 3 November 2026
 
 ## 1. Why this exists
 
@@ -22,8 +23,8 @@ The Project Control Plane is the governance layer that keeps these parts synchro
 FOUNDATION / CANON
     ↓ defines allowed meaning and boundaries
 PRODUCT LAB
-    ↓ defines product hypotheses, event/measurement contracts
-EVIDENCE NODES
+    ↓ defines product hypotheses, environment mechanics and evidence contracts
+EVIDENCE NODES / REALITY
     ↓ collect real observations under those contracts
 REVIEWS / PROMOTION PACKETS
     ↑ return de-identified findings, contradictions and falsification signals
@@ -40,30 +41,39 @@ A lower layer may add local detail but may not silently acquire the authority of
 Therefore:
 
 - Foundation owns canonical meaning.
-- Product Lab owns working product hypotheses and research contracts.
+- Product Lab owns working product hypotheses, environment architecture and research contracts.
 - Evidence nodes own their raw data, local normalization, reviews and open hypotheses.
 - An evidence-node hypothesis is not a Product Lab conclusion.
 - A Product Lab conclusion is not automatically canon.
 
-## 4. Contract propagation
+The environment-first reset is a **Product Lab / project-route decision** and does not silently rewrite Foundation.
 
-When an approved upstream boundary changes, every active evidence node must explicitly record its sync state.
+## 4. Current shared contract
 
-Current shared contract:
+Current shared boundaries include:
 
 - RC-018;
 - `REALITY_EVENT_MODEL_V0_2.md`;
-- `PILOT_METRICS_SPEC_V0_1.md`;
 - participant-data boundary;
-- no composite Selection Capacity / trajectory score without validation.
+- no composite Selection Capacity / trajectory score without validation;
+- simulation performance is not evidence of real-world transfer by itself.
 
-For RC-018 the minimum distinction is:
+Minimum distinction:
 
 ```text
 selected continuation
 ≠ realized continuation
 ≠ consequence
 ≠ noticed / used feedback
+```
+
+Environment-first adds:
+
+```text
+simulated continuation
+≠ real-world continuation
+simulator improvement
+≠ demonstrated transfer
 ```
 
 ## 5. Evidence return path
@@ -91,6 +101,8 @@ Every promoted finding must preserve enough traceability to state:
 - what conclusion is allowed;
 - what stronger conclusion is not allowed.
 
+For environment-first work, simulator evidence and real-world transfer evidence must remain distinguishable.
+
 ## 6. No circular synchronization
 
 Repositories do not mirror each other wholesale.
@@ -112,63 +124,61 @@ Legacy raw observations remain as captured. If a newer schema is needed, a norma
 
 ## 8. Measurement adherence boundary
 
-Completing a questionnaire, responding to a reminder, or remaining in the study can be operationally important, but must be stored separately from behavior in the target domain.
+Completing a questionnaire, responding to a reminder, finishing scenarios or remaining in the study can be operationally important, but must be stored separately from behavior in the target domain.
 
 ```text
-measurement adherence ≠ health-domain action
-measurement adherence ≠ Selection Capacity proof
+measurement adherence ≠ target-domain action
+scenario completion ≠ Selection Capacity proof
+simulator success ≠ real-world transfer proof
 prompted realization ≠ unprompted realization
 ```
 
-This prevents the research instrument from validating itself merely because the participant continues using it.
+This prevents the research instrument or simulator from validating itself merely because the participant continues using it.
 
 ## 9. Gates preserved by this decision
 
-Creating or changing the Project Control Plane does **not**:
+Creating or changing the environment-first route does **not**:
 
-- open Stage 5;
+- open Foundation Stage 5;
 - open SP-LAB-002;
 - open an external-user pilot;
+- authorize software implementation;
 - create an efficacy claim;
-- turn the health pilot into a medical protocol;
+- turn the health field into a medical protocol;
 - authorize external participant raw data in the public repository.
 
 ## 10. Active operating model
 
 Project execution follows `SP-OPS-002` in `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
 
-The execution layers are:
-
 ```text
 Owner — direction and final approval
 Chat — methodology + research + synthesis + audits + bounded artifacts + evidence review + Red Team
 Codex — approved technical implementation only when required
-Pilot / Reality — empirical validation layer
+Simulation / Reality — experience and empirical validation layers
 ```
 
 There is no required ChatGPT Work layer. Tool or mode availability must not become a project-level dependency.
 
-The critical separation is maintained through governance and epistemic labels inside Chat rather than by handing work to a separate product mode.
+A task must not be delegated to Codex while it still contains an unresolved methodological decision or while software implementation remains closed.
 
-A task must not be delegated to Codex while it still contains an unresolved methodological decision.
+The active development route is always `PROJECT_SYSTEM_STATE.yaml.current_work`.
 
-The active development route is `PROJECT_SYSTEM_STATE.yaml.current_work`.
-The course-first decision supersedes the former A–H pipeline as the working route; those artifacts remain reference material.
-The questionnaire is separate trajectory telemetry.
+As of 3 November 2026:
+- environment-first supersedes course-first as the active route;
+- `docs/COURSE/` remains historical/reference and a scenario-source layer;
+- A–H training artifacts remain research/reference inputs;
+- the questionnaire remains separate telemetry;
+- software implementation and external pilot remain closed.
 
 ## 11. Sources of truth
 
-Project management protocol: `docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md`.
-It defines the four operating registers, task statuses, the single current next step and the weekly review cadence.
-
-System topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
-
-Project operating model: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
-
-Current recovery checkpoint: read `PROJECT_SYSTEM_STATE.yaml.recovery.current_checkpoint`.
-
-Foundation state: `docs/FOUNDATION/PROJECT_STATE.yaml`.
-
-Product Lab state: `docs/PRODUCT_LAB/LAB_STATE.yaml`.
-
-Health evidence-node local state: `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml`.
+- Active system topology: `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`.
+- Current recovery checkpoint: `docs/PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-11-03_ENVIRONMENT_FIRST_RESET.md`.
+- Active route decision: `docs/PROJECT_SYSTEM/DECISION_ENVIRONMENT_FIRST_RESET_2026-11-03.md`.
+- Active environment architecture: `docs/PRODUCT_LAB/ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md`.
+- Project management protocol: `docs/PROJECT_SYSTEM/PROJECT_MANAGEMENT_PROTOCOL_V1.md`.
+- Project operating model: `docs/PROJECT_SYSTEM/SP_CHAT_OPERATING_MODEL.md`.
+- Foundation state: `docs/FOUNDATION/PROJECT_STATE.yaml`.
+- Product Lab state: `docs/PRODUCT_LAB/LAB_STATE.yaml`.
+- Health evidence-node local state: `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml`.
