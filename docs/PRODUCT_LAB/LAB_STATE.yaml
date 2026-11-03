@@ -1,187 +1,134 @@
-schema_version: 3
-workstream: Selection Point Product Lab
-updated_at: '2026-10-11'
-foundation_sync: RC-018
-project_system_sync: SP-PSYS-001
-status:
-  active_phase: LAB-0
-  active_phase_name: Bootstrap & Definition + owner self-pilot
-  last_approved: SP-LAB-001
-  last_approved_name: Selection Capacity v0 as a working product model for external discovery
-  last_governance_sync: SP-LAB-D004
-  current_task: SP-LAB-PILOT-001
-  current_task_name: Personal Trajectory Pilot v0 — body / health / physical efficiency
-  current_task_status: active_without_automatic_capture
-  next_candidate: SP-LAB-002
-  next_candidate_name: Prepare problem-discovery research design
-  next_status: unopened
-  external_user_pilot_status: unopened
-  explicit_pause: false
-owner_direction:
-  decision_date: 2026-09-12
-  decision: 'Resume Product Lab through an owner self-pilot without opening SP-LAB-002. Use the body/health/physical-efficiency
-    domain as the first real Reality Loop. Prioritize Trajectory Engine, Choice-to-Action evidence and multi-timeframe visibility.
-    Historical reminder Mode B was adopted at this point and was later disabled by Owner on 11 October 2026.'
-latest_owner_decision:
-  decision_date: 2026-10-11
-  decision: Disable all automatic Selection Point reminders. Disable the current questionnaire because it requires a full redesign.
-    Keep questionnaire redesign outside the current course task until explicitly resumed. Continue course-first development from
-    the current approved self-paced architecture and current Lesson 1 brief revision boundary.
-project_system:
-  control_plane_state: docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  control_plane_document: docs/PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md
-  sync_protocol: docs/PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md
-  health_node_contract: docs/PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md
-  health_node:
-    node_id: SP-HLAB-001
-    repository: xahinvest-DNA/Selection-point-health-lab
-    visibility: private
-    role: private_evidence_node
-    local_state: docs/NODE_STATE.yaml
-    status: active_owner_self_pilot
-  authority_rule: Evidence nodes may specialize capture and analysis but may not redefine Product Lab or canonical meaning
-    automatically.
-  upward_promotion_rule: Only de-identified reviewed findings, contradictions and falsification signals may move upward; raw
-    personal data remain in the private evidence node.
-approved_working_model:
-  product_frame: Selection Point may be presented and tested as a trainer of the capacity to choose.
-  selection_capacity: The capacity to preserve or restore participation in one's own action so that relevant reality can still
-    change the model, the next move and, when necessary, the direction itself.
-  short_formula: Реальность всё ещё может тебя поправить.
-  key_research_object: automatic closure
-  minimal_principle: A meaningful mismatch retains the possibility to affect subsequent action.
-  mastery_rule: A single successful episode is insufficient; future validation must examine repeatability, autonomy, context
-    transfer, feedback sensitivity and, where feasible, retention.
-current_product_direction:
-  stronger_frame: A system that connects local choice to trajectory over time and tests the choice through realized continuation
-    and observable consequences.
-  core_chain: fact -> trajectory -> forecast -> selection point -> selected continuation -> realized continuation -> consequence
-    -> observed feedback -> model update
-  critical_rule: Selected continuation is not equivalent to realized continuation. An internal choice remains a real event,
-    but it is not counted as executed until the actual continuation is observed. Conscious non-action may itself be a realized
-    continuation; partial execution is a partial test.
-  current_priority: Reality Loop
-  later_priority: Simulator Loop / serious game after Reality Loop value is demonstrated
-  p0:
-  - Trajectory Engine
-  - Selected-to-Realized Continuation Evidence
-  - multi-timeframe view: episode -> day -> week -> month -> quarter
-  p1:
-  - conditional current/target trajectory and required change
-  - Selection Point Detector
-  - body domain as first validation environment
-  visualization_hypothesis: OHLC may be used only as a time-aggregation visualization after an empirically defensible underlying
-    measure exists; it is not an ontology/model of a person.
+schema_version: 4
+lab: Selection Point Product Lab
+updated_at: '2026-11-03'
+status: active_design_no_external_pilot
+phase: LAB-0
+last_approved_gate: SP-LAB-001
+next_gate: SP-LAB-002
+next_gate_status: unopened
+external_user_pilot_status: unopened
+
+owner_decision:
+  id: SP-PSYS-004
+  date: '2026-11-03'
+  status: approved
+  decision: docs/PROJECT_SYSTEM/DECISION_ENVIRONMENT_FIRST_RESET_2026-11-03.md
+  summary: >-
+    Replace course-first development with an environment-first product route. Build a
+    minimal adaptive selection environment whose mechanism is repeated representative
+    situations, consequences, feedback and separately observed real-world transfer.
+
+active_product_thesis:
+  id: SP-LAB-THESIS-002
+  document: docs/PRODUCT_LAB/PRODUCT_THESIS.md
+  product_form: adaptive_selection_environment
+  primary_mechanism: repeated_experience_consequence_feedback_and_transfer
+  theory_is_primary_mechanism: false
+  hidden_correct_answer_target: false
+
+active_architecture:
+  id: SP-AEA-001
+  document: docs/PRODUCT_LAB/ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md
+  status: approved_direction_working_architecture
+  validation_status: unvalidated
+
+v0_scope:
+  domain: effective_body
+  target_capabilities: 1
+  scenario_count_min: 10
+  scenario_count_max: 15
+  real_world_transfer_experiments: 1
+  manual_delivery_allowed: true
+  software_required: false
+  vr_required: false
+  ai_required: false
+  full_course_required: false
+  external_pilot_authorized: false
+
+current_priority:
+  first: define_single_v0_capability
+  second: define_scenario_grammar
+  third: define_transfer_evidence_boundary
+  after_owner_review: build_manual_v0_if_approved
+
+loops:
+  simulation_loop:
+    status: active_design
+    chain:
+      - representative_situation
+      - perceived_position_and_constraints
+      - selection_point
+      - available_continuations
+      - selected_continuation
+      - simulated_realization_or_non_realization
+      - consequences
+      - feedback
+      - varied_next_situation
+  reality_transfer_loop:
+    status: required_for_validation
+    chain:
+      - simulated_pattern
+      - bounded_real_world_experiment
+      - factual_realization_or_non_realization
+      - real_consequence
+      - review
+      - next_simulation_update
+
 measurement_foundation:
-  event_model: docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
-  metrics_spec: docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
-  participant_data_policy: docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md
-  composite_selection_score_allowed: false
+  reality_event_model: docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
+  selected_is_realized: false
+  simulator_success_proves_transfer: false
+  questionnaire_is_product_mechanism: false
   raw_participant_data_in_public_repo_allowed: false
-  prompt_exposure_must_be_recorded: true
-  measurement_adherence_is_domain_outcome: false
+  fact_self_report_interpretation_must_remain_separate: true
+  causal_claims_from_temporal_order_allowed: false
+
 daily_trajectory_questionnaire:
   id: SP-DTQ-002
-  status: withdrawn_pending_full_redesign
-  document: docs/PRODUCT_LAB/DAILY_TRAJECTORY_QUESTIONNAIRE_V0_2.md
-  role: historical_longitudinal_trajectory_telemetry_draft
-  cadence: none_while_disabled
-  target_burden: historical_2-4_minutes
-  multi_timeframe_target: episode -> day -> week -> month -> quarter -> 6M/1Y
-  composite_score: forbidden
-  measurement_reactivity_visible: true
-  course_mastery_measure: false
-  deployment_status: disabled_not_in_operational_use_pending_full_redesign
-  redesign_required: true
-  redesign_active: false
-active_pilot:
-  id: SP-LAB-PILOT-001
-  document: docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md
-  status: active_without_automatic_capture
-  type: owner_self_pilot
-  evidence_node: SP-HLAB-001
-  evidence_repository: xahinvest-DNA/Selection-point-health-lab
-  domain: body / health / physical efficiency
-  goal: Create a system in which the body preserves health and increases functional efficiency.
-  data_entry_constraint: historical_once_daily_evening_design; automatic questionnaire capture currently disabled
-  reminder_mode: disabled_by_owner
-  automatic_capture_status: disabled_pending_questionnaire_redesign
-  historical_mode_b:
-    evening: 21:30 Review + Plan
-    morning: Plan Recall — return yesterday's decision and first physical steps; do not reopen the whole decision
-    midday: Trajectory Check — on plan / circumstances changed / automatic mode
-  reminder_authority: docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml
-  plan_limit: 3
-  event_model: PositionSnapshot -> SelectionPointEvent -> ChoiceRecord -> RealizationRecord -> ConsequenceRecord -> FeedbackRecord
-    -> ModelUpdateRecord
-  legacy_raw_period:
-    start: 2026-09-12
-    end: 2026-09-14
-    rule: Preserve as captured; do not rewrite to v0.2. Normalize only in a derived layer with source traceability and unknown/not_observed
-      for missing fields.
-pilot_metrics_candidates:
-- Selected-to-Realized Continuation Rate
-- Plan Recall Loss
-- Prompted vs Unprompted Realization
-- Recovery Latency
-- Selected-to-Realized Gap Reasons
-- Repeated Selection-Point Patterns
-sources_of_truth:
-  project_system_state: docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  lab_state: docs/PRODUCT_LAB/LAB_STATE.yaml
-  lab_governance: docs/PRODUCT_LAB/LAB_CHARTER.md
-  architecture_state: docs/FOUNDATION/PROJECT_STATE.yaml
-  architecture_process: docs/FOUNDATION/PROJECT_OPERATING_PROTOCOL.md
-  approved_task_synthesis: docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md
-  active_owner_pilot: docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md
-  reality_event_model: docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
-  pilot_metrics_spec: docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
-  participant_data_policy: docs/PRODUCT_LAB/PARTICIPANT_DATA_POLICY_V0_1.md
-  health_evidence_node_state: xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml
-new_chat_bootstrap:
-  read_in_order:
-  - docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-  - docs/PRODUCT_LAB/LAB_STATE.yaml
-  - docs/PRODUCT_LAB/PERSONAL_TRAJECTORY_PILOT_V0.md
-  - docs/PRODUCT_LAB/REALITY_EVENT_MODEL_V0_2.md
-  - docs/PRODUCT_LAB/PILOT_METRICS_SPEC_V0_1.md
-  - docs/PRODUCT_LAB/SP_LAB_001_SYNTHESIS.md
-  - docs/PRODUCT_LAB/DECISION_LOG.md
-  instruction: Treat Health Lab as the private evidence node of the same project. Automatic questionnaire/reminder delivery is
-    disabled. Do not open questionnaire redesign, SP-LAB-002, Stage 5 or an external pilot automatically.
-constraints:
-  lab_does_not_open_phase_4_to_8: true
-  lab_does_not_modify_canon_directly: true
-  product_language_is_hypothesis_until_tested: true
-  no_course_or_app_definition_in_lab_0: true
-  no_public_content_experiment_in_lab_0: true
-  no_external_user_pilot_in_lab_0: true
-  owner_self_pilot_allowed: true
-  no_efficacy_claim_without_evidence: true
-  do_not_open_SP_LAB_002_without_explicit_owner_direction: true
-  no_medical_claims_from_body_pilot: true
-  do_not_reduce_day_to_binary_success_failure: true
-  selected_continuation_not_equal_realized_continuation: true
-  conscious_non_action_may_be_realized_continuation: true
-  partial_execution_is_partial_test: true
-  selected_realized_gap_is_data_not_moral_failure: true
-  no_composite_selection_capacity_score_without_validation: true
-  raw_external_participant_data_must_not_enter_public_repo: true
-  health_node_cannot_promote_local_hypothesis_automatically: true
-  legacy_raw_records_must_not_be_rewritten: true
-phase_exit_criteria:
-  LAB-0:
-  - product thesis is explicit and falsifiable enough for discovery
-  - canonical-to-product bridge is defined at skeleton level
-  - initial hypothesis register exists
-  - research sequence is defined
-  - owner self-pilot has a traceable event model and measurement specification
-  - evidence node is synchronized with current Project Control Plane contract
-  - no conflict with current Phase 3 governance remains
-sp_lab_002_gate:
-  candidate: SP-LAB-002
-  status: unopened
-  open_only_after_explicit_owner_direction: true
-project_route_authority: docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml
-course_relationship: supporting_telemetry_not_course_prerequisite
-reminder_delivery_state: docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml
+  status: withdrawn_for_redesign
+  role: telemetry_only_if_reintroduced
+  automatic_reminders_active: false
+
+course_relationship:
+  status: historical_reference
+  directory: docs/COURSE
+  role:
+    - scenario_seeds
+    - distinction_library
+    - examples
+    - language_candidates
+    - failure_modes
+  course_execution_authorized: false
+
+training_relationship:
+  status: reference_input
+  directory: docs/TRAINING
+  role:
+    - capability_candidates
+    - progression_hypotheses
+    - prompt_fading_hypotheses
+    - measurement_constraints
+  gate_pipeline_active: false
+
+scientific_boundaries:
+  brain_does_not_distinguish_simulation_and_reality_claim_accepted: false
+  simulation_can_support_learning_working_hypothesis: true
+  immersion_assumed_to_drive_transfer: false
+  real_world_transfer_must_be_observed: true
+  evidence_source: docs/FOUNDATION/SOURCE_MATERIALS/29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md
+
+promotion_boundaries:
+  product_lab_does_not_modify_foundation_canon: true
+  lab_0_does_not_open_foundation_stage_5: true
+  lab_0_does_not_open_external_pilot: true
+  health_or_self_pilot_evidence_does_not_auto_promote: true
+  external_pilot_requires_owner_decision: true
+  software_implementation_requires_owner_decision: true
+
+falsification_signals:
+  - simulator_answer_optimization_without_real_transfer
+  - improvement_only_while_prompts_present
+  - vocabulary_gain_without_practical_difference
+  - constant_external_leader_required
+  - arbitrary_consequences_prevent_stable_learning
+  - platform_required_before_manual_mechanism_test
