@@ -1,111 +1,119 @@
 # Canonical → Product Map
 
-**Статус:** skeleton / LAB-0  
-**Обновлено:** 15 сентября 2026 года  
-**Назначение:** не переводить канон в маркетинг напрямую, а показать, какое пользовательское обучение и наблюдение может быть обосновано утверждённой архитектурой.
+**Status:** active working bridge / LAB-0  
+**Updated:** 3 November 2026  
+**Purpose:** preserve traceability from approved Selection Point meaning to environment mechanics and observable transfer without turning Product Lab hypotheses into canon.
 
-## Правило
+## Rule
 
-Каждая будущая обучающая единица должна иметь трассировку:
+Every V0 scenario family must have a traceable chain:
 
 ```text
-canonical source
+canonical / approved source
 → functional distinction
-→ user capability hypothesis
-→ training event hypothesis
-→ observable change
-→ measurement candidate
+→ target capability hypothesis
+→ representative scenario structure
+→ participant continuation
+→ simulated consequence
+→ observable simulator change
+→ separate real-world transfer evidence
 → limits / confounds
 ```
 
-Если трассировки нет, упражнение или продуктовая формулировка не считается обоснованной Selection Point только потому, что «похожа по духу».
+If this chain cannot be stated, a scenario is not justified merely because it “feels like Selection Point”.
 
-## Поля карты
+## Product translation changed on 3 November 2026
 
-| Поле | Смысл |
-|---|---|
-| Canonical source | утверждённый источник Selection Point |
-| Functional distinction | какое различение или функция утверждены |
-| User capability hypothesis | чему предположительно может научиться человек |
-| Training event hypothesis | в каком типе эпизода это можно тренировать |
-| Observable change | что должно стать наблюдаемо иначе |
-| Measurement candidate | как это можно фиксировать |
-| Limits / confounds | альтернативные объяснения и границы вывода |
-| Evidence status | untested / exploratory / supported / contradicted |
-
-## LAB-0
-
-На текущем проходе карта не заполняется по всем 5 × 13 параметрам. Сначала определяется минимальная сквозная модель способности выбирать и проверяется её наблюдаемость в owner self-pilot.
-
-Массовое заполнение до этого создаст ложную точность и преждевременное проектирование курса.
-
-## Сквозная рабочая цепочка
-
-После RC-018 обязательна следующая продуктовая проекция:
+The old bridge emphasized `canonical → learning unit / training event`. The active route now uses:
 
 ```text
-фактическая позиция
-→ доступная Selection Point
+canonical
+→ environment law / distinction
+→ scenario grammar
+→ repeated experience
+→ consequence / feedback
+→ transfer test
+```
+
+This does not change Foundation canon; it changes the current product translation.
+
+## Mandatory shared chain
+
+```text
+factual position
+→ available Selection Point
 → selected continuation
-→ realized continuation
+→ realized / non-realized continuation
 → consequence
 → observed/interpreted feedback
-→ model update
-→ новая фактическая позиция
+→ model / next-move update
+→ new factual position
 ```
 
-## Первый явный mapping — RC-018
-
-| Поле | Рабочая проекция |
-|---|---|
-| Canonical source | `FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md` |
-| Functional distinction | внутренне выбранное продолжение не равно фактически реализованному; последствия не равны автоматически использованному feedback |
-| User capability hypothesis | человек может точнее различать намерение, реальное продолжение и ответ реальности без ретроспективного смешения |
-| Training event hypothesis | реальный эпизод с предварительным выбором, фактическим продолжением и последующим review |
-| Observable change | меньше неразличённых selected→realized gaps; feedback чаще приводит к явному model/next-move update, когда он релевантен |
-| Measurement candidate | `Selected → Realized Continuation Rate`, gap classes, Recovery Latency, Feedback→Update trace |
-| Limits / confounds | reminders/scaffold, retrospective reconstruction, changed circumstances, new facts, self-report bias, unclear causality |
-| Evidence status | exploratory / owner self-pilot only |
-
-### Обязательные ограничения mapping
+Environment-first adds a second evidence boundary:
 
 ```text
-internal choice = real event
-≠ execution evidence
-
-conscious non-action
-may be realized continuation
-
-partial execution
-→ partial test
-
-selected → realized gap
-= data first
-≠ moral failure
-
-consequence
-≠ automatically feedback
+simulated realization
+≠ real-world realization
 ```
+
+## Mapping 1 — selected versus realized continuation
+
+| Field | Working projection |
+|---|---|
+| Approved source | `FOUNDATION/CANONICAL/01B_CORE_CHOICE_ACTION_FEEDBACK_BOUNDARY_CANONICAL.md` / RC-018 |
+| Functional distinction | selected continuation is not the same event as realized continuation; consequence is not automatically used feedback |
+| Target capability hypothesis | participant can increasingly distinguish intention, actual continuation and response from reality |
+| Scenario grammar | participant selects a continuation; later conditions make realization full, partial, consciously not acted, or unrealized |
+| Simulator observation | participant notices/uses the selected→realized gap without the system moralizing it |
+| Reality-transfer evidence | in a real representative episode the participant can report/record selection and factual realization separately |
+| Limits/confounds | retrospective reconstruction, prompt exposure, changed circumstances, new facts, self-report bias |
+| Status | exploratory / unvalidated |
+
+## Mapping 2 — direction → route → action
+
+| Field | Working projection |
+|---|---|
+| Approved working source | `FOUNDATION/PROJECT_OPERATING_PROTOCOL_ADDENDUM_2026-10-05_DIRECTION_ROUTE_ACTION.md` |
+| Functional distinction | failure or rejection of a route does not automatically invalidate the direction; action is the next concrete move within a route |
+| Target capability hypothesis | participant can preserve a chosen direction while revising an ineffective route and still select a concrete next action |
+| Scenario grammar | a currently chosen route becomes costly, blocked or ineffective while the direction remains relevant |
+| Simulator observation | route change occurs without automatic abandonment of direction or indefinite replanning |
+| Reality-transfer evidence | in a real disruption the participant changes route and produces a factual next move when appropriate |
+| Limits/confounds | direction itself may become invalid after new facts; persistence can become rigidity |
+| Status | approved distinction / product translation unvalidated |
+
+## Mapping 3 — local choice versus trajectory
+
+| Field | Working projection |
+|---|---|
+| Source | approved/working trajectory materials + current Product Lab hypothesis |
+| Functional distinction | a locally reasonable continuation can accumulate into a different trajectory when repeated |
+| Target capability hypothesis | participant can notice when repeated local choices are shaping a directionally inconsistent trajectory |
+| Scenario grammar | several individually plausible local decisions are compressed across day/week/month |
+| Simulator observation | participant changes policy/route after seeing cumulative consequence rather than evaluating each event in isolation only |
+| Reality-transfer evidence | participant uses multi-event evidence in a real review and changes a subsequent action/route |
+| Limits/confounds | simulator consequence model may be oversimplified; long-term outcomes contain exogenous factors |
+| Status | working product hypothesis |
 
 ## Measurement bridge
 
-Текущие рабочие документы:
+Reference inputs:
+- `REALITY_EVENT_MODEL_V0_2.md` — event trace;
+- `PILOT_METRICS_SPEC_V0_1.md` — measurement candidates and limits;
+- `ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md` — active scenario/environment contract.
 
-- `REALITY_EVENT_MODEL_V0_2.md` — сущности и event trace;
-- `PILOT_METRICS_SPEC_V0_1.md` — рабочие показатели;
-- `PERSONAL_TRAJECTORY_PILOT_V0.md` — active owner self-pilot.
+## What the map does not justify
 
-## Что пока запрещено выводить из карты
+The map does not automatically justify:
+- a correct-answer key;
+- a ready exercise simply because a concept exists in canon;
+- proven trainability;
+- simulator-to-reality transfer;
+- a universal Selection Capacity score;
+- a causal effect of prompts;
+- duration of skill formation;
+- an app, VR system, AI agent or course;
+- efficacy claims.
 
-Карта не обосновывает автоматически:
-
-- готовое упражнение;
-- доказанную trainability;
-- универсальный Selection Capacity Score;
-- причинный эффект prompts;
-- конкретную аудиторию;
-- длительность формирования навыка;
-- приложение или курс;
-- эффективность Selection Point.
-
-Текущая задача карты — сохранять трассировку между каноном и наблюдаемой продуктовой гипотезой, не превращая гипотезу в канон.
+The current task of this map is to preserve traceability while keeping the environment-first product hypothesis falsifiable.
