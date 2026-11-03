@@ -1,192 +1,137 @@
 # Selection Point Product Lab
 
-## Current project route and delivery
+**Статус:** active design / no external pilot  
+**Обновлено:** 3 ноября 2026  
+**SSOT лаборатории:** `LAB_STATE.yaml`  
+**Active route authority:** `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`
 
-Course-first development is the active project route under `docs/PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`. Lab priorities below describe its supporting telemetry workstream and do not activate trainer implementation or block the course. Actual reminder deployment is recorded in `docs/PROJECT_SYSTEM/REMINDER_DELIVERY_STATE.yaml`; Mode B design alone is not evidence of delivery.
+## Current product route
 
+Selection Point is currently developed **environment-first**.
 
-**Статус:** активный исследовательский workstream / owner self-pilot active  
-**Обновлено:** 15 сентября 2026 года  
-**Контур:** параллельный Фазе 3, без открытия Фаз 4–8  
-**SSOT лаборатории:** `LAB_STATE.yaml`
+The active product object is a bounded adaptive environment / simulator in which a participant repeatedly encounters representative situations, selects a continuation, experiences consequences and feedback, and later tests transfer in reality.
 
-## Назначение
+The former course-first route is superseded. Course and prior training artifacts are retained as research/content inputs, not the active execution sequence.
 
-Product Lab проверяет, может ли утверждённая методология Selection Point быть передана людям как **тренажёр способности выбирать** и привести к наблюдаемому обучению.
+## Active product chain
 
-На текущем owner self-pilot проверяется более сильная продуктовая рамка: Selection Point как система, которая **связывает локальный выбор с траекторией во времени и проверяет внутренний выбор через фактически реализованное продолжение и последствия**.
+```text
+representative situation
+→ perceived position / constraints
+→ Selection Point
+→ plausible continuations
+→ selected continuation
+→ realized / non-realized continuation
+→ consequences
+→ feedback
+→ varied next situation
+```
 
-Формулировки Product Lab остаются продуктовыми гипотезами, а не новым каноническим определением метода.
+Validation adds a separate chain:
 
-## Product Lab внутри единого проекта
+```text
+simulation
+→ bounded real-world experiment
+→ factual realization / non-realization
+→ real consequence
+→ review
+→ next simulation
+```
 
-С 15 сентября 2026 года репозитории Selection Point рассматриваются как узлы **одного проекта**, а не как независимые проекты.
+`simulator success ≠ demonstrated real-world transfer`.
 
-Управляющий контур проекта:
+## V0 boundary
 
-- `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` — topology / authority SSOT;
-- `../PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` — роли уровней и поток решений/данных;
-- `../PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` — правила синхронизации;
-- `../PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md` — контракт первого private evidence-node.
+V0 is deliberately limited to:
+- one target capability;
+- 10–15 representative scenarios;
+- the effective-body / physical-efficiency domain;
+- at least one meaningful trajectory/time-scale consequence;
+- one real-world transfer experiment;
+- manual/simple delivery allowed.
 
-Текущая структура:
+Not required: app, VR, AI, full course, gamification, automatic scenario generation.
+
+## Product Lab inside one project
 
 ```text
 Foundation / Canon
-        ↓
+        ↓ constrains meaning
 Product Lab
-        ↓ contract
-SP-HLAB-001 — Selection-point-health-lab (private evidence node)
-        ↑
-de-identified findings / contradictions / falsification signals
+        ↓ defines product/environment hypotheses
+Simulation
+        ↓ creates bounded repeated experience
+Reality / evidence nodes
+        ↑ return realization, consequences, contradictions, transfer evidence
+Review / governance
+        ↑ decides revision or promotion
 ```
 
-`SP-HLAB-001` хранит owner self-pilot raw-data, локальные reviews и локальные H-xxx hypotheses. Эти данные и гипотезы не имеют автоматического права изменять Product Lab или канон.
+Lower layers may add evidence but may not silently redefine higher layers.
 
-## Граница с основным проектом
+## Active documents
+
+Read in this order for current product work:
+
+1. `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`
+2. `../PROJECT_SYSTEM/RECOVERY_CHECKPOINT_2026-11-03_ENVIRONMENT_FIRST_RESET.md`
+3. `../PROJECT_SYSTEM/DECISION_ENVIRONMENT_FIRST_RESET_2026-11-03.md`
+4. `ADAPTIVE_ENVIRONMENT_ARCHITECTURE_V0.md`
+5. `PRODUCT_THESIS.md`
+6. `LAB_STATE.yaml`
+7. `REALITY_EVENT_MODEL_V0_2.md`
+8. `../FOUNDATION/SOURCE_MATERIALS/29_2026-11-03_ADAPTATION_ENVIRONMENT_AND_TRANSFER.md`
+
+## Reference assets retained
+
+- `SELECTION_CAPACITY_V0.md` — candidate capability decomposition;
+- `TRAINING_ARCHITECTURE_V0.md` — progression/prompt-fading research input;
+- `CANONICAL_TO_PRODUCT_MAP.md` — bridge from canon to observable product mechanics;
+- `HYPOTHESES.md` — historical/ongoing hypothesis register;
+- `PERSONAL_TRAJECTORY_PILOT_V0.md` — prior owner self-pilot design/evidence context;
+- `PILOT_METRICS_SPEC_V0_1.md` — measurement constraints;
+- `PARTICIPANT_DATA_POLICY_V0_1.md` — participant data boundary;
+- `MINIMAL_RECOVERY_LOOP.md` — recovery hypothesis;
+- `SP_LAB_001_SYNTHESIS.md` — approved previous Lab synthesis;
+- `DECISION_LOG.md` — historical product decisions.
+
+Reference does not mean active authorization.
+
+## Mandatory boundaries
 
 ```text
-канон Selection Point
-        ↓
-CANONICAL_TO_PRODUCT_MAP
-        ↓
-продуктовые гипотезы
-        ↓
-research contracts
-        ↓
-evidence nodes / experiments
-        ↓
-reviewed de-identified findings
-        ↓
-решение лаборатории
+selected continuation ≠ realized continuation
+simulated continuation ≠ real-world continuation
+consequence ≠ feedback actually used
+questionnaire completion ≠ target-domain action
+scenario completion ≠ Selection Capacity proof
 ```
 
-Product Lab не имеет права напрямую изменять канонический смысл. Если данные требуют пересмотра метода, создаётся отдельное предложение в основной архитектурный контур и применяется действующий `PROJECT_OPERATING_PROTOCOL.md`.
+Raw participant records remain outside the public repository.
 
-## RC-018 как обязательная граница Lab
+## Scientific boundary
 
-С 15 сентября 2026 года Product Lab синхронизирован с утверждённой boundary RC-018:
+The project does not accept “the brain cannot distinguish virtual/imagined and real experience” as a scientific axiom.
 
-```text
-selected continuation
-≠ realized continuation
-≠ consequence
-≠ used feedback
-```
+Working hypothesis:
+- simulated/imagined practice can support learning in some contexts;
+- immersion itself is not assumed to cause transfer;
+- representative information-action relations matter;
+- transfer into real behaviour must be observed separately.
 
-Следствия:
+See source material 29.
 
-- внутренний выбор остаётся реальным событием, но не является доказательством исполнения;
-- conscious non-action может быть фактически реализованным продолжением;
-- partial execution означает partial test;
-- selected → realized gap является данными, а не моральной оценкой;
-- последствия не считаются использованным feedback автоматически;
-- measurement adherence не считается автоматически domain success или доказательством Selection Capacity.
+## What remains closed
 
-## Документы
+- `SP-LAB-002` — unopened;
+- external-user pilot — unopened;
+- software implementation — unopened;
+- Foundation Stage 5 — unopened;
+- efficacy claims — not authorized;
+- composite Selection Capacity / trajectory score — not validated.
 
-### Управление проектом
+## Current next task
 
-- `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml` — система уровней и зарегистрированные repository nodes;
-- `../PROJECT_SYSTEM/PROJECT_CONTROL_PLANE.md` — Project Control Plane;
-- `../PROJECT_SYSTEM/CROSS_REPO_SYNC_PROTOCOL.md` — downward/upward sync;
-- `../PROJECT_SYSTEM/HEALTH_LAB_NODE_CONTRACT.md` — контракт `SP-HLAB-001`.
+Define one V0 capability and the scenario grammar that can repeatedly expose it under varied conditions without turning the environment into a disguised correct-answer test.
 
-### Product Lab
-
-- `LAB_CHARTER.md` — полномочия, границы и lifecycle;
-- `LAB_STATE.yaml` — единственный источник текущего состояния Lab;
-- `PERSONAL_TRAJECTORY_PILOT_V0.md` — текущий активный owner self-pilot;
-- `REALITY_EVENT_MODEL_V0_2.md` — минимальная RC-018-aligned схема событий Reality Loop;
-- `PILOT_METRICS_SPEC_V0_1.md` — рабочая спецификация измерений без общего score;
-- `PARTICIPANT_DATA_POLICY_V0_1.md` — обязательная граница для данных будущих внешних участников;
-- `PRODUCT_THESIS.md` — рабочая продуктовая гипотеза;
-- `SELECTION_CAPACITY_V0.md` — рабочая декомпозиция предполагаемой тренируемой способности и Red Team;
-- `SP_LAB_001_SYNTHESIS.md` — утверждённый итог SP-LAB-001;
-- `MINIMAL_RECOVERY_LOOP.md` — гипотеза минимального цикла восстановления участия;
-- `TRAINING_ARCHITECTURE_V0.md` — предварительная гипотеза архитектуры обучения;
-- `COMPARATIVE_POSITIONING_RESEARCH_01.md` — сравнительная проверка относительно близких подходов;
-- `HYPOTHESES.md` — реестр проверяемых гипотез;
-- `CANONICAL_TO_PRODUCT_MAP.md` — мост «канон → тренируемая способность → наблюдаемое изменение»;
-- `RESEARCH_PLAN.md` — порядок исследовательских фаз;
-- `DECISION_LOG.md` — история явных продуктовых решений.
-
-## Утверждённая база
-
-`SP-LAB-001` утверждён 1 сентября 2026 года как рабочая продуктовая модель для последующей внешней проверки.
-
-Ключевая формулировка:
-
-> **Selection Capacity — способность сохранять или восстанавливать участие в собственном действии так, чтобы релевантная реальность продолжала иметь возможность изменить модель, следующий ход и, при необходимости, само направление.**
-
-Краткая внутренняя формула:
-
-> **Реальность всё ещё может тебя поправить.**
-
-## Текущая точка — SP-LAB-PILOT-001
-
-12 сентября 2026 года владелец возобновил Product Lab через личный self-pilot, не открывая SP-LAB-002.
-
-15 сентября после диагностики владелец утвердил устранение рассинхронизации Product Lab с RC-018 и создание измерительной инфраструктуры.
-
-15 сентября затем утверждено системное решение `SP-PSYS-001`: `Selection-point` и `Selection-point-health-lab` — единый проект с разными authority/evidence уровнями. Health Lab зарегистрирован как `SP-HLAB-001`.
-
-Первый домен: **тело / здоровье / физическая эффективность**.
-
-Текущий приоритет:
-
-```text
-Trajectory Engine
-+ Selected → Realized Evidence
-+ episode → day → week → month → quarter
-```
-
-Рабочее ядро Reality Loop:
-
-```text
-fact
-→ trajectory
-→ forecast
-→ selection point
-→ selected continuation
-→ realized continuation
-→ consequence
-→ observed feedback
-→ model update
-```
-
-Принят режим напоминаний **B**:
-
-- `21:30` — Review + Plan;
-- утром — Plan Recall;
-- в середине дня — Trajectory Check.
-
-`prompt_exposure` должен фиксироваться отдельно, чтобы не спутать самостоятельный навык с поведением под scaffold.
-
-Исторические raw-записи Health Lab за 12–14 сентября сохраняются как были получены и не переписываются под новую схему. При необходимости они нормализуются только в derived layer с явной ссылкой на источник и `unknown/not_observed` для отсутствующих наблюдений.
-
-## Что остаётся закрытым
-
-- `SP-LAB-002 — Problem Discovery Research Design` остаётся `unopened`;
-- внешний пользовательский пилот в LAB-0 не открыт;
-- S5 не открывается из Product Lab;
-- доказанная эффективность не заявляется;
-- Body pilot не превращает SP в медицинское или фитнес-приложение;
-- единый Selection Capacity / Trajectory Score не вводится;
-- Simulator / serious game остаётся вторым контуром после проверки Reality Loop.
-
-## Bootstrap для нового чата
-
-Новый чат, работающий с проектом в целом, сначала читает:
-
-1. `../PROJECT_SYSTEM/PROJECT_SYSTEM_STATE.yaml`;
-2. `LAB_STATE.yaml`;
-3. `PERSONAL_TRAJECTORY_PILOT_V0.md`;
-4. `REALITY_EVENT_MODEL_V0_2.md`;
-5. `PILOT_METRICS_SPEC_V0_1.md`;
-6. `SP_LAB_001_SYNTHESIS.md`;
-7. `DECISION_LOG.md`.
-
-При работе с фактическими pilot data затем читать `xahinvest-DNA/Selection-point-health-lab::docs/NODE_STATE.yaml` и локальные данные Health Lab.
-
-`SP-LAB-002`, S5 и внешний пилот автоматически не открывать.
+No broader product build is authorized until that definition is reviewed by the owner.
