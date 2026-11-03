@@ -1,174 +1,138 @@
 # Product Lab Research Plan
 
-**Статус:** рабочая последовательность  
-**Обновлено:** 15 сентября 2026 года  
-**Правило:** следующая фаза не открывается автоматически; текущая точка хранится в `LAB_STATE.yaml`.
+**Status:** active working sequence  
+**Updated:** 3 November 2026  
+**Rule:** no phase opens automatically; current authorization lives in `LAB_STATE.yaml` and `PROJECT_SYSTEM_STATE.yaml`.
 
-## LAB-0 — Bootstrap & Definition + owner self-pilot
+## Research question
 
-Цель: определить, что именно означает продуктовая гипотеза «тренажёр способности выбирать», сделать её исследуемой и проверить минимальную наблюдаемость Reality Loop на owner self-pilot без объявления эффективности.
+Can a bounded adaptive environment make one Selection Point capability more practically available through repeated representative situations, and does any observed change transfer into a real situation?
 
-Результаты:
+This plan tests the mechanism before product scale, interface sophistication or market claims.
 
-- Lab governance и SSOT;
-- Product Thesis v0;
-- initial hypotheses;
-- skeleton Canonical → Product Map;
-- owner self-pilot `SP-LAB-PILOT-001`;
-- RC-018-aligned Reality Event Model;
-- рабочая спецификация метрик;
-- границы хранения participant data;
-- критерии выхода в problem discovery.
+## R0 — Define one capability — CURRENT
 
-В LAB-0 допускается:
+Select one capability/distinction for V0.
 
-- **owner self-pilot** как исследовательский инструмент;
-- проверка схемы событий и измеримости;
-- ручной Reality Loop без разработки полноценного приложения;
-- анализ того, делает ли multi-timeframe представление ранее невидимую повторяемость заметной.
+It must be:
+- relevant to Selection Point;
+- observable enough to create scenarios;
+- not reducible to remembering terminology;
+- testable in the effective-body / physical-efficiency field;
+- separable from a specific morally preferred answer.
 
-В LAB-0 пока не открываются:
+Output: one capability definition + observable failure/success signals.
 
-- внешний пользовательский исследовательский пилот;
-- problem interviews как формальная LAB-1 программа;
-- публичный content experiment;
-- курс;
-- полноценное приложение;
-- платный трафик;
-- заявления об эффективности.
+## R1 — Scenario grammar
 
-Текущий owner self-pilot не считается доказательством trainability или product-market fit.
+Define the invariant structure that 10–15 representative situations will share and which surface conditions may vary.
 
-### Текущая задача LAB-0
+Candidate variation dimensions may include:
+- fatigue;
+- stress;
+- competing immediate reward;
+- social pressure;
+- uncertainty;
+- time pressure;
+- interruption;
+- route failure;
+- delayed consequences.
 
-`SP-LAB-PILOT-001 — Personal Trajectory Pilot v0` остаётся активной.
+Exit condition: scenarios can vary without changing into unrelated tasks or a disguised quiz.
 
-Измерительная база:
+## R2 — Manual environment build
 
-- `REALITY_EVENT_MODEL_V0_2.md`;
-- `PILOT_METRICS_SPEC_V0_1.md`;
-- `PARTICIPANT_DATA_POLICY_V0_1.md`.
+Only after owner review of R0/R1.
 
-RC-018 задаёт обязательную границу:
+Build the simplest environment capable of testing:
 
 ```text
-selected continuation
-≠
-realized continuation
-≠
-consequence
-≠
-used feedback
+scenario
+→ perception
+→ selection
+→ simulated realization / non-realization
+→ consequence
+→ feedback
+→ varied repetition
 ```
 
-Смысл self-pilot на этой фазе — проверить, можно ли надёжно фиксировать эту цепочку и видеть её во времени, а не доказать эффективность Selection Point.
+Manual delivery is preferred over premature software if it produces cleaner evidence faster.
 
-## Gate внешнего пилота
+Do not infer real-world transfer at this stage.
 
-Внешний пользовательский пилот остаётся `unopened` до отдельного решения владельца.
+## R3 — Internal mechanism check
 
-До его открытия должны быть отдельно обсуждены и зафиксированы:
+Check whether the participant:
+- recognizes the underlying structure under surface variation;
+- becomes less dependent on prompts;
+- distinguishes selected from realized continuation;
+- sees local versus trajectory consequences where relevant;
+- can change route without automatically abandoning direction.
 
+Failure is informative. A participant learning “which button the system likes” is a falsification signal, not success.
+
+## R4 — One bounded Reality Transfer experiment
+
+Only after the simulation loop is coherent enough to justify transfer testing.
+
+Record separately:
+- real context;
+- what continuation was selected;
+- what was actually realized;
+- consequence;
+- prompt exposure;
+- alternative explanations;
+- what feedback was actually used.
+
+Do not merge simulator performance and real-world performance into one score.
+
+## R5 — Review / falsification
+
+Compare:
+- simulator behaviour;
+- real behaviour;
+- transfer / non-transfer;
+- prompt dependence;
+- contradictions;
+- plausible confounds.
+
+Owner then decides whether to:
+- iterate the same capability/scenario grammar;
+- revise the mechanism;
+- reject/limit the environment-first hypothesis;
+- authorize a later implementation or external pilot.
+
+## External pilot gate
+
+External-user pilot remains `unopened`.
+
+Before opening it, separately approve:
 - research question;
-- формат и длительность;
-- условия участия;
-- consent;
-- private storage;
+- consent and participation conditions;
+- private data storage;
 - withdrawal/deletion procedure;
 - event capture burden;
-- baseline/comparison logic;
-- scaffold confound;
-- критерии интерпретации результата.
+- comparison/baseline logic;
+- scaffold confound handling;
+- transfer evidence criteria;
+- interpretation limits.
 
-Подключение человека к общей группе или получение от него ответов само по себе не переводит его данные в formal Product Lab evidence.
+## Market research
 
-## LAB-1 — Problem Discovery
+Problem interviews, message discovery, positioning and commercialization remain valid later research tracks, but they do not precede the immediate mechanism test unless the owner changes direction.
 
-Цель: проверить существование, частоту, интенсивность и естественный язык пользовательской проблемы.
+The project first needs evidence that the product does something distinguishable from explanation alone.
 
-Предварительный дизайн:
+## Boundaries
 
-- 15–25 глубинных problem interviews;
-- интервью строятся вокруг последнего конкретного эпизода, а не мнения о Selection Point;
-- Selection Point и продуктовая формулировка не раскрываются в начале интервью;
-- фиксируются альтернативные объяснения и уже используемые способы решения.
-
-Ключевые вопросы исследования:
-
-1. В каких ситуациях возникает разрыв между намерением / пониманием и фактическим продолжением?
-2. Когда человек замечает отклонение — до, во время или после события?
-3. Был ли другой вариант реально доступен в моменте?
-4. Насколько проблема повторяется и мешает жизни / работе?
-5. Что человек уже пробовал и почему считает это недостаточным?
-6. Какими словами он описывает механизм без языка Selection Point?
-
-Выход: evidence-based `PROBLEM_LANGUAGE` и решение о первом сегменте для следующего теста.
-
-## LAB-2 — Message Discovery
-
-Цель: проверить, какие формулировки корректно вызывают узнавание проблемы без искажения метода.
-
-Инструменты могут включать короткий контент, тексты, диагностические входы и органические публикации.
-
-Метрики не ограничиваются просмотрами. Важнее:
-
-- сохранения;
-- содержательные комментарии;
-- добровольные описания собственных эпизодов;
-- переход в микроопыт;
-- соответствие ожидания реальному предмету Selection Point.
-
-Охват сам по себе не подтверждает гипотезу.
-
-## LAB-3 — Training Discovery
-
-Цель: проверить сам факт обучаемости и переноса.
-
-Предварительная форма: небольшой ручной пилот без обязательной разработки приложения.
-
-Будущая проверка должна различать как минимум:
+Throughout the sequence:
 
 ```text
-performance with scaffold
-→ reduced scaffold
-→ behavior without immediate scaffold
-→ transfer to another context
+simulation ≠ reality
+selected ≠ realized
+completion ≠ mastery
+insight ≠ transfer
+engagement ≠ efficacy
 ```
 
-Проверяются кандидаты:
-
-- detection latency;
-- selected → realized relation;
-- alternative availability;
-- recovery latency;
-- feedback sensitivity;
-- transfer.
-
-До этой фазы конкретный протокол обучения не утверждается.
-
-## LAB-4 — Product Discovery
-
-Открывается только если LAB-1–3 дали достаточные основания.
-
-Здесь впервые допустимо сравнивать конкретные формы продукта:
-
-- guided program;
-- AI-assisted trainer;
-- messaging / Telegram flow;
-- web/mobile experience;
-- cohort or individual format;
-- subscription / one-time program;
-- локализация и каналы дистрибуции.
-
-Эта фаза не отменяет ограничений основного `PROJECT_OPERATING_PROTOCOL.md`; если основной проект ещё не разрешает конкретную практическую или продуктовую фиксацию, Lab сохраняет результат как гипотезу и не канонизирует его.
-
-## Ближайшая граница
-
-До отдельного решения владельца:
-
-```text
-продолжается SP-LAB-PILOT-001
-SP-LAB-002 остаётся unopened
-внешний пилот остаётся unopened
-S5 не открывается из Product Lab
-```
+No app, VR, AI agent, full course or gamification layer is required for the current research question.
